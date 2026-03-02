@@ -204,6 +204,7 @@ DungeonLLM implementa le regole del **System Reference Document (SRD) 5.2.1**, u
 
 ### File Presenti
 - `IT_SRD_CC_v5.2.1.md` - Versione in Markdown del SRD in italiano
+- `SRD_CC_v5.2.1.md` - Versione in Markdown del SRD in inglese
 
 ### Integrazione Regole
 
@@ -260,3 +261,6 @@ Da definire
 ---
 
 **Nota**: Questo è un progetto sperimentale e in continua evoluzione. Documentazione e funzionalità verranno aggiornate regolarmente durante lo sviluppo.
+
+## Crediti
+Quest'opera include materiale tratto dal System Reference Document 5.2.1 ("SRD 5.2.1") di Wizards of the Coast LLC, disponibile all'indirizzo <https://www.dndbeyond.com/srd>. Il SRD 5.2.1 è concesso in licenza ai sensi della licenza di attribuzione 4.0 Internazionale di Creative Commons, disponibile all'indirizzo <https://creativecommons.org/licenses/by/4.0/legalcode>.

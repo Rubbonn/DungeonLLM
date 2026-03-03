@@ -65,6 +65,12 @@ Il progetto è attualmente nelle fasi iniziali di sviluppo. Alcune tecnologie e 
   - Lancio dadi e meccaniche probabilistiche
   - Sistema di progressione ed esperienza
 
+- **💬 Chatbot di Consultazione Regole**
+  - Consultazione rapida di manuale, creature, oggetti, effetti e contenuti di gioco
+  - Risposte contestuali basate sulla campagna e sessione attuale
+  - Supporto a domande su funzionamento del gioco e regole di DnD in generale
+  - Recupero informazioni tramite ricerca semantica sulle regole (RAG)
+
 ## 🛠 Stack Tecnologico
 
 ### Backend & AI
@@ -150,6 +156,13 @@ Lo sviluppo seguirà un approccio incrementale, partendo da un **Minimum Viable 
 - [ ] Sistema di lancio dadi
 - [ ] Creazione personaggio base
 - [ ] Gestione statistiche e attributi
+
+### Fase 2.5: Chatbot Regole & Lore 💬📚
+- [ ] Implementazione chatbot di consultazione (manuale, creature, oggetti, effetti)
+- [ ] Collegamento al database vettoriale delle regole (RAG)
+- [ ] Contesto dinamico della campagna e sessione corrente
+- [ ] Q&A su meccaniche interne del gioco
+- [ ] Q&A su regole DnD in generale
 
 ### Fase 3: Combattimento 🗡️
 - [ ] Sistema di iniziativa

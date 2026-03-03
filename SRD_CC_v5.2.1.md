@@ -7276,7 +7276,7 @@ Until the spell ends, you can take a Bonus Action to mentally command any creatu
 
 **Using a Higher-Level Spell Slot.** The creature's Slam damage increases by 1d4 (Medium or smaller), 1d6 (Large), or 1d12 (Huge) for each spell slot level above 5.
 
-## Animated Object
+### Animated Object
 
 *Huge or Smaller Construct, Unaligned*
 
@@ -7299,11 +7299,11 @@ Until the spell ends, you can take a Bonus Action to mentally command any creatu
 
 **CR** None (XP 0; PB equals your Proficiency Bonus)
 
-### Actions
+#### Actions
 
 **Slam.** *Melee Attack Roll:* Bonus equals your spell attack modifier, reach 5 ft. *Hit:* Force damage equal to 1d4 + 3 (Medium or smaller), 2d6 + 3 + your spellcasting ability modifier (Large), or 2d12 + 3 + your spellcasting ability modifier (Huge).
 
-## Antilife Shell
+### Antilife Shell
 
 *Level 5 Abjuration (Druid)*
 
@@ -7319,7 +7319,7 @@ An aura extends from you in a 10-foot Emanation for the duration. The aura preve
 
 If you move so that an affected creature is forced to pass through the barrier, the spell ends.
 
-## Antimagic Field
+### Antimagic Field
 
 *Level 8 Abjuration (Cleric, Wizard)*
 
@@ -7339,7 +7339,7 @@ Ongoing spells, except those cast by an Artifact or a deity, are suppressed in t
 
 *Dispel Magic* has no effect on the aura, and the auras created by different *Antimagic Field* spells don't nullify each other.
 
-## Antipathy/Sympathy
+### Antipathy/Sympathy
 
 *Level 8 Enchantment (Bard, Druid, Wizard)*
 
@@ -7453,7 +7453,7 @@ With a touch, you place an illusion on a willing creature or an object that isn'
 
 **False Aura (*Object*).** You change the way the target appears to spells and magical effects that detect magical auras, such as *Detect Magic*. You can make a nonmagical object appear magical, make a magic item appear nonmagical, or change the object's aura so that it appears to belong to a school of magic you choose.
 
-## Astral Projection
+### Astral Projection
 
 *Level 9 Necromancy (Cleric, Warlock, Wizard)*
 
@@ -7475,7 +7475,7 @@ Any damage or other effects that apply to an astral form have no effect on the t
 
 When the spell ends for a target who isn't dead, the target reappears in its body and exits the state of suspended animation.
 
-## Augury
+### Augury
 
 *Level 2 Divination (Cleric, Druid, Wizard)*
 
@@ -7489,7 +7489,7 @@ When the spell ends for a target who isn't dead, the target reappears in its bod
 
 You receive an omen from an otherworldly entity about the results of a course of action that you plan to take within the next 30 minutes. The GM chooses the omen from the Omens table.
 
-## Omens
+#### Omens
 
 | Omen         | For Results That Will Be ... |
 |--------------|------------------------------|
@@ -7502,7 +7502,7 @@ The spell doesn't account for circumstances, such as other spells, that might ch
 
 If you cast the spell more than once before finishing a Long Rest, there is a cumulative 25 percent chance for each casting after the first that you get no answer.
 
-## Aura of Life
+### Aura of Life
 
 *Level 4 Abjuration (Cleric, Paladin)*
 
@@ -7516,7 +7516,7 @@ If you cast the spell more than once before finishing a Long Rest, there is a cu
 
 An aura radiates from you in a 30-foot Emanation for the duration. While in the aura, you and your allies have Resistance to Necrotic damage, and your Hit Point maximums can't be reduced. If an ally with 0 Hit Points starts its turn in the aura, that ally regains 1 Hit Point.
 
-## Awaken
+### Awaken
 
 *Level 5 Transmutation (Bard, Druid)*
 
@@ -7634,7 +7634,7 @@ You touch a creature, which must succeed on a Wisdom saving throw or become curs
 
 **Using a Higher-Level Spell Slot.** If you cast this spell using a level 4 spell slot, you can maintain Concentration on it for up to 10 minutes. If you use a level 5+ spell slot, the spell doesn't require Concentration, and the duration becomes 8 hours (level 5–6 slot) or 24 hours (level 7–8 slot). If you use a level 9 spell slot, the spell lasts until dispelled.
 
-## Black Tentacles
+### Black Tentacles
 
 *Level 4 Conjuration (Wizard)*
 
@@ -7652,7 +7652,7 @@ Each creature in that area makes a Strength saving throw. On a failed save, it t
 
 A Restrained creature can take an action to make a Strength (Athletics) check against your spell's DC, ending the condition on itself on a success.
 
-## Blade Barrier
+### Blade Barrier
 
 *Level 6 Evocation (Cleric)*
 
@@ -7668,7 +7668,7 @@ You create a wall of whirling blades made of magical energy. The wall appears wi
 
 Any creature in the wall's space makes a Dexterity saving throw, taking 6d10 Force damage on a failed save or half as much damage on a successful one. A creature also makes that save if it enters the wall's space or ends its turn there. A creature makes that save only once per turn.
 
-## Bless
+### Bless
 
 *Level 1 Enchantment (Cleric, Paladin)*
 
@@ -7684,7 +7684,7 @@ You bless up to three creatures within range. Whenever a target makes an attack 
 
 **Using a Higher-Level Spell Slot.** You can target one additional creature for each spell slot level above 1.
 
-## Blight
+### Blight
 
 *Level 4 Necromancy (Druid, Sorcerer, Warlock, Wizard)*
 
@@ -7702,7 +7702,7 @@ Alternatively, target a nonmagical plant that isn't a creature, such as a tree o
 
 **Using a Higher-Level Spell Slot.** The damage increases by 1d8 for each spell slot level above 4.
 
-## Blindness/Deafness
+### Blindness/Deafness
 
 *Level 2 Transmutation (Bard, Cleric, Sorcerer, Wizard)*
 
@@ -7718,7 +7718,7 @@ One creature that you can see within range must succeed on a Constitution saving
 
 **Using a Higher-Level Spell Slot.** You can target one additional creature for each spell slot level above 2.
 
-## Blink
+### Blink
 
 *Level 3 Transmutation (Sorcerer, Wizard)*
 
@@ -8041,7 +8041,7 @@ Choose three of the following facts; you learn those facts as they pertain to th
 
 For example, you could determine the location of a powerful monster in the area, the locations of bodies of water, and the locations of any towns.
 
-## Comprehend Languages
+### Comprehend Languages
 
 *Level 1 Divination (Bard, Sorcerer, Warlock, Wizard)*
 
@@ -8055,7 +8055,7 @@ For example, you could determine the location of a powerful monster in the area,
 
 For the duration, you understand the literal meaning of any language that you hear or see signed. You also understand any written language that you see, but you must be touching the surface on which the words are written. It takes about 1 minute to read one page of text. This spell doesn't decode symbols or secret messages.
 
-## Compulsion
+### Compulsion
 
 *Level 4 Enchantment (Bard)*
 
@@ -8071,7 +8071,7 @@ Each creature of your choice that you can see within range must succeed on a Wis
 
 For the duration, you can take a Bonus Action to designate a direction that is horizontal to you. Each Charmed target must use as much of its movement as possible to move in that direction on its next turn, taking the safest route. After moving in this way, a target repeats the save, ending the spell on itself on a success.
 
-## Cone of Cold
+### Cone of Cold
 
 *Level 5 Evocation (Druid, Sorcerer, Wizard)*
 
@@ -8087,7 +8087,7 @@ You unleash a blast of cold air. Each creature in a 60-foot Cone originating fro
 
 **Using a Higher-Level Spell Slot.** The damage increases by 1d8 for each spell slot level above 5.
 
-## Confusion
+### Confusion
 
 *Level 4 Enchantment (Bard, Druid, Sorcerer, Wizard)*
 
@@ -8114,7 +8114,7 @@ At the end of each of its turns, an affected target repeats the save, ending the
 
 **Using a Higher-Level Spell Slot.** The Sphere's radius increases by 5 feet for each spell slot level above 4.
 
-## Conjure Animals
+### Conjure Animals
 
 *Level 3 Conjuration (Druid, Ranger)*
 
@@ -8134,7 +8134,7 @@ Whenever the pack moves within 10 feet of a creature you can see and whenever a 
 
 **Using a Higher-Level Spell Slot.** The damage increases by 1d10 for each spell slot level above 3.
 
-## Conjure Celestial
+### Conjure Celestial
 
 *Level 7 Conjuration (Cleric)*
 
@@ -8158,7 +8158,7 @@ Whenever the Cylinder moves into the space of a creature you can see and wheneve
 
 **Using a Higher-Level Spell Slot.** The healing and damage increase by 1d12 for each spell slot level above 7.
 
-## Conjure Elemental
+### Conjure Elemental
 
 *Level 5 Conjuration (Druid, Wizard)*
 
@@ -8178,7 +8178,7 @@ On a failed save, the target takes 4d8 damage of the spirit's type. On a success
 
 **Using a Higher-Level Spell Slot.** The damage increases by 1d8 for each spell slot level above 5.
 
-## Conjure Fey
+### Conjure Fey
 
 *Level 6 Conjuration (Druid)*
 
@@ -8196,7 +8196,7 @@ As a Bonus Action on your later turns, you can teleport the spirit to an unoccup
 
 **Using a Higher-Level Spell Slot.** The damage increases by 1d12 for each spell slot level above 6.
 
-## Conjure Minor Elementals
+### Conjure Minor Elementals
 
 *Level 4 Conjuration (Druid, Wizard)*
 
@@ -8214,7 +8214,7 @@ In addition, the ground in the Emanation is Difficult Terrain for your enemies.
 
 **Using a Higher-Level Spell Slot.** The damage increases by 1d8 for each spell slot level above 4.
 
-## Conjure Woodland Beings
+### Conjure Woodland Beings
 
 *Level 4 Conjuration (Druid, Ranger)*
 
@@ -8232,7 +8232,7 @@ In addition, you can take the Disengage action as a Bonus Action for the spell's
 
 **Using a Higher-Level Spell Slot.** The damage increases by 1d8 for each spell slot level above 4.
 
-## Contact Other Plane
+### Contact Other Plane
 
 *Level 5 Divination (Warlock, Wizard)*
 
@@ -8248,7 +8248,7 @@ You mentally contact a demigod, the spirit of a long-dead sage, or some other kn
 
 On a failed save, you take 6d6 Psychic damage and have the Incapacitated condition until you finish a Long Rest. A *Greater Restoration* spell cast on you ends this effect.
 
-## Contagion
+### Contagion
 
 *Level 5 Necromancy (Cleric, Druid)*
 
@@ -8266,7 +8266,7 @@ The target must repeat the saving throw at the end of each of its turns until it
 
 Whenever the Poisoned target receives an effect that would end the Poisoned condition, the target must succeed on a Constitution saving throw, or the Poisoned condition doesn't end on it.
 
-## Contingency
+### Contingency
 
 *Level 6 Abjuration (Wizard)*
 
@@ -8284,7 +8284,7 @@ The contingent spell takes effect immediately after the trigger occurs for the f
 
 The contingent spell takes effect only on you, even if it can normally target others. You can use only one *Contingency* spell at a time. If you cast this spell again, the effect of another *Contingency* spell on you ends. Also, *Contingency* ends on you if its material component is ever not on your person.
 
-## Continual Flame
+### Continual Flame
 
 *Level 2 Evocation (Cleric, Druid, Wizard)*
 
@@ -8298,7 +8298,7 @@ The contingent spell takes effect only on you, even if it can normally target ot
 
 A flame springs from an object that you touch. The effect casts Bright Light in a 20-foot radius and Dim Light for an additional 20 feet. It looks like a regular flame, but it creates no heat and consumes no fuel. The flame can be covered or hidden but not smothered or quenched.
 
-## Control Water
+### Control Water
 
 *Level 4 Transmutation (Cleric, Druid, Wizard)*
 
@@ -8322,7 +8322,7 @@ The water level remains elevated until the spell ends or you choose a different 
 
 **Whirlpool.** You cause a whirlpool to form in the center of the area, which must be at least 50 feet square and 25 feet deep. The whirlpool lasts until you choose a different effect or the spell ends. The whirlpool is 5 feet wide at the base, up to 50 feet wide at the top, and 25 feet tall. Any creature in the water and within 25 feet of the whirlpool is pulled 10 feet toward it. When a creature enters the whirlpool for the first time on a turn or ends its turn there, it makes a Strength saving throw. On a failed save, the creature takes 2d8 Bludgeoning damage. On a successful save, the creature takes half as much damage. A creature can swim away from the whirlpool only if it first takes an action to pull away and succeeds on a Strength (Athletics) check against your spell save DC.
 
-## Control Weather
+### Control Weather
 
 *Level 8 Transmutation (Cleric, Druid, Wizard)*
 
@@ -8371,7 +8371,7 @@ When you change the weather conditions, find a current condition on the followin
 | 4     | Gale          |
 | 5     | Storm         |
 
-## Counterspell
+### Counterspell
 
 *Level 3 Abjuration (Sorcerer, Warlock, Wizard)*
 
@@ -8385,7 +8385,7 @@ When you change the weather conditions, find a current condition on the followin
 
 You attempt to interrupt a creature in the process of casting a spell. The creature makes a Constitution saving throw. On a failed save, the spell dissipates with no effect, and the action, Bonus Action, or Reaction used to cast it is wasted. If that spell was cast with a spell slot, the slot isn't expended.
 
-## Create Food and Water
+### Create Food and Water
 
 *Level 3 Conjuration (Cleric, Paladin)*
 
@@ -8399,7 +8399,7 @@ You attempt to interrupt a creature in the process of casting a spell. The creat
 
 You create 45 pounds of food and 30 gallons of fresh water on the ground or in containers within range—both useful in fending off the hazards of malnutrition and dehydration. The food is bland but nourishing and looks like a food of your choice, and the water is clean. The food spoils after 24 hours if uneaten.
 
-## Create or Destroy Water
+### Create or Destroy Water
 
 *Level 1 Transmutation (Cleric, Druid)*
 
@@ -8419,7 +8419,7 @@ You do one of the following:
 
 **Using a Higher-Level Spell Slot.** You create or destroy 10 additional gallons of water, or the size of the Cube increases by 5 feet, for each spell slot level above 1.
 
-## Create Undead
+### Create Undead
 
 *Level 6 Necromancy (Cleric, Warlock, Wizard)*
 
@@ -8439,7 +8439,7 @@ The creature is under your control for 24 hours, after which it stops obeying an
 
 **Using a Higher-Level Spell Slot.** If you use a level 7 spell slot, you can animate or reassert control over four **Ghouls**. If you use a level 8 spell slot, you can animate or reassert control over five **Ghouls** or two **Ghasts** or **Wights**. If you use a level 9 spell slot, you can animate or reassert control over six **Ghouls**, three **Ghasts** or **Wights**, or two **Mummies**. See “Monsters” for these stat blocks.
 
-## Creation
+### Creation
 
 *Level 5 Illusion (Sorcerer, Wizard)*
 
@@ -8455,7 +8455,7 @@ You pull wisps of shadow material from the Shadowfell to create an object within
 
 The spell’s duration depends on the object’s material, as shown in the Materials table. If the object is composed of multiple materials, use the shortest duration. Using any object created by this spell as another spell’s Material component causes the other spell to fail.
 
-## Materials
+#### Materials
 
 | Material              | Duration   |
 |-----------------------|------------|
@@ -8467,7 +8467,7 @@ The spell’s duration depends on the object’s material, as shown in the Mater
 
 **Using a Higher-Level Spell Slot.** The Cube increases by 5 feet for each spell slot level above 5.
 
-## Cure Wounds
+### Cure Wounds
 
 *Level 1 Abjuration (Bard, Cleric, Druid, Paladin, Ranger)*
 
@@ -8483,7 +8483,7 @@ A creature you touch regains a number of Hit Points equal to 2d8 plus your spell
 
 **Using a Higher-Level Spell Slot.** The healing increases by 2d8 for each spell slot level above 1.
 
-## Dancing Lights
+### Dancing Lights
 
 *Illusion Cantrip (Bard, Sorcerer, Wizard)*
 
@@ -8499,7 +8499,7 @@ You create up to four torch-size lights within range, making them appear as torc
 
 As a Bonus Action, you can move the lights up to 60 feet to a space within range. A light must be within 20 feet of another light created by this spell, and a light vanishes if it exceeds the spell's range.
 
-## Darkness
+### Darkness
 
 *Level 2 Evocation (Sorcerer, Warlock, Wizard)*
 
@@ -8517,7 +8517,7 @@ Alternatively, you cast the spell on an object that isn't being worn or carried,
 
 If any of this spell's area overlaps with an area of Bright Light or Dim Light created by a spell of level 2 or lower, that other spell is dispelled.
 
-## Darkvision
+### Darkvision
 
 *Level 2 Transmutation (Druid, Ranger, Sorcerer, Wizard)*
 
@@ -8531,7 +8531,7 @@ If any of this spell's area overlaps with an area of Bright Light or Dim Light c
 
 For the duration, a willing creature you touch has Darkvision with a range of 150 feet.
 
-## Daylight
+### Daylight
 
 *Level 3 Evocation (Cleric, Druid, Paladin, Ranger, Sorcerer)*
 
@@ -8549,7 +8549,7 @@ Alternatively, you cast the spell on an object that isn't being worn or carried,
 
 If any of this spell's area overlaps with an area of Darkness created by a spell of level 3 or lower, that other spell is dispelled.
 
-## Death Ward
+### Death Ward
 
 *Level 4 Abjuration (Cleric, Paladin)*
 
@@ -8565,7 +8565,7 @@ You touch a creature and grant it a measure of protection from death. The first 
 
 If the spell is still in effect when the target is subjected to an effect that would kill it instantly without dealing damage, that effect is negated against the target, and the spell ends.
 
-## Delayed Blast Fireball
+### Delayed Blast Fireball
 
 *Level 7 Evocation (Sorcerer, Wizard)*
 
@@ -8587,7 +8587,7 @@ When the bead explodes, flammable objects in the explosion that aren't being wor
 
 ***Using a Higher-Level Spell Slot.*** The base damage increases by 1d6 for each spell slot level above 7.
 
-## Demiplane
+### Demiplane
 
 *Level 8 Conjuration (Sorcerer, Warlock, Wizard)*
 
@@ -8781,7 +8781,7 @@ One creature of your choice that you can see within range hears a discordant mel
 
 **Using a Higher-Level Spell Slot.** The damage increases by 1d6 for each spell slot level above 1.
 
-## Divination
+### Divination
 
 *Level 4 Divination (Cleric, Druid, Wizard)*
 
@@ -8797,7 +8797,7 @@ This spell puts you in contact with a god or a god's servants. You ask one quest
 
 If you cast the spell more than once before finishing a Long Rest, there is a cumulative 25 percent chance for each casting after the first that you get no answer.
 
-## Divine Favor
+### Divine Favor
 
 *Level 1 Transmutation (Paladin)*
 
@@ -8811,7 +8811,7 @@ If you cast the spell more than once before finishing a Long Rest, there is a cu
 
 Until the spell ends, your attacks with weapons deal an extra 1d4 Radiant damage on a hit.
 
-## Divine Smite
+### Divine Smite
 
 *Level 1 Evocation (Paladin)*
 
@@ -8827,7 +8827,7 @@ The target takes an extra 2d8 Radiant damage from the attack. The damage increas
 
 *Using a Higher-Level Spell Slot.* The damage increases by 1d8 for each spell slot level above 1.
 
-## Divine Word
+### Divine Word
 
 *Level 7 Evocation (Cleric)*
 
@@ -8841,7 +8841,7 @@ The target takes an extra 2d8 Radiant damage from the attack. The damage increas
 
 You utter a word imbued with power from the Upper Planes. Each creature of your choice in range makes a Charisma saving throw. On a failed save, a target that has 50 Hit Points or fewer suffers an effect based on its current Hit Points, as shown in the Divine Word Effects table. Regardless of its Hit Points, a Celestial, an Elemental, a Fey, or a Fiend target that fails its save is forced back to its plane of origin (if it isn't there already) and can't return to the current plane for 24 hours by any means short of a *Wish* spell.
 
-## Divine Word Effects
+#### Divine Word Effects
 
 | Hit Points | Effect                                                                   |
 |------------|--------------------------------------------------------------------------|
@@ -8850,7 +8850,7 @@ You utter a word imbued with power from the Upper Planes. Each creature of your 
 | 31–40      | The target has the Blinded and Deafened conditions for 10 minutes.       |
 | 41–50      | The target has the Deafened condition for 1 minute.                      |
 
-## Dominate Beast
+### Dominate Beast
 
 *Level 4 Enchantment (Druid, Ranger, Sorcerer)*
 
@@ -8870,7 +8870,7 @@ You can command the target to take a Reaction but must take your own Reaction to
 
 *Using a Higher-Level Spell Slot.* Your Concentration can last longer with a spell slot of level 5 (up to 10 minutes), 6 (up to 1 hour), or 7+ (up to 8 hours).
 
-## Dominate Monster
+### Dominate Monster
 
 *Level 8 Enchantment (Bard, Sorcerer, Warlock, Wizard)*
 
@@ -8968,7 +8968,7 @@ Whispering to the spirits of nature, you create one of the following effects wit
 
 **Fire Play.** You light or snuff out a candle, a torch, or a campfire.
 
-## Earthquake
+### Earthquake
 
 *Level 8 Transmutation (Cleric, Druid, Sorcerer)*
 
@@ -8992,7 +8992,7 @@ You can also cause the effects below.
 
 A creature within a distance from a collapsing structure equal to half the structure's height makes a Dexterity saving throw. On a failed save, the creature takes 12d6 Bludgeoning damage, has the Prone condition, and is buried in the rubble, requiring a DC 20 Strength (Athletics) check as an action to escape. On a successful save, the creature takes half as much damage only.
 
-## Eldritch Blast
+### Eldritch Blast
 
 *Evocation Cantrip (Warlock)*
 
@@ -9008,7 +9008,7 @@ You hurl a beam of crackling energy. Make a ranged spell attack against one crea
 
 **Cantrip Upgrade.** The spell creates two beams at level 5, three beams at level 11, and four beams at level 17. You can direct the beams at the same target or at different ones. Make a separate attack roll for each beam.
 
-## Elementalism
+### Elementalism
 
 *Transmutation Cantrip (Druid, Sorcerer, Wizard)*
 
@@ -9032,7 +9032,7 @@ You exert control over the elements, creating one of the following effects withi
 
 **Sculpt Element.** You cause dirt, sand, fire, smoke, mist, or water that can fit in a 1-foot Cube to assume a crude shape (such as that of a creature) for 1 hour.
 
-## Enhance Ability
+### Enhance Ability
 
 *Level 2 Transmutation (Bard, Cleric, Druid, Ranger, Sorcerer, Wizard)*
 
@@ -9048,7 +9048,7 @@ You touch a creature and choose Strength, Dexterity, Intelligence, Wisdom, or Ch
 
 **Using a Higher-Level Spell Slot.** You can target one additional creature for each spell slot level above 2. You can choose a different ability for each target.
 
-## Enlarge/Reduce
+### Enlarge/Reduce
 
 *Level 2 Transmutation (Bard, Druid, Sorcerer, Wizard)*
 
@@ -9068,7 +9068,7 @@ Everything that a targeted creature is wearing and carrying changes size with it
 
 **Reduce.** The target's size decreases by one category—from Medium to Small, for example. The target also has Disadvantage on Strength checks and Strength saving throws. The target's attacks with its reduced weapons or Unarmed Strikes deal 1d4 less damage on a hit (this can't reduce the damage below 1).
 
-## Ensnaring Strike
+### Ensnaring Strike
 
 *Level 1 Conjuration (Ranger)*
 
@@ -9086,7 +9086,7 @@ While Restrained, the target takes 1d6 Piercing damage at the start of each of i
 
 **Using a Higher-Level Spell Slot.** The damage increases by 1d6 for each spell slot level above 1.
 
-## Entangle
+### Entangle
 
 *Level 1 Conjuration (Druid, Ranger)*
 
@@ -9102,7 +9102,7 @@ Grasping plants sprout from the ground in a 20-foot square within range. For the
 
 Each creature (other than you) in the area when you cast the spell must succeed on a Strength saving throw or have the Restrained condition until the spell ends. A Restrained creature can take an action to make a Strength (Athletics) check against your spell save DC. On a success, it frees itself from the grasping plants and is no longer Restrained by them.
 
-## Enthrall
+### Enthrall
 
 *Level 2 Enchantment (Bard, Warlock)*
 
@@ -9116,7 +9116,7 @@ Each creature (other than you) in the area when you cast the spell must succeed 
 
 You weave a distracting string of words, causing creatures of your choice that you can see within range to make a Wisdom saving throw. Any creature you or your companions are fighting automatically succeeds on this save. On a failed save, a target has a -10 penalty to Wisdom (Perception) checks and Passive Perception until the spell ends.
 
-## Etherealness
+### Etherealness
 
 *Level 7 Conjuration (Bard, Cleric, Sorcerer, Warlock, Wizard)*
 
@@ -9138,7 +9138,7 @@ This spell ends instantly if you cast it while you are on the Ethereal Plane or 
 
 **Using a Higher-Level Spell Slot.** You can target up to three willing creatures (including yourself) for each spell slot level above 7. The creatures must be within 10 feet of you when you cast the spell.
 
-## Expedient Retreat
+### Expedient Retreat
 
 *Level 1 Transmutation (Sorcerer, Warlock, Wizard)*
 
@@ -9152,7 +9152,7 @@ This spell ends instantly if you cast it while you are on the Ethereal Plane or 
 
 You take the Dash action, and until the spell ends, you can take that action again as a Bonus Action.
 
-## Eyebite
+### Eyebite
 
 *Level 6 Necromancy (Bard, Sorcerer, Warlock, Wizard)*
 
@@ -9174,7 +9174,7 @@ On each of your turns until the spell ends, you can take a Magic action to targe
 
 **Sickened.** The target has the Poisoned condition.
 
-## Fabricate
+### Fabricate
 
 *Level 4 Transmutation (Wizard)*
 
@@ -9192,7 +9192,7 @@ Choose raw materials that you can see within range. You can fabricate a Large or
 
 Creatures and magic items can't be created by this spell. You also can't use it to create items that require a high degree of skill—such as weapons and armor—unless you have proficiency with the type of Artisan's Tools used to craft such objects.
 
-## Faerie Fire
+### Faerie Fire
 
 *Level 1 Evocation (Bard, Druid)*
 
@@ -9208,7 +9208,7 @@ Objects in a 20-foot Cube within range are outlined in blue, green, or violet li
 
 Attack rolls against an affected creature or object have Advantage if the attacker can see it.
 
-## Faithful Hound
+### Faithful Hound
 
 *Level 4 Conjuration (Wizard)*
 
@@ -9228,7 +9228,7 @@ At the start of each of your turns, the hound attempts to bite one enemy within 
 
 On your later turns, you can take a Magic action to move the hound up to 30 feet.
 
-## False Life
+### False Life
 
 *Level 1 Necromancy (Sorcerer, Wizard)*
 
@@ -9244,7 +9244,7 @@ You gain 2d4 + 4 Temporary Hit Points.
 
 **Using a Higher-Level Spell Slot.** You gain 5 additional Temporary Hit Points for each spell slot level above 1.
 
-## Fear
+### Fear
 
 *Level 3 Illusion (Bard, Sorcerer, Warlock, Wizard)*
 
@@ -9260,7 +9260,7 @@ Each creature in a 30-foot Cone must succeed on a Wisdom saving throw or drop wh
 
 A Frightened creature takes the Dash action and moves away from you by the safest route on each of its turns unless there is nowhere to move. If the creature ends its turn in a space where it doesn't have line of sight to you, the creature makes a Wisdom saving throw. On a successful save, the spell ends on that creature.
 
-## Feather Fall
+### Feather Fall
 
 *Level 1 Transmutation (Bard, Sorcerer, Wizard)*
 
@@ -9274,7 +9274,7 @@ A Frightened creature takes the Dash action and moves away from you by the safes
 
 Choose up to five falling creatures within range. A falling creature's rate of descent slows to 60 feet per round until the spell ends. If a creature lands before the spell ends, the creature takes no damage from the fall, and the spell ends for that creature.
 
-## Find Familiar
+### Find Familiar
 
 *Level 1 Conjuration (Wizard)*
 
@@ -9298,7 +9298,7 @@ Finally, when you cast a spell with a range of touch, your familiar can deliver 
 
 **One Familiar Only.** You can't have more than one familiar at a time. If you cast this spell while you have a familiar, you instead cause it to adopt a new eligible form.
 
-## Find Steed
+### Find Steed
 
 *Level 2 Conjuration (Paladin)*
 
@@ -9320,7 +9320,7 @@ The steed resembles a Large, rideable animal of your choice, such as a horse, a 
 
 **Using a Higher-Level Spell Slot.** Use the spell slot's level for the spell's level in the stat block.
 
-## Otherworldly Steed
+#### Otherworldly Steed
 
 Large Celestial, Fey, or Fiend (Your Choice), Neutral
 
@@ -9341,15 +9341,15 @@ Speed 60 ft., Fly 60 ft. (requires level 4+ spell)
 
 **CR** None (XP 0; PB equals your Proficiency Bonus)
 
-### Traits
+##### Traits
 
 **Life Bond.** When you regain Hit Points from a level 1+ spell, the steed regains the same number of Hit Points if you're within 5 feet of it.
 
-### Actions
+##### Actions
 
 **Otherworldly Slam.** *Melee Attack Roll:* Bonus equals your spell attack modifier, reach 5 ft. *Hit:* 1d8 plus the spell's level of Radiant (Celestial), Psychic (Fey), or Necrotic (Fiend) damage.
 
-### Bonus Actions
+##### Bonus Actions
 
 **Fell Glare (Fiend Only; Recharges after a Long Rest).**
 
@@ -9425,7 +9425,7 @@ Flammable objects in the area that aren't being worn or carried start burning.
 
 **Using a Higher-Level Spell Slot.** The damage increases by 1d6 for each spell slot level above 3.
 
-## Fire Bolt
+### Fire Bolt
 
 *Evocation Cantrip (Sorcerer, Wizard)*
 
@@ -9441,7 +9441,7 @@ You hurl a mote of fire at a creature or an object within range. Make a ranged s
 
 **Cantrip Upgrade.** The damage increases by 1d10 when you reach levels 5 (2d10), 11 (3d10), and 17 (4d10).
 
-## Fire Shield
+### Fire Shield
 
 *Level 4 Evocation (Druid, Sorcerer, Wizard)*
 
@@ -9459,7 +9459,7 @@ The flames provide you with a warm shield or a chill shield, as you choose. The 
 
 In addition, whenever a creature within 5 feet of you hits you with a melee attack roll, the shield erupts with flame. The attacker takes 2d8 Fire damage from a warm shield or 2d8 Cold damage from a chill shield.
 
-## Fire Storm
+### Fire Storm
 
 *Level 7 Evocation (Cleric, Druid, Sorcerer)*
 
@@ -9475,7 +9475,7 @@ A storm of fire appears within range. The area of the storm consists of up to te
 
 Flammable objects in the area that aren't being worn or carried start burning.
 
-## Flame Blade
+### Flame Blade
 
 *Level 2 Evocation (Druid, Sorcerer)*
 
@@ -9495,7 +9495,7 @@ The flaming blade sheds Bright Light in a 10-foot radius and Dim Light for an ad
 
 **Using a Higher-Level Spell Slot.** The damage increases by 1d6 for each spell slot level above 2.
 
-## Flame Strike
+### Flame Strike
 
 *Level 5 Evocation (Cleric)*
 
@@ -9511,7 +9511,7 @@ A vertical column of brilliant fire roars down from above. Each creature in a 10
 
 **Using a Higher-Level Spell Slot.** The Fire damage and the Radiant damage increase by 1d6 for each spell slot level above 5.
 
-## Flaming Sphere
+### Flaming Sphere
 
 *Level 2 Conjuuration (Druid, Sorcerer, Wizard)*
 
@@ -9531,7 +9531,7 @@ When you move the sphere, you can direct it over barriers up to 5 feet tall and 
 
 **Using a Higher-Level Spell Slot.** The damage increases by 1d6 for each spell slot level above 2.
 
-## Flesh to Stone
+### Flesh to Stone
 
 *Level 6 Transmutation (Druid, Sorcerer, Wizard)*
 
@@ -9549,7 +9549,7 @@ A Restrained target makes another Constitution saving throw at the end of each o
 
 If you maintain your Concentration on this spell for the entire possible duration, the target is Petrified until the condition is ended by *Greater Restoration* or similar magic.
 
-## Floating Disk
+### Floating Disk
 
 *Level 1 Conjuration (Wizard)*
 
@@ -9567,7 +9567,7 @@ The disk is immobile while you are within 20 feet of it. If you move more than 2
 
 If you move more than 100 feet from the disk (typically because it can't move around an obstacle to follow you), the spell ends.
 
-## Fly
+### Fly
 
 *Level 3 Transmutation (Sorcerer, Warlock, Wizard)*
 
@@ -9583,7 +9583,7 @@ You touch a willing creature. For the duration, the target gains a Fly Speed of 
 
 **Using a Higher-Level Spell Slot.** You can target one additional creature for each spell slot level above 3.
 
-## Fog Cloud
+### Fog Cloud
 
 *Level 1 Conjuration (Druid, Ranger, Sorcerer, Wizard)*
 
@@ -9599,7 +9599,7 @@ You create a 20-foot-radius Sphere of fog centered on a point within range. The 
 
 **Using a Higher-Level Spell Slot.** The fog's radius increases by 20 feet for each spell slot level above 1.
 
-## Forbiddance
+### Forbiddance
 
 *Level 6 Abjuration (Cleric)*
 
@@ -9619,7 +9619,7 @@ You can designate a password when you cast the spell. A creature that speaks the
 
 The spell's area can't overlap with the area of another *Forbiddance* spell. If you cast *Forbiddance* every day for 30 days in the same location, the spell lasts until it is dispelled, and the Material components are consumed on the last casting.
 
-## Forcecage
+### Forcecage
 
 *Level 7 Evocation (Bard, Warlock, Wizard)*
 
@@ -9641,7 +9641,7 @@ A creature inside the cage can't leave it by non-magical means. If the creature 
 
 This spell can't be dispelled by *Dispel Magic*.
 
-## Foresight
+### Foresight
 
 *Level 9 Divination (Bard, Druid, Warlock, Wizard)*
 
@@ -9655,7 +9655,7 @@ This spell can't be dispelled by *Dispel Magic*.
 
 You touch a willing creature and bestow a limited ability to see into the immediate future. For the duration, the target has Advantage on D20 Tests, and other creatures have Disadvantage on attack rolls against it. The spell ends early if you cast it again.
 
-## Freedom of Movement
+### Freedom of Movement
 
 *Level 4 Abjuration (Bard, Cleric, Druid, Ranger)*
 
@@ -9673,7 +9673,7 @@ In addition, the target can spend 5 feet of movement to automatically escape fro
 
 **Using a Higher-Level Spell Slot.** You can target one additional creature for each spell slot level above 4.
 
-## Freezing Sphere
+### Freezing Sphere
 
 *Level 6 Evocation (Sorcerer, Wizard)*
 
@@ -9693,7 +9693,7 @@ You can refrain from firing the globe after completing the spell's casting. If y
 
 **Using a Higher-Level Spell Slot.** The damage increases by 1d6 for each spell slot level above 6.
 
-## Gaseous Form
+### Gaseous Form
 
 *Level 3 Transmutation (Sorcerer, Warlock, Wizard)*
 
@@ -9713,7 +9713,7 @@ The target can't talk or manipulate objects, and any objects it was carrying or 
 
 **Using a Higher-Level Spell Slot.** You can target one additional creature for each spell slot level above 3.
 
-## Gate
+### Gate
 
 *Level 9 Conjuration (Cleric, Sorcerer, Warlock, Wizard)*
 
@@ -9733,7 +9733,7 @@ Deities and other planar rulers can prevent portals created by this spell from o
 
 When you cast this spell, you can speak the name of a specific creature (a pseudonym, title, or nickname doesn't work). If that creature is on a plane other than the one you are on, the portal opens next to the named creature and transports it to the nearest unoccupied space on your side of the portal. You gain no special power over the creature, and it is free to act as the GM deems appropriate. It might leave, attack you, or help you.
 
-## Geas
+### Geas
 
 *Level 5 Enchantment (Bard, Cleric, Druid, Paladin, Wizard)*
 
@@ -9755,7 +9755,7 @@ A *Remove Curse*, *Greater Restoration*, or *Wish* spell ends this spell.
 
 **Using a Higher-Level Spell Slot.** If you use a level 7 or 8 spell slot, the duration is 365 days. If you use a level 9 spell slot, the spell lasts until it is ended by one of the spells mentioned above.
 
-## Gentle Repose
+### Gentle Repose
 
 *Level 2 Necromancy (Cleric, Paladin, Wizard)*
 
@@ -9771,7 +9771,7 @@ You touch a corpse or other remains. For the duration, the target is protected f
 
 The spell also effectively extends the time limit on raising the target from the dead, since days spent under the influence of this spell don't count against the time limit of spells such as *Raise Dead*.
 
-## Giant Insect
+### Giant Insect
 
 *Level 4 Conjuration (Druid)*
 
@@ -9789,7 +9789,7 @@ The creature is an ally to you and your allies. In combat, the creature shares y
 
 **Using a Higher-Level Spell Slot.** Use the spell slot's level for the spell's level in the stat block.
 
-## Giant Insect
+#### Giant Insect
 
 Large Beast, Unaligned
 
@@ -9810,11 +9810,11 @@ Speed 40 ft., Climb 40 ft., Fly 40 ft. (Wasp only)
 
 **CR** None (XP 0; PB equals your Proficiency Bonus)
 
-### Traits
+##### Traits
 
 **Spider Climb.** The insect can climb difficult surfaces, including along ceilings, without needing to make an ability check.
 
-### Actions
+##### Actions
 
 **Multitattack.** The insect makes a number of attacks equal to half this spell's level (round down).
 
@@ -9822,7 +9822,7 @@ Speed 40 ft., Climb 40 ft., Fly 40 ft. (Wasp only)
 
 **Web Bolt (Spider Only).** *Ranged Attack Roll:* Bonus equals your spell attack modifier, range 60 ft. *Hit:* 1d10 + 3 plus the spell's level Bludgeoning damage, and the target's Speed is reduced to 0 until the start of the insect's next turn.
 
-### Bonus Actions
+##### Bonus Actions
 
 **Venomous Spew (Centipede Only).** *Constitution Saving Throw:* Your spell save DC, one creature the insect can see within 10 feet. *Failure:* The target has the Poisoned condition until the start of the insect's next turn.
 
@@ -10002,7 +10002,7 @@ The spell creates the effects below within the warded area. *Dispel Magic* has n
 - *Gust of Wind* in one corridor or room (the wind blows continuously while the spell lasts)
 - *Suggestion* in one 5-foot square; any creature that enters that square receives the suggestion mentally
 
-## Guidance
+### Guidance
 
 *Divination Cantrip (Cleric, Druid)*
 
@@ -10016,7 +10016,7 @@ The spell creates the effects below within the warded area. *Dispel Magic* has n
 
 You touch a willing creature and choose a skill. Until the spell ends, the creature adds 1d4 to any ability check using the chosen skill.
 
-## Guiding Bolt
+### Guiding Bolt
 
 *Level 1 Evocation (Cleric)*
 
@@ -10032,7 +10032,7 @@ You hurl a bolt of light toward a creature within range. Make a ranged spell att
 
 **Using a Higher-Level Spell Slot.** The damage increases by 1d6 for each spell slot level above 1.
 
-## Gust of Wind
+### Gust of Wind
 
 *Level 2 Evocation (Druid, Ranger, Sorcerer, Wizard)*
 
@@ -10052,7 +10052,7 @@ The gust disperses gas or vapor, and it extinguishes candles and similar unprote
 
 As a Bonus Action on your later turns, you can change the direction in which the Line blasts from you.
 
-## Hallow
+### Hallow
 
 *Level 5 Abjuration (Cleric)*
 
@@ -10090,7 +10090,7 @@ You touch a point and infuse an area around it with holy or unholy power. The ar
 
 **Vulnerability.** Creatures of any types you choose have Vulnerability to one damage type of your choice while in the area.
 
-## Hallucinatory Terrain
+### Hallucinatory Terrain
 
 *Level 4 Illusion (Bard, Druid, Warlock, Wizard)*
 
@@ -10106,7 +10106,7 @@ You make natural terrain in a 150-foot Cube in range look, sound, and smell like
 
 The tactile characteristics of the terrain are unchanged, so creatures entering the area are likely to notice the illusion. If the difference isn't obvious by touch, a creature examining the illusion can take the Study action to make an Intelligence (Investigation) check against your spell save DC to disbelieve it. If a creature discerns that the terrain is illusory, the creature sees a vague image superimposed on the real terrain.
 
-## Harm
+### Harm
 
 *Level 6 Necromancy (Cleric)*
 
@@ -10120,7 +10120,7 @@ The tactile characteristics of the terrain are unchanged, so creatures entering 
 
 You unleash virulent magic on a creature you can see within range. The target makes a Constitution saving throw. On a failed save, it takes 14d6 Necrotic damage, and its Hit Point maximum is reduced by an amount equal to the Necrotic damage it took. On a successful save, it takes half as much damage only. This spell can't reduce a target's Hit Point maximum below 1.
 
-## Haste
+### Haste
 
 *Level 3 Transmutation (Sorcerer, Wizard)*
 
@@ -10136,7 +10136,7 @@ Choose a willing creature that you can see within range. Until the spell ends, t
 
 When the spell ends, the target is Incapacitated and has a Speed of 0 until the end of its next turn, as a wave of lethargy washes over it.
 
-## Heal
+### Heal
 
 *Level 6 Abjuration (Cleric, Druid)*
 
@@ -10152,7 +10152,7 @@ Choose a creature that you can see within range. Positive energy washes through 
 
 **Using a Higher-Level Spell Slot.** The healing increases by 10 for each spell slot level above 6.
 
-## Healing Word
+### Healing Word
 
 *Level 1 Abjuration (Bard, Cleric, Druid)*
 
@@ -10168,7 +10168,7 @@ A creature of your choice that you can see within range regains Hit Points equal
 
 **Using a Higher-Level Spell Slot.** The healing increases by 2d4 for each spell slot level above 1.
 
-## Heat Metal
+### Heat Metal
 
 *Level 2 Transmutation (Bard, Druid)*
 
@@ -10186,7 +10186,7 @@ If a creature is holding or wearing the object and takes the damage from it, the
 
 **Using a Higher-Level Spell Slot.** The damage increases by 1d8 for each spell slot level above 2.
 
-## Hellish Rebuke
+### Hellish Rebuke
 
 *Level 1 Evocation (Warlock)*
 
@@ -10202,7 +10202,7 @@ The creature that damaged you is momentarily surrounded by green flames. It make
 
 **Using a Higher-Level Spell Slot.** The damage increases by 1d10 for each spell slot level above 1.
 
-## Heroes' Feast
+### Heroes' Feast
 
 *Level 6 Conjuration (Bard, Cleric, Druid)*
 
@@ -10218,7 +10218,7 @@ You conjure a feast that appears on a surface in an unoccupied 10-foot Cube next
 
 A creature that partakes gains several benefits, which last for 24 hours. The creature has Resistance to Poison damage, and it has Immunity to the Frightened and Poisoned conditions. Its Hit Point maximum also increases by 2d10, and it gains the same number of Hit Points.
 
-## Heroism
+### Heroism
 
 *Level 1 Enchantment (Bard, Paladin)*
 
@@ -10234,7 +10234,7 @@ A willing creature you touch is imbued with bravery. Until the spell ends, the c
 
 **Using a Higher-Level Spell Slot.** You can target one additional creature for each spell slot level above 1.
 
-## Hex
+### Hex
 
 *Level 1 Enchantment (Warlock)*
 
@@ -10252,7 +10252,7 @@ If the target drops to 0 Hit Points before this spell ends, you can take a Bonus
 
 **Using a Higher-Level Spell Slot.** Your Concentration can last longer with a spell slot of level 2 (up to 4 hours), 3–4 (up to 8 hours), or 5+ (24 hours).
 
-## Hideosous Laughter
+### Hideosous Laughter
 
 *Level 1 Enchantment (Bard, Warlock, Wizard)*
 
@@ -10270,7 +10270,7 @@ At the end of each of its turns and each time it takes damage, it makes another 
 
 **Using a Higher-Level Spell Slot.** You can target one additional creature for each spell slot level above 1.
 
-## Hold Monster
+### Hold Monster
 
 *Level 5 Enchantment (Bard, Sorcerer, Warlock, Wizard)*
 
@@ -10384,7 +10384,7 @@ Hailstones turn ground in the Cylinder into Difficult Terrain until the end of y
 
 **Using a Higher-Level Spell Slot.** The Bludgeoning damage increases by 1d10 for each spell slot level above 4.
 
-## Identify
+### Identify
 
 *Level 1 Divination (Bard, Wizard)*
 
@@ -10400,7 +10400,7 @@ You touch an object throughout the spell's casting. If the object is a magic ite
 
 If you instead touch a creature throughout the casting, you learn which ongoing spells, if any, are currently affecting it.
 
-## Illusory Script
+### Illusory Script
 
 *Level 1 Illusion (Bard, Warlock, Wizard)*
 
@@ -10418,7 +10418,7 @@ If the spell is dispelled, the original script and the illusion both disappear.
 
 A creature that has Truesight can read the hidden message.
 
-## Incarceration
+### Incarceration
 
 *Level 9 Abjuration (Warlock, Wizard)*
 
@@ -10448,7 +10448,7 @@ Until the spell ends, the target is also affected by one of the following effect
 
 A *Dispel Magic* spell can end the spell only if it is cast with a level 9 spell slot, targeting either the prison or the component used to create it.
 
-## Incendiary Cloud
+### Incendiary Cloud
 
 *Level 8 Conjuration (Druid, Sorcerer, Wizard)*
 
@@ -10586,7 +10586,7 @@ If the target is held shut by *Arcane Lock*, that spell is suppressed for 10 min
 
 When you cast the spell, a loud knock, audible up to 300 feet away, emanates from the target.
 
-## Legend Lore
+### Legend Lore
 
 *Level 5 Divination (Bard, Cleric, Wizard)*
 
@@ -10604,7 +10604,7 @@ The lore might consist of important details, amusing revelations, or even secret
 
 If the famous thing you chose isn't actually famous, you hear sad musical notes played on a trombone, and the spell fails.
 
-## Lesser Restoration
+### Lesser Restoration
 
 *Level 2 Abjuration (Bard, Cleric, Druid, Paladin, Ranger)*
 
@@ -10618,7 +10618,7 @@ If the famous thing you chose isn't actually famous, you hear sad musical notes 
 
 You touch a creature and end one condition on it: Blinded, Deafened, Paralyzed, or Poisoned.
 
-## Levitate
+### Levitate
 
 *Level 2 Transmutation (Sorcerer, Wizard)*
 
@@ -10636,7 +10636,7 @@ The target can move only by pushing or pulling against a fixed object or surface
 
 When the spell ends, the target floats gently to the ground if it is still aloft.
 
-## Light
+### Light
 
 *Evocation Cantrip (Bard, Cleric, Sorcerer, Wizard)*
 
@@ -10652,7 +10652,7 @@ You touch one Large or smaller object that isn't being worn or carried by someon
 
 Covering the object with something opaque blocks the light. The spell ends if you cast it again.
 
-## Lightning Bolt
+### Lightning Bolt
 
 *Level 3 Evocation (Sorcerer, Wizard)*
 
@@ -10668,7 +10668,7 @@ A stroke of lightning forming a 100-foot-long, 5-foot-wide Line blasts out from 
 
 **Using a Higher-Level Spell Slot.** The damage increases by 1d6 for each spell slot level above 3.
 
-## Locate Animals or Plants
+### Locate Animals or Plants
 
 *Level 2 Divination (Bard, Druid, Ranger)*
 
@@ -10682,7 +10682,7 @@ A stroke of lightning forming a 100-foot-long, 5-foot-wide Line blasts out from 
 
 Describe or name a specific kind of Beast, Plant creature, or nonmagical plant. You learn the direction and distance to the closest creature or plant of that kind within 5 miles, if any are present.
 
-## Locate Creature
+### Locate Creature
 
 *Level 4 Divination (Bard, Cleric, Druid, Paladin, Ranger, Wizard)*
 
@@ -10700,7 +10700,7 @@ The spell can locate a specific creature known to you or the nearest creature of
 
 This spell can't locate a creature if any thickness of lead blocks a direct path between you and the creature.
 
-## Locate Object
+### Locate Object
 
 *Level 2 Divination (Bard, Cleric, Druid, Paladin, Ranger, Wizard)*
 
@@ -10718,7 +10718,7 @@ The spell can locate a specific object known to you if you have seen it up close
 
 This spell can't locate an object if any thickness of lead blocks a direct path between you and the object.
 
-## Longstrider
+### Longstrider
 
 *Level 1 Transmutation (Bard, Druid, Ranger, Wizard)*
 
@@ -10734,7 +10734,7 @@ You touch a creature. The target's Speed increases by 10 feet until the spell en
 
 **Using a Higher-Level Spell Slot.** You can target one additional creature for each spell slot level above 1.
 
-## Mage Armor
+### Mage Armor
 
 *Level 1 Abjuration (Sorcerer, Wizard)*
 
@@ -10748,7 +10748,7 @@ You touch a creature. The target's Speed increases by 10 feet until the spell en
 
 You touch a willing creature who isn't wearing armor. Until the spell ends, the target's base AC becomes 13 plus its Dexterity modifier. The spell ends early if the target dons armor.
 
-## Mage Hand
+### Mage Hand
 
 *Conjuration Cantrip (Bard, Sorcerer, Warlock, Wizard)*
 
@@ -10768,7 +10768,7 @@ As a Magic action on your later turns, you can control the hand thus again. As p
 
 The hand can't attack, activate magic items, or carry more than 10 pounds.
 
-## Magic Circle
+### Magic Circle
 
 *Level 3 Abjuration (Cleric, Paladin, Warlock, Wizard)*
 
@@ -10793,7 +10793,7 @@ Each time you cast this spell, you can cause its magic to operate in the reverse
 
 **Using a Higher-Level Spell Slot.** The duration increases by 1 hour for each spell slot level above 3.
 
-## Magic Jar
+### Magic Jar
 
 *Level 6 Necromancy (Wizard)*
 
@@ -10819,7 +10819,7 @@ If the container is destroyed or the spell ends, your soul returns to your body.
 
 When the spell ends, the container is destroyed.
 
-## Magic Missile
+### Magic Missile
 
 *Level 1 Evocation (Sorcerer, Wizard)*
 
@@ -10835,7 +10835,7 @@ You create three glowing darts of magical force. Each dart strikes a creature of
 
 **Using a Higher-Level Spell Slot.** The spell creates one more dart for each spell slot level above 1.
 
-## Magic Mouth
+### Magic Mouth
 
 *Level 2 Illusion (Bard, Wizard)*
 
@@ -10853,7 +10853,7 @@ When that trigger occurs, a magical mouth appears on the object and recites the 
 
 The trigger can be as general or as detailed as you like, though it must be based on visual or audible conditions that occur within 30 feet of the object. For example, you could instruct the mouth to speak when any creature moves within 30 feet of the object or when a silver bell rings within 30 feet of it.
 
-## Magic Weapon
+### Magic Weapon
 
 *Level 2 Transmutation (Paladin, Ranger, Sorcerer, Wizard)*
 
@@ -10869,7 +10869,7 @@ You touch a nonmagical weapon. Until the spell ends, that weapon becomes a magic
 
 **Using a Higher-Level Spell Slot.** The bonus increases to +2 with a level 3–5 spell slot. The bonus increases to +3 with a level 6+ spell slot.
 
-## Magnificent Mansion
+### Magnificent Mansion
 
 *Level 7 Conjuration (Bard, Wizard)*
 
@@ -10891,7 +10891,7 @@ A staff of 100 near-transparent servants attends all who enter. You determine th
 
 When the spell ends, any creatures or objects left inside the extradimensional space are expelled into the unoccupied spaces nearest to the entrance.
 
-## Major Image
+### Major Image
 
 *Level 3 Illusion (Bard, Sorcerer, Warlock, Wizard)*
 
@@ -10911,7 +10911,7 @@ Physical interaction with the image reveals it to be an illusion, for things can
 
 **Using a Higher-Level Spell Slot.** The spell lasts until dispelled, without requiring Concentration, if cast with a level 4+ spell slot.
 
-## Mass Cure Wounds
+### Mass Cure Wounds
 
 *Level 5 Abjuration (Bard, Cleric, Druid)*
 
@@ -10927,7 +10927,7 @@ A wave of healing energy washes out from a point you can see within range. Choos
 
 **Using a Higher-Level Spell Slot.** The healing increases by 1d8 for each spell slot level above 5.
 
-## Mass Heal
+### Mass Heal
 
 *Level 9 Abjuration (Cleric)*
 
@@ -10941,7 +10941,7 @@ A wave of healing energy washes out from a point you can see within range. Choos
 
 A flood of healing energy flows from you into creatures around you. You restore up to 700 Hit Points, divided as you choose among any number of creatures that you can see within range. Creatures healed by this spell also have the Blinded, Deafened, and Poisoned conditions removed from them.
 
-## Mass Healing Word
+### Mass Healing Word
 
 *Level 3 Abjuration (Bard, Cleric)*
 
@@ -10957,7 +10957,7 @@ Up to six creatures of your choice that you can see within range regain Hit Poin
 
 **Using a Higher-Level Spell Slot.** The healing increases by  $1d4$  for each spell slot level above 3.
 
-## Mass Suggestion
+### Mass Suggestion
 
 *Level 6 Enchantment (Bard, Sorcerer, Wizard)*
 
@@ -10975,7 +10975,7 @@ Each target must succeed on a Wisdom saving throw or have the Charmed condition 
 
 **Using a Higher-Level Spell Slot.** The duration is longer with a spell slot of level 7 (10 days), 8 (30 days), or 9 (366 days).
 
-## Maze
+### Maze
 
 *Level 8 Conjuration (Wizard)*
 
@@ -10993,7 +10993,7 @@ The target can take a Study action to try to escape. When it does so, it makes a
 
 When the spell ends, the target reappears in the space it left or, if that space is occupied, in the nearest unoccupied space.
 
-## Meld into Stone
+### Meld into Stone
 
 *Level 3 Transmutation (Cleric, Druid, Ranger)*
 
@@ -11013,7 +11013,7 @@ While merged with the stone, you can't see what occurs outside it, and any Wisdo
 
 Minor physical damage to the stone doesn't harm you, but its partial destruction or a change in its shape (to the extent that you no longer fit within it) expels you and deals  $6d6$  Force damage to you. The stone's complete destruction (or transmutation into a different substance) expels you and deals 50 Force damage to you. If expelled, you move into an unoccupied space closest to where you first entered and have the Prone condition.
 
-## Mending
+### Mending
 
 *Transmutation Cantrip (Bard, Cleric, Druid, Sorcerer, Wizard)*
 
@@ -11029,7 +11029,7 @@ This spell repairs a single break or tear in an object you touch, such as a brok
 
 This spell can physically repair a magic item, but it can't restore magic to such an object.
 
-## Message
+### Message
 
 *Transmutation Cantrip (Bard, Druid, Sorcerer, Wizard)*
 
@@ -11553,7 +11553,7 @@ You create a magical effect within range. Choose the effect from the options bel
 
 Eight rays of light flash from you in a 60-foot Cone. Each creature in the Cone makes a Dexterity saving throw. For each target, roll 1d8 to determine which color ray affects it, consulting the Prismatic Rays table.
 
-### Prismatic Rays
+#### Prismatic Rays
 
 | 1d8 | Ray                                                                               |
 |-----|-----------------------------------------------------------------------------------|
@@ -11566,7 +11566,7 @@ Eight rays of light flash from you in a 60-foot Cone. Each creature in the Cone 
 | 7   | **Violet.** *Failed Save:* The target has the Blinded condition and makes a Wisdom saving throw at the start of your next turn. On a successful save, the condition ends. On a failed save, the condition ends, and the creature teleports to another plane of existence (GM's choice). |
 | 8   | **Special.** The target is struck by two rays. Roll twice, rerolling any 8. |
 
-#### Prismatic Wall
+### Prismatic Wall
 
 *Level 9 Abjuration (Bard, Wizard)*
 
@@ -11598,7 +11598,7 @@ The wall, which has AC 10, can be destroyed one layer at a time, in order from r
 | 6     | <b>Indigo.</b> <i>Failed Save:</i> The target has the Restrained condition and makes a Constitution saving throw at the end of each of its turns. If it successfully saves three times, the condition ends. If it fails three times, it has the Petrified condition until it is freed by an effect like the <i>Greater Restoration</i> spell. The successes and failures needn't be consecutive; keep track of both until the target collects three of a kind. <i>Additional Effects:</i> Spells can't be cast through this layer, which is destroyed by Bright Light shed by the <i>Daylight</i> spell. |
 | 7     | <b>Violet.</b> <i>Failed Save:</i> The target has the Blinded condition and makes a Wisdom saving throw at the start of your next turn. On a successful save, the condition ends. On a failed save, the condition ends, and the creature teleports to another plane of existence (GM's choice). <i>Additional Effects:</i> This layer is destroyed by <i>Dispel Magic</i> .                                                                                                                                                                                                                              |
 
-## Private Sanctum
+### Private Sanctum
 
 *Level 4 Abjuration (Wizard)*
 
@@ -11625,7 +11625,7 @@ Casting this spell on the same spot every day for 365 days makes the spell last 
 
 **Using a Higher-Level Spell Slot.** You can increase the size of the Cube by 100 feet for each spell slot level above 4.
 
-## Produce Flame
+### Produce Flame
 
 *Conjuration Cantrip (Druid)*
 
@@ -11643,7 +11643,7 @@ Until the spell ends, you can take a Magic action to hurl fire at a creature or 
 
 **Cantrip Upgrade.** The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8).
 
-## Programmed Illusion
+### Programmed Illusion
 
 *Level 6 Illusion (Bard, Wizard)*
 
@@ -11663,7 +11663,7 @@ The trigger can be as general or as detailed as you like, though it must be base
 
 Physical interaction with the image reveals it to be illusory, since things can pass through it. A creature that takes the Study action to examine the image can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the creature can see through the image, and any noise it makes sounds hollow to the creature.
 
-## Project Image
+### Project Image
 
 *Level 7 Illusion (Bard, Wizard)*
 
@@ -11789,7 +11789,7 @@ A frigid beam of blue-white light streaks toward a creature within range. Make a
 
 **Cantrip Upgrade.** The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8).
 
-## Regenerate
+### Regenerate
 
 *Level 7 Transmutation (Bard, Cleric, Druid)*
 
@@ -11803,7 +11803,7 @@ A frigid beam of blue-white light streaks toward a creature within range. Make a
 
 A creature you touch regains 4d8 + 15 Hit Points. For the duration, the target regains 1 Hit Point at the start of each of its turns, and any severed body parts regrow after 2 minutes.
 
-## Ray of Sickness
+### Ray of Sickness
 
 *Level 1 Necromancy (Sorcerer, Wizard)*
 
@@ -11819,7 +11819,7 @@ You shoot a greenish ray at a creature within range. Make a ranged spell attack 
 
 **Using a Higher-Level Spell Slot.** The damage increases by 1d8 for each spell slot level above 1.
 
-## Reincarnate
+### Reincarnate
 
 *Level 5 Necromancy (Druid)*
 
@@ -11843,7 +11843,7 @@ You touch a dead Humanoid or a piece of one. If the creature has been dead no lo
 
 The reincarnated creature makes any choices that a species' description offers, and the creature recalls its former life. It retains the capabilities it had in its original form, except it loses the traits of its previous species and gains the traits of its new one.
 
-## Remove Curse
+### Remove Curse
 
 *Level 3 Abjuration (Cleric, Paladin, Warlock, Wizard)*
 
@@ -11857,7 +11857,7 @@ The reincarnated creature makes any choices that a species' description offers, 
 
 At your touch, all curses affecting one creature or object end. If the object is a cursed magic item, its curse remains, but the spell breaks its owner's Attunement to the object so it can be removed or discarded.
 
-## Resilient Sphere
+### Resilient Sphere
 
 *Level 4 Abjuration (Wizard)*
 
@@ -11877,7 +11877,7 @@ The sphere is weightless and just large enough to contain the creature or object
 
 A *Disintegrate* spell targeting the globe destroys it without harming anything inside.
 
-## Resistance
+### Resistance
 
 *Abjuration Cantrip (Cleric, Druid)*
 
@@ -11891,7 +11891,7 @@ A *Disintegrate* spell targeting the globe destroys it without harming anything 
 
 You touch a willing creature and choose a damage type: Acid, Bludgeoning, Cold, Fire, Lightning, Necrotic, Piercing, Poison, Radiant, Slashing, or Thunder. When the creature takes damage of the chosen type before the spell ends, the creature reduces the total damage taken by 1d4. A creature can benefit from this spell only once per turn.
 
-## Resurrection
+### Resurrection
 
 *Level 7 Necromancy (Bard, Cleric)*
 
@@ -12002,7 +12002,7 @@ You hurl three fiery rays. You can hurl them at one target within range or at se
 
 **Using a Higher-Level Spell Slot.** You create one additional ray for each spell slot level above 2.
 
-## Scrying
+### Scrying
 
 *Level 5 Divination (Bard, Cleric, Druid, Warlock, Wizard)*
 
@@ -12034,7 +12034,7 @@ On a failed save, the spell creates an Invisible, intangible sensor within 10 fe
 
 Instead of targeting a creature, you can target a location you have seen. When you do so, the sensor appears at that location and doesn't move.
 
-## Searing Smite
+### Searing Smite
 
 *Level 1 Evocation (Paladin)*
 
@@ -12050,7 +12050,7 @@ As you hit the target, it takes an extra 1d6 Fire damage from the attack. At the
 
 **Using a Higher-Level Spell Slot.** All the damage increases by 1d6 for each spell slot level above 1.
 
-## Secret Chest
+### Secret Chest
 
 *Level 4 Conjuration (Wizard)*
 
@@ -12068,7 +12068,7 @@ While the chest remains on the Ethereal Plane, you can take a Magic action and t
 
 After 60 days, there is a cumulative 5 percent chance at the end of each day that the spell ends. The spell also ends if you cast this spell again or if the Tiny replica chest is destroyed. If the spell ends and the larger chest is on the Ethereal Plane, the chest remains there for you or someone else to find.
 
-## See Invisibility
+### See Invisibility
 
 *Level 2 Divination (Bard, Sorcerer, Wizard)*
 
@@ -12082,7 +12082,7 @@ After 60 days, there is a cumulative 5 percent chance at the end of each day tha
 
 For the duration, you see creatures and objects that have the Invisible condition as if they were visible, and you can see into the Ethereal Plane. Creatures and objects there appear ghostly.
 
-## Seeming
+### Seeming
 
 *Level 5 Illusion (Bard, Sorcerer, Wizard)*
 
@@ -12102,7 +12102,7 @@ The changes wrought by this spell fail to hold up to physical inspection. For ex
 
 A creature that takes the Study action to examine a target can make an Intelligence (Investigation) check against your spell save DC. If it succeeds, it becomes aware that the target is disguised.
 
-## Sending
+### Sending
 
 *Level 3 Divination (Bard, Cleric, Wizard)*
 
@@ -12120,7 +12120,7 @@ You can send the message across any distance and even to other planes of existen
 
 Upon receiving your message, a creature can block your ability to reach it again with this spell for 8 hours. If you try to send another message during that time, you learn that you are blocked, and the spell fails.
 
-## Sequester
+### Sequester
 
 *Level 7 Transmutation (Wizard)*
 
@@ -12138,7 +12138,7 @@ If the target is a creature, it enters a state of suspended animation; it has th
 
 You can set a condition for the spell to end early. The condition can be anything you choose, but it must occur or be visible within 1 mile of the target. Examples include "after 1,000 years" or "when the tarrasque awakens." This spell also ends if the target takes any damage.
 
-## Shapechange
+### Shapechange
 
 *Level 9 Transmutation (Druid, Wizard)*
 
@@ -12158,7 +12158,7 @@ Your game statistics are replaced by the stat block of the chosen form, but you 
 
 Upon shape-shifting, you determine whether your equipment drops to the ground or changes in size and shape to fit the new form while you're in it.
 
-## Shatter
+### Shatter
 
 *Level 2 Evocation (Bard, Sorcerer, Wizard)*
 
@@ -12176,7 +12176,7 @@ A nonmagical object that isn't being worn or carried also takes the damage if it
 
 **Using a Higher-Level Spell Slot.** The damage increases by 1d8 for each spell slot level above 2.
 
-## Shield
+### Shield
 
 *Level 1 Abjuration (Sorcerer, Wizard)*
 
@@ -12306,7 +12306,7 @@ If the simulacrum takes damage, the only way to restore its Hit Points is to rep
 
 The simulacrum lasts until it drops to 0 Hit Points, at which point it reverts to snow and melts away. If you cast this spell again, any simulacrum you created with this spell is instantly destroyed.
 
-## Sleep
+### Sleep
 
 *Level 1 Enchantment (Bard, Sorcerer, Wizard)*
 
@@ -12322,7 +12322,7 @@ Each creature of your choice in a 5-foot-radius Sphere centered on a point withi
 
 Creatures that don't sleep, such as elves, or that have Immunity to the Exhaustion condition automatically succeed on saves against this spell.
 
-## Sleet Storm
+### Sleet Storm
 
 *Level 3 Conjuration (Druid, Sorcerer, Wizard)*
 
@@ -12338,7 +12338,7 @@ Until the spell ends, sleet falls in a 40-foot-tall, 20-foot-radius Cylinder cen
 
 Ground in the Cylinder is Difficult Terrain. When a creature enters the Cylinder for the first time on a turn or starts its turn there, it must succeed on a Dexterity saving throw or have the Prone condition and lose Concentration.
 
-## Slow
+### Slow
 
 *Level 3 Transmutation (Bard, Sorcerer, Wizard)*
 
@@ -12356,7 +12356,7 @@ An affected target's Speed is halved, it takes a -2 penalty to AC and Dexterity 
 
 An affected target repeats the save at the end of each of its turns, ending the spell on itself on a success.
 
-## Sorcerous Burst
+### Sorcerous Burst
 
 *Evocation Cantrip (Sorcerer)*
 
@@ -12374,7 +12374,7 @@ If you roll an 8 on a d8 for this spell, you can roll another d8, and add it to 
 
 **Cantrip Upgrade.** The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8).
 
-## Spare the Dying
+### Spare the Dying
 
 *Necromancy Cantrip (Cleric, Druid)*
 
@@ -12390,7 +12390,7 @@ Choose a creature within range that has 0 Hit Points and isn't dead. The creatur
 
 **Cantrip Upgrade.** The range doubles when you reach levels 5 (30 feet), 11 (60 feet), and 17 (120 feet).
 
-## ***Speak with Animals***
+### ***Speak with Animals***
 
 *Level 1 Divination (Bard, Druid, Ranger, Warlock)*
 
@@ -12406,7 +12406,7 @@ For the duration, you can comprehend and verbally communicate with Beasts, and y
 
 Most Beasts have little to say about topics that don't pertain to survival or companionship, but at minimum, a Beast can give you information about nearby locations and monsters, including whatever it has perceived within the past day.
 
-## ***Speak with Dead***
+### ***Speak with Dead***
 
 *Level 3 Necromancy (Bard, Cleric, Wizard)*
 
@@ -12422,7 +12422,7 @@ You grant the semblance of life to a corpse of your choice within range, allowin
 
 Until the spell ends, you can ask the corpse up to five questions. The corpse knows only what it knew in life, including the languages it knew. Answers are usually brief, cryptic, or repetitive, and the corpse is under no compulsion to offer a truthful answer if you are antagonistic toward it or it recognizes you as an enemy. This spell doesn't return the creature's soul to its body, only its animating spirit. Thus, the corpse can't learn new information, doesn't comprehend anything that has happened since it died, and can't speculate about future events.
 
-## ***Speak with Plants***
+### ***Speak with Plants***
 
 *Level 3 Transmutation (Bard, Druid, Ranger)*
 
@@ -12442,7 +12442,7 @@ The spell doesn't enable plants to uproot themselves and move about, but they ca
 
 If a Plant creature is in the area, you can communicate with it as if you shared a common language.
 
-## ***Spider Climb***
+### ***Spider Climb***
 
 *Level 2 Transmutation (Sorcerer, Warlock, Wizard)*
 
@@ -12458,7 +12458,7 @@ Until the spell ends, one willing creature you touch gains the ability to move u
 
 ***Using a Higher-Level Spell Slot.*** You can target one additional creature for each spell slot level above 2.
 
-## ***Spike Growth***
+### ***Spike Growth***
 
 *Level 2 Transmutation (Druid, Ranger)*
 
@@ -12474,7 +12474,7 @@ The ground in a 20-foot-radius Sphere centered on a point within range sprouts h
 
 The transformation of the ground is camouflaged to look natural. Any creature that can't see the area when the spell is cast must take a Search action and succeed on a Wisdom (Perception or Survival) check against your spell save DC to recognize the terrain as hazardous before entering it.
 
-## ***Spirit Guardians***
+### ***Spirit Guardians***
 
 *Level 3 Conjuration (Cleric)*
 
@@ -12492,7 +12492,7 @@ When you cast this spell, you can designate creatures to be unaffected by it. An
 
 **Using a Higher-Level Spell Slot.** The damage increases by 1d8 for each spell slot level above 3.
 
-## Spiritual Weapon
+### Spiritual Weapon
 
 *Level 2 Evocation (Cleric)*
 
@@ -12507,7 +12507,7 @@ As a Bonus Action on your later turns, you can move the force up to 20 feet and 
 
 **Using a Higher-Level Spell Slot.** The damage increases by 1d8 for every slot level above 2.
 
-## Starry Wisp
+### Starry Wisp
 
 *Evocation Cantrip (Bard, Druid)*
 
@@ -12520,7 +12520,7 @@ You launch a mote of light at one creature or object within range. Make a ranged
 
 **Cantrip Upgrade.** The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8).
 
-## Stinking Cloud
+### Stinking Cloud
 
 *Level 3 Conjuration (Bard, Sorcerer, Wizard)*
 
@@ -12533,7 +12533,7 @@ You create a 20-foot-radius Sphere of yellow, nauseating gas centered on a point
 
 Each creature that starts its turn in the Sphere must succeed on a Constitution saving throw or have the Poisoned condition until the end of the current turn. While Poisoned in this way, the creature can't take an action or a Bonus Action.
 
-## Stone Shape
+### Stone Shape
 
 *Level 4 Transmutation (Cleric, Druid, Wizard)*
 
@@ -12544,7 +12544,7 @@ Each creature that starts its turn in the Sphere must succeed on a Constitution 
 
 You touch a stone object of Medium size or smaller or a section of stone no more than 5 feet in any dimension and form it into any shape you like. For example, you could shape a large rock into a weapon, statue, or coffer, or you could make a small passage through a wall that is 5 feet thick. You could also shape a stone door or its frame to seal the door shut. The object you create can have up to two hinges and a latch, but finer mechanical detail isn't possible.
 
-## Stoneskin
+### Stoneskin
 
 *Level 4 Transmutation (Druid, Ranger, Sorcerer, Wizard)*
 
@@ -12555,7 +12555,7 @@ You touch a stone object of Medium size or smaller or a section of stone no more
 
 Until the spell ends, one willing creature you touch has Resistance to Bludgeoning, Piercing, and Slashing damage.
 
-## Storm of Vengeance
+### Storm of Vengeance
 
 *Level 9 Conjuration (Druid)*
 
@@ -12610,7 +12610,7 @@ The creature is an ally to you and your allies. In combat, the creature shares y
 
 **Using a Higher-Level Spell Slot.** Use the spell slot’s level for the spell’s level in the stat block.
 
-## Draconic Spirit
+#### Draconic Spirit
 
 *Large Dragon, Neutral*
 
@@ -12636,11 +12636,11 @@ Passive Perception 12
 
 **CR** None (XP 0; PB equals your Proficiency Bonus)
 
-### Traits
+##### Traits
 
 **Shared Resistances.** When you summon the spirit, choose one of its Resistances. You have Resistance to the chosen damage type until the spell ends.
 
-### Actions
+##### Actions
 
 **Multiattack.** The spirit makes a number of Rend attacks equal to half the spell’s level (round down), and it uses Breath Weapon.
 
@@ -12666,7 +12666,7 @@ Until the spell ends, you can take a Magic action to create a new Line of radian
 
 For the duration, a mote of brilliant radiance shines above you. It sheds Bright Light in a 30-foot radius and Dim Light for an additional 30 feet. This light is sunlight.
 
-## Sunburst
+### Sunburst
 
 *Level 8 Evocation (Cleric, Druid, Sorcerer, Wizard)*
 
@@ -12684,7 +12684,7 @@ A creature Blinded by this spell makes another Constitution saving throw at the 
 
 This spell dispels Darkness in its area that was created by any spell.
 
-## Symbol
+### Symbol
 
 *Level 7 Abjuration (Bard, Cleric, Druid, Wizard)*
 
@@ -12720,7 +12720,7 @@ Once triggered, the glyph glows, filling a 60-foot-radius Sphere with Dim Light 
 
 **Stunning.** Each target must succeed on a Wisdom saving throw or have the Stunned condition for 1 minute.
 
-## Telekinesis
+### Telekinesis
 
 *Level 5 Transmutation (Sorcerer, Wizard)*
 
@@ -12742,7 +12742,7 @@ If the object is worn or carried by a creature, that creature must succeed on a 
 
 You can exert fine control on objects with your telekinetic grip, such as manipulating a simple tool,
 
-## Telepathic Bond
+### Telepathic Bond
 
 *Level 5 Divination (Bard, Wizard)*
 
@@ -12755,7 +12755,7 @@ You forge a telepathic link among up to eight willing creatures of your choice w
 
 Until the spell ends, the targets can communicate telepathically through the bond whether or not they share a language. The communication is possible over any distance, though it can't extend to other planes of existence.
 
-## Teleport
+### Teleport
 
 *Level 7 Conjuration (Bard, Sorcerer, Wizard)*
 
@@ -12768,7 +12768,7 @@ This spell instantly transports you and up to eight willing creatures that you c
 
 The destination you choose must be known to you, and it must be on the same plane of existence as you. Your familiarity with the destination determines whether you arrive there successfully. The GM rolls 1d100 and consults the Teleportation Outcome table and the explanations after it.
 
-### Teleportation Outcome
+#### Teleportation Outcome
 
 | Familiarity              | Mishap | Similar Area | Off Target | On Target |
 |--------------------------|--------|--------------|------------|-----------|
@@ -12796,7 +12796,7 @@ The destination you choose must be known to you, and it must be on the same plan
 
 **On Target.** You and your group (or the target object) appear where you intended.
 
-## Teleportation Circle
+### Teleportation Circle
 
 *Level 5 Conjuration (Bard, Sorcerer, Warlock, Wizard)*
 
@@ -13086,7 +13086,7 @@ You unleash a string of insults laced with subtle enchantments at one creature y
 
 **Cantrip Upgrade.** The damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6).
 
-## Vitriolic Sphere
+### Vitriolic Sphere
 
 *Level 4 Evocation (Sorcerer, Wizard)*
 
@@ -13099,7 +13099,7 @@ You point at a location within range, and a glowing, 1-foot-diameter ball of aci
 
 **Using a Higher-Level Spell Slot.** The initial damage increases by 2d4 for each spell slot level above 4.
 
-## Wall of Fire
+### Wall of Fire
 
 *Level 4 Evocation (Druid, Sorcerer, Wizard)*
 
@@ -13116,7 +13116,7 @@ One side of the wall, selected by you when you cast this spell, deals 5d8 Fire d
 
 **Using a Higher-Level Spell Slot.** The damage increases by 1d8 for each spell slot level above 4.
 
-## Wall of Force
+### Wall of Force
 
 *Level 5 Evocation (Wizard)*
 
@@ -13129,7 +13129,7 @@ An Invisible wall of force springs into existence at a point you choose within r
 
 Nothing can physically pass through the wall. It is immune to all damage and can't be dispelled by *Dispel Magic*. A *Disintegrate* spell destroys the wall instantly, however. The wall also extends into the Ethereal Plane and blocks ethereal travel through the wall.
 
-## Wall of Ice
+### Wall of Ice
 
 *Level 6 Evocation (Wizard)*
 
@@ -13148,7 +13148,7 @@ A creature moving through the sheet of frigid air for the first time on a turn m
 
 **Using a Higher-Level Spell Slot.** The damage the wall deals when it appears increases by 2d6 and the damage from passing through the sheet of frigid air increases by 1d6 for each spell slot level above 6.
 
-## Wall of Stone
+### Wall of Stone
 
 *Level 5 Evocation (Druid, Sorcerer, Wizard)*
 
@@ -13172,7 +13172,7 @@ The wall is an object made of stone that can be damaged and thus breached. Each 
 
 If you maintain your Concentration on this spell for its full duration, the wall becomes permanent and can't be dispelled. Otherwise, the wall disappears when the spell ends.
 
-## Wall of Thorns
+### Wall of Thorns
 
 *Level 6 Conjuration (Druid)*
 
@@ -13192,7 +13192,7 @@ A creature can move through the wall, albeit slowly and painfully. For every 1 f
 
 **Using a Higher-Level Spell Slot.** Both types of damage increase by 1d8 for each spell slot level above 6.
 
-## Warding Bond
+### Warding Bond
 
 *Level 2 Abjuration (Cleric, Paladin)*
 
@@ -13208,7 +13208,7 @@ You touch another creature that is willing and create a mystic connection betwee
 
 The spell ends if you drop to 0 Hit Points or if you and the target become separated by more than 60 feet. It also ends if the spell is cast again on either of the connected creatures.
 
-## Water Breathing
+### Water Breathing
 
 *Level 3 Transmutation (Druid, Ranger, Sorcerer, Wizard)*
 
@@ -13222,7 +13222,7 @@ The spell ends if you drop to 0 Hit Points or if you and the target become separ
 
 This spell grants up to ten willing creatures of your choice within range the ability to breathe underwater until the spell ends. Affected creatures also retain their normal mode of respiration.
 
-## Water Walk
+### Water Walk
 
 *Level 3 Transmutation (Cleric, Druid, Ranger, Sorcerer)*
 
@@ -13238,7 +13238,7 @@ This spell grants the ability to move across any liquid surface—such as water,
 
 An affected target must take a Bonus Action to pass from the liquid's surface into the liquid itself and vice versa, but if the target falls into the liquid, the target passes through the surface into the liquid below.
 
-## Web
+### Web
 
 *Level 2 Conjuration (Sorcerer, Wizard)*
 
@@ -13260,7 +13260,7 @@ A creature Restrained by the webs can take an action to make a Strength (Athleti
 
 The webs are flammable. Any 5-foot Cube of webs exposed to fire burns away in 1 round, dealing 2d4 Fire damage to any creature that starts its turn in the fire.
 
-## Weird
+### Weird
 
 *Level 9 Illusion (Warlock, Wizard)*
 
@@ -13276,7 +13276,7 @@ You try to create illusory terrors in others' minds. Each creature of your choic
 
 A Frightened target makes a Wisdom saving throw at the end of each of its turns. On a failed save, it takes 5d10 Psychic damage. On a successful save, the spell ends on that target.
 
-## Wind Walk
+### Wind Walk
 
 *Level 6 Transmutation (Druid)*
 
@@ -13292,7 +13292,7 @@ You and up to ten willing creatures of your choice within range assume gaseous f
 
 If a target is in cloud form and flying when the effect ends, the target descends 60 feet per round for 1 minute until it lands, which it does safely. If it can't land after 1 minute, it falls the remaining distance.
 
-## Wind Wall
+### Wind Wall
 
 *Level 3 Evocation (Druid, Ranger)*
 
@@ -13310,7 +13310,7 @@ When the wall appears, each creature in its area makes a Strength saving throw, 
 
 The strong wind keeps fog, smoke, and other gases at bay. Small or smaller flying creatures or objects can't pass through the wall. Loose, lightweight materials brought into the wall fly upward. Arrows, bolts, and other ordinary projectiles launched at targets behind the wall are deflected upward and miss automatically. Boulders hurled by Giants or siege engines, and similar projectiles, are unaffected. Creatures in gaseous form can't pass through it.
 
-## Wish
+### Wish
 
 *Level 9 Conjuration (Sorcerer, Wizard)*
 
@@ -13346,7 +13346,7 @@ Similarly, wishing for a Legendary magic item or an Artifact might instantly tra
 
 The stress of casting *Wish* to produce any effect other than duplicating another spell weakens you. After enduring that stress, each time you cast a spell until you finish a Long Rest, you take 1d10 Necrotic damage per level of that spell. This damage can't be reduced or prevented in any way. In addition, your Strength score becomes 3 for 2d4 days. For each of those days that you spend resting and doing nothing more than light activity, your remaining recovery time decreases by 2 days. Finally, there is a 33 percent chance that you are unable to cast *Wish* ever again if you suffer this stress.
 
-## Word of Recall
+### Word of Recall
 
 *Level 6 Conjuration (Cleric)*
 
@@ -13362,7 +13362,7 @@ You and up to five willing creatures within 5 feet of you instantly teleport to 
 
 You must designate a location, such as a temple, as a sanctuary by casting this spell there.
 
-## Zone of Truth
+### Zone of Truth
 
 *Level 2 Enchantment (Bard, Cleric, Paladin)*
 
@@ -13455,7 +13455,7 @@ A creature's alignment broadly describes its ethical attitudes and ideals. Align
 
 A creature is your ally if it is a member of your adventuring party, your friend, on your side in combat, or a creature that the GM designates as your ally.
 
-## Area of Effect
+### Area of Effect
 
 The descriptions of many spells and other features specify that they have an area of effect, which typically has one of six shapes. These shapes are defined elsewhere in this glossary:
 
@@ -13470,17 +13470,17 @@ To block a line, an obstruction must provide Total Cover. *See also* "Cover."
 
 If the creator of an area of effect places it at an unseen point and an obstruction—such as a wall—is between the creator and that point, the point of origin comes into being on the near side of the obstruction.
 
-## Armor Class
+### Armor Class
 
 An Armor Class (AC) is the target number for an attack roll. AC represents how difficult it is to hit a target.
 
 Your base AC calculation is 10 plus your Dexterity modifier. If a rule gives you another base AC calculation, you choose which calculation to use; you can't use more than one. *See also* "Attack Roll."
 
-## Armor Training
+### Armor Training
 
 Armor training allows you to use armor of a certain category without the following drawbacks. If you wear Light, Medium, or Heavy armor and lack training with it, you have Disadvantage on any D20 Test that involves Strength or Dexterity, and you can't cast spells. If you use a Shield and lack training with it, you don't gain its AC bonus. *See also* "Disadvantage" and "Equipment" ("Armor").
 
-## Attack [Action]
+### Attack [Action]
 
 When you take the Attack action, you can make one attack roll with a weapon or an Unarmed Strike.
 
@@ -13488,19 +13488,19 @@ When you take the Attack action, you can make one attack roll with a weapon or a
 
 **Moving between Attacks.** If you move on your turn and have a feature, such as Extra Attack, that gives you more than one attack as part of the Attack action, you can use some or all of that movement to move between those attacks.
 
-## Attack Roll
+### Attack Roll
 
 An attack roll is a D20 Test that represents making an attack with a weapon, an Unarmed Strike, or a spell. *See also* "Playing the Game" ("D20 Tests").
 
-## Attitude
+### Attitude
 
 A monster has a starting attitude toward a player character: Friendly, Hostile, or Indifferent. *See also* "Friendly," "Hostile," "Indifferent," and "Influence."
 
-## Attunement
+### Attunement
 
 Some magic items require a creature to form a bond—called Attunement—with them before the creature can use an item's magical properties. A creature can have Attunement with no more than three magic items at a time. *See also* "Equipment" ("Magic Items").
 
-## Blinded [Condition]
+### Blinded [Condition]
 
 While you have the Blinded condition, you experience the following effects.
 
@@ -13508,25 +13508,25 @@ While you have the Blinded condition, you experience the following effects.
 
 **Attacks Affected.** Attack rolls against you have Advantage, and your attack rolls have Disadvantage.
 
-## Blindsight
+### Blindsight
 
 If you have Blindsight, you can see within a specific range without relying on physical sight. Within that range, you can see anything that isn't behind Total Cover even if you have the Blinded condition or are in Darkness. Moreover, in that range, you can see something that has the Invisible condition.
 
-## Bloodied
+### Bloodied
 
 A creature is Bloodied while it has half its Hit Points or fewer remaining.
 
-## Bonus Action
+### Bonus Action
 
 A Bonus Action is a special action that you can take on the same turn that you take an action. You can't take more than one Bonus Action on a turn, and you have a Bonus Action to take only if a rule explicitly says so. *See also* "Playing the Game" ("Actions").
 
-## Breaking Objects
+### Breaking Objects
 
 Objects can be harmed by attacks and by some spells, using the rules below. If an object is exceedingly fragile, the GM may allow a creature to break it automatically with the Attack or Utilize action.
 
 **Armor Class.** The Object Armor Class table suggests ACs for various substances.
 
-## Object Armor Class
+#### Object Armor Class
 
 | AC | Substance           | AC | Substance   |
 |----|---------------------|----|-------------|
@@ -13537,7 +13537,7 @@ Objects can be harmed by attacks and by some spells, using the rules below. If a
 
 **Hit Points.** An object is destroyed when it has 0 Hit Points. The Object Hit Points table suggests Hit Points for fragile and resilient objects that are Large or smaller. To track Hit Points for a Huge or Gargantuan object, divide it into Large or smaller sections, and track each section's Hit Points separately. The GM determines whether destroying part of an object causes the whole thing to collapse.
 
-## Object Hit Points
+#### Object Hit Points
 
 | Size                        | Fragile  | Resilient |
 |-----------------------------|----------|-----------|
@@ -13552,33 +13552,33 @@ Objects can be harmed by attacks and by some spells, using the rules below. If a
 
 **No Ability Scores.** An object lacks ability scores unless a rule assigns scores to the object. Without ability scores, an object can't make ability checks, and it fails all saving throws.
 
-## Bright Light
+### Bright Light
 
 Bright Light is normal illumination. *See also* “Playing the Game” (“Exploration”).
 
-## Burning [Hazard]
+### Burning [Hazard]
 
 A burning creature or object takes 1d4 Fire damage at the start of each of its turns. As an action, you can extinguish fire on yourself by giving yourself the Prone condition and rolling on the ground. The fire also goes out if it is doused, submerged, or suffocated.
 
-## Burrow Speed
+### Burrow Speed
 
 A creature that has a Burrow Speed can use that speed to move through sand, earth, mud, or ice. The creature can't burrow through solid rock unless the creature has a trait that allows it to do so. *See also* “Speed.”
 
-## Campaign
+### Campaign
 
 A campaign is a series of adventures. *See also* “Adventure.”
 
-## Cantrip
+### Cantrip
 
 A cantrip is a level 0 spell, which is cast without a spell slot. *See also* “Spells.”
 
-## Carrying Capacity
+### Carrying Capacity
 
 Your size and Strength score determine the maximum weight in pounds that you can carry, as shown in the Carrying Capacity table. The table also shows the maximum weight you can drag, lift, or push.
 
 While dragging, lifting, or pushing weight in excess of the maximum weight you can carry, your Speed can be no more than 5 feet.
 
-## Carrying Capacity
+### Carrying Capacity
 
 | Creature Size | Carry                 | Drag/Lift/Push        |
 |---------------|-----------------------|-----------------------|
@@ -13588,15 +13588,15 @@ While dragging, lifting, or pushing weight in excess of the maximum weight you c
 | Huge          | Str. $\times$ 60 lb.  | Str. $\times$ 120 lb. |
 | Gargantuan    | Str. $\times$ 120 lb. | Str. $\times$ 240 lb. |
 
-## Challenge Rating
+### Challenge Rating
 
 Challenge Rating (CR) summarizes the threat a monster poses to a group of four player characters. Compare a monster's CR to the characters' level. If the CR is higher, the monster is likely a danger. If the CR is lower, the monster likely poses little threat. But circumstances and the number of player characters can significantly alter how threatening a monster is in actual play. “Gameplay Toolbox” (“Combat Encounters”) provides guidance to the GM on using CR while planning potential combat encounters. *See also* “Stat Block.”
 
-## Character Sheet
+### Character Sheet
 
 A character sheet is a paper or digital record that you use to track your character's information. *See also* “Character Creation.”
 
-## Charmed [Condition]
+### Charmed [Condition]
 
 While you have the Charmed condition, you experience the following effects.
 
@@ -13604,7 +13604,7 @@ While you have the Charmed condition, you experience the following effects.
 
 **Social Advantage.** The charmer has Advantage on any ability check to interact with you socially.
 
-## Climbing
+### Climbing
 
 While you're climbing, each foot of movement costs 1 extra foot (2 extra feet in Difficult Terrain). You ignore this extra cost if you have a Climb Speed and use it to climb.
 
@@ -13684,33 +13684,33 @@ A Cube's point of origin isn't included in the area of effect unless its creator
 
 Some game effects curse a creature or an object. The effect that confers a curse defines what the curse does. Curses can be removed by the *Remove Curse* and *Greater Restoration* spells or other magic that explicitly ends curses.
 
-## Cylinder [Area of Effect]
+### Cylinder [Area of Effect]
 
 A Cylinder is an area of effect that extends in straight lines from a point of origin located at the center of the circular base or top of the Cylinder. The effect that creates a Cylinder specifies the radius of the Cylinder's base and the Cylinder's height.
 
 A Cylinder's point of origin is included in the area of effect.
 
-## D20 Test
+### D20 Test
 
 D20 Tests encompass the three main d20 rolls of the game: ability checks, attack rolls, and saving throws. If something in the game affects D20 Tests, it affects all three of these rolls. The GM determines whether a D20 Test is warranted in a given circumstance. *See also* "Playing the Game" ("D20 Tests").
 
-## Damage
+### Damage
 
 Damage represents harm that causes a creature or an object to lose Hit Points.
 
-## Damage Roll
+### Damage Roll
 
 A damage roll is a die roll, adjusted by any applicable modifiers, that deals damage to a target. *See also* "Playing the Game" ("Damage and Healing").
 
-## Damage Threshold
+### Damage Threshold
 
 A creature or an object that has a damage threshold has Immunity to all damage unless it takes an amount of damage from a single attack or effect equal to or greater than its damage threshold, in which case it takes that entire instance of damage. Any damage that fails to meet or exceed the damage threshold is superficial and doesn't reduce Hit Points. For example, if an object has a damage threshold of 10, the object takes no damage if 9 damage is dealt to it, since that damage fails to exceed the threshold. If the same object is dealt 11 damage, it takes all of that damage.
 
-## Damage Types
+### Damage Types
 
 Attacks and other harmful effects deal different types of damage. Damage types have no rules of their own, but other rules, such as Resistance, rely on the types. The Damage Types table offers examples to help a GM assign a type to a new effect.
 
-## Damage Types
+#### Damage Types
 
 | Type        | Examples                             |
 |-------------|--------------------------------------|
@@ -13728,37 +13728,37 @@ Attacks and other harmful effects deal different types of damage. Damage types h
 | Slashing | Claws, cutting objects         |
 | Thunder  | Concussive sound               |
 
-## Darkness
+### Darkness
 
 An area of Darkness is Heavily Obscured. *See also* "Heavily Obscured" and "Playing the Game" ("Exploration").
 
-## Darkvision
+### Darkvision
 
 If you have Darkvision, you can see in Dim Light within a specified range as if it were Bright Light and in Darkness within that range as if it were Dim Light. You discern colors in that Darkness only as shades of gray. *See also* "Playing the Game" ("Exploration").
 
-## Dash [Action]
+### Dash [Action]
 
 When you take the Dash action, you gain extra movement for the current turn. The increase equals your Speed after applying any modifiers. With a Speed of 30 feet, for example, you can move up to 60 feet on your turn if you Dash. If your Speed of 30 feet is reduced to 15 feet, you can move up to 30 feet this turn if you Dash.
 
 If you have a special speed, such as a Fly Speed or Swim Speed, you can use that speed instead of your Speed when you take this action. You choose which speed to use each time you take it. *See also* "Speed."
 
-## Dead
+### Dead
 
 A dead creature has no Hit Points and can't regain them unless it is first revived by magic such as the *Raise Dead* or *Revivify* spell. When such a spell is cast, the spirit knows who is casting it and can refuse. The spirit of a dead creature has left the body and departed for the Outer Planes, and reviving the creature requires calling the spirit back.
 
 If the creature returns to life, the revival effect determines the creature's current Hit Points. Unless otherwise stated, the creature returns to life with any conditions, magical contagions, or curses that were affecting it at death if the durations of those effects are still ongoing. If the creature died with any Exhaustion levels, it returns with 1 fewer level. If the creature had Attunement to one or more magic items, it is no longer attuned to them.
 
-## Deafened [Condition]
+### Deafened [Condition]
 
 While you have the Deafened condition, you experience the following effect.
 
 **Can't Hear.** You can't hear and automatically fail any ability check that requires hearing.
 
-## Death Saving Throw
+### Death Saving Throw
 
 A player character must make a Death Saving Throw (also called a Death Save) if they start their turn with 0 Hit Points. *See also* “Playing the Game” (“Damage and Healing”).
 
-## Dehydration [Hazard]
+### Dehydration [Hazard]
 
 A creature requires an amount of water per day based on its size, as shown in the Water Needs per Day table. A creature that drinks less than half the required water for a day gains 1 Exhaustion level at the day's end. Exhaustion caused by dehydration can't be removed until the creature drinks the full amount of water required for a day. *See also* “Exhaustion.”
 
@@ -13770,7 +13770,7 @@ A creature requires an amount of water per day based on its size, as shown in th
 | Small  | 1 gallon   | Huge       | 16 gallons |
 | Medium | 1 gallon   | Gargantuan | 64 gallons |
 
-## Difficult Terrain
+### Difficult Terrain
 
 If a space is Difficult Terrain, every foot of movement in that space costs 1 extra foot. For example, moving 5 feet through Difficult Terrain costs 10 feet of movement. Difficult Terrain isn't cumulative; either a space is Difficult Terrain or it isn't.
 
@@ -13783,29 +13783,29 @@ A space is Difficult Terrain if the space contains any of the following or somet
 - A narrow opening sized for a creature one size smaller than you
 - A slope of 20 degrees or more
 
-## Difficulty Class
+### Difficulty Class
 
 A Difficulty Class (DC) is the target number for an ability check or a saving throw. *See also* “Playing the Game” (“D20 Tests”).
 
-## Dim Light
+### Dim Light
 
 An area with Dim Light is Lightly Obscured. *See also* “Lightly Obscured” and “Playing the Game” (“Exploration”).
 
-## Disadvantage
+### Disadvantage
 
 If you have Disadvantage on a D20 Test, roll two d20s and use the lower roll. A roll can't be affected by more than one Disadvantage, and Advantage and Disadvantage on the same roll cancel each other. *See also* “Playing the Game” (“D20 Tests”).
 
-## Disengage [Action]
+### Disengage [Action]
 
 If you take the Disengage action, your movement doesn't provoke Opportunity Attacks for the rest of the current turn.
 
-## Dodge [Action]
+### Dodge [Action]
 
 If you take the Dodge action, you gain the following benefits: until the start of your next turn, any attack roll made against you has Disadvantage if you can see the attacker, and you make Dexterity saving throws with Advantage.
 
 You lose these benefits if you have the Incapacitated condition or if your Speed is 0.
 
-## Emanation [Area of Effect]
+### Emanation [Area of Effect]
 
 An Emanation is an area of effect that extends in straight lines from a creature or an object in all directions. The effect that creates an Emanation specifies the distance it extends.
 
@@ -13813,15 +13813,15 @@ An Emanation moves with the creature or object that is its origin unless it is a
 
 An Emanation's origin (creature or object) isn't included in the area of effect unless its creator decides otherwise.
 
-## Encounter
+### Encounter
 
 An encounter is a scene in an adventure that is part of at least one of the game's three pillars: social interaction, exploration, or combat. *See also* “Playing the Game” (“Social Interaction,” “Exploration,” and “Combat”).
 
-## Enemy
+### Enemy
 
 A creature is your enemy if it fights against you in combat, actively works to harm you, or is designated as your enemy by the rules or GM.
 
-## Exhaustion [Condition]
+### Exhaustion [Condition]
 
 While you have the Exhaustion condition, you experience the following effects.
 
@@ -13833,11 +13833,11 @@ While you have the Exhaustion condition, you experience the following effects.
 
 **Removing Exhaustion Levels.** Finishing a Long Rest removes 1 of your Exhaustion levels. When your Exhaustion level reaches 0, the condition ends.
 
-## Experience Points
+### Experience Points
 
 As they overcome challenges and complete adventures, characters earn Experience Points (XP), which are awarded by the Game Master. When a character's XP total crosses certain thresholds, the character's level increases. *See also* "Level Advancement."
 
-## Expertise
+### Expertise
 
 Expertise is a feature that enhances your use of a skill proficiency. When you make an ability check with a skill proficiency in which you have Expertise, your Proficiency Bonus is doubled for that check unless the bonus is doubled by another feature.
 
@@ -13845,25 +13845,25 @@ If you gain Expertise, you gain it in one skill in which you have proficiency. Y
 
 *See also* "Playing the Game" ("Proficiency").
 
-## Falling [Hazard]
+### Falling [Hazard]
 
 A creature that falls takes 1d6 Bludgeoning damage at the end of the fall for every 10 feet it fell, to a maximum of 20d6. When the creature lands, it has the Prone condition unless it avoids taking any damage from the fall.
 
 A creature that falls into water or another liquid can use its Reaction to make a DC 15 Strength (Athletics) or Dexterity (Acrobatics) check to hit the surface head or feet first. On a successful check, any damage resulting from the fall is halved.
 
-## Flying
+### Flying
 
 A variety of effects allow a creature to fly. While flying, you fall if you have the Incapacitated or Prone condition or your Fly Speed is reduced to 0. You can stay aloft in those circumstances if you can hover. *See also* "Falling" and "Fly Speed."
 
-## Fly Speed
+### Fly Speed
 
 A Fly Speed can be used to travel through the air. While you have a Fly Speed, you can stay aloft until you land, fall, or die. *See also* "Flying" and "Speed."
 
-## Friendly [Attitude]
+### Friendly [Attitude]
 
 A Friendly creature views you favorably. You have Advantage on an ability check to influence a Friendly creature. *See also* "Influence."
 
-## Frightened [Condition]
+### Frightened [Condition]
 
 While you have the Frightened condition, you experience the following effects.
 
@@ -13871,7 +13871,7 @@ While you have the Frightened condition, you experience the following effects.
 
 **Can't Approach.** You can't willingly move closer to the source of fear.
 
-## Grappled [Condition]
+### Grappled [Condition]
 
 While you have the Grappled condition, you experience the following effects.
 
@@ -13881,7 +13881,7 @@ While you have the Grappled condition, you experience the following effects.
 
 **Movable.** The grappler can drag or carry you when it moves, but every foot of movement costs it 1 extra foot unless you are Tiny or two or more sizes smaller than it.
 
-## Grappling
+### Grappling
 
 A creature can grapple another creature. Creatures typically grapple by using an Unarmed Strike. Many monsters have special attacks that allow them to quickly grapple prey. However a grapple is initiated, it follows these rules. *See also* "Unarmed Strike" and "Grappled."
 
@@ -13891,19 +13891,19 @@ A creature can grapple another creature. Creatures typically grapple by using an
 
 **Ending a Grapple.** A Grappled creature can use its action to make a Strength (Athletics) or Dexterity (Acrobatics) check against the grapple's escape DC, ending the condition on itself on a success. The condition also ends if the grappler has the Incapacitated condition or if the distance between the Grappled target and the grappler exceeds the grapple's range. In addition, the grappler can release the target at any time (no action required).
 
-## Hazard
+### Hazard
 
 A hazard is an environmental danger. *See also* "Burning," "Dehydration," "Falling," "Malnutrition," and "Suffocation."
 
-## Healing
+### Healing
 
 Healing is how you regain Hit Points. *See also* "Playing the Game" ("Damage and Healing").
 
-## Heavily Obscured
+### Heavily Obscured
 
 You have the Blinded condition while trying to see something in a Heavily Obscured space. *See also* "Blinded," "Darkness," and "Playing the Game" ("Exploration").
 
-## Help [Action]
+### Help [Action]
 
 When you take the Help action, you do one of the following.
 
@@ -13971,7 +13971,7 @@ An improvised weapon is an object wielded as a makeshift weapon, such as broken 
 
 **Weapon Equivalents.** If an improvised weapon resembles a Simple or Martial weapon, the GM may say it functions as that weapon and uses that weapon's rules. For example, the GM could treat a table leg as a Club.
 
-## Incapacitated [Condition]
+### Incapacitated [Condition]
 
 While you have the Incapacitated condition, you experience the following effects.
 
@@ -13983,11 +13983,11 @@ While you have the Incapacitated condition, you experience the following effects
 
 **Surprised.** If you're Incapacitated when you roll Initiative, you have Disadvantage on the roll.
 
-## Indifferent [Attitude]
+### Indifferent [Attitude]
 
 An Indifferent creature has no desire to help or hinder you. Indifferent is the default attitude of a monster. *See also* “Influence.”
 
-## Influence [Action]
+### Influence [Action]
 
 With the Influence action, you urge a monster to do something. Describe or roleplay how you're communicating with the monster. Are you trying to deceive, intimidate, amuse, or gently persuade? The GM then determines whether the monster feels willing, unwilling, or hesitant due to your interaction; this determination establishes whether an ability check is necessary, as explained below.
 
@@ -13997,7 +13997,7 @@ With the Influence action, you urge a monster to do something. Describe or rolep
 
 **Hesitant.** If you urge the monster to do something that it is hesitant to do, you must make an ability check, which is affected by the monster's attitude: Indifferent, Friendly, or Hostile, each of which is defined in this glossary. The Influence Checks table suggests which ability check to make based on how you're interacting with the monster. The GM chooses the check, which has a default DC equal to 15 or the monster's Intelligence score, whichever is higher. On a successful check, the monster does as urged. On a failed check, you must wait 24 hours (or a duration set by the GM) before urging it in the same way again.
 
-## Influence Checks
+#### Influence Checks
 
 | Ability Check            | Interaction                               |
 |--------------------------|-------------------------------------------|
@@ -14007,13 +14007,13 @@ With the Influence action, you urge a monster to do something. Describe or rolep
 | Charisma (Persuasion)    | Persuading a monster that understands you |
 | Wisdom (Animal Handling) | Gently coaxing a Beast or Monstrosity     |
 
-## Initiative
+### Initiative
 
 Initiative determines the order of turns during combat. The combat rules in “Playing the Game” explain how to roll Initiative.
 
 Sometimes a GM might have combatants use their Initiative scores instead of rolling Initiative. Your Initiative score equals 10 plus your Dexterity modifier. If you have Advantage on Initiative rolls, increase your Initiative score by 5. If you have Disadvantage on those rolls, decrease that score by 5. *See also* “Playing the Game” (“Combat”).
 
-## Invisible [Condition]
+### Invisible [Condition]
 
 While you have the Invisible condition, you experience the following effects.
 
@@ -14023,27 +14023,27 @@ While you have the Invisible condition, you experience the following effects.
 
 **Attacks Affected.** Attack rolls against you have Disadvantage, and your attack rolls have Advantage. If a creature can somehow see you, you don't gain this benefit against that creature.
 
-## Jumping
+### Jumping
 
 When you jump, you make either a Long Jump (horizontal) or a High Jump (vertical). *See also* “Long Jump” and “High Jump.”
 
-## Knocking Out a Creature
+### Knocking Out a Creature
 
 When you would reduce a creature to 0 Hit Points with a melee attack, you can instead reduce the creature to 1 Hit Point. The creature then has the Unconscious condition and starts a Short Rest.
 
 The creature remains Unconscious until it regains any Hit Points or until someone uses an action to administer first aid to it, which requires a successful DC 10 Wisdom (Medicine) check.
 
-## Lightly Obscured
+### Lightly Obscured
 
 You have Disadvantage on Wisdom (Perception) checks to see something in a Lightly Obscured space. *See also* “Dim Light” and “Playing the Game” (“Exploration”).
 
-## Line [Area of Effect]
+### Line [Area of Effect]
 
 A Line is an area of effect that extends from a point of origin in a straight path along its length and covers an area defined by its width. The effect that creates a Line specifies its length and width.
 
 A Line's point of origin isn't included in the area of effect unless its creator decides otherwise.
 
-## Long Jump
+### Long Jump
 
 When you make a Long Jump, you leap horizontally a number of feet up to your Strength score if you move at least 10 feet immediately before the jump. When you make a standing Long Jump, you can leap only half that distance. Either way, each foot you jump costs a foot of movement.
 
@@ -14122,7 +14122,7 @@ A space is occupied if a creature is in it or if it is completely filled by obje
 
 You can make an Opportunity Attack when a creature that you can see leaves your reach using its action, its Bonus Action, its Reaction, or one of its speeds. To make the Opportunity Attack, take a Reaction to make one melee attack with a weapon or an Unarmed Strike against the provoking creature. The attack occurs right before the creature leaves your reach. *See also* “Playing the Game” (“Combat”).
 
-## Paralyzed [Condition]
+### Paralyzed [Condition]
 
 While you have the Paralyzed condition, you experience the following effects.
 
@@ -14142,11 +14142,11 @@ Passive Perception is a score that reflects a creature's general awareness of it
 
 A creature's Passive Perception equals 10 plus the creature's Wisdom (Perception) check bonus. If the creature has Advantage on such checks, increase the score by 5. If the creature has Disadvantage on them, decrease the score by 5. For example, a level 1 character with a Wisdom of 15 and proficiency in Perception has a Passive Perception of 14 ( $10 + 2 + 2$ ). If that character has Advantage on Wisdom (Perception) checks, the score becomes 19.
 
-## Per Day
+### Per Day
 
 If a rule says you can use something a certain number of times per day, that means you must finish a Long Rest to use it again after you run out of uses.
 
-## Petrified [Condition]
+### Petrified [Condition]
 
 While you have the Petrified condition, you experience the following effects.
 
@@ -14164,25 +14164,25 @@ While you have the Petrified condition, you experience the following effects.
 
 **Poison Immunity.** You have Immunity to the Poisoned condition.
 
-## Player Character
+### Player Character
 
 A player character is a character controlled by a player. *See also* "Character Creation."
 
-## Poisoned [Condition]
+### Poisoned [Condition]
 
 While you have the Poisoned condition, you experience the following effect.
 
 **Ability Checks and Attacks Affected.** You have Disadvantage on attack rolls and ability checks.
 
-## Possession
+### Possession
 
 Some effects cause a creature to be possessed by another creature or entity. A possessing effect defines how the possession operates. Possession can be prevented by the *Protection from Evil and Good* spell and ended by the *Dispel Evil and Good* spell.
 
-## Proficiency
+### Proficiency
 
 If you have proficiency with something, you can add your Proficiency Bonus to any D20 Test you make using that thing. A creature might have proficiency in a skill or saving throw or with a weapon or tool. *See also* "Playing the Game" ("Proficiency").
 
-## Prone [Condition]
+### Prone [Condition]
 
 While you have the Prone condition, you experience the following effects.
 
@@ -14190,15 +14190,15 @@ While you have the Prone condition, you experience the following effects.
 
 **Attacks Affected.** You have Disadvantage on attack rolls. An attack roll against you has Advantage if the attacker is within 5 feet of you. Otherwise, that attack roll has Disadvantage.
 
-## Reach
+### Reach
 
 A creature has a reach of 5 feet unless a rule says otherwise.
 
-## Reaction
+### Reaction
 
 A Reaction is a special action taken in response to a trigger defined in the Reaction's description. You can take a Reaction on another creature's turn, and if you take it on your turn, you can do so even if you also take an action, a Bonus Action, or both. Once you take a Reaction, you can't take another one until the start of your next turn. The Opportunity Attack is a Reaction available to all creatures. *See also* "Opportunity Attacks" and "Playing the Game" ("Actions").
 
-## Ready [Action]
+### Ready [Action]
 
 You take the Ready action to wait for a particular circumstance before you act. To do so, you take this action on your turn, which lets you act by taking a Reaction before the start of your next turn.
 
@@ -14208,11 +14208,11 @@ When the trigger occurs, you can either take your Reaction right after the trigg
 
 When you Ready a spell, you cast it as normal (expending any resources used to cast it) but hold its energy, which you release with your Reaction when the trigger occurs. To be readied, a spell must have a casting time of an action, and holding on to the spell's magic requires Concentration, which you can maintain up to the start of your next turn. If your Concentration is broken, the spell dissipates without taking effect.
 
-## Resistance
+### Resistance
 
 If you have Resistance to a damage type, damage of that type is halved against you (round down). Resistance is applied only once to an instance of damage. *See also* "Playing the Game" ("Damage and Healing").
 
-## Restrained [Condition]
+### Restrained [Condition]
 
 While you have the Restrained condition, you experience the following effects.
 
@@ -14222,27 +14222,27 @@ While you have the Restrained condition, you experience the following effects.
 
 **Saving Throws Affected.** You have Disadvantage on Dexterity saving throws.
 
-## Ritual
+### Ritual
 
 If you have a spell prepared that has the Ritual tag, you can cast that spell as a Ritual. The Ritual version of a spell takes 10 minutes longer to cast than normal. It also doesn't expend a spell slot, which means the ritual version of a spell can't be cast at a higher level. *See also* "Spells."
 
-## Round Down
+### Round Down
 
 Whenever you divide or multiply a number in the game, round down if you end up with a fraction, even if the fraction is one-half or greater. Some rules make an exception and tell you to round up.
 
-## Save
+### Save
 
 Save is another name for a saving throw. *See also* "Saving Throw."
 
-## Saving Throw
+### Saving Throw
 
 A saving throw—also called a save—represents an attempt to avoid or resist a threat. You normally make a saving throw only when a rule requires you to do so, but you can decide to fail the save without rolling. The result of a save is detailed in the effect that allowed it. If a target is forced to make a save and lacks the ability score used by it, the target automatically fails. *See also* "Playing the Game" ("D20 Tests").
 
-## Search [Action]
+### Search [Action]
 
 When you take the Search action, you make a Wisdom check to discern something that isn't obvious. The Search table suggests which skills are applicable when you take this action, depending on what you're trying to detect.
 
-## Search
+#### Search
 
 | Skill      | Thing to Detect                      |
 |------------|--------------------------------------|
@@ -14251,11 +14251,11 @@ When you take the Search action, you make a Wisdom check to discern something th
 | Perception | Concealed creature or object         |
 | Survival   | Tracks or food                       |
 
-## Shape-Shifting
+### Shape-Shifting
 
 If an effect, such as Wild Shape or the *Polymorph* spell, lets you shape-shift, its description specifies what happens to you. Unless that description says otherwise, any ongoing effects on you—conditions, spells, curses, and the like—carry over from one form to the other. You revert to your true form if you die.
 
-## Short Rest
+### Short Rest
 
 A Short Rest is a 1-hour period of downtime, during which a creature does nothing more strenuous than reading, talking, eating, or standing watch. To start a Short Rest, you must have at least 1 Hit Point.
 
@@ -14273,19 +14273,19 @@ A Short Rest is a 1-hour period of downtime, during which a creature does nothin
 
 An interrupted Short Rest confers no benefits.
 
-## Simultaneous Effects
+### Simultaneous Effects
 
 If two or more things happen at the same time on a turn, the person at the game table—player or GM—whose turn it is decides the order in which those things happen. For example, if two effects occur at the start of a player character's turn, the player decides which of the effects happens first.
 
-## Size
+### Size
 
 A creature or an object belongs to a size category: Tiny, Small, Medium, Large, Huge, or Gargantuan. A creature's size determines how much space the creature occupies in combat. An object's size affects its Hit Points. *See also* "Breaking Objects" and "Playing the Game" ("Combat").
 
-## Skill
+### Skill
 
 A skill is an area of specialization associated with an ability check. If you have proficiency in a skill, you can add your Proficiency Bonus when you make an ability check associated with that skill. *See also* "Playing the Game" ("Proficiency").
 
-## Speed
+### Speed
 
 A creature has a Speed, which is the distance in feet the creature can cover when it moves on its turn. *See also* "Climbing," "Crawling," "Flying," "Jumping," "Swimming" and "Playing the Game" ("Combat").
 
@@ -14293,29 +14293,29 @@ A creature has a Speed, which is the distance in feet the creature can cover whe
 
 **Changes to Your Speeds.** If an effect increases or decreases your Speed for a time, any special speed you have increases or decreases by an equal amount for the same duration. For example, if your Speed is reduced to 0 and you have a Climb Speed, your Climb Speed is also reduced to 0. Similarly, if your Speed is halved and you have a Fly Speed, your Fly Speed is also halved.
 
-## Spell
+### Spell
 
 A spell is a magical effect that has the characteristics described in "Spells."
 
-## Spell Attack
+### Spell Attack
 
 A spell attack is an attack roll made as part of a spell or another magical effect. *See also* "Spells" ("Casting Spells").
 
-## Spellcasting Focus
+### Spellcasting Focus
 
 A Spellcasting Focus is an object that certain creatures can use in place of a spell's Material components if those materials aren't consumed by the spell and don't have a cost specified. Some classes allow its members to use certain types of Spellcasting Focuses. *See also* "Spells" ("Casting Spells").
 
-## Sphere [Area of Effect]
+### Sphere [Area of Effect]
 
 A Sphere is an area of effect that extends in straight lines from a point of origin outward in all directions. The effect that creates a Sphere specifies the distance it extends as the radius of the Sphere.
 
 A Sphere's point of origin is included in the Sphere's area of effect.
 
-## Stable
+### Stable
 
 A creature is Stable if it has 0 Hit Points but isn't required to make Death Saving Throws. *See also* "Playing the Game" ("Damage and Healing").
 
-## Stat Block
+### Stat Block
 
 A stat block contains the game statistics of a monster. Each stat block includes the following information presented after the monster's name.
 
@@ -14365,7 +14365,7 @@ When you take the Study action, you make an Intelligence check to study your mem
 
 The Areas of Knowledge table suggests which skills are applicable to various areas of knowledge.
 
-### Areas of Knowledge
+#### Areas of Knowledge
 
 | Skill         | Areas                                                                                                                                                               |
 |---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -14401,11 +14401,11 @@ While you’re swimming, each foot of movement costs 1 extra foot (2 extra feet 
 
 A Swim Speed can be used to swim without expending the extra movement normally associated with swimming. *See also* “Swimming” and “Speed.”
 
-## Target
+### Target
 
 A target is the creature or object targeted by an attack roll, forced to make a saving throw by an effect, or selected to receive the effects of a spell or another phenomenon.
 
-## Telepathy
+### Telepathy
 
 Telepathy is a magical ability that allows a creature to communicate mentally with another creature within a specified range. Unless a rule states otherwise, the contacted creature doesn't need to share a language with the telepath to understand this communication, but the contacted creature must be able to understand at least one language or be telepathic itself to understand.
 
@@ -14413,7 +14413,7 @@ A telepath doesn't need to see a contacted creature, and the telepath can start 
 
 A creature without telepathy can receive telepathic messages but can't initiate a telepathic conversation. Once a telepathic conversation starts, the telepath can communicate mentally to the telepath until the telepathic connection ends.
 
-## Teleportation
+### Teleportation
 
 Teleportation is a special kind of magical transportation. If you teleport, you disappear and reappear elsewhere instantly, without moving through the intervening space. This transportation doesn't expend movement unless a rule tells you otherwise, and teleportation never provokes Opportunity Attacks.
 
@@ -14423,17 +14423,17 @@ If the destination space of your teleportation is occupied by another creature o
 
 The description of a teleportation effect tells you if you must see the teleportation's destination.
 
-## Temporary Hit Points
+### Temporary Hit Points
 
 Temporary Hit Points are granted by certain effects and act as a buffer against losing real Hit Points. See also "Playing the Game" ("Damage and Healing").
 
-## Tremorsense
+### Tremorsense
 
 A creature with Tremorsense can pinpoint the location of creatures and moving objects within a specific range, provided that the creature with Tremorsense and anything it is detecting are both in contact with the same surface (such as the ground, a wall, or a ceiling) or the same liquid.
 
 Tremorsense can't detect creatures or objects in the air, and it doesn't count as a form of sight.
 
-## Truesight
+### Truesight
 
 If you have Truesight, your vision is enhanced within a specified range. Within that range, your vision pierces through the following:
 
@@ -14447,7 +14447,7 @@ If you have Truesight, your vision is enhanced within a specified range. Within 
 
 **Ethereal Plane.** You see into the Ethereal Plane.
 
-## Unarmed Strike
+### Unarmed Strike
 
 Instead of using a weapon to make a melee attack, you can use a punch, kick, headbutt, or similar forceful blow. In game terms, this is an Unarmed Strike—a melee attack that involves you using your body to damage, grapple, or shove a target within 5 feet of you.
 
@@ -14459,7 +14459,7 @@ Whenever you use your Unarmed Strike, choose one of the following options for it
 
 **Shove.** The target must succeed on a Strength or Dexterity saving throw (it chooses which), or you either push it 5 feet away or cause it to have the Prone condition. The DC for the saving throw equals 8 plus your Strength modifier and Proficiency Bonus. This shove is possible only if the target is no more than one size larger than you.
 
-## Unconscious [Condition]
+### Unconscious [Condition]
 
 While you have the Unconscious condition, you experience the following effects.
 
@@ -14475,23 +14475,23 @@ While you have the Unconscious condition, you experience the following effects.
 
 **Unaware.** You're unaware of your surroundings.
 
-## Unoccupied Space
+### Unoccupied Space
 
 A space is unoccupied if no creatures are in it and it isn't completely filled by objects.
 
-## Utilize [Action]
+### Utilize [Action]
 
 You normally interact with an object while doing something else, such as when you draw a sword as part of the Attack action. When an object requires an action for its use, you take the Utilize action.
 
-## Vulnerability
+### Vulnerability
 
 If you have Vulnerability to a damage type, damage of that type is doubled against you. Vulnerability is applied only once to an instance of damage. *See also* "Playing the Game" ("Damage and Healing").
 
-## Weapon
+### Weapon
 
 A weapon is an object that is in the Simple or Martial weapon category. *See also* "Equipment" ("Weapons").
 
-## Weapon Attack
+### Weapon Attack
 
 A weapon attack is an attack roll made with a weapon. *See also* "Weapon."
 
@@ -14500,6 +14500,26 @@ A weapon attack is an attack roll made with a weapon. *See also* "Weapon."
 ## Travel Pace
 
 A group of characters can travel overland at a Normal, Fast, or Slow pace, as described in “Playing the Game.” During any journey stage, the predominant terrain determines the characters’ maximum travel pace, as shown in the Maximum Pace column of the Travel Terrain table. Certain factors can affect a group’s travel pace.
+
+### Travel Terrain
+
+| Terrain    | Maximum Pace | Encounter Distance | Foraging DC | Navigation DC | Search DC |
+|------------|--------------|--------------------|-------------|---------------|-----------|
+| Arctic     | Fast*        | 6d6 × 10 feet      | 20          | 10            | 10        |
+| Coastal    | Normal       | 2d10 × 10 feet     | 10          | 5             | 15        |
+| Desert     | Normal       | 6d6 × 10 feet      | 20          | 10            | 10        |
+| Forest     | Normal       | 2d8 × 10 feet      | 10          | 15            | 15        |
+| Grassland  | Fast         | 6d6 × 10 feet      | 15          | 5             | 15        |
+| Hill       | Normal       | 2d10 × 10 feet     | 15          | 10            | 15        |
+| Mountain   | Slow         | 4d10 × 10 feet     | 20          | 15            | 20        |
+| Swamp      | Slow         | 2d8 × 10 feet      | 10          | 15            | 20        |
+| Underdark  | Normal       | 2d6 × 10 feet      | 20          | 10            | 20        |
+| Urban      | Normal       | 2d6 × 10 feet      | 20          | 15            | 15        |
+| Waterborne | Special†     | 6d6 × 10 feet      | 15          | 10            | 15        |
+
+\*Appropriate equipment (such as skis) is necessary to keep up a Fast pace in Arctic terrain.
+
+†Characters’ rate of travel while waterborne depends on the vehicle carrying them; see “Vehicles.”
 
 ### Good Roads
 
@@ -14544,26 +14564,6 @@ Choose three abilities that seem appropriate for the background:
 **Strength or Dexterity.** These abilities are ideal for a background involving physical exertion.
 
 **Constitution.** This ability is ideal for a background that involves endurance or long hours of activity.
-
-## Travel Terrain
-
-| Terrain    | Maximum Pace | Encounter Distance | Foraging DC | Navigation DC | Search DC |
-|------------|--------------|--------------------|-------------|---------------|-----------|
-| Arctic     | Fast*        | 6d6 × 10 feet      | 20          | 10            | 10        |
-| Coastal    | Normal       | 2d10 × 10 feet     | 10          | 5             | 15        |
-| Desert     | Normal       | 6d6 × 10 feet      | 20          | 10            | 10        |
-| Forest     | Normal       | 2d8 × 10 feet      | 10          | 15            | 15        |
-| Grassland  | Fast         | 6d6 × 10 feet      | 15          | 5             | 15        |
-| Hill       | Normal       | 2d10 × 10 feet     | 15          | 10            | 15        |
-| Mountain   | Slow         | 4d10 × 10 feet     | 20          | 15            | 20        |
-| Swamp      | Slow         | 2d8 × 10 feet      | 10          | 15            | 20        |
-| Underdark  | Normal       | 2d6 × 10 feet      | 20          | 10            | 20        |
-| Urban      | Normal       | 2d6 × 10 feet      | 20          | 15            | 15        |
-| Waterborne | Special†     | 6d6 × 10 feet      | 15          | 10            | 15        |
-
-\*Appropriate equipment (such as skis) is necessary to keep up a Fast pace in Arctic terrain.
-
-†Characters’ rate of travel while waterborne depends on the vehicle carrying them; see “Vehicles.”
 
 **Intelligence or Wisdom.** One or both abilities are ideal for a background that focuses on cerebral or spiritual matters.
 
@@ -18526,9 +18526,7 @@ A monster that requires ammunition to make ranged attacks carries the necessary 
 
 You may equip monsters with additional gear however you like, using the items in "Equipment" for inspiration. You decide how much of a monster's equipment is recoverable after the creature is slain and whether any of that equipment is still usable.
 
-Beware of giving a monster combat-oriented magic items, since those might alter the monster's Challenge Rating. If you do give a monster a magic item, the monster can have Attunement with magic items as noted in "Equipment." A monster with
-
-a class tag after its creature type is considered a member of that class for Attunement purposes.
+Beware of giving a monster combat-oriented magic items, since those might alter the monster's Challenge Rating. If you do give a monster a magic item, the monster can have Attunement with magic items as noted in "Equipment." A monster with a class tag after its creature type is considered a member of that class for Attunement purposes.
 
 ## Senses
 
@@ -18570,9 +18568,6 @@ Unless a rule says otherwise, a monster summoned by a spell or another magical a
 | 8   | 3,900   | 25 | 75,000  |
 | 9   | 5,000   | 26 | 90,000  |
 | 10  | 5,900   | 27 | 105,000 |
-
-| CR | XP     | CR | XP      |
-|----|--------|----|---------|
 | 11 | 7,200  | 28 | 120,000 |
 | 12 | 8,400  | 29 | 135,000 |
 | 13 | 10,000 | 30 | 155,000 |
@@ -18662,15 +18657,15 @@ Some parts of a stat block have restrictions on the number of times they can be 
 
 ### Aboleth
 
-Large Aberration, Lawful Evil
+*Large Aberration, Lawful Evil*
 
-AC 17
+**AC** 17
 
-Initiative +7 (17)
+**Initiative** +7 (17)
 
-HP 150 (20d10 + 40)
+**HP** 150 (20d10 + 40)
 
-Speed 10 ft., Swim 40 ft.
+**Speed** 10 ft., Swim 40 ft.
 
 |     | MOD | SAVE |     | MOD | SAVE |     | MOD | SAVE |
 |-----|-----|------|-----|-----|------|-----|-----|------|
@@ -18725,15 +18720,15 @@ The target repeats the save whenever it takes damage as well as after every 24 h
 
 ### Air Elemental
 
-Large Elemental, Neutral
+*Large Elemental, Neutral*
 
-AC 15
+**AC** 15
 
-Initiative +5 (15)
+**Initiative** +5 (15)
 
-HP 90 (12d10 + 24)
+**HP** 90 (12d10 + 24)
 
-Speed 10 ft., Fly 90 ft. (hover)
+**Speed** 10 ft., Fly 90 ft. (hover)
 
 |     | MOD | SAVE |     | MOD | SAVE |     | MOD | SAVE |
 |-----|-----|------|-----|-----|------|-----|-----|------|
@@ -18870,9 +18865,7 @@ While grappling the target, the rug can't take this action, the rug halves the d
 | <b>STR</b> | 17  | +3   | <b>DEX</b> | 11  | +0   | <b>CON</b> | 14  | +2   |
 | <b>INT</b> | 1   | -5   | <b>WIS</b> | 13  | +1   | <b>CHA</b> | 6   | -2   |
 
-**Senses** Darkvision 60 ft., Tremorsense 60 ft.;
-
-Passive Perception 11
+**Senses** Darkvision 60 ft., Tremorsense 60 ft.; Passive Perception 11
 
 **Languages** None
 
@@ -19032,15 +19025,15 @@ Passive Perception 11
 
 ### Azer Sentinel
 
-Medium Elemental, Lawful Neutral
+*Medium Elemental, Lawful Neutral*
 
-AC 17
+**AC** 17
 
-Initiative +1 (11)
+**Initiative** +1 (11)
 
-HP 39 (6d8 + 12)
+**HP** 39 (6d8 + 12)
 
-Speed 30 ft.
+**Speed** 30 ft.
 
 |     | MOD | SAVE |     | MOD | SAVE |     | MOD | SAVE |
 |-----|-----|------|-----|-----|------|-----|-----|------|
@@ -19069,15 +19062,15 @@ Speed 30 ft.
 
 ### Balor
 
-Huge Fiend (Demon), Chaotic Evil
+*Huge Fiend (Demon), Chaotic Evil*
 
-AC 19
+**AC** 19
 
-Initiative +14 (24)
+**Initiative** +14 (24)
 
-HP 287 (23d12 + 138)
+**HP** 287 (23d12 + 138)
 
-Speed 40 ft., Fly 80 ft.
+**Speed** 40 ft., Fly 80 ft.
 
 |     | MOD | SAVE |     | MOD | SAVE |     | MOD | SAVE |
 |-----|-----|------|-----|-----|------|-----|-----|------|
@@ -19122,15 +19115,15 @@ Speed 40 ft., Fly 80 ft.
 
 ### Bandit
 
-Medium or Small Humanoid, Neutral
+*Medium or Small Humanoid, Neutral*
 
-AC 12
+**AC** 12
 
-Initiative +1 (11)
+**Initiative** +1 (11)
 
-HP 11 (2d8 + 2)
+**HP** 11 (2d8 + 2)
 
-Speed 30 ft.
+**Speed** 30 ft.
 
 |     | MOD | SAVE |     | MOD | SAVE |     | MOD | SAVE |
 |-----|-----|------|-----|-----|------|-----|-----|------|
@@ -19153,15 +19146,15 @@ Speed 30 ft.
 
 ### Bandit Captain
 
-Medium or Small Humanoid, Neutral
+*Medium or Small Humanoid, Neutral*
 
-AC 15
+**AC** 15
 
-Initiative +3 (13)
+**Initiative** +3 (13)
 
-HP 52 (8d8 + 16)
+**HP** 52 (8d8 + 16)
 
-Speed 30 ft.
+**Speed** 30 ft.
 
 |            | MOD | SAVE |            | MOD | SAVE |            | MOD | SAVE |
 |------------|-----|------|------------|-----|------|------------|-----|------|
@@ -19416,9 +19409,7 @@ If the behir takes 30 damage or more on a single turn from the swallowed creatur
 
 **Immunities** Acid
 
-**Senses** Blindsight 10 ft., Darkvision 60 ft.;
-
-Passive Perception 14
+**Senses** Blindsight 10 ft., Darkvision 60 ft.; Passive Perception 14
 
 **Languages** Draconic
 
@@ -19457,9 +19448,7 @@ Passive Perception 14
 
 **Immunities** Acid
 
-**Senses** Blindsight 30 ft., Darkvision 120 ft.;
-
-Passive Perception 16
+**Senses** Blindsight 30 ft., Darkvision 120 ft.; Passive Perception 16
 
 **Languages** Common, Draconic
 
@@ -19498,9 +19487,7 @@ Passive Perception 16
 
 **Immunities** Acid
 
-**Senses** Blindsight 60 ft., Darkvision 120 ft.;
-
-Passive Perception 21
+**Senses** Blindsight 60 ft., Darkvision 120 ft.; Passive Perception 21
 
 **Languages** Common, Draconic
 
@@ -19634,9 +19621,7 @@ In 1 minute, the pudding can eat through 2 feet of nonmagical wood or metal.
 
 ### Reactions
 
-**Split.** *Trigger:* While the pudding is Large or Medium and has 10+ Hit Points, it becomes Bloodied or is subjected to Lightning or Slashing damage. *Response:* The pudding splits into two new **Black Puddings**. Each new pudding is one size smaller than the original pudding and acts on its Initiative. The original pudding's Hit
-
-Points are divided evenly between the new puddings (round down).
+**Split.** *Trigger:* While the pudding is Large or Medium and has 10+ Hit Points, it becomes Bloodied or is subjected to Lightning or Slashing damage. *Response:* The pudding splits into two new **Black Puddings**. Each new pudding is one size smaller than the original pudding and acts on its Initiative. The original pudding's Hit Points are divided evenly between the new puddings (round down).
 
 ## Blink Dog
 
@@ -19780,9 +19765,7 @@ Points are divided evenly between the new puddings (round down).
 
 **Rend.** *Melee Attack Roll:* +12, reach 10 ft. *Hit:* 16 (2d8 + 7) Slashing damage plus 5 (1d10) Lightning damage.
 
-**Lightning Breath (Recharge 5–6).** *Dexterity Saving Throw:* DC 19, each creature in a 90-foot-long, 5-foot-
-
-wide Line. *Failure*: 60 (11d10) Lightning damage. *Success*: Half damage.
+**Lightning Breath (Recharge 5–6).** *Dexterity Saving Throw:* DC 19, each creature in a 90-foot-long, 5-foot-wide Line. *Failure*: 60 (11d10) Lightning damage. *Success*: Half damage.
 
 **Spellcasting.** The dragon casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 18):
 
@@ -19898,9 +19881,7 @@ wide Line. *Failure*: 60 (11d10) Lightning damage. *Success*: Half damage.
 
 **Claw.** *Melee Attack Roll*: +8, reach 10 ft. *Hit*: 13 (2d8 + 4) Slashing damage.
 
-**Infernal Sting.** *Melee Attack Roll*: +8, reach 10 ft. *Hit*: 15 (2d10 + 4) Piercing damage plus 18 (4d8) Poison
-
-damage, and the target has the Poisoned condition until the start of the devil's next turn. While Poisoned, the target can't regain Hit Points.
+**Infernal Sting.** *Melee Attack Roll*: +8, reach 10 ft. *Hit*: 15 (2d10 + 4) Piercing damage plus 18 (4d8) Poison damage, and the target has the Poisoned condition until the start of the devil's next turn. While Poisoned, the target can't regain Hit Points.
 
 ## Brass Dragons
 
@@ -20127,15 +20108,15 @@ damage, and the target has the Poisoned condition until the start of the devil's
 
 ## Young Bronze Dragon
 
-Large Dragon (Metallic), Lawful Good
+*Large Dragon (Metallic), Lawful Good*
 
-AC 17
+**AC** 17
 
-Initiative +3 (13)
+**Initiative** +3 (13)
 
-HP 142 (15d10 + 60)
+**HP** 142 (15d10 + 60)
 
-Speed 40 ft., Fly 80 ft., Swim 40 ft.
+**Speed** 40 ft., Fly 80 ft., Swim 40 ft.
 
 |     | MOD | SAVE |     | MOD | SAVE |     | MOD | SAVE |
 |-----|-----|------|-----|-----|------|-----|-----|------|
@@ -20168,15 +20149,15 @@ Speed 40 ft., Fly 80 ft., Swim 40 ft.
 
 ## Adult Bronze Dragon
 
-Huge Dragon (Metallic), Lawful Good
+*Huge Dragon (Metallic), Lawful Good*
 
-AC 18
+**AC** 18
 
-Initiative +10 (20)
+**Initiative** +10 (20)
 
-HP 212 (17d12 + 102)
+**HP** 212 (17d12 + 102)
 
-Speed 40 ft., Fly 80 ft., Swim 40 ft.
+**Speed** 40 ft., Fly 80 ft., Swim 40 ft.
 
 |     | MOD | SAVE |     | MOD | SAVE |     | MOD | SAVE |
 |-----|-----|------|-----|-----|------|-----|-----|------|
@@ -20215,27 +20196,25 @@ Speed 40 ft., Fly 80 ft., Swim 40 ft.
 
 ## Legendary Actions
 
-Legendary Action Uses: 3 (4 in Lair). Immediately after another creature's turn, the dragon can expend a use to take one of the following actions. The dragon regains all expended uses at the start of each of its turns.
+*Legendary Action Uses: 3 (4 in Lair). Immediately after another creature's turn, the dragon can expend a use to take one of the following actions. The dragon regains all expended uses at the start of each of its turns.*
 
 **Guiding Light.** The dragon uses Spellcasting to cast *Guiding Bolt* (level 2 version).
 
 **Pounce.** The dragon moves up to half its Speed, and it makes one Rend attack.
 
-**Thunderclap.** *Constitution Saving Throw:* DC 17, each creature in a 20-foot-radius Sphere centered on a point the dragon can see within 90 feet. *Failure:* 10 (3d6)
-
-Thunder damage, and the target has the Deafened condition until the end of its next turn.
+**Thunderclap.** *Constitution Saving Throw:* DC 17, each creature in a 20-foot-radius Sphere centered on a point the dragon can see within 90 feet. *Failure:* 10 (3d6) Thunder damage, and the target has the Deafened condition until the end of its next turn.
 
 ## Ancient Bronze Dragon
 
-Gargantuan Dragon (Metallic), Lawful Good
+*Gargantuan Dragon (Metallic), Lawful Good*
 
-AC 22
+**AC** 22
 
-Initiative +14 (24)
+**Initiative** +14 (24)
 
-HP 444 (24d20 + 192)
+**HP** 444 (24d20 + 192)
 
-Speed 40 ft., Fly 80 ft., Swim 40 ft.
+**Speed** 40 ft., Fly 80 ft., Swim 40 ft.
 
 |     | MOD | SAVE |     | MOD | SAVE |     | MOD | SAVE |
 |-----|-----|------|-----|-----|------|-----|-----|------|
@@ -20246,9 +20225,7 @@ Speed 40 ft., Fly 80 ft., Swim 40 ft.
 
 **Immunities** Lightning
 
-**Senses** Blindsight 60 ft., Darkvision 120 ft.,
-
-Passive Perception 27
+**Senses** Blindsight 60 ft., Darkvision 120 ft., Passive Perception 27
 
 **Languages** Common, Draconic
 
@@ -20277,7 +20254,7 @@ Passive Perception 27
 
 ## Legendary Actions
 
-*Legendary Action Uses:* 3 (4 in Lair). Immediately after another creature's turn, the dragon can expend a use to take one of the following actions. The dragon regains all expended uses at the start of each of its turns.
+*Legendary Action Uses: 3 (4 in Lair). Immediately after another creature's turn, the dragon can expend a use to take one of the following actions. The dragon regains all expended uses at the start of each of its turns.*
 
 **Guiding Light.** The dragon uses Spellcasting to cast *Guiding Bolt* (level 2 version).
 
@@ -20289,15 +20266,15 @@ Passive Perception 27
 
 ### Bugbear Stalker
 
-Medium Fey (Goblinoid), Chaotic Evil
+*Medium Fey (Goblinoid), Chaotic Evil*
 
-AC 15
+**AC** 15
 
-Initiative +2 (12)
+**Initiative** +2 (12)
 
-HP 65 (10d8 + 20)
+**HP** 65 (10d8 + 20)
 
-Speed 30 ft.
+**Speed** 30 ft.
 
 |     | MOD | SAVE |     | MOD | SAVE |     | MOD | SAVE |
 |-----|-----|------|-----|-----|------|-----|-----|------|
@@ -20400,9 +20377,7 @@ Speed 30 ft.
 
 **Bite.** *Melee Attack Roll:* +7, reach 5 ft. *Hit:* 17 (2d12 + 4) Piercing damage.
 
-**Deadly Leap.** The bulette spends 5 feet of movement to jump to a space within 15 feet that contains one or more Large or smaller creatures. *Dexterity Saving Throw:* DC 15, each creature in the bulette's destination space. *Failure:* 19 (3d12) Bludgeoning damage, and
-
-the target has the Prone condition. *Success:* Half damage, and the target is pushed 5 feet straight away from the bulette.
+**Deadly Leap.** The bulette spends 5 feet of movement to jump to a space within 15 feet that contains one or more Large or smaller creatures. *Dexterity Saving Throw:* DC 15, each creature in the bulette's destination space. *Failure:* 19 (3d12) Bludgeoning damage, and the target has the Prone condition. *Success:* Half damage, and the target is pushed 5 feet straight away from the bulette.
 
 ### Bonus Actions
 
@@ -20500,7 +20475,7 @@ the target has the Prone condition. *Success:* Half damage, and the target is pu
 
 ### Chimera
 
-Large Monstrosity, Chaotic Evil
+*Large Monstrosity, Chaotic Evil*
 
 **AC** 14
 
@@ -20538,7 +20513,7 @@ Large Monstrosity, Chaotic Evil
 
 ### Chuul
 
-Large Aberration, Chaotic Evil
+*Large Aberration, Chaotic Evil*
 
 **AC** 16
 
@@ -20581,15 +20556,15 @@ Large Aberration, Chaotic Evil
 
 ### Clay Golem
 
-Large Construct, Unaligned
+*Large Construct, Unaligned*
 
-AC 14
+**AC** 14
 
-Initiative +3 (13)
+**Initiative** +3 (13)
 
-HP 123 (13d10 + 52)
+**HP** 123 (13d10 + 52)
 
-Speed 30 ft.
+**Speed** 30 ft.
 
 |     | MOD | SAVE |     | MOD | SAVE |     | MOD | SAVE |
 |-----|-----|------|-----|-----|------|-----|-----|------|
@@ -20603,7 +20578,7 @@ Speed 30 ft.
 **Senses** Darkvision 60 ft.; Passive Perception 9
 
 **Languages** Common plus one other language  
-CR 9 (XP 5,000; PB +4)
+**CR** 9 (XP 5,000; PB +4)
 
 ### Traits
 
@@ -20629,15 +20604,15 @@ CR 9 (XP 5,000; PB +4)
 
 ### Cloaker
 
-Large Aberration, Chaotic Neutral
+*Large Aberration, Chaotic Neutral*
 
-AC 14
+**AC** 14
 
-Initiative +5 (15)
+**Initiative** +5 (15)
 
-HP 91 (14d10 + 14)
+**HP** 91 (14d10 + 14)
 
-Speed 10 ft., Fly 40 ft.
+**Speed** 10 ft., Fly 40 ft.
 
 |     | MOD | SAVE |     | MOD | SAVE |     | MOD | SAVE |
 |-----|-----|------|-----|-----|------|-----|-----|------|
@@ -20652,7 +20627,7 @@ Speed 10 ft., Fly 40 ft.
 
 **Languages** Deep Speech, Undercommon
 
-CR 8 (XP 3,900; PB +3)
+**CR** 8 (XP 3,900; PB +3)
 
 ### Traits
 
@@ -20824,15 +20799,15 @@ The cloaker can detach itself by spending 5 feet of movement. The target or a cr
 
 ## Young Copper Dragon
 
-Large Dragon (Metallic), Chaotic Good
+*Large Dragon (Metallic), Chaotic Good*
 
-AC 17
+**AC** 17
 
-Initiative +4 (14)
+**Initiative** +4 (14)
 
-HP 119 (14d10 + 42)
+**HP** 119 (14d10 + 42)
 
-Speed 40 ft., Climb 40 ft., Fly 80 ft.
+**Speed** 40 ft., Climb 40 ft., Fly 80 ft.
 
 |     | MOD | SAVE |     | MOD | SAVE |     | MOD | SAVE |
 |-----|-----|------|-----|-----|------|-----|-----|------|
@@ -20843,13 +20818,11 @@ Speed 40 ft., Climb 40 ft., Fly 80 ft.
 
 **Immunities** Acid
 
-**Senses** Blindsight 30 ft., Darkvision 120 ft.;
-
-Passive Perception 17
+**Senses** Blindsight 30 ft., Darkvision 120 ft.; Passive Perception 17
 
 **Languages** Common, Draconic
 
-CR 7 (XP 2,900; PB +3)
+**CR** 7 (XP 2,900; PB +3)
 
 ## Actions
 
@@ -20863,15 +20836,15 @@ CR 7 (XP 2,900; PB +3)
 
 ## Adult Copper Dragon
 
-Huge Dragon (Metallic), Chaotic Good
+*Huge Dragon (Metallic), Chaotic Good*
 
-AC 18
+**AC** 18
 
-Initiative +11 (21)
+**Initiative** +11 (21)
 
-HP 184 (16d12 + 80)
+**HP** 184 (16d12 + 80)
 
-Speed 40 ft., Climb 40 ft., Fly 80 ft.
+**Speed** 40 ft., Climb 40 ft., Fly 80 ft.
 
 |     | MOD | SAVE |     | MOD | SAVE |     | MOD | SAVE |
 |-----|-----|------|-----|-----|------|-----|-----|------|
@@ -20882,13 +20855,11 @@ Speed 40 ft., Climb 40 ft., Fly 80 ft.
 
 **Immunities** Acid
 
-**Senses** Blindsight 60 ft., Darkvision 120 ft.;
-
-Passive Perception 22
+**Senses** Blindsight 60 ft., Darkvision 120 ft.; Passive Perception 22
 
 **Languages** Common, Draconic
 
-CR 14 (XP 11,500, or 13,000 in lair; PB +5)
+**CR** 14 (XP 11,500, or 13,000 in lair; PB +5)
 
 ## Traits
 
@@ -20912,7 +20883,7 @@ CR 14 (XP 11,500, or 13,000 in lair; PB +5)
 
 ## Legendary Actions
 
-*Legendary Action Uses: 3 (4 in Lair).* Immediately after another creature's turn, the dragon can expend a use to take one of the following actions. The dragon regains all expended uses at the start of each of its turns.
+*Legendary Action Uses: 3 (4 in Lair). Immediately after another creature's turn, the dragon can expend a use to take one of the following actions. The dragon regains all expended uses at the start of each of its turns.*
 
 **Giggling Magic.** *Charisma Saving Throw:* DC 17, one creature the dragon can see within 90 feet. *Failure:* 24 (7d6) Psychic damage. Until the end of its next turn, the target rolls 1d6 whenever it makes an ability check or attack roll and subtracts the number rolled from the D20 Test. *Failure or Success:* The dragon can't take this action again until the start of its next turn.
 
@@ -20922,15 +20893,15 @@ CR 14 (XP 11,500, or 13,000 in lair; PB +5)
 
 ## Ancient Copper Dragon
 
-Gargantuan Dragon (Metallic), Chaotic Good
+*Gargantuan Dragon (Metallic), Chaotic Good*
 
-AC 21
+**AC** 21
 
-Initiative +15 (25)
+**Initiative** +15 (25)
 
-HP 367 (21d20 + 147)
+**HP** 367 (21d20 + 147)
 
-Speed 40 ft., Climb 40 ft., Fly 80 ft.
+**Speed** 40 ft., Climb 40 ft., Fly 80 ft.
 
 |     | MOD | SAVE |     | MOD | SAVE |     | MOD | SAVE |
 |-----|-----|------|-----|-----|------|-----|-----|------|
@@ -20941,9 +20912,7 @@ Speed 40 ft., Climb 40 ft., Fly 80 ft.
 
 **Immunities** Acid
 
-**Senses** Blindsight 60 ft., Darkvision 120 ft.,
-
-Passive Perception 27
+**Senses** Blindsight 60 ft., Darkvision 120 ft., Passive Perception 27
 
 **Languages** Common, Draconic
 
@@ -20971,7 +20940,7 @@ Passive Perception 27
 
 ## Legendary Actions
 
-*Legendary Action Uses:* 3 (4 in Lair). Immediately after another creature's turn, the dragon can expend a use to take one of the following actions. The dragon regains all expended uses at the start of each of its turns.
+*Legendary Action Uses: 3 (4 in Lair). Immediately after another creature's turn, the dragon can expend a use to take one of the following actions. The dragon regains all expended uses at the start of each of its turns.*
 
 **Giggling Magic.** *Charisma Saving Throw:* DC 21, one creature the dragon can see within 120 feet. *Failure:* 31 (9d6) Psychic damage. Until the end of its next turn, the target rolls 1d8 whenever it makes an ability check or attack roll and subtracts the number rolled from the D20 Test. *Failure or Success:* The dragon can't take this action again until the start of its next turn.
 
@@ -20983,15 +20952,15 @@ Passive Perception 27
 
 ### Couatl
 
-Medium Celestial, Lawful Good
+*Medium Celestial, Lawful Good*
 
-AC 19
+**AC** 19
 
-Initiative +5 (15)
+**Initiative** +5 (15)
 
-HP 60 (8d8 + 24)
+**HP** 60 (8d8 + 24)
 
-Speed 30 ft., Fly 90 ft.
+**Speed** 30 ft., Fly 90 ft.
 
 |     | MOD | SAVE |     | MOD | SAVE |     | MOD | SAVE |
 |-----|-----|------|-----|-----|------|-----|-----|------|
@@ -21020,9 +20989,7 @@ Speed 30 ft., Fly 90 ft.
 
 **Spellcasting.** The couatl casts one of the following spells, requiring no spell components and using Wisdom as the spellcasting ability (spell save DC 15):
 
-**At Will:** *Detect Evil and Good*, *Detect Magic*, *Detect Thoughts*, *Shapechange* (Beast or Humanoid form only, no Temporary Hit Points gained from the spell,
-
-and no Concentration or Temporary Hit Points required to maintain the spell)
+**At Will:** *Detect Evil and Good*, *Detect Magic*, *Detect Thoughts*, *Shapechange* (Beast or Humanoid form only, no Temporary Hit Points gained from the spell, and no Concentration or Temporary Hit Points required to maintain the spell)
 
 **1/Day Each:** *Create Food and Water*, *Dream*, *Greater Restoration*, *Scrying*, *Sleep*
 
@@ -21272,15 +21239,15 @@ A creature can take an action to try to detach the darkmantle from itself, doing
 
 ## Djinni
 
-Large Elemental (Genie), Neutral
+*Large Elemental (Genie), Neutral*
 
-AC 17
+**AC** 17
 
-Initiative +2 (12)
+**Initiative** +2 (12)
 
-HP 218 (19d10 + 114)
+**HP** 218 (19d10 + 114)
 
-Speed 30 ft., Fly 90 ft. (hover)
+**Speed** 30 ft., Fly 90 ft. (hover)
 
 |     | MOD | SAVE |     | MOD | SAVE |     | MOD | SAVE |
 |-----|-----|------|-----|-----|------|-----|-----|------|
@@ -21313,9 +21280,7 @@ Speed 30 ft., Fly 90 ft. (hover)
 
 **Create Whirlwind.** The djinni conjures a whirlwind at a point it can see within 120 feet. The whirlwind fills a 20-foot-radius, 60-foot-high Cylinder centered on that point. The whirlwind lasts until the djinni's Concentration on it ends. The djinni can move the whirlwind up to 20 feet at the start of each of its turns.
 
-Whenever the whirlwind enters a creature's space or a creature enters the whirlwind, that creature is subjected to the following effect. *Strength Saving Throw:* DC 17 (a creature makes this save only once per turn, and the djinni is unaffected). *Failure:* While in the whirlwind, the target has the Restrained condition and moves with the whirlwind. At the start of each of its turns, the Restrained target takes 21 (6d6) Thunder
-
-damage. At the end of each of its turns, the target repeats the save, ending the effect on itself on a success.
+Whenever the whirlwind enters a creature's space or a creature enters the whirlwind, that creature is subjected to the following effect. *Strength Saving Throw:* DC 17 (a creature makes this save only once per turn, and the djinni is unaffected). *Failure:* While in the whirlwind, the target has the Restrained condition and moves with the whirlwind. At the start of each of its turns, the Restrained target takes 21 (6d6) Thunder damage. At the end of each of its turns, the target repeats the save, ending the effect on itself on a success.
 
 **Spellcasting.** The djinni casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 17):
 
@@ -21329,15 +21294,15 @@ damage. At the end of each of its turns, the target repeats the save, ending the
 
 ## Doppelganger
 
-Medium Monstrosity, Neutral
+*Medium Monstrosity, Neutral*
 
-AC 14
+**AC** 14
 
-Initiative +4 (14)
+**Initiative** +4 (14)
 
-HP 52 (8d8 + 16)
+**HP** 52 (8d8 + 16)
 
-Speed 30 ft.
+**Speed** 30 ft.
 
 |     | MOD | SAVE |     | MOD | SAVE |     | MOD | SAVE |
 |-----|-----|------|-----|-----|------|-----|-----|------|
@@ -21495,15 +21460,15 @@ Speed 30 ft.
 
 ### Druid
 
-Medium or Small Humanoid (Druid), Neutral
+*Medium or Small Humanoid (Druid), Neutral*
 
-AC 13
+**AC** 13
 
-Initiative +1 (11)
+**Initiative** +1 (11)
 
-HP 44 (8d8 + 8)
+**HP** 44 (8d8 + 8)
 
-Speed 30 ft.
+**Speed** 30 ft.
 
 |     | MOD | SAVE |     | MOD | SAVE |     | MOD | SAVE |
 |-----|-----|------|-----|-----|------|-----|-----|------|
@@ -21540,15 +21505,15 @@ Speed 30 ft.
 
 ### Dryad
 
-Medium Fey, Neutral
+*Medium Fey, Neutral*
 
-AC 16
+**AC** 16
 
-Initiative +1 (11)
+**Initiative** +1 (11)
 
-HP 22 (5d8)
+**HP** 22 (5d8)
 
-Speed 30 ft.
+**Speed** 30 ft.
 
 |     | MOD | SAVE |     | MOD | SAVE |     | MOD | SAVE |
 |-----|-----|------|-----|-----|------|-----|-----|------|
@@ -21591,15 +21556,15 @@ Speed 30 ft.
 
 ### Earth Elemental
 
-Large Elemental, Neutral
+*Large Elemental, Neutral*
 
-AC 17
+**AC** 17
 
-Initiative -1 (9)
+**Initiative** -1 (9)
 
-HP 147 (14d10 + 70)
+**HP** 147 (14d10 + 70)
 
-Speed 30 ft., Burrow 30 ft.
+**Speed** 30 ft., Burrow 30 ft.
 
 |     | MOD | SAVE |     | MOD | SAVE |     | MOD | SAVE |
 |-----|-----|------|-----|-----|------|-----|-----|------|
@@ -21634,15 +21599,15 @@ Speed 30 ft., Burrow 30 ft.
 
 ### Efreeti
 
-Large Elemental (Genie), Neutral
+*Large Elemental (Genie), Neutral*
 
-AC 17
+**AC** 17
 
-Initiative +1 (11)
+**Initiative** +1 (11)
 
-HP 212 (17d10 + 119)
+**HP** 212 (17d10 + 119)
 
-Speed 40 ft., Fly 60 ft. (hover)
+**Speed** 40 ft., Fly 60 ft. (hover)
 
 |     | MOD | SAVE |    | MOD | SAVE |    | MOD | SAVE |    |    |    |
 |-----|-----|------|----|-----|------|----|-----|------|----|----|----|
@@ -21683,15 +21648,15 @@ Speed 40 ft., Fly 60 ft. (hover)
 
 ### Erinyes
 
-Medium Fiend (Devil), Lawful Evil
+*Medium Fiend (Devil), Lawful Evil*
 
-AC 18
+**AC** 18
 
-Initiative +7 (17)
+**Initiative** +7 (17)
 
-HP 178 (21d8 + 84)
+**HP** 178 (21d8 + 84)
 
-Speed 30 ft., Fly 60 ft.
+**Speed** 30 ft., Fly 60 ft.
 
 |     | MOD | SAVE |    | MOD | SAVE |    | MOD | SAVE |    |    |    |
 |-----|-----|------|----|-----|------|----|-----|------|----|----|----|
@@ -21917,9 +21882,7 @@ Speed 30 ft., Fly 60 ft.
 | <b>STR</b> | 19  | +4   | <b>DEX</b> | 9   | -1   | <b>CON</b> | 18  | +4   |
 | <b>INT</b> | 6   | -2   | <b>WIS</b> | 10  | +0   | <b>CHA</b> | 5   | -3   |
 
-**Immunities** Lightning, Poison; Charmed, Exhaustion,
-
-Frightened, Paralyzed, Petrified, Poisoned
+**Immunities** Lightning, Poison; Charmed, Exhaustion, Frightened, Paralyzed, Petrified, Poisoned
 
 **Senses** Darkvision 60 ft.; Passive Perception 10
 
@@ -22306,15 +22269,15 @@ The possession lasts until the body drops to 0 Hit Points or the ghost leaves as
 
 ### Glabrezu
 
-Large Fiend (Demon), Chaotic Evil
+*Large Fiend (Demon), Chaotic Evil*
 
-AC 17
+**AC** 17
 
-Initiative +6 (16)
+**Initiative** +6 (16)
 
-HP 189 (18d10 + 90)
+**HP** 189 (18d10 + 90)
 
-Speed 40 ft.
+**Speed** 40 ft.
 
 |     | MOD | SAVE |     | MOD | SAVE |     | MOD | SAVE |
 |-----|-----|------|-----|-----|------|-----|-----|------|
@@ -22357,15 +22320,15 @@ Speed 40 ft.
 
 ### Gladiator
 
-Medium or Small Humanoid, Neutral
+*Medium or Small Humanoid, Neutral*
 
-AC 16
+**AC** 16
 
-Initiative +5 (15)
+**Initiative** +5 (15)
 
-HP 112 (15d8 + 45)
+**HP** 112 (15d8 + 45)
 
-Speed 30 ft.
+**Speed** 30 ft.
 
 |     | MOD | SAVE |     | MOD | SAVE |     | MOD | SAVE |
 |-----|-----|------|-----|-----|------|-----|-----|------|
@@ -22398,15 +22361,15 @@ Speed 30 ft.
 
 ### Gnoll Warrior
 
-Medium Fiend, Chaotic Evil
+*Medium Fiend, Chaotic Evil*
 
-AC 15
+**AC** 15
 
-Initiative +1 (11)
+**Initiative** +1 (11)
 
-HP 27 (6d8)
+**HP** 27 (6d8)
 
-Speed 30 ft.
+**Speed** 30 ft.
 
 |     | MOD | SAVE |     | MOD | SAVE |     | MOD | SAVE |
 |-----|-----|------|-----|-----|------|-----|-----|------|
@@ -22651,8 +22614,7 @@ Passive Perception 19
 
 **Immunities** Fire
 
-**Senses** Blindsight 60 ft., Darkvision 120 ft.;  
-Passive Perception 24
+**Senses** Blindsight 60 ft., Darkvision 120 ft.; Passive Perception 24
 
 **Languages** Common, Draconic  
 **CR** 17 (XP 18,000, or 20,000 in lair; PB +6)
@@ -22691,15 +22653,15 @@ Passive Perception 24
 
 ## Ancient Gold Dragon
 
-Gargantuan Dragon (Metallic), Lawful Good
+*Gargantuan Dragon (Metallic), Lawful Good*
 
-AC 22
+**AC** 22
 
-Initiative +16 (26)
+**Initiative** +16 (26)
 
-HP 546 (28d20 + 252)
+**HP** 546 (28d20 + 252)
 
-Speed 40 ft., Fly 80 ft., Swim 40 ft.
+**Speed** 40 ft., Fly 80 ft., Swim 40 ft.
 
 |     | MOD | SAVE |     | MOD | SAVE |     | MOD | SAVE |
 |-----|-----|------|-----|-----|------|-----|-----|------|
@@ -22730,9 +22692,7 @@ Speed 40 ft., Fly 80 ft., Swim 40 ft.
 
 **Fire Breath (Recharge 5–6).** *Dexterity Saving Throw: DC 24*, each creature in a 90-foot Cone. *Failure: 71 (13d10) Fire damage. Success: Half damage.*
 
-**Spellcasting.** The dragon casts one of the following spells, requiring no Material components and using
-
-Charisma as the spellcasting ability (spell save DC 24, +16 to hit with spell attacks):
+**Spellcasting.** The dragon casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 24, +16 to hit with spell attacks):
 
 **At Will:** *Detect Magic, Guiding Bolt* (level 4 version), *Shapechange* (Beast or Humanoid form only, no Temporary Hit Points gained from the spell, and no Concentration or Temporary Hit Points required to maintain the spell)
 
@@ -22754,15 +22714,15 @@ Charisma as the spellcasting ability (spell save DC 24, +16 to hit with spell at
 
 ### Gorgon
 
-Large Construct, Unaligned
+*Large Construct, Unaligned*
 
-AC 19
+**AC** 19
 
-Initiative +0 (10)
+**Initiative** +0 (10)
 
-HP 114 (12d10 + 48)
+**HP** 114 (12d10 + 48)
 
-Speed 40 ft.
+**Speed** 40 ft.
 
 |     | MOD | SAVE |     | MOD | SAVE |     | MOD | SAVE |
 |-----|-----|------|-----|-----|------|-----|-----|------|
@@ -23030,15 +22990,15 @@ The ooze can eat through 2-inch-thick, nonmagical metal or wood in 1 round.
 
 ### Green Hag
 
-Medium Fey, Neutral Evil
+*Medium Fey, Neutral Evil*
 
-AC 17
+**AC** 17
 
-Initiative +1 (11)
+**Initiative** +1 (11)
 
-HP 82 (11d8 + 33)
+**HP** 82 (11d8 + 33)
 
-Speed 30 ft., Swim 30 ft.
+**Speed** 30 ft., Swim 30 ft.
 
 |     | MOD | SAVE |    | MOD | SAVE |    | MOD | SAVE |    |    |    |
 |-----|-----|------|----|-----|------|----|-----|------|----|----|----|
@@ -23051,7 +23011,7 @@ Speed 30 ft., Swim 30 ft.
 
 **Languages** Common, Elvish, Sylvan
 
-CR 3 (XP 700; PB +2)
+**CR** 3 (XP 700; PB +2)
 
 ### Traits
 
@@ -23067,9 +23027,7 @@ CR 3 (XP 700; PB +2)
 
 **Claw.** Melee Attack Roll: +6, reach 5 ft. *Hit:* 8 (1d8 + 4) Slashing damage plus 3 (1d6) Poison damage.
 
-**Spellcasting.** The hag casts one of the following spells, requiring no Material components and using Wisdom
-
-as the spellcasting ability (spell save DC 12, +4 to hit with spell attacks):
+**Spellcasting.** The hag casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save DC 12, +4 to hit with spell attacks):
 
 **At Will:** *Dancing Lights*, *Disguise Self* (24-hour duration), *Invisibility* (self only, and the hag leaves no tracks while Invisible), *Minor Illusion*, *Ray of Sickness* (level 3 version)
 
@@ -23077,15 +23035,15 @@ as the spellcasting ability (spell save DC 12, +4 to hit with spell attacks):
 
 ### Grick
 
-Medium Aberration, Unaligned
+*Medium Aberration, Unaligned*
 
-AC 14
+**AC** 14
 
-Initiative +2 (12)
+**Initiative** +2 (12)
 
-HP 54 (12d8)
+**HP** 54 (12d8)
 
-Speed 30 ft., Climb 30 ft.
+**Speed** 30 ft., Climb 30 ft.
 
 |     | MOD | SAVE |    | MOD | SAVE |    | MOD | SAVE |    |    |    |
 |-----|-----|------|----|-----|------|----|-----|------|----|----|----|
@@ -23098,7 +23056,7 @@ Speed 30 ft., Climb 30 ft.
 
 **Languages** None
 
-CR 2 (XP 450; PB +2)
+**CR** 2 (XP 450; PB +2)
 
 ### Actions
 
@@ -23112,15 +23070,15 @@ CR 2 (XP 450; PB +2)
 
 ### Griffon
 
-Large Monstrosity, Unaligned
+*Large Monstrosity, Unaligned*
 
-AC 12
+**AC** 12
 
-Initiative +2 (12)
+**Initiative** +2 (12)
 
-HP 59 (7d10 + 21)
+**HP** 59 (7d10 + 21)
 
-Speed 30 ft., Fly 80 ft.
+**Speed** 30 ft., Fly 80 ft.
 
 |     | MOD | SAVE |    | MOD | SAVE |    | MOD | SAVE |    |    |    |
 |-----|-----|------|----|-----|------|----|-----|------|----|----|----|
@@ -23133,7 +23091,7 @@ Speed 30 ft., Fly 80 ft.
 
 **Languages** None
 
-CR 2 (XP 450; PB +2)
+**CR** 2 (XP 450; PB +2)
 
 ### Actions
 
@@ -23291,15 +23249,15 @@ CR 2 (XP 450; PB +2)
 
 ### Half-Dragon
 
-Medium Dragon, Neutral
+*Medium Dragon, Neutral*
 
-AC 18
+**AC** 18
 
-Initiative +5 (15)
+**Initiative** +5 (15)
 
-HP 105 (14d8 + 42)
+**HP** 105 (14d8 + 42)
 
-Speed 40 ft.
+**Speed** 40 ft.
 
 |     | MOD | SAVE |     | MOD | SAVE |     | MOD | SAVE |
 |-----|-----|------|-----|-----|------|-----|-----|------|
@@ -23336,15 +23294,15 @@ Speed 40 ft.
 
 ### Harpy
 
-Medium Monstrosity, Chaotic Evil
+*Medium Monstrosity, Chaotic Evil*
 
-AC 11
+**AC** 11
 
-Initiative +1 (11)
+**Initiative** +1 (11)
 
-HP 38 (7d8 + 7)
+**HP** 38 (7d8 + 7)
 
-Speed 20 ft., Fly 40 ft.
+**Speed** 20 ft., Fly 40 ft.
 
 |     | MOD | SAVE |     | MOD | SAVE |     | MOD | SAVE |
 |-----|-----|------|-----|-----|------|-----|-----|------|
@@ -23367,15 +23325,15 @@ Speed 20 ft., Fly 40 ft.
 
 ### Hell Hound
 
-Medium Fiend, Lawful Evil
+*Medium Fiend, Lawful Evil*
 
-AC 15
+**AC** 15
 
-Initiative +1 (11)
+**Initiative** +1 (11)
 
-HP 58 (9d8 + 18)
+**HP** 58 (9d8 + 18)
 
-Speed 50 ft.
+**Speed** 50 ft.
 
 |     | MOD | SAVE |     | MOD | SAVE |     | MOD | SAVE |
 |-----|-----|------|-----|-----|------|-----|-----|------|
@@ -23408,15 +23366,15 @@ Speed 50 ft.
 
 ### Hezrou
 
-Large Fiend (Demon), Chaotic Evil
+*Large Fiend (Demon), Chaotic Evil*
 
-AC 18
+**AC** 18
 
-Initiative +6 (16)
+**Initiative** +6 (16)
 
-HP 157 (15d10 + 75)
+**HP** 157 (15d10 + 75)
 
-Speed 30 ft.
+**Speed** 30 ft.
 
 |     | MOD | SAVE |    | MOD | SAVE |    | MOD | SAVE |    |    |    |
 |-----|-----|------|----|-----|------|----|-----|------|----|----|----|
@@ -23455,15 +23413,15 @@ Speed 30 ft.
 
 ### Hill Giant
 
-Huge Giant, Chaotic Evil
+*Huge Giant, Chaotic Evil*
 
-AC 13
+**AC** 13
 
-Initiative +2 (12)
+**Initiative** +2 (12)
 
-HP 105 (10d12 + 40)
+**HP** 105 (10d12 + 40)
 
-Speed 40 ft.
+**Speed** 40 ft.
 
 |     | MOD | SAVE |    | MOD | SAVE |    | MOD | SAVE |    |    |    |
 |-----|-----|------|----|-----|------|----|-----|------|----|----|----|
@@ -23490,15 +23448,15 @@ Speed 40 ft.
 
 ### Hippogriff
 
-Large Monstrosity, Unaligned
+*Large Monstrosity, Unaligned*
 
-AC 11
+**AC** 11
 
-Initiative +1 (11)
+**Initiative** +1 (11)
 
-HP 26 (4d10 + 4)
+**HP** 26 (4d10 + 4)
 
-Speed 40 ft., Fly 60 ft.
+**Speed** 40 ft., Fly 60 ft.
 
 |     | MOD | SAVE |    | MOD | SAVE |    | MOD | SAVE |    |    |    |
 |-----|-----|------|----|-----|------|----|-----|------|----|----|----|
@@ -23527,15 +23485,15 @@ Speed 40 ft., Fly 60 ft.
 
 ### Hobgoblin Warrior
 
-Medium Fey (Goblinoid), Lawful Evil
+*Medium Fey (Goblinoid), Lawful Evil*
 
-AC 18
+**AC** 18
 
-Initiative +3 (13)
+**Initiative** +3 (13)
 
-HP 11 (2d8 + 2)
+**HP** 11 (2d8 + 2)
 
-Speed 30 ft.
+**Speed** 30 ft.
 
 |     | MOD | SAVE |    | MOD | SAVE |    | MOD | SAVE |    |    |    |
 |-----|-----|------|----|-----|------|----|-----|------|----|----|----|
@@ -23902,23 +23860,21 @@ Speed 30 ft.
 
 **Wind Swipe.** *Melee Attack Roll:* +7, reach 5 ft. *Hit:* 11 (2d6 + 4) Force damage.
 
-**Vortex.** *Constitution Saving Throw:* DC 14, one Large or smaller creature in the stalker's space. *Failure:* 7 (1d8 + 3) Thunder damage, and the target has the Grappled condition (escape DC 13). Until the grapple ends, the target can't cast spells with a Verbal component and
-
-takes 7 (2d6) Thunder damage at the start of each of the stalker's turns.
+**Vortex.** *Constitution Saving Throw:* DC 14, one Large or smaller creature in the stalker's space. *Failure:* 7 (1d8 + 3) Thunder damage, and the target has the Grappled condition (escape DC 13). Until the grapple ends, the target can't cast spells with a Verbal component and takes 7 (2d6) Thunder damage at the start of each of the stalker's turns.
 
 ## Iron Golem
 
 ### Iron Golem
 
-Large Construct, Unaligned
+*Large Construct, Unaligned*
 
-AC 20
+**AC** 20
 
-Initiative +9 (19)
+**Initiative** +9 (19)
 
-HP 252 (24d10 + 120)
+**HP** 252 (24d10 + 120)
 
-Speed 30 ft.
+**Speed** 30 ft.
 
 |     | MOD | SAVE |    | MOD | SAVE |    | MOD | SAVE |    |    |    |
 |-----|-----|------|----|-----|------|----|-----|------|----|----|----|
@@ -23931,7 +23887,7 @@ Speed 30 ft.
 
 **Languages** Understands Common plus two other languages but can't speak
 
-CR 16 (XP 15,000; PB +5)
+**CR** 16 (XP 15,000; PB +5)
 
 ### Traits
 
@@ -23955,15 +23911,15 @@ CR 16 (XP 15,000; PB +5)
 
 ### Knight
 
-Medium or Small Humanoid, Neutral
+*Medium or Small Humanoid, Neutral*
 
-AC 18
+**AC** 18
 
-Initiative +0 (10)
+**Initiative** +0 (10)
 
-HP 52 (8d8 + 16)
+**HP** 52 (8d8 + 16)
 
-Speed 30 ft.
+**Speed** 30 ft.
 
 |     | MOD | SAVE |    | MOD | SAVE |    | MOD | SAVE |    |    |    |
 |-----|-----|------|----|-----|------|----|-----|------|----|----|----|
@@ -23978,7 +23934,7 @@ Speed 30 ft.
 
 **Languages** Common plus one other language
 
-CR 3 (XP 700; PB +2)
+**CR** 3 (XP 700; PB +2)
 
 ### Actions
 
@@ -23996,15 +23952,15 @@ CR 3 (XP 700; PB +2)
 
 ### Kobold Warrior
 
-Small Dragon, Neutral
+*Small Dragon, Neutral*
 
-AC 14
+**AC** 14
 
-Initiative +2 (12)
+**Initiative** +2 (12)
 
-HP 7 (3d6 - 3)
+**HP** 7 (3d6 - 3)
 
-Speed 30 ft.
+**Speed** 30 ft.
 
 |     | MOD | SAVE |    | MOD | SAVE |    | MOD | SAVE |   |    |    |
 |-----|-----|------|----|-----|------|----|-----|------|---|----|----|
@@ -24017,7 +23973,7 @@ Speed 30 ft.
 
 **Languages** Common, Draconic
 
-CR 1/8 (XP 25; PB +2)
+**CR** 1/8 (XP 25; PB +2)
 
 ### Traits
 
@@ -24045,8 +24001,8 @@ CR 1/8 (XP 25; PB +2)
 
 |  | MOD | SAVE |  | MOD | SAVE |  | MOD | SAVE |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| **STR** | 30 | +10 | +17 | **DEX** | 11 | +0 | +7 | **CON** | 26 | +8 | +15 |
-| **INT** | 22 | +6 | +6 | **WIS** | 18 | +4 | +11 | **CHA** | 20 | +5 | +5 |
+| STR | 30 | +10 | +17 | DEX | 11 | +0 | +7 | CON | 26 | +8 | +15 |
+| INT | 22 | +6 | +6 | WIS | 18 | +4 | +11 | CHA | 20 | +5 | +5 |
 
 **Skills** History +13, Perception +11
 
@@ -24078,9 +24034,7 @@ CR 1/8 (XP 25; PB +2)
 
 **Swallow.** *Dexterity Saving Throw:* DC 25, one creature Grappled by the kraken (it can have up to four creatures swallowed at a time). *Failure:* 23 (3d8 + 10) Piercing damage. If the target is Large or smaller, it is swallowed and no longer Grappled. A swallowed creature has the Restrained condition, has Total Cover against attacks and other effects outside the kraken, and takes 24 (7d6) Acid damage at the start of each of its turns.
 
-If the kraken takes 50 damage or more on a single
-
-turn from a creature inside it, the kraken must succeed on a DC 25 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, each of which falls in a space within 10 feet of the kraken with the Prone condition. If the kraken dies, any swallowed creature no longer has the Restrained condition and can escape from the corpse using 15 feet of movement, exiting Prone.
+If the kraken takes 50 damage or more on a single turn from a creature inside it, the kraken must succeed on a DC 25 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, each of which falls in a space within 10 feet of the kraken with the Prone condition. If the kraken dies, any swallowed creature no longer has the Restrained condition and can escape from the corpse using 15 feet of movement, exiting Prone.
 
 ### Legendary Actions
 
@@ -24106,8 +24060,8 @@ turn from a creature inside it, the kraken must succeed on a DC 25 Constitution 
 
 |  | MOD | SAVE |  | MOD | SAVE |  | MOD | SAVE |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| **STR** | 16 | +3 | +3 | **DEX** | 13 | +1 | +1 | **CON** | 15 | +2 | +2 |
-| **INT** | 14 | +2 | +2 | **WIS** | 15 | +2 | +2 | **CHA** | 16 | +3 | +3 |
+| STR | 16 | +3 | +3 | DEX | 13 | +1 | +1 | CON | 15 | +2 | +2 |
+| INT | 14 | +2 | +2 | WIS | 15 | +2 | +2 | CHA | 16 | +3 | +3 |
 
 **Skills** Deception +7, Insight +4, Stealth +5
 
@@ -24245,15 +24199,15 @@ turn from a creature inside it, the kraken must succeed on a DC 25 Constitution 
 
 ### Mage
 
-Medium or Small Humanoid (Wizard), Neutral
+*Medium or Small Humanoid (Wizard), Neutral*
 
-AC 15
+**AC** 15
 
-Initiative +2 (12)
+**Initiative** +2 (12)
 
-HP 81 (18d8)
+**HP** 81 (18d8)
 
-Speed 30 ft.
+**Speed** 30 ft.
 
 |     | MOD | SAVE |    | MOD | SAVE |    | MOD | SAVE |    |    |    |
 |-----|-----|------|----|-----|------|----|-----|------|----|----|----|
@@ -24294,15 +24248,15 @@ Speed 30 ft.
 
 ## Archmage
 
-Medium or Small Humanoid (Wizard), Neutral
+*Medium or Small Humanoid (Wizard), Neutral*
 
-AC 17
+**AC** 17
 
-Initiative +7 (17)
+**Initiative** +7 (17)
 
-HP 170 (31d8 + 31)
+**HP** 170 (31d8 + 31)
 
-Speed 30 ft.
+**Speed** 30 ft.
 
 |     | MOD | SAVE |    | MOD | SAVE |    | MOD | SAVE |    |    |    |
 |-----|-----|------|----|-----|------|----|-----|------|----|----|----|
@@ -24351,15 +24305,15 @@ Speed 30 ft.
 
 ### Magmin
 
-Small Elemental, Chaotic Neutral
+*Small Elemental, Chaotic Neutral*
 
-AC 14
+**AC** 14
 
-Initiative +2 (12)
+**Initiative** +2 (12)
 
-HP 13 (3d6 + 3)
+**HP** 13 (3d6 + 3)
 
-Speed 30 ft.
+**Speed** 30 ft.
 
 |     | MOD | SAVE |    | MOD | SAVE |    | MOD | SAVE |    |    |    |
 |-----|-----|------|----|-----|------|----|-----|------|----|----|----|
@@ -24390,15 +24344,15 @@ Speed 30 ft.
 
 ### Manticore
 
-Large Monstrosity, Lawful Evil
+*Large Monstrosity, Lawful Evil*
 
-AC 14
+**AC** 14
 
-Initiative +3 (13)
+**Initiative** +3 (13)
 
-HP 68 (8d10 + 24)
+**HP** 68 (8d10 + 24)
 
-Speed 30 ft., Fly 50 ft.
+**Speed** 30 ft., Fly 50 ft.
 
 |     | MOD | SAVE |     | MOD | SAVE |     | MOD | SAVE |
 |-----|-----|------|-----|-----|------|-----|-----|------|
@@ -24423,15 +24377,15 @@ Speed 30 ft., Fly 50 ft.
 
 ### Marilith
 
-Large Fiend (Demon), Chaotic Evil
+*Large Fiend (Demon), Chaotic Evil*
 
-AC 16
+**AC** 16
 
-Initiative +10 (20)
+**Initiative** +10 (20)
 
-HP 220 (21d10 + 105)
+**HP** 220 (21d10 + 105)
 
-Speed 40 ft., Climb 40 ft.
+**Speed** 40 ft., Climb 40 ft.
 
 |     | MOD | SAVE |     | MOD | SAVE |     | MOD | SAVE |
 |-----|-----|------|-----|-----|------|-----|-----|------|
@@ -24478,15 +24432,15 @@ Speed 40 ft., Climb 40 ft.
 
 ### Medusa
 
-Medium Monstrosity, Lawful Evil
+*Medium Monstrosity, Lawful Evil*
 
-AC 15
+**AC** 15
 
-Initiative +6 (16)
+**Initiative** +6 (16)
 
-HP 127 (17d8 + 51)
+**HP** 127 (17d8 + 51)
 
-Speed 30 ft.
+**Speed** 30 ft.
 
 |     | MOD | SAVE |     | MOD | SAVE |     | MOD | SAVE |
 |-----|-----|------|-----|-----|------|-----|-----|------|
@@ -24640,15 +24594,15 @@ Speed 30 ft.
 
 ## Steam Mephit
 
-Small Elemental, Neutral Evil
+*Small Elemental, Neutral Evil*
 
-AC 10
+**AC** 10
 
-Initiative +0 (10)
+**Initiative** +0 (10)
 
-HP 17 (5d6)
+**HP** 17 (5d6)
 
-Speed 30 ft., Fly 30 ft.
+**Speed** 30 ft., Fly 30 ft.
 
 |     | MOD | SAVE |    | MOD | SAVE |    | MOD | SAVE |    |    |    |
 |-----|-----|------|----|-----|------|----|-----|------|----|----|----|
@@ -24681,15 +24635,15 @@ Speed 30 ft., Fly 30 ft.
 
 ### Merfolk Skirmisher
 
-Medium Elemental, Neutral
+*Medium Elemental, Neutral*
 
-AC 11
+**AC** 11
 
-Initiative +1 (11)
+**Initiative** +1 (11)
 
-HP 11 (2d8 + 2)
+**HP** 11 (2d8 + 2)
 
-Speed 10 ft., Swim 40 ft.
+**Speed** 10 ft., Swim 40 ft.
 
 |     | MOD | SAVE |    | MOD | SAVE |    | MOD | SAVE |    |    |    |
 |-----|-----|------|----|-----|------|----|-----|------|----|----|----|
@@ -24714,15 +24668,15 @@ Speed 10 ft., Swim 40 ft.
 
 ### Marrow
 
-Large Monstrosity, Chaotic Evil
+*Large Monstrosity, Chaotic Evil*
 
-AC 13
+**AC** 13
 
-Initiative +2 (12)
+**Initiative** +2 (12)
 
-HP 45 (6d10 + 12)
+**HP** 45 (6d10 + 12)
 
-Speed 10 ft., Swim 40 ft.
+**Speed** 10 ft., Swim 40 ft.
 
 |     | MOD | SAVE |    | MOD | SAVE |    | MOD | SAVE |    |    |    |
 |-----|-----|------|----|-----|------|----|-----|------|----|----|----|
@@ -24753,15 +24707,15 @@ Speed 10 ft., Swim 40 ft.
 
 ### Mimic
 
-Medium Monstrosity, Neutral
+*Medium Monstrosity, Neutral*
 
-AC 12
+**AC** 12
 
-Initiative +3 (13)
+**Initiative** +3 (13)
 
-HP 58 (9d8 + 18)
+**HP** 58 (9d8 + 18)
 
-Speed 20 ft.
+**Speed** 20 ft.
 
 |     | MOD | SAVE |    | MOD | SAVE |    | MOD | SAVE |    |    |    |
 |-----|-----|------|----|-----|------|----|-----|------|----|----|----|
@@ -24796,15 +24750,15 @@ Speed 20 ft.
 
 ## Minotaur of Baphomet
 
-Large Monstrosity, Chaotic Evil
+*Large Monstrosity, Chaotic Evil*
 
-AC 14
+**AC** 14
 
-Initiative +0 (10)
+**Initiative** +0 (10)
 
-HP 85 (10d10 + 30)
+**HP** 85 (10d10 + 30)
 
-Speed 40 ft.
+**Speed** 40 ft.
 
 |            | MOD | SAVE |    | MOD        | SAVE |    | MOD | SAVE       |    |    |    |
 |------------|-----|------|----|------------|------|----|-----|------------|----|----|----|
@@ -24829,15 +24783,15 @@ Speed 40 ft.
 
 ## Mummy
 
-Medium or Small Undead, Lawful Evil
+*Medium or Small Undead, Lawful Evil*
 
-AC 11
+**AC** 11
 
-Initiative -1 (9)
+**Initiative** -1 (9)
 
-HP 58 (9d8 + 18)
+**HP** 58 (9d8 + 18)
 
-Speed 20 ft.
+**Speed** 20 ft.
 
 |            | MOD | SAVE |    | MOD        | SAVE |    | MOD | SAVE       |    |    |    |
 |------------|-----|------|----|------------|------|----|-----|------------|----|----|----|
@@ -24863,15 +24817,15 @@ Speed 20 ft.
 
 ## Mummy Lord
 
-Medium or Small Undead (Cleric), Lawful Evil
+*Medium or Small Undead (Cleric), Lawful Evil*
 
-AC 17
+**AC** 17
 
-Initiative +10 (20)
+**Initiative** +10 (20)
 
-HP 187 (25d8 + 75)
+**HP** 187 (25d8 + 75)
 
-Speed 30 ft.
+**Speed** 30 ft.
 
 |            | MOD | SAVE |    | MOD        | SAVE |    | MOD | SAVE       |    |    |    |
 |------------|-----|------|----|------------|------|----|-----|------------|----|----|----|
@@ -24919,7 +24873,7 @@ Speed 30 ft.
 
 ## Legendary Actions
 
-*Legendary Action Uses:* 3 (4 in Lair). Immediately after another creature's turn, the mummy can expend a use to take one of the following actions. The mummy regains all expended uses at the start of each of its turns.
+*Legendary Action Uses: 3 (4 in Lair). Immediately after another creature's turn, the mummy can expend a use to take one of the following actions. The mummy regains all expended uses at the start of each of its turns.*
 
 **Dread Command.** The mummy casts *Command* (level 2 version), using the same spellcasting ability as Spellcasting. The mummy can't take this action again until the start of its next turn.
 
@@ -24931,15 +24885,15 @@ Speed 30 ft.
 
 ### Nalfeshnee
 
-Large Fiend (Demon), Chaotic Evil
+*Large Fiend (Demon), Chaotic Evil*
 
-AC 18
+**AC** 18
 
-Initiative +5 (15)
+**Initiative** +5 (15)
 
-HP 184 (16d10 + 96)
+**HP** 184 (16d10 + 96)
 
-Speed 20 ft., Fly 30 ft.
+**Speed** 20 ft., Fly 30 ft.
 
 |     | MOD | SAVE |     | MOD | SAVE |     | MOD | SAVE |
 |-----|-----|------|-----|-----|------|-----|-----|------|
@@ -24955,7 +24909,7 @@ Speed 20 ft., Fly 30 ft.
 
 **Languages** Abyssal; telepathy 120 ft.
 
-CR 13 (XP 10,000; PB +5)
+**CR** 13 (XP 10,000; PB +5)
 
 ## Traits
 
@@ -24973,9 +24927,7 @@ CR 13 (XP 10,000; PB +5)
 
 ## Bonus Actions
 
-**Horror Nimbus (Recharge 5–6).** *Wisdom Saving Throw:* DC 15, each creature in a 15-foot Emanation originating from the nalfeshnee. *Failure:* 28 (8d6) Psychic damage, and the target has the Frightened condition for 1 minute, until it takes damage, or until it ends its turn with the nalfeshnee out of line of sight. *Success:*
-
-The target is immune to this nalfeshnee's Horror Nimbus for 24 hours.
+**Horror Nimbus (Recharge 5–6).** *Wisdom Saving Throw:* DC 15, each creature in a 15-foot Emanation originating from the nalfeshnee. *Failure:* 28 (8d6) Psychic damage, and the target has the Frightened condition for 1 minute, until it takes damage, or until it ends its turn with the nalfeshnee out of line of sight. *Success:* The target is immune to this nalfeshnee's Horror Nimbus for 24 hours.
 
 ## Reactions
 
@@ -25028,9 +24980,7 @@ The bag has AC 15, HP 20, and Resistance to all damage. The bag turns to dust if
 
 **Claw.** *Melee Attack Roll:* +7, reach 5 ft. *Hit:* 13 (2d8 + 4) Slashing damage.
 
-**Nightmare Haunting (1/Day; Requires Soul Bag).** While on the Ethereal Plane, the hag casts *Dream*, using the same spellcasting ability as Spellcasting. Only the hag can serve as the spell's messenger, and the tar-
-
-get must be a creature the hag can see on the Material Plane. The spell fails and is wasted if the target is under the effect of the *Protection from Evil and Good* spell or within a *Magic Circle* spell.
+**Nightmare Haunting (1/Day; Requires Soul Bag).** While on the Ethereal Plane, the hag casts *Dream*, using the same spellcasting ability as Spellcasting. Only the hag can serve as the spell's messenger, and the target must be a creature the hag can see on the Material Plane. The spell fails and is wasted if the target is under the effect of the *Protection from Evil and Good* spell or within a *Magic Circle* spell.
 
 If the target takes damage from the *Dream* spell, the target's Hit Point maximum decreases by an amount equal to that damage. If the spell kills the target, its soul is trapped in the hag's soul bag, and the target can't be raised from the dead until its soul is released.
 
@@ -25087,15 +25037,15 @@ If the target takes damage from the *Dream* spell, the target's Hit Point maximu
 
 ### Noble
 
-Medium or Small Humanoid, Neutral
+*Medium or Small Humanoid, Neutral*
 
-AC 15
+**AC** 15
 
-Initiative +1 (11)
+**Initiative** +1 (11)
 
-HP 9 (2d8)
+**HP** 9 (2d8)
 
-Speed 30 ft.
+**Speed** 30 ft.
 
 |     | MOD | SAVE |     | MOD | SAVE |     | MOD | SAVE |
 |-----|-----|------|-----|-----|------|-----|-----|------|
@@ -25124,15 +25074,15 @@ Speed 30 ft.
 
 ### Ochre Jelly
 
-Large Ooze, Unaligned
+*Large Ooze, Unaligned*
 
-AC 8
+**AC** 8
 
-Initiative -2 (8)
+**Initiative** -2 (8)
 
-HP 52 (7d10 + 14)
+**HP** 52 (7d10 + 14)
 
-Speed 20 ft., Climb 20 ft.
+**Speed** 20 ft., Climb 20 ft.
 
 |     | MOD | SAVE |     | MOD | SAVE |     | MOD | SAVE |
 |-----|-----|------|-----|-----|------|-----|-----|------|
@@ -25167,15 +25117,15 @@ Speed 20 ft., Climb 20 ft.
 
 ### Ogre
 
-Large Giant, Chaotic Evil
+*Large Giant, Chaotic Evil*
 
-AC 11
+**AC** 11
 
-Initiative -1 (9)
+**Initiative** -1 (9)
 
-HP 68 (8d10 + 24)
+**HP** 68 (8d10 + 24)
 
-Speed 40 ft.
+**Speed** 40 ft.
 
 |     | MOD | SAVE |     | MOD | SAVE |     | MOD | SAVE |
 |-----|-----|------|-----|-----|------|-----|-----|------|
@@ -25200,15 +25150,15 @@ Speed 40 ft.
 
 ### Oni
 
-Large Fiend, Lawful Evil
+*Large Fiend, Lawful Evil*
 
-AC 17
+**AC** 17
 
-Initiative +0 (10)
+**Initiative** +0 (10)
 
-HP 119 (14d10 + 42)
+**HP** 119 (14d10 + 42)
 
-Speed 30 ft., Fly 30 ft. (hover)
+**Speed** 30 ft., Fly 30 ft. (hover)
 
 |     | MOD | SAVE |     | MOD | SAVE |     | MOD | SAVE |
 |-----|-----|------|-----|-----|------|-----|-----|------|
@@ -25526,7 +25476,7 @@ Speed 30 ft., Fly 30 ft. (hover)
 
 ### Planetary
 
-Large Celestial (Angel), Lawful Good
+*Large Celestial (Angel), Lawful Good*
 
 **AC** 19
 
@@ -25725,9 +25675,7 @@ Large Celestial (Angel), Lawful Good
 | <b>STR</b> | 28  | +9   | <b>DEX</b> | 7   | -2   | <b>CON</b> | 22  | +6   |
 | <b>INT</b> | 1   | -5   | <b>WIS</b> | 8   | -1   | <b>CHA</b> | 4   | -3   |
 
-**Senses** Blindsight 30 ft., Tremorsense 60 ft.;
-
-Passive Perception 9
+**Senses** Blindsight 30 ft., Tremorsense 60 ft.; Passive Perception 9
 
 **Languages** None
 
@@ -25853,7 +25801,9 @@ If the worm takes 30 damage or more on a single turn from a creature inside it, 
 
 *Medium Dragon (Chromatic), Chaotic Evil*
 
-**AC 17** **Initiative +2 (12)**
+**AC** 17
+
+**Initiative** +2 (12)
 
 **HP 75** (10d8 + 30)
 
@@ -25886,7 +25836,9 @@ If the worm takes 30 damage or more on a single turn from a creature inside it, 
 
 *Large Dragon (Chromatic), Chaotic Evil*
 
-**AC 18** **Initiative +4 (14)**
+**AC** 18
+
+**Initiative** +4 (14)
 
 **HP 178** (17d10 + 85)
 
@@ -25919,7 +25871,9 @@ If the worm takes 30 damage or more on a single turn from a creature inside it, 
 
 *Huge Dragon (Chromatic), Chaotic Evil*
 
-**AC 19** **Initiative +12 (22)**
+**AC** 19
+
+**Initiative** +12 (22)
 
 **HP 256** (19d12 + 133)
 
@@ -25969,9 +25923,11 @@ If the worm takes 30 damage or more on a single turn from a creature inside it, 
 
 ## Ancient Red Dragon
 
-Gargantuan Dragon (*Chromatic*), Chaotic Evil
+*Gargantuan Dragon (Chromatic), Chaotic Evil*
 
-**AC 22** **Initiative +14 (24)**
+**AC** 22
+
+**Initiative** +14 (24)
 
 **HP 507** (26d20 + 234)
 
@@ -26023,7 +25979,7 @@ Gargantuan Dragon (*Chromatic*), Chaotic Evil
 
 ### Remorhaz
 
-Huge Monstrosity, Unaligned
+*Huge Monstrosity, Unaligned*
 
 **AC** 17
 
@@ -26056,9 +26012,7 @@ Huge Monstrosity, Unaligned
 
 ## Bonus Actions
 
-**Swallow.** Strength Saving Throw: DC 19, one Large or smaller creature Grappled by the remorhaz (it can have up to two creatures swallowed at a time). *Failure:* The target is swallowed by the remorhaz, and the Grappled condition ends. A swallowed creature has the Blinded
-
-and Restrained conditions, it has Total Cover against attacks and other effects outside the remorhaz, and it takes 10 (3d6) Acid damage plus 10 (3d6) Fire damage at the start of each of the remorhaz's turns.
+**Swallow.** Strength Saving Throw: DC 19, one Large or smaller creature Grappled by the remorhaz (it can have up to two creatures swallowed at a time). *Failure:* The target is swallowed by the remorhaz, and the Grappled condition ends. A swallowed creature has the Blinded and Restrained conditions, it has Total Cover against attacks and other effects outside the remorhaz, and it takes 10 (3d6) Acid damage plus 10 (3d6) Fire damage at the start of each of the remorhaz's turns.
 
 If the remorhaz takes 30 damage or more on a single turn from a creature inside it, the remorhaz must succeed on a DC 15 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, each of which falls in a space within 5 feet of the remorhaz and has the Prone condition. If the remorhaz dies, any swallowed creature no longer has the Restrained condition and can escape from the corpse by using 15 feet of movement, exiting Prone.
 
@@ -26314,15 +26268,15 @@ The tentacle can be damaged, freeing a creature it has Grappled when destroyed (
 
 ### Scout
 
-Medium or Small Humanoid, Neutral
+*Medium or Small Humanoid, Neutral*
 
-AC 13
+**AC** 13
 
-Initiative +2 (12)
+**Initiative** +2 (12)
 
-HP 16 (3d8 + 3)
+**HP** 16 (3d8 + 3)
 
-Speed 30 ft.
+**Speed** 30 ft.
 
 |     | MOD | SAVE |     | MOD | SAVE |     | MOD | SAVE |
 |-----|-----|------|-----|-----|------|-----|-----|------|
@@ -26337,7 +26291,7 @@ Speed 30 ft.
 
 **Languages** Common plus one other language
 
-CR 1/2 (XP 100; PB +2)
+**CR** 1/2 (XP 100; PB +2)
 
 ## Actions
 
@@ -26351,15 +26305,15 @@ CR 1/2 (XP 100; PB +2)
 
 ### Sea Hag
 
-Medium Fey, Chaotic Evil
+*Medium Fey, Chaotic Evil*
 
-AC 14
+**AC** 14
 
-Initiative +1 (11)
+**Initiative** +1 (11)
 
-HP 52 (7d8 + 21)
+**HP** 52 (7d8 + 21)
 
-Speed 30 ft., Swim 40 ft.
+**Speed** 30 ft., Swim 40 ft.
 
 |     | MOD | SAVE |     | MOD | SAVE |     | MOD | SAVE |
 |-----|-----|------|-----|-----|------|-----|-----|------|
@@ -26370,7 +26324,7 @@ Speed 30 ft., Swim 40 ft.
 
 **Languages** Common, Giant, Primordial (Aquan)
 
-CR 2 (XP 450; PB +2)
+**CR** 2 (XP 450; PB +2)
 
 ## Traits
 
@@ -26392,15 +26346,15 @@ CR 2 (XP 450; PB +2)
 
 ### Shadow
 
-Medium Undead, Chaotic Evil
+*Medium Undead, Chaotic Evil*
 
-AC 12
+**AC** 12
 
-Initiative +2 (12)
+**Initiative** +2 (12)
 
-HP 27 (5d8 + 5)
+**HP** 27 (5d8 + 5)
 
-Speed 40 ft.
+**Speed** 40 ft.
 
 |     | MOD | SAVE |     | MOD | SAVE |     | MOD | SAVE |
 |-----|-----|------|-----|-----|------|-----|-----|------|
@@ -26419,7 +26373,7 @@ Speed 40 ft.
 
 **Languages** None
 
-CR 1/2 (XP 100; PB +2)
+**CR** 1/2 (XP 100; PB +2)
 
 ## Traits
 
@@ -26439,15 +26393,15 @@ CR 1/2 (XP 100; PB +2)
 
 ### Shambling Mound
 
-Large Plant, Unaligned
+*Large Plant, Unaligned*
 
-AC 15
+**AC** 15
 
-Initiative –1 (9)
+**Initiative** –1 (9)
 
-HP 110 (13d10 + 39)
+**HP** 110 (13d10 + 39)
 
-Speed 30 ft., Swim 20 ft.
+**Speed** 30 ft., Swim 20 ft.
 
 |            | MOD | SAVE |            | MOD | SAVE |            | MOD | SAVE |
 |------------|-----|------|------------|-----|------|------------|-----|------|
@@ -26482,15 +26436,15 @@ Speed 30 ft., Swim 20 ft.
 
 ### Shield Guardian
 
-Large Construct, Unaligned
+*Large Construct, Unaligned*
 
-AC 17
+**AC** 17
 
-Initiative –1 (9)
+**Initiative** –1 (9)
 
-HP 142 (15d10 + 60)
+**HP** 142 (15d10 + 60)
 
-Speed 30 ft.
+**Speed** 30 ft.
 
 |            | MOD | SAVE |            | MOD | SAVE |            | MOD | SAVE |
 |------------|-----|------|------------|-----|------|------------|-----|------|
@@ -26545,9 +26499,7 @@ Speed 30 ft.
 
 **Immunities** Cold
 
-**Senses** Blindsight 10 ft., Darkvision 60 ft.;
-
-Passive Perception 14
+**Senses** Blindsight 10 ft., Darkvision 60 ft.; Passive Perception 14
 
 **Languages** Draconic
 
@@ -26584,9 +26536,7 @@ Passive Perception 14
 
 **Immunities** Cold
 
-**Senses** Blindsight 30 ft., Darkvision 120 ft.;
-
-Passive Perception 18
+**Senses** Blindsight 30 ft., Darkvision 120 ft.; Passive Perception 18
 
 **Languages** Common, Draconic
 
@@ -26623,9 +26573,7 @@ Passive Perception 18
 
 **Immunities** Cold
 
-**Senses** Blindsight 60 ft., Darkvision 120 ft.;
-
-Passive Perception 21
+**Senses** Blindsight 60 ft., Darkvision 120 ft.; Passive Perception 21
 
 **Languages** Common, Draconic
 
@@ -26663,9 +26611,11 @@ Passive Perception 21
 
 ## Ancient Silver Dragon
 
-Gargantuan Dragon (Metallic), Lawful Good
+*Gargantuan Dragon (Metallic), Lawful Good*
 
-**AC 22**                      **Initiative +14 (24)**
+**AC** 22
+
+**Initiative** +14 (24)
 
 **HP 468** (24d20 + 216)
 
@@ -26720,9 +26670,11 @@ Gargantuan Dragon (Metallic), Lawful Good
 
 ### Skeleton
 
-Medium Undead, Lawful Evil
+*Medium Undead, Lawful Evil*
 
-**AC 14**                      **Initiative +3 (13)**
+**AC** 14
+
+**Initiative** +3 (13)
 
 **HP 13** (2d8 + 4)
 
@@ -26753,15 +26705,15 @@ Medium Undead, Lawful Evil
 
 ## Warhorse Skeleton
 
-Large Undead, Lawful Evil
+*Large Undead, Lawful Evil*
 
-AC 13
+**AC** 13
 
-Initiative +1 (11)
+**Initiative** +1 (11)
 
-HP 22 (3d10 + 6)
+**HP** 22 (3d10 + 6)
 
-Speed 60 ft.
+**Speed** 60 ft.
 
 |     | MOD | SAVE |    | MOD | SAVE |    | MOD | SAVE |    |    |    |
 |-----|-----|------|----|-----|------|----|-----|------|----|----|----|
@@ -26776,7 +26728,7 @@ Speed 60 ft.
 
 **Languages** None
 
-CR 1/2 (XP 100; PB +2)
+**CR** 1/2 (XP 100; PB +2)
 
 ## Actions
 
@@ -26784,15 +26736,15 @@ CR 1/2 (XP 100; PB +2)
 
 ## Minotaur Skeleton
 
-Large Undead, Lawful Evil
+*Large Undead, Lawful Evil*
 
-AC 12
+**AC** 12
 
-Initiative +0 (10)
+**Initiative** +0 (10)
 
-HP 45 (6d10 + 12)
+**HP** 45 (6d10 + 12)
 
-Speed 40 ft.
+**Speed** 40 ft.
 
 |     | MOD | SAVE |    | MOD | SAVE |    | MOD | SAVE |    |    |    |
 |-----|-----|------|----|-----|------|----|-----|------|----|----|----|
@@ -26807,7 +26759,7 @@ Speed 40 ft.
 
 **Languages** Understands Abyssal but can't speak
 
-CR 2 (XP 450; PB +2)
+**CR** 2 (XP 450; PB +2)
 
 ## Actions
 
@@ -26819,15 +26771,15 @@ CR 2 (XP 450; PB +2)
 
 ### Solar
 
-Large Celestial (Angel), Lawful Good
+*Large Celestial (Angel), Lawful Good*
 
-AC 21
+**AC** 21
 
-Initiative +20 (30)
+**Initiative** +20 (30)
 
-HP 297 (22d10 + 176)
+**HP** 297 (22d10 + 176)
 
-Speed 50 ft., Fly 150 ft. (hover)
+**Speed** 50 ft., Fly 150 ft. (hover)
 
 |     | MOD | SAVE |    | MOD | SAVE |    | MOD | SAVE |    |     |     |
 |-----|-----|------|----|-----|------|----|-----|------|----|-----|-----|
@@ -26842,7 +26794,7 @@ Speed 50 ft., Fly 150 ft. (hover)
 
 **Languages** All; telepathy 120 ft.
 
-CR 21 (XP 33,000; PB +7)
+**CR** 21 (XP 33,000; PB +7)
 
 ## Traits
 
@@ -26886,11 +26838,13 @@ CR 21 (XP 33,000; PB +7)
 
 *Medium Undead, Chaotic Evil*
 
-AC 12 **Initiative** +2 (12)
+**AC** 12
 
-HP 22 (5d8)
+**Initiative** +2 (12)
 
-Speed 30 ft., Fly 50 ft. (hover)
+**HP** 22 (5d8)
+
+**Speed** 30 ft., Fly 50 ft. (hover)
 
 |     | MOD | SAVE |    | MOD | SAVE |    | MOD | SAVE |    |    |    |
 |-----|-----|------|----|-----|------|----|-----|------|----|----|----|
@@ -26905,7 +26859,7 @@ Speed 30 ft., Fly 50 ft. (hover)
 
 **Languages** Understands Common plus one other language but can't speak
 
-CR 1 (XP 200; PB +2)
+**CR** 1 (XP 200; PB +2)
 
 ### Traits
 
@@ -26923,13 +26877,13 @@ CR 1 (XP 200; PB +2)
 
 *Tiny Celestial, Lawful Good*
 
-AC 13
+**AC** 13
 
 **Initiative** +3 (13)
 
-HP 24 (7d4 + 7)
+**HP** 24 (7d4 + 7)
 
-Speed 20 ft., Fly 40 ft.
+**Speed** 20 ft., Fly 40 ft.
 
 |     | MOD | SAVE |    | MOD | SAVE |    | MOD | SAVE |    |    |    |
 |-----|-----|------|----|-----|------|----|-----|------|----|----|----|
@@ -26944,7 +26898,7 @@ Speed 20 ft., Fly 40 ft.
 
 **Languages** Celestial, Common
 
-CR 1 (XP 200; PB +2)
+**CR** 1 (XP 200; PB +2)
 
 ### Traits
 
@@ -26962,13 +26916,13 @@ CR 1 (XP 200; PB +2)
 
 *Large Celestial, Lawful Neutral*
 
-AC 17
+**AC** 17
 
 **Initiative** +10 (20)
 
-HP 170 (20d10 + 60)
+**HP** 170 (20d10 + 60)
 
-Speed 40 ft., Fly 60 ft.
+**Speed** 40 ft., Fly 60 ft.
 
 |     | MOD | SAVE |    | MOD | SAVE |    | MOD | SAVE |    |    |    |
 |-----|-----|------|----|-----|------|----|-----|------|----|----|----|
@@ -26985,7 +26939,7 @@ Speed 40 ft., Fly 60 ft.
 
 **Languages** Celestial, Common
 
-CR 11 (XP 7,200, or 8,400 in lair; PB +4)
+**CR** 11 (XP 7,200, or 8,400 in lair; PB +4)
 
 ### Traits
 
@@ -27017,15 +26971,15 @@ CR 11 (XP 7,200, or 8,400 in lair; PB +4)
 
 ## Sphinx of Valor
 
-Large Celestial, Lawful Neutral
+*Large Celestial, Lawful Neutral*
 
-AC 17
+**AC** 17
 
-Initiative +12 (22)
+**Initiative** +12 (22)
 
-HP 199 (19d10 + 95)
+**HP** 199 (19d10 + 95)
 
-Speed 40 ft., Fly 60 ft.
+**Speed** 40 ft., Fly 60 ft.
 
 |     | MOD | SAVE |     | MOD | SAVE |     | MOD | SAVE |
 |-----|-----|------|-----|-----|------|-----|-----|------|
@@ -27084,15 +27038,15 @@ Speed 40 ft., Fly 60 ft.
 
 ### Spirit Naga
 
-Large Fiend, Chaotic Evil
+*Large Fiend, Chaotic Evil*
 
-AC 17
+**AC** 17
 
-Initiative +3 (13)
+**Initiative** +3 (13)
 
-HP 135 (18d10 + 36)
+**HP** 135 (18d10 + 36)
 
-Speed 40 ft.
+**Speed** 40 ft.
 
 |     | MOD | SAVE |     | MOD | SAVE |     | MOD | SAVE |
 |-----|-----|------|-----|-----|------|-----|-----|------|
@@ -27129,15 +27083,15 @@ Speed 40 ft.
 
 ### Sprite
 
-Tiny Fey, Neutral Good
+*Tiny Fey, Neutral Good*
 
-AC 15
+**AC** 15
 
-Initiative +4 (14)
+**Initiative** +4 (14)
 
-HP 10 (4d4)
+**HP** 10 (4d4)
 
-Speed 10 ft., Fly 40 ft.
+**Speed** 10 ft., Fly 40 ft.
 
 |     | MOD | SAVE |     | MOD | SAVE |     | MOD | SAVE |
 |-----|-----|------|-----|-----|------|-----|-----|------|
@@ -27166,15 +27120,15 @@ Speed 10 ft., Fly 40 ft.
 
 ### Spy
 
-Medium or Small Humanoid, Neutral
+*Medium or Small Humanoid, Neutral*
 
-AC 12
+**AC** 12
 
-Initiative +4 (14)
+**Initiative** +4 (14)
 
-HP 27 (6d8)
+**HP** 27 (6d8)
 
-Speed 30 ft., Climb 30 ft.
+**Speed** 30 ft., Climb 30 ft.
 
 |     | MOD | SAVE |     | MOD | SAVE |     | MOD | SAVE |
 |-----|-----|------|-----|-----|------|-----|-----|------|
@@ -27205,15 +27159,15 @@ Speed 30 ft., Climb 30 ft.
 
 ### Stirge
 
-Tiny Monstrosity, Unaligned
+*Tiny Monstrosity, Unaligned*
 
-AC 13
+**AC** 13
 
-Initiative +3 (13)
+**Initiative** +3 (13)
 
-HP 5 (2d4)
+**HP** 5 (2d4)
 
-Speed 10 ft., Fly 40 ft.
+**Speed** 10 ft., Fly 40 ft.
 
 |            | MOD | SAVE |    | MOD        | SAVE |    | MOD | SAVE       |    |    |    |
 |------------|-----|------|----|------------|------|----|-----|------------|----|----|----|
@@ -27459,9 +27413,7 @@ The stinge can detach itself by spending 5 feet of its movement. The target or a
 
 **Multiattack.** The tarrasque makes one Bite attack and three other attacks, using Claw or Tail in any combination.
 
-**Bite.** *Melee Attack Roll:* +19, reach 15 ft. *Hit:* 36 (4d12 + 10) Piercing damage, and the target has the Grappled
-
-condition (escape DC 20). Until the grapple ends, the target has the Restrained condition and can't teleport.
+**Bite.** *Melee Attack Roll:* +19, reach 15 ft. *Hit:* 36 (4d12 + 10) Piercing damage, and the target has the Grappled condition (escape DC 20). Until the grapple ends, the target has the Restrained condition and can't teleport.
 
 **Claw.** *Melee Attack Roll:* +19, reach 15 ft. *Hit:* 28 (4d8 + 10) Slashing damage.
 
@@ -27680,15 +27632,15 @@ If the tarrasque takes 60 damage or more on a single turn from a creature inside
 
 ## Unicorn
 
-Large Celestial, Lawful Good
+*Large Celestial, Lawful Good*
 
-AC 12
+**AC** 12
 
-Initiative +8 (18)
+**Initiative** +8 (18)
 
-HP 97 (13d10 + 26)
+**HP** 97 (13d10 + 26)
 
-Speed 50 ft.
+**Speed** 50 ft.
 
 |     | MOD | SAVE |     | MOD | SAVE |     | MOD | SAVE |
 |-----|-----|------|-----|-----|------|-----|-----|------|
@@ -27741,15 +27693,15 @@ The unicorn can't take this action again until the start of its next turn.
 
 ## Vampire Familiar
 
-Medium or Small Humanoid, Neutral Evil
+*Medium or Small Humanoid, Neutral Evil*
 
-AC 15
+**AC** 15
 
-Initiative +5 (15)
+**Initiative** +5 (15)
 
-HP 65 (10d8 + 20)
+**HP** 65 (10d8 + 20)
 
-Speed 30 ft., Climb 30 ft.
+**Speed** 30 ft., Climb 30 ft.
 
 |     | MOD | SAVE |     | MOD | SAVE |     | MOD | SAVE |
 |-----|-----|------|-----|-----|------|-----|-----|------|
@@ -27786,15 +27738,15 @@ Speed 30 ft., Climb 30 ft.
 
 ## Vampire Spawn
 
-Medium or Small Undead, Neutral Evil
+*Medium or Small Undead, Neutral Evil*
 
-AC 16
+**AC** 16
 
-Initiative +3 (13)
+**Initiative** +3 (13)
 
-HP 90 (12d8 + 36)
+**HP** 90 (12d8 + 36)
 
-Speed 30 ft.
+**Speed** 30 ft.
 
 |     | MOD | SAVE |     | MOD | SAVE |     | MOD | SAVE |
 |-----|-----|------|-----|-----|------|-----|-----|------|
@@ -27839,7 +27791,7 @@ Speed 30 ft.
 
 ## Vampire
 
-Medium or Small Undead, Lawful Evil
+*Medium or Small Undead, Lawful Evil*
 
 **AC** 16
 
@@ -27890,9 +27842,7 @@ While it has 0 Hit Points in mist form, it can't return to its vampire form, and
 
 **Grave Strike (Vampire Form Only).** *Melee Attack Roll:* +9, reach 5 ft. *Hit:* 8 (1d8 + 4) Bludgeoning damage plus 7 (2d6) Necrotic damage. If the target is a Large or smaller creature, it has the Grappled condition (escape DC 14) from one of two hands.
 
-**Bite (Bat or Vampire Form Only).** *Constitution Saving Throw:* DC 17, one creature within 5 feet that is willing or that has the Grappled, Incapacitated, or Restrained condition. *Failure:* 6 (1d4 + 4) Piercing damage plus 13 (3d8) Necrotic damage. The target's Hit Point maximum
-
-decreases by an amount equal to the Necrotic damage taken, and the vampire regains Hit Points equal to that amount. A Humanoid reduced to 0 Hit Points by this damage and then buried rises the following sunset as a **Vampire Spawn** under the vampire's control.
+**Bite (Bat or Vampire Form Only).** *Constitution Saving Throw:* DC 17, one creature within 5 feet that is willing or that has the Grappled, Incapacitated, or Restrained condition. *Failure:* 6 (1d4 + 4) Piercing damage plus 13 (3d8) Necrotic damage. The target's Hit Point maximum decreases by an amount equal to the Necrotic damage taken, and the vampire regains Hit Points equal to that amount. A Humanoid reduced to 0 Hit Points by this damage and then buried rises the following sunset as a **Vampire Spawn** under the vampire's control.
 
 ### Bonus Actions
 
@@ -27916,15 +27866,15 @@ While in mist form, the vampire can't take any actions, speak, or manipulate obj
 
 ### Vrock
 
-Large Fiend (Demon), Chaotic Evil
+*Large Fiend (Demon), Chaotic Evil*
 
-AC 15
+**AC** 15
 
-Initiative +2 (12)
+**Initiative** +2 (12)
 
-HP 152 (16d10 + 64)
+**HP** 152 (16d10 + 64)
 
-Speed 40 ft., Fly 60 ft.
+**Speed** 40 ft., Fly 60 ft.
 
 |     | MOD | SAVE |     | MOD | SAVE |     | MOD | SAVE |
 |-----|-----|------|-----|-----|------|-----|-----|------|
@@ -27962,15 +27912,15 @@ Speed 40 ft., Fly 60 ft.
 
 ### Warrior Infantry
 
-Medium or Small Humanoid, Neutral
+*Medium or Small Humanoid, Neutral*
 
-AC 13
+**AC** 13
 
-Initiative +0 (10)
+**Initiative** +0 (10)
 
-HP 9 (2d8)
+**HP** 9 (2d8)
 
-Speed 30 ft.
+**Speed** 30 ft.
 
 |     | MOD | SAVE |     | MOD | SAVE |     | MOD | SAVE |
 |-----|-----|------|-----|-----|------|-----|-----|------|
@@ -28109,9 +28059,7 @@ Speed 30 ft.
 
 **Multiattack.** The werebear makes two attacks, using Handaxe or Rend in any combination. It can replace one attack with a Bite attack.
 
-**Bite (Bear or Hybrid Form Only).** *Melee Attack Roll:* +7, reach 5 ft. *Hit:* 17 (2d12 + 4) Piercing damage. If the target is a Humanoid, it is subjected to the following effect. *Constitution Saving Throw:* DC 14. *Failure:* The target is cursed. If the cursed target drops to 0 Hit Points, it instead becomes a **Werebear** under the GM's
-
-control and has 10 Hit Points. *Success*: The target is immune to this werebear's curse for 24 hours.
+**Bite (Bear or Hybrid Form Only).** *Melee Attack Roll:* +7, reach 5 ft. *Hit:* 17 (2d12 + 4) Piercing damage. If the target is a Humanoid, it is subjected to the following effect. *Constitution Saving Throw:* DC 14. *Failure:* The target is cursed. If the cursed target drops to 0 Hit Points, it instead becomes a **Werebear** under the GM's control and has 10 Hit Points. *Success*: The target is immune to this werebear's curse for 24 hours.
 
 **Handaxe (Humanoid or Hybrid Form Only).** *Melee or Ranged Attack Roll*: +7, reach 5 ft or range 20/60 ft. *Hit*: 14 (3d6 + 4) Slashing damage.
 
@@ -28211,15 +28159,15 @@ control and has 10 Hit Points. *Success*: The target is immune to this werebear'
 
 ### Weretiger
 
-Medium or Small Monstrosity (Lycanthrope), Neutral
+*Medium or Small Monstrosity (Lycanthrope), Neutral*
 
-AC 12
+**AC** 12
 
-Initiative +2 (12)
+**Initiative** +2 (12)
 
-HP 120 (16d8 + 48)
+**HP** 120 (16d8 + 48)
 
-Speed 30 ft., 40 ft. (tiger form only)
+**Speed** 30 ft., 40 ft. (tiger form only)
 
 |     | MOD | SAVE |     | MOD | SAVE |     | MOD | SAVE |
 |-----|-----|------|-----|-----|------|-----|-----|------|
@@ -28256,15 +28204,15 @@ Speed 30 ft., 40 ft. (tiger form only)
 
 ### Werewolf
 
-Medium or Small Monstrosity (Lycanthrope), Chaotic Evil
+*Medium or Small Monstrosity (Lycanthrope), Chaotic Evil*
 
-AC 15
+**AC** 15
 
-Initiative +4 (14)
+**Initiative** +4 (14)
 
-HP 71 (11d8 + 22)
+**HP** 71 (11d8 + 22)
 
-Speed 30 ft., 40 ft. (wolf form only)
+**Speed** 30 ft., 40 ft. (wolf form only)
 
 |     | MOD | SAVE |     | MOD | SAVE |     | MOD | SAVE |
 |-----|-----|------|-----|-----|------|-----|-----|------|
@@ -28303,15 +28251,15 @@ Speed 30 ft., 40 ft. (wolf form only)
 
 ### White Dragon Wyrmling
 
-Medium Dragon (Chromatic), Chaotic Evil
+*Medium Dragon (Chromatic), Chaotic Evil*
 
-AC 16
+**AC** 16
 
-Initiative +2 (12)
+**Initiative** +2 (12)
 
-HP 32 (5d8 + 10)
+**HP** 32 (5d8 + 10)
 
-Speed 30 ft., Burrow 15 ft., Fly 60 ft., Swim 30 ft.
+**Speed** 30 ft., Burrow 15 ft., Fly 60 ft., Swim 30 ft.
 
 |            | MOD | SAVE |            | MOD | SAVE |            | MOD | SAVE |
 |------------|-----|------|------------|-----|------|------------|-----|------|
@@ -28322,9 +28270,7 @@ Speed 30 ft., Burrow 15 ft., Fly 60 ft., Swim 30 ft.
 
 **Immunities** Cold
 
-**Senses** Blindsight 10 ft., Darkvision 60 ft.;
-
-Passive Perception 14
+**Senses** Blindsight 10 ft., Darkvision 60 ft.; Passive Perception 14
 
 **Languages** Draconic
 
@@ -28363,9 +28309,7 @@ Passive Perception 14
 
 **Immunities** Cold
 
-**Senses** Blindsight 30 ft., Darkvision 120 ft.;
-
-Passive Perception 16
+**Senses** Blindsight 30 ft., Darkvision 120 ft.; Passive Perception 16
 
 **Languages** Common, Draconic
 
@@ -28404,9 +28348,7 @@ Passive Perception 16
 
 **Immunities** Cold
 
-**Senses** Blindsight 60 ft., Darkvision 120 ft.;
-
-Passive Perception 21
+**Senses** Blindsight 60 ft., Darkvision 120 ft.; Passive Perception 21
 
 **Languages** Common, Draconic
 
@@ -28457,8 +28399,7 @@ Passive Perception 21
 
 **Immunities** Cold
 
-**Senses** Blindsight 60 ft., Darkvision 120 ft.;  
-Passive Perception 23
+**Senses** Blindsight 60 ft., Darkvision 120 ft.; Passive Perception 23
 
 **Languages** Common, Draconic
 
@@ -28587,10 +28528,14 @@ A Humanoid slain by this attack rises 24 hours later as a **Zombie** under the w
 
 ### Winter Wolf
 
-Large Monstrosity, Neutral Evil
+*Large Monstrosity, Neutral Evil*
 
-**AC** 13 **Initiative** +1 (11)  
-**HP** 75 (10d10 + 20)  
+**AC** 13
+
+**Initiative** +1 (11)  
+
+**HP** 75 (10d10 + 20)
+
 **Speed** 50 ft.
 
 |            | MOD | SAVE |    | MOD        | SAVE |    | MOD | SAVE       |    |    |    |
@@ -28621,10 +28566,14 @@ Large Monstrosity, Neutral Evil
 
 ### Worg
 
-Large Fey, Neutral Evil
+*Large Fey, Neutral Evil*
 
-**AC** 13 **Initiative** +1 (11)  
+**AC** 13
+
+**Initiative** +1 (11)  
+
 **HP** 26 (4d10 + 4)  
+
 **Speed** 50 ft.
 
 |            | MOD | SAVE |    | MOD        | SAVE |    | MOD | SAVE       |    |    |    |
@@ -28636,7 +28585,8 @@ Large Fey, Neutral Evil
 
 **Senses** Darkvision 60 ft.; Passive Perception 14
 
-**Languages** Goblin, Worg  
+**Languages** Goblin, Worg
+
 **CR** 1/2 (XP 100; PB +2)
 
 ## Actions
@@ -28647,10 +28597,14 @@ Large Fey, Neutral Evil
 
 ### Wraith
 
-Medium or Small Undead, Neutral Evil
+*Medium or Small Undead, Neutral Evil*
 
-**AC** 13 **Initiative** +3 (13)  
-**HP** 67 (9d8 + 27)  
+**AC** 13
+
+**Initiative** +3 (13)
+
+**HP** 67 (9d8 + 27)
+
 **Speed** 5 ft., Fly 60 ft. (hover)
 
 |            | MOD | SAVE |    | MOD        | SAVE |    | MOD | SAVE       |    |    |    |
@@ -28664,7 +28618,8 @@ Medium or Small Undead, Neutral Evil
 
 **Senses** Darkvision 60 ft.; Passive Perception 12
 
-**Languages** Common plus two other languages  
+**Languages** Common plus two other languages
+
 **CR** 5 (XP 1,800; PB +3)
 
 ## Traits
@@ -28683,15 +28638,15 @@ Medium or Small Undead, Neutral Evil
 
 ## Wyvern
 
-Large Dragon, Unaligned
+*Large Dragon, Unaligned*
 
-AC 14
+**AC** 14
 
-Initiative +0 (10)
+**Initiative** +0 (10)
 
-HP 127 (15d10 + 45)
+**HP** 127 (15d10 + 45)
 
-Speed 30 ft., Fly 80 ft.
+**Speed** 30 ft., Fly 80 ft.
 
 |     | MOD | SAVE |    | MOD | SAVE |    | MOD | SAVE |    |    |    |
 |-----|-----|------|----|-----|------|----|-----|------|----|----|----|
@@ -28718,15 +28673,15 @@ Speed 30 ft., Fly 80 ft.
 
 ## Xorn
 
-Medium Elemental, Neutral
+*Medium Elemental, Neutral*
 
-AC 19
+**AC** 19
 
-Initiative +0 (10)
+**Initiative** +0 (10)
 
-HP 84 (8d8 + 48)
+**HP** 84 (8d8 + 48)
 
-Speed 20 ft., Burrow 20 ft.
+**Speed** 20 ft., Burrow 20 ft.
 
 |     | MOD | SAVE |    | MOD | SAVE |    | MOD | SAVE |    |    |    |
 |-----|-----|------|----|-----|------|----|-----|------|----|----|----|
@@ -28737,9 +28692,7 @@ Speed 20 ft., Burrow 20 ft.
 
 **Immunities** Poison; Paralyzed, Petrified, Poisoned
 
-**Senses** Darkvision 60 ft., Tremorsense 60 ft.;
-
-Passive Perception 16
+**Senses** Darkvision 60 ft., Tremorsense 60 ft.; Passive Perception 16
 
 **Languages** Primordial (Terran)
 
@@ -28767,15 +28720,15 @@ Passive Perception 16
 
 ## Zombie
 
-Medium Undead, Neutral Evil
+*Medium Undead, Neutral Evil*
 
-AC 8
+**AC** 8
 
-Initiative -2 (8)
+**Initiative** -2 (8)
 
-HP 15 (2d8 + 6)
+**HP** 15 (2d8 + 6)
 
-Speed 20 ft.
+**Speed** 20 ft.
 
 |     | MOD | SAVE |    | MOD | SAVE |    | MOD | SAVE |    |    |    |
 |-----|-----|------|----|-----|------|----|-----|------|----|----|----|
@@ -28800,15 +28753,15 @@ Speed 20 ft.
 
 ## Ogre Zombie
 
-Large Undead, Neutral Evil
+*Large Undead, Neutral Evil*
 
-AC 8
+**AC** 8
 
-Initiative -2 (8)
+**Initiative** -2 (8)
 
-HP 85 (9d10 + 36)
+**HP** 85 (9d10 + 36)
 
-Speed 30 ft.
+**Speed** 30 ft.
 
 |     | MOD | SAVE |    | MOD | SAVE |    | MOD | SAVE |    |    |    |
 |-----|-----|------|----|-----|------|----|-----|------|----|----|----|
@@ -28835,15 +28788,15 @@ Speed 30 ft.
 
 ## Allosaurus
 
-Large Beast (Dinosaur), Unaligned
+*Large Beast (Dinosaur), Unaligned*
 
-AC 13
+**AC** 13
 
-Initiative +1 (11)
+**Initiative** +1 (11)
 
-HP 51 (6d10 + 18)
+**HP** 51 (6d10 + 18)
 
-Speed 60 ft.
+**Speed** 60 ft.
 
 |     | MOD | SAVE |    | MOD | SAVE |    | MOD | SAVE |    |    |    |
 |-----|-----|------|----|-----|------|----|-----|------|----|----|----|
@@ -28862,21 +28815,19 @@ Speed 60 ft.
 
 **Bite.** *Melee Attack Roll:* +6, reach 5 ft. *Hit:* 15 (2d10 + 4) Piercing damage.
 
-**Claws.** *Melee Attack Roll:* +6, reach 5 ft. *Hit:* 8 (1d8 + 4) Slashing damage. If the target is a Large or smaller creature and the allosaurus moved 30+ feet straight toward it immediately before the hit, the target has the
-
-Prone condition, and the allosaurus can make one Bite attack against it.
+**Claws.** *Melee Attack Roll:* +6, reach 5 ft. *Hit:* 8 (1d8 + 4) Slashing damage. If the target is a Large or smaller creature and the allosaurus moved 30+ feet straight toward it immediately before the hit, the target has the Prone condition, and the allosaurus can make one Bite attack against it.
 
 ## Ankylosaurus
 
-Huge Beast (Dinosaur), Unaligned
+*Huge Beast (Dinosaur), Unaligned*
 
-AC 15
+**AC** 15
 
-Initiative +0 (10)
+**Initiative** +0 (10)
 
-HP 68 (8d12 + 16)
+**HP** 68 (8d12 + 16)
 
-Speed 30 ft.
+**Speed** 30 ft.
 
 |     | MOD | SAVE |    | MOD | SAVE |    | MOD | SAVE |    |    |    |
 |-----|-----|------|----|-----|------|----|-----|------|----|----|----|
@@ -28897,15 +28848,15 @@ Speed 30 ft.
 
 ## Ape
 
-Medium Beast, Unaligned
+*Medium Beast, Unaligned*
 
-AC 12
+**AC** 12
 
-Initiative +2 (12)
+**Initiative** +2 (12)
 
-HP 19 (3d8 + 6)
+**HP** 19 (3d8 + 6)
 
-Speed 30 ft., Climb 30 ft.
+**Speed** 30 ft., Climb 30 ft.
 
 |     | MOD | SAVE |    | MOD | SAVE |    | MOD | SAVE |    |    |    |
 |-----|-----|------|----|-----|------|----|-----|------|----|----|----|
@@ -28930,24 +28881,27 @@ Speed 30 ft., Climb 30 ft.
 
 ## Archelon
 
-Huge Beast (Dinosaur), Unaligned
+*Huge Beast (Dinosaur), Unaligned*
 
-AC 17
+**AC** 17
 
-Initiative +3 (13)
+**Initiative** +3 (13)
 
-HP 90 (12d12 + 12)
+**HP** 90 (12d12 + 12)
 
-Speed 20 ft., Swim 80 ft.
+**Speed** 20 ft., Swim 80 ft.
 
 |            | MOD | SAVE |    | MOD        | SAVE |    | MOD | SAVE       |    |    |    |
 |------------|-----|------|----|------------|------|----|-----|------------|----|----|----|
 | <b>STR</b> | 18  | +4   | +4 | <b>DEX</b> | 16   | +3 | +3  | <b>CON</b> | 13 | +1 | +1 |
 | <b>INT</b> | 4   | -3   | -3 | <b>WIS</b> | 14   | +2 | +2  | <b>CHA</b> | 6  | -2 | -2 |
 
-**Skills** Stealth +5  
-**Senses** Passive Perception 12  
-**Languages** None  
+**Skills** Stealth +5
+
+**Senses** Passive Perception 12
+
+**Languages** None
+
 **CR** 4 (XP 1,100; PB +2)
 
 ### Traits
@@ -28964,8 +28918,12 @@ Speed 20 ft., Swim 80 ft.
 
 *Small Beast, Unaligned*
 
-**AC** 12 **Initiative** +2 (12)  
-**HP** 3 (1d6)  
+**AC** 12
+
+**Initiative** +2 (12)
+
+**HP** 3 (1d6)
+
 **Speed** 30 ft., Climb 30 ft.
 
 |            | MOD | SAVE |    | MOD        | SAVE |    | MOD | SAVE       |    |    |    |
@@ -28973,8 +28931,10 @@ Speed 20 ft., Swim 80 ft.
 | <b>STR</b> | 8   | -1   | -1 | <b>DEX</b> | 14   | +2 | +2  | <b>CON</b> | 11 | +0 | +0 |
 | <b>INT</b> | 4   | -3   | -3 | <b>WIS</b> | 12   | +1 | +1  | <b>CHA</b> | 6  | -2 | -2 |
 
-**Senses** Passive Perception 11  
-**Languages** None  
+**Senses** Passive Perception 11
+
+**Languages** None
+
 **CR** 0 (XP 10; PB +2)
 
 ### Traits
@@ -28989,8 +28949,12 @@ Speed 20 ft., Swim 80 ft.
 
 *Tiny Beast, Unaligned*
 
-**AC** 11 **Initiative** +0 (10)  
-**HP** 5 (1d4 + 3)  
+**AC** 11
+
+**Initiative** +0 (10)
+
+**HP** 5 (1d4 + 3)
+
 **Speed** 20 ft., Burrow 5 ft.
 
 |            | MOD | SAVE |    | MOD        | SAVE |    | MOD | SAVE       |    |    |    |
@@ -28998,10 +28962,14 @@ Speed 20 ft., Swim 80 ft.
 | <b>STR</b> | 10  | +0   | +0 | <b>DEX</b> | 11   | +0 | +0  | <b>CON</b> | 16 | +3 | +3 |
 | <b>INT</b> | 2   | -4   | -4 | <b>WIS</b> | 12   | +1 | +1  | <b>CHA</b> | 5  | -3 | -3 |
 
-**Skills** Perception +3  
-**Resistances** Poison  
-**Senses** Darkvision 30 ft.; Passive Perception 13  
-**Languages** None  
+**Skills** Perception +3
+
+**Resistances** Poison
+
+**Senses** Darkvision 30 ft.; Passive Perception 13
+
+**Languages** None
+
 **CR** 0 (XP 10; PB +2)
 
 ### Actions
@@ -29012,8 +28980,12 @@ Speed 20 ft., Swim 80 ft.
 
 *Tiny Beast, Unaligned*
 
-**AC** 12 **Initiative** +2 (12)  
-**HP** 1 (1d4 - 1)  
+**AC** 12
+
+**Initiative** +2 (12)
+
+**HP** 1 (1d4 - 1)
+
 **Speed** 5 ft., Fly 30 ft.
 
 |            | MOD | SAVE |    | MOD        | SAVE |    | MOD | SAVE       |   |    |    |
@@ -29023,7 +28995,8 @@ Speed 20 ft., Swim 80 ft.
 
 **Senses** Blindsight 60 ft.; Passive Perception 11
 
-**Languages** None  
+**Languages** None
+
 **CR** 0 (XP 10; PB +2)
 
 ### Actions
@@ -29034,8 +29007,12 @@ Speed 20 ft., Swim 80 ft.
 
 *Medium Beast, Unaligned*
 
-**AC** 11 **Initiative** +1 (11)  
-**HP** 19 (3d8 + 6)  
+**AC** 11
+
+**Initiative** +1 (11)
+
+**HP** 19 (3d8 + 6)
+
 **Speed** 30 ft., Climb 30 ft., Swim 30 ft.
 
 |            | MOD | SAVE |    | MOD        | SAVE |    | MOD | SAVE       |    |    |    |
@@ -29043,9 +29020,12 @@ Speed 20 ft., Swim 80 ft.
 | <b>STR</b> | 15  | +2   | +2 | <b>DEX</b> | 12   | +1 | +1  | <b>CON</b> | 14 | +2 | +2 |
 | <b>INT</b> | 2   | -4   | -4 | <b>WIS</b> | 12   | +1 | +1  | <b>CHA</b> | 7  | -2 | -2 |
 
-**Skills** Perception +5  
-**Senses** Darkvision 60 ft.; Passive Perception 15  
-**Languages** None  
+**Skills** Perception +5
+
+**Senses** Darkvision 60 ft.; Passive Perception 15
+
+**Languages** None
+
 **CR** 1/2 (XP 100; PB +2)
 
 ### Actions
@@ -29058,8 +29038,12 @@ Speed 20 ft., Swim 80 ft.
 
 *Small Beast, Unaligned*
 
-**AC** 12 **Initiative** +2 (12)  
-**HP** 7 (2d6)  
+**AC** 12
+
+**Initiative** +2 (12)
+
+**HP** 7 (2d6)
+
 **Speed** 10 ft., Fly 60 ft.
 
 |            | MOD | SAVE |    | MOD        | SAVE |    | MOD | SAVE       |    |    |    |
@@ -29067,9 +29051,12 @@ Speed 20 ft., Swim 80 ft.
 | <b>STR</b> | 6   | -2   | -2 | <b>DEX</b> | 14   | +2 | +2  | <b>CON</b> | 10 | +0 | +0 |
 | <b>INT</b> | 3   | -4   | -4 | <b>WIS</b> | 14   | +2 | +2  | <b>CHA</b> | 5  | -3 | -3 |
 
-**Skills** Perception +6  
-**Senses** Passive Perception 16  
-**Languages** None  
+**Skills** Perception +6
+
+**Senses** Passive Perception 16
+
+**Languages** None
+
 **CR** 1/8 (XP 25; PB +2)
 
 ## Traits
@@ -29974,15 +29961,15 @@ At the end of the frog's next turn, the swallowed target takes 5 (2d4) Acid dama
 
 ## Giant Hyena
 
-Large Beast, *Unaligned*
+*Large Beast, Unaligned*
 
-AC 12
+**AC** 12
 
-Initiative +2 (12)
+**Initiative** +2 (12)
 
-HP 45 (6d10 + 12)
+**HP** 45 (6d10 + 12)
 
-Speed 50 ft.
+**Speed** 50 ft.
 
 |     | MOD | SAVE |     | MOD | SAVE |     | MOD | SAVE |
 |-----|-----|------|-----|-----|------|-----|-----|------|
@@ -30007,15 +29994,15 @@ Speed 50 ft.
 
 ## Giant Lizard
 
-Large Beast, *Unaligned*
+*Large Beast, Unaligned*
 
-AC 12
+**AC** 12
 
-Initiative +1 (11)
+**Initiative** +1 (11)
 
-HP 19 (3d10 + 3)
+**HP** 19 (3d10 + 3)
 
-Speed 40 ft., Climb 40 ft.
+**Speed** 40 ft., Climb 40 ft.
 
 |     | MOD | SAVE |     | MOD | SAVE |     | MOD | SAVE |
 |-----|-----|------|-----|-----|------|-----|-----|------|
@@ -30038,15 +30025,15 @@ Speed 40 ft., Climb 40 ft.
 
 ## Giant Octopus
 
-Large Beast, *Unaligned*
+*Large Beast, Unaligned*
 
-AC 11
+**AC** 11
 
-Initiative +1 (11)
+**Initiative** +1 (11)
 
-HP 45 (7d10 + 7)
+**HP** 45 (7d10 + 7)
 
-Speed 10 ft., Swim 60 ft.
+**Speed** 10 ft., Swim 60 ft.
 
 |     | MOD | SAVE |     | MOD | SAVE |     | MOD | SAVE |
 |-----|-----|------|-----|-----|------|-----|-----|------|
@@ -30075,15 +30062,15 @@ Speed 10 ft., Swim 60 ft.
 
 ## Giant Owl
 
-Large Celestial, *Neutral*
+*Large Celestial, Neutral*
 
-AC 12
+**AC** 12
 
-Initiative +2 (12)
+**Initiative** +2 (12)
 
-HP 19 (3d10 + 3)
+**HP** 19 (3d10 + 3)
 
-Speed 5 ft., Fly 60 ft.
+**Speed** 5 ft., Fly 60 ft.
 
 |     | MOD | SAVE |     | MOD | SAVE |     | MOD | SAVE |
 |-----|-----|------|-----|-----|------|-----|-----|------|
@@ -30317,9 +30304,7 @@ Speed 5 ft., Fly 60 ft.
 
 **Bite.** *Melee Attack Roll:* +4, reach 5 ft. *Hit:* 5 (1d6 + 2) Piercing damage plus 5 (2d4) Poison damage. If the target is a Medium or smaller creature, it has the Grappled condition (escape DC 12).
 
-**Swallow.** The toad swallows a Medium or smaller target it is grappling. While swallowed, the target isn't Grappled but has the Blinded and Restrained conditions, and it has Total Cover against attacks and other effects outside the toad. In addition, the target takes 10 (3d6) Acid damage at the end of each of the toad's turns. The
-
-toad can have only one target swallowed at a time, and it can't use Bite while it has a swallowed target. If the toad dies, a swallowed creature is no longer Restrained and can escape from the corpse using 5 feet of movement, exiting with the Prone condition.
+**Swallow.** The toad swallows a Medium or smaller target it is grappling. While swallowed, the target isn't Grappled but has the Blinded and Restrained conditions, and it has Total Cover against attacks and other effects outside the toad. In addition, the target takes 10 (3d6) Acid damage at the end of each of the toad's turns. The toad can have only one target swallowed at a time, and it can't use Bite while it has a swallowed target. If the toad dies, a swallowed creature is no longer Restrained and can escape from the corpse using 5 feet of movement, exiting with the Prone condition.
 
 ## Giant Venomous Snake
 
@@ -30464,9 +30449,7 @@ toad can have only one target swallowed at a time, and it can't use Bite while i
 
 **Skills** Perception +3, Stealth +7
 
-**Senses** Blindsight 10 ft., Darkvision 60 ft.;
-
-Passive Perception 13
+**Senses** Blindsight 10 ft., Darkvision 60 ft.; Passive Perception 13
 
 **Languages** None
 
@@ -30577,13 +30560,13 @@ Passive Perception 13
 
 *Large Beast, Unaligned*
 
-AC 12
+**AC** 12
 
-Initiative +2 (12)
+**Initiative** +2 (12)
 
-HP 45 (6d10 + 12)
+**HP** 45 (6d10 + 12)
 
-Speed 5 ft., Swim 40 ft.
+**Speed** 5 ft., Swim 40 ft.
 
 |     | MOD | SAVE |    | MOD | SAVE |    | MOD | SAVE |    |    |    |
 |-----|-----|------|----|-----|------|----|-----|------|----|----|----|
@@ -30610,13 +30593,13 @@ Speed 5 ft., Swim 40 ft.
 
 *Medium Beast, Unaligned*
 
-AC 11
+**AC** 11
 
-Initiative +1 (11)
+**Initiative** +1 (11)
 
-HP 5 (1d8 + 1)
+**HP** 5 (1d8 + 1)
 
-Speed 50 ft.
+**Speed** 50 ft.
 
 |     | MOD | SAVE |    | MOD | SAVE |    | MOD | SAVE |    |    |    |
 |-----|-----|------|----|-----|------|----|-----|------|----|----|----|
@@ -30643,13 +30626,13 @@ Speed 50 ft.
 
 *Small Beast, Unaligned*
 
-AC 12
+**AC** 12
 
-Initiative +2 (12)
+**Initiative** +2 (12)
 
-HP 3 (1d6)
+**HP** 3 (1d6)
 
-Speed 40 ft.
+**Speed** 40 ft.
 
 |     | MOD | SAVE |    | MOD | SAVE |    | MOD | SAVE |    |    |    |
 |-----|-----|------|----|-----|------|----|-----|------|----|----|----|
@@ -30672,13 +30655,13 @@ Speed 40 ft.
 
 *Huge Beast, Unaligned*
 
-AC 12
+**AC** 12
 
-Initiative +2 (12)
+**Initiative** +2 (12)
 
-HP 90 (12d12 + 12)
+**HP** 90 (12d12 + 12)
 
-Speed 5 ft., Swim 60 ft.
+**Speed** 5 ft., Swim 60 ft.
 
 |     | MOD | SAVE |    | MOD | SAVE |    | MOD | SAVE |    |    |    |
 |-----|-----|------|----|-----|------|----|-----|------|----|----|----|
@@ -30705,13 +30688,13 @@ Speed 5 ft., Swim 60 ft.
 
 *Large Beast, Unaligned*
 
-AC 12
+**AC** 12
 
-Initiative +2 (12)
+**Initiative** +2 (12)
 
-HP 22 (4d10)
+**HP** 22 (4d10)
 
-Speed 50 ft.
+**Speed** 50 ft.
 
 |     | MOD | SAVE |    | MOD | SAVE |    | MOD | SAVE |    |    |    |
 |-----|-----|------|----|-----|------|----|-----|------|----|----|----|
@@ -31194,15 +31177,15 @@ Speed 50 ft.
 
 ## Reef Shark
 
-Medium Beast, Unaligned
+*Medium Beast, Unaligned*
 
-AC 12
+**AC** 12
 
-Initiative +2 (12)
+**Initiative** +2 (12)
 
-HP 22 (4d8 + 4)
+**HP** 22 (4d8 + 4)
 
-Speed 5 ft., Swim 30 ft.
+**Speed** 5 ft., Swim 30 ft.
 
 |     | MOD | SAVE |     | MOD | SAVE |     | MOD | SAVE |
 |-----|-----|------|-----|-----|------|-----|-----|------|
@@ -31229,15 +31212,15 @@ Speed 5 ft., Swim 30 ft.
 
 ## Rhinoceros
 
-Large Beast, Unaligned
+*Large Beast, Unaligned*
 
-AC 13
+**AC** 13
 
-Initiative -1 (9)
+**Initiative** -1 (9)
 
-HP 45 (6d10 + 12)
+**HP** 45 (6d10 + 12)
 
-Speed 40 ft.
+**Speed** 40 ft.
 
 |     | MOD | SAVE |     | MOD | SAVE |     | MOD | SAVE |
 |-----|-----|------|-----|-----|------|-----|-----|------|
@@ -31256,15 +31239,15 @@ Speed 40 ft.
 
 ## Riding Horse
 
-Large Beast, Unaligned
+*Large Beast, Unaligned*
 
-AC 11
+**AC** 11
 
-Initiative +1 (11)
+**Initiative** +1 (11)
 
-HP 13 (2d10 + 2)
+**HP** 13 (2d10 + 2)
 
-Speed 60 ft.
+**Speed** 60 ft.
 
 |     | MOD | SAVE |     | MOD | SAVE |     | MOD | SAVE |
 |-----|-----|------|-----|-----|------|-----|-----|------|
@@ -31283,15 +31266,15 @@ Speed 60 ft.
 
 ## Saber-Toothed Tiger
 
-Large Beast, Unaligned
+*Large Beast, Unaligned*
 
-AC 13
+**AC** 13
 
-Initiative +3 (13)
+**Initiative** +3 (13)
 
-HP 52 (7d10 + 14)
+**HP** 52 (7d10 + 14)
 
-Speed 40 ft.
+**Speed** 40 ft.
 
 |     | MOD | SAVE |     | MOD | SAVE |     | MOD | SAVE |
 |-----|-----|------|-----|-----|------|-----|-----|------|
@@ -31322,15 +31305,15 @@ Speed 40 ft.
 
 ## Scorpion
 
-Tiny Beast, Unaligned
+*Tiny Beast, Unaligned*
 
-AC 11
+**AC** 11
 
-Initiative +0 (10)
+**Initiative** +0 (10)
 
-HP 1 (1d4 - 1)
+**HP** 1 (1d4 - 1)
 
-Speed 10 ft.
+**Speed** 10 ft.
 
 |     | MOD | SAVE |     | MOD | SAVE |     | MOD | SAVE |
 |-----|-----|------|-----|-----|------|-----|-----|------|
@@ -31489,15 +31472,15 @@ Speed 10 ft.
 
 ## Swarm of Piranhas
 
-Medium Swarm of Tiny Beasts, Unaligned
+*Medium Swarm of Tiny Beasts, Unaligned*
 
-AC 13
+**AC** 13
 
-Initiative +3 (13)
+**Initiative** +3 (13)
 
-HP 28 (8d8 – 8)
+**HP** 28 (8d8 – 8)
 
-Speed 5 ft., Swim 40 ft.
+**Speed** 5 ft., Swim 40 ft.
 
 |     | MOD | SAVE |     | MOD | SAVE |     | MOD | SAVE |
 |-----|-----|------|-----|-----|------|-----|-----|------|
@@ -31526,15 +31509,15 @@ Speed 5 ft., Swim 40 ft.
 
 ## Swarm of Rats
 
-Medium Swarm of Tiny Beasts, Unaligned
+*Medium Swarm of Tiny Beasts, Unaligned*
 
-AC 10
+**AC** 10
 
-Initiative +0 (10)
+**Initiative** +0 (10)
 
-HP 14 (4d8 – 4)
+**HP** 14 (4d8 – 4)
 
-Speed 30 ft., Climb 30 ft.
+**Speed** 30 ft., Climb 30 ft.
 
 |     | MOD | SAVE |     | MOD | SAVE |     | MOD | SAVE |
 |-----|-----|------|-----|-----|------|-----|-----|------|
@@ -31561,15 +31544,15 @@ Speed 30 ft., Climb 30 ft.
 
 ## Swarm of Ravens
 
-Medium Swarm of Tiny Beasts, Unaligned
+*Medium Swarm of Tiny Beasts, Unaligned*
 
-AC 12
+**AC** 12
 
-Initiative +2 (12)
+**Initiative** +2 (12)
 
-HP 11 (2d8 + 2)
+**HP** 11 (2d8 + 2)
 
-Speed 10 ft., Fly 50 ft.
+**Speed** 10 ft., Fly 50 ft.
 
 |     | MOD | SAVE |     | MOD | SAVE |     | MOD | SAVE |
 |-----|-----|------|-----|-----|------|-----|-----|------|
@@ -31600,15 +31583,15 @@ Speed 10 ft., Fly 50 ft.
 
 ## Swarm of Venomous Snakes
 
-Medium Swarm of Tiny Beasts, Unaligned
+*Medium Swarm of Tiny Beasts, Unaligned*
 
-AC 14
+**AC** 14
 
-Initiative +4 (14)
+**Initiative** +4 (14)
 
-HP 36 (8d8)
+**HP** 36 (8d8)
 
-Speed 30 ft., Swim 30 ft.
+**Speed** 30 ft., Swim 30 ft.
 
 |     | MOD | SAVE |     | MOD | SAVE |     | MOD | SAVE |
 |-----|-----|------|-----|-----|------|-----|-----|------|

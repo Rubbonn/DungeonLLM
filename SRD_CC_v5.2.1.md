@@ -18881,9 +18881,9 @@ While grappling the target, the rug can't take this action, the rug halves the d
 
 **Acid Spray (Recharge 6).** Dexterity Saving Throw: DC 12, each creature in a 30-foot-long, 5-foot-wide Line. *Failure:* 14 (4d6) Acid damage. *Success:* Half damage.
 
-# Assassin
-
 ## Assassin
+
+### Assassin
 
 *Medium or Small Humanoid, Neutral*
 
@@ -18912,11 +18912,11 @@ While grappling the target, the rug can't take this action, the rug halves the d
 
 **CR** 8 (XP 3,900; PB +3)
 
-### Traits
+#### Traits
 
 **Evasion.** If the assassin is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the assassin instead takes no damage if it succeeds on the save and only half damage if it fails. It can't use this trait if it has the Incapacitated condition.
 
-### Actions
+#### Actions
 
 **Multiattack.** The assassin makes three attacks, using Shortsword or Light Crossbow in any combination.
 
@@ -18924,7 +18924,7 @@ While grappling the target, the rug can't take this action, the rug halves the d
 
 **Light Crossbow.** *Ranged Attack Roll:* +7, range 80/320 ft. *Hit:* 8 (1d8 + 4) Piercing damage plus 21 (6d6) Poison damage.
 
-### Bonus Actions
+#### Bonus Actions
 
 **Cunning Action.** The assassin takes the Dash, Disengage, or Hide action.
 
@@ -18957,11 +18957,11 @@ While grappling the target, the rug can't take this action, the rug halves the d
 
 **CR** 0 (XP 10; PB +2)
 
-### Actions
+#### Actions
 
 **Rake.** *Melee Attack Roll:* +1, reach 5 ft. *Hit:* 1 Slashing damage.
 
-## Awakened Tree
+### Awakened Tree
 
 *Huge Plant, Neutral*
 
@@ -18988,7 +18988,7 @@ While grappling the target, the rug can't take this action, the rug halves the d
 
 **CR** 2 (XP 450; PB +2)
 
-### Actions
+#### Actions
 
 **Slam.** *Melee Attack Roll:* +6, reach 10 ft. *Hit:* 14 (3d6 + 4) Bludgeoning damage.
 
@@ -19017,7 +19017,7 @@ While grappling the target, the rug can't take this action, the rug halves the d
 
 **CR** 1/4 (XP 50; PB +2)
 
-### Actions
+#### Actions
 
 **Beak.** *Melee Attack Roll:* +4, reach 5 ft. *Hit:* 6 (1d8 + 2) Slashing damage.
 
@@ -19171,7 +19171,7 @@ While grappling the target, the rug can't take this action, the rug halves the d
 
 **CR** 2 (XP 450; PB +2)
 
-## Actions
+#### Actions
 
 **Multiattack.** The bandit makes two attacks, using Scimitar and Pistol in any combination.
 
@@ -19179,13 +19179,13 @@ While grappling the target, the rug can't take this action, the rug halves the d
 
 **Pistol.** *Ranged Attack Roll:* +5, range 30/90 ft. *Hit:* 8 (1d10 + 3) Piercing damage.
 
-## Reactions
+#### Reactions
 
 **Parry.** *Trigger:* The bandit is hit by a melee attack roll while holding a weapon. *Response:* The bandit adds 2 to its AC against that attack, possibly causing it to miss.
 
-# Barbed Devil
-
 ## Barbed Devil
+
+### Barbed Devil
 
 *Medium Fiend (Devil), Lawful Evil*
 
@@ -19214,7 +19214,7 @@ While grappling the target, the rug can't take this action, the rug halves the d
 
 **CR** 5 (XP 1,800; PB +3)
 
-## Traits
+#### Traits
 
 **Barbed Hide.** At the start of each of its turns, the devil deals 5 (1d10) Piercing damage to any creature it is grappling or any creature grappling it.
 
@@ -19222,7 +19222,7 @@ While grappling the target, the rug can't take this action, the rug halves the d
 
 **Magic Resistance.** The devil has Advantage on saving throws against spells and other magical effects.
 
-## Actions
+#### Actions
 
 **Multiattack.** The devil makes one Claws attack and one Tail attack, or it makes two Hurl Flame attacks.
 
@@ -19232,9 +19232,9 @@ While grappling the target, the rug can't take this action, the rug halves the d
 
 **Hurl Flame.** *Ranged Attack Roll:* +5, range 150 ft. *Hit:* 17 (5d6) Fire damage. If the target is a flammable object that isn't being worn or carried, it starts burning.
 
-# Basilisk
-
 ## Basilisk
+
+### Basilisk
 
 *Medium Monstrosity, Unaligned*
 
@@ -19257,17 +19257,17 @@ While grappling the target, the rug can't take this action, the rug halves the d
 
 **CR** 3 (XP 700; PB +2)
 
-## Actions
+#### Actions
 
 **Bite.** *Melee Attack Roll:* +5, reach 5 ft. *Hit:* 10 (2d6 + 3) Piercing damage plus 7 (2d6) Poison damage.
 
-## Bonus Actions
+#### Bonus Actions
 
 **Petrifying Gaze (Recharge 4–6).** *Constitution Saving Throw:* DC 12, each creature in a 30-foot Cone. If the basilisk sees its reflection in the Cone, the basilisk must make this save. *First Failure:* The target has the Restrained condition and repeats the save at the end of its next turn if it is still Restrained, ending the effect on itself on a success. *Second Failure:* The target has the Petrified condition instead of the Restrained condition.
 
-# Bearded Devil
-
 ## Bearded Devil
+
+### Bearded Devil
 
 *Medium Fiend (Devil), Lawful Evil*
 
@@ -19294,11 +19294,11 @@ While grappling the target, the rug can't take this action, the rug halves the d
 
 **CR** 3 (XP 700; PB +2)
 
-## Traits
+#### Traits
 
 **Magic Resistance.** The devil has Advantage on saving throws against spells and other magical effects.
 
-## Actions
+#### Actions
 
 **Multiattack.** The devil makes one Beard attack and one Infernal Glaive attack.
 
@@ -19335,7 +19335,7 @@ While grappling the target, the rug can't take this action, the rug halves the d
 
 **CR** 11 (XP 7,200; PB +4)
 
-## Actions
+#### Actions
 
 **Multiattack.** The behir makes one Bite attack and uses Constrict.
 
@@ -19345,7 +19345,7 @@ While grappling the target, the rug can't take this action, the rug halves the d
 
 **Lightning Breath (Recharge 5–6).** *Dexterity Saving Throw:* DC 16, each creature in a 90-foot-long, 5-foot-wide line. *Failure:* 66 (12d10) Lightning damage. *Success:* Half damage.
 
-## Bonus Actions
+#### Bonus Actions
 
 **Swallow.** *Dexterity Saving Throw:* DC 18, one Large or smaller creature Grappled by the behir (the behir can have only one creature swallowed at a time). *Failure:* The behir swallows the target, which is no longer Grappled. While swallowed, a creature has the Blinded and Restrained conditions, has Total Cover against attacks and other effects outside the behir, and takes 21 (6d6) Acid damage at the start of each of the behir's turns.
 
@@ -19378,11 +19378,11 @@ If the behir takes 30 damage or more on a single turn from the swallowed creatur
 
 **CR** 2 (XP 450; PB +2)
 
-## Traits
+#### Traits
 
 **Bloodied Frenzy.** While Bloodied, the berserker has Advantage on attack rolls and saving throws.
 
-## Actions
+#### Actions
 
 **Greataxe.** *Melee Attack Roll:* +5, reach 5 ft. *Hit:* 9 (1d12 + 3) Slashing damage.
 
@@ -19415,11 +19415,11 @@ If the behir takes 30 damage or more on a single turn from the swallowed creatur
 
 **CR** 2 (XP 450; PB +2)
 
-### Traits
+#### Traits
 
 **Amphibious.** The dragon can breathe air and water.
 
-### Actions
+#### Actions
 
 **Multiattack.** The dragon makes two Rend attacks.
 
@@ -19427,7 +19427,7 @@ If the behir takes 30 damage or more on a single turn from the swallowed creatur
 
 **Acid Breath (Recharge 5–6).** *Dexterity Saving Throw:* DC 11, each creature in a 15-foot-long, 5-foot-wide Line. *Failure:* 22 (5d8) Acid damage. *Success:* Half damage.
 
-## Young Black Dragon
+### Young Black Dragon
 
 *Large Dragon (Chromatic), Chaotic Evil*
 
@@ -19454,11 +19454,11 @@ If the behir takes 30 damage or more on a single turn from the swallowed creatur
 
 **CR** 7 (XP 2,900; PB +3)
 
-### Traits
+#### Traits
 
 **Amphibious.** The dragon can breathe air and water.
 
-### Actions
+#### Actions
 
 **Multiattack.** The dragon makes three Rend attacks.
 
@@ -19466,7 +19466,7 @@ If the behir takes 30 damage or more on a single turn from the swallowed creatur
 
 **Acid Breath (Recharge 5–6).** *Dexterity Saving Throw:* DC 14, each creature in a 30-foot-long, 5-foot-wide Line. *Failure:* 49 (14d6) Acid damage. *Success:* Half damage.
 
-## Adult Black Dragon
+### Adult Black Dragon
 
 *Huge Dragon (Chromatic), Chaotic Evil*
 
@@ -19493,13 +19493,13 @@ If the behir takes 30 damage or more on a single turn from the swallowed creatur
 
 **CR** 14 (XP 11,500, or 13,000 in lair; PB +5)
 
-### Traits
+#### Traits
 
 **Amphibious.** The dragon can breathe air and water.
 
 **Legendary Resistance (3/Day, or 4/Day in Lair).** If the dragon fails a saving throw, it can choose to succeed instead.
 
-### Actions
+#### Actions
 
 **Multiattack.** The dragon makes three Rend attacks. It can replace one attack with a use of Spellcasting to cast *Acid Arrow* (level 3 version).
 
@@ -19512,9 +19512,9 @@ If the behir takes 30 damage or more on a single turn from the swallowed creatur
 **At Will:** *Acid Arrow* (level 3 version), *Detect Magic*, *Fear*  
 **1/Day Each:** *Speak with Dead*, *Vitriolic Sphere*
 
-### Legendary Actions
+#### Legendary Actions
 
-*Legendary Action Uses: 3 (4 in Lair).* Immediately after another creature's turn, the dragon can expend a use to take one of the following actions. The dragon regains all expended uses at the start of each of its turns.
+*Legendary Action Uses: 3 (4 in Lair). Immediately after another creature's turn, the dragon can expend a use to take one of the following actions. The dragon regains all expended uses at the start of each of its turns.*
 
 **Cloud of Insects.** *Dexterity Saving Throw:* DC 17, one creature the dragon can see within 120 feet. *Failure:* 22 (4d10) Poison damage, and the target has Disadvantage on saving throws to maintain Concentration until the end of its next turn. *Failure or Success:* The dragon can't take this action again until the start of its next turn.
 
@@ -19522,7 +19522,7 @@ If the behir takes 30 damage or more on a single turn from the swallowed creatur
 
 **Pounce.** The dragon moves up to half its Speed, and it makes one Rend attack.
 
-## Ancient Black Dragon
+### Ancient Black Dragon
 
 *Gargantuan Dragon (Chromatic), Chaotic Evil*
 
@@ -19548,13 +19548,13 @@ If the behir takes 30 damage or more on a single turn from the swallowed creatur
 **Languages** Common, Draconic  
 **CR** 21 (XP 33,000, or 41,000 in lair; PB +7)
 
-### Traits
+#### Traits
 
 **Amphibious.** The dragon can breathe air and water.
 
 **Legendary Resistance (4/Day, or 5/Day in Lair).** If the dragon fails a saving throw, it can choose to succeed instead.
 
-### Actions
+#### Actions
 
 **Multiattack.** The dragon makes three Rend attacks. It can replace one attack with a use of Spellcasting to cast *Acid Arrow* (level 4 version).
 
@@ -19568,9 +19568,9 @@ If the behir takes 30 damage or more on a single turn from the swallowed creatur
 
 **1/Day Each:** *Create Undead*, *Speak with Dead*, *Vitriolic Sphere* (level 5 version)
 
-### Legendary Actions
+#### Legendary Actions
 
-*Legendary Action Uses: 3 (4 in Lair).* Immediately after another creature's turn, the dragon can expend a use to take one of the following actions. The dragon regains all expended uses at the start of each of its turns.
+*Legendary Action Uses: 3 (4 in Lair). Immediately after another creature's turn, the dragon can expend a use to take one of the following actions. The dragon regains all expended uses at the start of each of its turns.*
 
 **Cloud of Insects.** *Dexterity Saving Throw:* DC 21, one creature the dragon can see within 120 feet. *Failure:* 33 (6d10) Poison damage, and the target has Disadvantage on saving throws to maintain Concentration until the end of its next turn. *Failure or Success:* The dragon can't take this action again until the start of its next turn.
 
@@ -19605,7 +19605,7 @@ If the behir takes 30 damage or more on a single turn from the swallowed creatur
 
 **CR** 4 (XP 1,100; PB +2)
 
-### Traits
+#### Traits
 
 **Amorphous.** The pudding can move through a space as narrow as 1 inch without expending extra movement to do so.
 
@@ -19615,11 +19615,11 @@ In 1 minute, the pudding can eat through 2 feet of nonmagical wood or metal.
 
 **Spider Climb.** The pudding can climb difficult surfaces, including along ceilings, without needing to make an ability check.
 
-### Actions
+#### Actions
 
 **Dissolving Pseudopod.** *Melee Attack Roll:* +5, reach 10 ft. *Hit:* 17 (4d6 + 3) Acid damage. Nonmagical armor worn by the target takes a -1 penalty to the AC it offers. The armor is destroyed if the penalty reduces its AC to 10. The penalty can be removed by casting the *Mending* spell on the armor.
 
-### Reactions
+#### Reactions
 
 **Split.** *Trigger:* While the pudding is Large or Medium and has 10+ Hit Points, it becomes Bloodied or is subjected to Lightning or Slashing damage. *Response:* The pudding splits into two new **Black Puddings**. Each new pudding is one size smaller than the original pudding and acts on its Initiative. The original pudding's Hit Points are divided evenly between the new puddings (round down).
 
@@ -19650,11 +19650,11 @@ In 1 minute, the pudding can eat through 2 feet of nonmagical wood or metal.
 
 **CR** 1/4 (XP 50; PB +2)
 
-### Actions
+#### Actions
 
 **Bite.** *Melee Attack Roll:* +5, reach 5 ft. *Hit:* 5 (1d4 + 3) Piercing damage.
 
-### Bonus Actions
+#### Bonus Actions
 
 **Teleport (Recharge 4–6).** The dog teleports up to 40 feet to an unoccupied space it can see.
 
@@ -19687,7 +19687,7 @@ In 1 minute, the pudding can eat through 2 feet of nonmagical wood or metal.
 
 **CR** 3 (XP 700; PB +2)
 
-### Actions
+#### Actions
 
 **Multiattack.** The dragon makes two Rend attacks.
 
@@ -19695,7 +19695,7 @@ In 1 minute, the pudding can eat through 2 feet of nonmagical wood or metal.
 
 **Lightning Breath (Recharge 5–6).** *Dexterity Saving Throw:* DC 12, each creature in a 30-foot-long, 5-foot-wide Line. *Failure:* 21 (6d6) Lightning damage. *Success:* Half damage.
 
-## Young Blue Dragon
+### Young Blue Dragon
 
 *Large Dragon (Chromatic), Lawful Evil*
 
@@ -19721,7 +19721,7 @@ In 1 minute, the pudding can eat through 2 feet of nonmagical wood or metal.
 **Languages** Common, Draconic  
 **CR** 9 (XP 5,000; PB +4)
 
-### Actions
+#### Actions
 
 **Multiattack.** The dragon makes three Rend attacks.
 
@@ -19729,7 +19729,7 @@ In 1 minute, the pudding can eat through 2 feet of nonmagical wood or metal.
 
 **Lightning Breath (Recharge 5–6).** *Dexterity Saving Throw:* DC 16, each creature in a 60-foot-long, 5-foot-wide Line. *Failure:* 55 (10d10) Lightning damage. *Success:* Half damage.
 
-## Adult Blue Dragon
+### Adult Blue Dragon
 
 *Huge Dragon (Chromatic), Lawful Evil*
 
@@ -19755,11 +19755,11 @@ In 1 minute, the pudding can eat through 2 feet of nonmagical wood or metal.
 **Languages** Common, Draconic  
 **CR** 16 (XP 15,000, or 18,000 in lair; PB +5)
 
-### Traits
+#### Traits
 
 **Legendary Resistance (3/Day, or 4/Day in Lair).** If the dragon fails a saving throw, it can choose to succeed instead.
 
-### Actions
+#### Actions
 
 **Multiattack.** The dragon makes three Rend attacks. It can replace one attack with a use of Spellcasting to cast *Shatter*.
 
@@ -19773,7 +19773,7 @@ In 1 minute, the pudding can eat through 2 feet of nonmagical wood or metal.
 
 **1/Day Each:** *Scrying, Sending*
 
-### Legendary Actions
+#### Legendary Actions
 
 *Legendary Action Uses: 3 (4 in Lair). Immediately after another creature's turn, the dragon can expend a use to take one of the following actions. The dragon regains all expended uses at the start of each of its turns.*
 
@@ -19783,7 +19783,7 @@ In 1 minute, the pudding can eat through 2 feet of nonmagical wood or metal.
 
 **Tail Swipe.** The dragon makes one Rend attack.
 
-## Ancient Blue Dragon
+### Ancient Blue Dragon
 
 *Gargantuan Dragon (Chromatic), Lawful Evil*
 
@@ -19810,11 +19810,11 @@ In 1 minute, the pudding can eat through 2 feet of nonmagical wood or metal.
 
 **CR** 23 (XP 50,000, or 62,000 in lair; PB +7)
 
-### Traits
+#### Traits
 
 **Legendary Resistance (4/Day, or 5/Day in Lair).** If the dragon fails a saving throw, it can choose to succeed instead.
 
-### Actions
+#### Actions
 
 **Multiattack.** The dragon makes three Rend attacks. It can replace one attack with a use of Spellcasting to cast *Shatter* (level 3 version).
 
@@ -19828,7 +19828,7 @@ In 1 minute, the pudding can eat through 2 feet of nonmagical wood or metal.
 
 **1/Day Each:** *Scrying, Sending*
 
-### Legendary Actions
+#### Legendary Actions
 
 *Legendary Action Uses: 3 (4 in Lair). Immediately after another creature's turn, the dragon can expend a use to take one of the following actions. The dragon regains all expended uses at the start of each of its turns.*
 
@@ -19869,13 +19869,13 @@ In 1 minute, the pudding can eat through 2 feet of nonmagical wood or metal.
 
 **CR** 9 (XP 5,000; PB +4)
 
-### Traits
+#### Traits
 
 **Diabolical Restoration.** If the devil dies outside the Nine Hells, its body disappears in sulfurous smoke, and it gains a new body instantly, reviving with all its Hit Points somewhere in the Nine Hells.
 
 **Magic Resistance.** The devil has Advantage on saving throws against spells and other magical effects.
 
-### Actions
+#### Actions
 
 **Multiattack.** The devil makes two Claw attacks and one Infernal Sting attack.
 
@@ -20003,7 +20003,7 @@ In 1 minute, the pudding can eat through 2 feet of nonmagical wood or metal.
 **At Will:** *Detect Magic, Minor Illusion, Scorching Ray, Shapechange* (Beast or Humanoid form only, no Temporary Hit Points gained from the spell, and no Concentration or Temporary Hit Points required to maintain the spell), *Speak with Animals*  
 **1/Day Each:** *Detect Thoughts, Control Weather*
 
-### Legendary Actions
+#### Legendary Actions
 
 *Legendary Action Uses: 3 (4 in Lair). Immediately after another creature's turn, the dragon can expend a use to take one of the following actions. The dragon regains all expended uses at the start of each of its turns.*
 
@@ -20013,7 +20013,7 @@ In 1 minute, the pudding can eat through 2 feet of nonmagical wood or metal.
 
 **Scorching Sands.** *Dexterity Saving Throw:* DC 16, one creature the dragon can see within 120 feet. *Failure:* 27 (6d8) Fire damage, and the target's Speed is halved until the end of its next turn. *Failure or Success:* The dragon can't take this action again until the start of its next turn.
 
-## Ancient Brass Dragon
+### Ancient Brass Dragon
 
 *Gargantuan Dragon (Metallic), Chaotic Good*
 
@@ -20038,11 +20038,11 @@ In 1 minute, the pudding can eat through 2 feet of nonmagical wood or metal.
 
 **CR** 20 (XP 25,000, or 33,000 in lair; PB +6)
 
-### Traits
+#### Traits
 
 **Legendary Resistance (4/Day, or 5/Day in Lair).** If the dragon fails a saving throw, it can choose to succeed instead.
 
-### Actions
+#### Actions
 
 **Multiattack.** The dragon makes three Rend attacks. It can replace one attack with a use of (A) *Sleep Breath* or (B) Spellcasting to cast *Scorching Ray* (level 3 version).  
 **Rend.** *Melee Attack Roll:* +14, reach 15 ft. *Hit:* 19 (2d10 + 8) Slashing damage plus 7 (2d6) Fire damage.
@@ -20056,7 +20056,7 @@ In 1 minute, the pudding can eat through 2 feet of nonmagical wood or metal.
 **At Will:** *Detect Magic, Minor Illusion, Scorching Ray* (level 3 version), *Shapechange* (Beast or Humanoid form only, no Temporary Hit Points gained from the spell, and no Concentration or Temporary Hit Points required to maintain the spell), *Speak with Animals*  
 **1/Day Each:** *Control Weather, Detect Thoughts*
 
-### Legendary Actions
+#### Legendary Actions
 
 *Legendary Action Uses: 3 (4 in Lair). Immediately after another creature's turn, the dragon can expend a use to take one of the following actions. The dragon regains all expended uses at the start of each of its turns.*
 
@@ -20092,11 +20092,11 @@ In 1 minute, the pudding can eat through 2 feet of nonmagical wood or metal.
 **Languages** Draconic  
 **CR** 2 (XP 450; PB +2)
 
-## Traits
+#### Traits
 
 **Amphibious.** The dragon can breathe air and water.
 
-## Actions
+#### Actions
 
 **Multiattack.** The dragon makes two Rend attacks.
 
@@ -20106,7 +20106,7 @@ In 1 minute, the pudding can eat through 2 feet of nonmagical wood or metal.
 
 **Repulsion Breath.** *Strength Saving Throw:* DC 12, each creature in a 30-foot Cone. *Failure:* The target is pushed up to 30 feet straight away from the dragon and has the Prone condition.
 
-## Young Bronze Dragon
+### Young Bronze Dragon
 
 *Large Dragon (Metallic), Lawful Good*
 
@@ -20133,11 +20133,11 @@ In 1 minute, the pudding can eat through 2 feet of nonmagical wood or metal.
 
 **CR** 8 (XP 3,900; PB +3)
 
-## Traits
+#### Traits
 
 **Amphibious.** The dragon can breathe air and water.
 
-## Actions
+#### Actions
 
 **Multiattack.** The dragon makes three Rend attacks. It can replace one attack with a use of Repulsion Breath.
 
@@ -20147,7 +20147,7 @@ In 1 minute, the pudding can eat through 2 feet of nonmagical wood or metal.
 
 **Repulsion Breath.** *Strength Saving Throw:* DC 15, each creature in a 30-foot Cone. *Failure:* The target is pushed up to 40 feet straight away from the dragon and has the Prone condition.
 
-## Adult Bronze Dragon
+### Adult Bronze Dragon
 
 *Huge Dragon (Metallic), Lawful Good*
 
@@ -20173,13 +20173,13 @@ In 1 minute, the pudding can eat through 2 feet of nonmagical wood or metal.
 **Languages** Common, Draconic  
 **CR** 15 (XP 13,000, or 15,000 in lair; PB +5)
 
-## Traits
+#### Traits
 
 **Amphibious.** The dragon can breathe air and water.
 
 **Legendary Resistance (3/Day, or 4/Day in Lair).** If the dragon fails a saving throw, it can choose to succeed instead.
 
-## Actions
+#### Actions
 
 **Multiattack.** The dragon makes three Rend attacks. It can replace one attack with a use of (A) Repulsion Breath or (B) Spellcasting to cast *Guiding Bolt* (level 2 version).
 
@@ -20194,7 +20194,7 @@ In 1 minute, the pudding can eat through 2 feet of nonmagical wood or metal.
 **At Will:** *Detect Magic*, *Guiding Bolt* (level 2 version), *Shapechange* (Beast or Humanoid form only, no Temporary Hit Points gained from the spell, and no Concentration or Temporary Hit Points required to maintain the spell), *Speak with Animals*, *Thaumaturgy*  
 **1/Day Each:** *Detect Thoughts*, *Water Breathing*
 
-## Legendary Actions
+#### Legendary Actions
 
 *Legendary Action Uses: 3 (4 in Lair). Immediately after another creature's turn, the dragon can expend a use to take one of the following actions. The dragon regains all expended uses at the start of each of its turns.*
 
@@ -20204,7 +20204,7 @@ In 1 minute, the pudding can eat through 2 feet of nonmagical wood or metal.
 
 **Thunderclap.** *Constitution Saving Throw:* DC 17, each creature in a 20-foot-radius Sphere centered on a point the dragon can see within 90 feet. *Failure:* 10 (3d6) Thunder damage, and the target has the Deafened condition until the end of its next turn.
 
-## Ancient Bronze Dragon
+### Ancient Bronze Dragon
 
 *Gargantuan Dragon (Metallic), Lawful Good*
 
@@ -20231,13 +20231,13 @@ In 1 minute, the pudding can eat through 2 feet of nonmagical wood or metal.
 
 **CR** 22 (XP 41,000, or 50,000 in lair; PB +7)
 
-### Traits
+#### Traits
 
 **Amphibious.** The dragon can breathe air and water.
 
 **Legendary Resistance (4/Day, or 5/Day in Lair).** If the dragon fails a saving throw, it can choose to succeed instead.
 
-### Actions
+#### Actions
 
 **Multiattack.** The dragon makes three Rend attacks. It can replace one attack with a use of (A) Repulsion Breath or (B) Spellcasting to cast *Guiding Bolt* (level 2 version).
 
@@ -20252,7 +20252,7 @@ In 1 minute, the pudding can eat through 2 feet of nonmagical wood or metal.
 **At Will:** *Detect Magic*, *Guiding Bolt* (level 2 version), *Shapechange* (Beast or Humanoid form only, no Temporary Hit Points gained from the spell, and no Concentration or Temporary Hit Points required to maintain the spell), *Speak with Animals*, *Thaumaturgy*  
 **1/Day Each:** *Detect Thoughts*, *Control Water*, *Scrying*, *Water Breathing*
 
-## Legendary Actions
+#### Legendary Actions
 
 *Legendary Action Uses: 3 (4 in Lair). Immediately after another creature's turn, the dragon can expend a use to take one of the following actions. The dragon regains all expended uses at the start of each of its turns.*
 
@@ -20291,11 +20291,11 @@ In 1 minute, the pudding can eat through 2 feet of nonmagical wood or metal.
 
 **CR** 3 (XP 700; PB +2)
 
-### Traits
+#### Traits
 
 **Abduct.** The bugbear needn't spend extra movement to move a creature it is grappling.
 
-### Actions
+#### Actions
 
 **Multiattack.** The bugbear makes two Javelin or Morningstar attacks.
 
@@ -20303,11 +20303,11 @@ In 1 minute, the pudding can eat through 2 feet of nonmagical wood or metal.
 
 **Morningstar.** *Melee Attack Roll:* +5 (with Advantage if the target is Grappled by the bugbear), reach 10 ft. *Hit:* 12 (2d8 + 3) Piercing damage.
 
-### Bonus Actions
+#### Bonus Actions
 
 **Quick Grapple.** *Dexterity Saving Throw:* DC 13, one Medium or smaller creature the bugbear can see within 10 feet. *Failure:* The target has the Grappled condition (escape DC 13).
 
-## Bugbear Warrior
+### Bugbear Warrior
 
 *Medium Fey (Goblinoid), Chaotic Evil*
 
@@ -20334,11 +20334,11 @@ In 1 minute, the pudding can eat through 2 feet of nonmagical wood or metal.
 
 **CR** 1 (XP 200; PB +2)
 
-### Traits
+#### Traits
 
 **Abduct.** The bugbear needn't spend extra movement to move a creature it is grappling.
 
-### Actions
+#### Actions
 
 **Grab.** *Melee Attack Roll:* +4, reach 10 ft. *Hit:* 9 (2d6 + 2) Bludgeoning damage. If the target is a Medium or smaller creature, it has the Grappled condition (escape DC 12).
 
@@ -20371,7 +20371,7 @@ In 1 minute, the pudding can eat through 2 feet of nonmagical wood or metal.
 
 **CR** 5 (XP 1,800; PB +3)
 
-### Actions
+#### Actions
 
 **Multiattack.** The bulette makes two Bite attacks.
 
@@ -20379,7 +20379,7 @@ In 1 minute, the pudding can eat through 2 feet of nonmagical wood or metal.
 
 **Deadly Leap.** The bulette spends 5 feet of movement to jump to a space within 15 feet that contains one or more Large or smaller creatures. *Dexterity Saving Throw:* DC 15, each creature in the bulette's destination space. *Failure:* 19 (3d12) Bludgeoning damage, and the target has the Prone condition. *Success:* Half damage, and the target is pushed 5 feet straight away from the bulette.
 
-### Bonus Actions
+#### Bonus Actions
 
 **Leap.** The bulette jumps up to 30 feet by spending 10 feet of movement.
 
@@ -20412,7 +20412,7 @@ In 1 minute, the pudding can eat through 2 feet of nonmagical wood or metal.
 
 **CR** 2 (XP 450; PB +2)
 
-### Actions
+#### Actions
 
 **Multiattack.** The centaur makes two attacks, using Pike or Longbow in any combination.
 
@@ -20420,7 +20420,7 @@ In 1 minute, the pudding can eat through 2 feet of nonmagical wood or metal.
 
 **Longbow.** *Ranged Attack Roll:* +4, range 150/600 ft. *Hit:* 6 (1d8 + 2) Piercing damage.
 
-### Bonus Actions
+#### Bonus Actions
 
 **Trampling Charge (Recharge 5–6).** The centaur moves up to its Speed without provoking Opportunity Attacks and can move through the spaces of Medium or smaller creatures. Each creature whose space the centaur enters is targeted once by the following effect. *Strength Saving Throw:* DC 14. *Failure:* 7 (1d6 + 4) Bludgeoning damage, and the target has the Prone condition.
 
@@ -20453,13 +20453,13 @@ In 1 minute, the pudding can eat through 2 feet of nonmagical wood or metal.
 
 **CR** 8 (XP 3,900; PB +3)
 
-### Traits
+#### Traits
 
 **Diabolical Restoration.** If the devil dies outside the Nine Hells, its body disappears in sulfurous smoke, and it gains a new body instantly, reviving with all its Hit Points somewhere in the Nine Hells.
 
 **Magic Resistance.** The devil has Advantage on saving throws against spells and other magical effects.
 
-### Actions
+#### Actions
 
 **Multiattack.** The devil makes two Chain attacks and uses Conjure Infernal Chain.
 
@@ -20467,7 +20467,7 @@ In 1 minute, the pudding can eat through 2 feet of nonmagical wood or metal.
 
 **Conjure Infernal Chain.** The devil conjures a fiery chain to bind a creature. *Dexterity Saving Throw:* DC 15, one creature the devil can see within 60 feet. *Failure:* 9 (2d4 + 4) Fire damage, and the target has the Restrained condition until the end of the devil's next turn, at which point the chain disappears. If the target is Large or smaller, the devil moves the target up to 30 feet straight toward itself. *Success:* The chain disappears.
 
-### Reactions
+#### Reactions
 
 **Unnerving Gaze.** *Trigger:* A creature the devil can see starts its turn within 30 feet of the devil and can see the devil. *Response—Wisdom Saving Throw:* DC 15, the triggering creature. *Failure:* The target has the Frightened condition until the end of its turn. *Success:* The target is immune to this devil's Unnerving Gaze for 24 hours.
 
@@ -20497,7 +20497,7 @@ In 1 minute, the pudding can eat through 2 feet of nonmagical wood or metal.
 **Languages** Understands Draconic but can't speak  
 **CR** 6 (XP 2,300; PB +3)
 
-### Actions
+#### Actions
 
 **Multiattack.** The chimera makes one Ram attack, one Bite attack, and one Claw attack. It can replace the Claw attack with a use of Fire Breath if available.
 
@@ -20538,13 +20538,13 @@ In 1 minute, the pudding can eat through 2 feet of nonmagical wood or metal.
 
 **CR** 4 (XP 1,100; PB +2)
 
-### Traits
+#### Traits
 
 **Amphibious.** The chuul can breathe air and water.
 
 **Sense Magic.** The chuul senses magic within 120 feet of itself. This trait otherwise works like the *Detect Magic* spell but isn't itself magical.
 
-### Actions
+#### Actions
 
 **Multiattack.** The chuul makes two Pincer attacks and uses Paralyzing Tentacles.
 
@@ -20580,7 +20580,7 @@ In 1 minute, the pudding can eat through 2 feet of nonmagical wood or metal.
 **Languages** Common plus one other language  
 **CR** 9 (XP 5,000; PB +4)
 
-### Traits
+#### Traits
 
 **Acid Absorption.** Whenever the golem is subjected to Acid damage, it takes no damage and instead regains a number of Hit Points equal to the Acid damage dealt.
 
@@ -20590,13 +20590,13 @@ In 1 minute, the pudding can eat through 2 feet of nonmagical wood or metal.
 
 **Magic Resistance.** The golem has Advantage on saving throws against spells and other magical effects.
 
-### Actions
+#### Actions
 
 **Multiattack.** The golem makes two Slam attacks, or it makes three Slam attacks if it used Hasten this turn.
 
 **Slam.** Melee Attack Roll: +9, reach 5 ft. *Hit:* 10 (1d10 + 5) Bludgeoning damage plus 6 (1d12) Acid damage, and the target's Hit Point maximum decreases by an amount equal to the Acid damage taken.
 
-### Bonus Actions
+#### Bonus Actions
 
 **Hasten (Recharge 5–6).** The golem takes the Dash and Disengage actions.
 
@@ -20629,11 +20629,11 @@ In 1 minute, the pudding can eat through 2 feet of nonmagical wood or metal.
 
 **CR** 8 (XP 3,900; PB +3)
 
-### Traits
+#### Traits
 
 **Light Sensitivity.** While in Bright Light, the cloaker has Disadvantage on attack rolls.
 
-### Actions
+#### Actions
 
 **Multiattack.** The cloaker makes one Attack attack and two Tail attacks.
 
@@ -20643,7 +20643,7 @@ The cloaker can detach itself by spending 5 feet of movement. The target or a cr
 
 **Tail.** Melee Attack Roll: +6, reach 10 ft. *Hit:* 8 (1d10 + 3) Slashing damage.
 
-### Bonus Actions
+#### Bonus Actions
 
 **Moan.** Wisdom Saving Throw: DC 13, each creature in a 60-foot Emanation originating from the cloaker. *Failure:* The target has the Frightened condition until the end of the cloaker's next turn. *Success:* The target is immune to this cloaker's Moan for the next 24 hours.
 
@@ -20676,7 +20676,7 @@ The cloaker can detach itself by spending 5 feet of movement. The target or a cr
 
 **CR** 9 (XP 5,000; PB +4)
 
-### Actions
+#### Actions
 
 **Multitattack.** The giant makes two attacks, using Thunderous Mace or Thundercloud in any combination. It can replace one attack with a use of Spellcasting to cast *Fog Cloud*.
 
@@ -20690,7 +20690,7 @@ The cloaker can detach itself by spending 5 feet of movement. The target or a cr
 
 **1/Day Each:** *Control Weather, Gaseous Form, Telekinesis*
 
-### Bonus Actions
+#### Bonus Actions
 
 **Misty Step.** The giant casts the *Misty Step* spell, using the same spellcasting ability as Spellcasting.
 
@@ -20721,7 +20721,7 @@ The cloaker can detach itself by spending 5 feet of movement. The target or a cr
 
 **CR** 1/2 (XP 100; PB +2)
 
-### Actions
+#### Actions
 
 **Petrifying Bite.** *Melee Attack Roll:* +3, reach 5 ft. *Hit:* 3 (1d4 + 1) Piercing damage. If the target is a creature, it is subjected to the following effect. **Constitution Saving Throw:** DC 11. **First Failure:** The target has the Restrained condition. The target repeats the save at the end of its next turn if it is still Restrained, ending the effect on itself on a success. **Second Failure:** The target has the Petrified condition, instead of the Restrained condition, for 24 hours.
 
@@ -20752,11 +20752,11 @@ The cloaker can detach itself by spending 5 feet of movement. The target or a cr
 
 **CR** 0 (XP 10; PB +2)
 
-### Traits
+#### Traits
 
 **Training.** The commoner has proficiency in one skill of the GM's choice and has Advantage whenever it makes an ability check using that skill.
 
-### Actions
+#### Actions
 
 **Club.** *Melee Attack Roll:* +2, reach 5 ft. *Hit:* 2 (1d4) Bludgeoning damage.
 
@@ -20789,7 +20789,7 @@ The cloaker can detach itself by spending 5 feet of movement. The target or a cr
 
 **CR** 1 (XP 200; PB +2)
 
-## Actions
+#### Actions
 
 **Rend.** *Melee Attack Roll:* +4, reach 5 ft. *Hit:* 7 (1d10 + 2) Slashing damage.
 
@@ -20797,7 +20797,7 @@ The cloaker can detach itself by spending 5 feet of movement. The target or a cr
 
 **Slowing Breath.** *Constitution Saving Throw:* DC 11, each creature in a 15-foot Cone. *Failure:* The target can't take Reactions; its Speed is halved; and it can take either an action or a Bonus Action on its turn, not both. This effect lasts until the end of its next turn.
 
-## Young Copper Dragon
+### Young Copper Dragon
 
 *Large Dragon (Metallic), Chaotic Good*
 
@@ -20824,7 +20824,7 @@ The cloaker can detach itself by spending 5 feet of movement. The target or a cr
 
 **CR** 7 (XP 2,900; PB +3)
 
-## Actions
+#### Actions
 
 **Multiattack.** The dragon makes three Rend attacks. It can replace one attack with a use of Slowing Breath.
 
@@ -20834,7 +20834,7 @@ The cloaker can detach itself by spending 5 feet of movement. The target or a cr
 
 **Slowing Breath.** *Constitution Saving Throw:* DC 14, each creature in a 30-foot Cone. *Failure:* The target can't take Reactions; its Speed is halved; and it can take either an action or a Bonus Action on its turn, not both. This effect lasts until the end of its next turn.
 
-## Adult Copper Dragon
+### Adult Copper Dragon
 
 *Huge Dragon (Metallic), Chaotic Good*
 
@@ -20861,11 +20861,11 @@ The cloaker can detach itself by spending 5 feet of movement. The target or a cr
 
 **CR** 14 (XP 11,500, or 13,000 in lair; PB +5)
 
-## Traits
+#### Traits
 
 **Legendary Resistance (3/Day, or 4/Day in Lair).** If the dragon fails a saving throw, it can choose to succeed instead.
 
-## Actions
+#### Actions
 
 **Multiattack.** The dragon makes three Rend attacks. It can replace one attack with a use of (A) Slowing Breath or (B) Spellcasting to cast *Mind Spike* (level 4 version).
 
@@ -20881,7 +20881,7 @@ The cloaker can detach itself by spending 5 feet of movement. The target or a cr
 
 **1/Day Each:** *Greater Restoration*, *Major Image*
 
-## Legendary Actions
+#### Legendary Actions
 
 *Legendary Action Uses: 3 (4 in Lair). Immediately after another creature's turn, the dragon can expend a use to take one of the following actions. The dragon regains all expended uses at the start of each of its turns.*
 
@@ -20891,7 +20891,7 @@ The cloaker can detach itself by spending 5 feet of movement. The target or a cr
 
 **Pounce.** The dragon moves up to half its Speed, and it makes one Rend attack.
 
-## Ancient Copper Dragon
+### Ancient Copper Dragon
 
 *Gargantuan Dragon (Metallic), Chaotic Good*
 
@@ -20918,11 +20918,11 @@ The cloaker can detach itself by spending 5 feet of movement. The target or a cr
 
 **CR** 21 (XP 33,000, or 41,000 in lair; PB +7)
 
-### Traits
+#### Traits
 
 **Legendary Resistance (4/Day, or 5/Day in Lair).** If the dragon fails a saving throw, it can choose to succeed instead.
 
-### Actions
+#### Actions
 
 **Multiattack.** The dragon makes three Rend attacks. It can replace one attack with a use of (A) Slowing Breath or (B) Spellcasting to cast *Mind Spike* (level 5 version).
 
@@ -20938,7 +20938,7 @@ The cloaker can detach itself by spending 5 feet of movement. The target or a cr
 
 **1/Day Each:** *Greater Restoration*, *Major Image*, *Project Image*
 
-## Legendary Actions
+#### Legendary Actions
 
 *Legendary Action Uses: 3 (4 in Lair). Immediately after another creature's turn, the dragon can expend a use to take one of the following actions. The dragon regains all expended uses at the start of each of its turns.*
 
@@ -20977,11 +20977,11 @@ The cloaker can detach itself by spending 5 feet of movement. The target or a cr
 
 **CR** 4 (XP 1,100; PB +2)
 
-### Traits
+#### Traits
 
 **Shielded Mind.** The couatl's thoughts can't be read by any means, and other creatures can communicate with it telepathically only if it allows them.
 
-### Actions
+#### Actions
 
 **Bite.** *Melee Attack Roll:* +7, reach 5 ft. *Hit:* 11 (1d12 + 5) Piercing damage, and the target has the Poisoned condition until the end of the couatl's next turn.
 
@@ -20993,7 +20993,7 @@ The cloaker can detach itself by spending 5 feet of movement. The target or a cr
 
 **1/Day Each:** *Create Food and Water*, *Dream*, *Greater Restoration*, *Scrying*, *Sleep*
 
-### Bonus Actions
+#### Bonus Actions
 
 ***Divine Aid (2/Day).*** The couatl casts *Bless*, *Lesser Restoration*, or *Sanctuary*, requiring no spell components and using the same spellcasting ability as Spellcasting.
 
@@ -21026,7 +21026,7 @@ The cloaker can detach itself by spending 5 feet of movement. The target or a cr
 
 **CR** 3 (XP 700; PB +2)
 
-### Traits
+#### Traits
 
 ***Swarm.*** The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny creature. The swarm can't regain Hit Points or gain Temporary Hit Points.
 
@@ -21063,11 +21063,11 @@ The cloaker can detach itself by spending 5 feet of movement. The target or a cr
 
 **CR** 1/8 (XP 25; PB +2)
 
-### Actions
+#### Actions
 
 ***Ritual Sickle.*** *Melee Attack Roll:* +3, reach 5 ft. *Hit:* 3 (1d4 + 1) Slashing damage plus 1 Necrotic damage.
 
-## Cultist Fanatic
+### Cultist Fanatic
 
 *Medium or Small Humanoid, Neutral*
 
@@ -21094,7 +21094,7 @@ The cloaker can detach itself by spending 5 feet of movement. The target or a cr
 
 **CR** 2 (XP 450; PB +2)
 
-### Actions
+#### Actions
 
 ***Pact Blade.*** *Melee Attack Roll:* +4, reach 5 ft. *Hit:* 6 (1d8 + 2) Slashing damage plus 7 (2d6) Necrotic damage.
 
@@ -21106,7 +21106,7 @@ The cloaker can detach itself by spending 5 feet of movement. The target or a cr
 
 **1/Day:** *Hold Person*
 
-### Bonus Actions
+#### Bonus Actions
 
 ***Spiritual Weapon (2/Day).*** The cultist casts the *Spiritual Weapon* spell, using the same spellcasting ability as Spellcasting.
 
@@ -21137,7 +21137,7 @@ The cloaker can detach itself by spending 5 feet of movement. The target or a cr
 
 **CR** 1/2 (XP 100; PB +2)
 
-## Actions
+#### Actions
 
 **Crush.** *Melee Attack Roll:* +5, reach 5 ft. *Hit:* 6 (1d6 + 3) Bludgeoning damage, and the darkmantle attaches to the target. If the target is a Medium or smaller creature and the darkmantle had Advantage on the attack roll, it covers the target, which has the Blinded condition and is suffocating while the darkmantle is attached in this way.
 
@@ -21176,7 +21176,7 @@ A creature can take an action to try to detach the darkmantle from itself, doing
 
 **CR** 1 (XP 200; PB +2)
 
-## Actions
+#### Actions
 
 **Multiattack.** The death dog makes two Bite attacks.
 
@@ -21213,13 +21213,13 @@ A creature can take an action to try to detach the darkmantle from itself, doing
 
 **CR** 10 (XP 5,900; PB +4)
 
-## Traits
+#### Traits
 
 **Exalted Restoration.** If the deva dies outside Mount Celestia, its body disappears, and it gains a new body instantly, reviving with all its Hit Points somewhere in Mount Celestia.
 
 **Magic Resistance.** The deva has Advantage on saving throws against spells and other magical effects.
 
-## Actions
+#### Actions
 
 **Multiattack.** The deva makes two Holy Mace attacks.
 
@@ -21231,13 +21231,13 @@ A creature can take an action to try to detach the darkmantle from itself, doing
 
 **1/Day Each:** *Commune*, *Raise Dead*
 
-## Bonus Actions
+#### Bonus Actions
 
 **Divine Aid (2/Day).** The deva casts *Cure Wounds*, *Lesser Restoration*, or *Remove Curse*, using the same spellcasting ability as Spellcasting.
 
-# Djinni
-
 ## Djinni
+
+### Djinni
 
 *Large Elemental (Genie), Neutral*
 
@@ -21262,7 +21262,7 @@ A creature can take an action to try to detach the darkmantle from itself, doing
 
 **CR** 11 (XP 7,200; PB +4)
 
-### Traits
+#### Traits
 
 **Elemental Restoration.** If the djinni dies outside the Elemental Plane of Air, its body dissolves into mist, and it gains a new body in 1d4 days, reviving with all its Hit Points somewhere on the Plane of Air.
 
@@ -21270,7 +21270,7 @@ A creature can take an action to try to detach the darkmantle from itself, doing
 
 **Wishes.** The djinni has a 30 percent chance of knowing the *Wish* spell. If the djinni knows it, the djinni can cast it only on behalf of a non-genie creature who communicates a wish in a way the djinni can understand. If the djinni casts the spell for the creature, the djinni suffers none of the spell's stress. Once the djinni has cast it three times, the djinni can't do so again for 365 days.
 
-### Actions
+#### Actions
 
 **Multiattack.** The djinni makes three attacks, using Storm Blade or Storm Bolt in any combination.
 
@@ -21290,9 +21290,9 @@ Whenever the whirlwind enters a creature's space or a creature enters the whirlw
 
 **1/Day Each:** *Creation*, *Gaseous Form*, *Invisibility*, *Major Image*, *Plane Shift*
 
-# Doppelganger
-
 ## Doppelganger
+
+### Doppelganger
 
 *Medium Monstrosity, Neutral*
 
@@ -21319,7 +21319,7 @@ Whenever the whirlwind enters a creature's space or a creature enters the whirlw
 
 **CR** 3 (XP 700; PB +2)
 
-### Actions
+#### Actions
 
 **Multiattack.** The doppelganger makes two Slam attacks and uses Unsettling Visage if available.
 
@@ -21329,13 +21329,13 @@ Whenever the whirlwind enters a creature's space or a creature enters the whirlw
 
 **Unsettling Visage (Recharge 6).** *Wisdom Saving Throw:* DC 12, each creature in a 15-foot Emanation originating from the doppelganger that can see the doppelganger. *Failure:* The target has the Frightened condition and repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically.
 
-### Bonus Actions
+#### Bonus Actions
 
 **Shape-Shift.** The doppelganger shape-shifts into a Medium or Small Humanoid, or it returns to its true form. Its game statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed.
 
-# Dragon Turtle
-
 ## Dragon Turtle
+
+### Dragon Turtle
 
 *Gargantuan Dragon, Neutral*
 
@@ -21360,11 +21360,11 @@ Whenever the whirlwind enters a creature's space or a creature enters the whirlw
 
 **CR** 17 (XP 18,000; PB +6)
 
-### Traits
+#### Traits
 
 **Amphibious.** The dragon can breathe air and water.
 
-### Actions
+#### Actions
 
 **Multiattack.** The dragon makes three Bite attacks. It can replace one attack with a Tail attack.
 
@@ -21374,9 +21374,9 @@ Whenever the whirlwind enters a creature's space or a creature enters the whirlw
 
 **Steam Breath (Recharge 5–6).** *Constitution Saving Throw:* DC 19, each creature in a 60-foot Cone. *Failure:* 56 (16d6) Fire damage. *Success:* Half damage. *Failure or Success:* Being underwater doesn't grant Resistance to this Fire damage.
 
-# Dretch
-
 ## Dretch
+
+### Dretch
 
 *Small Fiend (Demon), Chaotic Evil*
 
@@ -21403,15 +21403,15 @@ Whenever the whirlwind enters a creature's space or a creature enters the whirlw
 
 **CR** 1/4 (XP 50; PB +2)
 
-### Actions
+#### Actions
 
 **Rend.** *Melee Attack Roll:* +3, reach 5 ft. *Hit:* 4 (1d6 + 1) Slashing damage.
 
 **Fetid Cloud (1/Day).** *Constitution Saving Throw:* DC 11, each creature in a 10-foot Emanation originating from the dretch. *Failure:* The target has the Poisoned condition until the end of its next turn. While Poisoned, the creature can take either an action or a Bonus Action on its turn, not both, and it can't take Reactions.
 
-# Drider
-
 ## Drider
+
+### Drider
 
 *Large Monstrosity, Chaotic Evil*
 
@@ -21436,7 +21436,7 @@ Whenever the whirlwind enters a creature's space or a creature enters the whirlw
 
 **CR** 6 (XP 2,300; PB +3)
 
-### Traits
+#### Traits
 
 **Spider Climb.** The drider can climb difficult surfaces, including along ceilings, without needing to make an ability check.
 
@@ -21444,7 +21444,7 @@ Whenever the whirlwind enters a creature's space or a creature enters the whirlw
 
 **Web Walker.** The drider ignores movement restrictions caused by webs, and the drider knows the location of any other creature in contact with the same web.
 
-### Actions
+#### Actions
 
 **Multiattack.** The drider makes three attacks, using Foreleg or Poison Burst in any combination.
 
@@ -21452,7 +21452,7 @@ Whenever the whirlwind enters a creature's space or a creature enters the whirlw
 
 **Poison Burst.** *Ranged Attack Roll:* +6, range 120 ft. *Hit:* 13 (3d6 + 3) Poison damage.
 
-### Bonus Actions
+#### Bonus Actions
 
 **Magic of the Spider Queen (Recharge 5–6).** The drider casts *Darkness*, *Faerie Fire*, or *Web*, requiring no Material components and using Wisdom as the spellcasting ability (spell save DC 14).
 
@@ -21485,7 +21485,7 @@ Whenever the whirlwind enters a creature's space or a creature enters the whirlw
 
 **CR** 2 (XP 450; PB +2)
 
-### Actions
+#### Actions
 
 **Multiattack.** The druid makes two attacks, using Vine Staff or Verdant Wisp in any combination.
 
@@ -21528,13 +21528,13 @@ Whenever the whirlwind enters a creature's space or a creature enters the whirlw
 
 **CR** 1 (XP 200; PB +2)
 
-### Traits
+#### Traits
 
 **Magic Resistance.** The dryad has Advantage on saving throws against spells and other magical effects.
 
 **Speak with Beasts and Plants.** The dryad can communicate with Beasts and Plants as if they shared a language.
 
-### Actions
+#### Actions
 
 **Multiattack.** The dryad makes one Vine Lash or Thorn Burst attack, and it can use Spellcasting to cast *Charm Monster*.
 
@@ -21548,7 +21548,7 @@ Whenever the whirlwind enters a creature's space or a creature enters the whirlw
 
 **1/Day Each:** *Entangle*, *Pass without Trace*
 
-### Bonus Actions
+#### Bonus Actions
 
 **Tree Stride.** If within 5 feet of a Large or bigger tree, the dryad teleports to an unoccupied space within 5 feet of a second Large or bigger tree that is within 60 feet of the previous tree.
 
@@ -21581,13 +21581,13 @@ Whenever the whirlwind enters a creature's space or a creature enters the whirlw
 
 **CR** 5 (XP 1,800; PB +3)
 
-### Traits
+#### Traits
 
 **Earth Glide.** The elemental can burrow through nonmagical, unworked earth and stone. While doing so, the elemental doesn't disturb the material it moves through.
 
 **Siege Monster.** The elemental deals double damage to objects and structures.
 
-### Actions
+#### Actions
 
 **Multiattack.** The elemental makes two attacks, using Slam or Rock Launch in any combination.
 
@@ -21622,7 +21622,7 @@ Whenever the whirlwind enters a creature's space or a creature enters the whirlw
 
 **CR** 11 (XP 7,200; PB +4)
 
-### Traits
+#### Traits
 
 **Elemental Restoration.** If the efreeti dies outside the Elemental Plane of Fire, its body dissolves into ash, and it gains a new body in 1d4 days, reviving with all its Hit Points somewhere on the Plane of Fire.
 
@@ -21630,7 +21630,7 @@ Whenever the whirlwind enters a creature's space or a creature enters the whirlw
 
 **Wishes.** The efreeti has a 30 percent chance of knowing the *Wish* spell. If the efreeti knows it, the efreeti can cast it only on behalf of a non-genie creature who communicates a wish in a way the efreeti can understand. If the efreeti casts the spell for the creature, the efreeti suffers none of the spell's stress. Once the efreeti has cast it three times, the efreeti can't do so again for 365 days.
 
-### Actions
+#### Actions
 
 **Multitattack.** The efreeti makes three attacks, using Heated Blade or Hurl Flame in any combination.
 
@@ -21675,7 +21675,7 @@ Whenever the whirlwind enters a creature's space or a creature enters the whirlw
 
 **CR** 12 (XP 8,400; PB +4)
 
-### Traits
+#### Traits
 
 **Diabolical Restoration.** If the erinyes dies outside the Nine Hells, its body disappears in sulfurous smoke, and it gains a new body instantly, reviving with all its Hit Points somewhere in the Nine Hells.
 
@@ -21683,7 +21683,7 @@ Whenever the whirlwind enters a creature's space or a creature enters the whirlw
 
 **Magic Rope.** The erinyes has a magic rope. While bearing it, the erinyes can use the Entangling Rope action. The rope has AC 20, HP 90, and Immunity to Poison and Psychic damage. The rope turns to dust if reduced to 0 Hit Points, if it is 5+ feet away from the erinyes for 1 hour or more, or if the erinyes dies. If the rope is damaged or destroyed, the erinyes can fully restore it when finishing a Short or Long Rest.
 
-### Actions
+#### Actions
 
 **Multitattack.** The erinyes makes three Withering Sword attacks and can use Entangling Rope.
 
@@ -21691,7 +21691,7 @@ Whenever the whirlwind enters a creature's space or a creature enters the whirlw
 
 **Entangling Rope (Requires Magic Rope).** Strength Saving Throw: DC 16, one creature the erinyes can see within 120 feet. *Failure*: 14 (4d6) Force damage, and the target has the Restrained condition until the rope is destroyed, the erinyes uses a Bonus Action to release the target, or the erinyes uses Entangling Rope again.
 
-### Reactions
+#### Reactions
 
 **Parry.** *Trigger:* The erinyes is hit by a melee attack roll while holding a weapon. *Response:* The erinyes adds 4 to its AC against that attack, possibly causing it to miss.
 
@@ -21820,7 +21820,7 @@ Whenever the whirlwind enters a creature's space or a creature enters the whirlw
 
 **Water Susceptibility.** The elemental takes 3 (1d6) Cold damage for every 5 feet the elemental moves in water or for every gallon of water splashed on it.
 
-## Actions
+#### Actions
 
 **Multiattack.** The elemental makes two Burn attacks.
 
@@ -21855,7 +21855,7 @@ Whenever the whirlwind enters a creature's space or a creature enters the whirlw
 
 **CR** 9 (XP 5,000; PB +4)
 
-## Actions
+#### Actions
 
 **Multiattack.** The giant makes two attacks, using Flame Sword or Hammer Throw in any combination.
 
@@ -21890,7 +21890,7 @@ Whenever the whirlwind enters a creature's space or a creature enters the whirlw
 
 **CR** 5 (XP 1,800; PB +3)
 
-## Traits
+#### Traits
 
 **Aversion to Fire.** If the golem takes Fire damage, it has Disadvantage on attack rolls and ability checks until the end of its next turn.
 
@@ -21904,7 +21904,7 @@ The golem's creator, if within 60 feet of the berserk golem, can try to calm it 
 
 **Magic Resistance.** The golem has Advantage on saving throws against spells and other magical effects.
 
-## Actions
+#### Actions
 
 **Multiattack.** The golem makes two Slam attacks.
 
@@ -21939,7 +21939,7 @@ The golem's creator, if within 60 feet of the berserk golem, can try to calm it 
 
 **CR** 8 (XP 3,900; PB +3)
 
-## Actions
+#### Actions
 
 **Multiattack.** The giant makes two attacks, using Frost Axe or Great Bow in any combination.
 
@@ -21947,7 +21947,7 @@ The golem's creator, if within 60 feet of the berserk golem, can try to calm it 
 
 **Great Bow.** *Ranged Attack Roll:* +9, range 150/600 ft. *Hit:* 17 (2d10 + 6) Piercing damage plus 7 (2d6) Cold damage, and the target's Speed decreases by 10 feet until the end of its next turn.
 
-## Bonus Actions
+#### Bonus Actions
 
 **War Cry (Recharge 5–6).** The giant or one creature of its choice that can see or hear it gains 16 (2d10 + 5) Temporary Hit Points and has Advantage on attack rolls until the start of the giant's next turn.
 
@@ -21978,7 +21978,7 @@ The golem's creator, if within 60 feet of the berserk golem, can try to calm it 
 
 **CR** 0 (XP 0; PB +2)
 
-## Reactions
+#### Reactions
 
 **Shriek.** *Trigger:* A creature or a source of Bright Light moves within 30 feet of the shrieker. *Response:* The shrieker emits a shriek audible within 300 feet of itself for 1 minute or until the shrieker dies.
 
@@ -22007,7 +22007,7 @@ The golem's creator, if within 60 feet of the berserk golem, can try to calm it 
 
 **CR** 1/4 (XP 50; PB +2)
 
-## Actions
+#### Actions
 
 **Multiattack.** The fungus makes two Rotting Touch attacks.
 
@@ -22042,11 +22042,11 @@ The golem's creator, if within 60 feet of the berserk golem, can try to calm it 
 
 **CR** 2 (XP 450; PB +2)
 
-## Traits
+#### Traits
 
 **Flyby.** The gargoyle doesn't provoke an Opportunity Attack when it flies out of an enemy's reach.
 
-## Actions
+#### Actions
 
 **Multiattack.** The gargoyle makes two Claw attacks.
 
@@ -22079,7 +22079,7 @@ The golem's creator, if within 60 feet of the berserk golem, can try to calm it 
 
 **CR** 2 (XP 450; PB +2)
 
-### Traits
+#### Traits
 
 **Ooze Cube.** The cube fills its entire space and is transparent. Other creatures can enter that space, but a creature that does so is subjected to the cube's Engulf and has Disadvantage on the saving throw.
 
@@ -22089,7 +22089,7 @@ As an action, a creature within 5 feet of the cube can pull a creature or an obj
 
 **Transparent.** Even when the cube is in plain sight, a creature must succeed on a DC 15 Wisdom (Perception) check to notice the cube if the creature hasn't witnessed the cube move or otherwise act.
 
-### Actions
+#### Actions
 
 **Pseudopod.** *Melee Attack Roll:* +4, reach 5 ft. *Hit:* 12 (3d6 + 2) Acid damage.
 
@@ -22124,11 +22124,11 @@ As an action, a creature within 5 feet of the cube can pull a creature or an obj
 
 **CR** 2 (XP 450; PB +2)
 
-### Traits
+#### Traits
 
 **Stench.** *Constitution Saving Throw:* DC 10, any creature that starts its turn in a 5-foot Emanation originating from the ghast. *Failure:* The target has the Poisoned condition until the start of its next turn. *Success:* The target is immune to this ghast's Stench for 24 hours.
 
-### Actions
+#### Actions
 
 **Bite.** *Melee Attack Roll:* +5, reach 5 ft. *Hit:* 7 (1d8 + 3) Piercing damage plus 9 (2d8) Necrotic damage.
 
@@ -22163,13 +22163,13 @@ As an action, a creature within 5 feet of the cube can pull a creature or an obj
 
 **CR** 4 (XP 1,100; PB +2)
 
-### Traits
+#### Traits
 
 **Ethereal Sight.** The ghost can see 60 feet into the Ethereal Plane when it is on the Material Plane.
 
 **Incorporeal Movement.** The ghost can move through other creatures and objects as if they were Difficult Terrain. It takes 5 (1d10) Force damage if it ends its turn inside an object.
 
-## Actions
+#### Actions
 
 **Multiattack.** The ghost makes two Withering Touch attacks.
 
@@ -22212,7 +22212,7 @@ The possession lasts until the body drops to 0 Hit Points or the ghost leaves as
 
 **CR** 1 (XP 200; PB +2)
 
-## Actions
+#### Actions
 
 **Multiattack.** The ghoul makes two Bite attacks.
 
@@ -22247,7 +22247,7 @@ The possession lasts until the body drops to 0 Hit Points or the ghost leaves as
 
 **CR** 2 (XP 450; PB +2)
 
-## Traits
+#### Traits
 
 **Aberant Ground.** The ground in a 10-foot Emanation originating from the moucher is Difficult Terrain.
 
@@ -22259,7 +22259,7 @@ The possession lasts until the body drops to 0 Hit Points or the ghost leaves as
 
 **7–8.** The target makes a melee attack against a randomly determined creature within its reach or does nothing if it can't make such an attack.
 
-## Actions
+#### Actions
 
 **Bite.** *Melee Attack Roll:* +2, reach 5 ft. *Hit:* 7 (2d6) Piercing damage. If the target is a Medium or smaller creature, it has the Prone condition. The target dies if it is reduced to 0 Hit Points by this attack. Its body is then absorbed into the moucher, leaving only equipment behind.
 
@@ -22296,13 +22296,13 @@ The possession lasts until the body drops to 0 Hit Points or the ghost leaves as
 
 **CR** 9 (XP 5,000; PB +4)
 
-### Traits
+#### Traits
 
 **Demonic Restoration.** If the glabrezu dies outside the Abyss, its body dissolves into ichor, and it gains a new body instantly, reviving with all its Hit Points somewhere in the Abyss.
 
 **Magic Resistance.** The glabrezu has Advantage on saving throws against spells and other magical effects.
 
-### Actions
+#### Actions
 
 **Multiattack.** The glabrezu makes two Pincer attacks and uses Pummel or Spellcasting.
 
@@ -22345,7 +22345,7 @@ The possession lasts until the body drops to 0 Hit Points or the ghost leaves as
 
 **CR** 5 (XP 1,800; PB +3)
 
-### Actions
+#### Actions
 
 **Multiattack.** The gladiator makes three Spear attacks. It can replace one attack with a use of Shield Bash.
 
@@ -22353,7 +22353,7 @@ The possession lasts until the body drops to 0 Hit Points or the ghost leaves as
 
 **Shield Bash.** *Strength Saving Throw:* DC 15, one creature within 5 feet that the gladiator can see. *Failure:* 9 (2d4 + 4) Bludgeoning damage. If the target is a Medium or smaller creature, it has the Prone condition.
 
-### Reactions
+#### Reactions
 
 **Parry.** *Trigger:* The gladiator is hit by a melee attack roll while holding a weapon. *Response:* The gladiator adds 3 to its AC against that attack, possibly causing it to miss.
 
@@ -22382,13 +22382,13 @@ The possession lasts until the body drops to 0 Hit Points or the ghost leaves as
 
 **CR** 1/2 (XP 100; PB +2)
 
-### Actions
+#### Actions
 
 **Rend.** *Melee Attack Roll:* +4, reach 5 ft. *Hit:* 5 (1d6 + 2) Piercing damage.
 
 **Bone Bow.** *Ranged Attack Roll:* +3, range 150/600 ft. *Hit:* 6 (1d10 + 1) Piercing damage.
 
-### Bonus Actions
+#### Bonus Actions
 
 **Rampage (1/Day).** Immediately after dealing damage to a creature that is already Bloodied, the gnoll moves up to half its speed, and it makes one Rend attack.
 
@@ -22466,7 +22466,7 @@ The possession lasts until the body drops to 0 Hit Points or the ghost leaves as
 
 **Nimble Escape.** The goblin takes the Disengage or Hide action.
 
-## Goblin Boss
+### Goblin Boss
 
 *Small Fey (Goblinoid), Chaotic Neutral*
 
@@ -22538,11 +22538,11 @@ The possession lasts until the body drops to 0 Hit Points or the ghost leaves as
 
 **CR** 3 (700 XP; PB +2)
 
-## Traits
+#### Traits
 
 **Amphibious.** The dragon can breathe air and water.
 
-## Actions
+#### Actions
 
 **Multiattack.** The dragon makes two Rend attacks.
 
@@ -22552,7 +22552,7 @@ The possession lasts until the body drops to 0 Hit Points or the ghost leaves as
 
 **Weakening Breath.** *Strength Saving Throw:* DC 13, each creature that isn't currently affected by this breath in a 15-foot Cone. *Failure:* The target has Disadvantage on Strength-based D20 Tests and subtracts 2 (1d4) from its damage rolls. It repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically.
 
-## Young Gold Dragon
+### Young Gold Dragon
 
 *Large Dragon (Metallic), Lawful Good*
 
@@ -22579,11 +22579,11 @@ Passive Perception 19
 **Languages** Common, Draconic  
 **CR** 10 (XP 5,900; PB +4)
 
-## Traits
+#### Traits
 
 **Amphibious.** The dragon can breathe air and water.
 
-## Actions
+#### Actions
 
 **Multiattack.** The dragon makes three Rend attacks. It can replace one attack with a use of Weakening Breath.
 
@@ -22593,7 +22593,7 @@ Passive Perception 19
 
 **Weakening Breath.** *Strength Saving Throw:* DC 17, each creature that isn't currently affected by this breath in a 30-foot Cone. *Failure:* The target has Disadvantage on Strength-based D20 Tests and subtracts 3 (1d6) from its damage rolls. It repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically.
 
-## Adult Gold Dragon
+### Adult Gold Dragon
 
 *Huge Dragon (Metallic), Lawful Good*
 
@@ -22619,13 +22619,13 @@ Passive Perception 19
 **Languages** Common, Draconic  
 **CR** 17 (XP 18,000, or 20,000 in lair; PB +6)
 
-## Traits
+#### Traits
 
 **Amphibious.** The dragon can breathe air and water.
 
 **Legendary Resistance (3/Day, or 4/Day in Lair).** If the dragon fails a saving throw, it can choose to succeed instead.
 
-## Actions
+#### Actions
 
 **Multiattack.** The dragon makes three Rend attacks. It can replace one attack with a use of (A) Spellcasting to cast *Guiding Bolt* (level 2 version) or (B) Weakening Breath.
 
@@ -22641,7 +22641,7 @@ Passive Perception 19
 
 **Weakening Breath.** *Strength Saving Throw:* DC 21, each creature that isn't currently affected by this breath in a 60-foot Cone. *Failure:* The target has Disadvantage on Strength-based D20 Tests and subtracts 3 (1d6) from its damage rolls. It repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically.
 
-## Legendary Actions
+#### Legendary Actions
 
 *Legendary Action Uses: 3 (4 in Lair). Immediately after another creature's turn, the dragon can expend a use to take one of the following actions. The dragon regains all expended uses at the start of each of its turns.*
 
@@ -22651,7 +22651,7 @@ Passive Perception 19
 
 **Pounce.** The dragon moves up to half its Speed, and it makes one Rend attack.
 
-## Ancient Gold Dragon
+### Ancient Gold Dragon
 
 *Gargantuan Dragon (Metallic), Lawful Good*
 
@@ -22678,13 +22678,13 @@ Passive Perception 19
 
 **CR** 24 (XP 62,000, or 75,000 in lair; PB +7)
 
-## Traits
+#### Traits
 
 **Amphibious.** The dragon can breathe air and water.
 
 **Legendary Resistance (4/Day, or 5/Day in Lair).** If the dragon fails a saving throw, it can choose to succeed instead.
 
-## Actions
+#### Actions
 
 **Multiattack.** The dragon makes three Rend attacks. It can replace one attack with a use of (A) Spellcasting to cast *Guiding Bolt* (level 4 version) or (B) Weakening Breath.
 
@@ -22700,7 +22700,7 @@ Passive Perception 19
 
 **Weakening Breath.** *Strength Saving Throw: DC 24*, each creature that isn't currently affected by this breath in a 90-foot Cone. *Failure:* The target has Disadvantage on Strength-based D20 Tests and subtracts 5 (1d10) from its damage rolls. It repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically.
 
-## Legendary Actions
+#### Legendary Actions
 
 *Legendary Action Uses: 3 (4 in Lair). Immediately after another creature's turn, the dragon can expend a use to take one of the following actions. The dragon regains all expended uses at the start of each of its turns.*
 
@@ -22739,13 +22739,13 @@ Passive Perception 19
 
 **CR** 5 (XP 1,800; PB +3)
 
-## Actions
+#### Actions
 
 **Gore.** *Melee Attack Roll:* +8, reach 5 ft. *Hit:* 18 (2d12 + 5) Piercing damage. If the target is a Large or smaller creature and the gorgon moved 20+ feet straight toward it immediately before the hit, the target has the Prone condition.
 
 **Petrifying Breath (Recharge 5–6).** *Constitution Saving Throw:* DC 15, each creature in a 30-foot Cone. *First Failure:* The target has the Restrained condition and repeats the save at the end of its next turn if it is still Restrained, ending the effect on itself on a success. *Second Failure:* The target has the Petrified condition instead of the Restrained condition.
 
-## Bonus Actions
+#### Bonus Actions
 
 **Trample.** *Dexterity Saving Throw:* DC 16, one creature within 5 feet that has the Prone condition. *Failure:* 16 (2d10 + 5) Bludgeoning damage. *Success:* Half damage.
 
@@ -22780,7 +22780,7 @@ Passive Perception 19
 
 **CR** 1/2 (XP 100; PB +2)
 
-## Traits
+#### Traits
 
 **Amorphous.** The ooze can move through a space as narrow as 1 inch without expending extra movement to do so.
 
@@ -22788,7 +22788,7 @@ Passive Perception 19
 
 The ooze can eat through 2-inch-thick, nonmagical metal or wood in 1 round.
 
-## Actions
+#### Actions
 
 **Pseudopod.** *Melee Attack Roll:* +3, reach 5 ft. *Hit:* 10 (2d8 + 1) Acid damage. Nonmagical armor worn by the target takes a –1 penalty to the AC it offers. The armor is destroyed if the penalty reduces its AC to 10. The penalty can be removed by casting the *Mending* spell on the armor.
 
@@ -22821,11 +22821,11 @@ The ooze can eat through 2-inch-thick, nonmagical metal or wood in 1 round.
 
 **CR** 2 (XP 450; PB +2)
 
-## Traits
+#### Traits
 
 **Amphibious.** The dragon can breathe air and water.
 
-## Actions
+#### Actions
 
 **Multiattack.** The dragon makes two Rend attacks.
 
@@ -22860,11 +22860,11 @@ The ooze can eat through 2-inch-thick, nonmagical metal or wood in 1 round.
 
 **CR** 8 (XP 3,900; PB +3)
 
-## Traits
+#### Traits
 
 **Amphibious.** The dragon can breathe air and water.
 
-## Actions
+#### Actions
 
 **Multiattack.** The dragon makes three Rend attacks.
 
@@ -22872,7 +22872,7 @@ The ooze can eat through 2-inch-thick, nonmagical metal or wood in 1 round.
 
 **Poison Breath (Recharge 5–6).** *Constitution Saving Throw:* DC 14, each creature in a 30-foot Cone. *Failure:* 42 (12d6) Poison damage. *Success:* Half damage.
 
-## Adult Green Dragon
+### Adult Green Dragon
 
 *Huge Dragon (Chromatic), Lawful Evil*
 
@@ -22899,13 +22899,13 @@ The ooze can eat through 2-inch-thick, nonmagical metal or wood in 1 round.
 
 **CR** 15 (XP 13,000, or 15,000 in lair; PB +5)
 
-## Traits
+#### Traits
 
 **Amphibious.** The dragon can breathe air and water.
 
 **Legendary Resistance (3/Day, or 4/Day in Lair).** If the dragon fails a saving throw, it can choose to succeed instead.
 
-## Actions
+#### Actions
 
 **Multiattack.** The dragon makes three Rend attacks. It can replace one attack with a use of Spellcasting to cast *Mind Spike* (level 3 version).
 
@@ -22919,7 +22919,7 @@ The ooze can eat through 2-inch-thick, nonmagical metal or wood in 1 round.
 
 **1/Day:** *Geas*
 
-## Legendary Actions
+#### Legendary Actions
 
 *Legendary Action Uses: 3 (4 in Lair). Immediately after another creature's turn, the dragon can expend a use to take one of the following actions. The dragon regains all expended uses at the start of each of its turns.*
 
@@ -22929,7 +22929,7 @@ The ooze can eat through 2-inch-thick, nonmagical metal or wood in 1 round.
 
 **Pounce.** The dragon moves up to half its Speed, and it makes one Rend attack.
 
-## Ancient Green Dragon
+### Ancient Green Dragon
 
 *Gargantuan Dragon (Chromatic), Lawful Evil*
 
@@ -22956,13 +22956,13 @@ The ooze can eat through 2-inch-thick, nonmagical metal or wood in 1 round.
 
 **CR** 22 (XP 41,000, or 50,000 in lair; PB +7)
 
-## Traits
+#### Traits
 
 **Amphibious.** The dragon can breathe air and water.
 
 **Legendary Resistance (4/Day, or 5/Day in Lair).** If the dragon fails a saving throw, it can choose to succeed instead.
 
-## Actions
+#### Actions
 
 **Multiattack.** The dragon makes three Rend attacks. It can replace one attack with a use of Spellcasting to cast *Mind Spike* (level 5 version).
 
@@ -22976,7 +22976,7 @@ The ooze can eat through 2-inch-thick, nonmagical metal or wood in 1 round.
 
 **1/Day Each:** *Geas*, *Modify Memory*
 
-## Legendary Actions
+#### Legendary Actions
 
 *Legendary Action Uses: 3 (4 in Lair). Immediately after another creature's turn, the dragon can expend a use to take one of the following actions. The dragon regains all expended uses at the start of each of its turns.*
 
@@ -23013,7 +23013,7 @@ The ooze can eat through 2-inch-thick, nonmagical metal or wood in 1 round.
 
 **CR** 3 (XP 700; PB +2)
 
-### Traits
+#### Traits
 
 **Amphibious.** The hag can breathe air and water.
 
@@ -23021,7 +23021,7 @@ The ooze can eat through 2-inch-thick, nonmagical metal or wood in 1 round.
 
 **Mimicry.** The hag can mimic animal sounds and humanoid voices. A creature that hears the sounds can tell they are imitations only with a successful DC 14 Wisdom (Insight) check.
 
-### Actions
+#### Actions
 
 **Multiattack.** The hag makes two Claw attacks.
 
@@ -23058,7 +23058,7 @@ The ooze can eat through 2-inch-thick, nonmagical metal or wood in 1 round.
 
 **CR** 2 (XP 450; PB +2)
 
-### Actions
+#### Actions
 
 **Multiattack.** The grick makes one Beak attack and one Tentacles attack.
 
@@ -23093,15 +23093,15 @@ The ooze can eat through 2-inch-thick, nonmagical metal or wood in 1 round.
 
 **CR** 2 (XP 450; PB +2)
 
-### Actions
+#### Actions
 
 **Multiattack.** The griffon makes two Rend attacks.
 
 **Rend.** Melee Attack Roll: +6, reach 5 ft. *Hit:* 8 (1d8 + 4) Piercing damage. If the target is a Medium or smaller creature, it has the Grappled condition (escape DC 14) from both of the griffon's front claws.
 
-# Grimlock
-
 ## Grimlock
+
+### Grimlock
 
 *Medium Aberration, Neutral Evil*
 
@@ -23126,13 +23126,13 @@ The ooze can eat through 2-inch-thick, nonmagical metal or wood in 1 round.
 
 **CR** 1/4 (XP 50; PB +2)
 
-### Actions
+#### Actions
 
 **Bone Cudgel.** *Melee Attack Roll:* +5, reach 5 ft. *Hit:* 6 (1d6 + 3) Bludgeoning damage plus 2 (1d4) Psychic damage.
 
-# Guardian Naga
-
 ## Guardian Naga
+
+### Guardian Naga
 
 *Large Celestial, Lawful Good*
 
@@ -23159,11 +23159,11 @@ The ooze can eat through 2-inch-thick, nonmagical metal or wood in 1 round.
 
 **CR** 10 (XP 5,900; PB +4)
 
-### Traits
+#### Traits
 
 **Celestial Restoration.** If the naga dies, it returns to life in 1d6 days and regains all its Hit Points unless *Dispel Evil and Good* is cast on its remains.
 
-### Actions
+#### Actions
 
 **Multiattack.** The naga makes two Bite attacks. It can replace any attack with a use of Poisonous Spittle.
 
@@ -23177,9 +23177,9 @@ The ooze can eat through 2-inch-thick, nonmagical metal or wood in 1 round.
 
 **1/Day Each:** *Clairvoyance*, *Cure Wounds* (level 6 version), *Flame Strike* (level 6 version), *Geas*, *True Seeing*
 
-# Guards
+## Guards
 
-## Guard
+### Guard
 
 *Medium or Small Humanoid, Neutral*
 
@@ -23206,11 +23206,11 @@ The ooze can eat through 2-inch-thick, nonmagical metal or wood in 1 round.
 
 **CR** 1/8 (XP 25; PB +2)
 
-### Actions
+#### Actions
 
 **Spear.** *Melee or Ranged Attack Roll:* +3, reach 5 ft. or range 20/60 ft. *Hit:* 4 (1d6 + 1) Piercing damage.
 
-## Guard Captain
+### Guard Captain
 
 *Medium or Small Humanoid, Neutral*
 
@@ -23237,7 +23237,7 @@ The ooze can eat through 2-inch-thick, nonmagical metal or wood in 1 round.
 
 **CR** 4 (XP 1,100; PB +2)
 
-### Actions
+#### Actions
 
 **Multiattack.** The guard makes two attacks, using Javelin or Longsword in any combination.
 
@@ -23274,11 +23274,11 @@ The ooze can eat through 2-inch-thick, nonmagical metal or wood in 1 round.
 
 **CR** 5 (XP 1,800; PB +3)
 
-### Traits
+#### Traits
 
 **Draconic Origin.** The half-dragon is related to a type of dragon associated with one of the following damage types (GM's choice): Acid, Cold, Fire, Lightning, or Poison. This choice affects other aspects of the stat block.
 
-### Actions
+#### Actions
 
 **Multiattack.** The half-dragon makes two Claw attacks.
 
@@ -23286,7 +23286,7 @@ The ooze can eat through 2-inch-thick, nonmagical metal or wood in 1 round.
 
 **Dragon's Breath (Recharge 5–6).** *Dexterity Saving Throw:* DC 14, each creature in a 30-foot Cone. *Failure:* 28 (8d6) damage of the type chosen for the Draconic Origin trait. *Success:* Half damage.
 
-### Bonus Actions
+#### Bonus Actions
 
 **Leap.** The half-dragon jumps up to 30 feet by spending 10 feet of movement.
 
@@ -23315,7 +23315,7 @@ The ooze can eat through 2-inch-thick, nonmagical metal or wood in 1 round.
 
 **CR** 1 (XP 200; PB +2)
 
-### Actions
+#### Actions
 
 **Claw.** *Melee Attack Roll:* +3, reach 5 ft. *Hit:* 6 (2d4 + 1) Slashing damage.
 
@@ -23350,11 +23350,11 @@ The ooze can eat through 2-inch-thick, nonmagical metal or wood in 1 round.
 
 **CR** 3 (XP 700; PB +2)
 
-### Traits
+#### Traits
 
 **Pack Tactics.** The hound has Advantage on an attack roll against a creature if at least one of the hound's allies is within 5 feet of the creature and the ally doesn't have the Incapacitated condition.
 
-### Actions
+#### Actions
 
 **Multiattack.** The hound makes two Bite attacks.
 
@@ -23508,17 +23508,17 @@ The ooze can eat through 2-inch-thick, nonmagical metal or wood in 1 round.
 
 **CR** 1/2 (XP 100; PB +2)
 
-## Traits
+#### Traits
 
 **Pack Tactics.** The hobgoblin has Advantage on an attack roll against a creature if at least one of the hobgoblin's allies is within 5 feet of the creature and the ally doesn't have the Incapacitated condition.
 
-## Actions
+#### Actions
 
 **Longsword.** *Melee Attack Roll:* +3, reach 5 ft. *Hit:* 12 (2d10 + 1) Slashing damage.
 
 **Longbow.** *Ranged Attack Roll:* +3, range 150/600 ft. *Hit:* 5 (1d8 + 1) Piercing damage plus 7 (3d4) Poison damage.
 
-## Hobgoblin Captain
+### Hobgoblin Captain
 
 *Medium Fey (Goblinoid), Lawful Evil*
 
@@ -23543,11 +23543,11 @@ The ooze can eat through 2-inch-thick, nonmagical metal or wood in 1 round.
 
 **CR** 3 (XP 700; PB +2)
 
-## Traits
+#### Traits
 
 **Aura of Authority.** While in a 10-foot Emanation originating from the hobgoblin, the hobgoblin and its allies have Advantage on attack rolls and saving throws, provided the hobgoblin doesn't have the Incapacitated condition.
 
-## Actions
+#### Actions
 
 **Multiattack.** The hobgoblin makes two attacks, using Greatsword or Longbow in any combination.
 
@@ -23581,11 +23581,11 @@ The ooze can eat through 2-inch-thick, nonmagical metal or wood in 1 round.
 **Languages** Understands Common plus one other language but can't speak  
 **CR** 0 (XP 10; PB +2)
 
-## Traits
+#### Traits
 
 **Telepathic Bond.** While the homunculus is on the same plane of existence as its master, the two of them can communicate telepathically with each other.
 
-## Actions
+#### Actions
 
 **Bite.** *Melee Attack Roll:* +4, reach 5 ft. *Hit:* 1 Piercing damage, and the target is subjected to the following effect. *Constitution Saving Throw:* DC 12. *Failure:* The target has the Poisoned condition until the end of the homunculus's next turn. *Failure by 5 or More:* The target has the Poisoned condition for 1 minute. While Poisoned, the target has the Unconscious condition, which ends early if the target takes any damage.
 
@@ -23618,13 +23618,13 @@ The ooze can eat through 2-inch-thick, nonmagical metal or wood in 1 round.
 
 **CR** 11 (XP 7,200; PB +4)
 
-## Traits
+#### Traits
 
 **Diabolical Restoration.** If the devil dies outside the Nine Hells, its body disappears in sulfurous smoke, and it gains a new body instantly, reviving with all its Hit Points somewhere in the Nine Hells.
 
 **Magic Resistance.** The devil has Advantage on saving throws against spells and other magical effects.
 
-## Actions
+#### Actions
 
 **Multiattack.** The devil makes three attacks, using Searing Fork or Hurl Flame in any combination. It can replace one attack with a use of Infernal Tail.
 
@@ -23663,7 +23663,7 @@ The ooze can eat through 2-inch-thick, nonmagical metal or wood in 1 round.
 
 **CR** 8 (XP 3,900; PB +3)
 
-### Traits
+#### Traits
 
 **Hold Breath.** The hydra can hold its breath for 1 hour.
 
@@ -23671,7 +23671,7 @@ The ooze can eat through 2-inch-thick, nonmagical metal or wood in 1 round.
 
 **Reactive Heads.** For each head the hydra has beyond one, it gets an extra Reaction that can be used only for Opportunity Attacks.
 
-### Actions
+#### Actions
 
 **Multiattack.** The hydra makes as many Bite attacks as it has heads.
 
@@ -23706,13 +23706,13 @@ The ooze can eat through 2-inch-thick, nonmagical metal or wood in 1 round.
 
 **CR** 14 (XP 11,500; PB +5)
 
-### Traits
+#### Traits
 
 **Diabolical Restoration.** If the devil dies outside the Nine Hells, its body disappears in sulfurous smoke, and it gains a new body instantly, reviving with all its Hit Points somewhere in the Nine Hells.
 
 **Magic Resistance.** The devil has Advantage on saving throws against spells and other magical effects.
 
-### Actions
+#### Actions
 
 **Multiattack.** The devil makes three Ice Spear attacks. It can replace one attack with a Tail attack.
 
@@ -23753,11 +23753,11 @@ The ooze can eat through 2-inch-thick, nonmagical metal or wood in 1 round.
 
 **CR** 1 (XP 200; PB +2)
 
-### Traits
+#### Traits
 
 **Magic Resistance.** The imp has Advantage on saving throws against spells and other magical effects.
 
-### Actions
+#### Actions
 
 **Sting.** *Melee Attack Roll:* +5, reach 5 ft. *Hit:* 6 (1d6 + 3) Piercing damage plus 7 (2d6) Poison damage.
 
@@ -23793,11 +23793,11 @@ The ooze can eat through 2-inch-thick, nonmagical metal or wood in 1 round.
 **Languages** Abyssal, Common, Infernal; telepathy 60 ft.  
 **CR** 4 (XP 1,100; PB +2)
 
-### Traits
+#### Traits
 
 **Succubus Form.** When the incubus finishes a Long Rest, it can shape-shift into a **Succubus**, using that stat block instead of this one. Any equipment it is wearing or carrying isn't transformed.
 
-### Actions
+#### Actions
 
 **Multiattack.** The incubus makes two Restless Touch attacks.
 
@@ -23811,7 +23811,7 @@ The ooze can eat through 2-inch-thick, nonmagical metal or wood in 1 round.
 
 **1/Day Each:** *Dream, Hypnotic Pattern*
 
-### Bonus Actions
+#### Bonus Actions
 
 **Nightmare (Recharge 6).** *Wisdom Saving Throw:* DC 15, one creature the incubus can see within 60 feet.
 
@@ -23848,13 +23848,13 @@ The ooze can eat through 2-inch-thick, nonmagical metal or wood in 1 round.
 
 **CR** 6 (XP 2,300; PB +3)
 
-### Traits
+#### Traits
 
 **Air Form.** The stalker can enter an enemy's space and stop there. It can move through a space as narrow as 1 inch without expending extra movement to do so.
 
 **Invisibility.** The stalker has the Invisible condition.
 
-### Actions
+#### Actions
 
 **Multiattack.** The stalker makes three Wind Swipe attacks. It can replace one attack with a use of Vortex.
 
@@ -23889,7 +23889,7 @@ The ooze can eat through 2-inch-thick, nonmagical metal or wood in 1 round.
 
 **CR** 16 (XP 15,000; PB +5)
 
-### Traits
+#### Traits
 
 **Fire Absorption.** Whenever the golem is subjected to Fire damage, it regains a number of Hit Points equal to the Fire damage dealt.
 
@@ -23897,7 +23897,7 @@ The ooze can eat through 2-inch-thick, nonmagical metal or wood in 1 round.
 
 **Magic Resistance.** The golem has Advantage on saving throws against spells and other magical effects.
 
-### Actions
+#### Actions
 
 **Multiattack.** The golem makes two attacks, using Bladed Arm or Fiery Bolt in any combination.
 
@@ -23936,7 +23936,7 @@ The ooze can eat through 2-inch-thick, nonmagical metal or wood in 1 round.
 
 **CR** 3 (XP 700; PB +2)
 
-### Actions
+#### Actions
 
 **Multiattack.** The knight makes two attacks, using Greatsword or Heavy Crossbow in any combination.
 
@@ -23944,7 +23944,7 @@ The ooze can eat through 2-inch-thick, nonmagical metal or wood in 1 round.
 
 **Heavy Crossbow.** Ranged Attack Roll: +2, range 100/400 ft. *Hit:* 11 (2d10) Piercing damage plus 4 (1d8) Radiant damage.
 
-### Reactions
+#### Reactions
 
 **Parry.** *Trigger:* The knight is hit by a melee attack roll while holding a weapon. *Response:* The knight adds 2 to its AC against that attack, possibly causing it to miss.
 
@@ -23975,19 +23975,19 @@ The ooze can eat through 2-inch-thick, nonmagical metal or wood in 1 round.
 
 **CR** 1/8 (XP 25; PB +2)
 
-### Traits
+#### Traits
 
 **Pack Tactics.** The kobold has Advantage on an attack roll against a creature if at least one of the kobold's allies is within 5 feet of the creature and the ally doesn't have the Incapacitated condition.
 
 **Sunlight Sensitivity.** While in sunlight, the kobold has Disadvantage on ability checks and attack rolls.
 
-### Actions
+#### Actions
 
 **Dagger.** Melee or Ranged Attack Roll: +4, reach 5 ft. or range 20/60 ft. *Hit:* 4 (1d4 + 2) Piercing damage.
 
-# Kraken
-
 ## Kraken
+
+### Kraken
 
 *Gargantuan Monstrosity (Titan), Chaotic Evil*
 
@@ -24014,7 +24014,7 @@ The ooze can eat through 2-inch-thick, nonmagical metal or wood in 1 round.
 
 **CR** 23 (XP 50,000, or 62,000 in lair; PB +7)
 
-### Traits
+#### Traits
 
 **Amphibious.** The kraken can breathe air and water.
 
@@ -24022,7 +24022,7 @@ The ooze can eat through 2-inch-thick, nonmagical metal or wood in 1 round.
 
 **Siege Monster.** The kraken deals double damage to objects and structures.
 
-### Actions
+#### Actions
 
 **Multiattack.** The kraken makes two Tentacle attacks and uses Fling, Lightning Strike, or Swallow.
 
@@ -24036,7 +24036,7 @@ The ooze can eat through 2-inch-thick, nonmagical metal or wood in 1 round.
 
 If the kraken takes 50 damage or more on a single turn from a creature inside it, the kraken must succeed on a DC 25 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, each of which falls in a space within 10 feet of the kraken with the Prone condition. If the kraken dies, any swallowed creature no longer has the Restrained condition and can escape from the corpse using 15 feet of movement, exiting Prone.
 
-### Legendary Actions
+#### Legendary Actions
 
 *Legendary Action Uses: 3 (4 in Lair). Immediately after another creature's turn, the kraken can expend a use to take one of the following actions. The kraken regains all expended uses at the start of each of its turns.*
 
@@ -24044,9 +24044,9 @@ If the kraken takes 50 damage or more on a single turn from a creature inside it
 
 **Toxic Ink.** *Constitution Saving Throw:* DC 23, each creature in a 15-foot Emanation originating from the kraken while it is underwater. *Failure:* The target has the Blinded and Poisoned conditions until the end of the kraken's next turn. The kraken then moves up to its Speed. *Failure or Success:* The kraken can't take this action again until the start of its next turn.
 
-# Lamia
-
 ## Lamia
+
+### Lamia
 
 *Large Fiend, Chaotic Evil*
 
@@ -24071,7 +24071,7 @@ If the kraken takes 50 damage or more on a single turn from a creature inside it
 
 **CR** 4 (XP 1,100; PB +2)
 
-### Actions
+#### Actions
 
 **Multiattack.** The lamia makes two Claw attacks. It can replace one attack with a use of Corrupting Touch.
 
@@ -24085,7 +24085,7 @@ If the kraken takes 50 damage or more on a single turn from a creature inside it
 
 **1/Day Each:** *Geas*, *Major Image*, *Scrying*
 
-## Bonus Actions
+#### Bonus Actions
 
 **Leap.** The lamia jumps up to 30 feet by spending 10 feet of movement.
 
@@ -24118,11 +24118,11 @@ If the kraken takes 50 damage or more on a single turn from a creature inside it
 
 **CR** 0 (XP 10; PB +2)
 
-### Traits
+#### Traits
 
 **Hellish Restoration.** If the lemure dies in the Nine Hells, it revives with all its Hit Points in 1d10 days unless it is killed by a creature under the effects of a *Bless* spell or its remains are sprinkled with Holy Water.
 
-### Actions
+#### Actions
 
 **Vile Slime.** *Melee Attack Roll:* +2, reach 5 ft. *Hit:* 2 (1d4) Poison damage.
 
@@ -24159,13 +24159,13 @@ If the kraken takes 50 damage or more on a single turn from a creature inside it
 
 **CR** 21 (XP 33,000, or 41,000 in lair; PB +7)
 
-### Traits
+#### Traits
 
 **Legendary Resistance (4/Day, or 5/Day in Lair).** If the lich fails a saving throw, it can choose to succeed instead.
 
 **Spirit Jar.** If destroyed, the lich reforms in 1d10 days if it has a spirit jar, reviving with all its Hit Points. The new body appears in an unoccupied space within the lich's lair.
 
-### Actions
+#### Actions
 
 **Multiattack.** The lich makes three attacks, using Eldritch Burst or Paralyzing Touch in any combination.
 
@@ -24181,11 +24181,11 @@ If the kraken takes 50 damage or more on a single turn from a creature inside it
 
 **1/Day Each:** *Chain Lightning*, *Finger of Death*, *Power Word Kill*, *Scrying*
 
-### Reactions
+#### Reactions
 
 **Protective Magic.** The lich casts *Counterspell* or *Shield* in response to the spell's trigger, using the same spellcasting ability as Spellcasting.
 
-### Legendary Actions
+#### Legendary Actions
 
 *Legendary Action Uses: 3 (4 in Lair). Immediately after another creature's turn, the lich can expend a use to take one of the following actions. The lich regains all expended uses at the start of each of its turns.*
 
@@ -24224,7 +24224,7 @@ If the kraken takes 50 damage or more on a single turn from a creature inside it
 
 **CR** 6 (XP 2,300; PB +3)
 
-### Actions
+#### Actions
 
 **Multitattack.** The mage makes three Arcane Burst attacks.
 
@@ -24238,15 +24238,15 @@ If the kraken takes 50 damage or more on a single turn from a creature inside it
 
 **1/Day Each:** *Cone of Cold, Fly*
 
-### Bonus Actions
+#### Bonus Actions
 
 **Misty Step (3/Day).** The mage casts *Misty Step*, using the same spellcasting ability as Spellcasting.
 
-### Reactions
+#### Reactions
 
 **Protective Magic (3/Day).** The mage casts *Counterspell* or *Shield* in response to the spell's trigger, using the same spellcasting ability as Spellcasting.
 
-## Archmage
+### Archmage
 
 *Medium or Small Humanoid (Wizard), Neutral*
 
@@ -24275,11 +24275,11 @@ If the kraken takes 50 damage or more on a single turn from a creature inside it
 
 **CR** 12 (XP 8,000; PB +4)
 
-### Traits
+#### Traits
 
 **Magic Resistance.** The archmage has Advantage on saving throws against spells and other magical effects.
 
-### Actions
+#### Actions
 
 **Multitattack.** The archmage makes four Arcane Burst attacks.
 
@@ -24293,11 +24293,11 @@ If the kraken takes 50 damage or more on a single turn from a creature inside it
 
 **1/Day Each:** *Cone of Cold* (level 9 version), *Mind Blank* (cast before combat), *Scrying, Teleport*
 
-### Bonus Actions
+#### Bonus Actions
 
 **Misty Step (3/Day).** The mage casts *Misty Step*, using the same spellcasting ability as Spellcasting.
 
-### Reactions
+#### Reactions
 
 **Protective Magic (3/Day).** The archmage casts *Counterspell* or *Shield* in response to the spell's trigger, using the same spellcasting ability as Spellcasting.
 
@@ -24328,15 +24328,15 @@ If the kraken takes 50 damage or more on a single turn from a creature inside it
 
 **CR** 1/2 (XP 100; PB +2)
 
-### Traits
+#### Traits
 
 **Death Burst.** The magmin explodes when it dies. *Dexterity Saving Throw:* DC 11, each creature in a 10-foot Emanation originating from the magmin. *Failure:* 7 (2d6) Fire damage. *Success:* Half damage.
 
-### Actions
+#### Actions
 
 **Touch.** *Melee Attack Roll:* +4, reach 5 ft. *Hit:* 7 (2d4 + 2) Fire damage. If the target is a creature or a flammable object that isn't being worn or carried, it starts burning.
 
-## Bonus Actions
+#### Bonus Actions
 
 **Ignited Illumination.** The magmin sets itself ablaze or extinguishes its flames. While ablaze, the magmin sheds Bright Light in a 10-foot radius and Dim Light for an additional 10 feet.
 
@@ -24365,7 +24365,7 @@ If the kraken takes 50 damage or more on a single turn from a creature inside it
 
 **CR** 3 (XP 700; PB +2)
 
-## Actions
+#### Actions
 
 **Multiattack.** The manticore makes three attacks, using Rend or Tail Spike in any combination.
 
@@ -24404,7 +24404,7 @@ If the kraken takes 50 damage or more on a single turn from a creature inside it
 
 **CR** 16 (XP 15,000; PB +5)
 
-## Traits
+#### Traits
 
 **Demonic Restoration.** If the marilith dies outside the Abyss, its body dissolves into ichor, and it gains a new body instantly, reviving with all its Hit Points somewhere in the Abyss.
 
@@ -24412,7 +24412,7 @@ If the kraken takes 50 damage or more on a single turn from a creature inside it
 
 **Reactive.** The marilith can take one Reaction on every turn of combat.
 
-## Actions
+#### Actions
 
 **Multiattack.** The marilith makes six Pact Blade attacks and uses Constrict.
 
@@ -24420,11 +24420,11 @@ If the kraken takes 50 damage or more on a single turn from a creature inside it
 
 **Constrict.** *Strength Saving Throw:* DC 17, one Medium or smaller creature the marilith can see within 5 feet. *Failure:* 15 (2d10 + 4) Bludgeoning damage. The target has the Grappled condition (escape DC 14), and it has the Restrained condition until the grapple ends.
 
-## Bonus Actions
+#### Bonus Actions
 
 **Teleport (Recharge 5–6).** The marilith teleports up to 120 feet to an unoccupied space it can see.
 
-## Reactions
+#### Reactions
 
 **Parry.** *Trigger:* The marilith is hit by a melee attack roll while holding a weapon. *Response:* The marilith adds 5 to its AC against that attack, possibly causing it to miss.
 
@@ -24455,7 +24455,7 @@ If the kraken takes 50 damage or more on a single turn from a creature inside it
 
 **CR** 6 (XP 2,300; PB +3)
 
-## Actions
+#### Actions
 
 **Multiattack.** The medusa makes two Claw attacks and one Snake Hair attack, or it makes three Poison Ray attacks.
 
@@ -24465,7 +24465,7 @@ If the kraken takes 50 damage or more on a single turn from a creature inside it
 
 **Poison Ray.** *Ranged Attack Roll:* +5, range 150 ft. *Hit:* 11 (2d8 + 2) Poison damage.
 
-## Bonus Actions
+#### Bonus Actions
 
 **Petrifying Gaze (Recharge 5–6).** *Constitution Saving Throw:* DC 13, each creature in a 30-foot Cone. If the medusa sees its reflection in the Cone, the medusa must make this save. *First Failure:* The target has the Restrained condition and repeats the save at the end of its next turn if it is still Restrained, ending the effect on itself on a success. *Second Failure:* The target has the Petrified condition instead of the Restrained condition.
 
@@ -24500,11 +24500,11 @@ If the kraken takes 50 damage or more on a single turn from a creature inside it
 
 **CR** 1/2 (XP 100; PB +2)
 
-### Traits
+#### Traits
 
 **Death Burst.** The mephit explodes when it dies. *Dexterity Saving Throw:* DC 10, each creature in a 5-foot Emanation originating from the mephit. *Failure:* 5 (2d4) Bludgeoning damage. *Success:* Half damage.
 
-### Actions
+#### Actions
 
 **Claw.** *Melee Attack Roll:* +4, reach 5 ft. *Hit:* 4 (1d4 + 2) Slashing damage.
 
@@ -24541,11 +24541,11 @@ If the kraken takes 50 damage or more on a single turn from a creature inside it
 
 **CR** 1/2 (XP 100; PB +2)
 
-### Traits
+#### Traits
 
 **Death Burst.** The mephit explodes when it dies. *Constitution Saving Throw:* DC 10, each creature in a 5-foot Emanation originating from the mephit. *Failure:* 5 (2d4) Cold damage. *Success:* Half damage.
 
-### Actions
+#### Actions
 
 **Claw.** *Melee Attack Roll:* +3, reach 5 ft. *Hit:* 3 (1d4 + 1) Slashing damage plus 2 (1d4) Cold damage.
 
@@ -24582,17 +24582,17 @@ If the kraken takes 50 damage or more on a single turn from a creature inside it
 
 **CR** 1/2 (XP 100; PB +2)
 
-### Traits
+#### Traits
 
 **Death Burst.** The mephit explodes when it dies. *Dexterity Saving Throw:* DC 11, each creature in a 5-foot Emanation originating from the mephit. *Failure:* 7 (2d6) Fire damage. *Success:* Half damage.
 
-### Actions
+#### Actions
 
 **Claw.** *Melee Attack Roll:* +3, reach 5 ft. *Hit:* 3 (1d4 + 1) Slashing damage plus 3 (1d6) Fire damage.
 
 **Fire Breath (Recharge 6).** *Dexterity Saving Throw:* DC 11, each creature in a 15-foot Cone. *Failure:* 7 (2d6) Fire damage. *Success:* Half damage.
 
-## Steam Mephit
+### Steam Mephit
 
 *Small Elemental, Neutral Evil*
 
@@ -24619,13 +24619,13 @@ If the kraken takes 50 damage or more on a single turn from a creature inside it
 
 **CR** 1/4 (XP 50; PB +2)
 
-### Traits
+#### Traits
 
 **Blurred Form.** Attack rolls against the mephit are made with Disadvantage unless the mephit has the Incapacitated condition.
 
 **Death Burst.** The mephit explodes when it dies. *Dexterity Saving Throw:* DC 10, each creature in a 5-foot Emanation originating from the mephit. *Failure:* 5 (2d4) Fire damage. *Success:* Half damage.
 
-### Actions
+#### Actions
 
 **Claw.** *Melee Attack Roll:* +2, reach 5 ft. *Hit:* 2 (1d4) Slashing damage plus 2 (1d4) Fire damage.
 
@@ -24656,11 +24656,11 @@ If the kraken takes 50 damage or more on a single turn from a creature inside it
 
 **CR** 1/8 (XP 25; PB +2)
 
-### Traits
+#### Traits
 
 **Amphibious.** The merfolk can breathe air and water.
 
-### Actions
+#### Actions
 
 **Ocean Spear.** *Melee or Ranged Attack Roll:* +2, reach 5 ft. or range 20/60 ft. *Hit:* 3 (1d6) Piercing damage plus 2 (1d4) Cold damage. If the target is a creature, its Speed decreases by 10 feet until the end of its next turn. *Hit or Miss:* The spear magically returns to the merfolk's hand immediately after a ranged attack.
 
@@ -24689,11 +24689,11 @@ If the kraken takes 50 damage or more on a single turn from a creature inside it
 
 **CR** 2 (XP 450; PB +2)
 
-### Traits
+#### Traits
 
 **Amphibious.** The marrow can breathe air and water.
 
-### Actions
+#### Actions
 
 **Multitattack.** The marrow makes two attacks, using Bite, Claw, or Harpoon in any combination.
 
@@ -24732,23 +24732,23 @@ If the kraken takes 50 damage or more on a single turn from a creature inside it
 
 **CR** 2 (XP 450; PB +2)
 
-## Traits
+#### Traits
 
 **Adhesive (Object Form Only).** The mimic adheres to anything that touches it. A Huge or smaller creature adhered to the mimic has the Grappled condition (escape DC 13). Ability checks made to escape this grapple have Disadvantage.
 
-## Actions
+#### Actions
 
 **Bite.** *Melee Attack Roll:* +5 (with Advantage if the target is Grappled by the mimic), reach 5 ft. *Hit:* 7 (1d8 + 3) Piercing damage—or 12 (2d8 + 3) Piercing damage if the target is Grappled by the mimic—plus 4 (1d8) Acid damage.
 
 **Pseudopod.** *Melee Attack Roll:* +5, reach 5 ft. *Hit:* 7 (1d8 + 3) Bludgeoning damage plus 4 (1d8) Acid damage. If the target is a Large or smaller creature, it has the Grappled condition (escape DC 13). Ability checks made to escape this grapple have Disadvantage.
 
-## Bonus Actions
+#### Bonus Actions
 
 **Shape-Shift.** The mimic shape-shifts to resemble a Medium or Small object while retaining its game statistics, or it returns to its true blob form. Any equipment it is wearing or carrying isn't transformed.
 
-# Minotaur of Baphomet
-
 ## Minotaur of Baphomet
+
+### Minotaur of Baphomet
 
 *Large Monstrosity, Chaotic Evil*
 
@@ -24773,15 +24773,15 @@ If the kraken takes 50 damage or more on a single turn from a creature inside it
 
 **CR** 3 (XP 700; PB +2)
 
-## Actions
+#### Actions
 
 **Abyssal Glaive.** *Melee Attack Roll:* +6, reach 10 ft. *Hit:* 10 (1d12 + 4) Slashing damage plus 10 (3d6) Necrotic damage.
 
 **Gore (Recharge 5–6).** *Melee Attack Roll:* +6, reach 5 ft. *Hit:* 18 (4d6 + 4) Piercing damage. If the target is a Large or smaller creature and the minotaur moved 10+ feet straight toward it immediately before the hit, the target takes an extra 10 (3d6) Piercing damage and has the Prone condition.
 
-# Mummies
+## Mummies
 
-## Mummy
+### Mummy
 
 *Medium or Small Undead, Lawful Evil*
 
@@ -24807,7 +24807,7 @@ If the kraken takes 50 damage or more on a single turn from a creature inside it
 **Languages** Common plus two other languages  
 **CR** 3 (XP 700; PB +2)
 
-## Actions
+#### Actions
 
 **Multiattack.** The mummy makes two Rotting Fist attacks and uses Dreadful Glare.
 
@@ -24815,7 +24815,7 @@ If the kraken takes 50 damage or more on a single turn from a creature inside it
 
 **Dreadful Glare.** *Wisdom Saving Throw:* DC 11, one creature the mummy can see within 60 feet. *Failure:* The target has the Frightened condition until the end of the mummy's next turn. *Success:* The target is immune to this mummy's Dreadful Glare for 24 hours.
 
-## Mummy Lord
+### Mummy Lord
 
 *Medium or Small Undead (Cleric), Lawful Evil*
 
@@ -24843,7 +24843,7 @@ If the kraken takes 50 damage or more on a single turn from a creature inside it
 **Languages** Common plus three other languages  
 **CR** 15 (XP 13,000, or 15,000 in lair; PB +5)
 
-## Traits
+#### Traits
 
 **Legendary Resistance (3/Day, or 4/Day in Lair).** If the mummy fails a saving throw, it can choose to succeed instead.
 
@@ -24851,7 +24851,7 @@ If the kraken takes 50 damage or more on a single turn from a creature inside it
 
 **Undead Restoration.** If destroyed, the mummy gains a new body in 24 hours if its heart is intact, reviving with all its Hit Points. The new body appears in an unoccupied space within the mummy's lair. The heart is a Tiny object that has AC 17, HP 10, and Immunity to all damage except Fire.
 
-## Actions
+#### Actions
 
 **Multiattack.** The mummy makes one Rotting Fist or Channel Negative Energy attack, and it uses Dreadful Glare.
 
@@ -24867,11 +24867,11 @@ If the kraken takes 50 damage or more on a single turn from a creature inside it
 
 **1/Day Each:** *Animate Dead, Harm, Insect Plague* (level 7 version)
 
-## Reactions
+#### Reactions
 
 **Whirlwind of Sand.** *Trigger:* The mummy is hit by an attack roll. *Response:* The mummy adds 2 to its AC against the attack, possibly causing the attack to miss, and the mummy teleports up to 60 feet to an unoccupied space it can see. Each creature of its choice that it can see within 5 feet of its destination space has the Blinded condition until the end of the mummy's next turn.
 
-## Legendary Actions
+#### Legendary Actions
 
 *Legendary Action Uses: 3 (4 in Lair). Immediately after another creature's turn, the mummy can expend a use to take one of the following actions. The mummy regains all expended uses at the start of each of its turns.*
 
@@ -24911,13 +24911,13 @@ If the kraken takes 50 damage or more on a single turn from a creature inside it
 
 **CR** 13 (XP 10,000; PB +5)
 
-## Traits
+#### Traits
 
 **Demonic Restoration.** If the nalfeshnee dies outside the Abyss, its body dissolves into ichor, and it gains a new body instantly, reviving with all its Hit Points somewhere in the Abyss.
 
 **Magic Resistance.** The nalfeshnee has Advantage on saving throws against spells and other magical effects.
 
-## Actions
+#### Actions
 
 **Multiattack.** The nalfeshnee makes three Rend attacks.
 
@@ -24925,17 +24925,17 @@ If the kraken takes 50 damage or more on a single turn from a creature inside it
 
 **Teleport.** The nalfeshnee teleports up to 120 feet to an unoccupied space it can see.
 
-## Bonus Actions
+#### Bonus Actions
 
 **Horror Nimbus (Recharge 5–6).** *Wisdom Saving Throw:* DC 15, each creature in a 15-foot Emanation originating from the nalfeshnee. *Failure:* 28 (8d6) Psychic damage, and the target has the Frightened condition for 1 minute, until it takes damage, or until it ends its turn with the nalfeshnee out of line of sight. *Success:* The target is immune to this nalfeshnee's Horror Nimbus for 24 hours.
 
-## Reactions
+#### Reactions
 
 **Pursuit.** *Trigger:* Another creature the nalfeshnee can see ends its move within 120 feet of the nalfeshnee. *Response:* The nalfeshnee uses Teleport, but its destination space must be within 10 feet of the triggering creature.
 
-# Night Hag
-
 ## Night Hag
+
+### Night Hag
 
 *Medium Fiend, Neutral Evil*
 
@@ -24964,7 +24964,7 @@ If the kraken takes 50 damage or more on a single turn from a creature inside it
 
 **CR** 5 (XP 1,800; PB +3)
 
-## Traits
+#### Traits
 
 **Coven Magic.** While within 30 feet of at least two hag allies, the hag can cast one of the following spells, requiring no Material components, using the spell's normal casting time, and using Intelligence as the spell-casting ability (spell save DC 14): *Augury*, *Find Familiar*, *Identify*, *Locate Object*, *Scribing*, or *Unseen Servant*. The hag must finish a Long Rest before using this trait to cast that spell again.
 
@@ -24974,7 +24974,7 @@ If the kraken takes 50 damage or more on a single turn from a creature inside it
 
 The bag has AC 15, HP 20, and Resistance to all damage. The bag turns to dust if reduced to 0 Hit Points. If the bag is destroyed, any souls the bag is holding are released. The hag can create a new bag after 7 days.
 
-## Actions
+#### Actions
 
 **Multiattack.** The hag makes two Claw attacks.
 
@@ -24990,13 +24990,13 @@ If the target takes damage from the *Dream* spell, the target's Hit Point maximu
 
 **2/Day Each:** *Phantasmal Killer*, *Plane Shift* (self only)
 
-## Bonus Actions
+#### Bonus Actions
 
 **Shape-Shift.** The hag shape-shifts into a Small or Medium Humanoid, or it returns to its true form. Other than its size, its game statistics are the same in each form. Any equipment it is wearing or carrying isn't transformed.
 
-# Nightmare
-
 ## Nightmare
+
+### Nightmare
 
 *Large Fiend, Neutral Evil*
 
@@ -25021,13 +25021,13 @@ If the target takes damage from the *Dream* spell, the target's Hit Point maximu
 
 **CR** 3 (XP 700; PB +2)
 
-## Traits
+#### Traits
 
 **Confer Fire Resistance.** The nightmare can grant Resistance to Fire damage to a rider while it is on the nightmare.
 
 **Illumination.** The nightmare sheds Bright Light in a 10-foot radius and Dim Light for an additional 10 feet.
 
-## Actions
+#### Actions
 
 **Hooves.** *Melee Attack Roll:* +6, reach 5 ft. *Hit:* 13 (2d8 + 4) Bludgeoning damage plus 10 (3d6) Fire damage.
 
@@ -25062,11 +25062,11 @@ If the target takes damage from the *Dream* spell, the target's Hit Point maximu
 
 **CR** 1/8 (XP 25; PB +2)
 
-### Actions
+#### Actions
 
 **Rapier.** *Melee Attack Roll:* +3, reach 5 ft. *Hit:* 5 (1d8 + 1) Piercing damage.
 
-### Reactions
+#### Reactions
 
 **Parry.** *Trigger:* The noble is hit by a melee attack roll while holding a weapon. *Response:* The noble adds 2 to its AC against that attack, possibly causing it to miss.
 
@@ -25099,17 +25099,17 @@ If the target takes damage from the *Dream* spell, the target's Hit Point maximu
 
 **CR** 2 (XP 450; PB +2)
 
-### Traits
+#### Traits
 
 **Amorphous.** The jelly can move through a space as narrow as 1 inch without expending extra movement to do so.
 
 **Spider Climb.** The jelly can climb difficult surfaces, including along ceilings, without needing to make an ability check.
 
-### Actions
+#### Actions
 
 **Pseudopod.** *Melee Attack Roll:* +4, reach 5 ft. *Hit:* 12 (3d6 + 2) Acid damage.
 
-### Reactions
+#### Reactions
 
 **Split.** *Trigger:* While the jelly is Large or Medium and has 10+ Hit Points, it becomes Bloodied or is subjected to Lightning or Slashing damage. *Response:* The jelly splits into two new **Ochre Jellies**. Each new jelly is one size smaller than the original jelly and acts on its Initiative. The original jelly's Hit Points are divided evenly between the new jellies (round down).
 
@@ -25140,7 +25140,7 @@ If the target takes damage from the *Dream* spell, the target's Hit Point maximu
 
 **CR** 2 (XP 450; PB +2)
 
-### Actions
+#### Actions
 
 **Greatclub.** *Melee Attack Roll:* +6, reach 5 ft. *Hit:* 13 (2d8 + 4) Bludgeoning damage.
 
@@ -25175,11 +25175,11 @@ If the target takes damage from the *Dream* spell, the target's Hit Point maximu
 
 **CR** 7 (XP 2,900; PB +3)
 
-### Traits
+#### Traits
 
 **Regeneration.** The oni regains 10 Hit Points at the start of each of its turns if it has at least 1 Hit Point.
 
-### Actions
+#### Actions
 
 **Multiattack.** The oni makes two Claw or Nightmare Ray attacks. It can replace one attack with a use of Spellcasting.
 
@@ -25193,13 +25193,13 @@ If the target takes damage from the *Dream* spell, the target's Hit Point maximu
 
 **1/Day Each:** *Charm Person* (level 2 version), *Darkness*, *Gaseous Form*, *Sleep*
 
-## Bonus Actions
+#### Bonus Actions
 
 **Invisibility.** The oni casts *Invisibility* on itself, requiring no spell components and using the same spellcasting ability as Spellcasting.
 
-# Otyugh
-
 ## Otyugh
+
+### Otyugh
 
 *Large Aberration, Neutral*
 
@@ -25222,7 +25222,7 @@ If the target takes damage from the *Dream* spell, the target's Hit Point maximu
 
 **CR** 5 (XP 1,800; PB +3)
 
-## Actions
+#### Actions
 
 **Multiattack.** The otyugh makes one Bite attack and two Tentacle attacks.
 
@@ -25232,9 +25232,9 @@ If the target takes damage from the *Dream* spell, the target's Hit Point maximu
 
 **Tentacle Slam.** *Constitution Saving Throw:* DC 14, each creature Grappled by the otyugh. *Failure:* 16 (3d8 + 3) Bludgeoning damage, and the target has the Stunned condition until the start of the otyugh's next turn. *Success:* Half damage only.
 
-# Owlbear
-
 ## Owlbear
+
+### Owlbear
 
 *Large Monstrosity, Unaligned*
 
@@ -25259,15 +25259,15 @@ If the target takes damage from the *Dream* spell, the target's Hit Point maximu
 
 **CR** 3 (XP 700; PB +2)
 
-## Actions
+#### Actions
 
 **Multiattack.** The owlbear makes two Rend attacks.
 
 **Rend.** *Melee Attack Roll:* +7, reach 5 ft. *Hit:* 14 (2d8 + 5) Slashing damage.
 
-# Pegasus
-
 ## Pegasus
+
+### Pegasus
 
 *Large Celestial, Chaotic Good*
 
@@ -25292,13 +25292,13 @@ If the target takes damage from the *Dream* spell, the target's Hit Point maximu
 
 **CR** 2 (XP 450; PB +2)
 
-## Actions
+#### Actions
 
 **Hooves.** *Melee Attack Roll:* +6, reach 5 ft. *Hit:* 7 (1d6 + 4) Bludgeoning damage plus 5 (2d4) Radiant damage.
 
-# Phase Spider
-
 ## Phase Spider
+
+### Phase Spider
 
 *Large Monstrosity, Unaligned*
 
@@ -25323,7 +25323,7 @@ If the target takes damage from the *Dream* spell, the target's Hit Point maximu
 
 **CR** 3 (XP 700; PB +2)
 
-### Traits
+#### Traits
 
 **Ethereal Sight.** The spider can see 60 feet into the Ethereal Plane while on the Material Plane and vice versa.
 
@@ -25331,13 +25331,13 @@ If the target takes damage from the *Dream* spell, the target's Hit Point maximu
 
 **Web Walker.** The spider ignores movement restrictions caused by webs, and the spider knows the location of any other creature in contact with the same web.
 
-### Actions
+#### Actions
 
 **Multiattack.** The spider makes two Bite attacks.
 
 **Bite.** *Melee Attack Roll:* +5, reach 5 ft. *Hit:* 8 (1d10 + 3) Piercing damage plus 9 (2d8) Poison damage. If this damage reduces the target to 0 Hit Points, the target becomes Stable, and it has the Poisoned condition for 1 hour. While Poisoned, the target also has the Paralyzed condition.
 
-### Bonus Actions
+#### Bonus Actions
 
 **Ethereal Jaunt.** The spider teleports from the Material Plane to the Ethereal Plane or vice versa.
 
@@ -25368,7 +25368,7 @@ If the target takes damage from the *Dream* spell, the target's Hit Point maximu
 
 **CR** 1 (XP 200; PB +2)
 
-### Actions
+#### Actions
 
 **Multiattack.** The pirate makes two Dagger attacks. It can replace one attack with a use of Enthralling Panache.
 
@@ -25403,7 +25403,7 @@ If the target takes damage from the *Dream* spell, the target's Hit Point maximu
 
 **CR** 6 (XP 2,300; PB +3)
 
-### Actions
+#### Actions
 
 **Multiattack.** The pirate makes three attacks, using Rapier or Pistol in any combination.
 
@@ -25411,11 +25411,11 @@ If the target takes damage from the *Dream* spell, the target's Hit Point maximu
 
 **Pistol.** *Ranged Attack Roll:* +7, range 30/90 ft. *Hit:* 15 (2d10 + 4) Piercing damage.
 
-### Bonus Actions
+#### Bonus Actions
 
 **Captain's Charm.** *Wisdom Saving Throw:* DC 14, one creature the pirate can see within 30 feet. *Failure:* The target has the Charmed condition until the start of the pirate's next turn.
 
-### Reactions
+#### Reactions
 
 **Riposte.** *Trigger:* The pirate is hit by a melee attack roll while holding a weapon. *Response:* The pirate adds 3 to its AC against that attack, possibly causing it to miss. On a miss, the pirate makes one Rapier attack against the triggering creature if within range.
 
@@ -25450,7 +25450,7 @@ If the target takes damage from the *Dream* spell, the target's Hit Point maximu
 
 **CR** 20 (XP 25,000; PB +6)
 
-### Traits
+#### Traits
 
 **Diabolical Restoration.** If the pit fiend dies outside the Nine Hells, its body disappears in sulfurous smoke, and it gains a new body instantly, reviving with all its Hit Points somewhere in the Nine Hells.
 
@@ -25460,7 +25460,7 @@ If the target takes damage from the *Dream* spell, the target's Hit Point maximu
 
 **Magic Resistance.** The pit fiend has Advantage on saving throws against spells and other magical effects.
 
-### Actions
+#### Actions
 
 **Multiattack.** The pit fiend makes one Bite attack, two Devilish Claw attacks, and one Fiery Mace attack.
 
@@ -25503,7 +25503,7 @@ If the target takes damage from the *Dream* spell, the target's Hit Point maximu
 
 **CR** 16 (XP 15,000; PB +5)
 
-### Traits
+#### Traits
 
 **Divine Awareness.** The planetary knows if it hears a lie.
 
@@ -25511,7 +25511,7 @@ If the target takes damage from the *Dream* spell, the target's Hit Point maximu
 
 **Magic Resistance.** The planetary has Advantage on saving throws against spells and other magical effects.
 
-### Actions
+#### Actions
 
 **Multiattack.** The planetary makes three Radiant Sword attacks or uses Holy Burst twice.
 
@@ -25525,7 +25525,7 @@ If the target takes damage from the *Dream* spell, the target's Hit Point maximu
 
 **1/Day Each:** *Commune*, *Control Weather*, *Dispel Evil and Good*, *Raise Dead*
 
-### Bonus Actions
+#### Bonus Actions
 
 **Divine Aid (2/Day).** The planetary casts *Cure Wounds*, *Invisibility*, *Lesser Restoration*, or *Remove Curse*, using the same spellcasting ability as Spellcasting.
 
@@ -25681,11 +25681,11 @@ If the target takes damage from the *Dream* spell, the target's Hit Point maximu
 
 **CR** 15 (XP 13,000; PB +5)
 
-### Traits
+#### Traits
 
 **Tunneler.** The worm can burrow through solid rock at half its Burrow Speed and leaves a 10-foot-diameter tunnel in its wake.
 
-### Actions
+#### Actions
 
 **Multiattack.** The worm makes one Bite attack and one Tail Stinger attack.
 
@@ -25693,7 +25693,7 @@ If the target takes damage from the *Dream* spell, the target's Hit Point maximu
 
 **Tail Stinger.** *Melee Attack Roll:* +14, reach 10 ft. *Hit:* 16 (2d6 + 9) Piercing damage plus 35 (10d6) Poison damage.
 
-### Bonus Actions
+#### Bonus Actions
 
 **Swallow.** *Strength Saving Throw:* DC 19, one Large or smaller creature Grappled by the worm (it can have up to three creatures swallowed at a time). *Failure:* The target is swallowed by the worm, and the Grappled condition ends. A swallowed creature has the Blinded and Restrained conditions, has Total Cover against attacks and other effects outside the worm, and takes 17 (5d6) Acid damage at the start of each of the worm's turns.
 
@@ -25730,11 +25730,11 @@ If the worm takes 30 damage or more on a single turn from a creature inside it, 
 
 **CR** 1 (XP 200; PB +2)
 
-### Traits
+#### Traits
 
 **Magic Resistance.** The quasit has Advantage on saving throws against spells and other magical effects.
 
-### Actions
+#### Actions
 
 **Rend.** *Melee Attack Roll:* +5, reach 5 ft. *Hit:* 5 (1d4 + 3) Slashing damage, and the target has the Poisoned condition until the start of the quasit's next turn.
 
@@ -25775,13 +25775,13 @@ If the worm takes 30 damage or more on a single turn from a creature inside it, 
 
 **CR** 13 (XP 10,000; PB +5)
 
-## Traits
+#### Traits
 
 **Greater Magic Resistance.** The rakshasa automatically succeeds on saving throws against spells and other magical effects, and the attack rolls of spells automatically miss it. Without the rakshasa's permission, no spell can observe the rakshasa remotely or detect its thoughts, creature type, or alignment.
 
 **Fiendish Restoration.** If the rakshasa dies outside the Nine Hells, its body turns to ichor, and it gains a new body instantly, reviving with all its Hit Points somewhere in the Nine Hells.
 
-## Actions
+#### Actions
 
 **Multiattack.** The rakshasa makes three Cursed Touch attacks.
 
@@ -25824,7 +25824,7 @@ If the worm takes 30 damage or more on a single turn from a creature inside it, 
 
 **CR** 4 (XP 1,100; PB +2)
 
-## Actions
+#### Actions
 
 **Multiattack.** The dragon makes two Rend attacks.
 
@@ -25859,7 +25859,7 @@ If the worm takes 30 damage or more on a single turn from a creature inside it, 
 
 **CR** 10 (XP 5,900; PB +4)
 
-## Actions
+#### Actions
 
 **Multiattack.** The dragon makes three Rend attacks.
 
@@ -25893,11 +25893,11 @@ If the worm takes 30 damage or more on a single turn from a creature inside it, 
 **Languages** Common, Draconic  
 **CR** 17 (XP 18,000, or 20,000 in lair; PB +6)
 
-## Traits
+#### Traits
 
 **Legendary Resistance (3/Day, or 4/Day in Lair).** If the dragon fails a saving throw, it can choose to succeed instead.
 
-## Actions
+#### Actions
 
 **Multiattack.** The dragon makes three Rend attacks. It can replace one attack with a use of Spellcasting to cast *Scorching Ray*.
 
@@ -25911,7 +25911,7 @@ If the worm takes 30 damage or more on a single turn from a creature inside it, 
 
 **1/Day:** *Fireball*
 
-## Legendary Actions
+#### Legendary Actions
 
 *Legendary Action Uses: 3 (4 in Lair). Immediately after another creature's turn, the dragon can expend a use to take one of the following actions. The dragon regains all expended uses at the start of each of its turns.*
 
@@ -25921,7 +25921,7 @@ If the worm takes 30 damage or more on a single turn from a creature inside it, 
 
 **Pounce.** The dragon moves up to half its Speed, and it makes one Rend attack.
 
-## Ancient Red Dragon
+### Ancient Red Dragon
 
 *Gargantuan Dragon (Chromatic), Chaotic Evil*
 
@@ -25947,11 +25947,11 @@ If the worm takes 30 damage or more on a single turn from a creature inside it, 
 **Languages** Common, Draconic  
 **CR** 24 (XP 62,000, or 75,000 in lair; PB +7)
 
-## Traits
+#### Traits
 
 **Legendary Resistance (4/Day, or 5/Day in Lair).** If the dragon fails a saving throw, it can choose to succeed instead.
 
-## Actions
+#### Actions
 
 **Multiattack.** The dragon makes three Rend attacks. It can replace one attack with a use of Spellcasting to cast *Scorching Ray* (level 3 version).
 
@@ -25965,7 +25965,7 @@ If the worm takes 30 damage or more on a single turn from a creature inside it, 
 
 **1/Day Each:** *Fireball* (level 6 version), *Scrying*
 
-## Legendary Actions
+#### Legendary Actions
 
 *Legendary Action Uses: 3 (4 in Lair). Immediately after another creature's turn, the dragon can expend a use to take one of the following actions. The dragon regains all expended uses at the start of each of its turns.*
 
@@ -26002,15 +26002,15 @@ If the worm takes 30 damage or more on a single turn from a creature inside it, 
 
 **CR** 11 (XP 7,200; PB +4)
 
-## Traits
+#### Traits
 
 **Heat Aura.** At the end of each of the remorhaz's turns, each creature in a 5-foot Emanation originating from the remorhaz takes 16 (3d10) Fire damage.
 
-## Actions
+#### Actions
 
 **Bite.** *Melee Attack Roll:* +11, reach 10 ft. *Hit:* 18 (2d10 + 7) Piercing damage plus 14 (4d6) Fire damage. If the target is a Large or smaller creature, it has the Grappled condition (escape DC 17), and it has the Restrained condition until the grapple ends.
 
-## Bonus Actions
+#### Bonus Actions
 
 **Swallow.** Strength Saving Throw: DC 19, one Large or smaller creature Grappled by the remorhaz (it can have up to two creatures swallowed at a time). *Failure:* The target is swallowed by the remorhaz, and the Grappled condition ends. A swallowed creature has the Blinded and Restrained conditions, it has Total Cover against attacks and other effects outside the remorhaz, and it takes 10 (3d6) Acid damage plus 10 (3d6) Fire damage at the start of each of the remorhaz's turns.
 
@@ -26043,7 +26043,7 @@ If the remorhaz takes 30 damage or more on a single turn from a creature inside 
 
 **CR** 11 (XP 7,200; PB +4)
 
-### Actions
+#### Actions
 
 **Multiattack.** The roc makes two Beak attacks. It can replace one attack with a Talons attack.
 
@@ -26051,7 +26051,7 @@ If the remorhaz takes 30 damage or more on a single turn from a creature inside 
 
 **Talons.** *Melee Attack Roll:* +13, reach 5 ft. *Hit:* 23 (4d6 + 9) Slashing damage. If the target is a Huge or smaller creature, it has the Grappled condition (escape DC 19) from both talons, and it has the Restrained condition until the grapple ends.
 
-### Bonus Actions
+#### Bonus Actions
 
 **Swoop** (*Recharge 5–6*). If the roc has a creature Grappled, the roc flies up to half its Fly Speed without provoking Opportunity Attacks and drops that creature.
 
@@ -26082,11 +26082,11 @@ If the remorhaz takes 30 damage or more on a single turn from a creature inside 
 
 **CR** 5 (XP 1,800; PB +3)
 
-### Traits
+#### Traits
 
 **Spider Climb.** The roper can climb difficult surfaces, including along ceilings, without needing to make an ability check.
 
-### Actions
+#### Actions
 
 **Multiattack.** The roper makes two Tentacle attacks, uses Reel, and makes two Bite attacks.
 
@@ -26123,11 +26123,11 @@ The tentacle can be damaged, freeing a creature it has Grappled when destroyed (
 
 **CR** 1/2 (XP 100; PB +2)
 
-### Traits
+#### Traits
 
 **Iron Scent.** The rust monster can pinpoint the location of ferrous metal within 30 feet of itself.
 
-### Actions
+#### Actions
 
 **Multiattack.** The rust monster makes one Bite attack and uses Antennae twice.
 
@@ -26137,13 +26137,13 @@ The tentacle can be damaged, freeing a creature it has Grappled when destroyed (
 
 **Destroy Metal.** The rust monster touches a nonmagical metal object within 5 feet of itself that isn't being worn or carried. The touch destroys a 1-foot Cube of the object.
 
-## Reactions
+#### Reactions
 
 **Reflexive Antennae.** *Trigger:* An attack roll hits the rust monster. *Response:* The rust monster uses Antennae.
 
-# Sahuagin
+## Sahuagin
 
-## Sahuagin Warrior
+### Sahuagin Warrior
 
 *Medium Fiend, Lawful Evil*
 
@@ -26168,7 +26168,7 @@ The tentacle can be damaged, freeing a creature it has Grappled when destroyed (
 
 **CR** 1/2 (XP 100; PB +2)
 
-## Traits
+#### Traits
 
 **Blood Frenzy.** The sahuagin has Advantage on attack rolls against any creature that doesn't have all its Hit Points.
 
@@ -26176,19 +26176,19 @@ The tentacle can be damaged, freeing a creature it has Grappled when destroyed (
 
 **Shark Telepathy.** The sahuagin can magically control sharks within 120 feet of itself, using a special telepathy.
 
-## Actions
+#### Actions
 
 **Multiattack.** The sahuagin makes two Claw attacks.
 
 **Claw.** *Melee Attack Roll:* +3, reach 5 ft. *Hit:* 4 (1d6 + 1) Slashing damage.
 
-## Bonus Actions
+#### Bonus Actions
 
 **Aquatic Charge.** The sahuagin swims up to its Swim Speed straight toward an enemy it can see.
 
-# Salamander
-
 ## Salamander
+
+### Salamander
 
 *Large Elemental, Neutral Evil*
 
@@ -26215,11 +26215,11 @@ The tentacle can be damaged, freeing a creature it has Grappled when destroyed (
 
 **CR** 5 (XP 1,800; PB +3)
 
-## Traits
+#### Traits
 
 **Fire Aura.** At the end of each of the salamander's turns, each creature of the salamander's choice in a 5-foot Emanation originating from the salamander takes 7 (2d6) Fire damage.
 
-## Actions
+#### Actions
 
 **Multiattack.** The salamander makes two Flame Spear attacks. It can replace one attack with a use of Constrict.
 
@@ -26227,9 +26227,9 @@ The tentacle can be damaged, freeing a creature it has Grappled when destroyed (
 
 **Constrict.** *Strength Saving Throw:* DC 15, one Large or smaller creature the salamander can see within 10 feet. *Failure:* 11 (2d6 + 4) Bludgeoning damage plus 7 (2d6) Fire damage. The target has the Grappled condition (escape DC 14), and it has the Restrained condition until the grapple ends.
 
-# Satyr
-
 ## Satyr
+
+### Satyr
 
 *Medium Fey, Chaotic Neutral*
 
@@ -26254,11 +26254,11 @@ The tentacle can be damaged, freeing a creature it has Grappled when destroyed (
 
 **CR** 1/2 (XP 100; PB +2)
 
-## Traits
+#### Traits
 
 **Magic Resistance.** The satyr has Advantage on saving throws against spells and other magical effects.
 
-## Actions
+#### Actions
 
 **Hooves.** *Melee Attack Roll:* +5, reach 5 ft. *Hit:* 5 (1d4 + 3) Bludgeoning damage. If the target is a Medium or smaller creature, the satyr pushes the target up to 10 feet straight away from itself.
 
@@ -26293,7 +26293,7 @@ The tentacle can be damaged, freeing a creature it has Grappled when destroyed (
 
 **CR** 1/2 (XP 100; PB +2)
 
-## Actions
+#### Actions
 
 **Multiattack.** The scout makes two attacks, using Shortsword and Longbow in any combination.
 
@@ -26326,7 +26326,7 @@ The tentacle can be damaged, freeing a creature it has Grappled when destroyed (
 
 **CR** 2 (XP 450; PB +2)
 
-## Traits
+#### Traits
 
 **Amphibious.** The hag can breathe air and water.
 
@@ -26334,7 +26334,7 @@ The tentacle can be damaged, freeing a creature it has Grappled when destroyed (
 
 **Vile Appearance.** *Wisdom Saving Throw:* DC 11, any Beast or Humanoid that starts its turn within 30 feet of the hag and can see the hag's true form. *Failure:* The target has the Frightened condition until the start of its next turn. *Success:* The target is immune to this hag's Vile Appearance for 24 hours.
 
-## Actions
+#### Actions
 
 **Claw.** *Melee Attack Roll:* +5, reach 5 ft. *Hit:* 10 (2d6 + 3) Slashing damage.
 
@@ -26375,17 +26375,17 @@ The tentacle can be damaged, freeing a creature it has Grappled when destroyed (
 
 **CR** 1/2 (XP 100; PB +2)
 
-## Traits
+#### Traits
 
 **Amorphous.** The shadow can move through a space as narrow as 1 inch without expending extra movement to do so.
 
 **Sunlight Weakness.** While in sunlight, the shadow has Disadvantage on D20 Tests.
 
-## Actions
+#### Actions
 
 **Draining Swipe.** *Melee Attack Roll:* +4, reach 5 ft. *Hit:* 5 (1d6 + 2) Necrotic damage, and the target's Strength score decreases by 1d4. The target dies if this reduces that score to 0. If a Humanoid is slain by this attack, a **Shadow** rises from the corpse 1d4 hours later.
 
-## Bonus Actions
+#### Bonus Actions
 
 **Shadow Stealth.** While in Dim Light or Darkness, the shadow takes the Hide action.
 
@@ -26420,11 +26420,11 @@ The tentacle can be damaged, freeing a creature it has Grappled when destroyed (
 
 **CR** 5 (XP 1,800; PB +3)
 
-## Traits
+#### Traits
 
 **Lightning Absorption.** Whenever the shambling mound is subjected to Lightning damage, it regains a number of Hit Points equal to the Lightning damage dealt.
 
-## Actions
+#### Actions
 
 **Multiattack.** The shambling mound makes three Charged Tendril attacks. It can replace one attack with a use of Engulf.
 
@@ -26458,7 +26458,7 @@ The tentacle can be damaged, freeing a creature it has Grappled when destroyed (
 **Languages** Understands commands given in any language but can't speak  
 **CR** 7 (XP 2,900; PB +3)
 
-## Traits
+#### Traits
 
 **Bound.** The guardian is magically bound to an amulet. While the guardian and its amulet are on the same plane of existence, the amulet's wearer can telepathically call the guardian to travel to it, and the guardian knows the distance and direction to the amulet. If the guardian is within 60 feet of the amulet's wearer, half of any damage the wearer takes (round up) is transferred to the guardian.
 
@@ -26466,13 +26466,13 @@ The tentacle can be damaged, freeing a creature it has Grappled when destroyed (
 
 **Spell Storing.** A spellcaster who wears the guardian's amulet can cause the guardian to store one spell of level 4 or lower. To do so, the wearer must cast the spell on the guardian while within 5 feet of it. The spell has no effect but is stored within the guardian. Any previously stored spell is lost when a new spell is stored. The guardian can cast the spell stored with any parameters set by the original caster, requiring no spell components and using the caster's spellcasting ability. The stored spell is then lost.
 
-## Actions
+#### Actions
 
 **Multiattack.** The guardian makes two Fist attacks.
 
 **Fist.** *Melee Attack Roll:* +7, reach 10 ft. *Hit:* 11 (2d6 + 4) Bludgeoning damage plus 7 (2d6) Force damage.
 
-## Reactions
+#### Reactions
 
 **Protection.** *Trigger:* An attack roll hits the wearer of the guardian's amulet while the wearer is within 5 feet of the guardian. *Response:* The wearer gains a +5 bonus to AC, including against the triggering attack and possibly causing it to miss, until the start of the guardian's next turn.
 
@@ -26599,7 +26599,7 @@ The tentacle can be damaged, freeing a creature it has Grappled when destroyed (
 
 **1/Day Each:** *Ice Storm* (level 5 version), *Zone of Truth*
 
-### Legendary Actions
+#### Legendary Actions
 
 *Legendary Action Uses: 3 (4 in Lair). Immediately after another creature's turn, the dragon can expend a use to take one of the following actions. The dragon regains all expended uses at the start of each of its turns.*
 
@@ -26609,7 +26609,7 @@ The tentacle can be damaged, freeing a creature it has Grappled when destroyed (
 
 **Pounce.** The dragon moves up to half its Speed, and it makes one Rend attack.
 
-## Ancient Silver Dragon
+### Ancient Silver Dragon
 
 *Gargantuan Dragon (Metallic), Lawful Good*
 
@@ -26636,11 +26636,11 @@ The tentacle can be damaged, freeing a creature it has Grappled when destroyed (
 
 **CR** 23 (XP 50,000, or 62,000 in lair; PB +7)
 
-### Traits
+#### Traits
 
 **Legendary Resistance (4/Day, or 5/Day in Lair).** If the dragon fails a saving throw, it can choose to succeed instead.
 
-### Actions
+#### Actions
 
 **Multiattack.** The dragon makes three Rend attacks. It can replace one attack with a use of (A) Paralyzing Breath or (B) Spellcasting to cast *Ice Knife* (level 2 version).
 
@@ -26656,7 +26656,7 @@ The tentacle can be damaged, freeing a creature it has Grappled when destroyed (
 
 **1/Day Each:** *Control Weather, Ice Storm* (level 7 version), *Teleport, Zone of Truth*
 
-### Legendary Actions
+#### Legendary Actions
 
 *Legendary Action Uses: 3 (4 in Lair). Immediately after another creature's turn, the dragon can expend a use to take one of the following actions. The dragon regains all expended uses at the start of each of its turns.*
 
@@ -26697,13 +26697,13 @@ The tentacle can be damaged, freeing a creature it has Grappled when destroyed (
 
 **CR** 1/4 (XP 50; PB +2)
 
-## Actions
+#### Actions
 
 **Shortsword.** *Melee Attack Roll:* +5, reach 5 ft. *Hit:* 6 (1d6 + 3) Piercing damage.
 
 **Shortbow.** *Ranged Attack Roll:* +5, range 80/320 ft. *Hit:* 6 (1d6 + 3) Piercing damage.
 
-## Warhorse Skeleton
+### Warhorse Skeleton
 
 *Large Undead, Lawful Evil*
 
@@ -26730,11 +26730,11 @@ The tentacle can be damaged, freeing a creature it has Grappled when destroyed (
 
 **CR** 1/2 (XP 100; PB +2)
 
-## Actions
+#### Actions
 
 **Hooves.** *Melee Attack Roll:* +6, reach 5 ft. *Hit:* 7 (1d6 + 4) Bludgeoning damage. If the target is a Large or smaller creature and the skeleton moved 20+ feet straight toward it immediately before the hit, the target has the Prone condition.
 
-## Minotaur Skeleton
+### Minotaur Skeleton
 
 *Large Undead, Lawful Evil*
 
@@ -26761,7 +26761,7 @@ The tentacle can be damaged, freeing a creature it has Grappled when destroyed (
 
 **CR** 2 (XP 450; PB +2)
 
-## Actions
+#### Actions
 
 **Gore.** *Melee Attack Roll:* +6, reach 5 ft. *Hit:* 11 (2d6 + 4) Piercing damage. If the target is a Large or smaller creature and the skeleton moved 20+ feet straight toward it immediately before the hit, the target takes an extra 9 (2d8) Piercing damage and has the Prone condition.
 
@@ -26796,7 +26796,7 @@ The tentacle can be damaged, freeing a creature it has Grappled when destroyed (
 
 **CR** 21 (XP 33,000; PB +7)
 
-## Traits
+#### Traits
 
 **Divine Awareness.** The solar knows if it hears a lie.
 
@@ -26806,7 +26806,7 @@ The tentacle can be damaged, freeing a creature it has Grappled when destroyed (
 
 **Magic Resistance.** The solar has Advantage on saving throws against spells and other magical effects.
 
-## Actions
+#### Actions
 
 **Multiattack.** The solar makes two Flying Sword attacks. It can replace one attack with a use of Slaying Bow.
 
@@ -26820,11 +26820,11 @@ The tentacle can be damaged, freeing a creature it has Grappled when destroyed (
 
 **1/Day Each:** Commune, Control Weather, Dispel Evil and Good, Resurrection
 
-## Bonus Actions
+#### Bonus Actions
 
 **Divine Aid (3/Day).** The solar casts *Cure Wounds* (level 2 version), *Lesser Restoration*, or *Remove Curse*, using the same spellcasting ability as Spellcasting.
 
-## Legendary Actions
+#### Legendary Actions
 
 *Legendary Action Uses: 3. Immediately after another creature's turn, the solar can expend a use to take one of the following actions. The solar regains all expended uses at the start of each of its turns.*
 
@@ -26861,13 +26861,13 @@ The tentacle can be damaged, freeing a creature it has Grappled when destroyed (
 
 **CR** 1 (XP 200; PB +2)
 
-### Traits
+#### Traits
 
 **Incorporeal Movement.** The specter can move through other creatures and objects as if they were Difficult Terrain. It takes 5 (1d10) Force damage if it ends its turn inside an object.
 
 **Sunlight Sensitivity.** While in sunlight, the specter has Disadvantage on ability checks and attack rolls.
 
-### Actions
+#### Actions
 
 **Life Drain.** Melee Attack Roll: +4, reach 5 ft. *Hit:* 7 (2d6) Necrotic damage. If the target is a creature, its Hit Point maximum decreases by an amount equal to the damage taken.
 
@@ -26900,15 +26900,15 @@ The tentacle can be damaged, freeing a creature it has Grappled when destroyed (
 
 **CR** 1 (XP 200; PB +2)
 
-### Traits
+#### Traits
 
 **Magic Resistance.** The sphinx has Advantage on saving throws against spells and other magical effects.
 
-### Actions
+#### Actions
 
 **Rend.** Melee Attack Roll: +5, reach 5 ft. *Hit:* 5 (1d4 + 3) Slashing damage plus 7 (2d6) Radiant damage.
 
-### Reactions
+#### Reactions
 
 **Burst of Ingenuity (2/Day).** *Trigger:* The sphinx or another creature within 30 feet makes an ability check or a saving throw. *Response:* The sphinx adds 2 to the roll.
 
@@ -26941,13 +26941,13 @@ The tentacle can be damaged, freeing a creature it has Grappled when destroyed (
 
 **CR** 11 (XP 7,200, or 8,400 in lair; PB +4)
 
-### Traits
+#### Traits
 
 **Inscrutable.** No magic can observe the sphinx remotely or detect its thoughts without its permission. Wisdom (Insight) checks made to ascertain its intentions or sincerity are made with Disadvantage.
 
 **Legendary Resistance (3/Day, or 4/Day in Lair).** If the sphinx fails a saving throw, it can choose to succeed instead.
 
-## Actions
+#### Actions
 
 **Multiattack.** The sphinx makes three Claw attacks.
 
@@ -26961,7 +26961,7 @@ The tentacle can be damaged, freeing a creature it has Grappled when destroyed (
 
 **1/Day Each:** *Dispel Magic, Legend Lore, Locate Object, Plane Shift, Remove Curse, Tongues*
 
-## Legendary Actions
+#### Legendary Actions
 
 *Legendary Action Uses: 3 (4 in Lair). Immediately after another creature's turn, the sphinx can expend a use to take one of the following actions. The sphinx regains all expended uses at the start of each of its turns.*
 
@@ -26969,7 +26969,7 @@ The tentacle can be damaged, freeing a creature it has Grappled when destroyed (
 
 **Weight of Years.** *Constitution Saving Throw:* DC 16, one creature the sphinx can see within 120 feet. *Failure:* The target gains 1 Exhaustion level. While the target has any Exhaustion levels, it appears 3d10 years older. *Failure or Success:* The sphinx can't take this action again until the start of its next turn.
 
-## Sphinx of Valor
+### Sphinx of Valor
 
 *Large Celestial, Lawful Neutral*
 
@@ -27000,13 +27000,13 @@ The tentacle can be damaged, freeing a creature it has Grappled when destroyed (
 
 **CR** 17 (XP 18,000, or 20,000 in lair; PB +6)
 
-## Traits
+#### Traits
 
 **Inscrutable.** No magic can observe the sphinx remotely or detect its thoughts without its permission. Wisdom (Insight) checks made to ascertain its intentions or sincerity are made with Disadvantage.
 
 **Legendary Resistance (3/Day, or 4/Day in Lair).** If the sphinx fails a saving throw, it can choose to succeed instead.
 
-## Actions
+#### Actions
 
 **Multiattack.** The sphinx makes two Claw attacks and uses Roar.
 
@@ -27026,7 +27026,7 @@ The tentacle can be damaged, freeing a creature it has Grappled when destroyed (
 
 **1/Day Each:** *Detect Magic, Dispel Magic, Greater Restoration, Heroes' Feast, Zone of Truth*
 
-## Legendary Actions
+#### Legendary Actions
 
 *Legendary Action Uses: 3 (4 in Lair). Immediately after another creature's turn, the sphinx can expend a use to take one of the following actions. The sphinx regains all expended uses at the start of each of its turns.*
 
@@ -27180,7 +27180,7 @@ The tentacle can be damaged, freeing a creature it has Grappled when destroyed (
 
 **CR** 1/8 (XP 25; PB +2)
 
-### Actions
+#### Actions
 
 **Proboscis.** *Melee Attack Roll:* +5, reach 5 ft. *Hit:* 6 (1d6 + 3) Piercing damage, and the stinge attaches to the target. While attached, the stinge can't make Proboscis attacks, and the target takes 5 (2d4) Necrotic damage at the start of each of the stinge's turns.
 
@@ -27213,7 +27213,7 @@ The stinge can detach itself by spending 5 feet of its movement. The target or a
 
 **CR** 7 (XP 2,900; PB +3)
 
-### Actions
+#### Actions
 
 **Multiattack.** The giant makes two attacks, using Stone Club or Boulder in any combination.
 
@@ -27221,7 +27221,7 @@ The stinge can detach itself by spending 5 feet of its movement. The target or a
 
 **Boulder.** *Ranged Attack Roll:* +9, range 60/240 ft. *Hit:* 15 (2d8 + 6) Bludgeoning damage. If the target is a Large or smaller creature, it has the Prone condition.
 
-### Reactions
+#### Reactions
 
 **Deflect Missile (Recharge 5–6).** *Trigger:* The giant is hit by a ranged attack roll and takes Bludgeoning, Piercing, or Slashing damage from it. *Response:* The giant reduces the damage it takes from the attack by 11 (1d10 + 6), and if that damage is reduced to 0, the giant can redirect some of the attack's force. *Dexterity Saving Throw:* DC 17, one creature the giant can see within 60 feet. *Failure:* 11 (1d10 + 6) Force damage.
 
@@ -27252,13 +27252,13 @@ The stinge can detach itself by spending 5 feet of its movement. The target or a
 
 **CR** 10 (XP 5,900; PB +4)
 
-### Traits
+#### Traits
 
 **Immutable Form.** The golem can't shape-shift.
 
 **Magic Resistance.** The golem has Advantage on saving throws against spells and other magical effects.
 
-### Actions
+#### Actions
 
 **Multiattack.** The golem makes two attacks, using Slam or Force Bolt in any combination.
 
@@ -27266,7 +27266,7 @@ The stinge can detach itself by spending 5 feet of its movement. The target or a
 
 **Force Bolt.** *Ranged Attack Roll:* +9, range 120 ft. *Hit:* 22 (4d10) Force damage.
 
-### Bonus Actions
+#### Bonus Actions
 
 **Slow (Recharge 5–6).** The golem casts the *Slow* spell, requiring no spell components and using Constitution as the spellcasting ability (spell save DC 17).
 
@@ -27301,11 +27301,11 @@ The stinge can detach itself by spending 5 feet of its movement. The target or a
 
 **CR** 13 (XP 10,000; PB +5)
 
-## Traits
+#### Traits
 
 **Amphibious.** The giant can breathe air and water.
 
-## Actions
+#### Actions
 
 **Multiattack.** The giant makes two attacks, using Storm Sword or Thunderbolt in any combination.
 
@@ -27350,11 +27350,11 @@ The stinge can detach itself by spending 5 feet of its movement. The target or a
 
 **CR** 4 (XP 1,100; PB +2)
 
-## Traits
+#### Traits
 
 **Incubus Form.** When the succubus finishes a Long Rest, it can shape-shift into an **Incubus**, using that stat block instead of this one.
 
-## Actions
+#### Actions
 
 **Multiattack.** The succubus makes one Fiendish Touch attack and uses Charm or Draining Kiss.
 
@@ -27364,7 +27364,7 @@ The stinge can detach itself by spending 5 feet of its movement. The target or a
 
 **Draining Kiss.** *Constitution Saving Throw:* DC 15, one creature Charmed by the succubus within 5 feet. *Failure:* 13 (3d8) Psychic damage. *Success:* Half damage. *Failure or Success:* The target's Hit Point maximum decreases by an amount equal to the damage taken.
 
-## Bonus Actions
+#### Bonus Actions
 
 **Shape-Shift.** The succubus shape-shifts into a Medium or Small Humanoid, or it returns to its true form. Its game statistics are the same in each form, except its Fly Speed is available only in its true form. Any equipment it is wearing or carrying isn't transformed.
 
@@ -27399,7 +27399,7 @@ The stinge can detach itself by spending 5 feet of its movement. The target or a
 
 **CR** 30 (XP 155,000; PB +9)
 
-## Traits
+#### Traits
 
 **Legendary Resistance (6/Day).** If the tarrasque fails a saving throw, it can choose to succeed instead.
 
@@ -27409,7 +27409,7 @@ The stinge can detach itself by spending 5 feet of its movement. The target or a
 
 **Siege Monster.** The tarrasque deals double damage to objects and structures.
 
-## Actions
+#### Actions
 
 **Multiattack.** The tarrasque makes one Bite attack and three other attacks, using Claw or Tail in any combination.
 
@@ -27421,13 +27421,13 @@ The stinge can detach itself by spending 5 feet of its movement. The target or a
 
 **Thunderous Bellow (Recharge 5–6).** *Constitution Saving Throw:* DC 27, each creature and each object that isn't being worn or carried in a 150-foot Cone. *Failure:* 78 (12d12) Thunder damage, and the target has the Deafened and Frightened conditions until the end of its next turn. *Success:* Half damage only.
 
-## Bonus Actions
+#### Bonus Actions
 
 **Swallow.** *Strength Saving Throw:* DC 27, one Large or smaller creature Grappled by the tarrasque (it can have up to six creatures swallowed at a time). *Failure:* The target is swallowed, and the Grappled condition ends. A swallowed creature has the Blinded and Restrained conditions and can't teleport, it has Total Cover against attacks and other effects outside the tarrasque, and it takes 56 (16d6) Acid damage at the start of each of the tarrasque's turns.
 
 If the tarrasque takes 60 damage or more on a single turn from a creature inside it, the tarrasque must succeed on a DC 20 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, each of which falls in a space within 10 feet of the tarrasque and has the Prone condition. If the tarrasque dies, any swallowed creature no longer has the Restrained condition and can escape from the corpse using 20 feet of movement, exiting Prone.
 
-## Legendary Actions
+#### Legendary Actions
 
 *Legendary Action Uses: 3. Immediately after another creature's turn, the tarrasque can expend a use to take one of the following actions. The tarrasque regains all expended uses at the start of each of its turns.*
 
@@ -27462,17 +27462,17 @@ If the tarrasque takes 60 damage or more on a single turn from a creature inside
 
 **CR** 1/2 (XP 100; PB +2)
 
-## Traits
+#### Traits
 
 **Pack Tactics.** The tough has Advantage on an attack roll against a creature if at least one of the tough's allies is within 5 feet of the creature and the ally doesn't have the Incapacitated condition.
 
-## Actions
+#### Actions
 
 **Mace.** *Melee Attack Roll:* +4, reach 5 ft. *Hit:* 5 (1d6 + 2) Bludgeoning damage.
 
 **Heavy Crossbow.** *Ranged Attack Roll:* +3, range 100/400 ft. *Hit:* 6 (1d10 + 1) Piercing damage.
 
-## Tough Boss
+### Tough Boss
 
 *Medium or Small Humanoid, Neutral*
 
@@ -27497,11 +27497,11 @@ If the tarrasque takes 60 damage or more on a single turn from a creature inside
 
 **CR** 4 (XP 1,100; PB +2)
 
-## Traits
+#### Traits
 
 **Pack Tactics.** The tough has Advantage on an attack roll against a creature if at least one of the tough's allies is within 5 feet of the creature and the ally doesn't have the Incapacitated condition.
 
-## Actions
+#### Actions
 
 **Multiattack.** The tough makes two attacks, using Warhammer or Heavy Crossbow in any combination.
 
@@ -27538,11 +27538,11 @@ If the tarrasque takes 60 damage or more on a single turn from a creature inside
 
 **CR** 9 (XP 5,000; PB +4)
 
-### Traits
+#### Traits
 
 **Siege Monster.** The treant deals double damage to objects and structures.
 
-### Actions
+#### Actions
 
 **Multiattack.** The treant makes two Slam attacks.
 
@@ -27579,23 +27579,23 @@ If the tarrasque takes 60 damage or more on a single turn from a creature inside
 
 **CR** 5 (XP 1,800; PB +3)
 
-### Traits
+#### Traits
 
 **Loathsome Limbs (4/Day).** If the troll ends any turn Bloodied and took 15+ Slashing damage during that turn, one of the troll's limbs is severed, falls into the troll's space, and becomes a **Troll Limb**. The limb acts immediately after the troll's turn. The troll has 1 Exhaustion level for each missing limb, and it grows replacement limbs the next time it regains Hit Points.
 
 **Regeneration.** The troll regains 15 Hit Points at the start of each of its turns. If the troll takes Acid or Fire damage, this trait doesn't function on the troll's next turn. The troll dies only if it starts its turn with 0 Hit Points and doesn't regenerate.
 
-### Actions
+#### Actions
 
 **Multiattack.** The troll makes three Rend attacks.
 
 **Rend.** *Melee Attack Roll:* +7, reach 10 ft. *Hit:* 11 (2d6 + 4) Slashing damage.
 
-### Bonus Actions
+#### Bonus Actions
 
 **Charge.** The troll moves up to half its Speed straight toward an enemy it can see.
 
-## Troll Limb
+### Troll Limb
 
 *Small Giant, Chaotic Evil*
 
@@ -27618,19 +27618,19 @@ If the tarrasque takes 60 damage or more on a single turn from a creature inside
 
 **CR** 1/2 (XP 100; PB +2)
 
-### Traits
+#### Traits
 
 **Regeneration.** The limb regains 5 Hit Points at the start of each of its turns. If the limb takes Acid or Fire damage, this trait doesn't function on the limb's next turn. The limb dies only if it starts its turn with 0 Hit Points and doesn't regenerate.
 
 **Troll Spawn.** The limb uncannily has the same senses as a whole troll. If the limb isn't destroyed within 24 hours, roll 1d12. On a 12, the limb turns into a **Troll**. Otherwise, the limb withers away.
 
-### Actions
+#### Actions
 
 **Rend.** *Melee Attack Roll:* +6, reach 5 ft. *Hit:* 9 (2d4 + 4) Slashing damage.
 
-# Unicorn
-
 ## Unicorn
+
+### Unicorn
 
 *Large Celestial, Lawful Good*
 
@@ -27655,13 +27655,13 @@ If the tarrasque takes 60 damage or more on a single turn from a creature inside
 
 **CR** 5 (XP 1,800; PB +3)
 
-### Traits
+#### Traits
 
 **Legendary Resistance (3/Day).** If the unicorn fails a saving throw, it can choose to succeed instead.
 
 **Magic Resistance.** The unicorn has Advantage on saving throws against spells and other magical effects.
 
-### Actions
+#### Actions
 
 **Multiattack.** The unicorn makes one Hooves attack and one Radiant Horn attack.
 
@@ -27675,11 +27675,11 @@ If the tarrasque takes 60 damage or more on a single turn from a creature inside
 
 **1/Day Each:** *Calm Emotions, Dispel Evil and Good, Entangle, Pass without Trace, Word of Recall*
 
-### Bonus Actions
+#### Bonus Actions
 
 **Unicorn's Blessing (3/Day).** The unicorn touches another creature with its horn and casts *Cure Wounds* or *Lesser Restoration* on that creature, using the same spellcasting ability as Spellcasting.
 
-### Legendary Actions
+#### Legendary Actions
 
 *Legendary Action Uses: 3. Immediately after another creature's turn, the unicorn can expend a use to take one of the following actions. The unicorn regains all expended uses at the start of each of its turns.*
 
@@ -27689,9 +27689,9 @@ If the tarrasque takes 60 damage or more on a single turn from a creature inside
 
 The unicorn can't take this action again until the start of its next turn.
 
-# Vampires
+## Vampires
 
-## Vampire Familiar
+### Vampire Familiar
 
 *Medium or Small Humanoid, Neutral Evil*
 
@@ -27722,21 +27722,21 @@ The unicorn can't take this action again until the start of its next turn.
 
 **CR** 3 (XP 700; PB +2)
 
-### Traits
+#### Traits
 
 **Vampiric Connection.** While the familiar and its vampire master are on the same plane of existence, the vampire can communicate with the familiar telepathically, and the vampire can perceive through the familiar's senses.
 
-### Actions
+#### Actions
 
 **Multiattack.** The familiar makes two Umbral Dagger attacks.
 
 **Umbral Dagger.** *Melee or Ranged Attack Roll:* +5, reach 5 ft. or range 20/60 ft. *Hit:* 5 (1d4 + 3) Piercing damage plus 7 (3d4) Necrotic damage. If the target is reduced to 0 Hit Points by this attack, the target becomes Stable but has the Poisoned condition for 1 hour. While it has the Poisoned condition, the target has the Paralyzed condition.
 
-### Bonus Actions
+#### Bonus Actions
 
 **Deathless Agility.** The familiar takes the Dash or Disengage action.
 
-## Vampire Spawn
+### Vampire Spawn
 
 *Medium or Small Undead, Neutral Evil*
 
@@ -27763,7 +27763,7 @@ The unicorn can't take this action again until the start of its next turn.
 
 **CR** 5 (XP 1,800; PB +3)
 
-### Traits
+#### Traits
 
 **Spider Climb.** The vampire can climb difficult surfaces, including along ceilings, without needing to make an ability check.
 
@@ -27777,7 +27777,7 @@ The unicorn can't take this action again until the start of its next turn.
 
 **Sunlight.** The vampire takes 20 Radiant damage if it starts its turn in sunlight. While in sunlight, it has Disadvantage on attack rolls and ability checks.
 
-### Actions
+#### Actions
 
 **Multiattack.** The vampire makes two Claw attacks and uses Bite.
 
@@ -27785,11 +27785,11 @@ The unicorn can't take this action again until the start of its next turn.
 
 **Bite.** *Constitution Saving Throw:* DC 14, one creature within 5 feet that is willing or that has the Grappled, Incapacitated, or Restrained condition. *Failure:* 5 (1d4 + 3) Piercing damage plus 10 (3d6) Necrotic damage. The target's Hit Point maximum decreases by an amount equal to the Necrotic damage taken, and the vampire regains Hit Points equal to that amount.
 
-### Bonus Actions
+#### Bonus Actions
 
 **Deathless Agility.** The vampire takes the Dash or Disengage action.
 
-## Vampire
+### Vampire
 
 *Medium or Small Undead, Lawful Evil*
 
@@ -27816,7 +27816,7 @@ The unicorn can't take this action again until the start of its next turn.
 
 **CR** 13 (XP 10,000, or 11,500 in lair; PB +5)
 
-### Traits
+#### Traits
 
 **Legendary Resistance (3/Day, or 4/Day in Lair).** If the vampire fails a saving throw, it can choose to succeed instead.
 
@@ -27836,7 +27836,7 @@ While it has 0 Hit Points in mist form, it can't return to its vampire form, and
 
 **Sunlight.** The vampire takes 20 Radiant damage if it starts its turn in sunlight. While in sunlight, it has Disadvantage on attack rolls and ability checks.
 
-### Actions
+#### Actions
 
 **Multiattack (Vampire Form Only).** The vampire makes two Grave Strike attacks and uses Bite.
 
@@ -27844,7 +27844,7 @@ While it has 0 Hit Points in mist form, it can't return to its vampire form, and
 
 **Bite (Bat or Vampire Form Only).** *Constitution Saving Throw:* DC 17, one creature within 5 feet that is willing or that has the Grappled, Incapacitated, or Restrained condition. *Failure:* 6 (1d4 + 4) Piercing damage plus 13 (3d8) Necrotic damage. The target's Hit Point maximum decreases by an amount equal to the Necrotic damage taken, and the vampire regains Hit Points equal to that amount. A Humanoid reduced to 0 Hit Points by this damage and then buried rises the following sunset as a **Vampire Spawn** under the vampire's control.
 
-### Bonus Actions
+#### Bonus Actions
 
 **Charm (Recharge 5–6).** The vampire casts *Charm Person*, requiring no spell components and using Charisma as the spellcasting ability (spell save DC 17), and the duration is 24 hours. The Charmed target is a willing recipient of the vampire's Bite, the damage of which doesn't end the spell. When the spell ends, the target is unaware it was Charmed by the vampire.
 
@@ -27854,7 +27854,7 @@ While in bat form, the vampire can't speak. Its game statistics, other than its 
 
 While in mist form, the vampire can't take any actions, speak, or manipulate objects. It is weightless and can enter an enemy's space and stop there. If air can pass through a space, the mist can do so, but it can't pass through liquid. It has Resistance to all damage, except the damage it takes from sunlight.
 
-### Legendary Actions
+#### Legendary Actions
 
 *Legendary Action Uses: 3 (4 in Lair). Immediately after another creature's turn, the vampire can expend a use to take one of the following actions. The vampire regains all expended uses at the start of each of its turns.*
 
@@ -27892,13 +27892,13 @@ While in mist form, the vampire can't take any actions, speak, or manipulate obj
 
 **CR** 6 (XP 2,300; PB +3)
 
-### Traits
+#### Traits
 
 **Demonic Restoration.** If the vrock dies outside the Abyss, its body dissolves into ichor, and it gains a new body instantly, reviving with all its Hit Points somewhere in the Abyss.
 
 **Magic Resistance.** The vrock has Advantage on saving throws against spells and other magical effects.
 
-### Actions
+#### Actions
 
 **Multitattack.** The vrock makes two Shred attacks.
 
@@ -27936,15 +27936,15 @@ While in mist form, the vampire can't take any actions, speak, or manipulate obj
 
 **CR** 1/8 (XP 25; PB +2)
 
-## Traits
+#### Traits
 
 **Pack Tactics.** The warrior has Advantage on an attack roll against a creature if at least one of the warrior's allies is within 5 feet of the creature and the ally doesn't have the Incapacitated condition.
 
-## Actions
+#### Actions
 
 **Spear.** *Melee or Ranged Attack Roll:* +3, reach 5 ft. or range 20/60 ft. *Hit:* 4 (1d6 + 1) Piercing damage.
 
-## Warrior Veteran
+### Warrior Veteran
 
 *Medium or Small Humanoid, Neutral*
 
@@ -27971,7 +27971,7 @@ While in mist form, the vampire can't take any actions, speak, or manipulate obj
 
 **CR** 3 (XP 700; PB +2)
 
-## Actions
+#### Actions
 
 **Multiattack.** The warrior makes two Greatsword or Heavy Crossbow attacks.
 
@@ -27979,7 +27979,7 @@ While in mist form, the vampire can't take any actions, speak, or manipulate obj
 
 **Heavy Crossbow.** *Ranged Attack Roll:* +3, range 100/400 ft. *Hit:* 12 (2d10 + 1) Piercing damage.
 
-## Reactions
+#### Reactions
 
 **Parry.** *Trigger:* The warrior is hit by a melee attack roll while holding a weapon. *Response:* The warrior adds 2 to its AC against that attack, possibly causing it to miss.
 
@@ -28012,13 +28012,13 @@ While in mist form, the vampire can't take any actions, speak, or manipulate obj
 
 **CR** 5 (XP 1,800; PB +3)
 
-## Traits
+#### Traits
 
 **Freeze.** If the elemental takes Cold damage, its Speed decreases by 20 feet until the end of its next turn.
 
 **Water Form.** The elemental can enter an enemy's space and stop there. It can move through a space as narrow as 1 inch without expending extra movement to do so.
 
-## Actions
+#### Actions
 
 **Multiattack.** The elemental makes two Slam attacks.
 
@@ -28055,7 +28055,7 @@ While in mist form, the vampire can't take any actions, speak, or manipulate obj
 
 **CR** 5 (XP 1,800; PB +3)
 
-## Actions
+#### Actions
 
 **Multiattack.** The werebear makes two attacks, using Handaxe or Rend in any combination. It can replace one attack with a Bite attack.
 
@@ -28065,7 +28065,7 @@ While in mist form, the vampire can't take any actions, speak, or manipulate obj
 
 **Rend (Bear or Hybrid Form Only).** *Melee Attack Roll*: +7, reach 5 ft. *Hit*: 13 (2d8 + 4) Slashing damage.
 
-## Bonus Actions
+#### Bonus Actions
 
 **Shape-Shift.** The werebear shape-shifts into a Large bear-humanoid hybrid form or a Large bear, or it returns to its true humanoid form. Its game statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed.
 
@@ -28098,7 +28098,7 @@ While in mist form, the vampire can't take any actions, speak, or manipulate obj
 
 **CR** 4 (XP 1,100; PB +2)
 
-## Actions
+#### Actions
 
 **Multiattack.** The wereboar makes two attacks, using Javelin or Tusk in any combination. It can replace one attack with a Gore attack.
 
@@ -28108,7 +28108,7 @@ While in mist form, the vampire can't take any actions, speak, or manipulate obj
 
 **Tusk (Boar or Hybrid Form Only).** *Melee Attack Roll*: +5, reach 5 ft. *Hit*: 10 (2d6 + 3) Piercing damage. If the target is a Medium or smaller creature and the wereboar moved 20+ feet straight toward it immediately before the hit, the target takes an extra 7 (2d6) Piercing damage and has the Prone condition.
 
-## Bonus Actions
+#### Bonus Actions
 
 **Shape-Shift.** The wereboar shape-shifts into a Medium boar-humanoid hybrid or a Small boar, or it returns to its true humanoid form. Its game statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed.
 
@@ -28141,7 +28141,7 @@ While in mist form, the vampire can't take any actions, speak, or manipulate obj
 
 **CR** 2 (XP 450; PB +2)
 
-## Actions
+#### Actions
 
 **Multiattack.** The wererat makes two attacks, using Scratch or Hand Crossbow in any combination. It can replace one attack with a Bite attack.
 
@@ -28151,7 +28151,7 @@ While in mist form, the vampire can't take any actions, speak, or manipulate obj
 
 **Hand Crossbow (Humanoid or Hybrid Form Only).** *Ranged Attack Roll*: +5, range 30/120 ft. *Hit*: 6 (1d6 + 3) Piercing damage.
 
-## Bonus Actions
+#### Bonus Actions
 
 **Shape-Shift.** The wererat shape-shifts into a Medium rat-humanoid hybrid or a Small rat, or it returns to its true humanoid form. Its game statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed.
 
@@ -28184,7 +28184,7 @@ While in mist form, the vampire can't take any actions, speak, or manipulate obj
 
 **CR** 4 (XP 1,100; PB +2)
 
-### Actions
+#### Actions
 
 **Multiattack.** The weretiger makes two attacks, using Scratch or Longbow in any combination. It can replace one attack with a Bite attack.
 
@@ -28194,7 +28194,7 @@ While in mist form, the vampire can't take any actions, speak, or manipulate obj
 
 **Longbow (Humanoid or Hybrid Form Only).** Ranged Attack Roll: +4, range 150/600 ft. *Hit:* 11 (2d8 + 2) Piercing damage.
 
-### Bonus Actions
+#### Bonus Actions
 
 **Prowl (Tiger or Hybrid Form Only).** The weretiger moves up to its Speed without provoking Opportunity Attacks. At the end of this movement, the weretiger can take the Hide action.
 
@@ -28229,11 +28229,11 @@ While in mist form, the vampire can't take any actions, speak, or manipulate obj
 
 **CR** 3 (XP 700; PB +2)
 
-### Traits
+#### Traits
 
 **Pack Tactics.** The werewolf has Advantage on an attack roll against a creature if at least one of the werewolf's allies is within 5 feet of the creature and the ally doesn't have the Incapacitated condition.
 
-### Actions
+#### Actions
 
 **Multiattack.** The werewolf makes two attacks, using Scratch or Longbow in any combination. It can replace one attack with a Bite attack.
 
@@ -28243,7 +28243,7 @@ While in mist form, the vampire can't take any actions, speak, or manipulate obj
 
 **Longbow (Humanoid or Hybrid Form Only).** Ranged Attack Roll: +4, range 150/600 ft. *Hit:* 11 (2d8 + 2) Piercing damage.
 
-### Bonus Actions
+#### Bonus Actions
 
 **Shape-Shift.** The werewolf shape-shifts into a Large wolf-humanoid hybrid or a Medium wolf, or it returns to its true humanoid form. Its game statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed.
 
@@ -28276,11 +28276,11 @@ While in mist form, the vampire can't take any actions, speak, or manipulate obj
 
 **CR** 2 (450 XP; PB +2)
 
-### Traits
+#### Traits
 
 **Ice Walk.** The dragon can move across and climb icy surfaces without needing to make an ability check. Additionally, Difficult Terrain composed of ice or snow doesn't cost it extra movement.
 
-### Actions
+#### Actions
 
 **Multiattack.** The dragon makes two Rend attacks.
 
@@ -28288,7 +28288,7 @@ While in mist form, the vampire can't take any actions, speak, or manipulate obj
 
 **Cold Breath (Recharge 5–6).** *Constitution Saving Throw:* DC 12, each creature in a 15-foot Cone. *Failure:* 22 (5d8) Cold damage. *Success:* Half damage.
 
-## Young White Dragon
+### Young White Dragon
 
 *Large Dragon (Chromatic), Chaotic Evil*
 
@@ -28315,11 +28315,11 @@ While in mist form, the vampire can't take any actions, speak, or manipulate obj
 
 **CR** 6 (2,300 XP; PB +3)
 
-### Traits
+#### Traits
 
 **Ice Walk.** The dragon can move across and climb icy surfaces without needing to make an ability check. Additionally, Difficult Terrain composed of ice or snow doesn't cost it extra movement.
 
-### Actions
+#### Actions
 
 **Multiattack.** The dragon makes three Rend attacks.
 
@@ -28327,7 +28327,7 @@ While in mist form, the vampire can't take any actions, speak, or manipulate obj
 
 **Cold Breath (Recharge 5–6).** *Constitution Saving Throw:* DC 15, each creature in a 30-foot Cone. *Failure:* 40 (9d8) Cold damage. *Success:* Half damage.
 
-## Adult White Dragon
+### Adult White Dragon
 
 *Huge Dragon (Chromatic), Chaotic Evil*
 
@@ -28354,13 +28354,13 @@ While in mist form, the vampire can't take any actions, speak, or manipulate obj
 
 **CR** 13 (XP 10,000, or 11,500 in lair; PB +5)
 
-### Traits
+#### Traits
 
 **Ice Walk.** The dragon can move across and climb icy surfaces without needing to make an ability check. Additionally, Difficult Terrain composed of ice or snow doesn't cost it extra movement.
 
 **Legendary Resistance (3/Day, or 4/Day in Lair).** If the dragon fails a saving throw, it can choose to succeed instead.
 
-### Actions
+#### Actions
 
 **Multiattack.** The dragon makes three Rend attacks.
 
@@ -28368,7 +28368,7 @@ While in mist form, the vampire can't take any actions, speak, or manipulate obj
 
 **Cold Breath (Recharge 5–6).** *Constitution Saving Throw:* DC 19, each creature in a 60-foot Cone. *Failure:* 54 (12d8) Cold damage. *Success:* Half damage.
 
-### Legendary Actions
+#### Legendary Actions
 
 *Legendary Action Uses: 3 (4 in Lair). Immediately after another creature's turn, the dragon can expend a use to take one of the following actions. The dragon regains all expended uses at the start of each of its turns.*
 
@@ -28378,7 +28378,7 @@ While in mist form, the vampire can't take any actions, speak, or manipulate obj
 
 **Pounce.** The dragon moves up to half its Speed, and it makes one Rend attack.
 
-## Ancient White Dragon
+### Ancient White Dragon
 
 *Gargantuan Dragon (Chromatic), Chaotic Evil*
 
@@ -28405,13 +28405,13 @@ While in mist form, the vampire can't take any actions, speak, or manipulate obj
 
 **CR** 20 (XP 25,000, or 33,000 in lair; PB +6)
 
-### Traits
+#### Traits
 
 **Ice Walk.** The dragon can move across and climb icy surfaces without needing to make an ability check. Additionally, Difficult Terrain composed of ice or snow doesn't cost it extra movement.
 
 **Legendary Resistance (4/Day, or 5/Day in Lair).** If the dragon fails a saving throw, it can choose to succeed instead.
 
-### Actions
+#### Actions
 
 **Multiattack.** The dragon makes three Rend attacks.
 
@@ -28419,7 +28419,7 @@ While in mist form, the vampire can't take any actions, speak, or manipulate obj
 
 **Cold Breath (Recharge 5–6).** *Constitution Saving Throw:* DC 22, each creature in a 90-foot Cone. *Failure:* 63 (14d8) Cold damage. *Success:* Half damage.
 
-### Legendary Actions
+#### Legendary Actions
 
 *Legendary Action Uses: 3 (4 in Lair). Immediately after another creature's turn, the dragon can expend a use to take one of the following actions. The dragon regains all expended uses at the start of each of its turns.*
 
@@ -28462,11 +28462,11 @@ While in mist form, the vampire can't take any actions, speak, or manipulate obj
 
 **CR** 3 (XP 700; PB +2)
 
-### Traits
+#### Traits
 
 **Sunlight Sensitivity.** While in sunlight, the wight has Disadvantage on ability checks and attack rolls.
 
-### Actions
+#### Actions
 
 **Multiattack.** The wight makes two attacks, using Necrotic Sword or Necrotic Bow in any combination. It can replace one attack with a use of Life Drain.
 
@@ -28506,7 +28506,7 @@ A Humanoid slain by this attack rises 24 hours later as a **Zombie** under the w
 **Languages** Common plus one other language  
 **CR** 2 (XP 450; PB +2)
 
-## Traits
+#### Traits
 
 **Ephemeral.** The wisp can't wear or carry anything.
 
@@ -28514,11 +28514,11 @@ A Humanoid slain by this attack rises 24 hours later as a **Zombie** under the w
 
 **Incorporeal Movement.** The wisp can move through other creatures and objects as if they were Difficult Terrain. It takes 5 (1d10) Force damage if it ends its turn inside an object.
 
-## Actions
+#### Actions
 
 **Shock.** *Melee Attack Roll:* +4, reach 5 ft. *Hit:* 11 (2d8 + 2) Lightning damage.
 
-## Bonus Actions
+#### Bonus Actions
 
 **Consume Life.** *Constitution Saving Throw:* DC 10, one living creature the wisp can see within 5 feet that has 0 Hit Points. *Failure:* The target dies, and the wisp regains 10 (3d6) Hit Points.
 
@@ -28552,11 +28552,11 @@ A Humanoid slain by this attack rises 24 hours later as a **Zombie** under the w
 **Languages** Common, Giant  
 **CR** 3 (XP 700; PB +2)
 
-## Traits
+#### Traits
 
 **Pack Tactics.** The wolf has Advantage on an attack roll against a creature if at least one of the wolf's allies is within 5 feet of the creature and the ally doesn't have the Incapacitated condition.
 
-## Actions
+#### Actions
 
 **Bite.** *Melee Attack Roll:* +6, reach 5 ft. *Hit:* 11 (2d6 + 4) Piercing damage. If the target is a Large or smaller creature, it has the Prone condition.
 
@@ -28589,7 +28589,7 @@ A Humanoid slain by this attack rises 24 hours later as a **Zombie** under the w
 
 **CR** 1/2 (XP 100; PB +2)
 
-## Actions
+#### Actions
 
 **Bite.** *Melee Attack Roll:* +5, reach 5 ft. *Hit:* 7 (1d8 + 3) Piercing damage, and the next attack roll made against the target before the start of the worg's next turn has Advantage.
 
@@ -28622,7 +28622,7 @@ A Humanoid slain by this attack rises 24 hours later as a **Zombie** under the w
 
 **CR** 5 (XP 1,800; PB +3)
 
-## Traits
+#### Traits
 
 **Incorporeal Movement.** The wraith can move through other creatures and objects as if they were Difficult Terrain. It takes 5 (1d10) Force damage if it ends its turn inside an object.
 
@@ -28634,9 +28634,9 @@ A Humanoid slain by this attack rises 24 hours later as a **Zombie** under the w
 
 **Create Specter.** The wraith targets a Humanoid corpse within 10 feet of itself that has been dead for no longer than 1 minute. The target's spirit rises as a **Specter** in the space of its corpse or in the nearest unoccupied space. The specter is under the wraith's control. The wraith can have no more than seven specters under its control at a time.
 
-# Wyvern
-
 ## Wyvern
+
+### Wyvern
 
 *Large Dragon, Unaligned*
 
@@ -28661,7 +28661,7 @@ A Humanoid slain by this attack rises 24 hours later as a **Zombie** under the w
 
 **CR** 6 (XP 2,300; PB +3)
 
-## Actions
+#### Actions
 
 **Multiattack.** The wyvern makes one Bite attack and one Sting attack.
 
@@ -28669,9 +28669,9 @@ A Humanoid slain by this attack rises 24 hours later as a **Zombie** under the w
 
 **Sting.** *Melee Attack Roll:* +7, reach 10 ft. *Hit:* 11 (2d6 + 4) Piercing damage plus 24 (7d6) Poison damage, and the target has the Poisoned condition until the start of the wyvern's next turn.
 
-# Xorn
-
 ## Xorn
+
+### Xorn
 
 *Medium Elemental, Neutral*
 
@@ -28698,13 +28698,13 @@ A Humanoid slain by this attack rises 24 hours later as a **Zombie** under the w
 
 **CR** 5 (XP 1,800; PB +3)
 
-## Traits
+#### Traits
 
 **Earth Glide.** The xorn can burrow through nonmagical, unworn earth and stone. While doing so, the xorn doesn't disturb the material it moves through.
 
 **Treasure Sense.** The xorn can pinpoint the location of precious metals and stones within 60 feet of itself.
 
-## Actions
+#### Actions
 
 **Multiattack.** The xorn makes one Bite attack and three Claw attacks.
 
@@ -28712,13 +28712,13 @@ A Humanoid slain by this attack rises 24 hours later as a **Zombie** under the w
 
 **Claw.** *Melee Attack Roll:* +6, reach 5 ft. *Hit:* 8 (1d10 + 3) Slashing damage.
 
-## Bonus Actions
+#### Bonus Actions
 
 **Charge.** The xorn moves up to its Speed or Burrow Speed straight toward an enemy it can sense.
 
-# Zombies
+## Zombies
 
-## Zombie
+### Zombie
 
 *Medium Undead, Neutral Evil*
 
@@ -28743,15 +28743,15 @@ A Humanoid slain by this attack rises 24 hours later as a **Zombie** under the w
 
 **CR** 1/4 (XP 50; PB +2)
 
-## Traits
+#### Traits
 
 **Undead Fortitude.** If damage reduces the zombie to 0 Hit Points, it makes a Constitution saving throw (DC 5 plus the damage taken) unless the damage is Radiant or from a Critical Hit. On a successful save, the zombie drops to 1 Hit Point instead.
 
-## Actions
+#### Actions
 
 **Slam.** *Melee Attack Roll:* +3, reach 5 ft. *Hit:* 5 (1d8 + 1) Bludgeoning damage.
 
-## Ogre Zombie
+### Ogre Zombie
 
 *Large Undead, Neutral Evil*
 
@@ -28776,11 +28776,11 @@ A Humanoid slain by this attack rises 24 hours later as a **Zombie** under the w
 
 **CR** 2 (XP 450; PB +2)
 
-## Traits
+#### Traits
 
 **Undead Fortitude.** If damage reduces the zombie to 0 Hit Points, it makes a Constitution saving throw (DC 5 plus the damage taken) unless the damage is Radiant or from a Critical Hit. On a successful save, the zombie drops to 1 Hit Point instead.
 
-## Actions
+#### Actions
 
 **Slam.** *Melee Attack Roll:* +6, reach 5 ft. *Hit:* 13 (2d8 + 4) Bludgeoning damage.
 

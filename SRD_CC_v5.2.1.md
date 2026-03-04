@@ -28811,7 +28811,7 @@ A Humanoid slain by this attack rises 24 hours later as a **Zombie** under the w
 
 **CR** 2 (XP 450; PB +2)
 
-## Actions
+### Actions
 
 **Bite.** *Melee Attack Roll:* +6, reach 5 ft. *Hit:* 15 (2d10 + 4) Piercing damage.
 
@@ -28840,7 +28840,7 @@ A Humanoid slain by this attack rises 24 hours later as a **Zombie** under the w
 
 **CR** 3 (XP 700; PB +2)
 
-## Actions
+### Actions
 
 **Multiattack.** The ankylosaurus makes two Tail attacks.
 
@@ -28871,7 +28871,7 @@ A Humanoid slain by this attack rises 24 hours later as a **Zombie** under the w
 
 **CR** 1/2 (XP 100; PB +2)
 
-## Actions
+### Actions
 
 **Multiattack.** The ape makes two Fist attacks.
 
@@ -29059,11 +29059,11 @@ A Humanoid slain by this attack rises 24 hours later as a **Zombie** under the w
 
 **CR** 1/8 (XP 25; PB +2)
 
-## Traits
+### Traits
 
 **Pack Tactics.** The hawk has Advantage on an attack roll against a creature if at least one of the hawk's allies is within 5 feet of the creature and the ally doesn't have the Incapacitated condition.
 
-## Actions
+### Actions
 
 **Beak.** *Melee Attack Roll:* +4, reach 5 ft. *Hit:* 4 (1d4 + 2) Piercing damage, or 6 (1d8 + 2) Piercing damage if the target is Bloodied.
 
@@ -29090,11 +29090,11 @@ A Humanoid slain by this attack rises 24 hours later as a **Zombie** under the w
 
 **CR** 1/4 (XP 50; PB +2)
 
-## Traits
+### Traits
 
 **Bloodied Fury.** While Bloodied, the boar has Advantage on attack rolls.
 
-## Actions
+### Actions
 
 **Gore.** *Melee Attack Roll:* +3, reach 5 ft. *Hit:* 4 (1d6 + 1) Piercing damage. If the target is a Medium or smaller creature and the boar moved 20+ feet straight toward it immediately before the hit, the target takes an extra 3 (1d6) Piercing damage and has the Prone condition.
 
@@ -29123,7 +29123,7 @@ A Humanoid slain by this attack rises 24 hours later as a **Zombie** under the w
 
 **CR** 1 (XP 200; PB +2)
 
-## Actions
+### Actions
 
 **Multiattack.** The bear makes one Bite attack and one Claw attack.
 
@@ -29154,7 +29154,7 @@ A Humanoid slain by this attack rises 24 hours later as a **Zombie** under the w
 
 **CR** 1/8 (XP 25; PB +2)
 
-## Actions
+### Actions
 
 **Bite.** *Melee Attack Roll:* +4, reach 5 ft. *Hit:* 4 (1d4 + 2) Bludgeoning damage.
 
@@ -29183,11 +29183,11 @@ A Humanoid slain by this attack rises 24 hours later as a **Zombie** under the w
 
 **CR** 0 (XP 10; PB +2)
 
-## Traits
+### Traits
 
 **Jumper.** The cat's jump distance is determined using its Dexterity rather than its Strength.
 
-## Actions
+### Actions
 
 **Scratch.** *Melee Attack Roll:* +4, reach 5 ft. *Hit:* 1 Slashing damage.
 
@@ -29216,7 +29216,7 @@ A Humanoid slain by this attack rises 24 hours later as a **Zombie** under the w
 
 **CR** 1/4 (XP 50; PB +2)
 
-## Actions
+### Actions
 
 **Bite.** *Melee Attack Roll:* +4, reach 5 ft. *Hit:* 6 (1d8 + 2) Piercing damage.
 
@@ -29247,11 +29247,11 @@ A Humanoid slain by this attack rises 24 hours later as a **Zombie** under the w
 
 **CR** 0 (XP 10; PB +2)
 
-## Traits
+### Traits
 
 **Amphibious.** The crab can breathe air and water.
 
-## Actions
+### Actions
 
 **Claw.** *Melee Attack Roll:* +2, reach 5 ft. *Hit:* 1 Bludgeoning damage.
 
@@ -29280,11 +29280,11 @@ A Humanoid slain by this attack rises 24 hours later as a **Zombie** under the w
 
 **CR** 1/2 (XP 100; PB +2)
 
-## Traits
+### Traits
 
 **Hold Breath.** The crocodile can hold its breath for 1 hour.
 
-## Actions
+### Actions
 
 **Bite.** *Melee Attack Roll:* +4, reach 5 ft. *Hit:* 6 (1d8 + 2) Piercing damage. If the target is a Medium or smaller creature, it has the Grappled condition (escape DC 12). While Grappled, the target has the Restrained condition.
 
@@ -29313,11 +29313,11 @@ A Humanoid slain by this attack rises 24 hours later as a **Zombie** under the w
 
 **CR** 0 (XP 10; PB +2)
 
-## Traits
+### Traits
 
 **Agile.** The deer doesn't provoke an Opportunity Attack when it moves out of an enemy's reach.
 
-## Actions
+### Actions
 
 **Ram.** *Melee Attack Roll:* +2, reach 5 ft. *Hit:* 2 (1d4) Bludgeoning damage.
 
@@ -29346,11 +29346,11 @@ A Humanoid slain by this attack rises 24 hours later as a **Zombie** under the w
 
 **CR** 1 (XP 200; PB +2)
 
-## Traits
+### Traits
 
 **Pack Tactics.** The wolf has Advantage on an attack roll against a creature if at least one of the wolf's allies is within 5 feet of the creature and the ally doesn't have the Incapacitated condition.
 
-## Actions
+### Actions
 
 **Bite.** *Melee Attack Roll:* +5, reach 5 ft. *Hit:* 8 (1d10 + 3) Piercing damage. If the target is a Large or smaller creature, it has the Prone condition.
 
@@ -29528,13 +29528,13 @@ A Humanoid slain by this attack rises 24 hours later as a **Zombie** under the w
 
 **CR** 0 (XP 10; PB +2)
 
-## Traits
+### Traits
 
 **Amphibious.** The frog can breathe air and water.
 
 **Standing Leap.** The frog's Long Jump is up to 10 feet and its High Jump is up to 5 feet with or without a running start.
 
-## Actions
+### Actions
 
 **Bite.** *Melee Attack Roll:* +3, reach 5 ft. *Hit:* 1 Piercing damage.
 
@@ -29563,7 +29563,7 @@ A Humanoid slain by this attack rises 24 hours later as a **Zombie** under the w
 
 **CR** 7 (XP 2,900; PB +3)
 
-## Actions
+### Actions
 
 **Multiattack.** The ape makes two Fist attacks.
 
@@ -29571,7 +29571,7 @@ A Humanoid slain by this attack rises 24 hours later as a **Zombie** under the w
 
 **Boulder Toss (Recharge 6).** The ape hurls a boulder at a point it can see within 90 feet. *Dexterity Saving Throw:* DC 17, each creature in a 5-foot-radius Sphere centered on that point. *Failure:* 24 (7d6) Bludgeoning damage. If the target is a Large or smaller creature, it has the Prone condition. *Success:* Half damage only.
 
-## Bonus Actions
+### Bonus Actions
 
 **Leap.** The ape jumps up to 30 feet by spending 10 feet of movement.
 
@@ -29602,7 +29602,7 @@ A Humanoid slain by this attack rises 24 hours later as a **Zombie** under the w
 
 **CR** 1/4 (XP 50; PB +2)
 
-## Actions
+### Actions
 
 **Bite.** *Melee Attack Roll:* +3, reach 5 ft. *Hit:* 6 (2d4 + 1) Piercing damage.
 
@@ -29629,7 +29629,7 @@ A Humanoid slain by this attack rises 24 hours later as a **Zombie** under the w
 
 **CR** 1/4 (XP 50; PB +2)
 
-## Actions
+### Actions
 
 **Bite.** *Melee Attack Roll:* +5, reach 5 ft. *Hit:* 6 (1d6 + 3) Piercing damage.
 
@@ -29656,11 +29656,11 @@ A Humanoid slain by this attack rises 24 hours later as a **Zombie** under the w
 
 **CR** 2 (XP 450; PB +2)
 
-## Traits
+### Traits
 
 **Bloodied Fury.** The boar has Advantage on melee attack rolls while it is Bloodied.
 
-## Actions
+### Actions
 
 **Gore.** *Melee Attack Roll:* +5, reach 5 ft. *Hit:* 10 (2d6 + 3) Piercing damage. If the target is a Large or smaller creature and the boar moved 20+ feet straight toward it immediately before the hit, the target takes an extra 7 (2d6) Piercing damage and has the Prone condition.
 
@@ -30550,7 +30550,7 @@ At the end of the frog's next turn, the swallowed target takes 5 (2d4) Acid dama
 
 **Hold Breath.** The hippopotamus can hold its breath for 10 minutes.
 
-## Actions
+### Actions
 
 **Multiattack.** The hippopotamus makes two Bite attacks.
 
@@ -30581,11 +30581,11 @@ At the end of the frog's next turn, the swallowed target takes 5 (2d4) Acid dama
 
 **CR** 2 (XP 450; PB +2)
 
-## Traits
+### Traits
 
 **Water Breathing.** The shark can breathe only underwater.
 
-## Actions
+### Actions
 
 **Bite.** *Melee Attack Roll:* +6 (with Advantage if the target doesn't have all its Hit Points), reach 5 ft. *Hit:* 14 (3d6 + 4) Piercing damage.
 
@@ -30614,11 +30614,11 @@ At the end of the frog's next turn, the swallowed target takes 5 (2d4) Acid dama
 
 **CR** 0 (XP 10; PB +2)
 
-## Traits
+### Traits
 
 **Pack Tactics.** The hyena has Advantage on an attack roll against a creature if at least one of the hyena's allies is within 5 feet of the creature and the ally doesn't have the Incapacitated condition.
 
-## Actions
+### Actions
 
 **Bite.** *Melee Attack Roll:* +2, reach 5 ft. *Hit:* 3 (1d6) Piercing damage.
 
@@ -30647,7 +30647,7 @@ At the end of the frog's next turn, the swallowed target takes 5 (2d4) Acid dama
 
 **CR** 0 (XP 10; PB +2)
 
-## Actions
+### Actions
 
 **Bite.** *Melee Attack Roll:* +1, reach 5 ft. *Hit:* 1 (1d4 - 1) Piercing damage.
 
@@ -30676,11 +30676,11 @@ At the end of the frog's next turn, the swallowed target takes 5 (2d4) Acid dama
 
 **CR** 3 (XP 700; PB +2)
 
-## Traits
+### Traits
 
 **Hold Breath.** The whale can hold its breath for 30 minutes.
 
-## Actions
+### Actions
 
 **Bite.** *Melee Attack Roll:* +6, reach 5 ft. *Hit:* 21 (5d6 + 4) Piercing damage.
 
@@ -30709,13 +30709,13 @@ At the end of the frog's next turn, the swallowed target takes 5 (2d4) Acid dama
 
 **CR** 1 (XP 200; PB +2)
 
-## Traits
+### Traits
 
 **Pack Tactics.** The lion has Advantage on an attack roll against a creature if at least one of the lion's allies is within 5 feet of the creature and the ally doesn't have the Incapacitated condition.
 
 **Running Leap.** With a 10-foot running start, the lion can Long Jump up to 25 feet.
 
-## Actions
+### Actions
 
 **Multitattack.** The lion makes two Rend attacks. It can replace one attack with a use of Roar.
 
@@ -30746,11 +30746,11 @@ At the end of the frog's next turn, the swallowed target takes 5 (2d4) Acid dama
 
 **CR** 0 (XP 10; PB +2)
 
-## Traits
+### Traits
 
 **Spider Climb.** The lizard can climb difficult surfaces, including along ceilings, without needing to make an ability check.
 
-## Actions
+### Actions
 
 **Bite.** *Melee Attack Roll:* +2, reach 5 ft. *Hit:* 1 Piercing damage.
 
@@ -30777,13 +30777,13 @@ At the end of the frog's next turn, the swallowed target takes 5 (2d4) Acid dama
 
 **CR** 6 (XP 2,300; PB +3)
 
-## Actions
+### Actions
 
 **Multitattack.** The mammoth makes two Gore attacks.
 
 **Gore.** *Melee Attack Roll:* +10, reach 10 ft. *Hit:* 18 (2d10 + 7) Piercing damage. If the target is a Huge or smaller creature and the mammoth moved 20+ feet straight toward it immediately before the hit, the target has the Prone condition.
 
-## Bonus Actions
+### Bonus Actions
 
 **Trample.** *Dexterity Saving Throw:* DC 18, one creature within 5 feet that has the Prone condition. *Failure:* 29 (4d10 + 7) Bludgeoning damage. *Success:* Half damage.
 
@@ -30812,7 +30812,7 @@ At the end of the frog's next turn, the swallowed target takes 5 (2d4) Acid dama
 
 **CR** 1/8 (XP 25; PB +2)
 
-## Actions
+### Actions
 
 **Bite.** *Melee Attack Roll:* +3, reach 5 ft. *Hit:* 4 (1d6 + 1) Piercing damage. If the target is a Medium or smaller creature, it has the Prone condition.
 
@@ -30839,11 +30839,11 @@ At the end of the frog's next turn, the swallowed target takes 5 (2d4) Acid dama
 
 **CR** 1/8 (XP 25; PB +2)
 
-## Traits
+### Traits
 
 **Beast of Burden.** The mule counts as one size larger for the purpose of determining its carrying capacity.
 
-## Actions
+### Actions
 
 **Hooves.** *Melee Attack Roll:* +4, reach 5 ft. *Hit:* 4 (1d4 + 2) Bludgeoning damage.
 
@@ -31012,7 +31012,7 @@ At the end of the frog's next turn, the swallowed target takes 5 (2d4) Acid dama
 
 **Hold Breath.** The plesiosaurus can hold its breath for 1 hour.
 
-## Actions
+### Actions
 
 **Bite.** *Melee Attack Roll:* +6, reach 10 ft. *Hit:* 11 (2d6 + 4) Piercing damage.
 
@@ -31043,7 +31043,7 @@ At the end of the frog's next turn, the swallowed target takes 5 (2d4) Acid dama
 
 **CR** 2 (XP 450; PB +2)
 
-## Actions
+### Actions
 
 **Multiattack.** The bear makes two Rend attacks.
 
@@ -31072,7 +31072,7 @@ At the end of the frog's next turn, the swallowed target takes 5 (2d4) Acid dama
 
 **CR** 1/8 (XP 25; PB +2)
 
-## Actions
+### Actions
 
 **Hooves.** *Melee Attack Roll:* +4, reach 5 ft. *Hit:* 4 (1d4 + 2) Bludgeoning damage.
 
@@ -31101,11 +31101,11 @@ At the end of the frog's next turn, the swallowed target takes 5 (2d4) Acid dama
 
 **CR** 1/4 (XP 50; PB +2)
 
-## Traits
+### Traits
 
 **Flyby.** The pteranodon doesn't provoke an Opportunity Attack when it flies out of an enemy's reach.
 
-## Actions
+### Actions
 
 **Bite.** *Melee Attack Roll:* +4, reach 5 ft. *Hit:* 6 (1d8 + 2) Piercing damage.
 
@@ -31134,11 +31134,11 @@ At the end of the frog's next turn, the swallowed target takes 5 (2d4) Acid dama
 
 **CR** 0 (XP 10; PB +2)
 
-## Traits
+### Traits
 
 **Agile.** The rat doesn't provoke an Opportunity Attack when it moves out of an enemy's reach.
 
-## Actions
+### Actions
 
 **Bite.** *Melee Attack Roll:* +2, reach 5 ft. *Hit:* 1 Piercing damage.
 
@@ -31167,11 +31167,11 @@ At the end of the frog's next turn, the swallowed target takes 5 (2d4) Acid dama
 
 **CR** 0 (XP 10; PB +2)
 
-## Traits
+### Traits
 
 **Mimicry.** The raven can mimic simple sounds it has heard, such as a whisper or chitter. A hearer can discern the sounds are imitations with a successful DC 10 Wisdom (Insight) check.
 
-## Actions
+### Actions
 
 **Beak.** *Melee Attack Roll:* +4, reach 5 ft. *Hit:* 1 Piercing damage.
 
@@ -31608,11 +31608,11 @@ At the end of the frog's next turn, the swallowed target takes 5 (2d4) Acid dama
 
 **CR** 2 (XP 450; PB +2)
 
-## Traits
+### Traits
 
 **Swarm.** The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny snake. The swarm can't regain Hit Points or gain Temporary Hit Points.
 
-## Actions
+### Actions
 
 **Bites.** *Melee Attack Roll:* +6, reach 5 ft. *Hit:* 8 (1d8 + 4) Piercing damage—or 6 (1d4 + 4) Piercing damage if the swarm is Bloodied—plus 10 (3d6) Poison damage.
 
@@ -31641,11 +31641,11 @@ At the end of the frog's next turn, the swallowed target takes 5 (2d4) Acid dama
 
 **CR** 1 (XP 200; PB +2)
 
-## Actions
+### Actions
 
 **Rend.** *Melee Attack Roll:* +5, reach 5 ft. *Hit:* 10 (2d6 + 3) Slashing damage. If the target is a Large or smaller creature, it has the Prone condition.
 
-## Bonus Actions
+### Bonus Actions
 
 **Nimble Escape.** The tiger takes the Disengage or Hide action.
 
@@ -31672,7 +31672,7 @@ At the end of the frog's next turn, the swallowed target takes 5 (2d4) Acid dama
 
 **CR** 5 (XP 1,800; PB +3)
 
-## Actions
+### Actions
 
 **Multiattack.** The triceratops makes two Gore attacks.
 
@@ -31703,7 +31703,7 @@ At the end of the frog's next turn, the swallowed target takes 5 (2d4) Acid dama
 
 **CR** 8 (XP 3,900; PB +3)
 
-## Actions
+### Actions
 
 **Multiattack.** The tyrannosaurus makes one Bite attack and one Tail attack.
 
@@ -31734,7 +31734,7 @@ At the end of the frog's next turn, the swallowed target takes 5 (2d4) Acid dama
 
 **CR** 1/8 (XP 25; PB +2)
 
-## Actions
+### Actions
 
 **Bite.** *Melee Attack Roll:* +4, reach 5 ft. *Hit:* 4 (1d4 + 2) Piercing damage plus 3 (1d6) Poison damage.
 

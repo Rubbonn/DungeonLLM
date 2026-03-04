@@ -30,7 +30,7 @@ The game also includes elements—class features, feats, weapon properties, spel
 
 All creatures—characters and monsters—have six abilities that measure physical and mental characteristics, as shown on the Ability Descriptions table.
 
-### Ability Descriptions
+#### Ability Descriptions
 
 | Ability      | Score Measures ...                  |
 |--------------|-------------------------------------|
@@ -41,7 +41,7 @@ All creatures—characters and monsters—have six abilities that measure physic
 | Wisdom       | Perceptiveness and mental fortitude |
 | Charisma     | Confidence, poise, and charm        |
 
-#### Ability Scores
+### Ability Scores
 
 Each ability has a score from 1 to 20, although some monsters have a score as high as 30. The score represents the magnitude of an ability. The Ability Scores table summarizes what the scores mean.
 
@@ -57,7 +57,7 @@ Each ability has a score from 1 to 20, although some monsters have a score as hi
 | 21–29 | This represents an extraordinary capability.                                                                      |
 | 30    | This is the highest a score can go.                                                                               |
 
-#### Ability Modifiers
+### Ability Modifiers
 
 Each ability has a modifier that you apply whenever you make a D20 Test with that ability (explained in "D20 Tests"). An ability modifier is derived from its score, as shown in the Ability Modifiers table.
 
@@ -78,7 +78,7 @@ Whenever you divide or multiply a number in the game, round down if you end up w
 | 12-13 | +1       | 28-29 | +9       |
 | 14-15 | +2       | 30    | +10      |
 
-### D20 Tests
+## D20 Tests
 
 When the outcome of an action is uncertain, the game uses a d20 roll to determine success or failure. These rolls are called D20 Tests, and they come in three kinds: ability checks, saving throws, and attack rolls. They follow these steps:
 
@@ -97,7 +97,7 @@ An ability check represents a creature using talent and training to try to overc
 
 An ability check is named for the ability modifier it uses: a Strength check, an Intelligence check, and so on. Different ability checks are called for in different situations, depending on which ability is most relevant. See the Ability Check Examples table for examples of each check’s use.
 
-#### Ability Check Examples
+##### Ability Check Examples
 
 | Ability      | Make a Check To ...                                        |
 |--------------|------------------------------------------------------------|
@@ -116,7 +116,7 @@ Add your Proficiency Bonus to an ability check when the GM determines that a ski
 
 The Difficulty Class of an ability check represents the task’s difficulty. The more difficult the task, the higher its DC. The rules provide DCs for certain checks, but the GM ultimately sets them. The Typical Difficulty Classes table presents a range of possible DCs for ability checks.
 
-#### Typical Difficulty Classes
+##### Typical Difficulty Classes
 
 | Task Difficulty | DC | Task Difficulty   | DC |
 |-----------------|----|-------------------|----|
@@ -135,7 +135,7 @@ If you don't want to resist the effect, you can choose to fail the save without 
 
 Saving throws are named for the ability modifiers they use: a Constitution saving throw, a Wisdom saving throw, and so on. Different saving throws are used to resist different kinds of effects, as shown on the Saving Throw Examples table.
 
-#### Saving Throw Examples
+##### Saving Throw Examples
 
 | Ability      | Make a Save To ...             |
 |--------------|--------------------------------|
@@ -162,7 +162,7 @@ An attack roll determines whether an attack hits a target. An attack roll hits i
 
 The Attack Roll Abilities table shows which ability modifier to use for different types of attack rolls.
 
-#### Attack Roll Abilities
+##### Attack Roll Abilities
 
 | Ability   | Attack Type                                                                                                       |
 |-----------|-------------------------------------------------------------------------------------------------------------------|
@@ -194,7 +194,7 @@ If you roll a 20 on the d20 (called a "natural 20") for an attack roll, the atta
 
 If you roll a 1 on the d20 (a "natural 1") for an attack roll, the attack misses regardless of any modifiers or the target's AC.
 
-#### Advantage/Disadvantage
+### Advantage/Disadvantage
 
 Sometimes a D20 Test is modified by Advantage or Disadvantage. Advantage reflects the positive circumstances surrounding a d20 roll, while Disadvantage reflects negative circumstances.
 
@@ -214,7 +214,7 @@ Other rules might allow your character to gain Heroic Inspiration independent of
 
 When a roll has either Advantage or Disadvantage, roll a second d20 when you make the roll. Use the higher of the two rolls if you have Advantage, and use the lower roll if you have Disadvantage. For example, if you have Disadvantage and roll an 18 and a 3, use the 3. If you instead have Advantage and roll those numbers, use the 18.
 
-### They Don't Stack
+#### They Don't Stack
 
 If multiple situations affect a roll and they all grant Advantage on it, you still roll only two d20s. Similarly, if multiple situations impose Disadvantage on a roll, you roll only two d20s.
 
@@ -226,7 +226,7 @@ When you have Advantage or Disadvantage and something in the game lets you rerol
 
 For example, if you have Heroic Inspiration (see the sidebar below) and roll a 3 and an 18 on an ability check that has Advantage or Disadvantage, you could expend your Heroic Inspiration to reroll one of those dice, not both of them.
 
-#### Proficiency
+## Proficiency
 
 Characters and monsters are good at various things. Some are skilled with many weapons, while others can use only a few. Some are better at understanding people's motives, and others are better at unlocking the secrets of the multiverse. All creatures have a Proficiency Bonus, which reflects the impact that training has on the creature's capabilities. A character's Proficiency Bonus increases as the character gains levels (described in "Character Creation"). A monster's Proficiency Bonus is based on its Challenge Rating (see "Rules Glossary"). The Proficiency Bonus table shows how the bonus is determined.
 
@@ -241,13 +241,13 @@ This bonus is applied to a D20 Test when the creature has proficiency in a skill
 | 9–12        | +4    | 25–28       | +8    |
 | 13–16       | +5    | 29–30       | +9    |
 
-#### The Bonus Doesn't Stack
+### The Bonus Doesn't Stack
 
 Your Proficiency Bonus can't be added to a die roll or another number more than once. For example, if a rule allows you to make a Charisma (Deception or Persuasion) check, you add your Proficiency Bonus if you're proficient in either skill, but you don't add it twice if you're proficient in both skills.
 
 Occasionally, a Proficiency Bonus might be multiplied or divided (doubled or halved, for example) before being added. For example, the Expertise feature (see "Rules Glossary") doubles the Proficiency Bonus for certain ability checks. Whenever the bonus is used, it can be multiplied only once and divided only once.
 
-#### Skill Proficiencies
+### Skill Proficiencies
 
 Most ability checks involve using a skill, which represents a category of things creatures try to do with an ability check. The descriptions of the actions you take (see "Actions" later in "Playing the Game") specify which skill applies if you make an ability check for that action, and many other rules note when a skill is relevant. The GM has the ultimate say on whether a skill is relevant in a situation.
 
@@ -284,7 +284,7 @@ The skills are shown on the Skills table, which notes example uses for each skil
 
 A character's starting skill proficiencies are determined at character creation, and a monster's skill proficiencies appear in its stat block.
 
-#### Saving Throw Proficiencies
+### Saving Throw Proficiencies
 
 Proficiency in a saving throw lets a character add their Proficiency Bonus to saves that use a particular ability. For example, proficiency in Wisdom saves lets you add your Proficiency Bonus to your Wisdom saves. Some monsters also have saving throw proficiencies, as noted in their stat blocks.
 
@@ -298,11 +298,11 @@ A character gains proficiency with various weapons and tools from their class an
 
 **Tools.** If you have proficiency with a tool, you can add your Proficiency Bonus to any ability check you make that uses the tool. If you have proficiency in the skill that's also used with that check, you have Advantage on the check too. This means you can benefit from both skill proficiency and tool proficiency on the same ability check.
 
-### Actions
+## Actions
 
 When you do something other than moving or communicating, you typically take an action. The Action table lists the game's main actions, which are defined in more detail in "Rules Glossary."
 
-### Actions
+#### Actions
 
 | Action | Summary                                                                     |
 |--------|-----------------------------------------------------------------------------|
@@ -321,13 +321,13 @@ When you do something other than moving or communicating, you typically take an 
 
 Player characters and monsters can also do things not covered by these actions. Many class features and other abilities provide additional action options, and you can improvise other actions. When you describe an action not detailed elsewhere in the rules, the Game Master tells you whether that action is possible and what kind of D20 Test you need to make, if any.
 
-#### One Thing at a Time
+### One Thing at a Time
 
 The game uses actions to govern how much you can do at one time. You can take only one action at a time. This principle is most important in combat, as explained in "Combat" later in "Playing the Game."
 
 Actions can come up in other situations, too: in a social interaction, you can try to Influence a creature or use the Search action to read the creature's body language, but you can't do both at the same time. And when you're exploring a dungeon, you can't simultaneously use the Search action to look for traps and use the Help action to aid another character who's trying to open a stuck door (with the Utilize action).
 
-#### Bonus Actions
+### Bonus Actions
 
 Various class features, spells, and other abilities let you take an additional action on your turn called a Bonus Action. The Cunning Action feature, for example, allows a Rogue to take a Bonus Action. You can take a Bonus Action only when a special ability, a spell, or another feature of the game states that you can do something as a Bonus Action. You otherwise don't have a Bonus Action to take.
 
@@ -343,7 +343,7 @@ When you take a Reaction, you can't take another one until the start of your nex
 
 In terms of timing, a Reaction takes place immediately after its trigger unless the Reaction's description says otherwise.
 
-### Social Interaction
+## Social Interaction
 
 During their adventures, player characters meet many different people and face some monsters that would rather talk than fight. In those situations, it's time for social interaction, which takes many forms. For example, you might try to convince a burglar to confess to wrongdoing or try to flatter a guard. The Game Master assumes the roles of any nonplayer characters who are participating.
 
@@ -369,7 +369,7 @@ Ability checks can be key in determining the outcome of a social interaction. Yo
 
 Pay attention to your skill proficiencies when thinking of how you will interact with an NPC; use an approach that relies on your group's skill proficiencies. For example, if the group needs to trick a guard into letting them into a castle, the Rogue who is proficient in Deception should lead the discussion.
 
-### Exploration
+## Exploration
 
 Exploration involves delving into places that are dangerous and full of mystery. The rules in this section detail some of the ways adventurers interact with the environment in such places.
 
@@ -411,7 +411,7 @@ Tremorsense
 
 Truesight
 
-#### Hiding
+### Hiding
 
 Adventurers and monsters often hide, whether to spy on one another, sneak past a guardian, or set an ambush. The Game Master decides when circumstances are appropriate for hiding. When you try to hide, you take the Hide action.
 
@@ -441,10 +441,6 @@ You can usually carry your gear and treasure without worrying about the weight o
 
 As an action, you can automatically break or otherwise destroy a fragile, nonmagical object, such as a glass container or a piece of paper. If you try to damage something more resilient, the GM might use the rules on breaking objects in "Rules Glossary."
 
-### MARCHING ORDER
-
-The adventurers should establish a marching order while they travel, whether indoors or outdoors. A marching order makes it easier to determine which characters are affected by traps, which ones can spot hidden enemies, and which ones are the closest to those enemies if a fight breaks out. You can change your marching order outside combat and record the order any way you like: write it down, for example, or arrange miniatures to show it.
-
 ### Hazards
 
 Monsters are the main perils characters face, but other dangers await. "Rules Glossary" defines the following hazards:
@@ -460,11 +456,15 @@ During an adventure, the characters might travel long distances on trips that co
 
 If you need to know how fast you can move when every second matters, see the movement rules in "Combat" later in "Playing the Game."
 
-### Travel Pace
+#### MARCHING ORDER
+
+The adventurers should establish a marching order while they travel, whether indoors or outdoors. A marching order makes it easier to determine which characters are affected by traps, which ones can spot hidden enemies, and which ones are the closest to those enemies if a fight breaks out. You can change your marching order outside combat and record the order any way you like: write it down, for example, or arrange miniatures to show it.
+
+#### Travel Pace
 
 While traveling outside combat, a group can move at a Fast, Normal, or Slow pace, as shown on the Travel Pace table. The table states how far the party can move in a period of time; if riding horses or other mounts, the group can move twice that distance for 1 hour, after which the mounts need a Short or Long Rest before they can move at that increased pace again (see "Equipment" for a selection of mounts for sale). "Gameplay Toolbox" has rules that affect which pace you can choose in certain types of terrain.
 
-#### Travel Pace
+##### Travel Pace
 
 | Pace   | Distance Traveled Per ... |         |          |
 |--------|---------------------------|---------|----------|
@@ -493,7 +493,7 @@ Adventurers encounter many dangerous monsters and nefarious villains. In those m
 
 A typical combat encounter is a clash between two sides: a flurry of weapon swings, feints, parries, footwork, and spellcasting. The game organizes combat into a cycle of rounds and turns. A round represents about 6 seconds in the game world. During a round, each participant in a battle takes a turn. The order of turns is determined at the beginning of combat when everyone rolls Initiative. Once everyone has taken a turn, the fight continues to the next round if neither side is defeated.
 
-### Combat Step by Step
+#### Combat Step by Step
 
 Combat unfolds in these steps:
 
@@ -525,7 +525,7 @@ Extended communication, such as a detailed explanation of something or an attemp
 
 If you want to interact with a second object, you need to take the Utilize action. Some magic items and other special objects always require an action to use, as stated in their descriptions.
 
-### PLAYING ON A GRID
+#### PLAYING ON A GRID
 
 If you play using a square grid and miniatures or other tokens, follow these rules.
 
@@ -604,7 +604,7 @@ When you take the Attack action, you make an attack. Some other actions, Bonus A
 - **2: Determine Modifiers.** The GM determines whether the target has Cover (see the next section) and whether you have Advantage or Disadvantage against the target. In addition, spells, special abilities, and other effects can apply penalties or bonuses to your attack roll.
 - **3: Resolve the Attack.** Make the attack roll, as detailed earlier in "Playing the Game." On a hit, you roll damage unless the particular attack has rules that specify otherwise. Some attacks cause special effects in addition to or instead of damage.
 
-### UNSEEN ATTACKERS AND TARGETS
+#### UNSEEN ATTACKERS AND TARGETS
 
 When you make an attack roll against a target you can't see, you have Disadvantage on the roll. This is true whether you're guessing the target's location or targeting a creature you can hear but not see. If the target isn't in the location you targeted, you miss.
 
@@ -612,7 +612,7 @@ When a creature can't see you, you have Advantage on attack rolls against it.
 
 If you are hidden when you make an attack roll, you give away your location when the attack hits or misses.
 
-#### Cover
+### Cover
 
 Walls, trees, creatures, and other obstacles can provide cover, making a target more difficult to harm. As detailed in the Cover table, there are three degrees of cover, each of which gives a different benefit to a target.
 
@@ -626,7 +626,7 @@ A target can benefit from cover only when an attack or other effect originates o
 | Three-Quarters | +5 bonus to AC and Dexterity saving throws | An object that covers at least three-quarters of the target           |
 | Total          | Can't be targeted directly                 | An object that covers the whole target                                |
 
-#### Ranged Attacks
+### Ranged Attacks
 
 When you make a ranged attack, you fire a bow, hurl an axe, or otherwise send projectiles to strike a foe at a distance. Many spells also involve making a ranged attack.
 
@@ -640,7 +640,7 @@ Some ranged attacks, such as those made with a Longbow, have two ranges. The sma
 
 Aiming a ranged attack is more difficult when a foe is next to you. When you make a ranged attack roll with a weapon, a spell, or some other means, you have Disadvantage on the roll if you are within 5 feet of an enemy who can see you and doesn't have the Incapacitated condition (see "Rules Glossary").
 
-#### Melee Attacks
+### Melee Attacks
 
 A melee attack allows you to attack a target within your reach. A melee attack typically uses a hand-held weapon or an Unarmed Strike. Many monsters make melee attacks with claws, teeth, or other body parts. A few spells also involve melee attacks.
 
@@ -682,21 +682,21 @@ While mounted, you must make the same save if you're knocked Prone or the mount 
 
 A fight underwater follows these rules.
 
-### Impeded Weapons
+#### Impeded Weapons
 
 When making a melee attack roll with a weapon underwater, a creature that lacks a Swim Speed has Disadvantage on the attack roll unless the weapon deals Piercing damage.
 
 A ranged attack roll with a weapon underwater automatically misses a target beyond the weapon's normal range, and the attack roll has Disadvantage against a target within normal range.
 
-### Fire Resistance
+#### Fire Resistance
 
 Anything underwater has Resistance to Fire damage (explained in “Damage and Healing”).
 
-### Damage and Healing
+## Damage and Healing
 
 Injury and death are frequent threats, as detailed in the following rules.
 
-#### Hit Points
+### Hit Points
 
 Hit Points represent durability and the will to live. Creatures with more Hit Points are more difficult to kill. Your Hit Point maximum is the number of
 
@@ -706,17 +706,21 @@ Whenever you take damage, subtract it from your Hit Points. Hit Point loss has n
 
 If you have half your Hit Points or fewer, you're Bloodied, which has no game effect on its own but which might trigger other game effects.
 
-#### Damage Rolls
+#### RESTING
+
+Adventurers can't spend every hour adventuring. They need rest. Any creature can take hour-long Short Rests in the midst of a day and an 8-hour Long Rest to end it. Regaining Hit Points is one of the main benefits of a rest. “Rules Glossary” provides the rules for Short and Long Rests.
+
+### Damage Rolls
 
 Each weapon, spell, and damaging monster ability specifies the damage it deals. You roll the damage dice, add any modifiers, and deal the damage to your target. If there's a penalty to the damage, it's possible to deal 0 damage but not negative damage.
 
 When attacking with a weapon, you add your ability modifier—the same modifier used for the attack roll—to the damage roll. A spell tells you which dice to roll for damage and whether to add any modifiers. Unless a rule says otherwise, you don't add your ability modifier to a fixed damage amount that doesn't use a roll, such as the damage of a Blowgun. See “Equipment” for weapons' damage dice and “Spells” for spells' damage dice.
 
-#### Critical Hits
+### Critical Hits
 
 When you score a Critical Hit, you deal extra damage. Roll the attack's damage dice twice, add them together, and add any relevant modifiers as normal. For example, if you score a Critical Hit with a Dagger, roll 2d4 for the damage rather than 1d4, and add your relevant ability modifier. If the attack involves other damage dice, such as from the Rogue's Sneak Attack feature, you also roll those dice twice.
 
-#### Saving Throws and Damage
+### Saving Throws and Damage
 
 Damage dealt via saving throws uses these rules.
 
@@ -728,15 +732,11 @@ When you create a damaging effect that forces two or more targets to make saving
 
 Many saving throw effects deal half damage (round down) to a target when the target succeeds on the saving throw. The halved damage is equal to half the damage that would be dealt on a failed save.
 
-#### Damage Types
+### Damage Types
 
 Each instance of damage has a type, like Fire or Slashing. Damage types are listed in “Rules Glossary” and have no rules of their own, but other rules, such as Resistance, rely on damage types.
 
-### RESTING
-
-Adventurers can't spend every hour adventuring. They need rest. Any creature can take hour-long Short Rests in the midst of a day and an 8-hour Long Rest to end it. Regaining Hit Points is one of the main benefits of a rest. “Rules Glossary” provides the rules for Short and Long Rests.
-
-#### Resistance and Vulnerability
+### Resistance and Vulnerability
 
 Some creatures and objects have Resistance or Vulnerability to certain damage types. If you have Resistance to a damage type, damage of that type is halved against you (round down). If you have Vulnerability to a damage type, damage of that type is doubled against you. For example, if you have Resistance to Cold damage, such damage is halved against you, and if you have Vulnerability to Fire damage, such damage is doubled against you.
 
@@ -750,21 +750,21 @@ Modifiers to damage are applied in the following order: adjustments such as bonu
 
 For example, a creature has Resistance to all damage and Vulnerability to Fire damage, and it's within a magical aura that reduces all damage by 5. If it takes 28 Fire damage, the damage is first reduced by 5 (to 23), then halved for the creature's Resistance (and rounded down to 11), then doubled for its Vulnerability (to 22).
 
-#### Immunity
+### Immunity
 
 Some creatures and objects have Immunity to certain damage types and conditions. Immunity to a damage type means you don't take damage of that type, and Immunity to a condition means you aren't affected by it.
 
-#### Healing
+### Healing
 
 Hit Points can be restored by magic, such as the *Cure Wounds* spell or a *Potion of Healing*, or by a Short or Long Rest (see “Rules Glossary”).
+
+When you receive healing, add the restored Hit Points to your current Hit Points. Your Hit Points can't exceed your Hit Point maximum, so any Hit Points regained in excess of the maximum are lost. For example, if you receive 8 Hit Points of healing and have 14 Hit Points and a Hit Point maximum of 20, you regain 6 Hit Points, not 8.
 
 #### Knocking Out a Creature
 
 When you would reduce a creature to 0 Hit Points with a melee attack, you can instead reduce the creature to 1 Hit Point and give it the Unconscious condition. It then starts a Short Rest, at the end of which that condition ends on it. The condition ends early if the creature regains any Hit Points or if someone takes an action to administer first aid to it, making a successful DC 10 Wisdom (Medicine) check.
 
-When you receive healing, add the restored Hit Points to your current Hit Points. Your Hit Points can't exceed your Hit Point maximum, so any Hit Points regained in excess of the maximum are lost. For example, if you receive 8 Hit Points of healing and have 14 Hit Points and a Hit Point maximum of 20, you regain 6 Hit Points, not 8.
-
-#### Dropping to 0 Hit Points
+### Dropping to 0 Hit Points
 
 When a creature drops to 0 Hit Points, it either dies outright or falls unconscious, as explained below.
 
@@ -798,13 +798,13 @@ The successes and failures don't need to be consecutive; keep track of both unti
 
 **Damage at 0 Hit Points.** If you take any damage while you have 0 Hit Points, you suffer a Death Saving Throw failure. If the damage is from a Critical Hit, you suffer two failures instead. If the damage equals or exceeds your Hit Point maximum, you die.
 
-### Stabilizing a Character
+#### Stabilizing a Character
 
 You can take the Help action to try to stabilize a creature with 0 Hit Points, which requires a successful DC 10 Wisdom (Medicine) check.
 
 A Stable creature doesn't make Death Saving Throws even though it has 0 Hit Points, but it still has the Unconscious condition. If the creature takes damage, it stops being Stable and starts making Death Saving Throws again. A Stable creature that isn't healed regains 1 Hit Point after 1d4 hours.
 
-#### Temporary Hit Points ---
+### Temporary Hit Points ---
 
 Some spells and other effects confer Temporary Hit Points, which are a buffer against losing actual Hit Points, as explained below.
 
@@ -826,13 +826,13 @@ Temporary Hit Points can't be added to your Hit Points, healing can't restore th
 
 If you have 0 Hit Points, receiving Temporary Hit Points doesn't restore you to consciousness. Only true healing can save you.
 
-## Character Creation
+# Character Creation
 
 ## Choose a Character Sheet
 
 You'll record the main details of your character on a character sheet. Throughout this chapter, we use the term "character sheet" to mean whatever you use to track your character's details, whether it's a printed character sheet, a digital character sheet, or plain paper. Choose whichever style of sheet works for you, and then embark on creating a character!
 
-### Create Your Character
+## Create Your Character
 
 Here are the steps to make a character; each step is explored in detail:
 
@@ -846,7 +846,7 @@ Here are the steps to make a character; each step is explored in detail:
 
 Choose a class, and write it on your character sheet. The Class Overview table summarizes the classes. See "Classes" for the classes' details.
 
-#### Class Overview
+##### Class Overview
 
 | Class     | Likes ...      | Primary Ability       | Complexity |
 |-----------|----------------|-----------------------|------------|
@@ -978,7 +978,7 @@ Determine your ability scores by using one of the following three methods. Your 
 
 **Point Cost.** You have 27 points to spend on your ability scores. The cost of each score is shown on the Ability Score Point Costs table. For example, a score of 14 costs 7 of your 27 points.
 
-#### Ability Score Point Costs
+##### Ability Score Point Costs
 
 | Score | Cost | Score | Cost |
 |-------|------|-------|------|
@@ -993,7 +993,7 @@ Once you've generated six scores, assign them to Strength, Dexterity, Constituti
 
 If you're using the Standard Array option, consult the Standard Array by Class table for suggestions on where to assign scores for your character's class. The table puts the highest scores in a class's main abilities. If you used a different method to generate the scores, you may still use this table to guide where you place your highest and lowest scores.
 
-#### Standard Array by Class
+##### Standard Array by Class
 
 | Class     | Str. | Dex. | Con. | Int. | Wis. | Cha. |
 |-----------|------|------|------|------|------|------|
@@ -1052,10 +1052,6 @@ The summaries of the alignments below describe the typical behavior of a creatur
 
 **Neutral (N).** Neutral is the alignment of those who prefer to avoid moral questions and don't take sides, doing what seems best at the time. Someone who's bored by moral debate is probably Neutral.
 
-#### UNALIGNED CREATURES
-
-Most creatures that lack the capacity for rational thought don't have alignments; they are unaligned. Sharks are savage predators, for example, but they aren't evil; they are unaligned.
-
 **Chaotic Neutral (CN).** Chaotic Neutral creatures follow their whims, valuing their personal freedom above all else. A scoundrel who wanders the land living by their wits is probably Chaotic Neutral.
 
 **Lawful Evil (LE).** Lawful Evil creatures methodically take what they want within the limits of a code of tradition, loyalty, or order. An aristocrat exploiting citizens while scheming for power is probably Lawful Evil.
@@ -1063,6 +1059,10 @@ Most creatures that lack the capacity for rational thought don't have alignments
 **Neutral Evil (NE).** Neutral Evil is the alignment of those who are untroubled by the harm they cause as they pursue their desires. A criminal who robs and murders as they please is probably Neutral Evil.
 
 **Chaotic Evil (CE).** Chaotic Evil creatures act with arbitrary violence, spurred by their hatred or bloodlust. A villain pursuing schemes of vengeance and havoc is probably Chaotic Evil.
+
+##### UNALIGNED CREATURES
+
+Most creatures that lack the capacity for rational thought don't have alignments; they are unaligned. Sharks are savage predators, for example, but they aren't evil; they are unaligned.
 
 ### Step 5: Character Creation Details
 
@@ -1090,7 +1090,7 @@ Include all modifiers that apply to your Wisdom (Perception) checks. For example
 
 **Hit Points.** Your class and Constitution modifier determine your Hit Point maximum at level 1, as shown on the Level 1 Hit Points by Class table.
 
-#### Level 1 Hit Points by Class
+##### Level 1 Hit Points by Class
 
 | Class                                        | Hit Point Maximum  |
 |----------------------------------------------|--------------------|
@@ -1124,7 +1124,7 @@ Your spellcasting ability modifier for a spell is determined by whatever feature
 
 **Spell Slots, Cantrips, and Prepared Spells.** If your class gives you the Spellcasting or Pact Magic feature, your class features table shows the number of spell slots you have available, how many cantrips you know, and how many spells you can prepare. Choose your cantrips and prepared spells, and note them—along with your number of spell slots—on your character sheet.
 
-### Level Advancement
+## Level Advancement
 
 While going on adventures, your character gains experience, represented by Experience Points (XP). A character who reaches a specified Experience Point total advances in capability. This advancement is called gaining a level.
 
@@ -1155,14 +1155,18 @@ The Character Advancement table lists the XP you need to advance to a level and 
 | 19    | 305,000           | +6                |
 | 20    | 355,000           | +6                |
 
-#### Gaining a Level
+### Gaining a Level
 
 When you gain a level, follow these steps:
 
 - **1: Choose a Class.** Most characters advance in the same class. However, you might decide to gain a level in another class using the rules in the “Multiclassing” section.
 - **2: Adjust Hit Points and Hit Point Dice.** Each time you gain a level, you gain an additional Hit Die. Roll that die, add your Constitution modifier to the roll, and add the total (minimum of 1) to your Hit Point maximum. Instead of rolling, you can use the fixed value shown in the Fixed Hit Points by Class table.
 
-### Fixed Hit Points by Class
+- **3: Record New Class Features.** Look at your class features table in “Classes,” and note the features you gain at your new level in that class. Make any choices offered by a new feature.
+- **4: Adjust Proficiency Bonus.** A character’s Proficiency Bonus increases at certain levels, as shown in the Character Advancement table and your class features table in “Classes.” When your Proficiency Bonus increases, increase all the numbers on your character sheet that include your Proficiency Bonus.
+- **5: Adjust Ability Modifiers.** If you choose a feat that increases one or more of your ability scores, your ability modifier also changes if the new score is an even number. When that happens, adjust all the numbers on your character sheet that use that ability modifier. When your Constitution modifier increases by 1, your Hit Point maximum increases by 1 for each level you have attained. For example, if a character reaches level 8 and increases their Constitution score from 17 to 18, the Constitution modifier increases to +4. The character’s Hit Point maximum then increases by 8, in addition to the Hit Points gained for reaching level 8.
+
+#### Fixed Hit Points by Class
 
 | Class                                        | Hit Points per Level |
 |----------------------------------------------|----------------------|
@@ -1171,31 +1175,27 @@ When you gain a level, follow these steps:
 | Bard, Cleric, Druid, Monk, Rogue, or Warlock | 5 + Con. modifier    |
 | Sorcerer or Wizard                           | 4 + Con. modifier    |
 
-- **3: Record New Class Features.** Look at your class features table in “Classes,” and note the features you gain at your new level in that class. Make any choices offered by a new feature.
-- **4: Adjust Proficiency Bonus.** A character’s Proficiency Bonus increases at certain levels, as shown in the Character Advancement table and your class features table in “Classes.” When your Proficiency Bonus increases, increase all the numbers on your character sheet that include your Proficiency Bonus.
-- **5: Adjust Ability Modifiers.** If you choose a feat that increases one or more of your ability scores, your ability modifier also changes if the new score is an even number. When that happens, adjust all the numbers on your character sheet that use that ability modifier. When your Constitution modifier increases by 1, your Hit Point maximum increases by 1 for each level you have attained. For example, if a character reaches level 8 and increases their Constitution score from 17 to 18, the Constitution modifier increases to +4. The character’s Hit Point maximum then increases by 8, in addition to the Hit Points gained for reaching level 8.
-
-#### Tiers of Play
+### Tiers of Play
 
 With each new level, characters acquire new capabilities that equip them to handle greater challenges. As characters advance in level, the tone of the game also changes, and the stakes of the campaign get higher. It’s helpful to think of a character’s (and a campaign’s) arc in terms of four tiers of play, describing the journey from a level 1 character just beginning an adventuring career to the epic heights of level 20. These tiers don't have any rules associated with them; they point to the fact that the play experience evolves as characters gain levels.
 
-##### Tier 1 (Levels 1–4)
+#### Tier 1 (Levels 1–4)
 
 In tier 1, characters are apprentice adventurers, though they are already set apart from the broader populace by virtue of their extraordinary abilities. They learn their starting class features and choose a subclass. The threats they face usually pose a danger to local farmsteads or villages.
 
-##### Tier 2 (Levels 5–10)
+#### Tier 2 (Levels 5–10)
 
 In tier 2, characters are full-fledged adventurers. Spellcasters gain iconic spells such as *Fireball*, *Lightning Bolt*, and *Raise Dead*. Most weapon-focused classes gain the ability to make multiple attacks in a round. The characters now face dangers that threaten cities and kingdoms.
 
-##### Tier 3 (Levels 11–16)
+#### Tier 3 (Levels 11–16)
 
 In tier 3, characters have reached a level of power that makes them special among adventurers. At level 11, many spellcasters learn reality-altering spells. Other characters gain features that allow them to make more attacks or to do more impressive things with those attacks. These adventurers often confront threats to whole regions.
 
-##### Tier 4 (Levels 17–20)
+#### Tier 4 (Levels 17–20)
 
 At tier 4, characters achieve the pinnacle of their class features, becoming heroic archetypes. The fate of the world or even the order of the multiverse might hang in the balance during their adventures.
 
-#### Starting at Higher Levels
+## Starting at Higher Levels
 
 Your GM might start your group's characters at a level higher than 1. It is particularly recommended to start at level 3 if your group is composed of seasoned D&D players.
 
@@ -1216,35 +1216,35 @@ Creating a higher-level character uses the same character-creation steps outline
 
 A GM can use feats as a form of advancement after characters reach level 20 to provide greater power to characters who have no more levels to gain. With this approach, each character gains one feat of their choice for every 30,000 XP the character earns above 355,000 XP. Epic Boon feats are especially appropriate for these bonus feats, but a player can choose any feat for which their level 20 character qualifies.
 
-#### Starting Equipment
+### Starting Equipment
 
 The GM decides whether your character starts with more than the standard equipment for a level 1 character, possibly even one or more magic items. The Starting Equipment at Higher Levels table is a guide for the GM.
 
 Also, check with your GM about what equipment is available for you to buy with your starting money. For example, the firearms described in "Equipment" are too expensive for level 1 characters, but they might be available for purchase if your GM allows them.
 
-#### Multiclassing
+## Multiclassing
 
 Multiclassing allows you to gain levels in multiple classes. With this rule, you have the option of gaining a level in a new class whenever you advance in level instead of gaining a level in your current class. Doing so lets you mix the abilities of those classes to realize a character concept that might not be reflected in a single class.
 
-#### Prerequisites
+### Prerequisites
 
 To qualify for a new class, you must have a score of at least 13 in the primary ability of the new class and your current classes. For example, a Barbarian who decides to multiclass into the Druid class must have Strength and Wisdom scores of 13 or higher, since Strength is the primary ability for Barbarians and Wisdom is the primary ability for Druids.
 
-#### Experience Points
+### Experience Points
 
 The Experience Point cost to gain a level is based on your total character level, not your level in a particular class, as shown in the Character Advancement table in “Character Creation.” For example, if you are a level 6 Cleric / level 1 Fighter, you must gain enough XP to reach level 8 before you can take your second level as a Fighter or your seventh level as a Cleric.
 
-#### Hit Points and Hit Point Dice
+### Hit Points and Hit Point Dice
 
 You gain the Hit Points from your new class as described for levels after 1. You gain the level 1 Hit Points for a class only when your total character level is 1.
 
 Add together the Hit Dice granted by all your classes to form your pool of Hit Dice. If these dice are the same die type, you can pool them together. For example, both the Fighter and the Paladin have a d10 Hit Die, so if you are a level 5 Fighter / level 5 Paladin, you have ten d10 Hit Dice. If your classes give you Hit Dice of different types, track them separately. If you are a level 5 Cleric / level 5 Paladin, for example, you have five d8 Hit Dice and five d10 Hit Dice.
 
-#### Proficiency Bonus
+### Proficiency Bonus
 
 Your Proficiency Bonus is based on your total character level, not your level in a particular class, as shown in the Character Advancement table. For example, if you are a level 3 Fighter / level 2 Rogue, you have the Proficiency Bonus of a level 5 character, which is +3.
 
-#### Proficiencies
+### Proficiencies
 
 When you gain your first level in a class other than your initial class, you gain only some of the new class’s starting proficiencies, as detailed in each class’s description in “Classes.”
 
@@ -1289,9 +1289,7 @@ For example, if you are a level 4 Ranger / level 3 Sorcerer, you count as a leve
 
 **Pact Magic.** If you have the Pact Magic feature from the Warlock class and the Spellcasting feature, you can use the spell slots you gain from Pact Magic to cast spells you have prepared from classes with the Spellcasting feature, and you can use the spell slots you gain from the Spellcasting feature to cast Warlock spells you have prepared.
 
-#### Multiclass Spellcaster:
-
-#### Spell Slots per Spell Level
+##### Multiclass Spellcaster: Spell Slots per Spell Level
 
 | Level | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
 |-------|---|---|---|---|---|---|---|---|---|
@@ -1316,7 +1314,7 @@ For example, if you are a level 4 Ranger / level 3 Sorcerer, you count as a leve
 | 19    | 4 | 3 | 3 | 3 | 3 | 2 | 1 | 1 | 1 |
 | 20    | 4 | 3 | 3 | 3 | 3 | 2 | 2 | 1 | 1 |
 
-#### Trinkets
+## Trinkets
 
 When you make your character, you can roll once on the Trinkets table to gain a Tiny trinket, a simple item lightly touched by mystery. The GM might also use this table. It can help stock a room in a dungeon or fill a creature's pockets.
 
@@ -1424,7 +1422,7 @@ When you make your character, you can roll once on the Trinkets table to gain a 
 | 99 | A wooden box with a ceramic bottom that holds a living worm with a head on each end of its body |
 | 00 | A metal urn containing the ashes of a hero |
 
-### Classes
+# Classes
 
 ## Barbarian
 
@@ -1600,7 +1598,7 @@ You embody primal power. Your Strength and Constitution scores increase by 4, to
 
 ### Barbarian Subclass: Path of the Berserker ---
 
-#### Channel Rage into Violent Fury
+*Channel Rage into Violent Fury*
 
 Barbarians who walk the Path of the Berserker direct their Rage primarily toward violence. Their path is one of untrammelled fury, and they thrill in the chaos of battle as they allow their Rage to seize and empower them.
 
@@ -1762,11 +1760,11 @@ You gain an Epic Boon feat (see "Feats") or another feat of your choice for whic
 
 You have mastered two of the Words of Creation: the words of life and death. You therefore always have the *Power Word Heal* and *Power Word Kill* spells prepared. When you cast either spell, you can target a second creature with it if that creature is within 10 feet of the first target.
 
-## Bard Spell List
+### Bard Spell List
 
 This section presents the Bard spell list. The spells are organized by spell level and then alphabetized, and each spell's school of magic is listed. In the Special column, *C* means the spell requires Concentration, *R* means it's a Ritual, and *M* means it requires a specific Material component.
 
-### Cantrips (Level 0 Bard Spells)
+#### Cantrips (Level 0 Bard Spells)
 
 | Spell                 | School        | Special |
 |-----------------------|---------------|---------|
@@ -1776,9 +1774,6 @@ This section presents the Bard spell list. The spells are organized by spell lev
 | <i>Mending</i>        | Transmutation | —       |
 | <i>Message</i>        | Transmutation | —       |
 | <i>Minor Illusion</i> | Illusion      | —       |
-
-| Spell                   | School        | Special |
-|-------------------------|---------------|---------|
 | <i>Prestidigitation</i> | Transmutation | —       |
 | <i>Starry Wisp</i>      | Evocation     | —       |
 | <i>True Strike</i>      | Divination    | —       |
@@ -1950,7 +1945,7 @@ This section presents the Bard spell list. The spells are organized by spell lev
 
 ### Bard Subclass: College of Lore
 
-#### *Plumb the Depths of Magical Knowledge*
+*Plumb the Depths of Magical Knowledge*
 
 Bards of the College of Lore collect spells and secrets from diverse sources, such as scholarly tomes, mystical rites, and peasant tales. The college's members gather in libraries and universities to share their lore with one another. They also meet at festivals or affairs of state, where they can expose corruption, unravel lies, and poke fun at self-important figures of authority.
 
@@ -2114,11 +2109,11 @@ You gain an Epic Boon feat (see "Feats") or another feat of your choice for whic
 
 You can call on even more powerful divine intervention. When you use your Divine Intervention feature, you can choose *Wish* when you select a spell. If you do so, you can't use Divine Intervention again until you finish 2d4 Long Rests.
 
-## Cleric Spell List
+### Cleric Spell List
 
 This section presents the Cleric spell list. The spells are organized by spell level and then alphabetized, and each spell's school of magic is listed. In the Special column, *C* means the spell requires Concentration, *R* means it's a Ritual, and *M* means it requires a specific Material component.
 
-### Cantips (Level 0 Cleric Spells)
+#### Cantips (Level 0 Cleric Spells)
 
 | Spell           | School        | Special |
 |-----------------|---------------|---------|
@@ -2279,7 +2274,7 @@ This section presents the Cleric spell list. The spells are organized by spell l
 
 ### Cleric Subclass: Life Domain
 
-#### *Soothe the Hurts of the World*
+*Soothe the Hurts of the World*
 
 The Life Domain focuses on the positive energy that helps sustain all life in the multiverse. Clerics who tap into this domain are masters of healing, using that life force to cure many hurts.
 
@@ -2499,7 +2494,7 @@ The vitality of nature constantly blooms within you, granting you the following 
 
 This section presents the Druid spell list. The spells are organized by spell level and then alphabetized, and each spell's school of magic is listed. In the Special column, *C* means the spell requires Concentration, *R* means it's a Ritual, and *M* means it requires a specific Material component.
 
-### Cantrips (Level 0 Druid Spells)
+#### Cantrips (Level 0 Druid Spells)
 
 | Spell                  | School        | Special |
 |------------------------|---------------|---------|
@@ -2673,9 +2668,9 @@ This section presents the Druid spell list. The spells are organized by spell le
 | <i>Storm of Vengeance</i> | Conjuration   | C       |
 | <i>True Resurrection</i>  | Necromancy    | M       |
 
-#### Druid Subclass: Circle of the Land
+### Druid Subclass: Circle of the Land
 
-#### *Celebrate Connection to the Natural World*
+*Celebrate Connection to the Natural World*
 
 The Circle of the Land comprises mystics and sages who safeguard ancient knowledge and rites. These Druids meet within sacred circles of trees or standing stones to whisper primal secrets in Druidic. The circle's wisest members preside as the chief priests of their communities.
 
@@ -2877,7 +2872,7 @@ You can attack four times instead of once whenever you take the Attack action on
 
 ### Fighter Subclass: Champion
 
-#### *Pursue Physical Excellence in Combat*
+*Pursue Physical Excellence in Combat*
 
 A Champion focuses on the development of martial prowess in a relentless pursuit of victory. Champions combine rigorous training with physical excellence to deal devastating blows, withstand peril, and garner glory. Whether in athletic contests or bloody battle, Champions strive for the crown of the victor.
 
@@ -2926,7 +2921,7 @@ You attain the pinnacle of resilience in battle, giving you these benefits.
 | Armor Training             | None                                                                                                                                                       |
 | Starting Equipment         | Choose A or B: (A) Spear, 5 Daggers, Artisan's Tools or Musical Instrument chosen for the tool proficiency above, Explorer's Pack, and 11 GP; or (B) 50 GP |
 
-#### Monk Features
+### Monk Features
 
 | Level | Proficiency Bonus | Class Features                                       | Martial Arts | Focus Points | Unarmored Movement |
 |-------|-------------------|------------------------------------------------------|--------------|--------------|--------------------|
@@ -2982,11 +2977,11 @@ You gain the following benefits while you are unarmed or wielding only Monk weap
 
 **Dexterous Attacks.** You can use your Dexterity modifier instead of your Strength modifier for the attack and damage rolls of your Unarmed Strikes and Monk weapons. In addition, when you use the Grapple or Shove option of your Unarmed Strike, you can use your Dexterity modifier instead of your Strength modifier to determine the save DC.
 
-##### Level 1: Unarmored Defense
+#### Level 1: Unarmored Defense
 
 While you aren't wearing armor or wielding a Shield, your base Armor Class equals 10 plus your Dexterity and Wisdom modifiers.
 
-##### Level 2: Monk's Focus
+#### Level 2: Monk's Focus
 
 Your focus and martial training allow you to harness a well of extraordinary energy within yourself. This energy is represented by Focus Points. Your Monk level determines the number of points you have, as shown in the Focus Points column of the Monk Features table.
 
@@ -3002,7 +2997,7 @@ Some features that use Focus Points require your target to make a saving throw. 
 
 **Step of the Wind.** You can take the Dash action as a Bonus Action. Alternatively, you can expend 1 Focus Point to take both the Disengage and Dash actions as a Bonus Action, and your jump distance is doubled for the turn.
 
-##### Level 2: Unarmored Movement
+#### Level 2: Unarmored Movement
 
 Your speed increases by 10 feet while you aren't wearing armor or wielding a Shield. This bonus increases when you reach certain Monk levels, as shown on the Monk Features table.
 
@@ -3096,7 +3091,7 @@ You have developed your body and mind to new heights. Your Dexterity and Wisdom 
 
 ### Monk Subclass: Warrior of the Open Hand
 
-#### *Master Unarmed Combat Techniques*
+*Master Unarmed Combat Techniques*
 
 Warriors of the Open Hand are masters of unarmed combat. They learn techniques to push and trip their opponents and manipulate their own energy to protect themselves from harm.
 
@@ -3166,6 +3161,14 @@ You can have only one creature under the effect of this feature at a time. You c
 | 19    | +6                   | Epic Boon                                  | 3                   | 15                 | 4                             | 3 | 3 | 3 | 2 |
 | 20    | +6                   | Subclass feature                           | 3                   | 15                 | 4                             | 3 | 3 | 3 | 2 |
 
+### BREAKING YOUR OATH
+
+A Paladin tries to hold to the highest standards of conduct, but even the most dedicated are fallible. Sometimes a Paladin transgresses their oath.
+
+A Paladin who has broken a vow typically seeks absolution, spending an all-night vigil as a sign of penitence or undertaking a fast. After a rite of forgiveness, the Paladin starts fresh.
+
+If your Paladin unrepentantly violates their oath, talk to your GM. Your Paladin should probably take a more appropriate subclass or even abandon the class and adopt another one.
+
 ### Becoming a Paladin ...
 
 #### As a Level 1 Character
@@ -3231,14 +3234,6 @@ You can channel divine energy directly from the Outer Planes, using it to fuel m
 
 You can use this class’s Channel Divinity twice. You regain one of its expended uses when you finish a Short Rest, and you regain all expended uses when you finish a Long Rest. You gain an additional use when you reach Paladin level 11.
 
-#### BREAKING YOUR OATH
-
-A Paladin tries to hold to the highest standards of conduct, but even the most dedicated are fallible. Sometimes a Paladin transgresses their oath.
-
-A Paladin who has broken a vow typically seeks absolution, spending an all-night vigil as a sign of penitence or undertaking a fast. After a rite of forgiveness, the Paladin starts fresh.
-
-If your Paladin unrepentantly violates their oath, talk to your GM. Your Paladin should probably take a more appropriate subclass or even abandon the class and adopt another one.
-
 If a Channel Divinity effect requires a saving throw, the DC equals the spell save DC from this class's Spellcasting feature.
 
 **Divine Sense.** As a Bonus Action, you can open your awareness to detect Celestials, Fiends, and Undead. For the next 10 minutes or until you have the Incapacitated condition, you know the location of any creature of those types within 60 feet of yourself, and you know its creature type. Within the same radius, you also detect the presence of any place or object that has been consecrated or desecrated, as with the *Hallow* spell.
@@ -3295,7 +3290,7 @@ Your Aura of Protection is now a 30-foot Emanation.
 
 You gain an Epic Boon feat (see "Feats") or another feat of your choice for which you qualify. Boon of Truesight is recommended.
 
-## Paladin Spell List ---
+### Paladin Spell List ---
 
 This section presents the Paladin spell list. The spells are organized by spell level and then alphabetized, and each spell's school of magic is listed. In the Special column, *C* means the spell requires Concentration, *R* means it's a Ritual, and *M* means it requires a specific Material component.
 
@@ -3572,7 +3567,7 @@ You gain an Epic Boon feat (see “Feats”) or another feat of your choice for 
 
 The damage die of your *Hunter’s Mark* is a d10 rather than a d6.
 
-## Ranger Spell List
+### Ranger Spell List
 
 This section presents the Ranger spell list. The spells are organized by spell level and then alphabetized, and each spell's school of magic is listed. In the Special column, *C* means the spell requires Concentration, *R* means it's a Ritual, and *M* means it requires a specific Material component.
 
@@ -3651,7 +3646,7 @@ This section presents the Ranger spell list. The spells are organized by spell l
 
 ### Ranger Subclass: Hunter
 
-#### Protect Nature and People from Destruction
+*Protect Nature and People from Destruction*
 
 You stalk prey in the wilds and elsewhere, using your abilities as a Hunter to protect nature and people everywhere from forces that would destroy them.
 
@@ -3839,7 +3834,7 @@ Once you use this feature, you can’t use it again until you finish a Short or 
 
 ### Rogue Subclass: Thief
 
-#### Hunt for Treasure as a Classic Adventurer
+*Hunt for Treasure as a Classic Adventurer*
 
 A mix of burglar, treasure hunter, and explorer, you are the epitome of an adventurer. In addition to improving your agility and stealth, you gain abilities useful for delving into ruins and getting maximum benefit from the magic items you find there.
 
@@ -3980,7 +3975,7 @@ You can use your Sorcery Points to fuel the options below, along with other feat
 
 Any spell slot you create with this feature vanishes when you finish a Long Rest.
 
-#### Creating Spell Slots
+##### Creating Spell Slots
 
 | Spell Slot Level | Sorcery Point Cost | Min. Sorcerer Level |
 |------------------|--------------------|---------------------|
@@ -4024,23 +4019,23 @@ You gain an Epic Boon feat (see "Feats") or another feat of your choice for whic
 
 While your Innate Sorcery feature is active, you can use one Metamagic option on each of your turns without spending Sorcery Points on it.
 
-#### Metamagic Options
+### Metamagic Options
 
 The following options are available to your Metamagic feature. The options are presented in alphabetical order.
 
-##### Careful Spell
+#### Careful Spell
 
 *Cost: 1 Sorcery Point*
 
 When you cast a spell that forces other creatures to make a saving throw, you can protect some of those creatures from the spell's full force. To do so, spend 1 Sorcery Point and choose a number of those creatures up to your Charisma modifier (minimum of one creature). A chosen creature automatically succeeds on its saving throw against the spell, and it takes no damage if it would normally take half damage on a successful save.
 
-##### Distant Spell
+#### Distant Spell
 
 *Cost: 1 Sorcery Point*
 
 When you cast a spell that has a range of at least 5 feet, you can spend 1 Sorcery Point to double the spell's range. Or when you cast a spell that has a range of Touch, you can spend 1 Sorcery Point to make the spell's range 30 feet.
 
-##### Empowered Spell
+#### Empowered Spell
 
 *Cost: 1 Sorcery Point*
 
@@ -4048,7 +4043,7 @@ When you roll damage for a spell, you can spend 1 Sorcery Point to reroll a numb
 
 You can use Empowered Spell even if you've already used a different Metamagic option during the casting of the spell.
 
-##### Extended Spell
+#### Extended Spell
 
 *Cost: 1 Sorcery Point*
 
@@ -4056,19 +4051,19 @@ When you cast a spell that has a duration of 1 minute or longer, you can spend 1
 
 If the affected spell requires Concentration, you have Advantage on any saving throw you make to maintain that Concentration.
 
-##### Heightened Spell
+#### Heightened Spell
 
 *Cost: 2 Sorcery Points*
 
 When you cast a spell that forces a creature to make a saving throw, you can spend 2 Sorcery Points to give one target of the spell Disadvantage on saves against the spell.
 
-##### Quickened Spell
+#### Quickened Spell
 
 *Cost: 2 Sorcery Points*
 
 When you cast a spell that has a casting time of an action, you can spend 2 Sorcery Points to change the casting time to a Bonus Action for this casting. You can't modify a spell in this way if you've already cast a level 1+ spell on the current turn, nor can you cast a level 1+ spell on this turn after modifying a spell in this way.
 
-##### Seeking Spell
+#### Seeking Spell
 
 *Cost: 1 Sorcery Point*
 
@@ -4076,19 +4071,19 @@ If you make an attack roll for a spell and miss, you can spend 1 Sorcery Point t
 
 You can use Seeking Spell even if you've already used a different Metamagic option during the casting of the spell.
 
-##### Subtle Spell
+#### Subtle Spell
 
 *Cost: 1 Sorcery Point*
 
 When you cast a spell, you can spend 1 Sorcery Point to cast it without any Verbal, Somatic, or Material components, except Material components that are consumed by the spell or that have a cost specified in the spell.
 
-##### Transmuted Spell
+#### Transmuted Spell
 
 *Cost: 1 Sorcery Point*
 
 When you cast a spell that deals a type of damage from the following list, you can spend 1 Sorcery Point to change that damage type to one of the other listed types: Acid, Cold, Fire, Lightning, Poison, Thunder.
 
-##### Twinned Spell
+#### Twinned Spell
 
 *Cost: 1 Sorcery Point*
 
@@ -4098,7 +4093,7 @@ When you cast a spell, such as *Charm Person*, that can be cast with a higher-le
 
 This section presents the Sorcerer spell list. The spells are organized by spell level and then alphabetized, and each spell's school of magic is listed. In the Special column, *C* means the spell requires Concentration, *R* means it's a Ritual, and *M* means it requires a specific Material component.
 
-### Cantips (Level 0 Sorcerer Spells)
+#### Cantips (Level 0 Sorcerer Spells)
 
 | Spell                   | School        | Special |
 |-------------------------|---------------|---------|
@@ -4288,7 +4283,7 @@ This section presents the Sorcerer spell list. The spells are organized by spell
 
 ### Sorcerer Subclass: Draconic Sorcery
 
-#### *Breathe the Magic of Dragons*
+*Breathe the Magic of Dragons*
 
 Your innate magic comes from the gift of a dragon. Perhaps an ancient dragon facing death bequeathed some of its magical power to you or your ancestor. You might have absorbed magic from a site infused with dragons' power. Or perhaps you handled a treasure taken from a dragon's hoard that was steeped in draconic power. Or you might have a dragon for an ancestor.
 
@@ -4456,11 +4451,11 @@ You gain an Epic Boon feat (see "Feats") or another feat of your choice for whic
 
 When you use your Magical Cunning feature, you regain all your expended Pact Magic spell slots.
 
-#### Eldritch Invocation Options ---
+### Eldritch Invocation Options ---
 
 Eldritch Invocation options appear in alphabetical order.
 
-##### Agonizing Blast
+#### Agonizing Blast
 
 *Prerequisite: Level 2+ Warlock, a Warlock Cantrip That Deals Damage*
 
@@ -4468,39 +4463,39 @@ Choose one of your known Warlock cantrips that deals damage. You can add your Ch
 
 **Repeatable.** You can gain this invocation more than once. Each time you do so, choose a different eligible cantrip.
 
-##### Armor of Shadows
+#### Armor of Shadows
 
 You can cast *Mage Armor* on yourself without expending a spell slot.
 
-##### Ascendant Step
+#### Ascendant Step
 
 *Prerequisite: Level 5+ Warlock*
 
 You can cast *Levitate* on yourself without expending a spell slot.
 
-##### Devil's Sight
+#### Devil's Sight
 
 *Prerequisite: Level 2+ Warlock*
 
 You can see normally in Dim Light and Darkness—both magical and nonmagical—within 120 feet of yourself.
 
-##### Devouring Blade
+#### Devouring Blade
 
 *Prerequisite: Level 12+ Warlock, Thirsting Blade Invocation*
 
 The Extra Attack of your Thirsting Blade invocation confers two extra attacks rather than one.
 
-##### Eldritch Mind
+#### Eldritch Mind
 
 You have Advantage on Constitution saving throws that you make to maintain Concentration.
 
-##### Eldritch Smite
+#### Eldritch Smite
 
 *Prerequisite: Level 5+ Warlock, Pact of the Blade Invocation*
 
 Once per turn when you hit a creature with your pact weapon, you can expend a Pact Magic spell slot to deal an extra 1d8 Force damage to the target, plus another 1d8 per level of the spell slot, and you can give the target the Prone condition if it is Huge or smaller.
 
-##### Eldritch Spear
+#### Eldritch Spear
 
 *Prerequisite: Level 2+ Warlock, a Warlock Cantrip That Deals Damage*
 
@@ -4508,13 +4503,13 @@ Choose one of your known Warlock cantrips that deals damage and has a range of 1
 
 **Repeatable.** You can gain this invocation more than once. Each time you do so, choose a different eligible cantrip.
 
-##### Fiendish Vigor
+#### Fiendish Vigor
 
 *Prerequisite: Level 2+ Warlock*
 
 You can cast *False Life* on yourself without expending a spell slot. When you cast the spell with this feature, you don't roll the die for the Temporary Hit Points; you automatically get the highest number on the die.
 
-##### Gaze of Two Minds
+#### Gaze of Two Minds
 
 *Prerequisite: Level 5+ Warlock*
 
@@ -4522,7 +4517,7 @@ You can use a Bonus Action to touch a willing creature and perceive through its 
 
 While perceiving through the other creature's senses, you benefit from any special senses possessed by that creature, and you can cast spells as if you were in your space or the other creature's space if the two of you are within 60 feet of each other.
 
-##### Gift of the Depths
+#### Gift of the Depths
 
 *Prerequisite: Level 5+ Warlock*
 
@@ -4530,7 +4525,7 @@ You can breathe underwater, and you gain a Swim Speed equal to your Speed.
 
 You can also cast *Water Breathing* once without expending a spell slot. You regain the ability to cast it in this way again when you finish a Long Rest.
 
-##### Gift of the Protectors
+#### Gift of the Protectors
 
 *Prerequisite: Level 9+ Warlock, Pact of the Tome Invocation*
 
@@ -4540,7 +4535,7 @@ When any creature whose name is on the page is reduced to 0 Hit Points but not k
 
 As a Magic action, you can erase a name on the page by touching it.
 
-##### Investment of the Chain Master
+#### Investment of the Chain Master
 
 *Prerequisite: Level 5+ Warlock, Pact of the Chain Invocation*
 
@@ -4556,7 +4551,7 @@ When you cast *Find Familiar*, you infuse the summoned familiar with a measure o
 
 **Resistance.** When the familiar takes damage, you can take a Reaction to grant it Resistance against that damage.
 
-##### Lessons of the First Ones
+#### Lessons of the First Ones
 
 *Prerequisite: Level 2+ Warlock*
 
@@ -4564,43 +4559,43 @@ You have received knowledge from an elder entity of the multiverse, allowing you
 
 **Repeatable.** You can gain this invocation more than once. Each time you do so, choose a different Origin feat.
 
-##### Lifedrinker
+#### Lifedrinker
 
 *Prerequisite: Level 9+ Warlock, Pact of the Blade Invocation*
 
 Once per turn when you hit a creature with your pact weapon, you can deal an extra 1d6 Necrotic, Psychic, or Radiant damage (your choice) to the creature, and you can expend one of your Hit Point Dice to roll it and regain a number of Hit Points equal to the roll plus your Constitution modifier (minimum of 1 Hit Point).
 
-##### Mask of Many Faces
+#### Mask of Many Faces
 
 *Prerequisite: Level 2+ Warlock*
 
 You can cast *Disguise Self* without expending a spell slot.
 
-##### Master of Myriad Forms
+#### Master of Myriad Forms
 
 *Prerequisite: Level 5+ Warlock*
 
 You can cast *Alter Self* without expending a spell slot.
 
-##### Misty Visions
+#### Misty Visions
 
 *Prerequisite: Level 2+ Warlock*
 
 You can cast *Silent Image* without expending a spell slot.
 
-##### One with Shadows
+#### One with Shadows
 
 *Prerequisite: Level 5+ Warlock*
 
 While you're in an area of Dim Light or Darkness, you can cast *Invisibility* on yourself without expending a spell slot.
 
-##### Otherworldly Leap
+#### Otherworldly Leap
 
 *Prerequisite: Level 2+ Warlock*
 
 You can cast *Jump* on yourself without expending a spell slot.
 
-##### Pact of the Blade
+#### Pact of the Blade
 
 As a Bonus Action, you can conjure a pact weapon in your hand—a Simple or Martial Melee weapon of your choice with which you bond—or create a bond with a magic weapon you touch; you can't bond with a magic weapon if someone else is attuned to it or another Warlock is bonded with it. Until the bond ends, you have proficiency with the weapon, and you can use it as a Spellcasting Focus.
 
@@ -4608,7 +4603,7 @@ Whenever you attack with the bonded weapon, you can use your Charisma modifier f
 
 Your bond with the weapon ends if you use this feature's Bonus Action again, if the weapon is more than 5 feet away from you for 1 minute or more, or if you die. A conjured weapon disappears when the bond ends.
 
-##### Pact of the Chain
+#### Pact of the Chain
 
 You learn the *Find Familiar* spell and can cast it as a Magic action without expending a spell slot.
 
@@ -4616,7 +4611,7 @@ When you cast the spell, you choose one of the normal forms for your familiar or
 
 Additionally, when you take the Attack action, you can forgo one of your own attacks to allow your familiar to make one attack of its own with its Reaction.
 
-##### Pact of the Tome
+#### Pact of the Tome
 
 Stitching together strands of shadow, you conjure forth a book in your hand at the end of a Short or Long Rest. This *Book of Shadows* (you determine its appearance) contains eldritch magic that only you can access, granting you the benefits below. The book disappears if you conjure another book with this feature or if you die.
 
@@ -4624,7 +4619,7 @@ Stitching together strands of shadow, you conjure forth a book in your hand at t
 
 **Spellcasting Focus.** You can use the book as a Spellcasting Focus.
 
-##### Repelling Blast
+#### Repelling Blast
 
 *Prerequisite: Level 2+ Warlock, a Warlock Cantrip That Deals Damage via an Attack Roll*
 
@@ -4632,35 +4627,35 @@ Choose one of your known Warlock cantrips that requires an attack roll. When you
 
 **Repeatable.** You can gain this invocation more than once. Each time you do so, choose a different eligible cantrip.
 
-##### Thirsting Blade
+#### Thirsting Blade
 
 *Prerequisite: Level 5+ Warlock, Pact of the Blade Invocation*
 
 You gain the Extra Attack feature for your pact weapon only. With that feature, you can attack twice with the weapon instead of once when you take the Attack action on your turn.
 
-##### Visions of Distant Realms
+#### Visions of Distant Realms
 
 *Prerequisite: Level 9+ Warlock*
 
 You can cast *Arcane Eye* without expending a spell slot.
 
-##### Whispers of the Grave
+#### Whispers of the Grave
 
 *Prerequisite: Level 7+ Warlock*
 
 You can cast *Speak with Dead* without expending a spell slot.
 
-##### Witch Sight
+#### Witch Sight
 
 *Prerequisite: Level 15+ Warlock*
 
 You have Truesight with a range of 30 feet.
 
-## Warlock Spell List ---
+### Warlock Spell List ---
 
 This section presents the Warlock spell list. The spells are organized by spell level and then alphabetized, and each spell's school of magic is listed. In the Special column, *C* means the spell requires Concentration, *R* means it's a Ritual, and *M* means it requires a specific Material component.
 
-### Cantrips (Level 0 Warlock Spells)
+#### Cantrips (Level 0 Warlock Spells)
 
 | Spell                   | School        | Special |
 |-------------------------|---------------|---------|
@@ -4784,7 +4779,7 @@ This section presents the Warlock spell list. The spells are organized by spell 
 
 ### Warlock Subclass: Fiend Patron
 
-#### *Make a Deal with the Lower Planes*
+*Make a Deal with the Lower Planes*
 
 Your pact draws on the Lower Planes, the realms of perdition. You might forge a bargain with a demon lord, an archdevil, or another fiend that is especially mighty. That patron's aims are evil—the corruption or destruction of all things, ultimately including you—and your path is defined by the extent to which you strive against those aims.
 
@@ -4905,6 +4900,16 @@ If another Wizard feature gives you spells that you always have prepared, those 
 
 **Spellcasting Focus.** You can use an Arcane Focus or your spellbook as a Spellcasting Focus for your Wizard spells.
 
+##### EXPANDING AND REPLACING A SPELLBOOK
+
+The spells you add to your spellbook as you gain levels reflect your ongoing magical research, but you might find other spells during your adventures that you can add to the book. You could discover a Wizard spell on a *Spell Scroll*, for example, and then copy it into your spellbook.
+
+**Copying a Spell into the Book.** When you find a level 1+ Wizard spell, you can copy it into your spellbook if it's of a level you can prepare and if you have time to copy it. For each level of the spell, the transcription takes 2 hours and costs 50 GP. Afterward you can prepare the spell like the other spells in your spellbook.
+
+**Copying the Book.** You can copy a spell from your spellbook into another book. This is like copying a new spell into your spellbook but faster, since you already know how to cast the spell. You need spend only 1 hour and 10 GP for each level of the copied spell.
+
+If you lose your spellbook, you can use the same procedure to transcribe the Wizard spells that you have prepared into a new spellbook. Filling out the remainder of the new book requires you to find new spells to do so. For this reason, many wizards keep a backup spellbook.
+
 #### Level 1: Ritual Adept
 
 You can cast any spell as a Ritual if that spell has the Ritual tag and the spell is in your spellbook. You needn't have the spell prepared, but you must read from the book to cast a spell in this way.
@@ -4922,16 +4927,6 @@ While studying magic, you also specialized in another field of study. Choose one
 #### Level 3: Wizard Subclass
 
 You gain a Wizard subclass of your choice. The Evoker subclass is detailed after this class's description. A subclass is a specialization that grants you features at certain Wizard levels. For the rest of your career, you gain each of your subclass's features that are of your Wizard level or lower.
-
-#### EXPANDING AND REPLACING A SPELLBOOK
-
-The spells you add to your spellbook as you gain levels reflect your ongoing magical research, but you might find other spells during your adventures that you can add to the book. You could discover a Wizard spell on a *Spell Scroll*, for example, and then copy it into your spellbook.
-
-**Copying a Spell into the Book.** When you find a level 1+ Wizard spell, you can copy it into your spellbook if it's of a level you can prepare and if you have time to copy it. For each level of the spell, the transcription takes 2 hours and costs 50 GP. Afterward you can prepare the spell like the other spells in your spellbook.
-
-**Copying the Book.** You can copy a spell from your spellbook into another book. This is like copying a new spell into your spellbook but faster, since you already know how to cast the spell. You need spend only 1 hour and 10 GP for each level of the copied spell.
-
-If you lose your spellbook, you can use the same procedure to transcribe the Wizard spells that you have prepared into a new spellbook. Filling out the remainder of the new book requires you to find new spells to do so. For this reason, many wizards keep a backup spellbook.
 
 #### Level 4: Ability Score Improvement
 
@@ -4955,11 +4950,11 @@ You gain an Epic Boon feat (see "Feats") or another feat of your choice for whic
 
 Choose two level 3 spells in your spellbook as your signature spells. You always have these spells prepared, and you can cast each of them once at level 3 without expending a spell slot. When you do so, you can't cast them in this way again until you finish a Short or Long Rest. To cast either spell at a higher level, you must expend a spell slot.
 
-## Wizard Spell List
+### Wizard Spell List
 
 This section presents the Wizard spell list. The spells are organized by spell level and then alphabetized, and each spell's school of magic is listed. In the Special column, *C* means the spell requires Concentration, *R* means it's a Ritual, and *M* means it requires a specific Material component.
 
-### Cantrips (Level 0 Wizard Spells)
+#### Cantrips (Level 0 Wizard Spells)
 
 | Spell                 | School        | Special |
 |-----------------------|---------------|---------|
@@ -5228,7 +5223,7 @@ This section presents the Wizard spell list. The spells are organized by spell l
 
 ### Wizard Subclass: Evoker
 
-#### Create Explosive Elemental Effects
+*Create Explosive Elemental Effects*
 
 Your studies focus on magic that creates powerful elemental effects such as bitter cold, searing flame, rolling thunder, crackling lightning, and burning acid. Some Evokers find employment in military forces, serving as artillery to blast armies from afar. Others use their power to protect others, while some seek their own gain.
 
@@ -5258,7 +5253,7 @@ The first time you do so, you suffer no adverse effect. If you use this feature 
 
 Each time you use this feature again before finishing a Long Rest, the Necrotic damage per spell level increases by 1d12.
 
-## Character Origins
+# Character Origins
 
 ## Character Backgrounds
 
@@ -5284,7 +5279,7 @@ A background gives your character proficiency in two specified skills.
 
 Each background gives a character proficiency with one tool—either a specific tool or one chosen from the Artisan's Tools category. Tools are detailed in "Equipment."
 
-### Equipment
+#### Equipment
 
 Each background offers a choice between a package of equipment and 50 GP.
 
@@ -5382,7 +5377,7 @@ As a Dragonborn, you have these special traits.
 
 **Draconic Ancestry.** Your lineage stems from a dragon progenitor. Choose the kind of dragon from the Draconic Ancestors table. Your choice affects your Breath Weapon and Damage Resistance traits as well as your appearance.
 
-#### Draconic Ancestors
+##### Draconic Ancestors
 
 | Dragon | Damage Type | Dragon | Damage Type |
 |--------|-------------|--------|-------------|
@@ -5434,15 +5429,15 @@ As an Elf, you have these special traits.
 
 When you reach character levels 3 and 5, you learn a higher-level spell, as shown on the table. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have of the appropriate level.
 
-#### Elven Lineages
+Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the lineage).
+
+##### Elven Lineages
 
 | Lineage  | Level 1                                                                                                                                                           | Level 3             | Level 5                   |
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|---------------------------|
 | Drow     | The range of your Darkvision increases to 120 feet. You also know the <i>Dancing Lights</i> cantrip.                                                              | <i>Faerie Fire</i>  | <i>Darkness</i>           |
 | High Elf | You know the <i>Prestidigitiation</i> cantrip. Whenever you finish a Long Rest, you can replace that cantrip with a different cantrip from the Wizard spell list. | <i>Detect Magic</i> | <i>Misty Step</i>         |
 | Wood Elf | Your Speed increases to 35 feet. You also know the <i>Druidcraft</i> cantrip.                                                                                     | <i>Longstrider</i>  | <i>Pass without Trace</i> |
-
-Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the lineage).
 
 **Fey Ancestry.** You have Advantage on saving throws you make to avoid or end the Charmed condition.
 
@@ -5568,9 +5563,7 @@ When you reach character levels 3 and 5, you learn a higher-level spell, as show
 
 Intelligence, Wisdom, or Charisma is your spell-casting ability for the spells you cast with this trait (choose the ability when you select the legacy).
 
-**Otherworldly Presence.** You know the *Thaumaturgy* cantrip. When you cast it with this trait, the spell uses the same spellcasting ability you use for your Fiendish Legacy trait.
-
-#### Fiendish Legacies
+##### Fiendish Legacies
 
 | Legacy   | Level 1                                                                                  | Level 3                | Level 5                    |
 |----------|------------------------------------------------------------------------------------------|------------------------|----------------------------|
@@ -5578,9 +5571,11 @@ Intelligence, Wisdom, or Charisma is your spell-casting ability for the spells y
 | Chthonic | You have Resistance to Necrotic damage.<br>You also know the <i>Chill Touch</i> cantrip. | <i>False Life</i>      | <i>Ray of Enfeeblement</i> |
 | Infernal | You have Resistance to Fire damage.<br>You also know the <i>Fire Bolt</i> cantrip.       | <i>Hellish Rebuke</i>  | <i>Darkness</i>            |
 
-### Feats
+**Otherworldly Presence.** You know the *Thaumaturgy* cantrip. When you cast it with this trait, the spell uses the same spellcasting ability you use for your Fiendish Legacy trait.
 
-### Feat Descriptions
+# Feats
+
+## Feat Descriptions
 
 The feats that follow are organized by category—Origin, General, Fighting Style, or Epic Boon—and alphabetized in each category.
 
@@ -5596,7 +5591,7 @@ The description of a feat contains the following parts, which are presented afte
 
 **Repeatable.** A feat can be taken only once unless its description states otherwise in a “Repeatable” subsection.
 
-#### Origin Feats
+### Origin Feats
 
 #### Alert
 
@@ -5636,7 +5631,7 @@ You gain proficiency in any combination of three skills or tools of your choice.
 
 **Repeatable.** You can take this feat more than once.
 
-#### General Feats
+### General Feats
 
 #### Ability Score Improvement
 
@@ -5686,7 +5681,7 @@ When you roll damage for an attack you make with a Melee weapon that you are hol
 
 When you make an extra attack as a result of using a weapon that has the Light property, you can add your ability modifier to the damage of that attack if you aren't already adding it to the damage.
 
-#### Epic Boon Feats ---
+### Epic Boon Feats ---
 
 #### Boon of Combat Prowess
 
@@ -5762,15 +5757,21 @@ You gain the following benefits.
 
 **Truesight.** You have Truesight with a range of 60 feet.
 
-## Equipment
+# Equipment
 
-### Coins
+## SELLING EQUIPMENT
+
+Equipment fetches half its cost when sold. In contrast, trade goods and valuables—gems and art objects—retain their full value in the marketplace.
+
+"Magic Items" has prices for magic items.
+
+## Coins
 
 Characters often find coins on their adventures and can spend those coins in shops, inns, and other businesses. Coins come in different denominations based on the relative worth of their material. The Coin Values table lists coins and how much they're worth relative to the Gold Piece, which is the game's main coin. For example, 100 Copper Pieces are worth 1 Gold Piece.
 
 A coin weighs about a third of an ounce, so fifty coins weigh a pound.
 
-### Coin Values
+#### Coin Values
 
 | Coin                | Value in GP |
 |---------------------|-------------|
@@ -5780,7 +5781,7 @@ A coin weighs about a third of an ounce, so fifty coins weigh a pound.
 | Gold Piece (GP)     | 1           |
 | Platinum Piece (PP) | 10          |
 
-### Weapons
+## Weapons
 
 The Weapons table in this section shows the game's main weapons. The table lists the cost and weight of each weapon, as well as the following details:
 
@@ -5794,17 +5795,15 @@ The Weapons table in this section shows the game's main weapons. The table lists
 
 **Mastery.** Each weapon has a mastery property, which is defined in the "Mastery Properties" section. To use that property, you must have a feature that lets you use it.
 
-#### SELLING EQUIPMENT
+### IMPROVISED WEAPONS
 
-Equipment fetches half its cost when sold. In contrast, trade goods and valuables—gems and art objects—retain their full value in the marketplace.
-
-"Magic Items" has prices for magic items.
+If you use an object—such as a table leg, frying pan, or bottle—as a makeshift weapon, see “Improvised Weapons” in “Rules Glossary.” Also see those rules if you wield a weapon in an unusual way, such as using a Ranged weapon to make a melee attack.
 
 ### Weapon Proficiency
 
 Anyone can wield a weapon, but you must have proficiency with it to add your Proficiency Bonus to an attack roll you make with it. A player character's features can provide weapon proficiencies. A monster is proficient with any weapon in its stat block.
 
-#### Properties
+### Properties
 
 Here are definitions of the properties in the Properties column of the Weapons table.
 
@@ -5812,31 +5811,31 @@ Here are definitions of the properties in the Properties column of the Weapons t
 
 You can use a weapon that has the Ammunition property to make a ranged attack only if you have ammunition to fire from it. The type of ammunition required is specified with the weapon's range. Each attack expends one piece of ammunition. Drawing the ammunition is part of the attack (you need a free hand to load a one-handed weapon). After a fight, you can spend 1 minute to recover half the ammunition (round down) you used in the fight; the rest is lost.
 
-##### Finesse
+#### Finesse
 
 When making an attack with a Finesse weapon, use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls.
 
-##### Heavy
+#### Heavy
 
 You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13.
 
-##### Light
+#### Light
 
 When you take the Attack action on your turn and attack with a Light weapon, you can make one extra attack as a Bonus Action later on the same turn. That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative. For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative.
 
-##### Loading
+#### Loading
 
 You can fire only one piece of ammunition from a Loading weapon when you use an action, a Bonus Action, or a Reaction to fire it, regardless of the number of attacks you can normally make.
 
-##### Range
+#### Range
 
 A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range.
 
-##### Reach
+#### Reach
 
 A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it.
 
-##### Thrown
+#### Thrown
 
 If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon.
 
@@ -5848,43 +5847,39 @@ A Two-Handed weapon requires two hands when you attack with it.
 
 A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack.
 
-#### Mastery Properties
+### Mastery Properties
 
 Each weapon has a mastery property, which is usable only by a character who has a feature, such as Weapon Mastery, that unlocks the property for the character. The properties are defined below.
 
-#### IMPROVISED WEAPONS
-
-If you use an object—such as a table leg, frying pan, or bottle—as a makeshift weapon, see “Improvised Weapons” in “Rules Glossary.” Also see those rules if you wield a weapon in an unusual way, such as using a Ranged weapon to make a melee attack.
-
-##### Cleave
+#### Cleave
 
 If you hit a creature with a melee attack roll using this weapon, you can make a melee attack roll with the weapon against a second creature within 5 feet of the first that is also within your reach. On a hit, the second creature takes the weapon's damage, but don't add your ability modifier to that damage unless that modifier is negative. You can make this extra attack only once per turn.
 
-##### Graze
+#### Graze
 
 If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll. This damage is the same type dealt by the weapon, and the damage can be increased only by increasing the ability modifier.
 
-##### Nick
+#### Nick
 
 When you make the extra attack of the Light property, you can make it as part of the Attack action instead of as a Bonus Action. You can make this extra attack only once per turn.
 
-##### Push
+#### Push
 
 If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller.
 
-##### Sap
+#### Sap
 
 If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn.
 
-##### Slow
+#### Slow
 
 If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.
 
-##### Topple
+#### Topple
 
 If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.
 
-##### Vex
+#### Vex
 
 If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.
 
@@ -5935,7 +5930,7 @@ If you hit a creature with this weapon and deal damage to the creature, you have
 | Musket                        | 1d12 Piercing   | Ammunition (Range 40/120; Bullet), Loading, Two-Handed       | Slow    | 10 lb.  | 500 GP |
 | Pistol                        | 1d10 Piercing   | Ammunition (Range 30/90; Bullet), Loading                    | Vex     | 3 lb.   | 250 GP |
 
-### Armor
+## Armor
 
 The Armor table lists the game's main armor. The table includes the cost and weight of armor, as well as the following details:
 
@@ -5947,23 +5942,23 @@ The Armor table lists the game's main armor. The table includes the cost and wei
 
 **Stealth.** If the table shows "Disadvantage" in the Stealth column for an armor type, the wearer has Disadvantage on Dexterity (Stealth) checks.
 
-#### Armor Training
+### Armor Training
 
 Anyone can don armor or hold a Shield, but only those with training can use them effectively, as explained below. A character's class and other features determine the character's armor training. A monster has training with any armor in its stat block.
 
-##### Light, Medium, or Heavy Armor
+#### Light, Medium, or Heavy Armor
 
 If you wear Light, Medium, or Heavy armor and lack training with it, you have Disadvantage on any D20 Test that involves Strength or Dexterity, and you can't cast spells.
 
-##### Shield
+#### Shield
 
 You gain the Armor Class benefit of a Shield only if you have training with it.
 
-##### One at a Time
+### One at a Time
 
 A creature can wear only one suit of armor at a time and wield only one Shield at a time.
 
-#### Armor
+### Armor
 
 | Armor                                                        | Armor Class (AC)          | Strength | Stealth      | Weight | Cost     |
 |--------------------------------------------------------------|---------------------------|----------|--------------|--------|----------|
@@ -5985,7 +5980,7 @@ A creature can wear only one suit of armor at a time and wield only one Shield a
 | <i>Shield (Utilize Action to Don or Doff)</i>                |                           |          |              |        |          |
 | Shield                                                       | +2                        | —        | —            | 6 lb.  | 10 GP    |
 
-### Tools
+## Tools
 
 A tool helps you make specialized ability checks, craft certain items, or both. A tool's description includes the tool's cost and weight, as well as the following entries:
 
@@ -5994,183 +5989,183 @@ A tool helps you make specialized ability checks, craft certain items, or both. 
 - **Craft.** This entry lists what, if anything, you can craft with the tool. For crafting rules, see "Crafting Nonmagical Items," "Brewing Potions of Healing," and "Scribing Spell Scrolls" later in "Equipment."
 - **Variants.** This entry appears if the tool has variants, which are listed. Each requires a separate proficiency.
 
-#### Tool Proficiency
+### Tool Proficiency
 
 If you have proficiency with a tool, add your Proficiency Bonus to any ability check you make that uses the tool. If you have proficiency in a skill that's used with that check, you have Advantage on the check too.
 
 Your features might give you proficiency with a tool. A monster has proficiency with any tool in its stat block.
 
-#### Artisan's Tools
+### Artisan's Tools
 
 Artisan's Tools are each focused on crafting items and pursuing a trade. Each of these tools requires a separate proficiency.
 
-##### Alchemist's Supplies (50 GP)
+#### Alchemist's Supplies (50 GP)
 
 **Ability:** Intelligence
 **Weight:** 8 lb.  
 **Utilize:** Identify a substance (DC 15), or start a fire (DC 15)  
 **Craft:** Acid, Alchemist's Fire, Component Pouch, Oil, Paper, Perfume
 
-##### Brewer's Supplies (20 GP)
+#### Brewer's Supplies (20 GP)
 
 **Ability:** Intelligence
 **Weight:** 9 lb.  
 **Utilize:** Detect poisoned drink (DC 15), or identify alcohol (DC 10)  
 **Craft:** Antitoxin
 
-##### Calligrapher's Supplies (10 GP)
+#### Calligrapher's Supplies (10 GP)
 
 **Ability:** Dexterity
 **Weight:** 5 lb.  
 **Utilize:** Write text with impressive flourishes that guard against forgery (DC 15)  
 **Craft:** Ink, Spell Scroll
 
-##### Carpenter's Tools (8 GP)
+#### Carpenter's Tools (8 GP)
 
 **Ability:** Strength
 **Weight:** 6 lb.  
 **Utilize:** Seal or pry open a door or container (DC 20)  
 **Craft:** Club, Greatclub, Quarterstaff, Barrel, Chest, Ladder, Pole, Portable Ram, Torch
 
-##### Cartographer's Tools (15 GP)
+#### Cartographer's Tools (15 GP)
 
 **Ability:** Wisdom
 **Weight:** 6 lb.  
 **Utilize:** Draft a map of a small area (DC 15)  
 **Craft:** Map
 
-##### Cobbler's Tools (5 GP)
+#### Cobbler's Tools (5 GP)
 
 **Ability:** Dexterity
 **Weight:** 5 lb.  
 **Utilize:** Modify footwear to give Advantage on the wearer's next Dexterity (Acrobatics) check (DC 10)  
 **Craft:** Climber's Kit
 
-##### Cook's Utensils (1 GP)
+#### Cook's Utensils (1 GP)
 
 **Ability:** Wisdom
 **Weight:** 8 lb.  
 **Utilize:** Improve food's flavor (DC 10), or detect spoiled or poisoned food (DC 15)  
 **Craft:** Rations
 
-##### Glassblower's Tools (30 GP)
+#### Glassblower's Tools (30 GP)
 
 **Ability:** Intelligence
 **Weight:** 5 lb.  
 **Utilize:** Discern what a glass object held in the past 24 hours (DC 15)  
 **Craft:** Glass Bottle, Magnifying Glass, Spyglass, Vial
 
-##### Jeweler's Tools (25 GP)
+#### Jeweler's Tools (25 GP)
 
 **Ability:** Intelligence
 **Weight:** 2 lb.  
 **Utilize:** Discern a gem's value (DC 15)  
 **Craft:** Arcane Focus, Holy Symbol
 
-##### Leatherworker's Tools (5 GP)
+#### Leatherworker's Tools (5 GP)
 
 **Ability:** Dexterity
 **Weight:** 5 lb.  
 **Utilize:** Add a design to a leather item (DC 10)  
 **Craft:** Sling, Whip, Hide Armor, Leather Armor, Studded Leather Armor, Backpack, Crossbow Bolt Case, Map or Scroll Case, Parchment, Pouch, Quiver, Waterskin
 
-##### Mason's Tools (10 GP)
+#### Mason's Tools (10 GP)
 
 **Ability:** Strength
 **Weight:** 8 lb.  
 **Utilize:** Chisel a symbol or hole in stone (DC 10)  
 **Craft:** Block and Tackle
 
-##### Painter's Supplies (10 GP)
+#### Painter's Supplies (10 GP)
 
 **Ability:** Wisdom
 **Weight:** 5 lb.  
 **Utilize:** Paint a recognizable image of something you've seen (DC 10)  
 **Craft:** Druidic Focus, Holy Symbol
 
-##### Potter's Tools (10 GP)
+#### Potter's Tools (10 GP)
 
 **Ability:** Intelligence
 **Weight:** 3 lb.  
 **Utilize:** Discern what a ceramic object held in the past 24 hours (DC 15)  
 **Craft:** Jug, Lamp
 
-##### Smith's Tools (20 GP)
+#### Smith's Tools (20 GP)
 
 **Ability:** Strength
 **Weight:** 8 lb.  
 **Utilize:** Pry open a door or container (DC 20)
 **Craft:** Any Melee weapon (except Club, Greatclub, Quarterstaff, and Whip), Medium armor (except Hide), Heavy armor, Ball Bearings, Bucket, Caltrops, Chain, Crowbar, Firearm Bullets, Grappling Hook, Iron Pot, Iron Spikes, Sling Bullets
 
-##### Tinker's Tools (50 GP)
+#### Tinker's Tools (50 GP)
 
 **Ability:** Dexterity
 **Weight:** 10 lb.
 **Utilize:** Assemble a Tiny item composed of scrap, which falls apart in 1 minute (DC 20)
 **Craft:** Musket, Pistol, Bell, Bullseye Lantern, Flask, Hooded Lantern, Hunting Trap, Lock, Manacles, Mirror, Shovel, Signal Whistle, Tinderbox
 
-##### Weaver's Tools (1 GP)
+#### Weaver's Tools (1 GP)
 
 **Ability:** Dexterity
 **Weight:** 5 lb.
 **Utilize:** Mend a tear in clothing (DC 10), or sew a Tiny design (DC 10)
 **Craft:** Padded Armor, Basket, Bedroll, Blanket, Fine Clothes, Net, Robe, Rope, Sack, String, Tent, Traveler's Clothes
 
-##### Woodcarver's Tools (1 GP)
+#### Woodcarver's Tools (1 GP)
 **Ability:** Dexterity
 **Weight:** 5 lb.
 **Utilize:** Carve a pattern in wood (DC 10)
 **Craft:** Club, Greatclub, Quarterstaff, Ranged weapons (except Pistol, Musket, and Sling), Arcane Focus, Arrows, Bolts, Druidic Focus, Ink Pen, Needles
 
-#### Other Tools
+### Other Tools
 
-##### Disguise Kit (25 GP)
+#### Disguise Kit (25 GP)
 **Ability:** Charisma
 **Weight:** 3 lb.
 **Utilize:** Apply makeup (DC 10)
 **Craft:** Costume
 
-##### Forgery Kit (15 GP)
+#### Forgery Kit (15 GP)
 
 **Ability:** Dexterity
 **Weight:** 5 lb.
 **Utilize:** Mimic 10 or fewer words of someone else's handwriting (DC 15), or duplicate a wax seal (DC 20)
 
-##### Gaming Set (Varies)
+#### Gaming Set (Varies)
 
 **Ability:** Wisdom
 **Weight:** —
 **Utilize:** Discern whether someone is cheating (DC 10), or win the game (DC 20)
 **Variants:** Dice (1 SP), dragonchess (1 GP), playing cards (5 SP), three-dragon ante (1 GP)
 
-##### Herbalism Kit (5 GP)
+#### Herbalism Kit (5 GP)
 
 **Ability:** Intelligence
 **Weight:** 3 lb.
 **Utilize:** Identify a plant (DC 10)
 **Craft:** Antitoxin, Candle, Healer's Kit, *Potion of Healing*
 
-##### Musical Instrument (Varies)
+#### Musical Instrument (Varies)
 
 **Ability:** Charisma
 **Weight:** Varies
 **Utilize:** Play a known tune (DC 10), or improvise a song (DC 15)
 **Variants:** Bagpipes (30 GP, 6 lb.), drum (6 GP, 3 lb.), dulcimer (25 GP, 10 lb.), flute (2 GP, 1 lb.), horn (3 GP, 2 lb.), lute (35 GP, 2 lb.), lyre (30 GP, 2 lb.), pan flute (12 GP, 2 lb.), shawm (2 GP, 1 lb.), viol (30 GP, 1 lb.)
 
-##### Navigator's Tools (25 GP)
+#### Navigator's Tools (25 GP)
 
 **Ability:** Wisdom
 **Weight:** 2 lb.
 **Utilize:** Plot a course (DC 10), or determine position by stargazing (DC 15)
 
-### Poisoner's Kit (50 GP)
+#### Poisoner's Kit (50 GP)
 
 **Ability:** Intelligence
 **Weight:** 2 lb.
 **Utilize:** Detect a poisoned object (DC 10)
 **Craft:** Basic Poison
 
-### Thieves' Tools (25 GP)
+#### Thieves' Tools (25 GP)
 
 **Ability:** Dexterity
 **Weight:** 1 lb.
@@ -6180,19 +6175,7 @@ Artisan's Tools are each focused on crafting items and pursuing a trade. Each of
 
 The Adventuring Gear table in this section includes gear that adventurers often find useful. These items are described here in alphabetical order, with an item's price appearing after its name.
 
-### Acid (25 GP)
-
-When you take the Attack action, you can replace one of your attacks with throwing a vial of Acid. Target one creature or object you can see within 20 feet of yourself. The target must succeed on a Dexterity saving throw (DC 8 plus your Dexterity modifier and Proficiency Bonus) or take 2d6 Acid damage.
-
-### Alchemist's Fire (50 GP)
-
-When you take the Attack action, you can replace one of your attacks with throwing a flask of Alchemist's Fire. Target one creature or object you can see within 20 feet of yourself. The target must succeed on a Dexterity saving throw (DC 8 plus your Dexterity modifier and Proficiency Bonus) or take 1d4 Fire damage and start burning (see "Rules Glossary").
-
-### Ammunition (Varies)
-
-Ammunition is required by a weapon that has the Ammunition property. A weapon's description specifies the type of ammunition used by the weapon. The Ammunition table lists the different types and the amount you get when you buy them. The table also lists the item that is typically used to store each type; storage must be bought separately.
-
-## Adventuring Gear
+### Adventuring Gear
 
 | Item                | Weight  | Cost   |
 |---------------------|---------|--------|
@@ -6279,7 +6262,7 @@ Ammunition is required by a weapon that has the Ammunition property. A weapon's 
 | Vial                          | —            | 1 GP     |
 | Waterskin                     | 5 lb. (full) | 2 SP     |
 
-## Ammunition
+### Ammunition
 
 | Type             | Amount | Storage | Weight | Cost |
 |------------------|--------|---------|--------|------|
@@ -6288,6 +6271,18 @@ Ammunition is required by a weapon that has the Ammunition property. A weapon's 
 | Bullets, Firearm | 10     | Pouch   | 2 lb.  | 3 GP |
 | Bullets, Sling   | 20     | Pouch   | 1½ lb. | 4 CP |
 | Needles          | 50     | Pouch   | 1 lb.  | 1 GP |
+
+### Acid (25 GP)
+
+When you take the Attack action, you can replace one of your attacks with throwing a vial of Acid. Target one creature or object you can see within 20 feet of yourself. The target must succeed on a Dexterity saving throw (DC 8 plus your Dexterity modifier and Proficiency Bonus) or take 2d6 Acid damage.
+
+### Alchemist's Fire (50 GP)
+
+When you take the Attack action, you can replace one of your attacks with throwing a flask of Alchemist's Fire. Target one creature or object you can see within 20 feet of yourself. The target must succeed on a Dexterity saving throw (DC 8 plus your Dexterity modifier and Proficiency Bonus) or take 1d4 Fire damage and start burning (see "Rules Glossary").
+
+### Ammunition (Varies)
+
+Ammunition is required by a weapon that has the Ammunition property. A weapon's description specifies the type of ammunition used by the weapon. The Ammunition table lists the different types and the amount you get when you buy them. The table also lists the item that is typically used to store each type; storage must be bought separately.
 
 ### Antitoxin (50 GP)
 
@@ -6661,7 +6656,7 @@ Barding is armor designed for a mount. Any type of armor on the Armor table in "
 
 A saddle comes with a bit, a bridle, reins, and any other equipment needed to use the saddle. A Military Saddle gives Advantage on any ability check you make to remain mounted. An Exotic Saddle is required for riding an aquatic or a flying mount.
 
-### **Mounts and Other Animals**
+#### **Mounts and Other Animals**
 
 | Item          | Carrying Capacity | Cost   |
 |---------------|-------------------|--------|
@@ -6674,7 +6669,7 @@ A saddle comes with a bit, a bridle, reins, and any other equipment needed to us
 | Pony          | 225 lb.           | 30 GP  |
 | Warhorse      | 540 lb.           | 400 GP |
 
-### **Tack, Harness, and Drawn Vehicles**
+#### **Tack, Harness, and Drawn Vehicles**
 
 | Item             | Weight  | Cost   |
 |------------------|---------|--------|
@@ -6694,11 +6689,7 @@ A saddle comes with a bit, a bridle, reins, and any other equipment needed to us
 
 The Airborne and Waterborne Vehicles table provides statistics for various types of large vehicles. The following notes apply.
 
-### **Speed**
-
-A ship sailing against a strong wind moves at half speed. In a dead calm (no wind), waterborne ships can't move under sail and must be rowed. Keelboats and Rowboats are used on lakes and rivers. If going downstream, add the speed of the current (typically 3 miles per hour) to the speed of the vehicle. These vehicles can't be rowed against any significant current, but they can be pulled upstream by draft animals on the shores. A Rowboat can be carried and weighs 100 pounds.
-
-## Airborne and Waterborne Vehicles
+#### Airborne and Waterborne Vehicles
 
 | Ship         | Speed  | Crew | Passengers | Cargo (Tons) | AC | HP  | Damage Threshold | Cost      |
 |--------------|--------|------|------------|--------------|----|-----|------------------|-----------|
@@ -6710,19 +6701,23 @@ A ship sailing against a strong wind moves at half speed. In a dead calm (no win
 | Sailing Ship | 2 mph  | 20   | 20         | 100          | 15 | 300 | 15               | 10,000 GP |
 | Warship      | 2½ mph | 60   | 60         | 200          | 15 | 500 | 20               | 25,000 GP |
 
-### Crew
+#### **Speed**
+
+A ship sailing against a strong wind moves at half speed. In a dead calm (no wind), waterborne ships can't move under sail and must be rowed. Keelboats and Rowboats are used on lakes and rivers. If going downstream, add the speed of the current (typically 3 miles per hour) to the speed of the vehicle. These vehicles can't be rowed against any significant current, but they can be pulled upstream by draft animals on the shores. A Rowboat can be carried and weighs 100 pounds.
+
+#### Crew
 
 A ship larger than a Keelboat or Rowboat needs a crew of skilled hirelings (see “Hirelings” later in “Equipment”) to function. The minimum number of skilled hirelings needed to crew a ship depends on the type of ship, as shown in the table.
 
-### Passengers
+#### Passengers
 
 The table lists the number of Small and Medium passengers the ship can accommodate using hammocks. A ship outfitted with private accommodations can carry one-fifth as many passengers. A passenger usually pays 5 SP per day for a hammock, but prices can vary from ship to ship. A small private cabin usually costs 2 GP per day.
 
-### Damage Threshold
+#### Damage Threshold
 
 If a vehicle has a damage threshold (see “Rules Glossary”), it’s noted in the table.
 
-### Ship Repair
+#### Ship Repair
 
 Repairs to a damaged ship can be made while the vessel is berthed. Repairing 1 Hit Point of damage requires 1 day and costs 20 GP for materials and labor. If the repairs are made in a location where supplies and skilled labor are abundant, such as a city shipyard, the repair time and cost are halved.
 
@@ -6827,29 +6822,29 @@ Wearing or experimenting with an item can also offer hints about its properties.
 
 Some magic items require a creature to form a bond—called Attunement—with them before the creature can use an item’s magical properties. Without becoming attuned to an item that requires Attunement, you gain only its nonmagical benefits unless its description states otherwise. For example, a magic Shield that requires Attunement provides the benefits of a normal Shield if you aren’t attuned to it, but none of its magical properties.
 
-### Attune during a Short Rest
+#### Attune during a Short Rest
 
 Attuning to an item requires you to spend a Short Rest focused on only that item while being in physical contact with it (this can’t be the same Short Rest used to learn the item’s properties). This focus can take the form of weapon practice (for a Weapon), meditation (for a Wand), or some other appropriate activity. If the Short Rest is interrupted, the Attunement attempt fails. Otherwise, at the end of the Short Rest, you’re attuned to the magic item and can access its full magical capabilities.
 
-### No More Than Three Items
+#### No More Than Three Items
 
 You can be attuned to no more than three magic items at a time. Any attempt to attune to a fourth item fails; you must end your Attunement to an item first. Additionally, you can’t attune to more than one copy of an item. For example, you can’t attune to more than one *Ring of Protection* at a time.
 
-### Ending Attunement
+#### Ending Attunement
 
 Your Attunement to an item ends if you no longer satisfy the prerequisites for Attunement, if the item has been more than 100 feet away for at least 24 hours, if you die, or if another creature attunes to the item. You can also voluntarily end Attunement by spending another Short Rest focused on the item unless the item is cursed.
 
-## Wearing and Wielding Items
+### Wearing and Wielding Items
 
 Using a magic item's properties might mean wearing or wielding it. A magic item meant to be worn must be donned in the intended fashion: boots go on feet, gloves on hands, hats and helmets on a head, and rings on a finger. Magic armor must be donned, a Shield strapped to the arm, a cloak fastened about the shoulders. A weapon must be held.
 
 In most cases, a magic item that's meant to be worn can fit a creature regardless of size or build. Magic garments are made to be easily adjustable, or they magically adjust themselves to the wearer.
 
-## Multiple Items of the Same Kind
+#### Multiple Items of the Same Kind
 
 You can't wear more than one of certain magic items. You can't normally wear more than one pair of footwear, one pair of gloves or gauntlets, one pair of bracers, one suit of armor, one item of headwear, or one cloak. The GM might make exceptions.
 
-## Paired Items
+#### Paired Items
 
 Items that come in pairs—such as boots, bracers, gauntlets, and gloves—impart their benefits only if both items of the pair are worn. For example, a character wearing a *Boot of Striding and Springing* on one foot and a *Boot of Elvenkind* on the other foot gains no benefit from either.
 
@@ -6857,17 +6852,17 @@ Items that come in pairs—such as boots, bracers, gauntlets, and gloves—impar
 
 To craft a nonmagical item, you need tools, raw materials, and time, each of which is detailed below. If you meet the requirements, you make the item, and you can use it or sell it at its normal price.
 
-## Tools
+### Tools
 
 The "Tools" section of "Equipment" lists which tools are required to make certain items. The GM assigns required tools for items not listed there.
 
 You must use the required tool to make an item and have proficiency with that tool. Anyone who helps you must also have proficiency with it.
 
-## Raw Materials
+### Raw Materials
 
 To make an item, you need raw materials worth half its purchase cost (round down). For example, you need 750 GP of raw materials to make Plate Armor, which sells for 1,500 GP. The GM determines whether appropriate raw materials are available.
 
-## Time
+### Time
 
 To determine how many days (working 8 hours a day) it takes to make an item, divide its purchase cost in GP by 10 (round a fraction up to a day). For example, you need 5 days to make a Heavy Crossbow, which sells for 50 GP.
 
@@ -6883,19 +6878,19 @@ A character who has proficiency with the Herbalism Kit can create a *Potion of H
 
 A spellcaster can transfer a spell to a scroll and create a *Spell Scroll*, using the rules below.
 
-## Time and Cost
+### Time and Cost
 
 Scribing a scroll takes an amount of time and money based on the level of the spell, as shown in the Spell Scroll Costs table. For each day of inscription, you must work for 8 hours. If a scroll requires multiple days, those days needn't be consecutive.
 
-## Prerequisites for the Scribe
+### Prerequisites for the Scribe
 
 To scribe a scroll, you must have proficiency in the Arcana skill or with Calligrapher's Supplies and have the spell prepared on each day of the inscription. You must also have at hand any Material components required by the spell; if the spell consumes its Material components, they are consumed only when you complete the scroll. The scroll's spell uses your spell save DC and spell attack bonus.
 
-## Cantrips
+### Cantrips
 
 If the scribed spell is a cantrip, the version on the scroll works as if the caster were your level.
 
-## Spell Scroll Costs
+#### Spell Scroll Costs
 
 | Spell Level | Time     | Cost      |
 |-------------|----------|-----------|
@@ -6916,11 +6911,11 @@ If the scribed spell is a cantrip, the version on the scroll works as if the cas
 
 Before you can cast a spell, you must have the spell prepared in your mind or have access to the spell from a magic item, such as a *Spell Scroll*. Your features specify which spells you have access to, if any; whether you always have certain spells prepared; and whether you can change the list of spells you have prepared.
 
-## Preparing Spells
+### Preparing Spells
 
 If you have a list of level 1+ spells you prepare, your spellcasting feature specifies when you can change the list and the number of spells you can change, as summarized in the Spell Preparation by Class table.
 
-### Spell Preparation by Class
+#### Spell Preparation by Class
 
 | Class    | Change When You ... | Number of Spells |
 |----------|---------------------|------------------|
@@ -6935,7 +6930,7 @@ If you have a list of level 1+ spells you prepare, your spellcasting feature spe
 
 Most spellcasting monsters don't change their lists of prepared spells, but the GM is free to alter them.
 
-## Always-Prepared Spells
+### Always-Prepared Spells
 
 Certain features might give you a spell that you always have prepared. If you also have a list of prepared spells that you can change, a spell that you always have prepared doesn't count against the number of spells on that list.
 
@@ -6947,11 +6942,11 @@ Each spell description has a series of entries that provide the details needed t
 
 You must have training with any armor you are wearing to cast spells while wearing it. You are otherwise too hampered by the armor for spellcasting.
 
-## Spell Level
+### Spell Level
 
 Every spell has a level from 0 to 9, which is indicated in a spell's description. A spell's level is an indicator of how powerful it is. Cantrips—simple spells that can be cast almost by rote—are level 0. The rules for each spellcasting class say when its members gain access to spells of certain levels.
 
-## Spell Slots
+#### Spell Slots
 
 Spellcasting is taxing, so a spellcaster can cast only a limited number of level 1+ spells before resting. Spell slots are the main way a spellcaster's magical potential is represented. Each spellcasting class gives its members a limited number of spell slots of certain spell levels. For example, a level 3 Wizard has four level 1 spell slots and two level 2 slots.
 
@@ -6959,7 +6954,7 @@ When you cast a spell, you expend a slot of that spell's level or higher, effect
 
 Finishing a Long Rest restores any expended spell slots.
 
-## Casting without Slots
+#### Casting without Slots
 
 There are several ways to cast a spell without expending a spell slot:
 
@@ -6971,17 +6966,17 @@ There are several ways to cast a spell without expending a spell slot:
 
 **Magic Items.** *Spell Scrolls* and some other magic items contain spells that can be cast without a spell slot. The description of such an item specifies how many times a spell can be cast from it.
 
-## Using a Higher-Level Spell Slot
+#### Using a Higher-Level Spell Slot
 
 When a spellcaster casts a spell using a slot that is of a higher level than the spell, the spell takes on the higher level for that casting. For instance, if a Wizard casts *Magic Missile* using a level 2 slot, that *Magic Missile* is level 2. Effectively, the spell expands to fill the slot it is put into.
 
 Some spells, such as *Magic Missile* and *Cure Wounds*, have more powerful effects when cast at a higher level, as detailed in a spell's description.
 
-## School of Magic
+### School of Magic
 
 Each spell belongs to a school of magic. The schools are listed in the Schools of Magic table. These categories help describe spells but have no rules of their own, although some other rules refer to them.
 
-### Schools of Magic
+#### Schools of Magic
 
 | School        | Typical Effects                                              |
 |---------------|--------------------------------------------------------------|
@@ -6994,27 +6989,27 @@ Each spell belongs to a school of magic. The schools are listed in the Schools o
 | Necromancy    | Manipulates life and death                                   |
 | Transmutation | Transforms creatures or objects                              |
 
-## Class Spell Lists
+### Class Spell Lists
 
 If a spell is on a class's spell list, the class's name appears in parentheses after the spell's school of magic. Some features add a spell to a character's spell list even if the character isn't a member of a class in the parentheses.
 
-## Casting Time
+### Casting Time
 
 Most spells require the Magic action to cast, but some spells require a Bonus Action, a Reaction, or 1 minute or more. A spell's Casting Time entry specifies which of those is required.
 
-### One Spell with a Spell Slot per Turn
+#### One Spell with a Spell Slot per Turn
 
 On a turn, you can expend only one spell slot to cast a spell. This rule means you can't, for example, cast a spell with a spell slot using the Magic action and another one using a Bonus Action on the same turn.
 
-### Reaction and Bonus Action Triggers
+#### Reaction and Bonus Action Triggers
 
 A spell that has a casting time of a Reaction is cast in response to a trigger that is defined in the spell's Casting Time entry. Some spells that have a casting time of a Bonus Action are also cast in response to a trigger defined in the spell.
 
-### Longer Casting Times
+#### Longer Casting Times
 
 Certain spells—including a spell cast as a Ritual—require more time to cast: minutes or even hours. While you cast a spell with a casting time of 1 minute or more, you must take the Magic action on each of your turns, and you must maintain Concentration (see "Rules Glossary") while you do so. If your Concentration is broken, the spell fails, but you don't expend a spell slot. To cast the spell again, you must start over.
 
-## Range
+### Range
 
 A spell's range indicates how far from the spellcaster the spell's effect can originate, and the spell's description specifies which part of the effect is limited by the range.
 
@@ -7028,25 +7023,25 @@ A range usually takes one of the following forms:
 
 If a spell has movable effects, they aren't restricted by its range unless the spell's description says otherwise.
 
-## Components
+### Components
 
 A spell's components are physical requirements the spellcaster must meet to cast the spell. Each spell's description indicates whether it requires Verbal (V), Somatic (S), or Material (M) components. If the spellcaster can't provide one or more of a spell's components, the spellcaster can't cast the spell.
 
-### Verbal (V)
+#### Verbal (V)
 
 A Verbal component is the chanting of esoteric words that sound like nonsense to the uninitiated. The words must be uttered in a normal speaking voice. The words themselves aren't the source of the spell's power; rather, the particular combination of sounds, with specific pitch and resonance, sets the threads of magic in motion. Thus, a creature who is gagged or in an area of magical silence can't cast a spell with a Verbal component.
 
-### Somatic (S)
+#### Somatic (S)
 
 A Somatic component is a forceful gesticulation or an intricate set of gestures. A spellcaster must use at least one of their hands to perform these movements.
 
-### Material (M)
+#### Material (M)
 
 A Material component is a particular material used in a spell's casting, as specified in parentheses in the Components entry. These materials aren't consumed by the spell unless the spell's description states otherwise. The spellcaster must have a hand free to access them, but it can be the same hand used to perform Somatic components, if any.
 
 If a spell doesn't consume its materials and doesn't specify a cost for them, a spellcaster can use a Component Pouch (see "Equipment") instead of providing the materials specified in the spell, or the spellcaster can substitute a Spellcasting Focus if the caster has a feature that allows that substitution. To use a Component Pouch, you must have a hand free to reach into it, and to use a Spellcasting Focus, you must hold it unless its description says otherwise (see “Equipment” for descriptions).
 
-## Duration
+### Duration
 
 A spell’s duration is the length of time the spell persists after it is cast. A duration typically takes one of the following forms:
 
@@ -7056,11 +7051,11 @@ A spell’s duration is the length of time the spell persists after it is cast. 
 
 **Time Span.** A duration that provides a time span specifies how long the spell lasts in rounds, minutes, hours, or the like. For example, a Duration entry might say “1 minute,” meaning the spell ends after 1 minute has passed. While a time-span spell that you cast is ongoing, you can dismiss it (no action required) if you don’t have the Incapacitated condition.
 
-## Effects
+### Effects
 
 The effects of a spell are detailed after its duration entry. Those details present exactly what the spell does, which ignores mundane physical laws; any outcomes beyond those effects are under the GM’s purview. Whatever the effects, they typically deal with targets, saving throws, attack rolls, or all three, each of which is detailed below.
 
-## Targets
+#### Targets
 
 A typical spell requires the caster to pick one or more targets to be affected by the spell’s magic. A spell’s description says whether the spell targets creatures, objects, or something else.
 
@@ -7076,23 +7071,23 @@ A typical spell requires the caster to pick one or more targets to be affected b
 
 If the spell normally has no effect on a target that succeeds on a saving throw, the invalid target appears to have succeeded on its saving throw, even though it didn’t attempt one (giving no hint that the creature is an invalid target). Otherwise, you perceive that the spell did nothing to the target.
 
-## Saving Throws
+#### Saving Throws
 
 Many spells specify that a target makes a saving throw to avoid some or all of a spell’s effects. The spell specifies the ability that the target uses for the save and what happens on a success or failure. Here’s how to calculate the DC for your spells:
 
 **Spell save DC** = 8 + your spellcasting ability modifier + your Proficiency Bonus
 
-## Attack Rolls
+#### Attack Rolls
 
 Some spells require the caster to make an attack roll to determine whether the spell hits a target. Here’s how to calculate the attack modifier for your spells:
 
 **Spell attack modifier** = your spellcasting ability modifier + your Proficiency Bonus
 
-## Combining Spell Effects
+#### Combining Spell Effects
 
 The effects of different spells add together while their durations overlap. In contrast, the effects of the same spell cast multiple times don’t combine. Instead, the most potent effect—such as the highest bonus—from those castings applies while their durations overlap. The most recent effect applies if the castings are equally potent and their durations overlap. For example, if two Clerics cast *Bless* on the same target, that target gains the spell’s benefit only once; the target doesn’t receive two bonus dice. But if the durations of the spells overlap, the effect continues until the duration of the second *Bless* ends.
 
-### IDENTIFYING AN ONGOING SPELL
+#### IDENTIFYING AN ONGOING SPELL
 
 You can try to identify a non-instantaneous spell by its observable effects if its duration is ongoing. To identify it, you must take the Study action and succeed on a DC 15 Intelligence (Arcana) check.
 

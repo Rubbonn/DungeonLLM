@@ -1,3 +1,4 @@
+from dataclasses import dataclass
 from langchain_core.messages import BaseMessage
 from langchain.messages import SystemMessage
 from typing import TypedDict, Annotated
@@ -5,6 +6,7 @@ from langgraph.graph import StateGraph, START, END
 from langgraph.types import Overwrite
 from operator import add
 
+@dataclass
 class State(TypedDict):
 	messages: Annotated[list[BaseMessage], add]
 
@@ -28,8 +30,9 @@ graph = graph_builder.compile()
 if __name__ == "__main__":
 	import dotenv
 	from langchain.chat_models import init_chat_model
+	from langchain.messages import HumanMessage
 
 	dotenv.load_dotenv()
 	message = input('> ')
-	response = graph.invoke({'messages': [{'role': 'user', 'content': message}]})
+	response = graph.invoke(State(messages=[HumanMessage(content=message)]))
 	print(response['messages'][-1].content)

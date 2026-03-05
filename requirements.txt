@@ -1,4 +1,5 @@
 langchain
 langchain-nvidia-ai-endpoints
+langchain-ollama
 langgraph
 python-dotenv

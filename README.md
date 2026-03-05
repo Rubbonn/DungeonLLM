@@ -144,9 +144,9 @@ python src/main.py
 Lo sviluppo seguirà un approccio incrementale, partendo da un **Minimum Viable Product (MVP)** e aggiungendo funzionalità progressivamente.
 
 ### Fase 1: MVP (Minimum Viable Product) 🎯
-- [ ] Setup base del progetto Python
-- [ ] Integrazione base con LLM (Langchain/Langgraph)
-- [ ] Interfaccia testuale semplice
+- [x] Setup base del progetto Python
+- [x] Integrazione base con LLM (Langchain/Langgraph)
+- [x] Interfaccia testuale semplice
 - [ ] Generazione narrativa base
 - [ ] Sistema di dialogo giocatore-GM
 

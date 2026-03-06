@@ -362,7 +362,6 @@ Questi aspetti saranno decisi in fase di sprint, non predefiniti:
 DungeonLLM implementa le regole del **System Reference Document (SRD) 5.2.1**, una versione open di regole per giochi di ruolo.
 
 ### File Presenti
-- `IT_SRD_CC_v5.2.1.md` - Versione in Markdown del SRD in italiano
 - `SRD_CC_v5.2.1.md` - Versione in Markdown del SRD in inglese
 
 ### Integrazione Regole

@@ -15,4 +15,5 @@ if __name__ == "__main__":
 		message = input('> ')
 		if message == 'exit':
 			break
+
 		state['messages'].append(HumanMessage(content=message))

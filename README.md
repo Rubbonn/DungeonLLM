@@ -32,9 +32,14 @@ Un videogioco dove un Large Language Model funge da **Game Master**, creando e g
 
 ## 🚧 Stato del Progetto
 
-⚠️ **Progetto in fase embrionale** - Molte componenti sono ancora in definizione e sviluppo attivo.
+⚠️ **Progetto in Early MVP Development** - Fondazioni tecniche in place, focus su GM conversazionale robusto.
 
-Il progetto è attualmente nelle fasi iniziali di sviluppo. Alcune tecnologie e architetture non sono ancora finalizzate e sono soggette a cambiamenti.
+Lo sviluppo è in corso seguendo una **roadmap granulare di 6 fasi**. Attualmente sono state completate le fondazioni base (Python, Langchain, Langgraph, Ollama). Il focus immediato è su:
+1. **Fase 0-1**: Persistenza dati + GM conversazionale coerente con memoria di sessione
+2. **Fase 2**: RAG system per consultazione regole D&D 5e via SRD
+3. **Fase 3+**: Meccaniche di gioco progressivamente elaborate
+
+Vedi [Roadmap di Sviluppo](#-roadmap-di-sviluppo) per dettagli granulari.
 
 ## ✨ Funzionalità
 
@@ -141,75 +146,216 @@ python src/main.py
 
 ## 🗺 Roadmap di Sviluppo
 
-Lo sviluppo seguirà un approccio incrementale, partendo da un **Minimum Viable Product (MVP)** e aggiungendo funzionalità progressivamente.
+Sviluppo incrementale in 6 fasi con checklist granulari. No stime temporali (development non-daily).
 
-### Fase 1: MVP (Minimum Viable Product) 🎯
-- [x] Setup base del progetto Python
-- [x] Integrazione base con LLM (Langchain/Langgraph)
-- [x] Interfaccia testuale semplice
-- [ ] Generazione narrativa base
-- [ ] Sistema di dialogo giocatore-GM
+### Milestone Principali
 
-### Fase 2: Regole Base ⚔️
-- [ ] Parsing del SRD 5.2.1
-- [ ] Integrazione database vettoriale per le regole
-- [ ] Sistema di lancio dadi
-- [ ] Creazione personaggio base
-- [ ] Gestione statistiche e attributi
+| Milestone | Obiettivo |
+|-----------|----------|
+| **MVP v1** — Fase 1 | ✅ GM conversazionale coerente, sessione persiste, NPC mantengono memoria |
+| **MVP v2** — Fase 3 | ✅ Combattimento narrativo + dadi, inventario base, character sheets, RAG per regole |
+| **MVP v3** — Fase 4 | ✅ Multiple campagne, save/load robusti, scalabilità |
 
-### Fase 2.5: Chatbot Regole & Lore 💬📚
-- [ ] Implementazione chatbot di consultazione (manuale, creature, oggetti, effetti)
-- [ ] Collegamento al database vettoriale delle regole (RAG)
-- [ ] Contesto dinamico della campagna e sessione corrente
-- [ ] Q&A su meccaniche interne del gioco
-- [ ] Q&A su regole DnD in generale
+---
 
-### Fase 3: Combattimento 🗡️
-- [ ] Sistema di iniziativa
-- [ ] Turni di combattimento
-- [ ] Gestione azioni e abilità
-- [ ] Calcolo danni e HP
-- [ ] Sistema di morte/svenimento
+### Fase 0 — Fondazioni Dati 🏗️
 
-### Fase 4: Inventario & Oggetti 🎒
-- [ ] Sistema di inventario
-- [ ] Utilizzo oggetti
-- [ ] Equipaggiamento e statistiche
-- [ ] Sistema di loot
+Setup persistenza minimalista per conversazione GM.
 
-### Fase 5: Database dei Contenuti 📚
-- [ ] Setup database principale
-- [ ] Inserimento razze
-- [ ] Inserimento mostri
-- [ ] Inserimento incantesimi
-- [ ] Inserimento oggetti
+- [ ] Implementare sistema di save/load conversazione in JSON
+- [ ] Definire structure minimalista per salvare history conversazionale
+- [ ] Creare primo fixture di test per conversation persistence
+- [ ] Testare save/load singola sessione conversazionale
 
-### Fase 6: Interfaccia Grafica 🖼️
-- [ ] Scelta tecnologia frontend
-- [ ] Setup webserver
-- [ ] Design UI/UX
-- [ ] Implementazione SPA
-- [ ] Integrazione webview
+---
 
-### Fase 7: Generazione Asset 🎨
-- [ ] Integrazione Stable Diffusion
-- [ ] Generazione sfondi
-- [ ] Generazione personaggi
-- [ ] Generazione mappe
+### Fase 1 — GM Conversazionale Robusto 🤖
+**[CORE MVP]**
 
-### Fase 8: Sistema Audio 🔊
-- [ ] Scelta modello TTS
-- [ ] Integrazione TTS
-- [ ] Voce narrante
-- [ ] Voice acting NPC
+GM mantiene coerenza narrativa, memoria di sessione, adattamento dinamico.
 
-### Fase 9: Editor e Gestione Campagne 🏰
-- [ ] Editor campagne per il giocatore
-- [ ] Definizione incipit e narrativa
-- [ ] Selezione e personalizzazione di oggetti, mostri, personaggi ed effetti
-- [ ] Sistema di salvataggio/caricamento campagne
-- [ ] Persistenza stato di gioco
-- [ ] NPC con memoria e personalità
+**1.1 — Memory & Context Management**
+- [ ] Implementare sliding-window context (ultimi N turni + metadata campagna)
+- [ ] Aggiungere nodo per memory management nel grafo Langgraph
+- [ ] Evitare token explosion con summarization/compression
+
+**1.2 — GM Personality & Consistency**
+- [ ] Separare prompt in componenti modularizzabili (base instructions / campaign context / session state)
+- [ ] Implementare composizione dinamica prompt basata su campagna attiva
+- [ ] Testare coerenza narrativa e tono GM across multiple turns
+
+**1.3 — Multi-turn Dialogue & NPC Interaction**
+- [ ] Supportare scelte NPC nella conversazione
+- [ ] Implementare memoria semplice per personalità NPC e relazioni con PG
+- [ ] Aggiungere nodo per NPC interaction nel grafo
+
+**1.4 — Session Continuity & Loading**
+- [ ] Implementare session resume + recap narrativo
+- [ ] Persistere conversazione tra multiple run
+- [ ] Testare multi-session playthrough (session 1 → save → load → session 2)
+- [ ] Verificare NPC recognition across sessions
+
+---
+
+### Fase 2 — RAG System per Regole SRD 📚
+
+GM consulta regole D&D 5e in tempo reale senza context explosion.
+
+**2.1 — Vector DB Setup & SRD Chunking**
+- [ ] Selezionare vector store locale (no external services)
+- [ ] Implementare chunking logico SRD per chapters
+- [ ] Creare script di loading/initialization per embeddings
+
+**2.2 — RAG Node in Langgraph**
+- [ ] Implementare nodo per rules consultation nel grafo
+- [ ] Query extraction da conversazione
+- [ ] Semantic retrieval vs SRD embeddings
+- [ ] Context hydration (injetta rule snippets in system prompt)
+- [ ] Confidence scoring per query vague
+
+**2.3 — Content-Specific Queries**
+- [ ] Specializzare retrieval per entity types (spells, monsters, classes, items)
+- [ ] Aggiungere filterable metadata (source, edition, category)
+
+**2.4 — Validation & Accuracy Testing**
+- [ ] Creare test set di domande D&D 5e
+- [ ] Verificare retrieve accuracy vs expected rules
+- [ ] Fine-tune chunking se retrieve sub-optimal
+
+---
+
+### Fase 3 — Character State & Game Rules ⚔️
+
+Logica di gioco minimalista (dadi, stats, combattimento narrativo).
+
+**3.1 — Character Creation & Stats**
+- [ ] Definire schema dati personaggio (ability scores, proficiencies, hp, skills)
+- [ ] Implementare character creation flow conversazionale (GM guida giocatore via chat)
+- [ ] Validazione vs D&D 5e rules (via RAG)
+- [ ] Implementare save/load personaggio in JSON
+- [ ] Testare creazione personaggio end-to-end
+
+**3.2 — Dice Mechanics**
+- [ ] Implementare dice roller (d20, d12, d8, d6, d4, d100)
+- [ ] Supporto advantage/disadvantage
+- [ ] Dice expression parser (es. "2d20 + modifier")
+- [ ] Integrazione in Langgraph (nodo per action resolution)
+- [ ] Extraction intenzione azione da conversazione
+- [ ] Proposta roll + esecuzione + narrazione risultato
+
+**3.3 — Basic Combat System**
+- [ ] Turn-based initiative system
+- [ ] Action parsing (attack, dodge, etc)
+- [ ] Damage calculation vs HP
+- [ ] Condition tracking (stunned, poisoned, etc)
+- [ ] Simple monster templates/stats
+- [ ] Combat encounter flow integrato in GM conversation
+
+**3.4 — Equipment & Inventory**
+- [ ] Definire inventory data structure
+- [ ] Creare item templates (weapons, armor, consumables)
+- [ ] Implementare usage in combat
+- [ ] Support equipaggiamento effects on stats
+
+---
+
+### Fase 4 — Multi-Campaign Management 📂
+
+Supportare multiple campagne in parallelo.
+
+**4.1 — Campaign Editor/Selector**
+- [ ] Definire schema dati per campagna (metadata, narrative progress, participants)
+- [ ] Implementare CLI menu per create/load/delete campagne
+- [ ] Campaign metadata editing (nome, descrizione, incipit)
+- [ ] Select campagna attiva (context globale)
+- [ ] Implementare save/load campagna in JSON
+
+**4.2 — Full Session Serialization**
+- [ ] Serializzare SessionState completo
+- [ ] Implementare versioning per backward compatibility
+- [ ] Strategy per save snapshots vs incremental
+
+**4.3 — Session Resume & Continuity**
+- [ ] Load campagna → resume narrator recap
+- [ ] Auto-populate recent NPC/location context
+- [ ] Re-initialize vector DB context per campagna (se needed)
+
+---
+
+### Fase 5 — Web Interface 🖥️
+**[POST-MVP]**
+
+Interfaccia grafica per usability scalino successivo.
+
+**5.1 — Webserver & Static SPA**
+- [ ] Setup minimal webserver
+- [ ] SPA structure (HTML/CSS/JS template)
+- [ ] Chat interface (input, output stream, history)
+
+**5.2 — Backend API**
+- [ ] Implementare API endpoints per campaign CRUD
+- [ ] Implementare API per chat (POST messaggio → stream risposta)
+- [ ] Implementare API per character management
+- [ ] Session token authentication (minimalista)
+
+**5.3 — UI Polish**
+- [ ] Mobile responsive (se needed)
+- [ ] Dark mode support
+- [ ] Accessibility basics (ARIA, keyboard navigation)
+- [ ] Tema coerente con Valdoria (medioevo low-magic)
+
+---
+
+### Fase 6 — Asset Generation 🎨
+**[POLISH - Optional]**
+
+Integrazione mediarich (images, audio).
+
+**6.1 — Stable Diffusion Integration**
+- [ ] Setup SD local + API
+- [ ] Prompting per NPC portraits from description
+- [ ] Prompting per location backgrounds
+- [ ] Caching generated assets
+
+**6.2 — Text-to-Speech (TTS)**
+- [ ] Scegliere TTS model
+- [ ] Voice per GM (narratore)
+- [ ] Voices per NPC differentiate
+- [ ] Audio streaming per narrative
+
+---
+
+### Decisioni Tecniche (da definire durante implementazione)
+
+Questi aspetti saranno decisi in fase di sprint, non predefiniti:
+- **Struttura cartelle e naming** dei moduli
+- **Nome classi e funzioni** (TypedDict, functions, nodes)
+- **Endpoints API** specifici
+- **Database choice** (JSON vs SQLite) — opzione iniziale: JSON, migrazione in Fase 4 se needed
+- **Vector DB choice** — opzione iniziale: Chroma (locale, no dependencies)
+- **Embedding model** — opzione iniziale: HF MiniLM-L6
+- **Language support** — MVP: Lingue supportate dall'LLM
+
+---
+
+### Scope Espliciti
+
+✅ **In Scope**:
+- Single-player (uno o più giocatori con GM AI)
+- Single LLM source (Ollama attuale)
+- CLI interface per MVP
+- Rules consultazione via RAG
+- Conversational gameplay
+- Persistenza su disk
+- D&D 5e mechanics minimalista
+
+❌ **Escluso (post-MVP)**:
+- Multiplayer/server architecture
+- Multi-LLM (fallback, ensembles)
+- Web frontend (Fase 5)
+- Stable Diffusion (Fase 6)
+- TTS/Audio (Fase 6)
+- Advanced mechanics (prestige classes, etc)
 
 ## 📖 Sistema di Regole
 

@@ -10,6 +10,12 @@ def route_command(state: State) -> Command[Literal['save_command']]:
 	del state['messages'][-1]
 	return Command(goto=f'{command}_command')
 
+def help_command(state: State) -> None:
+	print('Comandi disponibili:')
+	print('/save - Salva la campagna')
+	print('/load - Carica la campagna')
+	print('/help - Mostra questo messaggio')
+
 def save_command(state: State) -> None:
 	from langchain_core.load.dump import dumps
 	with open('data/saves/campaign.json', 'w') as f:

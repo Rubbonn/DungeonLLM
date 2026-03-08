@@ -34,14 +34,36 @@ Un videogioco dove un Large Language Model funge da **Game Master**, creando e g
 
 ⚠️ **Progetto in Early MVP Development** - Fondazioni tecniche in place, focus su GM conversazionale robusto.
 
-Lo sviluppo è in corso seguendo una **roadmap granulare di 6 fasi**. Attualmente sono state completate le fondazioni base (Python, Langchain, Langgraph, Ollama). Il focus immediato è su:
+Lo sviluppo è in corso seguendo una **roadmap granulare di 6 fasi**. Attualmente sono state completate le fondazioni base (Python, Langchain, Langgraph, integrazione LLM in ambiente dev). Il focus immediato è su:
 1. **Fase 0-1**: Persistenza dati + GM conversazionale coerente con memoria di sessione
 2. **Fase 2**: RAG system per consultazione regole D&D 5e via SRD
 3. **Fase 3+**: Meccaniche di gioco progressivamente elaborate
 
+### Stato Attuale (ultimi commit)
+
+- Loop conversazionale CLI funzionante (`main.py` + grafo LangGraph)
+- Routing comandi base in chat (`/help`, `/save`, `/load`)
+- Persistenza stato campagna in JSON (`data/saves/campaign.json`)
+- Prompt GM aggiornato per ridurre risposte off-topic e mantenere immersione
+
 Vedi [Roadmap di Sviluppo](#-roadmap-di-sviluppo) per dettagli granulari.
 
 ## ✨ Funzionalità
+
+### Funzionalità Attualmente Disponibili
+
+- **💬 GM Conversazionale in CLI**
+  - Avvio campagna con prompt di sistema + prompt ambientazione
+  - Risposta del GM a ogni turno tramite nodo `send_message`
+
+- **🧭 Routing Comandi in Chat**
+  - `/help` mostra i comandi disponibili
+  - `/save` salva lo stato corrente della campagna
+  - `/load` ricarica una campagna salvata
+
+- **💾 Persistenza Campagna (MVP)**
+  - Save/Load su file JSON locale in `data/saves/`
+  - Serializzazione messaggi con utility LangChain
 
 ### Funzionalità Pianificate
 
@@ -84,8 +106,9 @@ Vedi [Roadmap di Sviluppo](#-roadmap-di-sviluppo) per dettagli granulari.
 |------------|------------|-------|
 | **Linguaggio** | Python 3.13+ | ✅ Definito |
 | **Framework AI** | Langchain, Langgraph | ✅ Definito |
-| **LLM Runtime** | Transformers (Huggingface) | 🔄 In valutazione |
-| **Hosting LLM** | Locale (Cloud in dev) | 🔄 In valutazione |
+| **LLM Runtime (target)** | Transformers (Hugging Face) | 🔄 In valutazione |
+| **Provider LLM (sviluppo)** | Ollama via LangChain (`langchain-ollama`) | ✅ Attivo in dev |
+| **Modello dev attuale** | `qwen3.5:397b-cloud` | ✅ Configurato |
 | **Text-to-Speech** | Da definire | ❌ Non definito |
 | **Image Generation** | Stable Diffusion | ✅ Definito |
 
@@ -93,8 +116,9 @@ Vedi [Roadmap di Sviluppo](#-roadmap-di-sviluppo) per dettagli granulari.
 
 | Componente | Tecnologia | Stato |
 |------------|------------|-------|
-| **Architettura** | Single Page Application | ✅ Definito |
-| **Rendering** | Webview | ✅ Definito |
+| **Interfaccia attuale** | CLI | ✅ Implementato |
+| **Architettura target** | Single Page Application | 🔄 Pianificato |
+| **Rendering target** | Webview | 🔄 Pianificato |
 | **Webserver** | Da definire | ❌ Non definito |
 | **Frontend Framework** | Da definire | ❌ Non definito |
 
@@ -131,18 +155,43 @@ venv\Scripts\activate
 # Su Linux/Mac:
 source venv/bin/activate
 
-# Installa le dipendenze (quando disponibili)
+# Installa le dipendenze
 pip install -r requirements.txt
+```
+
+## 🗂 Struttura del Progetto
+
+```text
+DungeonLLM/
+|-- main.py
+|-- README.md
+|-- requirements.txt
+|-- SRD_CC_v5.2.1.md
+|-- app/
+|   |-- prompts.py
+|   |-- state.py
+|   |-- graph/
+|   |   \-- build.py
+|   \-- nodes/
+|       |-- commands.py
+|       \-- queries.py
+\-- data/
+    \-- saves/
 ```
 
 ## 💻 Utilizzo
 
-> ⚠️ **Nota**: Il progetto è in fase iniziale. Le istruzioni di utilizzo verranno aggiunte quando sarà disponibile un MVP funzionante.
-
 ```bash
-# Avvio previsto (da implementare)
-python src/main.py
+# Avvia il gioco da terminale
+python main.py
 ```
+
+Comandi disponibili durante la sessione:
+
+- `/help` - mostra i comandi supportati
+- `/save` - salva la campagna corrente in `data/saves/campaign.json`
+- `/load` - carica la campagna da `data/saves/campaign.json`
+- `exit` - termina la sessione
 
 ## 🗺 Roadmap di Sviluppo
 
@@ -162,8 +211,8 @@ Sviluppo incrementale in 6 fasi con checklist granulari. No stime temporali (dev
 
 Setup persistenza minimalista per conversazione GM.
 
-- [ ] Implementare sistema di save/load conversazione in JSON
-- [ ] Definire structure minimalista per salvare history conversazionale
+- [x] Implementare sistema di save/load conversazione in JSON
+- [x] Definire structure minimalista per salvare history conversazionale
 - [ ] Creare primo fixture di test per conversation persistence
 - [ ] Testare save/load singola sessione conversazionale
 
@@ -180,8 +229,8 @@ GM mantiene coerenza narrativa, memoria di sessione, adattamento dinamico.
 - [ ] Evitare token explosion con summarization/compression
 
 **1.2 — GM Personality & Consistency**
-- [ ] Separare prompt in componenti modularizzabili (base instructions / campaign context / session state)
-- [ ] Implementare composizione dinamica prompt basata su campagna attiva
+- [x] Separare prompt in componenti modularizzabili (base instructions / campaign context / session state)
+- [x] Implementare composizione dinamica prompt basata su campagna attiva
 - [ ] Testare coerenza narrativa e tono GM across multiple turns
 
 **1.3 — Multi-turn Dialogue & NPC Interaction**
@@ -191,7 +240,7 @@ GM mantiene coerenza narrativa, memoria di sessione, adattamento dinamico.
 
 **1.4 — Session Continuity & Loading**
 - [ ] Implementare session resume + recap narrativo
-- [ ] Persistere conversazione tra multiple run
+- [x] Persistere conversazione tra multiple run
 - [ ] Testare multi-session playthrough (session 1 → save → load → session 2)
 - [ ] Verificare NPC recognition across sessions
 
@@ -328,7 +377,7 @@ Integrazione mediarich (images, audio).
 ### Decisioni Tecniche (da definire durante implementazione)
 
 Questi aspetti saranno decisi in fase di sprint, non predefiniti:
-- **Struttura cartelle e naming** dei moduli
+- **Struttura cartelle e naming** dei moduli (impostata base in `app/`, ulteriori refactor possibili)
 - **Nome classi e funzioni** (TypedDict, functions, nodes)
 - **Endpoints API** specifici
 - **Database choice** (JSON vs SQLite) — opzione iniziale: JSON, migrazione in Fase 4 se needed
@@ -342,7 +391,7 @@ Questi aspetti saranno decisi in fase di sprint, non predefiniti:
 
 ✅ **In Scope**:
 - Single-player (uno o più giocatori con GM AI)
-- Single LLM source (Ollama attuale)
+- Single LLM source per sessione (provider definitivo ancora da confermare)
 - CLI interface per MVP
 - Rules consultazione via RAG
 - Conversational gameplay

@@ -10,7 +10,9 @@ if __name__ == "__main__":
 	state: State = {'messages': [SystemMessage(content=SYSTEM_PROMPT), HumanMessage(content=CAMPAIGN_PROMPT)]}
 	while True:
 		state = graph.invoke(state)
+		print('----------------------------------')
 		print(state['messages'][-1].content)
+		print('----------------------------------')
 
 		message = input('> ')
 		if message == 'exit':

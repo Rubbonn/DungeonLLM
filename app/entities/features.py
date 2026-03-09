@@ -1,9 +1,10 @@
 from abc import ABC
+from app.utilities.jsonable import Jsonable
 from dataclasses import dataclass, field
 from enum import Enum
 
 @dataclass
-class Ability(ABC):
+class Ability(ABC, Jsonable):
 	name: str
 	value: int
 

@@ -17,9 +17,9 @@ def help_command(state: State) -> None:
 	print('/help - Mostra questo messaggio')
 
 def save_command(state: State) -> None:
-	from langchain_core.load.dump import dumps
+	from app.state import state_to_json
 	with open('data/saves/campaign.json', 'w') as f:
-		f.write(dumps(state, pretty=True, indent=4))
+		f.write(state_to_json(state))
 	print('Campagna salvata!')
 
 def load_command(state: State) -> State:

@@ -47,9 +47,9 @@ class Size(Enum):
 	HUGE = ("Huge", 15)
 	GARGANTUAN = ("Gargantuan", 20)
 
-	def __init__(self, label: str, space_feet: float):
+	def __init__(self, label: str, space_feets: float):
 		self.label = label
-		self.space_feets = space_feet
+		self.space_feets = space_feets
 
 	@property
 	def space_feets_squared(self) -> float:

@@ -1,5 +1,6 @@
 from abc import ABC
 from dataclasses import dataclass, field
+from enum import Enum
 
 @dataclass
 class Ability(ABC):
@@ -38,54 +39,30 @@ class Speed(Ability):
 class Initiative(Ability):
 	name: str = field(default='Initiative', init=False)
 
-class Size(ABC):
-	name: str
-	space_feets: float
-	space_feets_squared: float
-	space_squares: float
-	space_squares_squared: float
+class Size(Enum):
+	TINY = ("Tiny", 2.5)
+	SMALL = ("Small", 5)
+	MEDIUM = ("Medium", 5)
+	LARGE = ("Large", 10)
+	HUGE = ("Huge", 15)
+	GARGANTUAN = ("Gargantuan", 20)
+
+	def __init__(self, label: str, space_feet: float):
+		self.label = label
+		self.space_feets = space_feet
+
+	@property
+	def space_feets_squared(self) -> float:
+		return self.space_feets ** 2
+
+	@property
+	def space_squares(self) -> float:
+		return self.space_feets / 5
+
+	@property
+	def space_squares_squared(self) -> float:
+		return self.space_squares ** 2
 
 	def __repr__(self):
-		return f'{self.__class__.__name__}(name={self.name}, space_feets={self.space_feets}, space_feets_squared={self.space_feets_squared}, space_squares={self.space_squares}, space_squares_squared={self.space_squares_squared})'
-
-class Tiny(Size):
-	name = 'Tiny'
-	space_feets = 2.5
-	space_feets_squared = 6.25
-	space_squares = 0.25
-	space_squares_squared = 0.0625
-
-class Small(Size):
-	name = 'Small'
-	space_feets = 5
-	space_feets_squared = 25
-	space_squares = 1
-	space_squares_squared = 1
-
-class Medium(Size):
-	name = 'Medium'
-	space_feets = 5
-	space_feets_squared = 25
-	space_squares = 1
-	space_squares_squared = 1
-
-class Large(Size):
-	name = 'Large'
-	space_feets = 10
-	space_feets_squared = 100
-	space_squares = 4
-	space_squares_squared = 16
-
-class Huge(Size):
-	name = 'Huge'
-	space_feets = 15
-	space_feets_squared = 225
-	space_squares = 9
-	space_squares_squared = 81
-
-class Gargantuan(Size):
-	name = 'Gargantuan'
-	space_feets = 20
-	space_feets_squared = 400
-	space_squares = 16
-	space_squares_squared = 256
+		properties = ', '.join([f'{prop}={self.__getattribute__(prop)}' for prop in self.__dir__() if not prop.startswith('_')])
+		return f'{self.__class__.__name__}({properties})'

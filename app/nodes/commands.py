@@ -14,6 +14,7 @@ def help_command(state: State) -> None:
 	print('Comandi disponibili:')
 	print('/save - Salva la campagna')
 	print('/load - Carica la campagna')
+	print('/exit - Esci dal programma')
 	print('/help - Mostra questo messaggio')
 
 def save_command(state: State) -> None:

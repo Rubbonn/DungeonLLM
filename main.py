@@ -12,7 +12,7 @@ if __name__ == "__main__":
 	graph = build_graph()
 	state: State = {
 		'messages': [SystemMessage(content=SYSTEM_PROMPT), HumanMessage(content=CAMPAIGN_PROMPT)],
-		'player': Player(name='Ruben', size=features.Size.MEDIUM, abilities={'Strength': features.Ability(features.AbilityType.STRENGTH, randint(5, 15))})
+		'player': Player(name='Ruben', size=features.Size.MEDIUM, abilities={ability.value: features.Ability(ability, randint(5, 15)) for ability in features.AbilityType})
 	}
 	while True:
 		state = graph.invoke(state)

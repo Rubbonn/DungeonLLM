@@ -23,8 +23,8 @@ def save_command(state: State) -> None:
 	print('Campagna salvata!')
 
 def load_command(state: State) -> State:
-	from langchain_core.load.load import loads
+	from app.utilities.jsonable import from_json
 	with open('data/saves/campaign.json', 'r') as f:
-		state = {k: Overwrite(v) for k,v in loads(f.read()).items()}
+		state = {k: Overwrite(v) for k,v in from_json(f.read()).items()}
 	print('Campagna caricata!')
 	return state

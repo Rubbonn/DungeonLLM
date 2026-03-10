@@ -1,44 +1,25 @@
-from abc import ABC
 from app.utilities.jsonable import Jsonable
 from dataclasses import dataclass, field
 from enum import Enum
 
+class AbilityType(Enum):
+	STRENGTH = 'Strength'
+	DEXTERITY = 'Dexterity'
+	CONSTITUTION = 'Constitution'
+	INTELLIGENCE = 'Intelligence'
+	WISDOM = 'Wisdom'
+	CHARISMA = 'Charisma'
+	SPEED = 'Speed'
+	INITIATIVE = 'Initiative'
+
 @dataclass
-class Ability(ABC, Jsonable):
-	name: str
+class Ability(Jsonable):
+	name: AbilityType
 	value: int
 
-@dataclass
-class Strength(Ability):
-	name: str = field(default='Strength', init=False)
-
-@dataclass
-class Dexterity(Ability):
-	name: str = field(default='Dexterity', init=False)
-
-@dataclass
-class Constitution(Ability):
-	name: str = field(default='Constitution', init=False)
-
-@dataclass
-class Intelligence(Ability):
-	name: str = field(default='Intelligence', init=False)
-
-@dataclass
-class Wisdom(Ability):
-	name: str = field(default='Wisdom', init=False)
-
-@dataclass
-class Charisma(Ability):
-	name: str = field(default='Charisma', init=False)
-
-@dataclass
-class Speed(Ability):
-	name: str = field(default='Speed', init=False)
-
-@dataclass
-class Initiative(Ability):
-	name: str = field(default='Initiative', init=False)
+	@property
+	def label(self) -> str:
+		return self.name.value
 
 class Size(Enum):
 	TINY = ("Tiny", 2.5)

@@ -21,7 +21,7 @@ if __name__ == "__main__":
 		print('----------------------------------')
 
 		message = input('> ')
-		if message == 'exit':
+		if message == '/exit':
 			break
 
 		state['messages'].append(HumanMessage(content=message))

@@ -4,7 +4,7 @@ import importlib
 import json
 from langchain_core.load import dumpd, load
 from langchain_core.load.serializable import Serializable
-from typing import Any
+from typing import Any, Self
 
 
 class CustomEncoder(json.JSONEncoder):
@@ -58,7 +58,7 @@ class Jsonable:
 		return to_json(self)
 
 	@classmethod
-	def from_dict(cls, d: dict) -> 'cls':
+	def from_dict(cls, d: dict) -> Self:
 		from typing import get_type_hints
 
 		data = d.copy()
@@ -72,18 +72,22 @@ class Jsonable:
 					field_type = type_hints.get(f.name)
 					if isinstance(field_type, type) and issubclass(field_type, Enum):
 						if isinstance(val, list):
-							data[f.name] = field_type(*val)
+							data[f.name] = field_type(tuple(val))
 						else:
 							data[f.name] = field_type(val)
 			return cls(**data)
 
 		instance = cls.__new__(cls)
-		for k, v in data.items():
-			setattr(instance, k, v)
+		if hasattr(instance, '__init__'):
+			try:
+				instance.__init__(**data)
+			except TypeError:
+				for k, v in data.items():
+					setattr(instance, k, v)
 		return instance
 
 	@classmethod
-	def from_json(cls, json_string: str) -> 'cls':
+	def from_json(cls, json_string: str) -> Self:
 		obj = from_json(json_string)
 		if not isinstance(obj, cls):
 			raise TypeError(f"Expected object of type {cls.__name__}, but got {type(obj).__name__}")

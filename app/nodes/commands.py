@@ -1,4 +1,4 @@
-from app.state import State
+from app.types.state import State
 from langgraph.types import Command, Overwrite
 from typing import Literal
 
@@ -21,7 +21,7 @@ def help_command(state: State) -> None:
 	print('/help - Mostra questo messaggio')
 
 def save_command(state: State) -> None:
-	from app.state import state_to_json
+	from app.types.state import state_to_json
 	with open('data/saves/campaign.json', 'w') as f:
 		f.write(state_to_json(state))
 	print('Campagna salvata!')

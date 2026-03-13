@@ -1,5 +1,5 @@
 from app.nodes import queries, commands
-from app.state import State
+from app.types.state import State
 from app.tools import tools_list
 from langgraph.graph import StateGraph, START, END
 from langgraph.prebuilt import ToolNode

@@ -3,7 +3,7 @@ if __name__ == "__main__":
 	import app.entities.features as features
 	from app.graph.build import build_graph
 	from app.prompts import SYSTEM_PROMPT, CAMPAIGN_PROMPT
-	from app.state import State
+	from app.types.state import State
 	import dotenv
 	from langchain.messages import HumanMessage, SystemMessage
 	from random import randint

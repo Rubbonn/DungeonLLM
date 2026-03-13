@@ -1,4 +1,4 @@
-from app.state import State
+from app.types.state import State
 from app.tools import tools_list
 from langchain.chat_models import init_chat_model
 

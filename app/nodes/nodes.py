@@ -4,6 +4,7 @@ from app.types.state import State
 from app.tools import make_player_tools, tools_list
 from langchain.agents import create_agent
 from langchain.chat_models import init_chat_model
+from typing import cast, Any
 
 def send_message(state: State) -> dict:
 	agent = create_agent(
@@ -11,7 +12,7 @@ def send_message(state: State) -> dict:
 		tools=make_player_tools(state),
 		system_prompt=SYSTEM_PROMPT
 	)
-	response = agent.invoke({'messages': state['messages']})
+	response = agent.invoke(cast(Any, {'messages': state['messages']}))
 	return {'messages': response['messages']}
 
 def planner(state: State) -> dict:	
@@ -21,5 +22,5 @@ def planner(state: State) -> dict:
 		system_prompt=PLANNER_PROMPT,
 		response_format=Plan
 	)
-	response = agent.invoke({'messages': state['messages']})
+	response = agent.invoke(cast(Any, {'messages': state['messages']}))
 	return {'plan': response['structured_response']}

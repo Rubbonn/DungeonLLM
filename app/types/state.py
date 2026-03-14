@@ -1,10 +1,10 @@
 from app.entities.creatures import Player
 from app.types.planning import Plan
-from langchain_core.messages import BaseMessage
+from langchain.messages import AnyMessage
 from typing import TypedDict
 
 class State(TypedDict):
-	messages: list[BaseMessage]
+	messages: list[AnyMessage]
 	player: Player
 	plan: Plan | None
 

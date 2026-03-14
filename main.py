@@ -3,11 +3,11 @@ if __name__ == "__main__":
 	import app.entities.features as features
 	from app.graph.build import build_graph
 	from app.prompts import CAMPAIGN_PROMPT
-	from app.types.planning import Plan
 	from app.types.state import State
 	import dotenv
-	from langchain.messages import HumanMessage, SystemMessage
+	from langchain.messages import HumanMessage
 	from random import randint
+	from typing import cast
 
 	dotenv.load_dotenv()
 	graph = build_graph()
@@ -17,7 +17,7 @@ if __name__ == "__main__":
 		'plan': None
 	}
 	while True:
-		state = graph.invoke(state)
+		state = cast(State, graph.invoke(state))
 		print('----------------------------------')
 		print(state['messages'][-1].content)
 		print('----------------------------------')

@@ -1,13 +1,12 @@
 from app.entities.creatures import Player
 from app.types.planning import Plan
 from langchain_core.messages import BaseMessage
-import operator
-from typing import TypedDict, Annotated
+from typing import TypedDict
 
 class State(TypedDict):
-	messages: Annotated[list[BaseMessage], operator.add]
+	messages: list[BaseMessage]
 	player: Player
-	plan: Plan
+	plan: Plan | None
 
 def state_to_json(state: State) -> str:
 	from app.utilities.jsonable import to_json

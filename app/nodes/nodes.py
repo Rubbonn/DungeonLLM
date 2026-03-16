@@ -27,5 +27,8 @@ def planner(state: State) -> dict:
 def executor(state: State) -> dict:
 	if len(state['plan'].actions) == 0:
 		return {}
-	# TODO Eseguire le azioni e memorizzare i risultati
+
+	for index, action in enumerate(state['plan'].actions):
+		state['plan'].actions[index].result = action.execute(state)
+	print(state['plan'])
 	return {'plan': state['plan']}

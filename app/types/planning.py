@@ -1,8 +1,12 @@
+from __future__ import annotations
+
 from app.entities.features import AbilityType
-from app.types.state import State
 from app.utilities.functions import throw_dice
 from pydantic import BaseModel, Field
-from typing import Literal
+from typing import TYPE_CHECKING, Literal
+
+if TYPE_CHECKING:
+	from app.types.state import State
 
 
 class BaseAction(BaseModel):

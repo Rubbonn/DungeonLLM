@@ -40,6 +40,10 @@ OLLAMA_API_KEY = os.getenv(
 OLLAMA_BASE_URL = os.getenv("OLLAMA_BASE_URL", "https://ollama.com")
 OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "qwen3.5:397b-cloud")
 
+# langchain_ollama reads the API key from the OLLAMA_API_KEY environment variable
+# rather than from the api_key constructor parameter, so we ensure it is set.
+os.environ.setdefault("OLLAMA_API_KEY", OLLAMA_API_KEY)
+
 
 # ---------------------------------------------------------------------------
 # Test helpers

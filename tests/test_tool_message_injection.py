@@ -10,13 +10,20 @@ Esecuzione:
     python tests/test_tool_message_injection.py
 """
 
+import socket
 import sys
 import os
 import uuid
 from typing import cast, Any
 
+import pytest
+
 # Ensure the project root is on the path when running directly
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+# Load .env if present (project convention: real credentials live in .env, not in source)
+from dotenv import load_dotenv
+load_dotenv()
 
 from app.entities.creatures import Player
 from app.entities.features import AbilityType, Ability, Size
@@ -33,16 +40,9 @@ from langchain_core.messages import SystemMessage, HumanMessage, AIMessage, Tool
 # Ollama cloud credentials
 # Override via environment variables; defaults provided for convenience.
 # ---------------------------------------------------------------------------
-OLLAMA_API_KEY = os.getenv(
-	"OLLAMA_API_KEY",
-	"c43f7a0fc49149caacf9441aad361596.32pPC8XYkS-OxiUy5WSuDcaT",
-)
+OLLAMA_API_KEY = os.getenv("OLLAMA_API_KEY")
 OLLAMA_BASE_URL = os.getenv("OLLAMA_BASE_URL", "https://ollama.com")
 OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "qwen3.5:397b-cloud")
-
-# langchain_ollama reads the API key from the OLLAMA_API_KEY environment variable
-# rather than from the api_key constructor parameter, so we ensure it is set.
-os.environ.setdefault("OLLAMA_API_KEY", OLLAMA_API_KEY)
 
 
 # ---------------------------------------------------------------------------
@@ -117,12 +117,13 @@ def _mechanical_results_content(results_text: str) -> str:
 
 def test_tool_message_injection():
 	"""
-	Run the planner → executor pipeline, then test two injection strategies:
+	Run the planner → executor pipeline, then test two injection strategies.
+	Both tests always run so that results for each approach are always reported.
 
 	Test A — ToolMessage con ID fittizio puro:
 	    Aggiunge un ToolMessage senza un AIMessage corrispondente.
 
-	Test B — AIMessage + ToolMessage coppia completa (solo se A fallisce):
+	Test B — AIMessage + ToolMessage coppia completa:
 	    Aggiunge prima un AIMessage con tool_calls, poi il ToolMessage con lo stesso ID.
 	"""
 	player = _make_test_player()
@@ -192,58 +193,64 @@ def test_tool_message_injection():
 		print(f"[FAIL] ToolMessage con ID fittizio ha fallito: {type(exc).__name__}: {exc}")
 
 	# ------------------------------------------------------------------
-	# Test B: AIMessage + ToolMessage coppia completa (only if A failed)
+	# Test B: AIMessage + ToolMessage coppia completa (always run)
 	# ------------------------------------------------------------------
 	test_b_passed = False
 	test_b_error = None
 
-	if not test_a_passed:
-		print("\n=== TEST B: AIMessage + ToolMessage coppia completa ===")
-		try:
-			call_id = str(uuid.uuid4())
-			ai_msg = AIMessage(
-				content="",
-				tool_calls=[{"id": call_id, "name": "executor", "args": {}}],
-			)
-			tool_msg_b = ToolMessage(
-				content=_mechanical_results_content(results_text),
-				tool_call_id=call_id,
-				name="executor",
-			)
+	print("\n=== TEST B: AIMessage + ToolMessage coppia completa ===")
+	try:
+		call_id = str(uuid.uuid4())
+		ai_msg = AIMessage(
+			content="",
+			tool_calls=[{"id": call_id, "name": "executor", "args": {}}],
+		)
+		tool_msg_b = ToolMessage(
+			content=_mechanical_results_content(results_text),
+			tool_call_id=call_id,
+			name="executor",
+		)
 
-			state_b: State = {
-				"messages": list(base_messages) + [ai_msg, tool_msg_b],
-				"player": player,
-				"plan": state["plan"],
-			}
+		state_b: State = {
+			"messages": list(base_messages) + [ai_msg, tool_msg_b],
+			"player": player,
+			"plan": state["plan"],
+		}
 
-			response_b = _run_send_message(state_b)
+		response_b = _run_send_message(state_b)
 
-			assert response_b is not None
-			assert "messages" in response_b
-			assert len(response_b["messages"]) > 0
-			response_content_b = response_b["messages"][-1].content
-			assert response_content_b and len(response_content_b.strip()) > 0
+		assert response_b is not None
+		assert "messages" in response_b
+		assert len(response_b["messages"]) > 0
+		response_content_b = response_b["messages"][-1].content
+		assert response_content_b and len(response_content_b.strip()) > 0
 
-			test_b_passed = True
-			print("[PASS] AIMessage + ToolMessage coppia funziona!")
-			print(f"Risposta GM (anteprima): {response_content_b[:300]}")
+		test_b_passed = True
+		print("[PASS] AIMessage + ToolMessage coppia funziona!")
+		print(f"Risposta GM (anteprima): {response_content_b[:300]}")
 
-		except Exception as exc:
-			test_b_error = exc
-			print(f"[FAIL] AIMessage + ToolMessage coppia ha fallito: {type(exc).__name__}: {exc}")
+	except Exception as exc:
+		test_b_error = exc
+		print(f"[FAIL] AIMessage + ToolMessage coppia ha fallito: {type(exc).__name__}: {exc}")
 
 	# ------------------------------------------------------------------
 	# Final report
 	# ------------------------------------------------------------------
 	print("\n=== RISULTATO FINALE ===")
-	if test_a_passed:
-		print("Approccio consigliato: Test A — ToolMessage con ID fittizio")
+	print(f"Test A — ToolMessage fittizio:        {'PASS ✅' if test_a_passed else 'FAIL ❌'}")
+	print(f"Test B — AIMessage + ToolMessage:     {'PASS ✅' if test_b_passed else 'FAIL ❌'}")
+
+	if test_a_passed and test_b_passed:
+		print("\nEntrambi gli approcci funzionano.")
+		print("Approccio consigliato: Test A — ToolMessage con ID fittizio (più semplice).")
+	elif test_a_passed:
+		print("\nApproccio consigliato: Test A — ToolMessage con ID fittizio.")
+		print(f"(Test B fallito con: {type(test_b_error).__name__}: {test_b_error})")
 	elif test_b_passed:
-		print("Approccio consigliato: Test B — AIMessage + ToolMessage coppia completa")
+		print("\nApproccio consigliato: Test B — AIMessage + ToolMessage coppia completa.")
 		print(f"(Test A fallito con: {type(test_a_error).__name__}: {test_a_error})")
 	else:
-		print("Entrambi gli approcci hanno fallito!")
+		print("\nEntrambi gli approcci hanno fallito!")
 		print(f"Test A errore: {type(test_a_error).__name__}: {test_a_error}")
 		print(f"Test B errore: {type(test_b_error).__name__}: {test_b_error}")
 		raise AssertionError(

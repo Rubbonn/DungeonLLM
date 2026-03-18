@@ -4,7 +4,9 @@ from app.types.state import State
 from app.tools import make_player_tools
 from langchain.agents import create_agent
 from langchain.chat_models import init_chat_model
+from langchain.messages import ToolMessage
 from typing import cast, Any
+import uuid
 
 def send_message(state: State) -> dict:
 	agent = create_agent(
@@ -25,10 +27,10 @@ def planner(state: State) -> dict:
 	return {'plan': response['structured_response']}
 
 def executor(state: State) -> dict:
+	assert state['plan'] is not None
 	if len(state['plan'].actions) == 0:
 		return {}
 
-	for index, action in enumerate(state['plan'].actions):
-		state['plan'].actions[index].result = action.execute(state)
-	print(state['plan'])
-	return {'plan': state['plan']}
+	for action in state['plan'].actions:
+		action.execute(state)
+	return {'plan': state['plan'], 'messages': ToolMessage(content=str(state['plan']), name='executor', tool_call_id=str(uuid.uuid4()))}

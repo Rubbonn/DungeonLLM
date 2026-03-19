@@ -5,12 +5,13 @@ from app.tools import make_player_tools
 from langchain.agents import create_agent
 from langchain.chat_models import init_chat_model
 from langchain.messages import ToolMessage
+from os import environ
 from typing import cast, Any
 import uuid
 
 def send_message(state: State) -> dict:
 	agent = create_agent(
-		model=init_chat_model(model='qwen3.5:397b-cloud', model_provider='ollama'),
+		model=init_chat_model(model=environ.get('LLM_MODEL'), model_provider=environ.get('LLM_PROVIDER')),
 		tools=make_player_tools(state),
 		system_prompt=SYSTEM_PROMPT
 	)
@@ -19,7 +20,7 @@ def send_message(state: State) -> dict:
 
 def planner(state: State) -> dict:	
 	agent = create_agent(
-		model=init_chat_model(model='qwen3.5:397b-cloud', model_provider='ollama'),
+		model=init_chat_model(model=environ.get('LLM_MODEL'), model_provider=environ.get('LLM_PROVIDER')),
 		system_prompt=PLANNER_PROMPT,
 		response_format=Plan
 	)

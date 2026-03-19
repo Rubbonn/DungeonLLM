@@ -1,9 +1,7 @@
+from app.database import Base
 from app.entities.features import AbilityType
 from sqlalchemy import Table, Column, ForeignKey
-from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column, relationship
-
-class Base(DeclarativeBase):
-	pass
+from sqlalchemy.orm import Mapped, mapped_column, relationship
 
 class Item:
 	id: Mapped[int] = mapped_column(primary_key=True)

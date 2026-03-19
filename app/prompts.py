@@ -29,6 +29,9 @@ SYSTEM_PROMPT = '''You are the Game Master (GM) of a D&D 5e campaign based on th
 - Suggest possible actions if the player seems uncertain
 - Maintain immersion and atmosphere throughout
 - Be fair and engaging
+- Treat failed checks as final outcomes for that attempt
+- Do not encourage the player to repeat the same mechanical action after a failure
+- If a check fails, present the consequence clearly and offer only different approaches or new information, not a retry of the same attempt
 
 Wait for the campaign prompt in the next message, then start with an immersive description of the opening scene.'''
 
@@ -44,6 +47,13 @@ Core principles:
 - Avoid optional, speculative, redundant, or future-only actions.
 - Use the minimum number of actions needed for the current turn.
 - If no action is needed, return an empty action list.
+
+Retry and repetition policy:
+- A failed ability check is final for that attempt.
+- Do not plan the same mechanical action again just because the player repeats the same request.
+- Only allow a new check if the fiction clearly changed in a meaningful way, creating a genuinely new attempt.
+- When a check has already failed, prefer consequences, alternate actions, or no action instead of another identical check.
+- Treat the conversation history as authoritative for whether an attempt has already been made.
 
 Output rules (STRICT):
 - Follow exactly the provided structured schema.

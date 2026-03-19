@@ -5,17 +5,17 @@ from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column, relationship
 class Base(DeclarativeBase):
 	pass
 
-class Item(Base):
+class Item:
 	id: Mapped[int] = mapped_column(primary_key=True)
 	name: Mapped[str]
 	weight: Mapped[float]
 	cost: Mapped[float]
 
-class Gear(Item):
+class Gear(Base, Item):
 	__tablename__ = 'gear'
 	description: Mapped[str]
 
-class Tool(Item):
+class Tool(Base, Item):
 	__tablename__ = 'tools'
 	ability: Mapped[AbilityType]
 	utilize: Mapped[str]

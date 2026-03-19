@@ -6292,7 +6292,7 @@ As a Bonus Action, you can drink a vial of Antitoxin to gain Advantage on saving
 
 An Arcane Focus takes one of the forms in the Arcane Focuses table and is jeweled or carved to channel arcane magic. A Sorcerer, Warlock, or Wizard can use such an item as a Spellcasting Focus.
 
-### Arcane Focuses
+#### Arcane Focuses
 
 | Focus                       | Weight | Cost  |
 |-----------------------------|--------|-------|

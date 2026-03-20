@@ -9,6 +9,12 @@ if __name__ == "__main__":
 	from random import randint
 	from typing import cast
 
+	from app.graph.srdparse import build_graph as build_srd_graph
+	import sys
+	graph = build_srd_graph()
+	graph.invoke({'source_file': 'SRD_CC_v5.2.1.md'})
+	sys.exit(0)
+
 	dotenv.load_dotenv()
 	graph = build_graph()
 	state: GameplayState = {

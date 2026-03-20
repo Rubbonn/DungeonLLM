@@ -4,4 +4,4 @@
 .env
 
 __pycache__
-data/saves/*.json
+/data

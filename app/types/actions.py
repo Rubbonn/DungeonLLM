@@ -5,7 +5,7 @@ from app.utilities.functions import throw_dice
 from pydantic import BaseModel, Field
 from typing import Literal, TypeVar, Generic, TYPE_CHECKING
 if TYPE_CHECKING:
-	from app.types.state import State
+	from app.types.state import GameplayState
 
 ActionT = TypeVar('ActionT', bound=str)
 
@@ -15,7 +15,7 @@ class BaseAction(BaseModel, Generic[ActionT]):
 	result: str = Field(description='The result of the action', default='')
 
 	@abstractmethod
-	def execute(self, state: State):
+	def execute(self, state: GameplayState):
 		pass
 
 class AbilityCheckAction(BaseAction[Literal['ability_check']]):
@@ -30,7 +30,7 @@ Charisma: Influence, entertain, or deceive''', default='ability_check')
 	ability: AbilityType = Field(description='The ability to check against')
 	difficulty_class: int = Field(description='The difficulty class to equal or exceed to succeed')
 
-	def execute(self, state: State):
+	def execute(self, state: GameplayState):
 		dice_result = throw_dice(20)
 		player_modifier = state['player'].get_ability_modifier(self.ability)
 		if dice_result == 1 or dice_result + player_modifier < self.difficulty_class:

@@ -1,10 +1,10 @@
 from app.nodes import nodes, commands, routers
-from app.types.state import State
+from app.types.state import GameplayState
 from langgraph.graph import StateGraph, START, END
 
 
 def build_graph():
-	graph_builder = StateGraph(State)
+	graph_builder = StateGraph(GameplayState)
 	graph_builder.add_node('planner', nodes.planner)
 	graph_builder.add_node('executor', nodes.executor)
 	graph_builder.add_node('send_message', nodes.send_message)

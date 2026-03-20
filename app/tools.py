@@ -1,7 +1,7 @@
-from app.types.state import State
+from app.types.state import GameplayState
 from langchain.tools import tool
 
-def make_player_tools(state: State) -> list:
+def make_player_tools(state: GameplayState) -> list:
 	@tool
 	def get_player_info() -> str:
 		'''

@@ -24,5 +24,6 @@ def get_database_session() -> Session:
 	return _database_session
 
 def initialize_database():
+	from app.entities import items, creatures
 	engine = get_database_engine()
 	Base.metadata.create_all(engine)

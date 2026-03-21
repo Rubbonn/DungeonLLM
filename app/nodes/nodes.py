@@ -1,3 +1,4 @@
+from app.database import get_database_session
 from app.prompts import SYSTEM_PROMPT, PLANNER_PROMPT
 from app.types.planning import Plan
 from app.types.state import GameplayState, SrdParserState
@@ -56,7 +57,7 @@ def gear_parser(state: SrdParserState):
 	if not match:
 		return {}
 	
-	llm = init_chat_model(model=environ.get('LLM_MODEL'), model_provider=environ.get('LLM_PROVIDER')).with_structured_output({
+	llm = init_chat_model(model=environ.get('LLM_MODEL'), model_provider=environ.get('LLM_PROVIDER'), max_completion_tokens=32768).with_structured_output({
 		'type': 'array',
 		'title': 'Gear Items',
 		'description': 'List of gear items with their properties',
@@ -69,24 +70,13 @@ def gear_parser(state: SrdParserState):
 				'description': {'type': 'string', 'description': 'A brief description of the gear item'}
 			}
 		}
-	}, method='json_schema')
-	response = llm.invoke(f'''Extract the gear items from the following text, providing their name, weight, cost and description in the following JSON Schema format:
-	{{
-		'type': 'array',
-		'title': 'Gear Items',
-		'description': 'List of gear items with their properties',
-		'items': {{
-			'type': 'object',
-			'properties': {{
-				'name': {{'type': 'string', 'description': 'The name of the gear item'}},
-				'weight': {{'type': 'number', 'description': 'The weight of the gear item in pounds'}},
-				'cost': {{'type': 'number', 'description': 'The cost of the gear item in gold pieces'}},
-				'description': {{'type': 'string', 'description': 'A brief description of the gear item'}}
-			}}
-		}}
-	}}
-
-	Text to extract from:
+	})
+	response = llm.invoke(f'''Extract the gear items from the following text, providing their name, weight, cost and description in the following text:
 	{match.group(1)}
 	''')
-	print(response)
+	from app.entities.items import Gear
+	session = get_database_session()
+	for item in response:
+		gear_item = Gear(name=item['name'], weight=item['weight'], cost=item['cost'], description=item['description'])
+		session.add(gear_item)
+	session.commit()

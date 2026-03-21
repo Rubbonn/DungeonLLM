@@ -10,8 +10,10 @@ if __name__ == "__main__":
 	from typing import cast
 
 	from app.graph.srdparse import build_graph as build_srd_graph
+	from app.database import initialize_database
 	import sys
 	graph = build_srd_graph()
+	initialize_database()
 	graph.invoke({'source_file': 'SRD_CC_v5.2.1.md'})
 	sys.exit(0)
 

@@ -154,3 +154,71 @@ $transition-fast: 0.15s ease;
 $transition-base: 0.2s ease;
 
 $transition-btn: transform $transition-fast, box-shadow $transition-fast, background-color $transition-fast;
+
+
+// =============================================================================
+//  Extended tokens — Character Creation & inner pages
+// =============================================================================
+
+
+// ─── Extended Color Palette ──────────────────────────────────────────────────
+//
+//  Olive — character creation page
+//
+$olive-950: #1a1807;   // page background
+$olive-900: #242109;   // card / panel surface
+$olive-800: #2d2a0d;   // elevated surface / hover
+
+//  Cream — primary readable text on dark olive backgrounds
+$cream:     #e8dcc8;
+$cream-dim: rgba($cream, 0.60);
+
+
+// ─── Extended Semantic Tokens ─────────────────────────────────────────────────
+
+//  Page & surface
+$color-bg-page:           $olive-950;
+$color-surface:           $olive-900;
+$color-surface-elevated:  $olive-800;
+
+//  Text
+$color-text-primary:      $cream;
+$color-text-secondary:    $cream-dim;
+$color-placeholder:       rgba($cream, 0.30);
+
+//  Borders
+$color-border:            rgba($gold-500, 0.18);
+$color-border-subtle:     rgba($gold-500, 0.08);
+$color-border-focus:      rgba($gold-500, 0.50);
+
+
+// ─── Extended Typography ──────────────────────────────────────────────────────
+
+$font-sans: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+
+$font-size-page-title:    clamp(28px, 4vw, 44px);
+$font-size-section-label: 16px;
+$font-size-field-label:   10px;
+$font-size-attr-value:    24px;
+$font-size-body:          14px;
+$font-size-caption:       12px;
+
+$letter-spacing-label:    2px;
+
+
+// ─── Extended Spacing ─────────────────────────────────────────────────────────
+
+$space-13: 56px;
+$space-14: 64px;
+
+
+// ─── Extended Sizing ──────────────────────────────────────────────────────────
+
+$topbar-height: 60px;
+$avatar-size:   38px;
+
+
+// ─── Extended Z-Index ─────────────────────────────────────────────────────────
+
+$z-topbar:    10;
+$z-bottombar: 10;

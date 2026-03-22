@@ -1,3 +1,12 @@
+<script>
+  import CharacterCreation from './pages/CharacterCreation.svelte';
+
+  let currentPage = $state('home');
+</script>
+
+{#if currentPage === 'character-creation'}
+  <CharacterCreation onBack={() => (currentPage = 'home')} />
+{:else}
 <div class="dungeon-app">
   <!-- Atmospheric background layers -->
   <div class="bg-overlay" aria-hidden="true"></div>
@@ -40,7 +49,7 @@
       </button>
 
       <!-- Create campaign -->
-      <button class="btn btn-secondary">
+      <button class="btn btn-secondary" onclick={() => (currentPage = 'character-creation')}>
         <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
           <path
             d="M7.5 5.6L10 7 8.6 4.5 10 2 7.5 3.4 5 2l1.4 2.5L5 7zm12 9.8L17 14l1.4 2.5L17 19l2.5-1.4L22 19l-1.4-2.5L22 14zM22 2l-2.5 1.4L17 2l1.4 2.5L17 7l2.5-1.4L22 7l-1.4-2.5zm-7.63 5.29a1.5 1.5 0 00-2.12 0L3 16.54V21h4.46l9.25-9.25a1.5 1.5 0 000-2.12l-2.34-2.34z"
@@ -86,6 +95,7 @@
     <p class="version">V0.0.4 BETA PHASE</p>
   </footer>
 </div>
+{/if}
 
 <style lang="scss">
   @use './styles/variables' as *;

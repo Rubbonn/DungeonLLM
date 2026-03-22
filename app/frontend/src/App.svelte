@@ -87,7 +87,9 @@
   </footer>
 </div>
 
-<style>
+<style lang="scss">
+  @use './styles/variables' as *;
+
   .dungeon-app {
     position: relative;
     width: 100%;
@@ -98,238 +100,235 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    background-color: #060402;
+    background-color: $color-bg;
   }
 
-  /* ── Atmospheric dungeon background ── */
+  // ── Atmospheric dungeon background ──────────────────────────────────────────
   .bg-overlay {
     position: absolute;
     inset: 0;
     background:
-      radial-gradient(ellipse 80% 100% at 8% 50%, rgba(5, 3, 1, 0.97) 0%, transparent 58%),
-      radial-gradient(ellipse 80% 100% at 92% 50%, rgba(5, 3, 1, 0.97) 0%, transparent 58%),
-      radial-gradient(ellipse 40% 80% at 50% 0%, rgba(8, 6, 3, 0.92) 0%, transparent 80%),
-      radial-gradient(ellipse 38% 65% at 50% 50%, rgba(28, 17, 6, 0.55) 0%, transparent 100%),
-      linear-gradient(180deg, #060402 0%, #110e07 35%, #0a0805 65%, #060402 100%);
-    z-index: 0;
+      radial-gradient(ellipse 80% 100% at 8%  50%, $overlay-strong 0%, transparent 58%),
+      radial-gradient(ellipse 80% 100% at 92% 50%, $overlay-strong 0%, transparent 58%),
+      radial-gradient(ellipse 40%  80% at 50%  0%, $overlay-warm   0%, transparent 80%),
+      radial-gradient(ellipse 38%  65% at 50% 50%, $overlay-center 0%, transparent 100%),
+      linear-gradient(180deg, $color-bg 0%, $color-bg-mid 35%, $color-bg-deep 65%, $color-bg 100%);
+    z-index: $z-bg;
   }
 
-  /* ── Orange portal / dungeon-door glow ── */
+  // ── Orange portal / dungeon-door glow ───────────────────────────────────────
   .portal-glow {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -8%);
-    width: 380px;
-    height: 240px;
+    width: $portal-width;
+    height: $portal-height;
     background: radial-gradient(
       ellipse 62% 100% at 50% 100%,
-      rgba(255, 125, 15, 0.88) 0%,
-      rgba(218, 82, 8, 0.55) 28%,
-      rgba(155, 48, 4, 0.22) 55%,
-      transparent 72%
+      $portal-core  0%,
+      $portal-mid   28%,
+      $portal-outer 55%,
+      transparent   72%
     );
-    z-index: 1;
+    z-index: $z-portal;
     filter: blur(12px);
     pointer-events: none;
   }
 
-  /* ── Main content ── */
+  // ── Main content ────────────────────────────────────────────────────────────
   .main-content {
     position: relative;
-    z-index: 2;
+    z-index: $z-content;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 520px;
-    padding: 0 24px;
+    max-width: $content-max-width;
+    padding: 0 $space-9;
     margin-top: -30px;
   }
 
-  /* ── Header ── */
+  // ── Header ──────────────────────────────────────────────────────────────────
   .header {
     text-align: center;
-    margin-bottom: 48px;
+    margin-bottom: $space-12;
   }
 
   .shield-icon {
-    width: 46px;
-    height: 46px;
-    margin: 0 auto 14px;
-    color: #f5c518;
-    filter: drop-shadow(0 0 12px rgba(245, 197, 24, 0.72));
-  }
+    width: $shield-size;
+    height: $shield-size;
+    margin: 0 auto $space-5;
+    color: $color-icon;
+    filter: drop-shadow($glow-shield);
 
-  .shield-icon svg {
-    width: 100%;
-    height: 100%;
+    svg {
+      width: 100%;
+      height: 100%;
+    }
   }
 
   .title {
-    font-family: 'Cinzel', Georgia, 'Times New Roman', serif;
-    font-size: clamp(52px, 9.5vw, 96px);
-    font-weight: 900;
-    color: #f5c518;
-    letter-spacing: 5px;
+    font-family: $font-display;
+    font-size: $font-size-title;
+    font-weight: $font-weight-black;
+    color: $color-accent;
+    letter-spacing: $letter-spacing-title;
     line-height: 1;
-    margin: 0 0 14px;
-    text-shadow:
-      0 0 40px rgba(245, 197, 24, 0.28),
-      0 2px 6px rgba(0, 0, 0, 0.95);
+    margin: 0 0 $space-5;
+    text-shadow: $glow-title;
   }
 
   .subtitle {
-    font-family: 'Cinzel', Georgia, serif;
-    font-size: 12px;
-    letter-spacing: 8px;
-    color: #8a7a58;
+    font-family: $font-serif;
+    font-size: $font-size-subtitle;
+    letter-spacing: $letter-spacing-subtitle;
+    color: $color-text-muted;
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: $font-weight-regular;
     margin: 0;
   }
 
-  /* ── Menu buttons ── */
+  // ── Menu buttons ────────────────────────────────────────────────────────────
   .menu {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: $space-4;
     width: 100%;
-    max-width: 420px;
-    margin-bottom: 28px;
+    max-width: $menu-max-width;
+    margin-bottom: $space-10;
   }
 
   .btn {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 12px;
-    padding: 17px 28px;
-    border-radius: 8px;
+    gap: $space-4;
+    padding: 17px $space-10;
+    border-radius: $radius-md;
     border: none;
     cursor: pointer;
-    font-family: 'Cinzel', Georgia, serif;
-    font-size: 13px;
-    font-weight: 700;
-    letter-spacing: 3px;
-    transition:
-      transform 0.15s ease,
-      box-shadow 0.15s ease,
-      background-color 0.15s ease;
+    font-family: $font-serif;
+    font-size: $font-size-btn;
+    font-weight: $font-weight-bold;
+    letter-spacing: $letter-spacing-btn;
+    transition: $transition-btn;
     width: 100%;
-  }
 
-  .btn:active {
-    transform: translateY(1px) !important;
+    &:active {
+      transform: translateY(1px) !important;
+    }
+
+    // ── Primary (gold fill) ──
+    &-primary {
+      background: $color-btn-primary-bg;
+      color: $color-btn-primary-text;
+
+      &:hover {
+        background: $color-btn-primary-hover-bg;
+        box-shadow: $glow-btn-primary;
+        transform: translateY(-2px);
+      }
+    }
+
+    // ── Secondary (dark, gold text) ──
+    &-secondary {
+      background: $color-btn-secondary-bg;
+      color: $color-btn-secondary-text;
+      border: 1px solid $color-btn-secondary-border;
+
+      &:hover {
+        background: $color-btn-secondary-hover-bg;
+        border-color: $color-btn-secondary-border-hover;
+        transform: translateY(-2px);
+      }
+    }
   }
 
   .btn-icon {
-    width: 20px;
-    height: 20px;
+    width: $btn-icon-size;
+    height: $btn-icon-size;
     flex-shrink: 0;
   }
 
-  .btn-primary {
-    background: #f5c518;
-    color: #1a1108;
-  }
-
-  .btn-primary:hover {
-    background: #ffd900;
-    box-shadow: 0 0 28px rgba(245, 197, 24, 0.55);
-    transform: translateY(-2px);
-  }
-
-  .btn-secondary {
-    background: rgba(40, 24, 10, 0.9);
-    color: #f5c518;
-    border: 1px solid rgba(245, 197, 24, 0.07);
-  }
-
-  .btn-secondary:hover {
-    background: rgba(58, 34, 13, 0.95);
-    border-color: rgba(245, 197, 24, 0.22);
-    transform: translateY(-2px);
-  }
-
-  /* ── Settings link ── */
+  // ── Settings link ───────────────────────────────────────────────────────────
   .settings-btn {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: $space-2;
     background: none;
     border: none;
     cursor: pointer;
-    font-family: 'Cinzel', Georgia, serif;
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 3px;
-    color: #f5c518;
-    padding: 10px 16px;
+    font-family: $font-serif;
+    font-size: $font-size-settings;
+    font-weight: $font-weight-semibold;
+    letter-spacing: $letter-spacing-btn;
+    color: $color-text-accent;
+    padding: $space-3 $space-6;
     opacity: 0.82;
-    transition: opacity 0.2s;
+    transition: opacity $transition-base;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    .btn-icon {
+      width: $settings-icon-size;
+      height: $settings-icon-size;
+    }
   }
 
-  .settings-btn:hover {
-    opacity: 1;
-  }
-
-  .settings-btn .btn-icon {
-    width: 16px;
-    height: 16px;
-  }
-
-  /* ── Footer ── */
+  // ── Footer ──────────────────────────────────────────────────────────────────
   .footer {
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 2;
+    z-index: $z-content;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 20px 22px;
+    padding: 0 $space-7 $space-8;
     pointer-events: none;
   }
 
   .footer-nav {
     display: flex;
-    gap: 44px;
-    margin-bottom: 10px;
+    gap: $space-11;
+    margin-bottom: $space-3;
     pointer-events: auto;
   }
 
   .footer-link {
     display: flex;
     align-items: center;
-    gap: 6px;
+    gap: $space-1 + 2px;
     background: none;
     border: none;
     cursor: pointer;
-    font-family: 'Cinzel', Georgia, serif;
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 2px;
-    color: #7a6a4a;
-    padding: 4px 8px;
-    transition: color 0.2s;
-  }
+    font-family: $font-serif;
+    font-size: $font-size-nav;
+    font-weight: $font-weight-semibold;
+    letter-spacing: $letter-spacing-nav;
+    color: $color-text-dim;
+    padding: $space-1 $space-2;
+    transition: color $transition-base;
 
-  .footer-link:hover {
-    color: #f5c518;
+    &:hover {
+      color: $color-accent;
+    }
   }
 
   .nav-icon {
-    width: 14px;
-    height: 14px;
+    width: $nav-icon-size;
+    height: $nav-icon-size;
   }
 
   .version {
-    font-family: 'Cinzel', Georgia, serif;
-    font-size: 10px;
-    letter-spacing: 3px;
-    color: #5a4a2a;
+    font-family: $font-serif;
+    font-size: $font-size-version;
+    letter-spacing: $letter-spacing-version;
+    color: $color-text-faint;
     opacity: 0.65;
     margin: 0;
   }

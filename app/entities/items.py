@@ -23,3 +23,35 @@ class Tool(Base, Item):
 		Column('tool_id', ForeignKey('tools.id'), primary_key=True),
 		Column('gear_id', ForeignKey('gear.id'), primary_key=True)
 	))
+
+class DamageType(Base):
+	__tablename__ = 'damage_types'
+	id: Mapped[int] = mapped_column(primary_key=True)
+	name: Mapped[str]
+	examples: Mapped[str]
+
+class WeaponProperty(Base):
+	__tablename__ = 'weapon_properties'
+	id: Mapped[int] = mapped_column(primary_key=True)
+	name: Mapped[str]
+	description: Mapped[str]
+
+class WeaponMasteryProperty(Base):
+	__tablename__ = 'weapon_mastery_properties'
+	id: Mapped[int] = mapped_column(primary_key=True)
+	name: Mapped[str]
+	description: Mapped[str]
+
+class Weapon(Base, Item):
+	__tablename__ = 'weapons'
+	damage: Mapped[str]
+	damage_type_id: Mapped[int] = mapped_column(ForeignKey('damage_types.id'))
+	damage_type: Mapped[DamageType] = relationship()
+	properties: Mapped[list[WeaponProperty]] = relationship(secondary=Table(
+		'weapons_properties',
+		Base.metadata,
+		Column('weapon_id', ForeignKey('weapons.id'), primary_key=True),
+		Column('property_id', ForeignKey('weapon_properties.id'), primary_key=True)
+	))
+	mastery_property_id: Mapped[int] = mapped_column(ForeignKey('weapon_mastery_properties.id'))
+	mastery_property: Mapped[WeaponMasteryProperty] = relationship()

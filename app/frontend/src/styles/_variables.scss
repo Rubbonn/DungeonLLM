@@ -282,8 +282,35 @@ $color-mp-bg:   rgba($white, 0.08);
 // ─── Game-screen layout ───────────────────────────────────────────────────────
 
 $game-max-width:      960px;
-$game-sidebar-width:  280px;
+$game-sidebar-width:  290px;    // left/right sidebar width
 $game-scene-height:   220px;    // narrative scene image height
 
-$font-size-game-body: 16px;     // main narrative text
+$font-size-game-body: 15px;     // chat narrative text
 $font-size-game-ui:   13px;     // UI labels in game
+$font-size-game-stat: 11px;     // stat labels, meta text
+
+
+// ─── Game chat bubbles ────────────────────────────────────────────────────────
+
+$bubble-master-bg:    #f5f0e8;   // cream — Master/narrator bubble
+$bubble-master-text:  #1a1807;   // dark text on cream
+$bubble-player-bg:    $gold-500; // gold — player action bubble
+$bubble-player-text:  $dark-700; // dark text on gold
+$bubble-check-bg:     rgba($mp-color, 0.15);
+$bubble-check-text:   $mp-color;
+
+
+// ─── New-campaign page ────────────────────────────────────────────────────────
+
+$nc-thumb-width:  220px;   // campaign card image column width
+$nc-thumb-height: 140px;   // campaign card image height
+$nc-max-width:    900px;   // page container max-width
+
+
+// ─── Rules Consultant ─────────────────────────────────────────────────────────
+
+$rules-info-bg:    rgba($mp-color, 0.08);
+$rules-info-border: rgba($mp-color, 0.25);
+$rules-tip-bg:     rgba(#3a9e9e, 0.08);
+$rules-tip-border: rgba(#3a9e9e, 0.25);
+$rules-tip-color:  #4db6ac;

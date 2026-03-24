@@ -1,176 +1,243 @@
 <script>
-  import MainTopBar from '../components/MainTopBar.svelte';
-
   /**
-   * onBack      — navigate back to home
-   * onStart     — called with the selected module to start a new game
+   * onBack  — navigate back to home
+   * onStart — called with selected campaign to begin game
    */
   let { onBack, onStart } = $props();
 
-  // ── Available adventure modules ───────────────────────────────────────────────
-  const MODULES = [
+  // ── Tab state ─────────────────────────────────────────────────────────────────
+  let activeTab = $state('template'); // 'template' | 'bozze'
+
+  // ── Campaigns data ────────────────────────────────────────────────────────────
+  const TEMPLATES = [
     {
       id: 'ravenloft',
-      title: "La Piaga di Ravenloft",
-      setting: "Horror Gotico",
-      difficulty: 'Difficile',
-      diffClass: 'hard',
-      players: '1 giocatore',
-      description: "Un antico male risvegliato scorre tra le nebbie di Barovia. Sopravvivi alle cripte di Strahd e svela la maledizione che tormenta questa terra.",
-      tags: ['Orrore', 'Vampiri', 'Nebbia'],
+      title: "L'Ombra di Ravenloft",
+      desc: "Un'avventura gotica tra nebbie perenni e castelli infestati. Affronta il male ancestrale che dimora nelle terre di Barovia.",
+      players: '3-5 Giocatori',
+      level: 'Livello 1-10',
+      badge: 'CONSIGLIATO',
+      badgeColor: 'gold',
+      thumbColor: '#1a2030',
+      draft: false,
     },
     {
-      id: 'phandelver',
-      title: "Miniere di Phandelver",
-      setting: "Alta Fantasia",
-      difficulty: 'Normale',
-      diffClass: 'normal',
-      players: '1 giocatore',
-      description: "La Grotta dell'Onda Tonante custodisce antichi segreti. Esplora le terre selvagge attorno a Phandalin e affronta il misterioso Ragno Nero.",
-      tags: ['Esplorazione', 'Goblin', 'Magia'],
+      id: 'underdark',
+      title: 'I Misteri di Underdark',
+      desc: 'Esplora le profondità della terra in cerca di antichi manufatti. Le civiltà sotterranee nascondono segreti pericolosi.',
+      players: '4-6 Giocatori',
+      level: 'Livello 5-15',
+      badge: null,
+      badgeColor: null,
+      thumbColor: '#0d2020',
+      draft: false,
     },
     {
-      id: 'undermountain',
-      title: "Profondità di Undermountain",
-      setting: "Dungeon Crawler",
-      difficulty: 'Leggendario',
-      diffClass: 'legendary',
-      players: '1 giocatore',
-      description: "Il mega-dungeon sotto Waterdeep è infinito. Ogni livello cela orrori più grandi. Solo i più audaci sopravvivono ai labirinti di Halaster.",
-      tags: ['Dungeon', 'Puzzle', 'Mostri'],
-    },
-    {
-      id: 'icewind',
-      title: "Icewind Dale — Confine del Ghiaccio",
-      setting: "Avventura Artica",
-      difficulty: 'Normale',
-      diffClass: 'normal',
-      players: '1 giocatore',
-      description: "Una notte eterna cala su Icewind Dale. Le Dieci Città sopravvivono a stento mentre creature del freddo stringono d'assedio le mura.",
-      tags: ['Ghiaccio', 'Sopravvivenza', 'Mito'],
+      id: 'cenere',
+      title: 'Il Deserto di Cenere',
+      desc: 'Descrizione in fase di completamento… Ambientazione post-apocalittica fantasy.',
+      players: null,
+      level: null,
+      badge: 'BOZZA',
+      badgeColor: 'muted',
+      thumbColor: '#1e1e1e',
+      draft: true,
     },
   ];
 
-  let selectedId = $state(null);
+  const BOZZE = TEMPLATES.filter(t => t.draft);
+  const DISPLAYED = $derived(activeTab === 'template' ? TEMPLATES : BOZZE);
 
-  function handleSelect(id) {
-    selectedId = selectedId === id ? null : id;
-  }
-
-  function handleStart() {
-    const module = MODULES.find(m => m.id === selectedId);
-    if (module) onStart?.(module);
+  function handleStart(campaign) {
+    if (campaign.draft) return;
+    onStart?.(campaign);
   }
 </script>
 
-<div class="new-campaign">
-  <MainTopBar />
-
-  <div class="page-content">
-    <!-- Back link -->
-    <button class="back-link" onclick={onBack}>
-      <svg class="back-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-        <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z" />
-      </svg>
-      Indietro al Menù Principale
-    </button>
-
-    <!-- Page header -->
-    <div class="page-header">
-      <h1 class="page-title">Nuova Campagna</h1>
-      <p class="page-subtitle">Scegli il modulo d&apos;avventura e lascia che il Master IA scriva il tuo destino.</p>
+<div class="nc-page">
+  <!-- ── Top bar ─────────────────────────────────────────────────────────── -->
+  <header class="nc-topbar">
+    <div class="nc-logo">
+      <div class="nc-logo-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M9 3H7v2H5V3H3v6h2v11h14V9h2V3h-2v2h-2V3h-2v2h-2V3H9zm7 16H8V9h8v10z" />
+        </svg>
+      </div>
+      <span class="nc-logo-title">Nuova Campagna</span>
     </div>
 
-    <!-- Module grid -->
-    <div class="module-grid" role="list">
-      {#each MODULES as mod (mod.id)}
-        <button
-          class="module-card"
-          class:selected={selectedId === mod.id}
-          onclick={() => handleSelect(mod.id)}
-          role="listitem"
-          aria-pressed={selectedId === mod.id}
-        >
-          <!-- Left accent stripe (difficulty color) -->
-          <span class="diff-stripe {mod.diffClass}" aria-hidden="true"></span>
+    <div class="nc-topbar-right">
+      <button class="back-link" onclick={onBack}>
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z" />
+        </svg>
+        Torna al Menu
+      </button>
+      <button class="new-btn" aria-label="Crea nuova campagna">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+        </svg>
+      </button>
+    </div>
+  </header>
 
-          <!-- Thumbnail placeholder -->
-          <div class="mod-thumb" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="currentColor">
-              <path d="M9 3H7v2H5V3H3v6h2v11h14V9h2V3h-2v2h-2V3h-2v2h-2V3H9zm7 16H8V9h8v10z" />
-            </svg>
-          </div>
+  <!-- ── Tabs ───────────────────────────────────────────────────────────── -->
+  <div class="nc-tabs">
+    <button
+      class="tab-btn"
+      class:active={activeTab === 'template'}
+      onclick={() => (activeTab = 'template')}
+    >Template</button>
+    <button
+      class="tab-btn"
+      class:active={activeTab === 'bozze'}
+      onclick={() => (activeTab = 'bozze')}
+    >Le Mie Bozze</button>
+    <div class="tab-divider" aria-hidden="true"></div>
+  </div>
 
-          <!-- Info -->
-          <div class="mod-info">
-            <div class="mod-meta">
-              <span class="mod-setting">{mod.setting}</span>
-              <span class="mod-players">{mod.players}</span>
-            </div>
-            <h3 class="mod-title">{mod.title}</h3>
-            <p class="mod-desc">{mod.description}</p>
-            <div class="mod-tags">
-              {#each mod.tags as tag}
-                <span class="tag">{tag}</span>
-              {/each}
-            </div>
-          </div>
+  <!-- ── Campaign list ─────────────────────────────────────────────────── -->
+  <div class="nc-list">
+    {#each DISPLAYED as camp (camp.id)}
+      <article class="camp-card" class:draft={camp.draft} aria-label={camp.title}>
+        <!-- Thumbnail -->
+        <div class="camp-thumb" style="background: {camp.thumbColor};" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M9 3H7v2H5V3H3v6h2v11h14V9h2V3h-2v2h-2V3h-2v2h-2V3H9zm7 16H8V9h8v10z" />
+          </svg>
+        </div>
 
-          <!-- Difficulty badge -->
-          <div class="mod-right">
-            <span class="diff-badge {mod.diffClass}">{mod.difficulty}</span>
-            {#if selectedId === mod.id}
-              <div class="check-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
-                </svg>
-              </div>
+        <!-- Info -->
+        <div class="camp-info">
+          <div class="camp-title-row">
+            <h2 class="camp-title" class:draft-title={camp.draft}>{camp.title}</h2>
+            {#if camp.badge}
+              <span class="camp-badge {camp.badgeColor}">{camp.badge}</span>
             {/if}
           </div>
-        </button>
-      {/each}
-    </div>
+          <p class="camp-desc" class:draft-desc={camp.draft}>{camp.desc}</p>
+          {#if camp.players || camp.level}
+            <div class="camp-meta">
+              {#if camp.players}
+                <span class="meta-item">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" />
+                  </svg>
+                  {camp.players}
+                </span>
+              {/if}
+              {#if camp.level}
+                <span class="meta-item">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z" />
+                  </svg>
+                  {camp.level}
+                </span>
+              {/if}
+            </div>
+          {/if}
+
+          <!-- Actions row -->
+          <div class="camp-actions">
+            <div class="camp-actions-left">
+              <button class="btn-secondary">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z" />
+                </svg>
+                {camp.draft ? 'Continua Modifica' : 'Modifica'}
+              </button>
+              <button class="btn-danger">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z" />
+                </svg>
+                Elimina
+              </button>
+            </div>
+            <button
+              class="btn-start"
+              class:disabled={camp.draft}
+              onclick={() => handleStart(camp)}
+              disabled={camp.draft}
+              aria-label="Inizia {camp.title}"
+            >
+              {#if camp.draft}
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z" />
+                </svg>
+              {:else}
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M8 5v14l11-7z" />
+                </svg>
+              {/if}
+              Inizia
+            </button>
+          </div>
+        </div>
+      </article>
+    {/each}
   </div>
 
-  <!-- Sticky CTA -->
-  <div class="cta-bar" class:visible={selectedId !== null}>
-    <p class="cta-hint">
-      {#if selectedId}
-        {@const mod = MODULES.find(m => m.id === selectedId)}
-        Hai selezionato: <strong>{mod?.title}</strong>
-      {/if}
-    </p>
-    <button class="btn-start" onclick={handleStart} disabled={!selectedId}>
-      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-        <path d="M8 5v14l11-7z" />
-      </svg>
-      INIZIA AVVENTURA
-    </button>
-  </div>
+  <!-- ── Footer hint ────────────────────────────────────────────────────── -->
+  <footer class="nc-footer">
+    <p>Seleziona un template per iniziare la tua avventura o crea una nuova campagna da zero.</p>
+  </footer>
 </div>
 
 <style lang="scss">
   @use '../styles/variables' as *;
 
-  // ── Page shell ───────────────────────────────────────────────────────────────
-  .new-campaign {
+  .nc-page {
     min-height: 100vh;
     background: $color-bg-page;
     color: $color-text-primary;
     display: flex;
     flex-direction: column;
-    padding-bottom: 90px;
   }
 
-  .page-content {
-    flex: 1;
-    max-width: $campaign-max-width;
-    width: 100%;
-    margin: 0 auto;
-    padding: $space-10 $space-9 $space-6;
+  // ── Top bar ───────────────────────────────────────────────────────────────────
+  .nc-topbar {
+    height: $topbar-height;
+    flex-shrink: 0;
+    background: $color-bg-page;
+    border-bottom: 1px solid $color-border-subtle;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 $space-9;
+    gap: $space-6;
   }
 
-  // ── Back link ─────────────────────────────────────────────────────────────────
+  .nc-logo {
+    display: flex;
+    align-items: center;
+    gap: $space-3;
+  }
+
+  .nc-logo-icon {
+    width: 32px;
+    height: 32px;
+    background: $color-accent;
+    border-radius: $radius-sm;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $dark-700;
+    svg { width: 18px; height: 18px; }
+  }
+
+  .nc-logo-title {
+    font-family: $font-sans;
+    font-size: 18px;
+    font-weight: $font-weight-black;
+    color: $white;
+  }
+
+  .nc-topbar-right {
+    display: flex;
+    align-items: center;
+    gap: $space-4;
+  }
+
   .back-link {
     display: inline-flex;
     align-items: center;
@@ -180,269 +247,286 @@
     cursor: pointer;
     font-family: $font-sans;
     font-size: $font-size-body;
-    color: $color-accent;
+    color: $color-text-secondary;
     padding: 0;
-    margin-bottom: $space-9;
-    transition: opacity $transition-base;
-
-    &:hover { opacity: 0.75; }
+    transition: color $transition-base;
+    svg { width: 16px; height: 16px; }
+    &:hover { color: $white; }
   }
 
-  .back-icon {
-    width: 18px;
-    height: 18px;
-  }
-
-  // ── Page header ───────────────────────────────────────────────────────────────
-  .page-header {
-    margin-bottom: $space-9;
-  }
-
-  .page-title {
-    font-family: $font-sans;
-    font-size: clamp(28px, 4vw, 40px);
-    font-weight: $font-weight-black;
-    color: $white;
-    margin: 0 0 $space-3;
-  }
-
-  .page-subtitle {
-    font-family: $font-sans;
-    font-size: $font-size-body;
-    color: $color-text-primary;
-    margin: 0;
-    line-height: 1.5;
-  }
-
-  // ── Module grid ───────────────────────────────────────────────────────────────
-  .module-grid {
-    display: flex;
-    flex-direction: column;
-    gap: $space-4;
-  }
-
-  .module-card {
-    position: relative;
-    display: flex;
-    align-items: flex-start;
-    gap: $space-6;
+  .new-btn {
+    width: 34px;
+    height: 34px;
     background: $color-surface;
-    border: 1px solid $color-border-subtle;
-    border-radius: $radius-lg;
-    padding: $space-6 $space-7 $space-6 calc($space-7 + 6px);
-    text-align: left;
-    cursor: pointer;
-    transition: border-color $transition-base, background $transition-base, box-shadow $transition-base;
-    overflow: hidden;
-
-    &:hover {
-      border-color: $color-border;
-      background: $color-surface-elevated;
-    }
-
-    &.selected {
-      border-color: $color-accent;
-      box-shadow: 0 0 0 1px rgba($gold-500, 0.25) inset;
-    }
-  }
-
-  // ── Left difficulty stripe ────────────────────────────────────────────────────
-  .diff-stripe {
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 4px;
-    border-radius: $radius-lg 0 0 $radius-lg;
-
-    &.normal     { background: $hp-full; }
-    &.hard       { background: $hp-mid; }
-    &.legendary  { background: $red-400; }
-  }
-
-  // ── Thumbnail ────────────────────────────────────────────────────────────────
-  .mod-thumb {
-    flex-shrink: 0;
-    width: 56px;
-    height: 56px;
+    border: 1px solid $color-border;
     border-radius: $radius-md;
-    background: $color-bg-page;
-    border: 1px solid $color-border-subtle;
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: rgba($gold-500, 0.20);
-    margin-top: 2px;
+    color: $white;
+    transition: background $transition-base;
+    svg { width: 18px; height: 18px; }
+    &:hover { background: $color-surface-elevated; }
+  }
 
-    svg {
-      width: 28px;
-      height: 28px;
+  // ── Tabs ─────────────────────────────────────────────────────────────────────
+  .nc-tabs {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    gap: $space-2;
+    padding: 0 $space-9;
+    flex-shrink: 0;
+  }
+
+  .tab-divider {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: $color-border-subtle;
+  }
+
+  .tab-btn {
+    position: relative;
+    z-index: 1;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: $font-sans;
+    font-size: $font-size-body;
+    font-weight: $font-weight-semibold;
+    color: $color-text-secondary;
+    padding: $space-5 $space-2 $space-4;
+    transition: color $transition-base;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: transparent;
+      transition: background $transition-base;
+    }
+
+    &.active {
+      color: $color-accent;
+      &::after { background: $color-accent; }
+    }
+
+    &:hover:not(.active) { color: $color-text-primary; }
+  }
+
+  // ── Campaign list ─────────────────────────────────────────────────────────────
+  .nc-list {
+    flex: 1;
+    max-width: $nc-max-width;
+    width: 100%;
+    margin: 0 auto;
+    padding: $space-7 $space-9 $space-9;
+    display: flex;
+    flex-direction: column;
+    gap: $space-5;
+  }
+
+  .camp-card {
+    display: flex;
+    gap: 0;
+    background: $color-surface;
+    border: 1px solid $color-border-subtle;
+    border-radius: $radius-lg;
+    overflow: hidden;
+    transition: border-color $transition-base, box-shadow $transition-base;
+
+    &:hover:not(.draft) {
+      border-color: $color-border;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    &.draft {
+      border-style: dashed;
+      opacity: 0.80;
     }
   }
 
-  // ── Module info ───────────────────────────────────────────────────────────────
-  .mod-info {
+  // Thumbnail
+  .camp-thumb {
+    width: $nc-thumb-width;
+    min-height: $nc-thumb-height;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    svg { width: 40px; height: 40px; color: rgba($cream, 0.15); }
+  }
+
+  // Info column
+  .camp-info {
     flex: 1;
     min-width: 0;
+    padding: $space-7 $space-8;
     display: flex;
     flex-direction: column;
-    gap: $space-1 + 2px;
-  }
-
-  .mod-meta {
-    display: flex;
     gap: $space-3;
-    font-family: $font-sans;
-    font-size: $font-size-caption;
-    color: $color-text-secondary;
   }
 
-  .mod-setting {
-    color: $color-accent;
-    font-weight: $font-weight-semibold;
+  .camp-title-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: $space-4;
   }
 
-  .mod-title {
+  .camp-title {
     font-family: $font-sans;
-    font-size: $campaign-title-size;
+    font-size: 20px;
     font-weight: $font-weight-black;
-    color: $white;
+    color: $color-accent;
     margin: 0;
     line-height: 1.2;
   }
 
-  .mod-desc {
-    font-family: $font-sans;
-    font-size: $font-size-caption;
-    color: $color-text-primary;
-    margin: 0;
-    line-height: 1.5;
-  }
+  .draft-title { color: $color-text-primary; }
 
-  .mod-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: $space-1 + 2px;
-    margin-top: $space-1;
-  }
-
-  .tag {
-    font-family: $font-sans;
-    font-size: 11px;
-    font-weight: $font-weight-semibold;
-    color: $color-accent;
-    background: rgba($gold-500, 0.10);
-    border: 1px solid rgba($gold-500, 0.20);
-    border-radius: 999px;
-    padding: 2px $space-3;
-    letter-spacing: 0.5px;
-  }
-
-  // ── Right: badge + check ──────────────────────────────────────────────────────
-  .mod-right {
+  .camp-badge {
     flex-shrink: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: $space-3;
-    padding-top: 2px;
-  }
-
-  .diff-badge {
     font-family: $font-sans;
-    font-size: 11px;
-    font-weight: $font-weight-bold;
+    font-size: 10px;
+    font-weight: $font-weight-black;
     letter-spacing: 0.5px;
-    border-radius: 999px;
-    padding: 3px $space-4;
+    padding: 3px $space-3;
+    border-radius: $radius-sm;
     white-space: nowrap;
+    margin-top: 2px;
 
-    &.normal    { background: rgba($hp-full, 0.15); color: $hp-full; }
-    &.hard      { background: rgba($hp-mid,  0.15); color: $hp-mid;  }
-    &.legendary { background: rgba($red-400, 0.15); color: $red-400; }
+    &.gold  { background: $color-surface-elevated; border: 1px solid $color-accent; color: $color-accent; }
+    &.muted { background: $color-surface-elevated; border: 1px solid $color-border; color: $color-text-secondary; }
   }
 
-  .check-icon {
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    background: $color-accent;
-    color: $dark-700;
+  .camp-desc {
+    font-family: $font-sans;
+    font-size: $font-size-body;
+    color: $color-text-primary;
+    line-height: 1.55;
+    margin: 0;
+  }
+
+  .draft-desc {
+    font-style: italic;
+    color: $color-text-secondary;
+  }
+
+  .camp-meta {
     display: flex;
-    align-items: center;
-    justify-content: center;
-
-    svg {
-      width: 14px;
-      height: 14px;
-    }
+    gap: $space-5;
   }
 
-  // ── Sticky CTA bar ────────────────────────────────────────────────────────────
-  .cta-bar {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: $color-surface;
-    border-top: 1px solid $color-border-subtle;
-    padding: $space-5 $space-9;
-    display: flex;
+  .meta-item {
+    display: inline-flex;
     align-items: center;
-    justify-content: space-between;
-    gap: $space-6;
-    z-index: $z-bottombar;
-    transform: translateY(100%);
-    transition: transform $transition-base;
-
-    &.visible {
-      transform: translateY(0);
-    }
-  }
-
-  .cta-hint {
+    gap: $space-2;
     font-family: $font-sans;
     font-size: $font-size-caption;
     color: $color-text-secondary;
-    margin: 0;
 
-    strong {
-      color: $white;
-      font-weight: $font-weight-bold;
-    }
+    svg { width: 13px; height: 13px; color: $color-accent; }
+  }
+
+  // Actions row
+  .camp-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: $space-4;
+    padding-top: $space-2;
+    margin-top: auto;
+  }
+
+  .camp-actions-left {
+    display: flex;
+    gap: $space-3;
+  }
+
+  .btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: $space-2;
+    padding: $space-3 $space-6;
+    background: $color-surface-elevated;
+    border: 1px solid $color-border;
+    border-radius: $radius-md;
+    cursor: pointer;
+    font-family: $font-sans;
+    font-size: 13px;
+    font-weight: $font-weight-bold;
+    color: $white;
+    transition: background $transition-base;
+    svg { width: 14px; height: 14px; }
+    &:hover { background: $color-border; }
+  }
+
+  .btn-danger {
+    display: inline-flex;
+    align-items: center;
+    gap: $space-2;
+    padding: $space-3 $space-5;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: $font-sans;
+    font-size: 13px;
+    font-weight: $font-weight-bold;
+    color: $color-text-secondary;
+    transition: color $transition-base;
+    svg { width: 14px; height: 14px; }
+    &:hover { color: $red-400; }
   }
 
   .btn-start {
     display: inline-flex;
     align-items: center;
     gap: $space-2;
-    padding: $space-4 $space-10;
+    padding: $space-3 $space-7;
     background: $color-btn-primary-bg;
     border: none;
     border-radius: $radius-md;
     cursor: pointer;
-    font-family: $font-serif;
-    font-size: $font-size-btn;
+    font-family: $font-sans;
+    font-size: 13px;
     font-weight: $font-weight-black;
-    letter-spacing: $letter-spacing-btn;
+    letter-spacing: 0.5px;
     color: $color-btn-primary-text;
-    white-space: nowrap;
     transition: $transition-btn;
+    svg { width: 14px; height: 14px; }
 
-    svg {
-      width: 18px;
-      height: 18px;
-    }
-
-    &:hover:not(:disabled) {
+    &:hover:not(:disabled):not(.disabled) {
       background: $color-btn-primary-hover-bg;
       box-shadow: $glow-btn-primary;
-      transform: translateY(-1px);
     }
 
-    &:disabled {
-      opacity: 0.4;
+    &:disabled, &.disabled {
+      background: $color-surface-elevated;
+      color: $color-text-secondary;
       cursor: not-allowed;
+    }
+  }
+
+  // ── Footer ────────────────────────────────────────────────────────────────────
+  .nc-footer {
+    flex-shrink: 0;
+    padding: $space-7 $space-9;
+    text-align: center;
+    border-top: 1px solid $color-border-subtle;
+
+    p {
+      font-family: $font-sans;
+      font-size: $font-size-caption;
+      color: $color-text-secondary;
+      margin: 0;
     }
   }
 </style>

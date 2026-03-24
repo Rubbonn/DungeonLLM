@@ -1,14 +1,44 @@
 <script>
   import CharacterCreation from './pages/CharacterCreation.svelte';
   import LoadCampaign from './pages/LoadCampaign.svelte';
+  import NewCampaign from './pages/NewCampaign.svelte';
+  import GameScreen from './pages/GameScreen.svelte';
+  import BattleView from './pages/BattleView.svelte';
+  import SettingsModal from './components/SettingsModal.svelte';
 
-  let currentPage = $state('home');
+  let currentPage    = $state('home');
+  let showSettings   = $state(false);
+  let activeCampaign = $state(null);
+
+  function startCampaign(campaign) {
+    activeCampaign = campaign;
+    currentPage = 'game';
+  }
 </script>
 
 {#if currentPage === 'character-creation'}
   <CharacterCreation onBack={() => (currentPage = 'home')} />
 {:else if currentPage === 'load-campaign'}
-  <LoadCampaign onBack={() => (currentPage = 'home')} />
+  <LoadCampaign
+    onBack={() => (currentPage = 'home')}
+    onPlay={(c) => startCampaign(c)}
+  />
+{:else if currentPage === 'new-campaign'}
+  <NewCampaign
+    onBack={() => (currentPage = 'home')}
+    onStart={(module) => startCampaign(module)}
+  />
+{:else if currentPage === 'game'}
+  <GameScreen
+    campaign={activeCampaign}
+    onBack={() => (currentPage = 'home')}
+    onBattle={() => (currentPage = 'battle')}
+  />
+{:else if currentPage === 'battle'}
+  <BattleView
+    campaign={activeCampaign}
+    onBack={() => (currentPage = 'game')}
+  />
 {:else}
 <div class="dungeon-app">
   <!-- Atmospheric background layers -->
@@ -32,7 +62,7 @@
 
     <nav class="menu" aria-label="Navigazione principale">
       <!-- New campaign -->
-      <button class="btn btn-primary">
+      <button class="btn btn-primary" onclick={() => (currentPage = 'new-campaign')}>
         <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
           <path
             d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"
@@ -63,7 +93,7 @@
     </nav>
 
     <!-- Settings link -->
-    <button class="settings-btn">
+    <button class="settings-btn" onclick={() => (showSettings = true)}>
       <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
         <path
           d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32a.49.49 0 0 0-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54a.484.484 0 0 0-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96a.465.465 0 0 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"
@@ -99,6 +129,13 @@
   </footer>
 </div>
 {/if}
+
+<!-- Settings modal (rendered over home) -->
+<SettingsModal
+  open={showSettings}
+  onClose={() => (showSettings = false)}
+  onSave={() => (showSettings = false)}
+/>
 
 <style lang="scss">
   @use './styles/variables' as *;

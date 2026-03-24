@@ -40,6 +40,7 @@
     role="dialog"
     aria-modal="true"
     aria-labelledby="dialog-title"
+    tabindex="-1"
     onmousedown={handleBackdrop}
     onkeydown={handleKeydown}
   >

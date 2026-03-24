@@ -254,3 +254,36 @@ $campaign-max-width:    680px;   // list container max-width
 $campaign-title-size:   17px;
 $campaign-meta-size:    13px;
 $campaign-save-size:    12px;
+
+
+// ─── Toggle switch ────────────────────────────────────────────────────────────
+
+$toggle-width:   48px;
+$toggle-height:  26px;
+$toggle-thumb:   20px;
+$toggle-gap:     3px;
+
+$toggle-on-bg:    $gold-500;
+$toggle-off-bg:   rgba($cream, 0.18);
+$toggle-thumb-bg: $white;
+
+
+// ─── HP / health bar ─────────────────────────────────────────────────────────
+
+$hp-full:   #4caf6e;    // green — high HP
+$hp-mid:    #e6a817;    // amber — medium HP
+$hp-low:    $red-400;   // red   — critical HP
+$mp-color:  #5b8de8;    // blue  — mana / spell points
+
+$color-hp-bg:   rgba($white, 0.08);   // track background
+$color-mp-bg:   rgba($white, 0.08);
+
+
+// ─── Game-screen layout ───────────────────────────────────────────────────────
+
+$game-max-width:      960px;
+$game-sidebar-width:  280px;
+$game-scene-height:   220px;    // narrative scene image height
+
+$font-size-game-body: 16px;     // main narrative text
+$font-size-game-ui:   13px;     // UI labels in game

@@ -1,0 +1,316 @@
+// =============================================================================
+//  DungeonLLM — Design System
+//  All design tokens (colors, typography, spacing, layout, animation)
+// =============================================================================
+
+
+// ─── Color Palette ───────────────────────────────────────────────────────────
+//
+//  Gold — the primary brand accent
+//
+$gold-300: #ffe566;   // highlight / future use
+$gold-400: #ffd900;   // bright hover
+$gold-500: #f5c518;   // primary brand gold  ◀ main accent
+$gold-700: #8a7a58;   // muted  (subtitle text)
+$gold-800: #7a6a4a;   // dim    (footer nav text)
+$gold-900: #5a4a2a;   // darker (version text)
+
+//  Dark — dungeon backgrounds
+$dark-950: #060402;   // deepest background  ◀ body bg
+$dark-900: #0a0805;   // very dark gradient stop
+$dark-800: #110e07;   // dark warm gradient stop
+$dark-700: #1a1108;   // button text-on-gold
+$dark-600: #281a0a;   // secondary button bg   (= rgb 40 24 10)
+$dark-500: #3a220d;   // secondary button hover (= rgb 58 34 13)
+
+//  Portal / glow — the orange arch effect
+$portal-core:  rgba(255, 125, 15, 0.88);
+$portal-mid:   rgba(218,  82,  8, 0.55);
+$portal-outer: rgba(155,  48,  4, 0.22);
+
+//  Vignette overlays
+$overlay-strong: rgba(5,  3,  1, 0.97);
+$overlay-warm:   rgba(8,  6,  3, 0.92);
+$overlay-center: rgba(28, 17, 6, 0.55);
+
+
+// ─── Semantic Tokens ─────────────────────────────────────────────────────────
+//  These are the values components should reference; palette above is raw.
+
+//  Backgrounds
+$color-bg:          $dark-950;
+$color-bg-mid:      $dark-800;
+$color-bg-deep:     $dark-900;
+
+//  Accent / brand
+$color-accent:          $gold-500;
+$color-accent-hover:    $gold-400;
+$color-accent-muted:    $gold-700;
+$color-accent-dim:      $gold-800;
+$color-accent-darker:   $gold-900;
+
+//  Text
+$color-text-on-accent:  $dark-700;    // dark text rendered on gold button
+$color-text-accent:     $gold-500;    // gold text on dark background
+$color-text-muted:      $gold-700;
+$color-text-dim:        $gold-800;
+$color-text-faint:      $gold-900;
+
+//  Buttons
+$color-btn-primary-bg:          $color-accent;
+$color-btn-primary-hover-bg:    $color-accent-hover;
+$color-btn-primary-text:        $color-text-on-accent;
+$color-btn-primary-glow:        rgba($gold-500, 0.55);
+
+$color-btn-secondary-bg:        rgba($dark-600, 0.9);
+$color-btn-secondary-hover-bg:  rgba($dark-500, 0.95);
+$color-btn-secondary-text:      $color-accent;
+$color-btn-secondary-border:    rgba($gold-500, 0.07);
+$color-btn-secondary-border-hover: rgba($gold-500, 0.22);
+
+//  Icon / shield
+$color-icon:        $color-accent;
+$color-icon-glow:   rgba($gold-500, 0.72);
+
+
+// ─── Typography ──────────────────────────────────────────────────────────────
+
+$font-display: 'Cinzel', Georgia, 'Times New Roman', serif;
+$font-serif:   'Cinzel', Georgia, serif;
+
+$font-size-title:    clamp(52px, 9.5vw, 96px);
+$font-size-subtitle: 12px;
+$font-size-btn:      13px;
+$font-size-settings: 12px;
+$font-size-nav:      11px;
+$font-size-version:  10px;
+
+$font-weight-regular: 400;
+$font-weight-semibold: 600;
+$font-weight-bold:    700;
+$font-weight-black:   900;
+
+$letter-spacing-title:    5px;
+$letter-spacing-subtitle: 8px;
+$letter-spacing-btn:      3px;
+$letter-spacing-nav:      2px;
+$letter-spacing-version:  3px;
+
+
+// ─── Spacing ─────────────────────────────────────────────────────────────────
+
+$space-1:  4px;
+$space-2:  8px;
+$space-3:  10px;
+$space-4:  12px;
+$space-5:  14px;
+$space-6:  16px;
+$space-7:  20px;
+$space-8:  22px;
+$space-9:  24px;
+$space-10: 28px;
+$space-11: 44px;
+$space-12: 48px;
+
+
+// ─── Sizing ──────────────────────────────────────────────────────────────────
+
+$shield-size:         46px;
+$btn-icon-size:       20px;
+$settings-icon-size:  16px;
+$nav-icon-size:       14px;
+
+$content-max-width:   520px;
+$menu-max-width:      420px;
+
+$portal-width:  380px;
+$portal-height: 240px;
+
+
+// ─── Border Radius ───────────────────────────────────────────────────────────
+
+$radius-sm: 4px;
+$radius-md: 8px;
+$radius-lg: 12px;
+
+
+// ─── Z-Index Layers ──────────────────────────────────────────────────────────
+
+$z-bg:      0;
+$z-portal:  1;
+$z-content: 2;
+
+
+// ─── Shadows / Glows ─────────────────────────────────────────────────────────
+
+$glow-shield:   0 0 12px $color-icon-glow;
+$glow-title:    0 0 40px rgba($gold-500, 0.28), 0 2px 6px rgba(0, 0, 0, 0.95);
+$glow-btn-primary: 0 0 28px $color-btn-primary-glow;
+
+
+// ─── Transitions ─────────────────────────────────────────────────────────────
+
+$transition-fast: 0.15s ease;
+$transition-base: 0.2s ease;
+
+$transition-btn: transform $transition-fast, box-shadow $transition-fast, background-color $transition-fast;
+
+
+// =============================================================================
+//  Extended tokens — Character Creation & inner pages
+// =============================================================================
+
+
+// ─── Extended Color Palette ──────────────────────────────────────────────────
+//
+//  Olive — character creation page
+//
+$olive-950: #1a1807;   // page background
+$olive-900: #242109;   // card / panel surface
+$olive-800: #2d2a0d;   // elevated surface / hover
+
+//  Cream — primary readable text on dark olive backgrounds
+$cream:     #e8dcc8;
+$cream-dim: rgba($cream, 0.60);
+
+
+// ─── Extended Semantic Tokens ─────────────────────────────────────────────────
+
+//  Page & surface
+$color-bg-page:           $olive-950;
+$color-surface:           $olive-900;
+$color-surface-elevated:  $olive-800;
+
+//  Text
+$color-text-primary:      $cream;
+$color-text-secondary:    $cream-dim;
+$color-placeholder:       rgba($cream, 0.30);
+
+//  Borders
+$color-border:            rgba($gold-500, 0.18);
+$color-border-subtle:     rgba($gold-500, 0.08);
+$color-border-focus:      rgba($gold-500, 0.50);
+
+
+// ─── Extended Typography ──────────────────────────────────────────────────────
+
+$font-sans: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+
+$font-size-page-title:    clamp(28px, 4vw, 44px);
+$font-size-section-label: 16px;
+$font-size-field-label:   10px;
+$font-size-attr-value:    24px;
+$font-size-body:          14px;
+$font-size-caption:       12px;
+
+$letter-spacing-label:    2px;
+
+
+// ─── Extended Spacing ─────────────────────────────────────────────────────────
+
+$space-13: 56px;
+$space-14: 64px;
+
+
+// ─── Extended Sizing ──────────────────────────────────────────────────────────
+
+$topbar-height: 60px;
+$avatar-size:   38px;
+
+
+// ─── Extended Z-Index ─────────────────────────────────────────────────────────
+
+$z-topbar:    10;
+$z-bottombar: 10;
+$z-modal:     100;
+
+
+// ─── Danger / Red palette ─────────────────────────────────────────────────────
+
+$red-400:  #f55e5e;
+$red-500:  #e03333;
+$red-600:  #c42020;
+$red-bg:   rgba($red-500, 0.12);   // subtle tint for icon circle
+
+$color-btn-danger-bg:         $red-500;
+$color-btn-danger-hover-bg:   $red-600;
+$color-btn-danger-text:       #ffffff;
+
+$color-danger-icon:           $red-400;
+$color-danger-icon-bg:        rgba($red-500, 0.18);
+
+
+// ─── White / light text ───────────────────────────────────────────────────────
+
+$white:       #ffffff;
+$white-dim:   rgba(#ffffff, 0.70);
+$white-faint: rgba(#ffffff, 0.40);
+
+
+// ─── Campaign list tokens ─────────────────────────────────────────────────────
+
+$campaign-thumb-size:   68px;    // square thumbnail
+$campaign-max-width:    680px;   // list container max-width
+$campaign-title-size:   17px;
+$campaign-meta-size:    13px;
+$campaign-save-size:    12px;
+
+
+// ─── Toggle switch ────────────────────────────────────────────────────────────
+
+$toggle-width:   48px;
+$toggle-height:  26px;
+$toggle-thumb:   20px;
+$toggle-gap:     3px;
+
+$toggle-on-bg:    $gold-500;
+$toggle-off-bg:   rgba($cream, 0.18);
+$toggle-thumb-bg: $white;
+
+
+// ─── HP / health bar ─────────────────────────────────────────────────────────
+
+$hp-full:   #4caf6e;    // green — high HP
+$hp-mid:    #e6a817;    // amber — medium HP
+$hp-low:    $red-400;   // red   — critical HP
+$mp-color:  #5b8de8;    // blue  — mana / spell points
+
+$color-hp-bg:   rgba($white, 0.08);   // track background
+$color-mp-bg:   rgba($white, 0.08);
+
+
+// ─── Game-screen layout ───────────────────────────────────────────────────────
+
+$game-max-width:      960px;
+$game-sidebar-width:  290px;    // left/right sidebar width
+$game-scene-height:   220px;    // narrative scene image height
+
+$font-size-game-body: 15px;     // chat narrative text
+$font-size-game-ui:   13px;     // UI labels in game
+$font-size-game-stat: 11px;     // stat labels, meta text
+
+
+// ─── Game chat bubbles ────────────────────────────────────────────────────────
+
+$bubble-master-bg:    #f5f0e8;   // cream — Master/narrator bubble
+$bubble-master-text:  #1a1807;   // dark text on cream
+$bubble-player-bg:    $gold-500; // gold — player action bubble
+$bubble-player-text:  $dark-700; // dark text on gold
+$bubble-check-bg:     rgba($mp-color, 0.15);
+$bubble-check-text:   $mp-color;
+
+
+// ─── New-campaign page ────────────────────────────────────────────────────────
+
+$nc-thumb-width:  220px;   // campaign card image column width
+$nc-thumb-height: 140px;   // campaign card image height
+$nc-max-width:    900px;   // page container max-width
+
+
+// ─── Rules Consultant ─────────────────────────────────────────────────────────
+
+$rules-info-bg:    rgba($mp-color, 0.08);
+$rules-info-border: rgba($mp-color, 0.25);
+$rules-tip-bg:     rgba(#3a9e9e, 0.08);
+$rules-tip-border: rgba(#3a9e9e, 0.25);
+$rules-tip-color:  #4db6ac;

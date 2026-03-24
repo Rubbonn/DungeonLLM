@@ -222,3 +222,35 @@ $avatar-size:   38px;
 
 $z-topbar:    10;
 $z-bottombar: 10;
+$z-modal:     100;
+
+
+// ─── Danger / Red palette ─────────────────────────────────────────────────────
+
+$red-400:  #f55e5e;
+$red-500:  #e03333;
+$red-600:  #c42020;
+$red-bg:   rgba($red-500, 0.12);   // subtle tint for icon circle
+
+$color-btn-danger-bg:         $red-500;
+$color-btn-danger-hover-bg:   $red-600;
+$color-btn-danger-text:       #ffffff;
+
+$color-danger-icon:           $red-400;
+$color-danger-icon-bg:        rgba($red-500, 0.18);
+
+
+// ─── White / light text ───────────────────────────────────────────────────────
+
+$white:       #ffffff;
+$white-dim:   rgba(#ffffff, 0.70);
+$white-faint: rgba(#ffffff, 0.40);
+
+
+// ─── Campaign list tokens ─────────────────────────────────────────────────────
+
+$campaign-thumb-size:   68px;    // square thumbnail
+$campaign-max-width:    680px;   // list container max-width
+$campaign-title-size:   17px;
+$campaign-meta-size:    13px;
+$campaign-save-size:    12px;

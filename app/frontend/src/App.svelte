@@ -1,11 +1,14 @@
 <script>
   import CharacterCreation from './pages/CharacterCreation.svelte';
+  import LoadCampaign from './pages/LoadCampaign.svelte';
 
   let currentPage = $state('home');
 </script>
 
 {#if currentPage === 'character-creation'}
   <CharacterCreation onBack={() => (currentPage = 'home')} />
+{:else if currentPage === 'load-campaign'}
+  <LoadCampaign onBack={() => (currentPage = 'home')} />
 {:else}
 <div class="dungeon-app">
   <!-- Atmospheric background layers -->
@@ -39,7 +42,7 @@
       </button>
 
       <!-- Load campaign -->
-      <button class="btn btn-secondary">
+      <button class="btn btn-secondary" onclick={() => (currentPage = 'load-campaign')}>
         <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
           <path
             d="M20 6h-8l-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2z"

@@ -1,6 +1,10 @@
-<script>
-  /** imageUrl — optional portrait URL; shows a placeholder when empty */
-  let { imageUrl = '' } = $props();
+<script lang="ts">
+  interface Props {
+    /** Optional portrait URL; shows a placeholder when empty. */
+    imageUrl?: string;
+  }
+
+  let { imageUrl = '' }: Props = $props();
 </script>
 
 <div class="aspect-panel">

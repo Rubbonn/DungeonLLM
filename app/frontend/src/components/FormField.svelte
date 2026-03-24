@@ -1,5 +1,10 @@
-<script>
-  let { placeholder = '', value = $bindable('') } = $props();
+<script lang="ts">
+  interface Props {
+    placeholder?: string;
+    value?: string;
+  }
+
+  let { placeholder = '', value = $bindable('') }: Props = $props();
 </script>
 
 <input

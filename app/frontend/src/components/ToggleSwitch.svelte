@@ -1,12 +1,18 @@
-<script>
+<script lang="ts">
   /**
    * checked  — current ON/OFF state (bindable)
    * onToggle — optional callback called with the new boolean value
    * label    — accessible aria-label for the button
    */
-  let { checked = $bindable(false), onToggle, label = 'Toggle' } = $props();
+  interface Props {
+    checked?: boolean;
+    onToggle?: (value: boolean) => void;
+    label?: string;
+  }
 
-  function handleClick() {
+  let { checked = $bindable(false), onToggle, label = 'Toggle' }: Props = $props();
+
+  function handleClick(): void {
     checked = !checked;
     onToggle?.(checked);
   }

@@ -1,12 +1,18 @@
-<script>
+<script lang="ts">
   import MainTopBar from '../components/MainTopBar.svelte';
   import CampaignCard from '../components/CampaignCard.svelte';
   import ConfirmDialog from '../components/ConfirmDialog.svelte';
+  import type { Campaign } from '../lib/types.js';
 
-  let { onBack } = $props();
+  interface Props {
+    onBack?: () => void;
+    onPlay?: (campaign: Campaign) => void;
+  }
+
+  let { onBack, onPlay }: Props = $props();
 
   // ── Demo campaign data ───────────────────────────────────────────────────────
-  let campaigns = $state([
+  let campaigns = $state<Campaign[]>([
     {
       id: 1,
       title: 'La Piaga di Ravenloft',
@@ -46,24 +52,29 @@
   ]);
 
   // ── Delete confirmation dialog ───────────────────────────────────────────────
-  let deleteDialog = $state({ open: false, targetId: null });
+  interface DeleteDialogState {
+    open: boolean;
+    targetId: number | string | null;
+  }
 
-  function askDelete(id) {
+  let deleteDialog = $state<DeleteDialogState>({ open: false, targetId: null });
+
+  function askDelete(id: number | string): void {
     deleteDialog = { open: true, targetId: id };
   }
 
-  function cancelDelete() {
+  function cancelDelete(): void {
     deleteDialog = { open: false, targetId: null };
   }
 
-  function confirmDelete() {
+  function confirmDelete(): void {
     campaigns = campaigns.filter((c) => c.id !== deleteDialog.targetId);
     deleteDialog = { open: false, targetId: null };
   }
 
-  function handlePlay(id) {
-    // TODO: navigate to game page for campaign `id`
-    console.log('Play campaign', id);
+  function handlePlay(id: number | string): void {
+    const campaign = campaigns.find((c) => c.id === id);
+    if (campaign) onPlay?.(campaign);
   }
 </script>
 

@@ -1,5 +1,9 @@
-<script>
-  let { onBack } = $props();
+<script lang="ts">
+  interface Props {
+    onBack: () => void;
+  }
+
+  let { onBack }: Props = $props();
 </script>
 
 <header class="topbar">

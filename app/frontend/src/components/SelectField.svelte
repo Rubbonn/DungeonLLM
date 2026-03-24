@@ -1,15 +1,23 @@
-<script>
+<script lang="ts">
+  import type { SelectOption } from '../lib/types.js';
+
   /**
    * label   — uppercase label shown inside the control (e.g. "RAZZA")
    * options — string[] or { value, label }[]
    * value   — bound selected value
    */
-  let { label, options = [], value = $bindable('') } = $props();
+  interface Props {
+    label: string;
+    options?: SelectOption[];
+    value?: string;
+  }
 
-  function optionValue(opt) {
+  let { label, options = [], value = $bindable('') }: Props = $props();
+
+  function optionValue(opt: SelectOption): string {
     return typeof opt === 'string' ? opt : opt.value;
   }
-  function optionLabel(opt) {
+  function optionLabel(opt: SelectOption): string {
     return typeof opt === 'string' ? opt : opt.label;
   }
 </script>

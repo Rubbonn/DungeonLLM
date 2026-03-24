@@ -1,27 +1,34 @@
-<script>
+<script lang="ts">
   import ToggleSwitch from './ToggleSwitch.svelte';
+  import type { SettingsValues } from '../lib/types.js';
 
   /**
    * open     — controls visibility
    * onClose  — callback fired when INDIETRO is clicked or backdrop clicked
    * onSave   — callback fired when SALVA is clicked (receives current settings)
    */
-  let { open = false, onClose, onSave } = $props();
+  interface Props {
+    open?: boolean;
+    onClose?: () => void;
+    onSave?: (settings: SettingsValues) => void;
+  }
+
+  let { open = false, onClose, onSave }: Props = $props();
 
   // ── Settings state ────────────────────────────────────────────────────────────
-  let voiceEnabled     = $state(true);
-  let subtitlesEnabled = $state(false);
+  let voiceEnabled     = $state<boolean>(true);
+  let subtitlesEnabled = $state<boolean>(false);
 
-  function handleSave() {
+  function handleSave(): void {
     onSave?.({ voiceEnabled, subtitlesEnabled });
     onClose?.();
   }
 
-  function handleBackdrop(e) {
+  function handleBackdrop(e: MouseEvent): void {
     if (e.target === e.currentTarget) onClose?.();
   }
 
-  function handleKeydown(e) {
+  function handleKeydown(e: KeyboardEvent): void {
     if (e.key === 'Escape') onClose?.();
   }
 </script>

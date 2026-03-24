@@ -1,16 +1,17 @@
-<script>
+<script lang="ts">
   import CharacterCreation from './pages/CharacterCreation.svelte';
   import LoadCampaign from './pages/LoadCampaign.svelte';
   import NewCampaign from './pages/NewCampaign.svelte';
   import GameScreen from './pages/GameScreen.svelte';
   import BattleView from './pages/BattleView.svelte';
   import SettingsModal from './components/SettingsModal.svelte';
+  import type { PageName, Campaign, TemplateCampaign, GameSession } from './lib/types.js';
 
-  let currentPage    = $state('home');
-  let showSettings   = $state(false);
-  let activeCampaign = $state(null);
+  let currentPage    = $state<PageName>('home');
+  let showSettings   = $state<boolean>(false);
+  let activeCampaign = $state<GameSession | undefined>(undefined);
 
-  function startCampaign(campaign) {
+  function startCampaign(campaign: Campaign | TemplateCampaign): void {
     activeCampaign = campaign;
     currentPage = 'game';
   }

@@ -1,26 +1,31 @@
-<script>
+<script lang="ts">
   import AppTopBar from '../components/AppTopBar.svelte';
   import FormField from '../components/FormField.svelte';
   import SelectField from '../components/SelectField.svelte';
   import AspectPanel from '../components/AspectPanel.svelte';
   import AttributeCard from '../components/AttributeCard.svelte';
+  import type { AttrKey, AttrMap, AttrMode } from '../lib/types.js';
 
-  let { onBack } = $props();
+  interface Props {
+    onBack?: () => void;
+  }
+
+  let { onBack = () => {} }: Props = $props();
 
   // ── Form state ───────────────────────────────────────────────────────────────
-  let name = $state('');
-  let race = $state('Umano');
-  let charClass = $state('Guerriero');
-  let background = $state('Soldato');
+  let name       = $state<string>('');
+  let race       = $state<string>('Umano');
+  let charClass  = $state<string>('Guerriero');
+  let background = $state<string>('Soldato');
 
   // ── Attribute generation mode ────────────────────────────────────────────────
-  let mode = $state('standard'); // 'standard' | 'random'
+  let mode = $state<AttrMode>('standard');
 
   // ── Point-buy state ──────────────────────────────────────────────────────────
   const POINT_TOTAL = 27;
-  const COST = { 8: 0, 9: 1, 10: 2, 11: 3, 12: 4, 13: 5, 14: 7, 15: 9 };
+  const COST: Record<number, number> = { 8: 0, 9: 1, 10: 2, 11: 3, 12: 4, 13: 5, 14: 7, 15: 9 };
 
-  let attrs = $state({
+  let attrs = $state<AttrMap>({
     forza:        10,
     destrezza:    12,
     costituzione: 10,
@@ -30,34 +35,34 @@
   });
 
   let spentPoints = $derived(
-    Object.values(attrs).reduce((sum, v) => sum + (COST[v] ?? 0), 0)
+    Object.values(attrs).reduce((sum: number, v: number) => sum + (COST[v] ?? 0), 0)
   );
   let remainingPoints = $derived(POINT_TOTAL - spentPoints);
 
-  function increment(attr) {
+  function increment(attr: AttrKey): void {
     const next = attrs[attr] + 1;
     if (next <= 15 && (COST[next] ?? 0) - (COST[attrs[attr]] ?? 0) <= remainingPoints) {
       attrs[attr] = next;
     }
   }
 
-  function decrement(attr) {
+  function decrement(attr: AttrKey): void {
     if (attrs[attr] > 8) attrs[attr]--;
   }
 
-  function canIncrement(attr) {
+  function canIncrement(attr: AttrKey): boolean {
     if (mode === 'random') return false;
     const next = attrs[attr] + 1;
     return next <= 15 && (COST[next] ?? 0) - (COST[attrs[attr]] ?? 0) <= remainingPoints;
   }
 
-  function canDecrement(attr) {
+  function canDecrement(attr: AttrKey): boolean {
     if (mode === 'random') return false;
     return attrs[attr] > 8;
   }
 
-  function rollRandom() {
-    const attrKeys = Object.keys(attrs);
+  function rollRandom(): void {
+    const attrKeys = Object.keys(attrs) as AttrKey[];
     attrKeys.forEach((key) => {
       // Roll 4d6 drop lowest
       const rolls = Array.from({ length: 4 }, () => Math.ceil(Math.random() * 6));
@@ -66,7 +71,7 @@
     });
   }
 
-  function handleModeChange(newMode) {
+  function handleModeChange(newMode: AttrMode): void {
     mode = newMode;
     if (newMode === 'random') rollRandom();
     else {
@@ -75,12 +80,12 @@
   }
 
   // ── Select options ───────────────────────────────────────────────────────────
-  const races = ['Umano', 'Elfo', 'Nano', 'Halfling', 'Gnomo', 'Mezzelfo', 'Mezzorco', 'Tiefling', 'Draconico'];
-  const classes = ['Barbaro', 'Bardo', 'Chierico', 'Druido', 'Guerriero', 'Monaco', 'Paladino', 'Ranger', 'Ladro', 'Stregone', 'Warlock', 'Mago'];
-  const backgrounds = ['Accolito', 'Criminale', 'Eremita', 'Eroe Popolare', 'Gildista', 'Nobile', 'Orfano', 'Saggio', 'Soldato', 'Vagabondo'];
+  const races: string[]       = ['Umano', 'Elfo', 'Nano', 'Halfling', 'Gnomo', 'Mezzelfo', 'Mezzorco', 'Tiefling', 'Draconico'];
+  const classes: string[]     = ['Barbaro', 'Bardo', 'Chierico', 'Druido', 'Guerriero', 'Monaco', 'Paladino', 'Ranger', 'Ladro', 'Stregone', 'Warlock', 'Mago'];
+  const backgrounds: string[] = ['Accolito', 'Criminale', 'Eremita', 'Eroe Popolare', 'Gildista', 'Nobile', 'Orfano', 'Saggio', 'Soldato', 'Vagabondo'];
 
   // ── Attribute display order ──────────────────────────────────────────────────
-  const attrMeta = [
+  const attrMeta: { key: AttrKey; label: string }[] = [
     { key: 'forza',        label: 'FORZA' },
     { key: 'destrezza',    label: 'DESTREZZA' },
     { key: 'costituzione', label: 'COSTITUZIONE' },

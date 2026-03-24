@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   /**
    * id           — unique campaign ID
    * title        — campaign title (e.g. "La Piaga di Ravenloft")
@@ -10,10 +10,22 @@
    * onPlay       — callback when GIOCA is clicked
    * onDelete     — callback when trash icon is clicked
    */
-  let { id, title, thumbnailUrl = '', charName, charClass, charLevel, lastSave, onPlay, onDelete } = $props();
+  interface Props {
+    id: number | string;
+    title: string;
+    thumbnailUrl?: string;
+    charName: string;
+    charClass: string;
+    charLevel: number;
+    lastSave: string;
+    onPlay?: () => void;
+    onDelete?: () => void;
+  }
+
+  let { id: _id, title, thumbnailUrl = '', charName, charClass, charLevel, lastSave, onPlay, onDelete }: Props = $props();
 
   // Map class names to SVG paths for the small inline icon
-  const CLASS_ICONS = {
+  const CLASS_ICONS: Record<string, string> = {
     Mago:      'M12 2l2.09 6.43H21l-5.47 3.97 2.09 6.43L12 14.9l-5.62 3.93 2.09-6.43L3 8.43h6.91z',
     Guerriero: 'M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z',
     Ladro:     'M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z',
@@ -28,7 +40,7 @@
     Warlock:   'M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z',
   };
 
-  function iconPath(cls) {
+  function iconPath(cls: string): string {
     return CLASS_ICONS[cls] ?? CLASS_ICONS['Guerriero'];
   }
 </script>

@@ -1,15 +1,23 @@
-<script>
+<script lang="ts">
+  import type { TemplateCampaign } from '../lib/types.js';
+
   /**
    * onBack  — navigate back to home
    * onStart — called with selected campaign to begin game
    */
-  let { onBack, onStart } = $props();
+  interface Props {
+    onBack?: () => void;
+    onStart?: (campaign: TemplateCampaign) => void;
+  }
+
+  let { onBack, onStart }: Props = $props();
 
   // ── Tab state ─────────────────────────────────────────────────────────────────
-  let activeTab = $state('template'); // 'template' | 'bozze'
+  type TabName = 'template' | 'bozze';
+  let activeTab = $state<TabName>('template');
 
   // ── Campaigns data ────────────────────────────────────────────────────────────
-  const TEMPLATES = [
+  const TEMPLATES: TemplateCampaign[] = [
     {
       id: 'ravenloft',
       title: "L'Ombra di Ravenloft",
@@ -45,10 +53,10 @@
     },
   ];
 
-  const BOZZE = TEMPLATES.filter(t => t.draft);
-  const DISPLAYED = $derived(activeTab === 'template' ? TEMPLATES : BOZZE);
+  const BOZZE: TemplateCampaign[] = TEMPLATES.filter(t => t.draft);
+  const DISPLAYED = $derived<TemplateCampaign[]>(activeTab === 'template' ? TEMPLATES : BOZZE);
 
-  function handleStart(campaign) {
+  function handleStart(campaign: TemplateCampaign): void {
     if (campaign.draft) return;
     onStart?.(campaign);
   }

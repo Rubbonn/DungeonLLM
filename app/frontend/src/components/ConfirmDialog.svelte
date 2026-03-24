@@ -1,4 +1,6 @@
-<script>
+<script lang="ts">
+  import type { ConfirmVariant } from '../lib/types.js';
+
   /**
    * Generic confirmation / destructive-action dialog.
    *
@@ -12,6 +14,18 @@
    * onConfirm     — callback fired on confirm
    * onCancel      — callback fired on cancel / backdrop click
    */
+  interface Props {
+    open?: boolean;
+    title: string;
+    body: string;
+    bodyNote?: string;
+    confirmText?: string;
+    cancelText?: string;
+    variant?: ConfirmVariant;
+    onConfirm?: () => void;
+    onCancel?: () => void;
+  }
+
   let {
     open = false,
     title,
@@ -22,13 +36,13 @@
     variant     = 'danger',
     onConfirm,
     onCancel,
-  } = $props();
+  }: Props = $props();
 
-  function handleBackdrop(e) {
+  function handleBackdrop(e: MouseEvent): void {
     if (e.target === e.currentTarget) onCancel?.();
   }
 
-  function handleKeydown(e) {
+  function handleKeydown(e: KeyboardEvent): void {
     if (e.key === 'Escape') onCancel?.();
   }
 </script>

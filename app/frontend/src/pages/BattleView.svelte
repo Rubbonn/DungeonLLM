@@ -1,12 +1,30 @@
-<script>
+<script lang="ts">
+  import type {
+    GameSession,
+    AttrEntry,
+    CharData,
+    EquipmentItem,
+    AbilityItem,
+    InventoryItem,
+    ToolId,
+    MapTool,
+    MapToken,
+    EnemyToken,
+  } from '../lib/types.js';
+
   /**
-   * campaign  — { charName, charClass, charLevel }
+   * campaign  — active game session info (charName, charClass, charLevel)
    * onBack    — return to GameScreen
    */
-  let { campaign = {}, onBack } = $props();
+  interface Props {
+    campaign?: GameSession;
+    onBack?: () => void;
+  }
+
+  let { campaign = {}, onBack }: Props = $props();
 
   // ── Demo state ────────────────────────────────────────────────────────────────
-  const CHAR = $derived.by(() => ({
+  const CHAR = $derived.by<CharData>(() => ({
     name:   campaign.charName  ?? 'Kaelen Nightshade',
     cls:    campaign.charClass ?? 'Rogue',
     level:  campaign.charLevel ?? 12,
@@ -19,49 +37,49 @@
       { key: 'INT', value: 10, icon: 'M12 3L1 9l4 2.18V17c0 .55.23 1.05.6 1.42C7.17 19.1 9.46 21 12 21s4.83-1.9 6.4-2.58c.37-.37.6-.87.6-1.42v-5.82L20 9.18V17h2V9L12 3z' },
       { key: 'WIS', value: 14, icon: 'M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z' },
       { key: 'CHA', value: 16, icon: 'M12 1L9.5 8.5H2l6 4.5-2.5 7.5L12 16l6.5 4.5-2.5-7.5 6-4.5h-7.5z' },
-    ],
+    ] satisfies AttrEntry[],
   }));
 
-  const EQUIPMENT = [
+  const EQUIPMENT: EquipmentItem[] = [
     { id: 1, icon: 'M20.57 14.86L22 13.43 20.57 12 17 15.57 8.43 7 12 3.43 10.57 2 9.14 3.43 7.71 2 5.57 4.14 4.14 2.71 2.71 4.14l1.43 1.43L2 7.71l1.43 1.43L2 10.57 3.43 12 7 8.43 15.57 17 12 20.57 13.43 22l1.43-1.43L16.29 22l2.14-2.14-1.43-1.43L19.43 17l-1.43-1.43z', name: 'Venom Dagger +1',  slot: '1d4 + 4 Piercing',     badge: '+2 Poison',  badgeColor: 'green' },
     { id: 2, icon: 'M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z',                                                                                                                                                                                                                                                                               name: 'Shadow Leathers', slot: 'AC 15 | Stealth Adv.', badge: '+5 Stealth', badgeColor: 'blue'  },
   ];
 
-  const ABILITIES = [
+  const ABILITIES: AbilityItem[] = [
     { id: 1, name: 'Cunning Action', type: 'PASSIVE', desc: 'Bonus action for Dash, Disengage, or Hide.' },
     { id: 2, name: 'Sneak Attack',   type: 'COMBAT',  desc: '+3d6 damage on advantage hits.' },
   ];
 
-  const INVENTORY_ITEMS = [
-    { id: 1, count: 3, icon: 'M20 6h-2.18c.07-.44.18-.88.18-1.36C18 2.51 15.49 0 12 0 8.51 0 6 2.51 6 4.64c0 .48.11.92.18 1.36H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-8-4c1.84 0 3 1.16 3 2.64 0 .49-.27.92-.55 1.36h-4.9C9.27 5.56 9 5.13 9 4.64 9 3.16 10.16 2 12 2zm0 14c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z' },
+  const INVENTORY_ITEMS: InventoryItem[] = [
+    { id: 1, count: 3,    icon: 'M20 6h-2.18c.07-.44.18-.88.18-1.36C18 2.51 15.49 0 12 0 8.51 0 6 2.51 6 4.64c0 .48.11.92.18 1.36H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-8-4c1.84 0 3 1.16 3 2.64 0 .49-.27.92-.55 1.36h-4.9C9.27 5.56 9 5.13 9 4.64 9 3.16 10.16 2 12 2zm0 14c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z' },
     { id: 2, count: null, icon: 'M12.65 10C11.83 7.67 9.61 6 7 6c-3.31 0-6 2.69-6 6s2.69 6 6 6c2.61 0 4.83-1.67 5.65-4H17v4h4v-4h2v-4H12.65zM7 14c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z' },
     { id: 3, count: null, icon: 'M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-1 9H9V9h10v2zm-4 4H9v-2h6v2zm4-8H9V5h10v2z' },
     { id: 4, count: null, icon: 'M13.49 5.48c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm-3.6 13.9l1-4.4 2.1 2v6h2v-7.5l-2.1-2 .6-3c1.3 1.5 3.3 2.5 5.5 2.5v-2c-1.9 0-3.5-1-4.3-2.4l-1-1.6c-.4-.6-1-1-1.7-1-.3 0-.5.1-.8.1l-5.2 2.2v4.7h2v-3.4l1.8-.7-1.6 8.1-4.9-1-.4 2 7 1.4z' },
   ];
 
-  const ENCUMBRANCE = { current: 42, max: 120 };
+  const ENCUMBRANCE: { current: number; max: number } = { current: 42, max: 120 };
   const GOLD = 1240;
 
   // Map tokens
-  const PLAYER_TOKEN = { x: 38, y: 32, label: 'KAELEN' };
-  const ENEMY_TOKEN  = { x: 52, y: 42, label: 'OGRE BRUTE', hp: 8, maxHp: 20 };
+  const PLAYER_TOKEN: MapToken  = { x: 38, y: 32, label: 'KAELEN' };
+  const ENEMY_TOKEN: EnemyToken = { x: 52, y: 42, label: 'OGRE BRUTE', hp: 8, maxHp: 20 };
 
   // ── State ─────────────────────────────────────────────────────────────────────
-  let activeTool = $state('hand'); // hand | pen | ruler
-  let equipOpen  = $state(true);
-  let abilOpen   = $state(true);
-  let invOpen    = $state(true);
+  let activeTool = $state<ToolId>('hand');
+  let equipOpen  = $state<boolean>(true);
+  let abilOpen   = $state<boolean>(true);
+  let invOpen    = $state<boolean>(true);
 
-  const TOOLS = [
+  const TOOLS: MapTool[] = [
     { id: 'hand',  icon: 'M23 5.5V20c0 2.2-1.8 4-4 4h-7.3c-1.3 0-2.5-.5-3.4-1.5l-6.9-8.1c-.6-.7-.8-1.6-.5-2.5.3-.8 1-1.4 1.9-1.5.7-.1 1.4.2 1.9.7L7 13.3V4c0-1.1.9-2 2-2s2 .9 2 2v4.5c.4-.3.9-.5 1.5-.5.7 0 1.3.3 1.7.7.4-.3.9-.5 1.5-.5.8 0 1.5.5 1.9 1.2.4-.3.9-.4 1.4-.4C22.1 3.5 23 4.4 23 5.5z' },
     { id: 'pen',   icon: 'M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z' },
     { id: 'ruler', icon: 'M21 6.5l-4-4-14 14 4 4 14-14zm-14 11L4.5 15l8-8 2.5 2.5-8 8zm10-10L14.5 5l2-2 2.5 2.5-2 2z' },
   ];
 
-  let hpPct   = $derived(Math.round((CHAR.hp   / CHAR.maxHp)   * 100));
-  let manaPct = $derived(Math.round((CHAR.mana  / CHAR.maxMana) * 100));
-  let encPct  = $derived(Math.round((ENCUMBRANCE.current / ENCUMBRANCE.max) * 100));
-  let enemyHpPct = $derived(Math.round((ENEMY_TOKEN.hp / ENEMY_TOKEN.maxHp) * 100));
+  let hpPct      = $derived(Math.round((CHAR.hp          / CHAR.maxHp)        * 100));
+  let manaPct    = $derived(Math.round((CHAR.mana         / CHAR.maxMana)      * 100));
+  let encPct     = $derived(Math.round((ENCUMBRANCE.current / ENCUMBRANCE.max) * 100));
+  let enemyHpPct = $derived(Math.round((ENEMY_TOKEN.hp    / ENEMY_TOKEN.maxHp) * 100));
 </script>
 
 <div class="battle-view">

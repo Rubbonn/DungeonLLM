@@ -1,12 +1,26 @@
-<script>
+<script lang="ts">
   /**
    * open    — controls visibility of the panel
    * onClose — callback fired when × is clicked
    */
-  let { open = $bindable(false), onClose } = $props();
+  interface RuleCard {
+    id: string;
+    source: string;
+    title: string;
+    body: string;
+    uses: string;
+    reset: string;
+  }
+
+  interface Props {
+    open?: boolean;
+    onClose?: () => void;
+  }
+
+  let { open = $bindable(false), onClose }: Props = $props();
 
   // ── Demo data matching screenshot ─────────────────────────────────────────────
-  const RULES = [
+  const RULES: RuleCard[] = [
     {
       id: 'divine-sense',
       source: 'SRD 5.1: PALADIN FEATURES',
@@ -17,31 +31,31 @@
     },
   ];
 
-  const STRATEGY_TIP =
+  const STRATEGY_TIP: string =
     "Since you suspect undead in the mist, Divine Sense is a great choice. Note that it doesn't reveal creatures behind total cover, so the pillars might block your sense.";
 
-  const RECENT_QUERIES = [
+  const RECENT_QUERIES: string[] = [
     'How does Smite work with Crits?',
     'Heavy Armor & Stealth disadvantage',
     'Aura of Protection range',
   ];
 
-  const QUICK_TAGS = ['ACTION ECONOMY', 'CONDITIONS', 'SPELLS'];
+  const QUICK_TAGS: string[] = ['ACTION ECONOMY', 'CONDITIONS', 'SPELLS'];
 
-  let searchText = $state('');
+  let searchText = $state<string>('');
 
-  function handleSearch() {
+  function handleSearch(): void {
     if (!searchText.trim()) return;
     // TODO: query rules LLM
     console.log('rules query:', searchText);
     searchText = '';
   }
 
-  function handleKeydown(e) {
+  function handleKeydown(e: KeyboardEvent): void {
     if (e.key === 'Enter') handleSearch();
   }
 
-  function handleRecentQuery(q) {
+  function handleRecentQuery(q: string): void {
     searchText = q;
     handleSearch();
   }

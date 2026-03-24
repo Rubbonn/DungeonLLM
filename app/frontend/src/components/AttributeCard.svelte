@@ -1,13 +1,22 @@
-<script>
-  /**
-   * label         — attribute name shown in uppercase (e.g. "FORZA")
-   * value         — current numeric value
-   * canIncrement  — whether the + button should be enabled
-   * canDecrement  — whether the − button should be enabled
-   * onIncrement   — callback fired when + is clicked
-   * onDecrement   — callback fired when − is clicked
-   */
-  let { label, value, canIncrement = true, canDecrement = true, onIncrement, onDecrement } = $props();
+<script lang="ts">
+  interface Props {
+    /**
+     * label         — attribute name shown in uppercase (e.g. "FORZA")
+     * value         — current numeric value
+     * canIncrement  — whether the + button should be enabled
+     * canDecrement  — whether the − button should be enabled
+     * onIncrement   — callback fired when + is clicked
+     * onDecrement   — callback fired when − is clicked
+     */
+    label: string;
+    value: number;
+    canIncrement?: boolean;
+    canDecrement?: boolean;
+    onIncrement?: () => void;
+    onDecrement?: () => void;
+  }
+
+  let { label, value, canIncrement = true, canDecrement = true, onIncrement, onDecrement }: Props = $props();
 </script>
 
 <div class="attr-card">

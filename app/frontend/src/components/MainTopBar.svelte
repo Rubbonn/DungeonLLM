@@ -1,6 +1,10 @@
-<script>
-  /** onSettings — called when the gear icon is clicked (optional) */
-  let { onSettings } = $props();
+<script lang="ts">
+  interface Props {
+    /** Called when the gear icon is clicked (optional). */
+    onSettings?: () => void;
+  }
+
+  let { onSettings }: Props = $props();
 </script>
 
 <header class="main-topbar">

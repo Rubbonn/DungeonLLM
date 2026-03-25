@@ -6,7 +6,11 @@ _database_engine: Engine | None = None
 _database_session: Session | None = None
 
 class Base(DeclarativeBase):
-	pass
+	@classmethod
+	def is_empty(cls):
+		from sqlalchemy import select
+		session = get_database_session()
+		return not session.scalars(select(cls)).first()
 
 def database_exists() -> bool:
 	return Path('data/databases/entities.sqlite').exists()

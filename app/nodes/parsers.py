@@ -1,5 +1,6 @@
 from app.database import get_database_session
 from app.types.state import SrdParserState
+from app.utilities.functions import retry_exception
 from langchain.chat_models import init_chat_model
 from os import environ
 import re
@@ -9,6 +10,7 @@ def gear_parser(state: SrdParserState) -> dict:
 	if not 'Equipment' in state['sections'] or not Gear.is_empty():
 		return {}
 
+	print(f"Parsing gear items...")
 	extraction_regex = re.compile(r'^##(?!#)\s*Adventuring Gear\s*\n([\s\S]*?)(?=\n##(?!#)\s*|\Z)', re.MULTILINE)
 	with open('data/temp/Equipment.md', 'r', encoding='utf-8') as source:
 		match = extraction_regex.search(source.read())
@@ -30,7 +32,7 @@ def gear_parser(state: SrdParserState) -> dict:
 			}
 		}
 	})
-	response = llm.invoke(f'''Extract the gear items from the following text, providing their name, weight, cost and description:
+	response = retry_exception(func=llm.invoke, input=f'''Extract the gear items from the following text, providing their name, weight, cost and description:
 	{match.group(1)}
 	''')
 	if len(response) == 0:
@@ -41,6 +43,7 @@ def gear_parser(state: SrdParserState) -> dict:
 		gear_item = Gear(name=item['name'], weight=item['weight'], cost=item['cost'], description=item['description'])
 		session.add(gear_item)
 	session.commit()
+	print("Gear items parsing completed successfully.")
 	return {}
 
 
@@ -48,6 +51,7 @@ def weapons_parser(state: SrdParserState) -> dict:
 	if not 'Equipment' in state['sections'] or not 'Rules Glossary' in state['sections']:
 		return {}
 
+	print(f"Parsing weapons and related entities...")
 	llm = init_chat_model(model=environ.get('LLM_MODEL'), model_provider=environ.get('LLM_PROVIDER'),
 	                      max_completion_tokens=32768)
 	session = get_database_session()
@@ -55,6 +59,7 @@ def weapons_parser(state: SrdParserState) -> dict:
 	# Damage types extraction
 	from app.entities.items import DamageType
 	if DamageType.is_empty():
+		print("Extracting damage types...")
 		extraction_regex = re.compile(r'^###(?!#)\s*Damage Types\s*\n([\s\S]*?)(?=\n###(?!#)\s*|\Z)', re.MULTILINE)
 		with open('data/temp/Rules Glossary.md', 'r', encoding='utf-8') as source:
 			match = extraction_regex.search(source.read())
@@ -72,7 +77,7 @@ def weapons_parser(state: SrdParserState) -> dict:
 					}
 				}
 			})
-			response = llm_with_structured_output.invoke(f'''Extract the damage types from the following text, providing their name and examples:
+			response = retry_exception(func=llm_with_structured_output.invoke, input=f'''Extract the damage types from the following text, providing their name and examples:
 			{match.group(1)}
 			''')
 			if len(response) == 0:
@@ -92,6 +97,7 @@ def weapons_parser(state: SrdParserState) -> dict:
 	# Weapon properties extraction
 	from app.entities.items import WeaponProperty
 	if WeaponProperty.is_empty():
+		print("Extracting weapon properties...")
 		llm_with_structured_output = llm.with_structured_output({
 			'type': 'array',
 			'title': 'Weapon Properties',
@@ -104,7 +110,7 @@ def weapons_parser(state: SrdParserState) -> dict:
 				}
 			}
 		})
-		response = llm_with_structured_output.invoke(f'''Extract the weapon properties (excluding the mastery properties) from the following text, providing their name and description:
+		response = retry_exception(func=llm_with_structured_output.invoke, input=f'''Extract the weapon properties (excluding the mastery properties) from the following text, providing their name and description:
 		{match.group(1)}
 		''')
 		if len(response) == 0:
@@ -118,6 +124,7 @@ def weapons_parser(state: SrdParserState) -> dict:
 	# Weapon mastery properties extraction
 	from app.entities.items import WeaponMasteryProperty
 	if WeaponMasteryProperty.is_empty():
+		print("Extracting weapon mastery properties...")
 		llm_with_structured_output = llm.with_structured_output({
 			'type': 'array',
 			'title': 'Weapon Mastery Properties',
@@ -130,7 +137,7 @@ def weapons_parser(state: SrdParserState) -> dict:
 				}
 			}
 		})
-		response = llm_with_structured_output.invoke(f'''Extract the weapon mastery properties (excluding the normal properties) from the following text, providing their name and description:
+		response = retry_exception(func=llm_with_structured_output.invoke, input=f'''Extract the weapon mastery properties (excluding the normal properties) from the following text, providing their name and description:
 		{match.group(1)}
 		''')
 		if len(response) == 0:
@@ -144,6 +151,7 @@ def weapons_parser(state: SrdParserState) -> dict:
 	# Weapons extraction
 	from app.entities.items import Weapon
 	if Weapon.is_empty():
+		print("Extracting weapons...")
 		llm_with_structured_output = llm.with_structured_output({
 			'type': 'array',
 			'title': 'Weapons',
@@ -165,7 +173,7 @@ def weapons_parser(state: SrdParserState) -> dict:
 				}
 			}
 		})
-		response = llm_with_structured_output.invoke(f'''Extract the weapons from the following text, providing their name, description, damage, damage type, properties, mastery property, weight, and cost:
+		response = retry_exception(func=llm_with_structured_output.invoke, input=f'''Extract the weapons from the following text, providing their name, description, damage, damage type, properties, mastery property, weight, and cost:
 			{match.group(1)}
 			''')
 		if len(response) == 0:
@@ -184,4 +192,5 @@ def weapons_parser(state: SrdParserState) -> dict:
 			session.add(weapon)
 		session.commit()
 
+	print("Weapons parsing completed successfully.")
 	return {}

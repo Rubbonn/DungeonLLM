@@ -38,10 +38,12 @@ def executor(state: GameplayState) -> dict:
 	return {'plan': state['plan'], 'messages': ToolMessage(content=str(state['plan']), name='executor', tool_call_id=str(uuid.uuid4()))}
 
 def srd_splitter(state: SrdParserState):
+	print(f"Splitting SRD source file: {state['source_file']}")
 	splitter_regex = re.compile(r'^#(?!#)\s*(.*?)\s*\n([\s\S]*?)(?=\n#(?!#)\s*|\Z)', re.MULTILINE)
 	with open(state['source_file'], 'r', encoding='utf-8') as source:
 		sections = splitter_regex.findall(source.read())
 	for section, content in sections:
 		with open(f'data/temp/{section}.md', 'w', encoding='utf-8') as target:
 			target.write(content)
+	print(f"SRD source file split into {len(sections)} sections successfully.")
 	return {'sections': [section for section, _ in sections]}

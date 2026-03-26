@@ -1,5 +1,3 @@
-from app.utilities.jsonable import Jsonable
-from dataclasses import dataclass
 from enum import Enum
 
 class AbilityType(Enum):
@@ -11,15 +9,6 @@ class AbilityType(Enum):
 	CHARISMA = 'Charisma'
 	SPEED = 'Speed'
 	INITIATIVE = 'Initiative'
-
-@dataclass
-class Ability(Jsonable):
-	name: AbilityType
-	value: int
-
-	@property
-	def label(self) -> str:
-		return self.name.value
 
 class Size(Enum):
 	TINY = ("Tiny", 2.5)

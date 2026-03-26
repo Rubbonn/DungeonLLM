@@ -1,12 +1,20 @@
+from app.database import Base
 import app.entities.features as features
-from app.utilities.jsonable import Jsonable
-from dataclasses import dataclass
+from sqlalchemy import ForeignKey
+from sqlalchemy.orm import Mapped, mapped_column, relationship, attribute_mapped_collection
 
-@dataclass
-class Creature(Jsonable):
-	name: str
-	size: features.Size
-	abilities: dict[features.AbilityType, features.Ability]
+class CreatureAbility(Base):
+	__tablename__ = 'creature_abilities'
+	creature_id: Mapped[int] = mapped_column(ForeignKey('creatures.id'), primary_key=True)
+	ability: Mapped[features.AbilityType] = mapped_column(primary_key=True)
+	value: Mapped[int]
+
+class Creature(Base):
+	__tablename__ = 'creatures'
+	id: Mapped[int] = mapped_column(primary_key=True)
+	name: Mapped[str]
+	size: Mapped[features.Size]
+	abilities: Mapped[dict[features.AbilityType, CreatureAbility]] = relationship(collection_class=attribute_mapped_collection('ability'))
 
 	def get_bio(self) -> str:
 		return f'Name: {self.name}\nSize: {self.size.value}'
@@ -51,6 +59,5 @@ class Creature(Jsonable):
 			case _:
 				raise ValueError('Invalid ability value')
 
-@dataclass
 class Player(Creature):
 	pass

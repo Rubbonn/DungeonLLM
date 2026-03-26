@@ -1,5 +1,5 @@
 from app.utilities.jsonable import Jsonable
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from enum import Enum
 
 class AbilityType(Enum):

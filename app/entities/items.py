@@ -2,17 +2,13 @@ from app.database import Base
 from app.entities.features import AbilityType
 from sqlalchemy import Table, Column, ForeignKey
 from sqlalchemy.orm import Mapped, mapped_column, relationship
-from typing import Literal, Optional
+from typing import Optional
 
 class Item:
 	id: Mapped[int] = mapped_column(primary_key=True)
 	name: Mapped[str]
 	weight: Mapped[float]
 	cost: Mapped[float]
-
-class AbilityName(Base):
-	__tablename__ = 'ability_names'
-	name: Mapped[Literal['Strength', 'Dexterity', 'Constitution', 'Intelligence', 'Wisdom', 'Charisma', 'Speed', 'Initiative']] = mapped_column(primary_key=True)
 
 class Gear(Base, Item):
 	__tablename__ = 'gear'
@@ -66,6 +62,6 @@ class Armor(Base, Item):
 	minutes_to_equip: Mapped[int]
 	minutes_to_unequip: Mapped[int]
 	armor_class: Mapped[int]
-	ability_modifier: Mapped[str] = mapped_column(ForeignKey('ability_names.name'))
+	ability_modifier: Mapped[AbilityType]
 	minimum_strength: Mapped[Optional[int]]
 	has_stealth_disadvantage: Mapped[bool]

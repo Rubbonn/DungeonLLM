@@ -2,8 +2,6 @@ from pathlib import Path
 from sqlalchemy import Engine, create_engine
 from sqlalchemy.orm import DeclarativeBase, Session
 
-from app.entities.items import AbilityName
-
 _database_engine: Engine | None = None
 _database_session: Session | None = None
 
@@ -33,8 +31,3 @@ def initialize_database():
 	from app.entities import items, creatures, features
 	engine = get_database_engine()
 	Base.metadata.create_all(engine)
-	if AbilityName.is_empty():
-		session = get_database_session()
-		for ability in features.AbilityType:
-			session.add(items.AbilityName(name=ability.value))
-		session.commit()

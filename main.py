@@ -1,5 +1,5 @@
 if __name__ == "__main__":
-	from app.entities.creatures import Player
+	from app.entities.creatures import Player, CreatureAbility
 	import app.entities.features as features
 	from app.graph.gameplay import build_graph
 	from app.prompts import CAMPAIGN_PROMPT
@@ -22,7 +22,7 @@ if __name__ == "__main__":
 	graph = build_graph()
 	state: GameplayState = {
 		'messages': [HumanMessage(content=CAMPAIGN_PROMPT)],
-		'player': Player(name='Ruben', size=features.Size.MEDIUM, abilities={ability: features.Ability(ability, randint(5, 15)) for ability in features.AbilityType}),
+		'player': Player(name='Ruben', size=features.Size.MEDIUM, abilities={ability: CreatureAbility(ability=ability, value=randint(5, 15)) for ability in features.AbilityType}),
 		'plan': None
 	}
 	while True:

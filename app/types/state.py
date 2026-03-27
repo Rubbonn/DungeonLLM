@@ -1,5 +1,5 @@
 from app.entities.creatures import Player
-from app.types.planning import Plan
+from app.types.models import Plan
 from langchain.messages import AnyMessage
 from typing import TypedDict
 

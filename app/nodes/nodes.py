@@ -1,5 +1,5 @@
 from app.prompts import SYSTEM_PROMPT, PLANNER_PROMPT
-from app.types.planning import Plan
+from app.types.models import Plan
 from app.types.state import GameplayState, SrdParserState
 from app.tools import make_player_tools
 from langchain.agents import create_agent

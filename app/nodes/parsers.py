@@ -1,5 +1,5 @@
 from app.database import get_database_session
-from app.types.models import GearItems, DamageTypes, WeaponProperties, WeaponMasteryProperties, Weapons
+from app.types.models import GearItems, DamageTypes, WeaponProperties, WeaponMasteryProperties, Weapons, Tools
 from app.types.state import SrdParserState
 from app.utilities.functions import retry_exception
 from langchain.chat_models import init_chat_model
@@ -19,7 +19,7 @@ def gear_parser(state: SrdParserState) -> dict:
 		return {}
 
 	llm = init_chat_model(model=environ.get('LLM_MODEL'), model_provider=environ.get('LLM_PROVIDER'),
-	                      max_completion_tokens=32768).with_structured_output(GearItems)
+	                      max_completion_tokens=32768, reasoning=False).with_structured_output(GearItems)
 	response: GearItems = retry_exception(func=llm.invoke, input=f'''Extract the gear items from the following text, providing their name, weight, cost and description:
 	{match.group(1)}
 	''')
@@ -41,7 +41,7 @@ def weapons_parser(state: SrdParserState) -> dict:
 
 	print(f"Parsing weapons and related entities...")
 	llm = init_chat_model(model=environ.get('LLM_MODEL'), model_provider=environ.get('LLM_PROVIDER'),
-	                      max_completion_tokens=32768)
+	                      max_completion_tokens=32768, reasoning=False)
 	session = get_database_session()
 
 	# Damage types extraction
@@ -127,4 +127,38 @@ def weapons_parser(state: SrdParserState) -> dict:
 		session.commit()
 
 	print("Weapons parsing completed successfully.")
+	return {}
+
+def tools_parser(state: SrdParserState) -> dict:
+	if not 'Equipment' in state['sections']:
+		return {}
+
+	from app.entities.items import Tool
+	if not Tool.is_empty():
+		return {}
+
+	print('Extracting tools...')
+	extraction_regex = re.compile(r'^##(?!#)\s*Tools\s*\n([\s\S]*?)(?=\n##(?!#)\s*|\Z)', re.MULTILINE)
+	with open('data/temp/Equipment.md', 'r', encoding='utf-8') as source:
+		match = extraction_regex.search(source.read())
+	if not match:
+		return {}
+
+	llm = init_chat_model(model=environ.get('LLM_MODEL'), model_provider=environ.get('LLM_PROVIDER'),
+	                      max_completion_tokens=32768, reasoning=False).with_structured_output(Tools)
+	response: Tools = retry_exception(func=llm.invoke, input=f'''Extract the tools from the following text, providing their properties (extract any variant as a separate tool):
+	{match.group(1)}
+	''')
+	if len(response.items) == 0:
+		raise Exception('No tools found in the text')
+
+	session = get_database_session()
+	from app.entities.items import Gear
+	from sqlalchemy import select
+	for item in response.items:
+		gear_crafted = session.scalars(select(Gear).where(Gear.name.in_([gear.name for gear in item.craft]))).all()
+		tool = Tool(name=item.name, weight=item.weight, cost=item.cost, ability=item.ability, utilize=item.utilize, craft=gear_crafted)
+		session.add(tool)
+	session.commit()
+	print("Tools parsing completed successfully.")
 	return {}

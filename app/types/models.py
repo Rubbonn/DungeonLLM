@@ -1,3 +1,4 @@
+from app.entities.features import AbilityType
 from app.types.actions import AbilityCheckAction
 from pydantic import BaseModel, Field
 
@@ -52,6 +53,17 @@ class Weapon(BaseModel):
 
 class Weapons(BaseModel):
 	items: list[Weapon] = Field(description='A list of weapons in the SRD', default_factory=list)
+
+class Tool(BaseModel):
+	name: str = Field(description='The name of the tool')
+	weight: float = Field(description='The weight of the item in pounds')
+	cost: float = Field(description='The cost of the item in gold pieces')
+	ability: AbilityType = Field(description='The ability of the tool for ability checks')
+	utilize: str = Field(description='Uses for the tool and their DC')
+	craft: list[GearItem] = Field(description='Gear items that can be crafted with the tool', default_factory=list)
+
+class Tools(BaseModel):
+	items: list[Tool] = Field(description='A list of tools in the SRD', default_factory=list)
 
 class Plan(BaseModel):
 	actions: list[AbilityCheckAction] = Field(description='A list of actions to execute.', default_factory=list)

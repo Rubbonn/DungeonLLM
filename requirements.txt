@@ -1,4 +1,5 @@
 langchain
+langchain-groq
 langchain-nvidia-ai-endpoints
 langchain-ollama
 langgraph

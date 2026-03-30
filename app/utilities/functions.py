@@ -1,3 +1,6 @@
+from langchain_core.language_models.chat_models import BaseChatModel
+from langchain.chat_models import init_chat_model
+from os import environ
 from typing import Literal, Callable, TypeVar, ParamSpec
 
 P = ParamSpec('P')
@@ -40,3 +43,6 @@ def retry_exception(func: Callable[P, R], retries: int = 3, exceptions: tuple = 
 				continue
 			else:
 				raise e
+
+def get_chat_model() -> BaseChatModel:
+	return init_chat_model(model=environ.get('LLM_MODEL'), model_provider=environ.get('LLM_PROVIDER'), max_completion_tokens=32768, reasoning=False)

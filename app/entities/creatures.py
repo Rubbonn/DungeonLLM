@@ -16,7 +16,8 @@ class Creature:
 	abilities: Mapped[dict[features.AbilityType, CreatureAbility]] = relationship(collection_class=attribute_mapped_collection('ability'))
 	armor_class: Mapped[int]
 	hit_points: Mapped[int]
-
+	skill_proficiencies: Mapped[list[features.Skill]]
+	
 	def get_bio(self) -> str:
 		return f'Name: {self.name}\nSize: {self.size.value}'
 	

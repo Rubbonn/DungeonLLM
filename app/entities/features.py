@@ -53,3 +53,23 @@ class CreatureType(Enum):
 	OOZE = 'Ooze'
 	PLANT = 'Plant'
 	UNDEAD = 'Undead'
+
+class Skill(Enum):
+	ACROBATICS = ('Acrobatics', AbilityType.DEXTERITY)
+	ANIMAL_HANDLING = ('Animal Handling', AbilityType.WISDOM)
+	ARCANA = ('Arcana', AbilityType.INTELLIGENCE)
+	ATHLETICS = ('Athletics', AbilityType.STRENGTH)
+	DECEPTION = ('Deception', AbilityType.CHARISMA)
+	HISTORY = ('History', AbilityType.INTELLIGENCE)
+	INSIGHT = ('Insight', AbilityType.WISDOM)
+	INTIMIDATION = ('Intimidation', AbilityType.CHARISMA)
+	INVESTIGATION = ('Investigation', AbilityType.INTELLIGENCE)
+	MEDICINE = ('Medicine', AbilityType.WISDOM)
+	NATURE = ('Nature', AbilityType.INTELLIGENCE)
+	PERCEPTION = ('Perception', AbilityType.WISDOM)
+	PERFORMANCE = ('Performance', AbilityType.CHARISMA)
+	PERSUASION = ('Persuasion', AbilityType.CHARISMA)
+	RELIGION = ('Religion', AbilityType.INTELLIGENCE)
+	SLEIGHT_OF_HAND = ('Sleight of Hand', AbilityType.DEXTERITY)
+	STEALTH = ('Stealth', AbilityType.DEXTERITY)
+	SURVIVAL = ('Survival', AbilityType.WISDOM)

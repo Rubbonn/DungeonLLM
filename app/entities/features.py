@@ -37,3 +37,19 @@ class Size(Enum):
 	def __repr__(self):
 		properties = ', '.join([f'{prop}={self.__getattribute__(prop)}' for prop in self.__dir__() if not prop.startswith('_')])
 		return f'{self.__class__.__name__}({properties})'
+
+class CreatureType(Enum):
+	ABERRATION = 'Aberration'
+	BEAST = 'Beast'
+	CELESTIAL = 'Celestial'
+	CONSTRUCT = 'Construct'
+	DRAGON = 'Dragon'
+	ELEMENTAL = 'Elemental'
+	FEY = 'Fey'
+	FIEND = 'Fiend'
+	GIANT = 'Giant'
+	HUMANOID = 'Humanoid'
+	MONSTROSITY = 'Monstrosity'
+	OOZE = 'Ooze'
+	PLANT = 'Plant'
+	UNDEAD = 'Undead'

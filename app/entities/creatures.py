@@ -9,12 +9,13 @@ class CreatureAbility(Base):
 	ability: Mapped[features.AbilityType] = mapped_column(primary_key=True)
 	value: Mapped[int]
 
-class Creature(Base):
-	__tablename__ = 'creatures'
+class Creature:
 	id: Mapped[int] = mapped_column(primary_key=True)
 	name: Mapped[str]
 	size: Mapped[features.Size]
 	abilities: Mapped[dict[features.AbilityType, CreatureAbility]] = relationship(collection_class=attribute_mapped_collection('ability'))
+	armor_class: Mapped[int]
+	hit_points: Mapped[int]
 
 	def get_bio(self) -> str:
 		return f'Name: {self.name}\nSize: {self.size.value}'
@@ -59,5 +60,10 @@ class Creature(Base):
 			case _:
 				raise ValueError('Invalid ability value')
 
+class Animal(Creature):
+	__tablename__ = 'animals'
+	creature_type: Mapped[features.CreatureType]
+	creature_sub_type: Mapped[str]
+
 class Player(Creature):
-	pass
+	__tablename__ = 'players'

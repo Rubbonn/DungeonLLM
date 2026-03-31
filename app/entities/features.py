@@ -8,15 +8,14 @@ class AbilityType(Enum):
 	WISDOM = 'Wisdom'
 	CHARISMA = 'Charisma'
 	SPEED = 'Speed'
-	INITIATIVE = 'Initiative'
 
 class Size(Enum):
-	TINY = ("Tiny", 2.5)
-	SMALL = ("Small", 5)
-	MEDIUM = ("Medium", 5)
-	LARGE = ("Large", 10)
-	HUGE = ("Huge", 15)
-	GARGANTUAN = ("Gargantuan", 20)
+	TINY = ('Tiny', 2.5)
+	SMALL = ('Small', 5)
+	MEDIUM = ('Medium', 5)
+	LARGE = ('Large', 10)
+	HUGE = ('Huge', 15)
+	GARGANTUAN = ('Gargantuan', 20)
 
 	def __init__(self, label: str, space_feets: float):
 		self.label = label
@@ -73,3 +72,36 @@ class Skill(Enum):
 	SLEIGHT_OF_HAND = ('Sleight of Hand', AbilityType.DEXTERITY)
 	STEALTH = ('Stealth', AbilityType.DEXTERITY)
 	SURVIVAL = ('Survival', AbilityType.WISDOM)
+
+class Language(Enum):
+	COMMON = ('Common', False)
+	COMMON_SIGN_LANGUAGE = ('Common (Sign Language)', False)
+	DRACONIC = ('Draconic', False)
+	DWARVISH = ('Dwarvish', False)
+	ELVISH = ('Elvish', False)
+	GIANT = ('Giant', False)
+	GNOMISH = ('Gnomish', False)
+	GOBLIN = ('Goblin', False)
+	HALFLING = ('Halfling', False)
+	ORC = ('Orc', False)
+	ABYSSAL = ('Abyssal', True)
+	CELESTIAL = ('Celestial', True)
+	DEEP_SPEECH = ('Deep Speech', True)
+	DRUIDIC = ('Druidic', True)
+	INFERNAL = ('Infernal', True)
+	PRIMORDIAL = ('Primordial', True)
+	SYLVAN = ('Sylvan', True)
+	THIEVES_CANT = ('Thieves\' Cant', True)
+	UNDERCOMMON = ('Undercommon', True)
+
+class Alignment(Enum):
+	Unaligned = 'Unaligned'
+	LawfulGood = 'Lawful Good'
+	NeutralGood = 'Neutral Good'
+	ChaoticGood = 'Chaotic Good'
+	LawfulNeutral = 'Lawful Neutral'
+	Neutral = 'Neutral'
+	ChaoticNeutral = 'Chaotic Neutral'
+	LawfulEvil = 'Lawful Evil'
+	NeutralEvil = 'Neutral Evil'
+	ChaoticEvil = 'Chaotic Evil'

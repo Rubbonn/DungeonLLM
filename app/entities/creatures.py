@@ -1,6 +1,6 @@
 from app.database import Base
 import app.entities.features as features
-from sqlalchemy import ForeignKey
+from sqlalchemy import ForeignKey, Table, Column
 from sqlalchemy.orm import Mapped, mapped_column, relationship, attribute_mapped_collection
 
 class CreatureAbility(Base):
@@ -9,14 +9,27 @@ class CreatureAbility(Base):
 	ability: Mapped[features.AbilityType] = mapped_column(primary_key=True)
 	value: Mapped[int]
 
-class Creature:
+class Skill(Base):
+	__tablename__ = 'skills'
+	id: Mapped[int] = mapped_column(primary_key=True)
+	skill: Mapped[features.Skill]
+
+class Language(Base):
+	__tablename__ = 'languages'
+	id: Mapped[int] = mapped_column(primary_key=True)
+	language: Mapped[features.Language]
+
+class Creature(Base):
+	__tablename__ = 'creatures'
 	id: Mapped[int] = mapped_column(primary_key=True)
 	name: Mapped[str]
 	size: Mapped[features.Size]
 	abilities: Mapped[dict[features.AbilityType, CreatureAbility]] = relationship(collection_class=attribute_mapped_collection('ability'))
 	armor_class: Mapped[int]
 	hit_points: Mapped[int]
-	skill_proficiencies: Mapped[list[features.Skill]]
+	skill_proficiencies: Mapped[list[Skill]] = relationship(secondary=Table('creature_skill_proficiencies', Base.metadata, Column('creature_id', ForeignKey('creatures.id'), primary_key=True), Column('skill_id', ForeignKey('skills.id'), primary_key=True)))
+	languages: Mapped[list[Language]] = relationship(secondary=Table('creature_languages', Base.metadata, Column('creature_id', ForeignKey('creatures.id'), primary_key=True), Column('language_id', ForeignKey('languages.id'), primary_key=True)))
+	alignment: Mapped[features.Alignment]
 	
 	def get_bio(self) -> str:
 		return f'Name: {self.name}\nSize: {self.size.value}'
@@ -61,10 +74,18 @@ class Creature:
 			case _:
 				raise ValueError('Invalid ability value')
 
-class Animal(Creature):
+class Animal:
 	__tablename__ = 'animals'
+	_id_creature: Mapped[int] = mapped_column('id_creature', ForeignKey('creatures.id'), primary_key=True)
+	creature: Mapped[Creature] = relationship()
 	creature_type: Mapped[features.CreatureType]
 	creature_sub_type: Mapped[str]
+	hit_points_formula: Mapped[str]
+	experience_points: Mapped[int]
+	initiative_bonus: Mapped[int]
+	challenge_rating: Mapped[float]
 
-class Player(Creature):
+class Player:
 	__tablename__ = 'players'
+	_id_creature: Mapped[int] = mapped_column('id_creature', ForeignKey('creatures.id'), primary_key=True)
+	creature: Mapped[Creature] = relationship()

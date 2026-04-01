@@ -1,4 +1,4 @@
-from app.entities.features import AbilityType
+from app.entities.features import AbilityType, Size, CreatureType, Skill, Language, Alignment, Speed
 from app.types.actions import AbilityCheckAction
 from pydantic import BaseModel, Field
 
@@ -64,6 +64,32 @@ class Tool(BaseModel):
 
 class Tools(BaseModel):
 	items: list[Tool] = Field(description='A list of tools in the SRD', default_factory=list)
+
+class AnimalSpeed(BaseModel):
+	speed: int = Field(description='The speed value in feet')
+	conditions: str = Field(description='Any conditions that apply to this speed (e.g. "only when climbing")', default='')
+
+
+class Animal(BaseModel):
+	name: str = Field(description='The name of the animal')
+	size: Size = Field(description='The size of the animal')
+	creature_type: CreatureType = Field(description='The creature type of the animal')
+	creature_sub_type: str = Field(description='The creature subtype of the animal')
+	alignment: Alignment = Field(description='The alignment of the animal')
+	armor_class: int = Field(description='The armor class of the animal')
+	hit_points: int = Field(description='The average hit points of the animal')
+	hit_points_formula: str = Field(description='The hit points formula of the animal (e.g. 1d6+1)')
+	speed: dict[Speed, AnimalSpeed] = Field(description='The speed of the animal by movement type, with value in feet and any conditions', default_factory=dict)
+	abilities: dict[AbilityType, int] = Field(description='The ability scores of the animal', default_factory=dict)
+	skill_proficiencies: list[Skill] = Field(description='The skill proficiencies of the animal', default_factory=list)
+	skill_bonuses: dict[Skill, int] = Field(description='The skill bonuses of the animal', default_factory=dict)
+	languages: list[Language] = Field(description='The languages known by the animal', default_factory=list)
+	challenge_rating: float = Field(description='The challenge rating of the animal')
+	experience_points: int = Field(description='The experience points awarded for defeating the animal')
+	initiative_bonus: int = Field(description='The initiative bonus of the animal')
+
+class Animals(BaseModel):
+	items: list[Animal] = Field(description='A list of animals in the SRD', default_factory=list)
 
 class Plan(BaseModel):
 	actions: list[AbilityCheckAction] = Field(description='A list of actions to execute.', default_factory=list)

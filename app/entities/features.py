@@ -105,3 +105,12 @@ class Alignment(Enum):
 	LawfulEvil = 'Lawful Evil'
 	NeutralEvil = 'Neutral Evil'
 	ChaoticEvil = 'Chaotic Evil'
+
+class Speed(Enum):
+	Walk = 'Walk'
+	Climbing = 'Climbing'
+	Crawling = 'Crawling'
+	Flying = 'Flying'
+	Jumping = 'Jumping'
+	Swimming = 'Swimming'
+	Burrowing = 'Burrowing'

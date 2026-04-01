@@ -9,15 +9,29 @@ class CreatureAbility(Base):
 	ability: Mapped[features.AbilityType] = mapped_column(primary_key=True)
 	value: Mapped[int]
 
-class Skill(Base):
-	__tablename__ = 'skills'
+class SkillProficiencies(Base):
+	__tablename__ = 'skill_proficiencies'
 	id: Mapped[int] = mapped_column(primary_key=True)
 	skill: Mapped[features.Skill]
+
+class SkillBonus(Base):
+	__tablename__ = 'skill_bonuses'
+	id_creature: Mapped[int] = mapped_column(ForeignKey('animals.id_creature'), primary_key=True)
+	id_skill: Mapped[int] = mapped_column(ForeignKey('skill_proficiencies.id'), primary_key=True)
+	bonus: Mapped[int]
 
 class Language(Base):
 	__tablename__ = 'languages'
 	id: Mapped[int] = mapped_column(primary_key=True)
 	language: Mapped[features.Language]
+
+class CreatureSpeed(Base):
+	__tablename__ = 'creature_speeds'
+	id: Mapped[int] = mapped_column(primary_key=True)
+	creature_id: Mapped[int] = mapped_column(ForeignKey('creatures.id'), primary_key=True)
+	speed_type: Mapped[features.Speed]
+	speed: Mapped[int]
+	conditions: Mapped[str]
 
 class Creature(Base):
 	__tablename__ = 'creatures'
@@ -27,9 +41,10 @@ class Creature(Base):
 	abilities: Mapped[dict[features.AbilityType, CreatureAbility]] = relationship(collection_class=attribute_mapped_collection('ability'))
 	armor_class: Mapped[int]
 	hit_points: Mapped[int]
-	skill_proficiencies: Mapped[list[Skill]] = relationship(secondary=Table('creature_skill_proficiencies', Base.metadata, Column('creature_id', ForeignKey('creatures.id'), primary_key=True), Column('skill_id', ForeignKey('skills.id'), primary_key=True)))
+	skill_proficiencies: Mapped[list[SkillProficiencies]] = relationship(secondary=Table('creature_skill_proficiencies', Base.metadata, Column('creature_id', ForeignKey('creatures.id'), primary_key=True), Column('skill_id', ForeignKey('skill_proficiencies.id'), primary_key=True)))
 	languages: Mapped[list[Language]] = relationship(secondary=Table('creature_languages', Base.metadata, Column('creature_id', ForeignKey('creatures.id'), primary_key=True), Column('language_id', ForeignKey('languages.id'), primary_key=True)))
 	alignment: Mapped[features.Alignment]
+	speed: Mapped[dict[features.Speed, CreatureSpeed]] = relationship(collection_class=attribute_mapped_collection('speed_type'))
 	
 	def get_bio(self) -> str:
 		return f'Name: {self.name}\nSize: {self.size.value}'
@@ -74,7 +89,7 @@ class Creature(Base):
 			case _:
 				raise ValueError('Invalid ability value')
 
-class Animal:
+class Animal(Base):
 	__tablename__ = 'animals'
 	_id_creature: Mapped[int] = mapped_column('id_creature', ForeignKey('creatures.id'), primary_key=True)
 	creature: Mapped[Creature] = relationship()
@@ -84,8 +99,9 @@ class Animal:
 	experience_points: Mapped[int]
 	initiative_bonus: Mapped[int]
 	challenge_rating: Mapped[float]
+	skill_bonuses: Mapped[list[SkillBonus]] = relationship()
 
-class Player:
+class Player(Base):
 	__tablename__ = 'players'
 	_id_creature: Mapped[int] = mapped_column('id_creature', ForeignKey('creatures.id'), primary_key=True)
 	creature: Mapped[Creature] = relationship()

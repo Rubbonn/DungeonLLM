@@ -204,3 +204,51 @@ def tools_parser(state: SrdParserState) -> dict:
 	session.commit()
 	print("Tools parsing completed successfully.")
 	return {}
+
+def animals_parser(state: SrdParserState) -> dict:
+	if not 'Animals' in state['sections']:
+		return {}
+
+	print('Parsing animals...')
+	from app.entities.creatures import Animal
+	if not Animal.is_empty():
+		return {}
+
+	print('Extracting animals...')
+	from app.types.models import Animals
+	llm = get_chat_model().with_structured_output(Animals)
+	with open('data/temp/Animals.md', 'r', encoding='utf-8') as source:
+		content = source.read()
+	response: Animals = retry_exception(func=llm.invoke, input=f'''Extract all animals from the following text and populate each animal's fields according to these rules:
+
+- name: the heading name (e.g. "Allosaurus")
+- size: one of Tiny, Small, Medium, Large, Huge, Gargantuan — from the italic line (e.g. "*Large Beast (Dinosaur), Unaligned*")
+- creature_type: the creature type from the italic line (e.g. Beast, Monstrosity)
+- creature_sub_type: the subtype in parentheses, if present (e.g. "Dinosaur"); empty string if absent
+- alignment: from the italic line (e.g. Unaligned, Lawful Good)
+- armor_class: integer value after "**AC**"
+- hit_points: the average value after "**HP**" (the integer before the parenthesis, e.g. 51 from "51 (6d10 + 18)")
+- hit_points_formula: the dice formula in parentheses after "**HP**" (e.g. "6d10+18")
+- speed: a dict mapping each movement type (Walk, Climbing, Flying, Swimming, Burrowing) to an object with:
+  - speed: integer value in feet
+  - conditions: any condition string in parentheses, e.g. "(GM\'s choice)"; empty string if none
+  Parse "**Speed** 60 ft." as Walk=60; "**Speed** 20 ft., Climb 30 ft." as Walk=20, Climbing=30.
+  If a line has two options like "Climb or Fly 20 ft. (GM\'s choice)", assign the same speed and condition to both movement types.
+- abilities: a dict mapping each ability (Strength, Dexterity, Constitution, Intelligence, Wisdom, Charisma) to its score integer from the stat table
+- skill_proficiencies: list of skills listed under "**Skills**" (e.g. Perception, Athletics)
+- skill_bonuses: dict mapping each skill under "**Skills**" to its bonus integer (e.g. Perception +5 → 5)
+- languages: list of languages under "**Languages**"; empty list if "None"
+- challenge_rating: the CR value after "**CR**" (e.g. 2, 1/2 → 0.5)
+- experience_points: the XP value after "XP" in the CR line (e.g. 450)
+- initiative_bonus: the signed integer in parentheses after "**Initiative**" (e.g. "+1 (11)" → 1)
+
+Text:
+{content}
+''')
+	if len(response.items) == 0:
+		raise Exception('No animals found in the text')
+
+	session = get_database_session()
+	for animal in response.items:
+		print(animal)
+	return {}

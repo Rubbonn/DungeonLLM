@@ -249,7 +249,7 @@ Text:
 		raise Exception('No animals found in the text')
 
 	session = get_database_session()
-	from app.entities.creatures import Creature, CreatureAbility, SkillProficiencies, SkillBonus, Language, CreatureSpeed
+	from app.entities.creatures import Creature, CreatureAbility, SkillProficiencies, Language, CreatureSpeed
 	for animal in response.items:
 		a = Animal(
 			creature=Creature(
@@ -258,7 +258,7 @@ Text:
 			    abilities={ability: CreatureAbility(ability=ability, value=value) for ability, value in animal.abilities.items()},
 				armor_class=animal.armor_class,
 				hit_points=animal.hit_points,
-				skill_proficiencies=[SkillProficiencies(skill=skill) for skill in animal.skill_proficiencies],
+				skill_proficiencies=[SkillProficiencies(skill=skill, bonus=bonus) for skill, bonus in animal.skill_proficiencies.items()],
 				languages=[Language(language=language) for language in animal.languages],
 				alignment=animal.alignment,
 				speed={speed_type: CreatureSpeed(speed_type=speed_type, speed=speed.speed, conditions=speed.conditions) for speed_type, speed in animal.speed.items()}
@@ -269,8 +269,8 @@ Text:
 			experience_points=animal.experience_points,
 			initiative_bonus=animal.initiative_bonus,
 			challenge_rating=animal.challenge_rating,
-			skill_bonuses=[SkillBonus(bonus=bonus) for skill, bonus in animal.skill_bonuses.items()],
 		)
 		session.add(a)
 	session.commit()
+	print('Animals parsing completed successfully.')
 	return {}

@@ -2,6 +2,7 @@ from app.database import Base
 import app.entities.features as features
 from sqlalchemy import ForeignKey, Table, Column
 from sqlalchemy.orm import Mapped, mapped_column, relationship, attribute_mapped_collection
+from typing import Optional
 
 class CreatureAbility(Base):
 	__tablename__ = 'creature_abilities'
@@ -13,12 +14,7 @@ class SkillProficiencies(Base):
 	__tablename__ = 'skill_proficiencies'
 	id: Mapped[int] = mapped_column(primary_key=True)
 	skill: Mapped[features.Skill]
-
-class SkillBonus(Base):
-	__tablename__ = 'skill_bonuses'
-	id_creature: Mapped[int] = mapped_column(ForeignKey('animals.id_creature'), primary_key=True)
-	id_skill: Mapped[int] = mapped_column(ForeignKey('skill_proficiencies.id'), primary_key=True)
-	bonus: Mapped[int]
+	bonus: Mapped[Optional[int]]
 
 class Language(Base):
 	__tablename__ = 'languages'
@@ -98,7 +94,6 @@ class Animal(Base):
 	experience_points: Mapped[int]
 	initiative_bonus: Mapped[int]
 	challenge_rating: Mapped[float]
-	skill_bonuses: Mapped[list[SkillBonus]] = relationship()
 
 class Player(Base):
 	__tablename__ = 'players'

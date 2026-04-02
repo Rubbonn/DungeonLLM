@@ -9,6 +9,8 @@ class CreatureAbility(Base):
 	creature_id: Mapped[int] = mapped_column(ForeignKey('creatures.id'), primary_key=True)
 	ability: Mapped[features.AbilityType] = mapped_column(primary_key=True)
 	value: Mapped[int]
+	modifier: Mapped[Optional[int]]
+	save_modifier: Mapped[Optional[int]]
 
 class SkillProficiencies(Base):
 	__tablename__ = 'skill_proficiencies'

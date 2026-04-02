@@ -234,9 +234,8 @@ def animals_parser(state: SrdParserState) -> dict:
   - conditions: any condition string in parentheses, e.g. "(GM\'s choice)"; empty string if none
   Parse "**Speed** 60 ft." as Walk=60; "**Speed** 20 ft., Climb 30 ft." as Walk=20, Climbing=30.
   If a line has two options like "Climb or Fly 20 ft. (GM\'s choice)", assign the same speed and condition to both movement types.
-- abilities: a dict mapping each ability (Strength, Dexterity, Constitution, Intelligence, Wisdom, Charisma) to its score integer from the stat table
-- skill_proficiencies: list of skills listed under "**Skills**" (e.g. Perception, Athletics)
-- skill_bonuses: dict mapping each skill under "**Skills**" to its bonus integer (e.g. Perception +5 → 5)
+- abilities: a dict mapping each ability (Strength, Dexterity, Constitution, Intelligence, Wisdom, Charisma) to a tuple containing (score, modifier, save_modifier) from the stat table
+- skill_proficiencies: list of skills listed under "**Skills**" (e.g. Perception, Athletics) with their associated bonuses (e.g. "+3 Perception" → {{"Perception": 3}})
 - languages: list of languages under "**Languages**"; empty list if "None"
 - challenge_rating: the CR value after "**CR**" (e.g. 2, 1/2 → 0.5)
 - experience_points: the XP value after "XP" in the CR line (e.g. 450)
@@ -255,7 +254,7 @@ Text:
 			creature=Creature(
 				name=animal.name,
 			    size=animal.size,
-			    abilities={ability: CreatureAbility(ability=ability, value=value) for ability, value in animal.abilities.items()},
+			    abilities={ability: CreatureAbility(ability=ability, value=value, modifier=modifier, save_modifier=save_modifier) for ability, (value, modifier, save_modifier) in animal.abilities.items()},
 				armor_class=animal.armor_class,
 				hit_points=animal.hit_points,
 				skill_proficiencies=[SkillProficiencies(skill=skill, bonus=bonus) for skill, bonus in animal.skill_proficiencies.items()],

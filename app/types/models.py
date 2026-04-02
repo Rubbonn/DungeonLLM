@@ -80,7 +80,7 @@ class Animal(BaseModel):
 	hit_points: int = Field(description='The average hit points of the animal')
 	hit_points_formula: str = Field(description='The hit points formula of the animal (e.g. 1d6+1)')
 	speed: dict[Speed, AnimalSpeed] = Field(description='The speed of the animal by movement type, with value in feet and any conditions', default_factory=dict)
-	abilities: dict[AbilityType, int] = Field(description='The ability scores of the animal', default_factory=dict)
+	abilities: dict[AbilityType, tuple[int, int, int]] = Field(description='The ability scores of the animal, with each tuple containing (score, modifier, save_modifier)', default_factory=dict)
 	skill_proficiencies: dict[Skill, int] = Field(description='The skill proficiencies of the animal and their associated bonuses', default_factory=dict)
 	languages: list[Language] = Field(description='The languages known by the animal', default_factory=list)
 	challenge_rating: float = Field(description='The challenge rating of the animal')

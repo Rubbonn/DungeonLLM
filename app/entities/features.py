@@ -9,17 +9,25 @@ class AbilityType(Enum):
 	CHARISMA = 'Charisma'
 	SPEED = 'Speed'
 
-class Size(Enum):
-	TINY = ('Tiny', 2.5)
-	SMALL = ('Small', 5)
-	MEDIUM = ('Medium', 5)
-	LARGE = ('Large', 10)
-	HUGE = ('Huge', 15)
-	GARGANTUAN = ('Gargantuan', 20)
+_SIZE_METADATA = {
+	'Tiny': 2.5,
+	'Small': 5,
+	'Medium': 5,
+	'Large': 10,
+	'Huge': 15,
+	'Gargantuan': 20,
+}
 
-	def __init__(self, label: str, space_feets: float):
-		self.label = label
-		self.space_feets = space_feets
+class Size(Enum):
+	TINY = 'Tiny'
+	SMALL = 'Small'
+	MEDIUM = 'Medium'
+	LARGE = 'Large'
+	HUGE = 'Huge'
+	GARGANTUAN = 'Gargantuan'
+
+	def __init__(self, _: str):
+		self.space_feets = _SIZE_METADATA[self.value]
 
 	@property
 	def space_feets_squared(self) -> float:
@@ -53,46 +61,95 @@ class CreatureType(Enum):
 	PLANT = 'Plant'
 	UNDEAD = 'Undead'
 
+_SKILL_METADATA = {
+	'Acrobatics': AbilityType.DEXTERITY,
+	'Animal Handling': AbilityType.WISDOM,
+	'Arcana': AbilityType.INTELLIGENCE,
+	'Athletics': AbilityType.STRENGTH,
+	'Deception': AbilityType.CHARISMA,
+	'History': AbilityType.INTELLIGENCE,
+	'Insight': AbilityType.WISDOM,
+	'Intimidation': AbilityType.CHARISMA,
+	'Investigation': AbilityType.INTELLIGENCE,
+	'Medicine': AbilityType.WISDOM,
+	'Nature': AbilityType.INTELLIGENCE,
+	'Perception': AbilityType.WISDOM,
+	'Performance': AbilityType.CHARISMA,
+	'Persuasion': AbilityType.CHARISMA,
+	'Religion': AbilityType.INTELLIGENCE,
+	'Sleight of Hand': AbilityType.DEXTERITY,
+	'Stealth': AbilityType.DEXTERITY,
+	'Survival': AbilityType.WISDOM
+}
+
 class Skill(Enum):
-	ACROBATICS = ('Acrobatics', AbilityType.DEXTERITY)
-	ANIMAL_HANDLING = ('Animal Handling', AbilityType.WISDOM)
-	ARCANA = ('Arcana', AbilityType.INTELLIGENCE)
-	ATHLETICS = ('Athletics', AbilityType.STRENGTH)
-	DECEPTION = ('Deception', AbilityType.CHARISMA)
-	HISTORY = ('History', AbilityType.INTELLIGENCE)
-	INSIGHT = ('Insight', AbilityType.WISDOM)
-	INTIMIDATION = ('Intimidation', AbilityType.CHARISMA)
-	INVESTIGATION = ('Investigation', AbilityType.INTELLIGENCE)
-	MEDICINE = ('Medicine', AbilityType.WISDOM)
-	NATURE = ('Nature', AbilityType.INTELLIGENCE)
-	PERCEPTION = ('Perception', AbilityType.WISDOM)
-	PERFORMANCE = ('Performance', AbilityType.CHARISMA)
-	PERSUASION = ('Persuasion', AbilityType.CHARISMA)
-	RELIGION = ('Religion', AbilityType.INTELLIGENCE)
-	SLEIGHT_OF_HAND = ('Sleight of Hand', AbilityType.DEXTERITY)
-	STEALTH = ('Stealth', AbilityType.DEXTERITY)
-	SURVIVAL = ('Survival', AbilityType.WISDOM)
+	ACROBATICS = 'Acrobatics'
+	ANIMAL_HANDLING = 'Animal Handling'
+	ARCANA = 'Arcana'
+	ATHLETICS = 'Athletics'
+	DECEPTION = 'Deception'
+	HISTORY = 'History'
+	INSIGHT = 'Insight'
+	INTIMIDATION = 'Intimidation'
+	INVESTIGATION = 'Investigation'
+	MEDICINE = 'Medicine'
+	NATURE = 'Nature'
+	PERCEPTION = 'Perception'
+	PERFORMANCE = 'Performance'
+	PERSUASION = 'Persuasion'
+	RELIGION = 'Religion'
+	SLEIGHT_OF_HAND = 'Sleight of Hand'
+	STEALTH = 'Stealth'
+	SURVIVAL = 'Survival'
+
+	def __init__(self, _: str):
+		self.ability_type = _SKILL_METADATA[self.value]
+
+_LANGUAGE_METADATA = {
+	'Common': False,
+	'Common (Sign Language)': False,
+	'Draconic': False,
+	'Dwarvish': False,
+	'Elvish': False,
+	'Giant': False,
+	'Gnomish': False,
+	'Goblin': False,
+	'Halfling': False,
+	'Orc': False,
+	'Abyssal': True,
+	'Celestial': True,
+	'Deep Speech': True,
+	'Druidic': True,
+	'Infernal': True,
+	'Primordial': True,
+	'Sylvan': True,
+	'Thieves\' Cant': True,
+	'Undercommon': True,
+}
 
 class Language(Enum):
-	COMMON = ('Common', False)
-	COMMON_SIGN_LANGUAGE = ('Common (Sign Language)', False)
-	DRACONIC = ('Draconic', False)
-	DWARVISH = ('Dwarvish', False)
-	ELVISH = ('Elvish', False)
-	GIANT = ('Giant', False)
-	GNOMISH = ('Gnomish', False)
-	GOBLIN = ('Goblin', False)
-	HALFLING = ('Halfling', False)
-	ORC = ('Orc', False)
-	ABYSSAL = ('Abyssal', True)
-	CELESTIAL = ('Celestial', True)
-	DEEP_SPEECH = ('Deep Speech', True)
-	DRUIDIC = ('Druidic', True)
-	INFERNAL = ('Infernal', True)
-	PRIMORDIAL = ('Primordial', True)
-	SYLVAN = ('Sylvan', True)
-	THIEVES_CANT = ('Thieves\' Cant', True)
-	UNDERCOMMON = ('Undercommon', True)
+	COMMON = 'Common'
+	COMMON_SIGN_LANGUAGE = 'Common (Sign Language)'
+	DRACONIC = 'Draconic'
+	DWARVISH = 'Dwarvish'
+	ELVISH = 'Elvish'
+	GIANT = 'Giant'
+	GNOMISH = 'Gnomish'
+	GOBLIN = 'Goblin'
+	HALFLING = 'Halfling'
+	ORC = 'Orc'
+	ABYSSAL = 'Abyssal'
+	CELESTIAL = 'Celestial'
+	DEEP_SPEECH = 'Deep Speech'
+	DRUIDIC = 'Druidic'
+	INFERNAL = 'Infernal'
+	PRIMORDIAL = 'Primordial'
+	SYLVAN = 'Sylvan'
+	THIEVES_CANT = 'Thieves\' Cant'
+	UNDERCOMMON = 'Undercommon'
+
+	def __init__(self, _: str):
+		self.is_exotic = _LANGUAGE_METADATA[self.value]
 
 class Alignment(Enum):
 	Unaligned = 'Unaligned'

@@ -27,9 +27,8 @@ class Language(Base):
 
 class CreatureSpeed(Base):
 	__tablename__ = 'creature_speeds'
-	id: Mapped[int] = mapped_column(primary_key=True)
 	creature_id: Mapped[int] = mapped_column(ForeignKey('creatures.id'), primary_key=True)
-	speed_type: Mapped[features.Speed]
+	speed_type: Mapped[features.Speed] = mapped_column(primary_key=True)
 	speed: Mapped[int]
 	conditions: Mapped[str]
 

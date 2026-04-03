@@ -13,21 +13,13 @@ class GearItem(BaseModel):
 class GearItems(BaseModel):
 	items: list[GearItem] = Field(description='List of gear items with their properties', default_factory=list)
 
-class WeaponMasteryProperty(BaseModel):
-	name: str = Field(description='The name of the weapon mastery property')
-	description: str = Field(description='Description of the weapon mastery property')
-
-
-class WeaponMasteryProperties(BaseModel):
-	items: list[WeaponMasteryProperty] = Field(description='A list of weapon mastery properties in the SRD', default_factory=list)
-
 
 class Weapon(BaseModel):
 	name: str = Field(description='The name of the weapon')
 	damage: str = Field(description='The damage of the weapon')
 	damage_type: features.DamageType = Field(description='The damage type of the weapon')
 	properties: set[features.WeaponProperty] = Field(description='A list of properties of the weapon', default_factory=set)
-	mastery_property: str = Field(description='The mastery property of the weapon')
+	mastery_property: features.WeaponMasteryProperty = Field(description='The mastery property of the weapon')
 	weight: float = Field(description='The weight of the item in pounds')
 	cost: float = Field(description='The cost of the item in gold pieces')
 

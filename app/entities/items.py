@@ -46,6 +46,7 @@ class Armor(Base, Item):
 	minutes_to_equip: Mapped[int]
 	minutes_to_unequip: Mapped[int]
 	armor_class: Mapped[int]
-	ability_modifier: Mapped[features.AbilityType]
+	dexterity_add: Mapped[bool]
+	max_dexterity_bonus: Mapped[Optional[int]]
 	minimum_strength: Mapped[Optional[int]]
 	has_stealth_disadvantage: Mapped[bool]

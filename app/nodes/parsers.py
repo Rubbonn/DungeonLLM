@@ -1,5 +1,5 @@
 from app.database import get_database_session
-from app.types.models import GearItems, Weapons, Tools
+from app.types.models import GearItems, Weapons, Tools, Armors
 from app.types.state import SrdParserState
 from app.utilities.functions import retry_exception, get_chat_model
 import re
@@ -170,4 +170,38 @@ Text:
 		session.add(a)
 	session.commit()
 	print('Animals parsing completed successfully.')
+	return {}
+
+def armors_parser(state: SrdParserState) -> dict:
+	if not 'Equipment' in state['sections']:
+		return {}
+
+	print(f"Parsing armors...")
+
+	extraction_regex = re.compile(r'^##(?!#)\s*Armor\s*\n([\s\S]*?)(?=\n##(?!#)\s*|\Z)', re.MULTILINE)
+	with open('data/temp/Equipment.md', 'r', encoding='utf-8') as source:
+		match = extraction_regex.search(source.read())
+	if not match:
+		return {}
+
+	# Armors extraction
+	from app.entities.items import Armor
+	if Armor.is_empty():
+		print("Extracting armors...")
+		llm_with_structured_output = get_chat_model().with_structured_output(Armors)
+		response: Armors = retry_exception(func=llm_with_structured_output.invoke, input=f'''Extract the armors from the following text, providing their name, description, armor class, weight, cost, and any other relevant properties:
+		{match.group(1)}
+		''')
+		if len(response.items) == 0:
+			raise Exception('No armors found in the text')
+
+		session = get_database_session()
+		for item in response.items:
+			armor = Armor(name=item.name, minutes_to_equip=item.minutes_to_equip, minutes_to_unequip=item.minutes_to_unequip, armor_class=item.armor_class,
+							dexterity_add=item.dexterity_add, max_dexterity_bonus=item.max_dexterity_bonus, minimum_strength=item.minimum_strength, has_stealth_disadvantage=item.has_stealth_disadvantage,
+			                weight=item.weight, cost=item.cost)
+			session.add(armor)
+		session.commit()
+
+	print("Armors parsing completed successfully.")
 	return {}

@@ -1,4 +1,5 @@
 langchain
+langchain-google-genai
 langchain-groq
 langchain-nvidia-ai-endpoints
 langchain-ollama

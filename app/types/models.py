@@ -46,6 +46,21 @@ class AnimalSpeed(BaseModel):
 	speed: int = Field(description='The speed value in feet')
 	conditions: str = Field(description='Any conditions that apply to this speed (e.g. "only when climbing")', default='')
 
+class Armor(BaseModel):
+	name: str = Field(description='The name of the armor')
+	weight: float = Field(description='The weight of the item in pounds')
+	cost: float = Field(description='The cost of the item in gold pieces')
+	minutes_to_equip: int = Field(description='The time in minutes required to equip the armor')
+	minutes_to_unequip: int = Field(description='The time in minutes required to unequip the armor')
+	armor_class: int = Field(description='The armor class provided by the armor')
+	dexterity_add: bool = Field(description='Whether the armor allows adding dexterity to armor class')
+	max_dexterity_bonus: int | None = Field(description='The maximum dexterity bonus allowed by the armor, if any')
+	minimum_strength: int | None = Field(description='The minimum strength required to wear the armor, if any')
+	has_stealth_disadvantage: bool = Field(description='Whether the armor imposes disadvantage on stealth checks')
+
+class Armors(BaseModel):
+	items: list[Armor] = Field(description='A list of armors in the SRD', default_factory=list)
+
 
 class Animal(BaseModel):
 	name: str = Field(description='The name of the animal')

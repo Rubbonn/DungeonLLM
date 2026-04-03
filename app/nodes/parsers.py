@@ -58,7 +58,7 @@ def weapons_parser(state: SrdParserState) -> dict:
 			raise Exception('No weapons found in the text')
 
 		for item in response.items:
-			weapon = Weapon(name=item.name, damage=item.damage, damage_type=item.damage_type,
+			weapon = Weapon(name=item.name, damage=item.damage, damage_type=item.damage_type, versatile_damage=item.versatile_damage,
 			                properties={WeaponProperty(property=property) for property in item.properties}, mastery_property=item.mastery_property,
 			                range=item.range, long_range=item.long_range, ammunition=item.ammunition,
 			                weight=item.weight, cost=item.cost)

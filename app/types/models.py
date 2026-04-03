@@ -18,6 +18,7 @@ class Weapon(BaseModel):
 	name: str = Field(description='The name of the weapon')
 	damage: str = Field(description='The damage of the weapon')
 	damage_type: features.DamageType = Field(description='The damage type of the weapon')
+	versatile_damage: str | None = Field(description='The versatile damage of the weapon if it has versatile damage, otherwise None')
 	properties: set[features.WeaponProperty] = Field(description='A list of properties of the weapon', default_factory=set)
 	mastery_property: features.WeaponMasteryProperty = Field(description='The mastery property of the weapon')
 	range: int | None = Field(description='The range of the weapon in feet if it has a range, otherwise None')

@@ -34,6 +34,7 @@ class Weapon(Base, Item):
 	__tablename__ = 'weapons'
 	damage: Mapped[str]
 	damage_type: Mapped[features.DamageType]
+	versatile_damage: Mapped[Optional[str]]
 	properties: Mapped[set[WeaponProperty]] = relationship()
 	mastery_property: Mapped[features.WeaponMasteryProperty]
 	range: Mapped[Optional[int]]

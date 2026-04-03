@@ -30,6 +30,12 @@ class CreatureSpeed(Base):
 	speed: Mapped[int]
 	conditions: Mapped[str]
 
+class CreatureTrait(Base):
+	__tablename__ = 'creature_traits'
+	creature_id: Mapped[int] = mapped_column(ForeignKey('creatures.id'), primary_key=True)
+	name: Mapped[str] = mapped_column(primary_key=True)
+	description: Mapped[str]
+
 class Creature(Base):
 	__tablename__ = 'creatures'
 	id: Mapped[int] = mapped_column(primary_key=True)
@@ -42,6 +48,7 @@ class Creature(Base):
 	languages: Mapped[list[Language]] = relationship(secondary=Table('creature_languages', Base.metadata, Column('creature_id', ForeignKey('creatures.id'), primary_key=True), Column('language_id', ForeignKey('languages.id'), primary_key=True)))
 	alignment: Mapped[features.Alignment]
 	speed: Mapped[dict[features.Speed, CreatureSpeed]] = relationship(collection_class=attribute_mapped_collection('speed_type'))
+	traits: Mapped[list[CreatureTrait]] = relationship()
 	
 	def get_bio(self) -> str:
 		return f'Name: {self.name}\nSize: {self.size.value}'

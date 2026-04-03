@@ -1,5 +1,5 @@
 from app.database import get_database_session
-from app.types.models import GearItems, WeaponProperties, WeaponMasteryProperties, Weapons, Tools
+from app.types.models import GearItems, WeaponMasteryProperties, Weapons, Tools
 from app.types.state import SrdParserState
 from app.utilities.functions import retry_exception, get_chat_model
 import re
@@ -30,39 +30,6 @@ def gear_parser(state: SrdParserState) -> dict:
 		session.add(gear_item)
 	session.commit()
 	print("Gear items parsing completed successfully.")
-	return {}
-
-def weapon_properties_parser(state: SrdParserState) -> dict:
-	if not 'Equipment' in state['sections']:
-		return {}
-
-	print(f"Parsing weapon properties...")
-	llm = get_chat_model()
-	session = get_database_session()
-
-	extraction_regex = re.compile(r'^##(?!#)\s*Weapons\s*\n([\s\S]*?)(?=\n##(?!#)\s*|\Z)', re.MULTILINE)
-	with open('data/temp/Equipment.md', 'r', encoding='utf-8') as source:
-		match = extraction_regex.search(source.read())
-	if not match:
-		return {}
-
-	# Weapon properties extraction
-	from app.entities.items import WeaponProperty
-	if WeaponProperty.is_empty():
-		print("Extracting weapon properties...")
-		llm_with_structured_output = llm.with_structured_output(WeaponProperties)
-		response: WeaponProperties = retry_exception(func=llm_with_structured_output.invoke, input=f'''Extract the weapon properties (excluding the mastery properties) from the following text, providing their name and description:
-		{match.group(1)}
-		''')
-		if len(response.items) == 0:
-			raise Exception('No weapon properties found in the text')
-
-		for item in response.items:
-			weapon_property = WeaponProperty(name=item.name, description=item.description)
-			session.add(weapon_property)
-		session.commit()
-
-	print('Weapon properties parsing completed successfully.')
 	return {}
 
 def weapon_mastery_properties_parser(state: SrdParserState) -> dict:
@@ -113,7 +80,7 @@ def weapons_parser(state: SrdParserState) -> dict:
 		return {}
 
 	# Weapons extraction
-	from app.entities.items import Weapon, WeaponMasteryProperty, WeaponProperty
+	from app.entities.items import Weapon, WeaponProperty, WeaponMasteryProperty
 	if Weapon.is_empty():
 		print("Extracting weapons...")
 		llm_with_structured_output = llm.with_structured_output(Weapons)
@@ -127,10 +94,8 @@ def weapons_parser(state: SrdParserState) -> dict:
 		for item in response.items:
 			weapon_mastery_property = session.scalar(
 				select(WeaponMasteryProperty).filter_by(name=item.mastery_property))
-			weapon_properties = session.scalars(
-				select(WeaponProperty).where(WeaponProperty.name.in_(item.properties))).all()
 			weapon = Weapon(name=item.name, damage=item.damage, damage_type=item.damage_type,
-			                properties=weapon_properties, mastery_property=weapon_mastery_property,
+			                properties=[WeaponProperty(property=property) for property in item.properties], mastery_property=weapon_mastery_property,
 			                weight=item.weight, cost=item.cost)
 			session.add(weapon)
 		session.commit()

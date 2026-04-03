@@ -20,6 +20,9 @@ class Weapon(BaseModel):
 	damage_type: features.DamageType = Field(description='The damage type of the weapon')
 	properties: set[features.WeaponProperty] = Field(description='A list of properties of the weapon', default_factory=set)
 	mastery_property: features.WeaponMasteryProperty = Field(description='The mastery property of the weapon')
+	range: int | None = Field(description='The range of the weapon in feet if it has a range, otherwise None')
+	long_range: int | None = Field(description='The long range of the weapon in feet if it has a long range, otherwise None')
+	ammunition: str | None = Field(description='The type of ammunition used by the weapon if it has ammunition, otherwise None')
 	weight: float = Field(description='The weight of the item in pounds')
 	cost: float = Field(description='The cost of the item in gold pieces')
 

@@ -1,6 +1,6 @@
 from app.database import Base
 import app.entities.features as features
-from sqlalchemy import Table, Column, ForeignKey, Enum
+from sqlalchemy import Table, Column, ForeignKey
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 from typing import Optional
 
@@ -36,6 +36,9 @@ class Weapon(Base, Item):
 	damage_type: Mapped[features.DamageType]
 	properties: Mapped[set[WeaponProperty]] = relationship()
 	mastery_property: Mapped[features.WeaponMasteryProperty]
+	range: Mapped[Optional[int]]
+	long_range: Mapped[Optional[int]]
+	ammunition: Mapped[Optional[str]]
 
 class Armor(Base, Item):
 	__tablename__ = 'armors'

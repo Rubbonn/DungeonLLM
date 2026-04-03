@@ -60,6 +60,7 @@ def weapons_parser(state: SrdParserState) -> dict:
 		for item in response.items:
 			weapon = Weapon(name=item.name, damage=item.damage, damage_type=item.damage_type,
 			                properties={WeaponProperty(property=property) for property in item.properties}, mastery_property=item.mastery_property,
+			                range=item.range, long_range=item.long_range, ammunition=item.ammunition,
 			                weight=item.weight, cost=item.cost)
 			session.add(weapon)
 		session.commit()

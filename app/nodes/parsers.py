@@ -95,7 +95,7 @@ def weapons_parser(state: SrdParserState) -> dict:
 			weapon_mastery_property = session.scalar(
 				select(WeaponMasteryProperty).filter_by(name=item.mastery_property))
 			weapon = Weapon(name=item.name, damage=item.damage, damage_type=item.damage_type,
-			                properties=[WeaponProperty(property=property) for property in item.properties], mastery_property=weapon_mastery_property,
+			                properties={WeaponProperty(property=property) for property in item.properties}, mastery_property=weapon_mastery_property,
 			                weight=item.weight, cost=item.cost)
 			session.add(weapon)
 		session.commit()

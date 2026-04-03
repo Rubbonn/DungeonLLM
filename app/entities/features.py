@@ -171,3 +171,37 @@ class Speed(Enum):
 	Jumping = 'Jumping'
 	Swimming = 'Swimming'
 	Burrowing = 'Burrowing'
+
+_DAMAGE_TYPE_METADATA = {
+	'Acid': 'Corrosive liquids, digestive enzymes',
+	'Bludgeoning': 'Blunt objects, constriction, falling',
+	'Cold': 'Freezing water, icy blasts',
+	'Fire': 'Flames, unbearable heat',
+	'Force': 'Pure magical energy',
+	'Lightning': 'Electricity',
+	'Necrotic': 'Life-draining energy',
+	'Piercing': 'Fangs, puncturing objects',
+	'Poison': 'Toxic gas, venom',
+	'Psychic': 'Mind-rendering energy',
+	'Radiant': 'Holy energy, searing radiation',
+	'Slashing': 'Claws, cutting objects',
+	'Thunder': 'Concussive sound'
+}
+
+class DamageType(Enum):
+	ACID = 'Acid'
+	BLUDGEONING = 'Bludgeoning'
+	COLD = 'Cold'
+	FIRE = 'Fire'
+	FORCE = 'Force'
+	LIGHTNING = 'Lightning'
+	NECROTIC = 'Necrotic'
+	PIERCING = 'Piercing'
+	POISON = 'Poison'
+	PSYCHIC = 'Psychic'
+	RADIANT = 'Radiant'
+	SLASHING = 'Slashing'
+	THUNDER = 'Thunder'
+
+	def __init__(self, _: str):
+		self.examples = _DAMAGE_TYPE_METADATA[self.value]

@@ -1,5 +1,5 @@
 from app.database import get_database_session
-from app.types.models import GearItems, DamageTypes, WeaponProperties, WeaponMasteryProperties, Weapons, Tools
+from app.types.models import GearItems, WeaponProperties, WeaponMasteryProperties, Weapons, Tools
 from app.types.state import SrdParserState
 from app.utilities.functions import retry_exception, get_chat_model
 import re
@@ -30,37 +30,6 @@ def gear_parser(state: SrdParserState) -> dict:
 		session.add(gear_item)
 	session.commit()
 	print("Gear items parsing completed successfully.")
-	return {}
-
-def damage_types_parser(state: SrdParserState) -> dict:
-	if not 'Rules Glossary' in state['sections']:
-		return {}
-
-	print(f"Parsing damage types...")
-
-	# Damage types extraction
-	from app.entities.items import DamageType
-	if DamageType.is_empty():
-		print("Extracting damage types...")
-		extraction_regex = re.compile(r'^###(?!#)\s*Damage Types\s*\n([\s\S]*?)(?=\n###(?!#)\s*|\Z)', re.MULTILINE)
-		with open('data/temp/Rules Glossary.md', 'r', encoding='utf-8') as source:
-			match = extraction_regex.search(source.read())
-		if match:
-			llm = get_chat_model()
-			session = get_database_session()
-			llm_with_structured_output = llm.with_structured_output(DamageTypes)
-			response: DamageTypes = retry_exception(func=llm_with_structured_output.invoke, input=f'''Extract the damage types from the following text, providing their name and examples:
-				{match.group(1)}
-				''')
-			if len(response.items) == 0:
-				raise Exception('No damage types found in the text')
-
-			for item in response.items:
-				damage_type = DamageType(name=item.name, examples=item.examples)
-				session.add(damage_type)
-			session.commit()
-
-	print('Damage types parsing completed successfully.')
 	return {}
 
 def weapon_properties_parser(state: SrdParserState) -> dict:
@@ -144,7 +113,7 @@ def weapons_parser(state: SrdParserState) -> dict:
 		return {}
 
 	# Weapons extraction
-	from app.entities.items import Weapon, WeaponMasteryProperty, DamageType, WeaponProperty
+	from app.entities.items import Weapon, WeaponMasteryProperty, WeaponProperty
 	if Weapon.is_empty():
 		print("Extracting weapons...")
 		llm_with_structured_output = llm.with_structured_output(Weapons)
@@ -156,12 +125,11 @@ def weapons_parser(state: SrdParserState) -> dict:
 
 		from sqlalchemy import select
 		for item in response.items:
-			damage_type = session.scalar(select(DamageType).filter_by(name=item.damage_type))
 			weapon_mastery_property = session.scalar(
 				select(WeaponMasteryProperty).filter_by(name=item.mastery_property))
 			weapon_properties = session.scalars(
 				select(WeaponProperty).where(WeaponProperty.name.in_(item.properties))).all()
-			weapon = Weapon(name=item.name, damage=item.damage, damage_type=damage_type,
+			weapon = Weapon(name=item.name, damage=item.damage, damage_type=item.damage_type,
 			                properties=weapon_properties, mastery_property=weapon_mastery_property,
 			                weight=item.weight, cost=item.cost)
 			session.add(weapon)

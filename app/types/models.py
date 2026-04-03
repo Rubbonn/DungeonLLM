@@ -1,4 +1,4 @@
-from app.entities.features import AbilityType, Size, CreatureType, Skill, Language, Alignment, Speed
+from app.entities.features import AbilityType, Size, CreatureType, Skill, Language, Alignment, Speed, DamageType
 from app.types.actions import AbilityCheckAction
 from pydantic import BaseModel, Field
 
@@ -12,16 +12,6 @@ class GearItem(BaseModel):
 
 class GearItems(BaseModel):
 	items: list[GearItem] = Field(description='List of gear items with their properties', default_factory=list)
-
-
-class DamageType(BaseModel):
-	name: str = Field(description='The name of the damage type')
-	examples: str = Field(description='Examples when the damage type is used in the SRD')
-
-
-class DamageTypes(BaseModel):
-	items: list[DamageType] = Field(description='A list of damage types in the SRD', default_factory=list)
-
 
 class WeaponProperty(BaseModel):
 	name: str = Field(description='The name of the weapon property')
@@ -44,7 +34,7 @@ class WeaponMasteryProperties(BaseModel):
 class Weapon(BaseModel):
 	name: str = Field(description='The name of the weapon')
 	damage: str = Field(description='The damage of the weapon')
-	damage_type: str = Field(description='The damage type of the weapon')
+	damage_type: DamageType = Field(description='The damage type of the weapon')
 	properties: list[str] = Field(description='A list of properties of the weapon', default_factory=list)
 	mastery_property: str = Field(description='The mastery property of the weapon')
 	weight: float = Field(description='The weight of the item in pounds')

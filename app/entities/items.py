@@ -1,5 +1,5 @@
 from app.database import Base
-from app.entities.features import AbilityType
+from app.entities.features import AbilityType, DamageType
 from sqlalchemy import Table, Column, ForeignKey
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 from typing import Optional
@@ -25,12 +25,6 @@ class Tool(Base, Item):
 		Column('gear_id', ForeignKey('gear.id'), primary_key=True)
 	))
 
-class DamageType(Base):
-	__tablename__ = 'damage_types'
-	id: Mapped[int] = mapped_column(primary_key=True)
-	name: Mapped[str]
-	examples: Mapped[str]
-
 class WeaponProperty(Base):
 	__tablename__ = 'weapon_properties'
 	id: Mapped[int] = mapped_column(primary_key=True)
@@ -46,8 +40,7 @@ class WeaponMasteryProperty(Base):
 class Weapon(Base, Item):
 	__tablename__ = 'weapons'
 	damage: Mapped[str]
-	_damage_type_id: Mapped[int] = mapped_column('damage_type_id', ForeignKey('damage_types.id'))
-	damage_type: Mapped[DamageType] = relationship()
+	damage_type: Mapped[DamageType]
 	properties: Mapped[list[WeaponProperty]] = relationship(secondary=Table(
 		'weapons_properties',
 		Base.metadata,

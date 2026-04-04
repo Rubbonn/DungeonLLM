@@ -13,16 +13,15 @@ if __name__ == "__main__":
 
 	from app.graph.srdparse import build_graph as build_srd_graph
 	from app.database import initialize_database
-	import sys
 	graph = build_srd_graph()
 	initialize_database()
 	graph.invoke({'source_file': 'SRD_CC_v5.2.1.md'})
-	sys.exit(0)
 
 	graph = build_graph()
+	from app.test import create_random_player
 	state: GameplayState = {
 		'messages': [HumanMessage(content=CAMPAIGN_PROMPT)],
-		'player': Player(name='Ruben', size=features.Size.MEDIUM, abilities={ability: CreatureAbility(ability=ability, value=randint(5, 15)) for ability in features.AbilityType}),
+		'player': create_random_player(persist=False),
 		'plan': None
 	}
 	while True:

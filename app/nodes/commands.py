@@ -3,6 +3,7 @@ from langgraph.types import Overwrite
 
 def help_command(state: GameplayState) -> None:
 	print('Comandi disponibili:')
+	print('/player_info - Mostra informazioni sul giocatore')
 	print('/save - Salva la campagna')
 	print('/load - Carica la campagna')
 	print('/exit - Esci dal programma')
@@ -20,3 +21,6 @@ def load_command(state: GameplayState) -> GameplayState:
 		state = {k: Overwrite(v) for k,v in from_json(f.read()).items()}
 	print('Campagna caricata!')
 	return state
+
+def player_info_command(state: GameplayState) -> None:
+	print(state['player'].creature.get_bio())

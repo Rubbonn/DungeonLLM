@@ -51,10 +51,82 @@ class Creature(Base):
 	traits: Mapped[list[CreatureTrait]] = relationship()
 	
 	def get_bio(self) -> str:
-		return f'Name: {self.name}\nSize: {self.size.value}'
-	
+		lines = [f'# {self.name}', '', f'*{self.size.value}, {self.alignment.value}*', '']
+		lines += [f'**AC** {self.armor_class}', '', f'**HP** {self.hit_points}', '']
+
+		speed_labels = {
+			features.Speed.Walk: '',
+			features.Speed.Swimming: 'Swim',
+			features.Speed.Flying: 'Fly',
+			features.Speed.Climbing: 'Climb',
+			features.Speed.Burrowing: 'Burrow',
+			features.Speed.Crawling: 'Crawl',
+			features.Speed.Jumping: 'Jump',
+		}
+		speed_order = [features.Speed.Walk, features.Speed.Flying, features.Speed.Swimming,
+					   features.Speed.Climbing, features.Speed.Burrowing, features.Speed.Crawling, features.Speed.Jumping]
+		speed_parts = []
+		for speed_type in speed_order:
+			if speed_type not in self.speed:
+				continue
+			speed_data = self.speed[speed_type]
+			label = speed_labels.get(speed_type, speed_type.value)
+			cond = f' ({speed_data.conditions})' if speed_data.conditions else ''
+			if label:
+				speed_parts.append(f'{label} {speed_data.speed} ft.{cond}')
+			else:
+				speed_parts.append(f'{speed_data.speed} ft.{cond}')
+		lines.append(f'**Speed** {", ".join(speed_parts)}')
+
+		lines += ['\n', self.get_abilities()]
+
+		if self.skill_proficiencies:
+			def _fmt_bonus(b: Optional[int]) -> str:
+				return f'+{b}' if b is not None and b >= 0 else (str(b) if b is not None else '')
+			skills_str = ', '.join(f'{sp.skill.value} {_fmt_bonus(sp.bonus)}' for sp in self.skill_proficiencies)
+			lines += ['', f'**Skills** {skills_str}']
+
+		if self.languages:
+			langs_str = ', '.join(lang.language.value for lang in self.languages)
+			lines += ['', f'**Languages** {langs_str}']
+
+		return '\n'.join(lines)
+
 	def get_abilities(self) -> str:
-		return '\n'.join([f'{ability}: {value.value}' for ability, value in self.abilities.items()])
+		abbr_map = {
+			features.AbilityType.STRENGTH: 'STR',
+			features.AbilityType.DEXTERITY: 'DEX',
+			features.AbilityType.CONSTITUTION: 'CON',
+			features.AbilityType.INTELLIGENCE: 'INT',
+			features.AbilityType.WISDOM: 'WIS',
+			features.AbilityType.CHARISMA: 'CHA',
+		}
+		order = [
+			features.AbilityType.STRENGTH, features.AbilityType.DEXTERITY, features.AbilityType.CONSTITUTION,
+			features.AbilityType.INTELLIGENCE, features.AbilityType.WISDOM, features.AbilityType.CHARISMA,
+		]
+
+		def _fmt_mod(val: int) -> str:
+			return f'+{val}' if val >= 0 else str(val)
+
+		def _make_cell(ability: features.AbilityType) -> tuple[str, str, str, str]:
+			abbr = abbr_map[ability]
+			ca = self.abilities.get(ability)
+			if ca is None:
+				return abbr, '-', '-', '-'
+			mod = ca.modifier if ca.modifier is not None else self.get_ability_modifier(ability)
+			save = ca.save_modifier if ca.save_modifier is not None else mod
+			return abbr, str(ca.value), _fmt_mod(mod), _fmt_mod(save)
+
+		cells = [_make_cell(a) for a in order]
+
+		def _row(trio: list[tuple[str, str, str, str]]) -> str:
+			parts = [f'| {c[0]} | {c[1]:<3} | {c[2]:<3} | {c[3]:<4}' for c in trio]
+			return ' '.join(parts) + ' |'
+
+		header = '|     |     | MOD | SAVE |     |     | MOD | SAVE |     |     | MOD | SAVE |'
+		sep    = '|-----|-----|-----|------|-----|-----|-----|------|-----|-----|-----|------|'
+		return '\n'.join([header, sep, _row(cells[:3]), _row(cells[3:])])
 
 	def get_ability_modifier(self, ability: features.AbilityType) -> int:
 		match self.abilities[ability].value:

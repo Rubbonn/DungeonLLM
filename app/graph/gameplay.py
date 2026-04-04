@@ -12,6 +12,7 @@ def build_graph():
 	graph_builder.add_node('save_command', commands.save_command)
 	graph_builder.add_node('load_command', commands.load_command)
 	graph_builder.add_node('help_command', commands.help_command)
+	graph_builder.add_node('player_info_command', commands.player_info_command)
 	graph_builder.add_conditional_edges(START, routers.command_or_message, {'message': 'planner', 'command': 'route_command'})
 	graph_builder.add_edge('planner', 'executor')
 	graph_builder.add_edge('executor', 'send_message')

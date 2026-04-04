@@ -78,6 +78,7 @@ class Animal(BaseModel):
 	challenge_rating: float = Field(description='The challenge rating of the animal')
 	experience_points: int = Field(description='The experience points awarded for defeating the animal')
 	initiative_bonus: int = Field(description='The initiative bonus of the animal')
+	traits: dict[str, str] = Field(description='The animal traits names and their description', default_factory=dict)
 
 class Animals(BaseModel):
 	items: list[Animal] = Field(description='A list of animals in the SRD', default_factory=list)

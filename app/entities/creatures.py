@@ -6,7 +6,6 @@ from sqlalchemy import ForeignKey, Table, Column
 from sqlalchemy.orm import Mapped, mapped_column, relationship, attribute_mapped_collection
 from typing import Optional
 
-
 class CreatureAbility(Base):
 	__tablename__ = 'creature_abilities'
 	creature_id: Mapped[int] = mapped_column(ForeignKey('creatures.id'), primary_key=True)
@@ -20,6 +19,35 @@ class SkillProficiencies(Base):
 	id: Mapped[int] = mapped_column(primary_key=True)
 	skill: Mapped[features.Skill]
 	bonus: Mapped[Optional[int]]
+
+	@classmethod
+	def get_base_bonus(cls, level: int) -> int:
+		match level:
+			case 1 | 2 | 3 | 4:
+				return 2
+			case 5 | 6 | 7 | 8:
+				return 3
+			case 9 | 10 | 11 | 12:
+				return 4
+			case 13 | 14 | 15 | 16:
+				return 5
+			case 17 | 18 | 19 | 20:
+				return 6
+			case 21 | 22 | 23 | 24:
+				return 7
+			case 25 | 26 | 27 | 28:
+				return 8
+			case 29 | 30:
+				return 9
+			case _:
+				raise ValueError('Invalid level or challenge rate')
+
+	def register_hooks(self, registry: HookRegistry):
+		from app.engine.hooks.states import AbilityCheckState
+
+		@registry.register_hook(HOOK_LIST.ABILITY_CHECK_POST_ROLL)
+		def apply_bonus(state: AbilityCheckState) -> None:
+			pass
 
 class Language(Base):
 	__tablename__ = 'languages'

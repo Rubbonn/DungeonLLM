@@ -1,5 +1,5 @@
 from pathlib import Path
-from sqlalchemy import Engine, create_engine
+from sqlalchemy import Engine, create_engine, event
 from sqlalchemy.orm import DeclarativeBase, Session
 
 _database_engine: Engine | None = None
@@ -11,6 +11,14 @@ class Base(DeclarativeBase):
 		from sqlalchemy import select
 		session = get_database_session()
 		return not session.scalars(select(cls)).first()
+
+	def _on_load(self):
+		pass
+
+@event.listens_for(Base, 'load', propagate=True)
+@event.listens_for(Base, 'init', propagate=True)
+def _on_load(target: Base, *args, **kwargs):
+	target._on_load()
 
 def database_exists() -> bool:
 	return Path('data/databases/entities.sqlite').exists()

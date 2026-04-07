@@ -1,9 +1,11 @@
 from app.database import Base
+from app.engine.hooks.registry import HOOK_LIST, HookRegistry
 import app.entities.features as features
 from random import randint
 from sqlalchemy import ForeignKey, Table, Column
 from sqlalchemy.orm import Mapped, mapped_column, relationship, attribute_mapped_collection
 from typing import Optional
+
 
 class CreatureAbility(Base):
 	__tablename__ = 'creature_abilities'
@@ -50,6 +52,9 @@ class Creature(Base):
 	alignment: Mapped[features.Alignment]
 	speed: Mapped[dict[features.Speed, CreatureSpeed]] = relationship(collection_class=attribute_mapped_collection('speed_type'))
 	traits: Mapped[list[CreatureTrait]] = relationship()
+
+	def _on_load(self) -> None:
+		self.hook_registry = HookRegistry()
 	
 	def get_bio(self) -> str:
 		lines = [f'# {self.name}', '', f'*{self.size.value}, {self.alignment.value}*', '']
@@ -168,20 +173,20 @@ class Creature(Base):
 				raise ValueError('Invalid ability value')
 
 	def get_ability_modifier(self, ability: features.AbilityType) -> int:
-		from app.engine.hooks import HOOK_LIST, HookRegistry, AbilityModifierState
+		from app.engine.hooks.states import AbilityModifierState
 		state: AbilityModifierState = {
 			'ability': ability,
 			'score': self.abilities[ability].value,
 			'modifier': Creature.get_base_ability_modifier(self.abilities[ability].value)
 		}
-		HookRegistry.execute_hooks(HOOK_LIST.ABILITY_MODIFIER_CALCULATION, state)
+		self.hook_registry.execute_hooks(HOOK_LIST.ABILITY_MODIFIER_CALCULATION, state)
 		return state['modifier']
 
 	def ability_check(self, ability: features.AbilityType, dc: int, skill: Optional[features.Skill] = None) -> bool:
 		if dc < 0:
 			raise ValueError('DC must be positive')
 
-		from app.engine.hooks import HOOK_LIST, HookRegistry, AbilityCheckState
+		from app.engine.hooks.states import AbilityCheckState
 		state: AbilityCheckState = {
 			'num_dices': 1,
 			'num_sides': 20,
@@ -193,7 +198,7 @@ class Creature(Base):
 			'ability_mod': self.get_ability_modifier(ability),
 			'result': 0,
 		}
-		HookRegistry.execute_hooks(HOOK_LIST.ABILITY_CHECK_PRE_ROLL, state)
+		self.hook_registry.execute_hooks(HOOK_LIST.ABILITY_CHECK_PRE_ROLL, state)
 
 		result = 0
 		for _ in range(state['num_dices']):
@@ -204,10 +209,10 @@ class Creature(Base):
 				case 'nothing' | _:
 					result = throw
 		state['result'] = result
-		HookRegistry.execute_hooks(HOOK_LIST.ABILITY_CHECK_POST_ROLL, state)
+		self.hook_registry.execute_hooks(HOOK_LIST.ABILITY_CHECK_POST_ROLL, state)
 
 		state['result'] += state['ability_mod']
-		HookRegistry.execute_hooks(HOOK_LIST.ABILITY_CHECK_POST_CALCULATION, state)
+		self.hook_registry.execute_hooks(HOOK_LIST.ABILITY_CHECK_POST_CALCULATION, state)
 
 		return state['result'] >= dc
 

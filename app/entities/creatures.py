@@ -1,5 +1,6 @@
 from app.database import Base
 import app.entities.features as features
+from random import randint
 from sqlalchemy import ForeignKey, Table, Column
 from sqlalchemy.orm import Mapped, mapped_column, relationship, attribute_mapped_collection
 from typing import Optional
@@ -128,8 +129,9 @@ class Creature(Base):
 		sep    = '|-----|-----|-----|------|-----|-----|-----|------|-----|-----|-----|------|'
 		return '\n'.join([header, sep, _row(cells[:3]), _row(cells[3:])])
 
-	def get_ability_modifier(self, ability: features.AbilityType) -> int:
-		match self.abilities[ability].value:
+	@classmethod
+	def get_base_ability_modifier(cls, score: int) -> int:
+		match score:
 			case 1:
 				return -5
 			case 2 | 3:
@@ -164,6 +166,51 @@ class Creature(Base):
 				return 10
 			case _:
 				raise ValueError('Invalid ability value')
+
+	def get_ability_modifier(self, ability: features.AbilityType) -> int:
+		from app.engine.hooks import HOOK_LIST, HookRegistry, AbilityModifierState
+		state: AbilityModifierState = {
+			'ability': ability,
+			'score': self.abilities[ability].value,
+			'modifier': Creature.get_base_ability_modifier(self.abilities[ability].value)
+		}
+		HookRegistry.execute_hooks(HOOK_LIST.ABILITY_MODIFIER_CALCULATION, state)
+		return state['modifier']
+
+	def ability_check(self, ability: features.AbilityType, dc: int, skill: Optional[features.Skill] = None) -> bool:
+		if dc < 0:
+			raise ValueError('DC must be positive')
+
+		from app.engine.hooks import HOOK_LIST, HookRegistry, AbilityCheckState
+		state: AbilityCheckState = {
+			'num_dices': 1,
+			'num_sides': 20,
+			'creature': self,
+			'operation': 'nothing',
+			'ability': ability,
+			'skill': skill,
+			'dc': dc,
+			'ability_mod': self.get_ability_modifier(ability),
+			'result': 0,
+		}
+		HookRegistry.execute_hooks(HOOK_LIST.ABILITY_CHECK_PRE_ROLL, state)
+
+		result = 0
+		for _ in range(state['num_dices']):
+			throw = randint(1, state['num_sides'])
+			match state['operation']:
+				case 'add':
+					result += throw
+				case 'nothing' | _:
+					result = throw
+		state['result'] = result
+		HookRegistry.execute_hooks(HOOK_LIST.ABILITY_CHECK_POST_ROLL, state)
+
+		state['result'] += state['ability_mod']
+		HookRegistry.execute_hooks(HOOK_LIST.ABILITY_CHECK_POST_CALCULATION, state)
+
+		return state['result'] >= dc
+
 
 class Animal(Base):
 	__tablename__ = 'animals'

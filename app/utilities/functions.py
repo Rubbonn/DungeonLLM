@@ -44,5 +44,5 @@ def retry_exception(func: Callable[P, R], retries: int = 3, exceptions: tuple = 
 			else:
 				raise e
 
-def get_chat_model() -> BaseChatModel:
-	return init_chat_model(model=environ.get('LLM_MODEL'), model_provider=environ.get('LLM_PROVIDER'))
+def get_chat_model(**kwargs) -> BaseChatModel:
+	return init_chat_model(model=environ.get('LLM_MODEL'), model_provider=environ.get('LLM_PROVIDER'), **kwargs)

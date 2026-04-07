@@ -3,7 +3,7 @@ from typing import Callable
 
 class HOOK_LIST(str, Enum):
 	ABILITY_CHECK_PRE_ROLL = 'ability_check-pre_roll'
-	ABILITY_CHECK_POST_ROLL = 'ability_check-post_roll'
+	ABILITY_CHECK_PRE_CALCULATION = 'ability_check-pre_calculation'
 	ABILITY_CHECK_POST_CALCULATION = 'ability_check-post_calculation'
 	ABILITY_MODIFIER_CALCULATION = 'ability_modifier-calculation'
 

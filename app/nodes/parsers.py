@@ -50,8 +50,8 @@ def weapons_parser(state: SrdParserState) -> dict:
 		if not match:
 			return {}
 	
-		llm_with_structured_output = get_chat_model().with_structured_output(Weapons)
-		response: Weapons = retry_exception(func=llm_with_structured_output.invoke, input=f'''Extract the weapons from the following text, providing their name, description, damage, damage type, properties, mastery property, weight, and cost:
+		llm = get_chat_model().with_structured_output(Weapons)
+		response: Weapons = retry_exception(func=llm.invoke, input=f'''Extract the weapons from the following text, providing their name, description, damage, damage type, properties, mastery property, weight, and cost:
 			{match.group(1)}
 			''')
 		if len(response.items) == 0:
@@ -153,6 +153,7 @@ Text:
 					abilities={ability: CreatureAbility(ability=ability, value=value, modifier=modifier, save_modifier=save_modifier) for ability, (value, modifier, save_modifier) in animal.abilities.items()},
 					armor_class=animal.armor_class,
 					hit_points=animal.hit_points,
+					level=animal.challenge_rating,
 					skill_proficiencies=[SkillProficiencies(skill=skill, bonus=bonus) for skill, bonus in animal.skill_proficiencies.items()],
 					languages=[Language(language=language) for language in animal.languages],
 					alignment=animal.alignment,
@@ -164,7 +165,6 @@ Text:
 				hit_points_formula=animal.hit_points_formula,
 				experience_points=animal.experience_points,
 				initiative_bonus=animal.initiative_bonus,
-				challenge_rating=animal.challenge_rating,
 			)
 			session.add(a)
 		session.commit()
@@ -187,8 +187,8 @@ def armors_parser(state: SrdParserState) -> dict:
 	from app.entities.items import Armor
 	if Armor.is_empty():
 		print("Extracting armors...")
-		llm_with_structured_output = get_chat_model().with_structured_output(Armors)
-		response: Armors = retry_exception(func=llm_with_structured_output.invoke, input=f'''Extract the armors from the following text, providing their name, description, armor class, weight, cost, and any other relevant properties:
+		llm = get_chat_model().with_structured_output(Armors)
+		response: Armors = retry_exception(func=llm.invoke, input=f'''Extract the armors from the following text, providing their name, description, armor class, weight, cost, and any other relevant properties:
 		{match.group(1)}
 		''')
 		if len(response.items) == 0:

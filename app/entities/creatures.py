@@ -1,10 +1,13 @@
+from __future__ import annotations
 from app.database import Base
-from app.engine.hooks.registry import HOOK_LIST, HookRegistry
+from app.engine.hooks.registry import HOOK_LIST, global_hook_registry
 import app.entities.features as features
 from random import randint
 from sqlalchemy import ForeignKey, Table, Column
 from sqlalchemy.orm import Mapped, mapped_column, relationship, attribute_mapped_collection
-from typing import Optional
+from typing import Optional, TYPE_CHECKING
+if TYPE_CHECKING:
+	from app.engine.hooks.states import AbilityCheckState
 
 class CreatureAbility(Base):
 	__tablename__ = 'creature_abilities'
@@ -41,13 +44,18 @@ class SkillProficiencies(Base):
 				return 9
 			case _:
 				raise ValueError('Invalid level or challenge rate')
-
-	def register_hooks(self, registry: HookRegistry):
-		from app.engine.hooks.states import AbilityCheckState
-
-		@registry.register_hook(HOOK_LIST.ABILITY_CHECK_POST_ROLL)
-		def apply_bonus(state: AbilityCheckState) -> None:
-			pass
+	
+	@global_hook_registry.register_hook(HOOK_LIST.ABILITY_CHECK_PRE_CALCULATION)
+	@classmethod
+	def apply_bonus(cls, state: AbilityCheckState) -> None:
+		if state['skill'] is None or len(state['creature'].skill_proficiencies) == 0:
+			return
+		
+		for sp in state['creature'].skill_proficiencies:
+			if sp.skill == state['skill']:
+				state['ability_mod'] -= 1000
+				state['ability_mod'] += sp.bonus if sp.bonus is not None else SkillProficiencies.get_base_bonus(state['creature'].level)
+				break
 
 class Language(Base):
 	__tablename__ = 'languages'
@@ -75,14 +83,12 @@ class Creature(Base):
 	abilities: Mapped[dict[features.AbilityType, CreatureAbility]] = relationship(collection_class=attribute_mapped_collection('ability'))
 	armor_class: Mapped[int]
 	hit_points: Mapped[int]
+	level: Mapped[float]
 	skill_proficiencies: Mapped[list[SkillProficiencies]] = relationship(secondary=Table('creature_skill_proficiencies', Base.metadata, Column('creature_id', ForeignKey('creatures.id'), primary_key=True), Column('skill_id', ForeignKey('skill_proficiencies.id'), primary_key=True)))
 	languages: Mapped[list[Language]] = relationship(secondary=Table('creature_languages', Base.metadata, Column('creature_id', ForeignKey('creatures.id'), primary_key=True), Column('language_id', ForeignKey('languages.id'), primary_key=True)))
 	alignment: Mapped[features.Alignment]
 	speed: Mapped[dict[features.Speed, CreatureSpeed]] = relationship(collection_class=attribute_mapped_collection('speed_type'))
 	traits: Mapped[list[CreatureTrait]] = relationship()
-
-	def _on_load(self) -> None:
-		self.hook_registry = HookRegistry()
 	
 	def get_bio(self) -> str:
 		lines = [f'# {self.name}', '', f'*{self.size.value}, {self.alignment.value}*', '']
@@ -207,7 +213,7 @@ class Creature(Base):
 			'score': self.abilities[ability].value,
 			'modifier': Creature.get_base_ability_modifier(self.abilities[ability].value)
 		}
-		self.hook_registry.execute_hooks(HOOK_LIST.ABILITY_MODIFIER_CALCULATION, state)
+		global_hook_registry.execute_hooks(HOOK_LIST.ABILITY_MODIFIER_CALCULATION, state)
 		return state['modifier']
 
 	def ability_check(self, ability: features.AbilityType, dc: int, skill: Optional[features.Skill] = None) -> bool:
@@ -226,7 +232,7 @@ class Creature(Base):
 			'ability_mod': self.get_ability_modifier(ability),
 			'result': 0,
 		}
-		self.hook_registry.execute_hooks(HOOK_LIST.ABILITY_CHECK_PRE_ROLL, state)
+		global_hook_registry.execute_hooks(HOOK_LIST.ABILITY_CHECK_PRE_ROLL, state)
 
 		result = 0
 		for _ in range(state['num_dices']):
@@ -237,10 +243,10 @@ class Creature(Base):
 				case 'nothing' | _:
 					result = throw
 		state['result'] = result
-		self.hook_registry.execute_hooks(HOOK_LIST.ABILITY_CHECK_POST_ROLL, state)
+		global_hook_registry.execute_hooks(HOOK_LIST.ABILITY_CHECK_PRE_CALCULATION, state)
 
 		state['result'] += state['ability_mod']
-		self.hook_registry.execute_hooks(HOOK_LIST.ABILITY_CHECK_POST_CALCULATION, state)
+		global_hook_registry.execute_hooks(HOOK_LIST.ABILITY_CHECK_POST_CALCULATION, state)
 
 		return state['result'] >= dc
 
@@ -254,7 +260,6 @@ class Animal(Base):
 	hit_points_formula: Mapped[str]
 	experience_points: Mapped[int]
 	initiative_bonus: Mapped[int]
-	challenge_rating: Mapped[float]
 
 class Player(Base):
 	__tablename__ = 'players'

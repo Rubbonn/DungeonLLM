@@ -3,7 +3,6 @@ from sqlalchemy import Engine, create_engine, event
 from sqlalchemy.orm import DeclarativeBase, Session
 
 _database_engine: Engine | None = None
-_database_session: Session | None = None
 
 class Base(DeclarativeBase):
 	@classmethod
@@ -30,10 +29,7 @@ def get_database_engine() -> Engine:
 	return _database_engine
 
 def get_database_session() -> Session:
-	global _database_session
-	if _database_session is None:
-		_database_session = Session(get_database_engine())
-	return _database_session
+	return Session(get_database_engine())
 
 def initialize_database():
 	from app.entities import items, creatures, features

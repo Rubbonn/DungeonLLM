@@ -219,7 +219,7 @@ def test_responses_api_streaming_via_openai_client():
 # ---------------------------------------------------------------------------
 
 @requires_server
-def test_srdparse_graph_builds():
+def test_srdparse_graph_builds(isolated_db):
     """
     Verifies that build_graph() from app.graph.srdparse compiles successfully
     and that the graph can be invoked against the real SRD source file.
@@ -230,10 +230,6 @@ def test_srdparse_graph_builds():
     graph compiles and that the initial splitting step succeeds.
     """
     with patch.dict(os.environ, _LANGCHAIN_ENV):
-        # Reset the cached engine so env vars take effect.
-        import app.database as db_module
-        db_module._database_engine = None
-
         from app.graph.srdparse import build_graph
         from app.database import initialize_database
         from app.types.state import SrdParserState
@@ -264,7 +260,7 @@ def test_srdparse_graph_builds():
 # ---------------------------------------------------------------------------
 
 @requires_server
-def test_gameplay_graph_with_tools():
+def test_gameplay_graph_with_tools(isolated_db):
     """
     Verifies that build_graph() from app.graph.gameplay compiles and that the
     graph can process a user message using the player tools.
@@ -274,9 +270,6 @@ def test_gameplay_graph_with_tools():
     supports tool / function calling.
     """
     with patch.dict(os.environ, _LANGCHAIN_ENV):
-        import app.database as db_module
-        db_module._database_engine = None
-
         from app.graph.gameplay import build_graph
         from app.database import initialize_database
         from app.test import create_random_player

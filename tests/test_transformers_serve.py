@@ -38,8 +38,6 @@ The tests are skipped automatically when the server is not reachable.
 from __future__ import annotations
 
 import os
-import shutil
-import tempfile
 import urllib.request
 from typing import cast
 from unittest.mock import patch
@@ -175,21 +173,36 @@ def test_chat_completions_streaming_via_langchain():
 @requires_server
 def test_responses_api_via_openai_client():
     """
-    Verifies the /v1/responses endpoint using the official openai Python client.
-    The Responses API is OpenAI's latest stateful endpoint; transformers serve
-    exposes it experimentally.
+    Verifies the /v1/responses endpoint by calling it directly with requests and
+    parsing the SSE stream.  transformers serve always returns SSE for /v1/responses
+    (non-streaming mode is not yet supported), so this test reads the raw SSE
+    frames and extracts the text from the final 'response.completed' event.
     """
-    from openai import OpenAI
+    import json
+    import requests
 
-    client = OpenAI(base_url=V1_URL, api_key="fake")
-    response = client.responses.create(
-        model=MODEL_ID,
-        instructions="You are a helpful assistant.",
-        input="Reply with a single word: hello",
-        max_output_tokens=32,
-    )
-    assert response.output, "Expected at least one output item from /v1/responses"
-    text = response.output[0].content[0].text
+    payload = {
+        "model": MODEL_ID,
+        "instructions": "You are a helpful assistant.",
+        "input": "Reply with a single word: hello",
+        "max_output_tokens": 32,
+    }
+    resp = requests.post(f"{SERVE_URL}/v1/responses", json=payload, timeout=30)
+    assert resp.status_code == 200, f"Expected 200, got {resp.status_code}: {resp.text}"
+
+    # Parse SSE frames to find the 'response.completed' event with the full output.
+    completed_event: dict | None = None
+    for line in resp.text.splitlines():
+        if line.startswith("data: "):
+            event = json.loads(line[len("data: "):])
+            if event.get("type") == "response.completed":
+                completed_event = event
+                break
+
+    assert completed_event is not None, "No 'response.completed' event found in SSE stream"
+    output = completed_event["response"]["output"]
+    assert output, "Expected non-empty output in completed response"
+    text = output[0]["content"][0]["text"]
     assert text, "Expected non-empty text in /v1/responses output"
     print(f"\n[responses] text: {text!r}")
 
@@ -219,40 +232,87 @@ def test_responses_api_streaming_via_openai_client():
 # ---------------------------------------------------------------------------
 
 @requires_server
-def test_srdparse_graph_builds(isolated_db):
+def test_srdparse_graph_compiles():
     """
-    Verifies that build_graph() from app.graph.srdparse compiles successfully
-    and that the graph can be invoked against the real SRD source file.
-
-    The srd_splitter node is pure Python (no LLM call); the parser nodes use
-    structured output via the configured LLM.  Under transformers serve the
-    full parse run may take a long time, so this test only checks that the
-    graph compiles and that the initial splitting step succeeds.
+    Verifies that build_graph() from app.graph.srdparse compiles without errors.
     """
     with patch.dict(os.environ, _LANGCHAIN_ENV):
         from app.graph.srdparse import build_graph
-        from app.database import initialize_database
-        from app.types.state import SrdParserState
-
         graph = build_graph()
         assert graph is not None, "srdparse graph failed to compile"
+        print("\n[srdparse] graph compiled successfully")
 
-        initialize_database()
 
-        # Run only the srd_splitter step by invoking the graph with the real
-        # SRD source file and catching any LLM errors so that the test reports
-        # a clear assertion rather than an unrelated network/model failure.
-        try:
-            result = graph.invoke(cast(SrdParserState, {"source_file": "SRD_CC_v5.2.1.md"}))
-            sections: list[str] = result.get("sections", [])
-            assert sections, "srd_splitter produced no sections from the SRD file"
-            assert "Equipment" in sections, "Expected 'Equipment' section in SRD parse result"
-            print(f"\n[srdparse] split into {len(sections)} sections: {sections[:5]} …")
-        except Exception as exc:
-            pytest.fail(
-                f"srdparse graph invocation failed: {exc}\n"
-                "Make sure the model supports structured output / function calling."
-            )
+@requires_server
+def test_srdparse_splitter_node(tmp_path):
+    """
+    Verifies the srd_splitter node by calling it directly.  This node is pure
+    Python (no LLM) and splits the SRD Markdown file into per-chapter sections
+    written under data/temp/.  The test checks that the expected sections are
+    produced and that the 'Equipment' section file is created on disk.
+    """
+    from app.nodes.nodes import srd_splitter
+    from app.types.state import SrdParserState
+
+    # Redirect data/temp writes to a temporary directory.
+    import os as _os
+    original_dir = _os.getcwd()
+    temp_data = tmp_path / "data" / "temp"
+    temp_data.mkdir(parents=True)
+    try:
+        _os.chdir(tmp_path)
+        (tmp_path / "data" / "temp").mkdir(parents=True, exist_ok=True)
+        # Copy SRD file to cwd so the node can open it by relative path.
+        import shutil as _shutil
+        _shutil.copy(
+            _os.path.join(original_dir, "SRD_CC_v5.2.1.md"),
+            tmp_path / "SRD_CC_v5.2.1.md",
+        )
+        result = srd_splitter(cast(SrdParserState, {"source_file": "SRD_CC_v5.2.1.md"}))
+    finally:
+        _os.chdir(original_dir)
+
+    sections: list[str] = result["sections"]
+    assert sections, "srd_splitter produced no sections"
+    assert "Equipment" in sections, f"'Equipment' section missing; got {sections}"
+    assert "Animals" in sections, f"'Animals' section missing; got {sections}"
+    print(f"\n[srdparse splitter] {len(sections)} sections: {sections}")
+
+
+@requires_server
+def test_srdparse_structured_output():
+    """
+    Verifies that the langchain ChatOpenAI integration supports structured output
+    via function/tool calling, as used by the srdparse parsers.
+
+    transformers serve does not support the `response_format` JSON-schema mode,
+    so structured output must be requested with method='function_calling'.
+    Uses a minimal schema so the test completes quickly even on CPU.
+    """
+    from pydantic import BaseModel
+    from langchain_openai import ChatOpenAI
+
+    class SimpleItem(BaseModel):
+        name: str
+        cost: str
+
+    class SimpleItems(BaseModel):
+        items: list[SimpleItem]
+
+    llm = ChatOpenAI(
+        model=MODEL_ID,
+        base_url=V1_URL,
+        api_key="fake",
+        temperature=0,
+        max_tokens=256,
+    ).with_structured_output(SimpleItems, method="function_calling")
+
+    result: SimpleItems = llm.invoke(
+        'Extract items from this text as a list: "Torch costs 1 cp, Rope (50 ft) costs 1 sp"'
+    )
+    assert isinstance(result, SimpleItems), f"Expected SimpleItems, got {type(result)}"
+    assert len(result.items) > 0, "Structured output returned no items"
+    print(f"\n[srdparse structured output] extracted {len(result.items)} items: {result.items}")
 
 
 # ---------------------------------------------------------------------------

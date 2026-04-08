@@ -45,4 +45,28 @@ def retry_exception(func: Callable[P, R], retries: int = 3, exceptions: tuple = 
 				raise e
 
 def get_chat_model(**kwargs) -> BaseChatModel:
-	return init_chat_model(model=environ.get('LLM_MODEL'), model_provider=environ.get('LLM_PROVIDER'), **kwargs)
+	provider = environ.get('LLM_PROVIDER', '')
+	# num_ctx is an Ollama-specific context-window parameter.
+	# For OpenAI-compatible providers, map it to max_tokens so callers that
+	# rely on it to bound output length still get the intended behaviour.
+	num_ctx = kwargs.pop('num_ctx', None)
+	if num_ctx is not None and provider != 'ollama':
+		kwargs.setdefault('max_tokens', num_ctx)
+	elif num_ctx is not None:
+		kwargs['num_ctx'] = num_ctx
+	# reasoning=False (bool) is an Ollama/Gemini convention; OpenAI-compatible
+	# providers expect reasoning to be a dict (reasoning-model config) or absent.
+	if isinstance(kwargs.get('reasoning'), bool):
+		kwargs.pop('reasoning')
+	model = init_chat_model(model=environ.get('LLM_MODEL'), model_provider=provider, **kwargs)
+	# transformers serve (and many OpenAI-compatible servers) do not support the
+	# response_format JSON-schema mode used by with_structured_output() by default.
+	# Patch the method on this instance to always use tool/function calling instead,
+	# which these servers do support.
+	if provider == 'openai':
+		_orig = model.with_structured_output
+		def _with_structured_output(schema, **kw):
+			kw.setdefault('method', 'function_calling')
+			return _orig(schema, **kw)
+		model.with_structured_output = _with_structured_output  # type: ignore[method-assign]
+	return model

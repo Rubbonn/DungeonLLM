@@ -18,7 +18,7 @@ def gear_parser(state: SrdParserState) -> dict:
 		if not match:
 			return {}
 
-		llm = get_chat_model(temperature=1, num_ctx=8192, reasoning=False).with_structured_output(GearItems)
+		llm = get_chat_model(temperature=0, reasoning_effort='none').with_structured_output(GearItems, method='function_calling')
 		response: GearItems = retry_exception(func=llm.invoke, input=f'''Extract the gear items from the following text, providing their name, weight, cost and description:
 		{match.group(1)}
 		''')
@@ -50,7 +50,7 @@ def weapons_parser(state: SrdParserState) -> dict:
 		if not match:
 			return {}
 	
-		llm = get_chat_model(temperature=1, num_ctx=8192, reasoning=False).with_structured_output(Weapons)
+		llm = get_chat_model(temperature=0, reasoning_effort='none').with_structured_output(Weapons, method='function_calling')
 		response: Weapons = retry_exception(func=llm.invoke, input=f'''Extract the weapons from the following text, providing their name, description, damage, damage type, properties, mastery property, weight, and cost:
 			{match.group(1)}
 			''')
@@ -85,7 +85,7 @@ def tools_parser(state: SrdParserState) -> dict:
 		if not match:
 			return {}
 
-		llm = get_chat_model(temperature=1, num_ctx=8192, reasoning=False).with_structured_output(Tools)
+		llm = get_chat_model(temperature=0, reasoning_effort='none').with_structured_output(Tools, method='function_calling')
 		response: Tools = retry_exception(func=llm.invoke, input=f'''Extract the tools from the following text, providing their properties (extract any variant as a separate tool):
 		{match.group(1)}
 		''')
@@ -112,7 +112,7 @@ def animals_parser(state: SrdParserState) -> dict:
 	if Animal.is_empty():
 		print('Extracting animals...')
 		from app.types.models import Animals
-		llm = get_chat_model(temperature=1, num_ctx=8192, reasoning=False).with_structured_output(Animals)
+		llm = get_chat_model(temperature=0, reasoning_effort='none').with_structured_output(Animals, method='function_calling')
 		with open('data/temp/Animals.md', 'r', encoding='utf-8') as source:
 			content = source.read()
 		response: Animals = retry_exception(func=llm.invoke, input=f'''Extract all animals from the following text and populate each animal's fields according to these rules:
@@ -187,7 +187,7 @@ def armors_parser(state: SrdParserState) -> dict:
 	from app.entities.items import Armor
 	if Armor.is_empty():
 		print("Extracting armors...")
-		llm = get_chat_model(temperature=1, num_ctx=8192, reasoning=False).with_structured_output(Armors)
+		llm = get_chat_model(temperature=0, reasoning_effort='none').with_structured_output(Armors, method='function_calling')
 		response: Armors = retry_exception(func=llm.invoke, input=f'''Extract the armors from the following text, providing their name, description, armor class, weight, cost, and any other relevant properties:
 		{match.group(1)}
 		''')

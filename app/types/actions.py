@@ -31,11 +31,7 @@ Charisma: Influence, entertain, or deceive''', default='ability_check')
 	difficulty_class: int = Field(description='The difficulty class to equal or exceed to succeed')
 
 	def execute(self, state: GameplayState):
-		dice_result = throw_dice(20)
-		player_modifier = state['player'].creature.get_ability_modifier(self.ability)
-		if dice_result == 1 or dice_result + player_modifier < self.difficulty_class:
-			self.result = f'Ability check {self.ability.value} failed. Rolled: {dice_result}, Player modifier: {player_modifier}, Difficulty class: {self.difficulty_class}.'
-		elif dice_result == 20 or dice_result + player_modifier >= self.difficulty_class:
-			self.result = f'Ability check {self.ability.value} succeeded. Rolled: {dice_result}, Player modifier: {player_modifier}, Difficulty class: {self.difficulty_class}.'
+		if state['player'].creature.ability_check(self.ability, self.difficulty_class):
+			self.result = f'Ability check {self.ability.value} succeeded. Difficulty class: {self.difficulty_class}.'
 		else:
-			raise Exception(f'Invalid dice roll result: {dice_result}.')
+			self.result = f'Ability check {self.ability.value} failed. Difficulty class: {self.difficulty_class}.'

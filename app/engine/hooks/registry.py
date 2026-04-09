@@ -8,14 +8,12 @@ class HOOK_LIST(str, Enum):
 	ABILITY_MODIFIER_CALCULATION = 'ability_modifier-calculation'
 
 class HookRegistry:
-	_hooks: dict[HOOK_LIST, list[Callable]] = {hook: [] for hook in HOOK_LIST}
+	def __init__(self):
+		self._hooks: dict[HOOK_LIST, list[Callable]] = {hook: [] for hook in HOOK_LIST}
 
 	def register_hook(self, hook_name: HOOK_LIST) -> Callable:
 		def decorator(func: Callable) -> Callable:
-			if hook_name not in self._hooks:
-				raise ValueError(f'Hook {hook_name} is not a valid hook')
-			
-			self._hooks[hook_name].append(func)
+			self.register_hook_function(hook_name, func)
 			return func
 		return decorator
 

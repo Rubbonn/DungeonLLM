@@ -45,15 +45,14 @@ class SkillProficiencies(Base):
 			case _:
 				raise ValueError('Invalid level or challenge rate')
 	
+	@staticmethod
 	@global_hook_registry.register_hook(HOOK_LIST.ABILITY_CHECK_PRE_CALCULATION)
-	@classmethod
-	def apply_bonus(cls, state: AbilityCheckState) -> None:
+	def apply_bonus(state: AbilityCheckState) -> None:
 		if state['skill'] is None or len(state['creature'].skill_proficiencies) == 0:
 			return
 		
 		for sp in state['creature'].skill_proficiencies:
 			if sp.skill == state['skill']:
-				state['ability_mod'] -= 1000
 				state['ability_mod'] += sp.bonus if sp.bonus is not None else SkillProficiencies.get_base_bonus(state['creature'].level)
 				break
 
@@ -244,6 +243,7 @@ class Creature(Base):
 					result = throw
 		state['result'] = result
 		global_hook_registry.execute_hooks(HOOK_LIST.ABILITY_CHECK_PRE_CALCULATION, state)
+		print(state)
 
 		state['result'] += state['ability_mod']
 		global_hook_registry.execute_hooks(HOOK_LIST.ABILITY_CHECK_POST_CALCULATION, state)

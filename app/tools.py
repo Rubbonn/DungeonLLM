@@ -10,7 +10,7 @@ def make_player_tools(state: GameplayState) -> list:
 		Returns:
 			str: A string containing the player's name, size, and abilities.
 		'''
-		return f'{state['player'].get_bio()}\n{state['player'].get_abilities()}'
+		return f'{state['player'].creature.get_bio()}\n{state['player'].creature.get_abilities()}'
 
 	return [get_player_info]
 

@@ -1,12 +1,9 @@
 if __name__ == "__main__":
-	from app.entities.creatures import Player, CreatureAbility
-	import app.entities.features as features
 	from app.graph.gameplay import build_graph
 	from app.prompts import CAMPAIGN_PROMPT
 	from app.types.state import GameplayState
 	import dotenv
 	from langchain.messages import HumanMessage
-	from random import randint
 	from typing import cast
 
 	dotenv.load_dotenv()

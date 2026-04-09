@@ -4,7 +4,7 @@ from app.types.state import GameplayState, SrdParserState
 from app.tools import make_player_tools
 from langchain.agents import create_agent
 from langchain.chat_models import init_chat_model
-from langchain.messages import ToolMessage
+from langchain.messages import ToolMessage, AIMessage
 from os import environ
 import re
 from typing import cast, Any
@@ -35,7 +35,9 @@ def executor(state: GameplayState) -> dict:
 	for action in state['plan'].actions:
 		action.execute(state)
 	import uuid
-	return {'plan': state['plan'], 'messages': ToolMessage(content=str(state['plan']), name='executor', tool_call_id=str(uuid.uuid4()))}
+	tool_call_id = str(uuid.uuid4())
+	fake_tool_call = AIMessage(content='', tool_calls=[{'name': 'executor', 'args': {}, 'id': tool_call_id}])
+	return {'plan': state['plan'], 'messages': state['messages'] + [fake_tool_call, ToolMessage(content=str(state['plan']), name='executor', tool_call_id=tool_call_id)]}
 
 def srd_splitter(state: SrdParserState):
 	print(f"Splitting SRD source file: {state['source_file']}")

@@ -2,8 +2,8 @@ from app.prompts import SYSTEM_PROMPT, PLANNER_PROMPT
 from app.types.models import Plan
 from app.types.state import GameplayState, SrdParserState
 from app.tools import make_player_tools
+from app.utilities.functions import get_chat_model, get_vector_store
 from langchain.agents import create_agent
-from langchain.chat_models import init_chat_model
 from langchain.messages import ToolMessage, AIMessage
 import os
 import re
@@ -11,7 +11,7 @@ from typing import cast, Any
 
 def send_message(state: GameplayState) -> dict:
 	agent = create_agent(
-		model=init_chat_model(model=os.environ.get('LLM_MODEL'), model_provider=os.environ.get('LLM_PROVIDER')),
+		model=get_chat_model(),
 		tools=make_player_tools(state),
 		system_prompt=SYSTEM_PROMPT
 	)
@@ -20,7 +20,7 @@ def send_message(state: GameplayState) -> dict:
 
 def planner(state: GameplayState) -> dict:
 	agent = create_agent(
-		model=init_chat_model(model=os.environ.get('LLM_MODEL'), model_provider=os.environ.get('LLM_PROVIDER')),
+		model=get_chat_model(),
 		system_prompt=PLANNER_PROMPT,
 		response_format=Plan
 	)
@@ -49,6 +49,17 @@ def srd_splitter(state: SrdParserState):
 			target.write(content)
 	print(f"SRD source file split into {len(sections)} sections successfully.")
 	return {'sections': [section for section, _ in sections]}
+
+def srd_embedder(state: SrdParserState):
+	from langchain_text_splitters import MarkdownHeaderTextSplitter
+	print('Embedding SRD text...')
+	with open('SRD_CC_v5.2.1.md', 'r', encoding='utf-8') as file:
+		content = file.read()
+	splitter = MarkdownHeaderTextSplitter(headers_to_split_on=[('#', 'Chapter'), ('##', 'Section'), ('###', 'Paragraph')])
+	documents = splitter.split_text(content)
+	vector_store = get_vector_store()
+	vector_store.add_documents(documents)
+	print('SRD text embedded successfully.')
 
 def delete_srd_splitted_files(state: SrdParserState):
 	for section in state['sections']:

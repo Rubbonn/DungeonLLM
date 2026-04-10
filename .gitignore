@@ -4,5 +4,7 @@
 .env
 
 __pycache__
+/data/databases
+!/data/databases/entities.sqlite
 /data/saves
 /data/temp

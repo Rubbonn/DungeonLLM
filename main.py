@@ -9,7 +9,7 @@ if __name__ == "__main__":
 
 	dotenv.load_dotenv()
 
-	if not Path('data/databases/entities.sqlite').exists():
+	if Path('data/databases/entities.sqlite').exists():
 		from app.graph.srdparse import build_graph as build_srd_graph
 		from app.database import initialize_database
 		from app.types.state import SrdParserState
@@ -21,6 +21,8 @@ if __name__ == "__main__":
 		}
 		graph.invoke(parser_state)
 		del parser_state
+		import sys
+		sys.exit(0)
 
 	graph = build_graph()
 	from app.test import create_random_player

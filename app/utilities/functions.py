@@ -1,5 +1,7 @@
 from langchain_core.language_models.chat_models import BaseChatModel
+from langchain_core.embeddings import Embeddings
 from langchain.chat_models import init_chat_model
+from langchain.embeddings import init_embeddings
 from os import environ
 from typing import Literal, Callable, TypeVar, ParamSpec
 
@@ -46,3 +48,10 @@ def retry_exception(func: Callable[P, R], retries: int = 3, exceptions: tuple = 
 
 def get_chat_model(**kwargs) -> BaseChatModel:
 	return init_chat_model(model=environ.get('LLM_MODEL'), model_provider=environ.get('LLM_PROVIDER'), **kwargs)
+
+def get_embedding_model(**kwargs) -> Embeddings:
+	return init_embeddings(model=environ.get('LLM_EMBEDDING_MODEL'), provider=environ.get('LLM_PROVIDER'), **kwargs)
+
+def get_vector_store():
+	from langchain_chroma import Chroma
+	return Chroma(collection_name='dungeon_srd', embedding_function=get_embedding_model(), persist_directory='data/databases/vectorstore')

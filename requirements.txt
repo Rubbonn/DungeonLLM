@@ -1,9 +1,7 @@
 langchain
-langchain-google-genai
-langchain-groq
-langchain-nvidia-ai-endpoints
-langchain-ollama
+langchain-chroma
 langchain-openai
+langchain-text-splitters
 langgraph
 pydantic
 python-dotenv

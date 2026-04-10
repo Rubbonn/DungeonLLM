@@ -24,26 +24,25 @@ class SkillProficiencies(Base):
 	bonus: Mapped[Optional[int]]
 
 	@classmethod
-	def get_base_bonus(cls, level: int) -> int:
-		match level:
-			case 1 | 2 | 3 | 4:
-				return 2
-			case 5 | 6 | 7 | 8:
-				return 3
-			case 9 | 10 | 11 | 12:
-				return 4
-			case 13 | 14 | 15 | 16:
-				return 5
-			case 17 | 18 | 19 | 20:
-				return 6
-			case 21 | 22 | 23 | 24:
-				return 7
-			case 25 | 26 | 27 | 28:
-				return 8
-			case 29 | 30:
-				return 9
-			case _:
-				raise ValueError('Invalid level or challenge rate')
+	def get_base_bonus(cls, level: float) -> int:
+		if 0 <= level <= 4:
+			return 2
+		elif 5 <= level <= 8:
+			return 3
+		elif 9 <= level <= 12:
+			return 4
+		elif 13 <= level <= 16:
+			return 5
+		elif 17 <= level <= 20:
+			return 6
+		elif 21 <= level <= 24:
+			return 7
+		elif 25 <= level <= 28:
+			return 8
+		elif 29 <= level <= 30:
+			return 9
+		else:
+			raise ValueError('Invalid level or challenge rate')
 	
 	@staticmethod
 	@global_hook_registry.register_hook(HOOK_LIST.ABILITY_CHECK_PRE_CALCULATION)
@@ -243,7 +242,6 @@ class Creature(Base):
 					result = throw
 		state['result'] = result
 		global_hook_registry.execute_hooks(HOOK_LIST.ABILITY_CHECK_PRE_CALCULATION, state)
-		print(state)
 
 		state['result'] += state['ability_mod']
 		global_hook_registry.execute_hooks(HOOK_LIST.ABILITY_CHECK_POST_CALCULATION, state)

@@ -7,7 +7,7 @@ from sqlalchemy.orm import Session
 
 import app.entities.features as features
 from app.database import get_database_session
-from app.entities.creatures import Creature, CreatureAbility, CreatureSpeed, Player, SkillProficiencies
+from app.entities.creatures import Creature, CreatureAbility, CreatureSpeed, Player, SkillProficiencies, Language
 
 
 def _ability_modifier(score: int) -> int:
@@ -65,7 +65,7 @@ def create_random_player(*, persist: bool = True, session: Session | None = None
 		armor_class=randint(10, 20),
 		hit_points=randint(6, 40),
 		skill_proficiencies=[SkillProficiencies(skill=skill) for skill in sample(list(features.Skill), randint(0, 4))],
-		languages=[],
+		languages=[Language(language=language) for language in sample(list(features.Language), k=randint(1, 3))],
 		alignment=choice(list(features.Alignment)),
 		speed=speeds,
 		traits=[],

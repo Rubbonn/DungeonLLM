@@ -5,9 +5,6 @@ from typing import Literal
 def command_or_message(state: GameplayState) -> str:
 	return 'command' if state['messages'][-1].content.startswith('/') else 'message'
 
-def must_execute_tool_calls(state: GameplayState) -> bool:
-	return len(state['messages'][-1].tool_calls) > 0
-
 def route_command(state: GameplayState) -> Command[Literal['save_command', 'load_command', 'help_command', 'player_info_command']]:
 	command = state['messages'][-1].content[1:]
 	del state['messages'][-1]

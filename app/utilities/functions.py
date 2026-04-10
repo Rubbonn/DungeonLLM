@@ -3,7 +3,7 @@ from langchain_core.embeddings import Embeddings
 from langchain.chat_models import init_chat_model
 from langchain.embeddings import init_embeddings
 from os import environ
-from typing import Literal, Callable, TypeVar, ParamSpec
+from typing import Literal, Callable, TypeVar, ParamSpec, cast
 
 P = ParamSpec('P')
 R = TypeVar('R')
@@ -47,10 +47,14 @@ def retry_exception(func: Callable[P, R], retries: int = 3, exceptions: tuple = 
 				raise e
 
 def get_chat_model(**kwargs) -> BaseChatModel:
-	return init_chat_model(model=environ.get('LLM_MODEL'), model_provider=environ.get('LLM_PROVIDER'), **kwargs)
+	return cast(BaseChatModel, init_chat_model(model=environ.get('LLM_MODEL'), model_provider=environ.get('LLM_PROVIDER'), **kwargs))
 
 def get_embedding_model(**kwargs) -> Embeddings:
-	return init_embeddings(model=environ.get('LLM_EMBEDDING_MODEL'), provider=environ.get('LLM_PROVIDER'), check_embedding_ctx_length=False, chunk_size=100, **kwargs)
+	embedding_model = environ.get('LLM_EMBEDDING_MODEL')
+	if not embedding_model:
+		raise ValueError("LLM_EMBEDDING_MODEL is not set in the environment variables.")
+	
+	return init_embeddings(model=embedding_model, provider=environ.get('LLM_PROVIDER'), check_embedding_ctx_length=False, chunk_size=100, **kwargs)
 
 def get_vector_store(**kwargs):
 	from langchain_chroma import Chroma

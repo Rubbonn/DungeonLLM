@@ -43,6 +43,16 @@ class SkillProficiencies(Base):
 			return 9
 		else:
 			raise ValueError('Invalid level or challenge rate')
+		
+	def get_bonus(self, level: float) -> int:
+		from app.engine.hooks.states import SkillProficiencyState
+		state: SkillProficiencyState = {
+			'skill': self.skill,
+			'level': level,
+			'bonus': self.bonus if self.bonus is not None else SkillProficiencies.get_base_bonus(level)
+		 }
+		global_hook_registry.execute_hooks(HOOK_LIST.SKILL_PROFICIENCY_BONUS_CALCULATION, state)
+		return state['bonus']
 	
 	@staticmethod
 	@global_hook_registry.register_hook(HOOK_LIST.ABILITY_CHECK_PRE_CALCULATION)
@@ -52,7 +62,7 @@ class SkillProficiencies(Base):
 		
 		for sp in state['creature'].skill_proficiencies:
 			if sp.skill == state['skill']:
-				state['ability_mod'] += sp.bonus if sp.bonus is not None else SkillProficiencies.get_base_bonus(state['creature'].level)
+				state['ability_mod'] += sp.get_bonus(state['creature'].level)
 				break
 
 class Language(Base):
@@ -213,12 +223,19 @@ class Creature(Base):
 		}
 		global_hook_registry.execute_hooks(HOOK_LIST.ABILITY_MODIFIER_CALCULATION, state)
 		return state['modifier']
+	
+	def recalculate_all_params(self) -> None:
+		for ability in self.abilities.values():
+			ability.modifier = self.get_ability_modifier(ability.ability)
+			ability.save_modifier = ability.modifier
+
+		for sp in self.skill_proficiencies:
+			sp.bonus = SkillProficiencies.get_base_bonus(self.level)
 
 	def ability_check(self, ability: features.AbilityType, dc: int, skill: Optional[features.Skill] = None) -> bool:
 		if dc < 0:
 			raise ValueError('DC must be positive')
 
-		from app.engine.hooks.states import AbilityCheckState
 		state: AbilityCheckState = {
 			'num_dices': 1,
 			'num_sides': 20,

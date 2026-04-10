@@ -12,9 +12,15 @@ if __name__ == "__main__":
 	if not Path('data/databases/entities.sqlite').exists():
 		from app.graph.srdparse import build_graph as build_srd_graph
 		from app.database import initialize_database
+		from app.types.state import SrdParserState
 		graph = build_srd_graph()
 		initialize_database()
-		graph.invoke({'source_file': 'SRD_CC_v5.2.1.md'})
+		parser_state: SrdParserState = {
+			'source_file': 'SRD_CC_v5.2.1.md',
+			'sections': []
+		}
+		graph.invoke(parser_state)
+		del parser_state
 
 	graph = build_graph()
 	from app.test import create_random_player

@@ -6,6 +6,7 @@ class HOOK_LIST(str, Enum):
 	ABILITY_CHECK_PRE_CALCULATION = 'ability_check-pre_calculation'
 	ABILITY_CHECK_POST_CALCULATION = 'ability_check-post_calculation'
 	ABILITY_MODIFIER_CALCULATION = 'ability_modifier-calculation'
+	SKILL_PROFICIENCY_BONUS_CALCULATION = 'skill_proficiency_bonus-calculation'
 
 class HookRegistry:
 	def __init__(self):

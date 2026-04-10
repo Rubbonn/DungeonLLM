@@ -17,3 +17,8 @@ class AbilityModifierState(TypedDict):
 	ability: AbilityType
 	score: int
 	modifier: int
+
+class SkillProficiencyState(TypedDict):
+	skill: Skill
+	level: float
+	bonus: int

@@ -70,6 +70,7 @@ def create_random_player(*, persist: bool = True, session: Session | None = None
 		speed=speeds,
 		traits=[],
 	)
+	creature.recalculate_all_params()
 
 	player = Player(creature=creature)
 

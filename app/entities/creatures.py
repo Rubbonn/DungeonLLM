@@ -17,10 +17,10 @@ class CreatureAbility(Base):
 	modifier: Mapped[Optional[int]]
 	save_modifier: Mapped[Optional[int]]
 
-class SkillProficiencies(Base):
+class SkillProficiency(Base):
 	__tablename__ = 'skill_proficiencies'
-	id: Mapped[int] = mapped_column(primary_key=True)
-	skill: Mapped[features.Skill]
+	id_creature: Mapped[int] = mapped_column(ForeignKey('creatures.id'), primary_key=True)
+	skill: Mapped[features.Skill] = mapped_column(primary_key=True)
 	bonus: Mapped[Optional[int]]
 
 	@classmethod
@@ -49,7 +49,7 @@ class SkillProficiencies(Base):
 		state: SkillProficiencyState = {
 			'skill': self.skill,
 			'level': level,
-			'bonus': self.bonus if self.bonus is not None else SkillProficiencies.get_base_bonus(level)
+			'bonus': self.bonus if self.bonus is not None else SkillProficiency.get_base_bonus(level)
 		 }
 		global_hook_registry.execute_hooks(HOOK_LIST.SKILL_PROFICIENCY_BONUS_CALCULATION, state)
 		return state['bonus']
@@ -92,7 +92,7 @@ class Creature(Base):
 	armor_class: Mapped[int]
 	hit_points: Mapped[int]
 	level: Mapped[float]
-	skill_proficiencies: Mapped[list[SkillProficiencies]] = relationship(secondary=Table('creature_skill_proficiencies', Base.metadata, Column('creature_id', ForeignKey('creatures.id'), primary_key=True), Column('skill_id', ForeignKey('skill_proficiencies.id'), primary_key=True)))
+	skill_proficiencies: Mapped[list[SkillProficiency]] = relationship()
 	languages: Mapped[list[Language]] = relationship(secondary=Table('creature_languages', Base.metadata, Column('creature_id', ForeignKey('creatures.id'), primary_key=True), Column('language_id', ForeignKey('languages.id'), primary_key=True)))
 	alignment: Mapped[features.Alignment]
 	speed: Mapped[dict[features.Speed, CreatureSpeed]] = relationship(collection_class=attribute_mapped_collection('speed_type'))
@@ -230,7 +230,7 @@ class Creature(Base):
 			ability.save_modifier = ability.modifier
 
 		for sp in self.skill_proficiencies:
-			sp.bonus = SkillProficiencies.get_base_bonus(self.level)
+			sp.bonus = SkillProficiency.get_base_bonus(self.level)
 
 	def ability_check(self, ability: features.AbilityType, dc: int, skill: Optional[features.Skill] = None) -> bool:
 		if dc < 0:

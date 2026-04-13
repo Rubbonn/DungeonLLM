@@ -144,7 +144,7 @@ Text:
 			raise Exception('No animals found in the text')
 
 		session = get_database_session()
-		from app.entities.creatures import Creature, CreatureAbility, CreatureTrait, SkillProficiencies, Language, CreatureSpeed
+		from app.entities.creatures import Creature, CreatureAbility, CreatureTrait, SkillProficiency, Language, CreatureSpeed
 		for animal in response.items:
 			a = Animal(
 				creature=Creature(
@@ -154,7 +154,7 @@ Text:
 					armor_class=animal.armor_class,
 					hit_points=animal.hit_points,
 					level=animal.challenge_rating,
-					skill_proficiencies=[SkillProficiencies(skill=skill, bonus=bonus) for skill, bonus in animal.skill_proficiencies.items()],
+					skill_proficiencies=[SkillProficiency(skill=skill, bonus=bonus) for skill, bonus in animal.skill_proficiencies.items()],
 					languages=[Language(language=language) for language in animal.languages],
 					alignment=animal.alignment,
 					speed={speed_type: CreatureSpeed(speed_type=speed_type, speed=speed.speed, conditions=speed.conditions) for speed_type, speed in animal.speed.items()},

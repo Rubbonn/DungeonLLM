@@ -206,6 +206,12 @@ class DamageType(Enum):
 	def __init__(self, _: str):
 		self.examples = _DAMAGE_TYPE_METADATA[self.value]
 
+class WeaponCategory(Enum):
+	SIMPLE_MELEE = 'Simple Melee'
+	SIMPLE_RANGED = 'Simple Ranged'
+	MARTIAL_MELEE = 'Martial Melee'
+	MARTIAL_RANGED = 'Martial Ranged'
+
 _WEAPON_PROPERTY_METADATA = {
 	'Ammunition': 'You can use a weapon that has the Ammunition property to make a ranged attack only if you have ammunition to fire from it. The type of ammunition required is specified with the weapon\'s range. Each attack expends one piece of ammunition. Drawing the ammunition is part of the attack (you need a free hand to load a one-handed weapon). After a fight, you can spend 1 minute to recover half the ammunition (round down) you used in the fight; the rest is lost.',
 	'Finesse': 'When making an attack with a Finesse weapon, use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls.',

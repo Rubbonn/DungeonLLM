@@ -16,6 +16,7 @@ class GearItems(BaseModel):
 
 class Weapon(BaseModel):
 	name: str = Field(description='The name of the weapon')
+	weapon_category: features.WeaponCategory = Field(description='The category of the weapon')
 	damage: str = Field(description='The damage of the weapon')
 	damage_type: features.DamageType = Field(description='The damage type of the weapon')
 	versatile_damage: str | None = Field(description='The versatile damage of the weapon if it has versatile damage, otherwise None')
@@ -60,7 +61,6 @@ class Armor(BaseModel):
 
 class Armors(BaseModel):
 	items: list[Armor] = Field(description='A list of armors in the SRD', default_factory=list)
-
 
 class Animal(BaseModel):
 	name: str = Field(description='The name of the animal')

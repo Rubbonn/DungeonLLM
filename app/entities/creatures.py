@@ -65,6 +65,71 @@ class SkillProficiency(Base):
 				state['ability_mod'] += sp.get_bonus(state['creature'].level)
 				break
 
+class AbilityProficiency(Base):
+	__tablename__ = 'ability_proficiencies'
+	id_creature: Mapped[int] = mapped_column(ForeignKey('creatures.id'), primary_key=True)
+	ability: Mapped[features.AbilityType] = mapped_column(primary_key=True)
+	bonus: Mapped[Optional[int]]
+
+	@classmethod
+	def get_base_bonus(cls, level: float) -> int:
+		if 0 <= level <= 4:
+			return 2
+		elif 5 <= level <= 8:
+			return 3
+		elif 9 <= level <= 12:
+			return 4
+		elif 13 <= level <= 16:
+			return 5
+		elif 17 <= level <= 20:
+			return 6
+		elif 21 <= level <= 24:
+			return 7
+		elif 25 <= level <= 28:
+			return 8
+		elif 29 <= level <= 30:
+			return 9
+		else:
+			raise ValueError('Invalid level or challenge rate')
+
+	# TODO Aggungere calcolo bonus e hook
+
+class WeaponProficiency(Base):
+	__tablename__ = 'weapon_proficiencies'
+	id_creature: Mapped[int] = mapped_column(ForeignKey('creatures.id'), primary_key=True)
+	weapon_category: Mapped[features.WeaponCategory]
+	bonus: Mapped[Optional[int]]
+
+	@classmethod
+	def get_base_bonus(cls, level: float) -> int:
+		if 0 <= level <= 4:
+			return 2
+		elif 5 <= level <= 8:
+			return 3
+		elif 9 <= level <= 12:
+			return 4
+		elif 13 <= level <= 16:
+			return 5
+		elif 17 <= level <= 20:
+			return 6
+		elif 21 <= level <= 24:
+			return 7
+		elif 25 <= level <= 28:
+			return 8
+		elif 29 <= level <= 30:
+			return 9
+		else:
+			raise ValueError('Invalid level or challenge rate')
+
+	# TODO Aggungere calcolo bonus e hook
+
+class ToolProficiency(Base):
+	__tablename__ = 'tool_proficiencies'
+	id_creature: Mapped[int] = mapped_column(ForeignKey('creatures.id'), primary_key=True)
+	id_tool: Mapped[int] = mapped_column(ForeignKey('tools.id'), primary_key=True)
+	bonus: Mapped[Optional[int]]
+	# TODO Aggungere calcolo bonus e hook
+
 class Language(Base):
 	__tablename__ = 'languages'
 	id: Mapped[int] = mapped_column(primary_key=True)
@@ -92,7 +157,9 @@ class Creature(Base):
 	armor_class: Mapped[int]
 	hit_points: Mapped[int]
 	level: Mapped[float]
+	ability_proficiencies: Mapped[list[AbilityProficiency]] = relationship()
 	skill_proficiencies: Mapped[list[SkillProficiency]] = relationship()
+	weapon_proficiencies: Mapped[list[WeaponProficiency]] = relationship()
 	languages: Mapped[list[Language]] = relationship(secondary=Table('creature_languages', Base.metadata, Column('creature_id', ForeignKey('creatures.id'), primary_key=True), Column('language_id', ForeignKey('languages.id'), primary_key=True)))
 	alignment: Mapped[features.Alignment]
 	speed: Mapped[dict[features.Speed, CreatureSpeed]] = relationship(collection_class=attribute_mapped_collection('speed_type'))

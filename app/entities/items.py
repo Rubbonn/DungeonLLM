@@ -32,6 +32,7 @@ class WeaponProperty(Base):
 
 class Weapon(Base, Item):
 	__tablename__ = 'weapons'
+	weapon_category: Mapped[features.WeaponCategory]
 	damage: Mapped[str]
 	damage_type: Mapped[features.DamageType]
 	versatile_damage: Mapped[Optional[str]]

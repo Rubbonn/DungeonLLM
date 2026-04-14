@@ -51,7 +51,7 @@ def weapons_parser(state: SrdParserState) -> dict:
 			return {}
 	
 		llm = get_chat_model(temperature=0, reasoning_effort='none').with_structured_output(Weapons, method='function_calling')
-		response: Weapons = retry_exception(func=llm.invoke, input=f'''Extract the weapons from the following text, providing their name, description, damage, damage type, properties, mastery property, weight, and cost:
+		response: Weapons = retry_exception(func=llm.invoke, input=f'''Extract the weapons from the following text, providing their name, description, category, damage, damage type, properties, mastery property, weight, and cost:
 			{match.group(1)}
 			''')
 		if len(response.items) == 0:
@@ -59,7 +59,7 @@ def weapons_parser(state: SrdParserState) -> dict:
 
 		session = get_database_session()
 		for item in response.items:
-			weapon = Weapon(name=item.name, damage=item.damage, damage_type=item.damage_type, versatile_damage=item.versatile_damage,
+			weapon = Weapon(name=item.name, weapon_category=item.weapon_category, damage=item.damage, damage_type=item.damage_type, versatile_damage=item.versatile_damage,
 			                properties={WeaponProperty(property=property) for property in item.properties}, mastery_property=item.mastery_property,
 			                range=item.range, long_range=item.long_range, ammunition=item.ammunition,
 			                weight=item.weight, cost=item.cost)

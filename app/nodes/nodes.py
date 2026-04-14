@@ -51,14 +51,15 @@ def srd_splitter(state: SrdParserState):
 	return {'sections': [section for section, _ in sections]}
 
 def srd_embedder(state: SrdParserState):
-	from langchain_text_splitters import MarkdownHeaderTextSplitter
 	print('Embedding SRD text...')
-	with open('SRD_CC_v5.2.1.md', 'r', encoding='utf-8') as file:
-		content = file.read()
-	splitter = MarkdownHeaderTextSplitter(headers_to_split_on=[('#', 'Chapter'), ('##', 'Section'), ('###', 'Paragraph')])
-	documents = splitter.split_text(content)
 	vector_store = get_vector_store()
-	vector_store.add_documents(documents)
+	if len(vector_store.get(limit=1)['documents']) == 0:
+		from langchain_text_splitters import MarkdownHeaderTextSplitter
+		with open('SRD_CC_v5.2.1.md', 'r', encoding='utf-8') as file:
+			content = file.read()
+		splitter = MarkdownHeaderTextSplitter(headers_to_split_on=[('#', 'Chapter'), ('##', 'Section'), ('###', 'Paragraph')])
+		documents = splitter.split_text(content)
+		vector_store.add_documents(documents)
 	print('SRD text embedded successfully.')
 
 def delete_srd_splitted_files(state: SrdParserState):

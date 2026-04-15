@@ -6,4 +6,4 @@ const contextState: ContextState = $state({
     currentPage: 'main-menu'
 });
 
-export { contextState };
+export default contextState;

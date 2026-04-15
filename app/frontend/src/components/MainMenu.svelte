@@ -84,7 +84,11 @@
 			<button class="main-menu__menu-item btn btn-secondary"><img src="/src/img/icons/folder.svg" alt="Carica Campagna Icon"> CARICA CAMPAGNA</button>
 			<button class="main-menu__menu-item btn btn-secondary"><img src="/src/img/icons/magic-wand.svg" alt="Crea Campagna Icon"> CREA CAMPAGNA</button>
 			<hr/>
-			<button class="main-menu__menu-item btn btn-invisible" style:font-size="16px"><img src="/src/img/icons/cogs.svg" alt="Impostazioni Icon"> IMPOSTAZIONI</button>
+			<button class="main-menu__menu-item btn btn-invisible" style:font-size="16px" onclick={() => showSettings = !showSettings}><img src="/src/img/icons/cogs.svg" alt="Impostazioni Icon"> IMPOSTAZIONI</button>
 		</div>
 	</div>
 </div>
+
+<script lang="ts">
+	let showSettings = $state(false);
+</script>

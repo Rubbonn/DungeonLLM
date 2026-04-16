@@ -57,6 +57,35 @@
 			border: rgba(255, 255, 255, .10) 1px solid;
 			margin-bottom: 16px;
 		}
+
+		input[type=checkbox] {
+			appearance: none;
+			margin: 0;
+			background-color: #F1F5F9;
+			border-radius: 9999px;
+			width: 3.75rem;
+			height: 2rem;
+			padding: 4px;
+
+			&::before {
+				content: '';
+				background-color: #EECD2B;
+				border-radius: 9999px;
+				display: block;
+				width: 1.5rem;
+				height: 1.5rem;
+				transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+			}
+
+			&:checked {
+				background-color: #EECD2B;
+			}
+
+			&:checked::before {
+				background-color: #F1F5F9;
+				transform: translateX(1.75rem);
+			}
+		}
 	}
 	:global(#app) {
 		width:1280px;

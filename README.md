@@ -32,7 +32,7 @@ Un videogioco dove un Large Language Model funge da **Game Master**, creando e g
 
 ## 🚧 Stato del Progetto
 
-⚠️ **Progetto in Early MVP Development** - Fondazioni tecniche in place, focus su meccaniche di gioco e pipeline GM/Planner/Executor.
+⚠️ **Progetto in Early MVP Development** - Fondazioni tecniche in place, focus su meccaniche di gioco, pipeline GM/Planner/Executor e prototipo UI frontend.
 
 Lo sviluppo è in corso seguendo una **roadmap granulare di 6 fasi**. Le fondazioni base sono completate e il lavoro si concentra ora sulle meccaniche di gioco (dadi, prove di abilità, entità di gioco) e sull'integrazione del database. Il focus immediato è su:
 1. **Fase 1**: GM conversazionale coerente con memoria di sessione e NPC
@@ -46,11 +46,15 @@ Lo sviluppo è in corso seguendo una **roadmap granulare di 6 fasi**. Le fondazi
 - **Prove di abilità** implementate (`ability_check` action): tiro d20 + modificatore vs difficoltà
 - **Sistema dadi** operativo (d4, d6, d8, d10, d12, d20, d100)
 - **Personaggio giocatore** (`Player`) con punteggi di abilità e calcolo modificatori
+- **Frontend Svelte (prototipo grafico)**: avviata schermata principale di gioco (`MainMenu` → `ChatView`)
+- **Stato reattivo del giocatore** in frontend (`playerState`) con utility di test per generare personaggi casuali
 - **Database SQLite** operativo via SQLAlchemy (`data/databases/entities.sqlite`)
 - **Parser SRD** che estrae oggetti (Gear, Tools) dall'SRD e li inserisce nel database
 - Routing comandi in chat (`/help`, `/save`, `/load`, `/exit`)
 - Persistenza stato campagna in JSON (`data/saves/campaign.json`)
 - Configurazione provider LLM tramite file `.env`
+
+> ⚠️ **Nota importante sul frontend**: al momento è **solo grafica** (prototipo UI) e **non è ancora collegato al backend di gioco**.
 
 Vedi [Roadmap di Sviluppo](#-roadmap-di-sviluppo) per dettagli granulari.
 
@@ -96,6 +100,12 @@ Vedi [Roadmap di Sviluppo](#-roadmap-di-sviluppo) per dettagli granulari.
 
 - **⚙️ Configurazione LLM via `.env`**
   - Provider e modello LLM configurabili tramite variabili d'ambiente (Ollama, NVIDIA, ecc.)
+
+- **🖥️ Frontend Web (prototipo UI)**
+  - App Svelte + Vite in `app/frontend/`
+  - Navigazione base tra `MainMenu` e `ChatView`
+  - Stato reattivo `playerState` e utility `createRandomPlayer()` per test UI
+  - **Solo presentazione grafica**: nessuna integrazione backend/API ancora attiva
 
 ### Funzionalità Pianificate
 
@@ -147,11 +157,12 @@ Vedi [Roadmap di Sviluppo](#-roadmap-di-sviluppo) per dettagli granulari.
 
 | Componente | Tecnologia | Stato |
 |------------|------------|-------|
-| **Interfaccia attuale** | CLI | ✅ Implementato |
-| **Architettura target** | Single Page Application | 🔄 Pianificato |
+| **Interfaccia attuale** | CLI + prototipo web UI | ✅ Implementato (parziale) |
+| **Architettura target** | Single Page Application | 🔄 In sviluppo |
 | **Rendering target** | Webview | 🔄 Pianificato |
-| **Webserver** | Da definire | ❌ Non definito |
-| **Frontend Framework** | Da definire | ❌ Non definito |
+| **Webserver** | Vite dev server (sviluppo UI) | ✅ Attivo in dev |
+| **Frontend Framework** | Svelte 5 + Vite | ✅ Implementato (prototipo) |
+| **Integrazione frontend-backend** | API/bridge applicativo | ❌ Non collegato |
 
 ### Database
 
@@ -170,6 +181,7 @@ Vedi [Roadmap di Sviluppo](#-roadmap-di-sviluppo) per dettagli granulari.
 - pip (gestore pacchetti Python)
 - Git
 - Ollama (o altro provider LLM supportato da LangChain)
+- Node.js + npm (opzionale, per avviare il frontend UI)
 
 ### Passaggi
 
@@ -193,6 +205,10 @@ pip install -r requirements.txt
 # Configura le variabili d'ambiente
 cp .env.example .env
 # Modifica .env impostando LLM_MODEL, LLM_PROVIDER e le credenziali del provider scelto
+
+# (Opzionale) Setup frontend UI
+cd app/frontend
+npm install
 ```
 
 ## 🗂 Struttura del Progetto
@@ -208,6 +224,12 @@ DungeonLLM/
 |   |-- database.py          # Engine e sessione SQLAlchemy (SQLite)
 |   |-- prompts.py           # SYSTEM_PROMPT, PLANNER_PROMPT, CAMPAIGN_PROMPT
 |   |-- tools.py             # Tool LangChain (es. get_player_info)
+|   |-- frontend/            # Frontend Svelte (prototipo UI, non collegato al backend)
+|   |   |-- src/
+|   |   |   |-- components/  # MainMenu, ChatView, componenti UI
+|   |   |   |-- states/      # Stato reattivo frontend (es. playerState)
+|   |   |   \-- utils/       # Utility di supporto/test (es. createRandomPlayer)
+|   |   \-- package.json     # Script frontend (dev/build/preview)
 |   |-- entities/
 |   |   |-- creatures.py     # Creature, Player
 |   |   |-- features.py      # AbilityType, Ability, Size
@@ -238,6 +260,15 @@ DungeonLLM/
 # Avvia il gioco da terminale
 python main.py
 ```
+
+Frontend UI (prototipo grafico):
+
+```bash
+cd app/frontend
+npm run dev
+```
+
+> ⚠️ Il frontend attuale è un prototipo visuale e non comunica ancora con il backend Python/LangGraph.
 
 > **Nota**: Al primo avvio, `main.py` esegue il parser SRD per popolare il database SQLite con gli oggetti dell'SRD 5.2.1. Assicurarsi di aver configurato il file `.env` prima di eseguire.
 
@@ -448,6 +479,7 @@ Questi aspetti saranno decisi in fase di sprint, non predefiniti:
 - Single-player (uno o più giocatori con GM AI)
 - Single LLM source per sessione (provider definitivo ancora da confermare)
 - CLI interface per MVP
+- Frontend UI prototipale (solo grafica)
 - Rules consultazione via RAG
 - Conversational gameplay
 - Persistenza su disk
@@ -456,7 +488,7 @@ Questi aspetti saranno decisi in fase di sprint, non predefiniti:
 ❌ **Escluso (post-MVP)**:
 - Multiplayer/server architecture
 - Multi-LLM (fallback, ensembles)
-- Web frontend (Fase 5)
+- Web frontend completo collegato al backend (Fase 5)
 - Stable Diffusion (Fase 6)
 - TTS/Audio (Fase 6)
 - Advanced mechanics (prestige classes, etc)

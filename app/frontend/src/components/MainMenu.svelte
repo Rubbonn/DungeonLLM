@@ -63,10 +63,6 @@
 			line-height: 28px;
 			letter-spacing: .45px;
 			width: 100%;
-
-			img {
-				display: inline-block;
-			}
 		}
 	}
 
@@ -178,10 +174,6 @@
 				line-height: 24px;
 				letter-spacing: .8px;
 				font-weight: bold;
-
-				img {
-					display: inline-block;
-				}
 			}
 		}
 	}

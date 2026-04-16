@@ -10,6 +10,10 @@
 			font-family: 'Work Sans';
 		}
 
+		button img {
+			display: inline-block;
+		}
+
 		.btn {
 			border-radius: 8px;
 			text-align: center;
@@ -87,6 +91,7 @@
 			}
 		}
 	}
+
 	:global(#app) {
 		width:1280px;
 		height:1024px;

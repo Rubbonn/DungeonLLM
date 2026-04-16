@@ -180,7 +180,7 @@
 				font-weight: bold;
 
 				img {
-					display: inline;
+					display: inline-block;
 				}
 			}
 		}
@@ -241,5 +241,5 @@
 
 <script lang="ts">
 	import { fade } from 'svelte/transition';
-	let showSettings = $state(true);
+	let showSettings = $state(false);
 </script>

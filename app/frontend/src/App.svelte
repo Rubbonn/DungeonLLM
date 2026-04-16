@@ -102,7 +102,12 @@
 <MainMenu/>
 {/if}
 
+{#if contextState.currentPage === 'chat-view'}
+<ChatView/>
+{/if}
+
 <script lang="ts">
 	import contextState from './states/context.svelte.ts';
 	import MainMenu from './components/MainMenu.svelte';
+	import ChatView from './components/ChatView.svelte';
 </script>

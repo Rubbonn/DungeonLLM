@@ -12,7 +12,7 @@
 			padding: 0 24px;
 			margin: 171px auto;
 			height: 682px;
-			display:inline-block;
+			display: inline-block;
 			display: flex;
 			flex-direction: column;
 			align-items: center;
@@ -189,7 +189,7 @@
 			<h2 class="main-menu__subtitle">THE AI MASTER'S DOMAIN</h2>
 		</div>
 		<div class="main-menu__central-section">
-			<button class="main-menu__menu-item btn btn-primary"><img src="/src/img/icons/plus-circle.svg" alt="Nuova Campagna Icon"> NUOVA CAMPAGNA</button>
+			<button class="main-menu__menu-item btn btn-primary" onclick={() => contextState.currentPage = 'chat-view'}><img src="/src/img/icons/plus-circle.svg" alt="Nuova Campagna Icon"> NUOVA CAMPAGNA</button>
 			<button class="main-menu__menu-item btn btn-secondary"><img src="/src/img/icons/folder.svg" alt="Carica Campagna Icon"> CARICA CAMPAGNA</button>
 			<button class="main-menu__menu-item btn btn-secondary"><img src="/src/img/icons/magic-wand.svg" alt="Crea Campagna Icon"> CREA CAMPAGNA</button>
 			<hr/>
@@ -233,5 +233,6 @@
 
 <script lang="ts">
 	import { fade } from 'svelte/transition';
+	import contextState from '../states/context.svelte.ts';
 	let showSettings = $state(false);
 </script>

@@ -81,7 +81,7 @@ export function createRandomPlayer(): PlayerState {
 
 	const languages = sample(ALL_LANGUAGES, randInt(1, 3)) as Language[];
 
-	return $state({
+	const player = $state({
 		id: null,
 		name: `Player-${Math.random().toString(16).slice(2, 10)}`,
 		level: randInt(1, 5),
@@ -95,4 +95,5 @@ export function createRandomPlayer(): PlayerState {
 		languages,
 		traits: [],
 	});
+	return player;
 }

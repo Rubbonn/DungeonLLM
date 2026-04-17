@@ -20,7 +20,7 @@
 			text-decoration: none;
 			padding: 14px 14px;
 			border: none;
-			margin-bottom: 16px;
+			/*margin-bottom: 16px;*/
 		}
 
 		.btn-primary {

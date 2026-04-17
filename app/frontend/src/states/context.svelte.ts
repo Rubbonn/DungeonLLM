@@ -3,7 +3,7 @@ interface ContextState {
 }
 
 const contextState: ContextState = $state({
-    currentPage: 'main-menu'
+    currentPage: 'chat-view'
 });
 
 export default contextState;

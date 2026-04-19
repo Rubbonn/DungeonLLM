@@ -108,6 +108,6 @@
 
 <script lang="ts">
 	import contextState from './states/context.svelte.ts';
-	import MainMenu from './components/MainMenu.svelte';
-	import ChatView from './components/ChatView.svelte';
+	import MainMenu from './pages/MainMenu.svelte';
+	import ChatView from './pages/ChatView.svelte';
 </script>

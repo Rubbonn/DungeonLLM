@@ -118,6 +118,6 @@
 
 <script lang="ts">
 	import { createRandomPlayer } from "../utils/testing.svelte.ts";
-	import PlayerStats from "./PlayerStats.svelte";
+	import PlayerStats from "../components/PlayerStats.svelte";
 	const player = createRandomPlayer();
 </script>

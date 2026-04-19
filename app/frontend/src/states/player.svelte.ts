@@ -52,6 +52,7 @@ export interface PlayerState {
 	alignment: Alignment;
 	armor_class: number;
 	hit_points: number;
+	actual_hit_points: number;
 	abilities: Partial<Record<AbilityType, CreatureAbility>>;
 	speed: Partial<Record<SpeedType, CreatureSpeed>>;
 	skill_proficiencies: SkillProficiency[];
@@ -67,6 +68,7 @@ const playerState: PlayerState = $state({
 	alignment: 'Neutral',
 	armor_class: 10,
 	hit_points: 10,
+	actual_hit_points: 10,
 	abilities: {},
 	speed: {},
 	skill_proficiencies: [],

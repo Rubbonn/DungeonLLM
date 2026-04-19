@@ -347,3 +347,4 @@ class Player(Base):
 	__tablename__ = 'players'
 	_id_creature: Mapped[int] = mapped_column('id_creature', ForeignKey('creatures.id'), primary_key=True)
 	creature: Mapped[Creature] = relationship()
+	actual_hit_points: Mapped[int]

@@ -64,6 +64,7 @@ def create_random_player(*, persist: bool = True, session: Session | None = None
 		abilities=abilities,
 		armor_class=randint(10, 20),
 		hit_points=randint(6, 40),
+		actual_hit_points=randint(6, 40),
 		skill_proficiencies=[SkillProficiency(skill=skill) for skill in sample(list(features.Skill), randint(0, 4))],
 		languages=[Language(language=language) for language in sample(list(features.Language), k=randint(1, 3))],
 		alignment=choice(list(features.Alignment)),

@@ -53,7 +53,6 @@
 			line-height: 15px;
 			letter-spacing: 2px;
 			color: rgba(238, 205, 43, .6);
-			margin-bottom: 16px;
 
 			&::before {
 				content: '';
@@ -64,6 +63,10 @@
 				margin-right: 8px;
 				vertical-align: middle;
 			}
+		}
+
+		&__section-content {
+			margin-top: 16px;
 		}
 
 		&__stat-name {
@@ -106,6 +109,44 @@
 				box-shadow: 0 0 8px 0 rgba(220, 38, 38, .5);
 			}
 		}
+
+		&__characteristics {
+			display: flex;
+			gap: 7px;
+			flex-wrap: wrap;
+		}
+
+		&__characteristic {
+			padding: 10px;
+			background-color: rgba(238, 205, 43, .05);
+			border: 1px solid rgba(238, 205, 43, .1);
+			border-radius: 8px;
+			min-width: 131.5px;
+			min-height: 65px;
+		}
+
+		&__characteristic-icon {
+			display: inline-block;
+			width: 11px;
+			height: 7.5px;
+		}
+
+		&__characteristic-value {
+			float: right;
+			font-size: 16px;
+			font-weight: bold;
+			line-height: 24px;
+			letter-spacing: 0;
+			color: #EECD2B;
+		}
+
+		&__characteristic-name {
+			font-size: 10px;
+			font-weight: bold;
+			line-height: 15px;
+			letter-spacing: 0;
+			color: #94A3B8;
+		}
 	}
 </style>
 
@@ -120,8 +161,39 @@
 		<div class="player-stats__section-content">
 			<div class="player-stats__stat">
 				<span class="player-stats__stat-name"><img src="/src/img/icons/heart.svg" alt="Heart Icon"> HP</span>
-				<span class="player-stats__stat-value">{player.hit_points} / {player.hit_points}</span>
-				<hr class="player-stats__stat-bar" style:--hp-percentage={`${player.hit_points / player.hit_points * 100}%`}/>
+				<span class="player-stats__stat-value">{player.actual_hit_points} / {player.hit_points}</span>
+				<hr class="player-stats__stat-bar" style:--hp-percentage={`${player.actual_hit_points / player.hit_points * 100}%`}/>
+			</div>
+		</div>
+	</div>
+	<div class="player-stats__section">
+		<span class="player-stats__section-title">CHARACTERISTICS</span>
+		<div class="player-stats__section-content">
+			<div class="player-stats__characteristics">
+				<div class="player-stats__characteristic">
+					<img class="player-stats__characteristic-icon" src="/src/img/icons/weights.svg" alt="Strength Icon"> <span class="player-stats__characteristic-value">{player.abilities.Strength.value}</span><br>
+					<span class="player-stats__characteristic-name">STR</span>
+				</div>
+				<div class="player-stats__characteristic">
+					<img class="player-stats__characteristic-icon" src="/src/img/icons/wind.svg" alt="Dexterity Icon"> <span class="player-stats__characteristic-value">{player.abilities.Dexterity.value}</span><br>
+					<span class="player-stats__characteristic-name">DEX</span>
+				</div>
+				<div class="player-stats__characteristic">
+					<img class="player-stats__characteristic-icon" src="/src/img/icons/shield.svg" alt="Constitution Icon"> <span class="player-stats__characteristic-value">{player.abilities.Constitution.value}</span><br>
+					<span class="player-stats__characteristic-name">CON</span>
+				</div>
+				<div class="player-stats__characteristic">
+					<img class="player-stats__characteristic-icon" src="/src/img/icons/head.svg" alt="Intelligence Icon"> <span class="player-stats__characteristic-value">{player.abilities.Intelligence.value}</span><br>
+					<span class="player-stats__characteristic-name">INT</span>
+				</div>
+				<div class="player-stats__characteristic">
+					<img class="player-stats__characteristic-icon" src="/src/img/icons/eye.svg" alt="Wisdom Icon"> <span class="player-stats__characteristic-value">{player.abilities.Wisdom.value}</span><br>
+					<span class="player-stats__characteristic-name">WIS</span>
+				</div>
+				<div class="player-stats__characteristic">
+					<img class="player-stats__characteristic-icon" src="/src/img/icons/magic-wand.svg" alt="Charisma Icon"> <span class="player-stats__characteristic-value">{player.abilities.Charisma.value}</span><br>
+					<span class="player-stats__characteristic-name">CHA</span>
+				</div>
 			</div>
 		</div>
 	</div>

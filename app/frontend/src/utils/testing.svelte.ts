@@ -89,6 +89,7 @@ export function createRandomPlayer(): PlayerState {
 		alignment: choice(ALL_ALIGNMENTS),
 		armor_class: randInt(10, 20),
 		hit_points: randInt(6, 40),
+		actual_hit_points: randInt(6, 40),
 		abilities,
 		speed,
 		skill_proficiencies,

@@ -36,7 +36,7 @@
 		position?: "top" | "bottom" | "left" | "right" | "top-left" | "top-right" | "bottom-left" | "bottom-right";
 	}
 
-	const { text, position = 'top-right' }: TooltipProps = $props();
+	const { text, position = 'bottom-right' }: TooltipProps = $props();
 
 	let visible = $state(false);
 	let x = $state(0);
@@ -44,7 +44,7 @@
 	let tooltipEl = $state<HTMLDivElement | null>(null);
 	let rect: DOMRect = null;
 
-	const OFFSET = 0;
+	const OFFSET = 2.5;
 
 	function onParentMouseEnter() {
 		visible = true;
@@ -57,6 +57,40 @@
 	function onParentMouseMove(e: MouseEvent) {
 		x = e.pageX - rect.left;
 		y = e.pageY - rect.top;
+		switch(position) {
+			case 'top':
+				y -= tooltipEl?.offsetHeight + OFFSET;
+				x -= tooltipEl?.offsetWidth / 2;
+				break;
+			case 'bottom':
+				y += OFFSET;
+				x -= tooltipEl?.offsetWidth / 2;
+				break;
+			case 'left':
+				x -= tooltipEl?.offsetWidth + OFFSET;
+				y -= tooltipEl?.offsetHeight / 2 + OFFSET;
+				break;
+			case 'right':
+				x += OFFSET;
+				y -= tooltipEl?.offsetHeight / 2 + OFFSET;
+				break;
+			case 'top-left':
+				y -= tooltipEl?.offsetHeight + OFFSET;
+				x -= tooltipEl?.offsetWidth + OFFSET;
+				break;
+			case 'top-right':
+				y -= tooltipEl?.offsetHeight + OFFSET;
+				x += OFFSET;
+				break;
+			case 'bottom-left':
+				y += OFFSET;
+				x -= tooltipEl?.offsetWidth + OFFSET;
+				break;
+			case 'bottom-right':
+				y += OFFSET;
+				x += OFFSET;
+				break;
+		}
 	}
 
 	onMount(() => {

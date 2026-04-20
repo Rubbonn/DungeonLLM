@@ -171,26 +171,32 @@
 		<div class="player-stats__section-content">
 			<div class="player-stats__characteristics">
 				<div class="player-stats__characteristic">
+					<Tooltip text="TEST"/>
 					<img class="player-stats__characteristic-icon" src="/src/img/icons/weights.svg" alt="Strength Icon"> <span class="player-stats__characteristic-value">{player.abilities.Strength.value}</span><br>
 					<span class="player-stats__characteristic-name">STR</span>
 				</div>
 				<div class="player-stats__characteristic">
+					<Tooltip text="TEST"/>
 					<img class="player-stats__characteristic-icon" src="/src/img/icons/wind.svg" alt="Dexterity Icon"> <span class="player-stats__characteristic-value">{player.abilities.Dexterity.value}</span><br>
 					<span class="player-stats__characteristic-name">DEX</span>
 				</div>
 				<div class="player-stats__characteristic">
+					<Tooltip text="TEST"/>
 					<img class="player-stats__characteristic-icon" src="/src/img/icons/shield.svg" alt="Constitution Icon"> <span class="player-stats__characteristic-value">{player.abilities.Constitution.value}</span><br>
 					<span class="player-stats__characteristic-name">CON</span>
 				</div>
 				<div class="player-stats__characteristic">
+					<Tooltip text="TEST"/>
 					<img class="player-stats__characteristic-icon" src="/src/img/icons/head.svg" alt="Intelligence Icon"> <span class="player-stats__characteristic-value">{player.abilities.Intelligence.value}</span><br>
 					<span class="player-stats__characteristic-name">INT</span>
 				</div>
 				<div class="player-stats__characteristic">
+					<Tooltip text="TEST"/>
 					<img class="player-stats__characteristic-icon" src="/src/img/icons/eye.svg" alt="Wisdom Icon"> <span class="player-stats__characteristic-value">{player.abilities.Wisdom.value}</span><br>
 					<span class="player-stats__characteristic-name">WIS</span>
 				</div>
 				<div class="player-stats__characteristic">
+					<Tooltip text="TEST"/>
 					<img class="player-stats__characteristic-icon" src="/src/img/icons/magic-wand.svg" alt="Charisma Icon"> <span class="player-stats__characteristic-value">{player.abilities.Charisma.value}</span><br>
 					<span class="player-stats__characteristic-name">CHA</span>
 				</div>
@@ -200,6 +206,7 @@
 </div>
 
 <script lang="ts">
+	import Tooltip from "./Tooltip.svelte";
 	import { createRandomPlayer } from "../utils/testing.svelte.ts";
 	const player = createRandomPlayer();
 </script>

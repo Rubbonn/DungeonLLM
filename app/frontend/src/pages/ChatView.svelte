@@ -79,6 +79,18 @@
 				margin-right: 8px;
 			}
 		}
+
+		&__body {
+			display: flex;
+		}
+
+		&__left-panel, &__right-panel {
+			width: 25%;
+		}
+
+		&__center-panel {
+			width: 50%;
+		}
 	}
 </style>
 
@@ -102,6 +114,12 @@
 		<div class="chat-view__left-panel">
 			<PlayerStats />
 		</div>
+		<div class="chat-view__center-panel">
+			<Chat />
+		</div>
+		<div class="chat-view__right-panel">
+			Right panel
+		</div>
 	</div>
 	<div class="chat-view__footer"></div>
 </div>
@@ -109,5 +127,6 @@
 <script lang="ts">
 	import { createRandomPlayer } from "../utils/testing.svelte.ts";
 	import PlayerStats from "../components/PlayerStats.svelte";
+	import Chat from "../components/Chat.svelte";
 	const player = createRandomPlayer();
 </script>

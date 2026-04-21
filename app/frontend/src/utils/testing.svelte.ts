@@ -1,4 +1,5 @@
 import type { AbilityType, Alignment, CreatureAbility, CreatureSpeed, Language, PlayerState, Size, Skill, SkillProficiency, SpeedType } from '../states/player.svelte.ts';
+import { LoremIpsum } from 'lorem-ipsum';
 
 
 function randInt(min: number, max: number): number {
@@ -97,4 +98,35 @@ export function createRandomPlayer(): PlayerState {
 		traits: [],
 	});
 	return player;
+}
+
+function randomChoice<T>(choices: T[], num: number = 1): T[] {
+	const results: T[] = [];
+	for(let i = 0; i < num; i++) {
+		results.push(choices[Math.floor(Math.random() * choices.length)]);
+	}
+
+	return results;
+}
+
+export function createRandomMessages(count: number): { role: 'assistant' | 'user' | 'tool'; content: string}[] {
+	const roles: ('assistant' | 'user')[] = ['assistant', 'user'];
+	const messages: { role: 'assistant' | 'user' | 'tool'; content: string}[] = [];
+	const lorem = new LoremIpsum({
+		sentencesPerParagraph: {
+			max: 8,
+			min: 4
+		},
+		wordsPerSentence: {
+			max: 16,
+			min: 4
+		}
+	});
+	for(let i = 0; i < count; i++) {
+		messages.push({
+			role: randomChoice(roles, 1)[0],
+			content: lorem.generateSentences(randInt(1, 3)),
+		});
+	}
+	return messages;
 }

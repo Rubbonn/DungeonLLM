@@ -4,7 +4,6 @@
 		background-color: rgba(34, 31, 16, .6);
 		backdrop-filter: blur(12px);
 		border: 1px solid rgba(238, 205, 43, .1);
-		max-width: 25%;
 		height: 100%;
 
 		&__profile {

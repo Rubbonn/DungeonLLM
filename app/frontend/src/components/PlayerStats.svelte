@@ -176,27 +176,27 @@
 					<span class="player-stats__characteristic-name">STR</span>
 				</div>
 				<div class="player-stats__characteristic">
-					<Tooltip text="Dexterity: Agility, reflexes, and balance"/>
+					<Tooltip text="Dexterity: Agility, reflexes, and balance" position="top"/>
 					<img class="player-stats__characteristic-icon" src="/src/img/icons/wind.svg" alt="Dexterity Icon"> <span class="player-stats__characteristic-value">{player.abilities.Dexterity.value}</span><br>
 					<span class="player-stats__characteristic-name">DEX</span>
 				</div>
 				<div class="player-stats__characteristic">
-					<Tooltip text="Constitution: Health and stamina"/>
+					<Tooltip text="Constitution: Health and stamina" position="top"/>
 					<img class="player-stats__characteristic-icon" src="/src/img/icons/shield.svg" alt="Constitution Icon"> <span class="player-stats__characteristic-value">{player.abilities.Constitution.value}</span><br>
 					<span class="player-stats__characteristic-name">CON</span>
 				</div>
 				<div class="player-stats__characteristic">
-					<Tooltip text="Intelligence: Reasoning and memory"/>
+					<Tooltip text="Intelligence: Reasoning and memory" position="top"/>
 					<img class="player-stats__characteristic-icon" src="/src/img/icons/head.svg" alt="Intelligence Icon"> <span class="player-stats__characteristic-value">{player.abilities.Intelligence.value}</span><br>
 					<span class="player-stats__characteristic-name">INT</span>
 				</div>
 				<div class="player-stats__characteristic">
-					<Tooltip text="Wisdom: Perceptiveness and mental fortitude"/>
+					<Tooltip text="Wisdom: Perceptiveness and mental fortitude" position="top"/>
 					<img class="player-stats__characteristic-icon" src="/src/img/icons/eye.svg" alt="Wisdom Icon"> <span class="player-stats__characteristic-value">{player.abilities.Wisdom.value}</span><br>
 					<span class="player-stats__characteristic-name">WIS</span>
 				</div>
 				<div class="player-stats__characteristic">
-					<Tooltip text="Charisma: Confidence, poise, and charm"/>
+					<Tooltip text="Charisma: Confidence, poise, and charm" position="top"/>
 					<img class="player-stats__characteristic-icon" src="/src/img/icons/magic-wand.svg" alt="Charisma Icon"> <span class="player-stats__characteristic-value">{player.abilities.Charisma.value}</span><br>
 					<span class="player-stats__characteristic-name">CHA</span>
 				</div>

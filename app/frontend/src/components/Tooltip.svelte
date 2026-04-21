@@ -42,7 +42,6 @@
 	let x = $state(0);
 	let y = $state(0);
 	let tooltipEl = $state<HTMLDivElement | null>(null);
-	let rect: DOMRect = null;
 
 	const OFFSET = 2.5;
 
@@ -55,8 +54,9 @@
 	}
 
 	function onParentMouseMove(e: MouseEvent) {
-		x = e.pageX - rect.left;
-		y = e.pageY - rect.top;
+		const rect = tooltipEl?.parentElement.getBoundingClientRect();
+		x = e.clientX - rect.left;
+		y = e.clientY - rect.top;
 		switch(position) {
 			case 'top':
 				y -= tooltipEl?.offsetHeight + OFFSET;
@@ -96,7 +96,6 @@
 	onMount(() => {
 		const parent = tooltipEl?.parentElement;
 		if (!parent) return;
-		rect = parent.getBoundingClientRect();
 
 		parent.style.position = 'relative';
 		parent.addEventListener('mouseenter', onParentMouseEnter);

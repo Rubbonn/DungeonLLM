@@ -55,42 +55,52 @@
 
 	function onParentMouseMove(e: MouseEvent) {
 		const rect = tooltipEl?.parentElement.getBoundingClientRect();
-		x = e.clientX - rect.left;
-		y = e.clientY - rect.top;
+		const tw = tooltipEl?.offsetWidth ?? 0;
+		const th = tooltipEl?.offsetHeight ?? 0;
+		let nx = e.clientX - rect.left;
+		let ny = e.clientY - rect.top;
 		switch(position) {
 			case 'top':
-				y -= tooltipEl?.offsetHeight + OFFSET;
-				x -= tooltipEl?.offsetWidth / 2;
+				ny -= th + OFFSET;
+				nx -= tw / 2;
 				break;
 			case 'bottom':
-				y += OFFSET;
-				x -= tooltipEl?.offsetWidth / 2;
+				ny += OFFSET;
+				nx -= tw / 2;
 				break;
 			case 'left':
-				x -= tooltipEl?.offsetWidth + OFFSET;
-				y -= tooltipEl?.offsetHeight / 2 + OFFSET;
+				nx -= tw + OFFSET;
+				ny -= th / 2 + OFFSET;
 				break;
 			case 'right':
-				x += OFFSET;
-				y -= tooltipEl?.offsetHeight / 2 + OFFSET;
+				nx += OFFSET;
+				ny -= th / 2 + OFFSET;
 				break;
 			case 'top-left':
-				y -= tooltipEl?.offsetHeight + OFFSET;
-				x -= tooltipEl?.offsetWidth + OFFSET;
+				ny -= th + OFFSET;
+				nx -= tw + OFFSET;
 				break;
 			case 'top-right':
-				y -= tooltipEl?.offsetHeight + OFFSET;
-				x += OFFSET;
+				ny -= th + OFFSET;
+				nx += OFFSET;
 				break;
 			case 'bottom-left':
-				y += OFFSET;
-				x -= tooltipEl?.offsetWidth + OFFSET;
+				ny += OFFSET;
+				nx -= tw + OFFSET;
 				break;
 			case 'bottom-right':
-				y += OFFSET;
-				x += OFFSET;
+				ny += OFFSET;
+				nx += OFFSET;
 				break;
 		}
+
+		// Clamp to viewport bounds (coordinates are relative to parent element)
+		const minX = -rect.left;
+		const minY = -rect.top;
+		const maxX = window.innerWidth - rect.left - tw;
+		const maxY = window.innerHeight - rect.top - th;
+		x = Math.min(Math.max(nx, minX), maxX);
+		y = Math.min(Math.max(ny, minY), maxY);
 	}
 
 	onMount(() => {

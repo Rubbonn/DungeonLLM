@@ -2,6 +2,7 @@
 .vscode
 .idea
 .env
+.playwright-mcp
 
 __pycache__
 /app/frontend/node_modules

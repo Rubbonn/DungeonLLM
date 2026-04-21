@@ -25,6 +25,13 @@
                 .chat__message-content {
                     background-color: #EECD2B;
                     border-radius: 12px 0 12px 12px;
+
+                    &::before {
+                        border-top: 10px solid #EECD2B;
+                        border-right: 10px solid transparent;
+                        top: -14px;
+                        left: 104%;
+                    }
                 }
             }
 
@@ -40,6 +47,13 @@
                     background-color: #F4ECD8;
                     border: 1px solid #D4C4A1;
                     border-radius: 0 12px 12px 12px;
+
+                    &::before {
+                        border-top: 10px solid #F4ECD8;
+                        border-left: 10px solid transparent;
+                        left: -30px;
+                        top: -15px;
+                    }
                 }
             }
         }
@@ -63,9 +77,7 @@
 
             &::before {
                 content: "";
-                border-top: 10px solid #D4C4A1;
-                border-left: 10px solid #D4C4A1;
-                display: block;
+                position: relative;
             }
         }
 

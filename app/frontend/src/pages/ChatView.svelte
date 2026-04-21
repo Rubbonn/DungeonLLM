@@ -3,6 +3,8 @@
 		width: 100%;
 		height: 100%;
 		background-image: radial-gradient(#221F10 80%, #0F0E08);
+		display: flex;
+		flex-direction: column;
 
 		&__header {
 			padding: 12px 32px;
@@ -82,6 +84,7 @@
 
 		&__body {
 			display: flex;
+			min-height: 0;
 		}
 
 		&__left-panel, &__right-panel {

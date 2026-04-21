@@ -90,6 +90,26 @@
 				transform: translateX(1.75rem);
 			}
 		}
+
+		* {
+			&::-webkit-scrollbar {
+				width: 12px;
+			}
+
+			&::-webkit-scrollbar-track {
+				border-radius: 9999px;
+				background-color: #EECD2B0D;
+				border: 1px solid #EECD2B1A;
+				margin: 4px 0;
+			}
+
+			&::-webkit-scrollbar-thumb {
+				border-radius: 9999px;
+				background-color: #EECD2B33;
+				background-clip: content-box;
+				border: 3px solid transparent;
+			}
+		}
 	}
 
 	:global(#app) {

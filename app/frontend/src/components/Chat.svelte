@@ -1,5 +1,9 @@
 <style lang="scss">
     .chat {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+
         &__messages {
             padding: 32px;
             overflow: hidden;
@@ -64,6 +68,38 @@
                 display: block;
             }
         }
+
+        &__input {
+            padding: 24px;
+            background-color: #221F10CC;
+            border: 1px solid #EECD2B33;
+            backdrop-filter: blur(12px);
+        }
+
+        &__input-field {
+            padding: 18px 24px;
+            border: 1px solid #EECD2B4D;
+            border-radius: 12px;
+            background-color: #EECD2B0D;
+            box-shadow: 0 2px 4px 1px #0000000D;
+            width: 79%;
+            margin-right: 16px;
+
+            &::placeholder {
+                font-size: 16px;
+                line-height: auto;
+                letter-spacing: 0;
+                color: #64748B;
+            }
+        }
+
+        &__send-button {
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 24px;
+            letter-spacing: .8px;
+            color: #221F10;
+        }
     }
 </style>
 
@@ -77,6 +113,8 @@
         {/each}
     </div>
     <div class="chat__input">
+        <input type="text" placeholder="What will you do next, adventurer?" class="chat__input-field">
+        <button class="chat__send-button btn btn-primary"><img src="/src/img/icons/send.svg" alt="Send"> ACT</button>
     </div>
 </div>
 
